@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjU2MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCP STOCK STATUS REPORT (2560) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjU2MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCP STOCK STATUS REPORT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Stock Status Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>STOCK STATUS REPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Stock Status Report will print a summary of all issues,
+receipts, and adjustments with the opening and closing balances by
+account codes.  It will calculate the turnover rate, inactive item
+percent, long supply percent, and non-issuable percent.
+ 
+All inventory points will have the option to select the specified
+month and year for the report.  Also, users can enter the item
+inactivity cutoff month and year.  Items which have not had activity
+after the specified cutoff date, will be used to calculate the
+inactive item percent on the report.
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PRCPRSSR.html">PRCPRSSR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

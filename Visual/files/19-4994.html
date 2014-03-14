@@ -1,0 +1,118 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDk5NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PXTT EDIT SKIN TESTS (4994) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDk5NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PXTT EDIT SKIN TESTS</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Skin Tests Add/Edit</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SKIN TESTS ADD/EDIT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows a user to create a new Skin Test table entry or edit a
+Skin Test table entry that was originally created at your site. Skin tests
+that are distributed with the PCE package can be inactivated using the PCE
+"Activate/Inactivate Table Items" menu.
+ 
+Once a skin test is defined in this table, it should not be deleted if
+there is any encounter form definitions which may be referencing the skin
+test, or if there is any patient encounter data which may be referencing
+this skin test historically.  Use the "Inactive Flag" field to make a
+skin test "INACTIVE" for selection in the Encounter form definition
+process and the PCE encounter data entry process.
+ 
+If skin tests are to be included on the clinic's encounter form, the skin
+tests must first be defined in the Skin Test file using this option.
+ 
+The scanning of encounter forms with the AICS package will provide PCE
+with patient skin test information which is stored in the V SKIN TEST
+file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>edit</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K PXTDUZ,PXNAT,PXB</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D ZERO^<a href="http://code.osehra.org/dox/Routine_PXTTU1.html">PXTTU1</a>("^AUTTSK(",$G(PXNAT))</td>
+</tr>
+<tr>
+<td>DIC {DIC}</td>
+<td>AUTTSK(</td>
+</tr>
+<tr>
+<td>DIC(0)</td>
+<td>QAMEZL</td>
+</tr>
+<tr>
+<td>DIC(S)</td>
+<td>S PXTDUZ=+$P($$SITE^VASITE,U,3) I $S($G(PXNAT):1,(+$G(Y)>100000):1,1:0)</td>
+</tr>
+<tr>
+<td>DIE</td>
+<td>AUTTSK(</td>
+</tr>
+<tr>
+<td>DR {DIE}</td>
+<td>.01;8801;.03</td>
+</tr>
+<tr>
+<td>NO UP-ARROW</td>
+<td>EXIT AND BACK JUMPING OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

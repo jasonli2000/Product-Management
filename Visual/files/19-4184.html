@@ -1,0 +1,89 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDE4NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DVB HNET-WORK (4184) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDE4NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DVB HNET-WORK</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Network Enable/Disable</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>NETWORK ENABLE/DISABLE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option enables/disables the options which allow the user to
+transmit HINQ requests, 'PROCESS THE HINQ SUSPENSE FILE' and 
+'GENERATE A HINQ REQUEST'.
+ 
+The network is disabled automatically during VBA computer non-workday
+hours.  It should also be disabled if there are known problems with
+the communication link as indicated by failure of the HINQ
+transaction test.  Network error messages also indicate a 
+transmission problem so the network should be disabled.
+ 
+This option merely disables the transmitting functions and not
+actually the DHCP-IDCU link.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-4186.html">DVB HNET-ENABLE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-4187.html">DVB HNET-DISABLE</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1996-08-19 15:55:46</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTQ4OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENPMR3 (1489) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTQ4OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENPMR3</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Record Single Device PMI</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RECORD SINGLE DEVICE PMI</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+May be used to record a PMI on any specified device, irregardless of
+whether or not it is on an active PMI list. One use envisioned for this
+is recording the results of 'area sweeps'. If the specified device is
+in the scheduled PMI program and it appears that a PMI recorded via this
+option may make it desireable to change the scheduled FREQUENCY or
+the STARTING MONTH, the user will be afforded an opportunity to do so.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>SDPM^<a href="http://code.osehra.org/dox/Routine_ENEQPMR4.html">ENEQPMR4</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

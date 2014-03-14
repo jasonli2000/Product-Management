@@ -1,0 +1,124 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTc0").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RAD/NUC MED EXAM DELETED (74) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTc0" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RAD/NUC MED EXAM DELETED</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>Imaging Exam Deleted (|2|)</td>
+</tr>
+<tr>
+<td>RETENTION DAYS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This bulletin is used to notify the radiology supervisor that a radiology
+exam has been deleted and the computer user who did the deletion.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+The following exam has been deleted:
+          1) Patient        : |1|
+          2) SSN            : |2|
+          3) Case Number    : |3|
+          4) Exam Date      : |4|
+          5) Requested Date : |5|
+          6) Imaging Loc    : |6|
+          7) Procedure      : |7|
+</pre>
+</td>
+</tr>
+<tr>
+<td>PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patient whose exam was deleted.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Social Security Number of the patient whose exam is being deleted.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Case Number of the deleted exam.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;4</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Exam date of deleted exam.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;5</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Requested date of the deleted exam.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;6</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Radiology location where the exam was registered.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;7</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+AMIS procedure of deleted exam.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

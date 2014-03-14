@@ -1,0 +1,102 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC03Nzk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORQQCN REMOVE MED RESULTS (779) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC03Nzk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORQQCN REMOVE MED RESULTS</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>REMOVE</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_ORQQCN3.html">ORQQCN3</a></td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>SINGLE VALUE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Allows removal of medicine results from a  procedure.
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;Consult IEN</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;16</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Consult (procedure) IEN in file 123.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;Med Result</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;24</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Variable pointer to medicine result.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;Date</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;16</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Date the result was removed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;Resp Person</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;16</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Pointer to file 200 for the person removing the result.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

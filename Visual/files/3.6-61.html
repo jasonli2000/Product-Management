@@ -1,0 +1,109 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTYx").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DVB HINQ RESPONSE (61) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTYx" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DVB HINQ RESPONSE</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>Processed HINQs</td>
+</tr>
+<tr>
+<td>MAIL GROUP</td>
+<td>
+<ol>
+<li>
+<dt>MAIL GROUP:  &nbsp;&nbsp;<a href="3.8-18.html">DVBHINQ</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This bulletin is used to inform the users of returned HINQs.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+ Processing of the HINQ Suspense file has finished.
+ A total of |1| HINQ request(s) have been completed.
+ 
+ |4| returned a successful response.
+ 
+ |3| returned an abbreviated response  |5|
+ 
+ |2| returned an error response.
+ 
+</pre>
+</td>
+</tr>
+<tr>
+<td>PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This parameter contains the total number of HINQs processed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Is the number of errored HINQs.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+abbreviated responses
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;4</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+new (successful responses)
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

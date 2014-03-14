@@ -1,0 +1,98 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTE0OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XM DOMAIN ADDED (148) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTE0OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XM DOMAIN ADDED</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>New Domain: |1|</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This bulletin is sent to alert IRM to the new domain.  This shouldn't happen
+very often, and if it does, the domain name should be investigated.
+
+If you think that it is a bad name, enter a NOIS so it can be investigated.
+
+If this new top-level domain is a valid internet suffix, it should be
+deleted from the DOMAIN file and added to file 4.2996, INTERNET SUFFIX,
+and a NOIS should be entered for MailMan, so that a patch can be sent
+out to add this top-level domain to file 4.2996 at every site.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+This site has just received an incoming transmission from
+'|2|'.  Since we have no record of this domain
+in the DOMAIN file 4.2, and did not find '|1|' in the
+INTERNET SUFFIX file 4.2996, we have added '|1|' to the
+DOMAIN file.
+
+If you think this domain should be added to file 4.2996,
+please enter a NOIS.  Only internationally recognized internet
+suffixes should be added to file 4.2996, and then only via
+a MailMan patch.
+
+If you think this domain may be a poorly named VHA domain,
+please enter a NOIS.  All new VHA domains should end in
+'.DOMAIN.EXT'.
+</pre>
+</td>
+</tr>
+<tr>
+<td>PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Top-level (last dot piece) domain name.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Full domain name
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,90 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My4yLTYy").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>P-QUME-SINGLE (62) &nbsp;&nbsp;  TERMINAL TYPE (3.2)</h1>
+<div id="demo"><table id="My4yLTYy" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>P-QUME-SINGLE</td>
+</tr>
+<tr>
+<td>RIGHT MARGIN</td>
+<td>132</td>
+</tr>
+<tr>
+<td>FORM FEED</td>
+<td>#</td>
+</tr>
+<tr>
+<td>PAGE LENGTH</td>
+<td>66</td>
+</tr>
+<tr>
+<td>BACK SPACE</td>
+<td>$C(8)</td>
+</tr>
+<tr>
+<td>OPEN EXECUTE</td>
+<td>W *27,*31,*11</td>
+</tr>
+<tr>
+<td>10 PITCH</td>
+<td>$C(27,31,13)</td>
+</tr>
+<tr>
+<td>12 PITCH</td>
+<td>$C(27,31,11)</td>
+</tr>
+<tr>
+<td>HALF UP</td>
+<td>$C(27,68)</td>
+</tr>
+<tr>
+<td>HALF DOWN</td>
+<td>$C(27,85)</td>
+</tr>
+<tr>
+<td>UNDERLINE ON</td>
+<td>$C(27)_"73"</td>
+</tr>
+<tr>
+<td>UNDERLINE OFF</td>
+<td>$C(27)_"74"</td>
+</tr>
+<tr>
+<td>PROPORTIONAL SPACING</td>
+<td>$C(27)_"P"</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td>Qume printer W/O keyboard, single-sheet feed</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

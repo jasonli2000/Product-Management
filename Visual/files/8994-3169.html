@@ -1,0 +1,148 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC0zMTY5").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MAGV UPDATE WORK ITEM (3169) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC0zMTY5" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MAGV UPDATE WORK ITEM</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>UPDITEM</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_MAGVIM01.html">MAGVIM01</a></td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>SINGLE VALUE</td>
+</tr>
+<tr>
+<td>AVAILABILITY</td>
+<td>RESTRICTED</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ +---------------------------------------------------------------+
+ | Property of the US Government.                                |
+ | No permission to copy or redistribute this software is given. |
+ | Use of unreleased versions of this software requires the user |
+ | to execute a written test agreement with the VistA Imaging    |
+ | Development Office of the Department of Veterans Affairs,     |
+ | telephone (301) 734-0100.                                     |
+ |                                                               |
+ | The Food and Drug Administration classifies this software as  |
+ | a medical device.  As such, it may not be changed in any way. |
+ | Modifications to this software may result in an adulterated   |
+ | medical device under 21CFR820, the use of which is considered |
+ | to be a violation of US Federal Statutes.                     |
+ +---------------------------------------------------------------+
+ 
+This RPC updates a work item in the MAG WORK ITEM file (#2006.941). 
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;ITEMID</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the item ID that uniquely identifies the work list item.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;EXPSTAT</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the expected status of the work item.  If the expected status
+does not match the status of the work item then the item will not
+be updated.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;NEWSTAT</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the new status to be filed in the work item.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;MESSAGE</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;4</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the message that is associated with the work item.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;UPDUSR</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;5</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the user that has updated the work item.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;UPDAPP</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;6</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the application/service that has updated the work item.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>RETURN PARAMETER DESCRIPTION</td>
+<td><pre>
+The return parameter returns a "0" for success. "-1" followed by an error message is returned if an error has occurred.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

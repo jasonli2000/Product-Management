@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTEyMzM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUER PURGE ERROR SUMMARY (11233) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTEyMzM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUER PURGE ERROR SUMMARY</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Purge Error Trap Summary</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PURGE ERROR TRAP SUMMARY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option should be scheduled weekly or monthly to purge the error 
+summary of old errors.  It only purges entries where the last error was 
+over 90 days ago.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-3.html">KERNEL</a></td>
+</tr>
+<tr>
+<td>DELEGABLE</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>PURGE^<a href="http://code.osehra.org/dox/Routine_XTERSUM1.html">XTERSUM1</a></td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

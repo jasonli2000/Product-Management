@@ -1,0 +1,2530 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTE3NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IMAGING (175) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTE3NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IMAGING</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>MAG</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>ADDITIONAL PREFIXES</td>
+<td>
+<ol>
+<li>
+<dt>ADDITIONAL PREFIXES:  &nbsp;&nbsp;ZMAG</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;2.5</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2001-06-29 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;2001-07-16 00:00:00</dt>
+<dt>INSTALLED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION OF ENHANCEMENTS:  &nbsp;&nbsp;<pre>
+VISTA Imaging V 2.5. This build includes all files required
+for a complete installation.
+ 
+Information on VistA Imaging is available on web page
+http://vawww.domain.ext/imaging/
+</pre>
+</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;1</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-08-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+VistA Imaging v 2.5 routines modified to correct bug fixes identified by
+NOIS reports and during final release process.. 
+ 
+Routines:
+MAGDLB1, MAGDLB9, MAGDLBSR, and MAGDRA1 are required to fix undef problems
+after install Radiology patch 26. 
+ 
+Routines:
+MAGQBUT and MAGUSIT - routines for synchronizing the namespace with
+Imaging namespace database.
+ 
+Routines:
+MAGQBPG2, MAGQBPRG, MAGQBUT1, MAGQBUT2
+ 
+Data Dicitonary change to file 2006.1 on field #21, PURGE-RETEN DAYS PACS
+BIG FILE - input transforms code changed and is required by the background
+processor.
+Input transform was: 
+^DD(2006.1,21,0)=PURGE-RETEN DAYS PACS BIG
+FILE^NJ5,0^^3;1^K:+X'=X!(X&gt;99999)!(X&lt;1)!(X?.E1"."1N.N) X
+Input transform is now:
+^DD(2006.1,21,0)=PURGE-RETEN DAYS PACS BIG
+FILE^NJ5,0^^3;1^K:+X'=X!(X&gt;99999)!(X&lt;0)!(X?.E1"."1N.N) X
+ 
+ 
+ 
+Routine check sum values:
+MAGDLB1   value = 12440903
+MAGDLB9   value = 4213608
+MAGDLBSR  value = 5424331
+MAGDRA1   value = 6988221
+MAGQBPG2  value = 7018812
+MAGQBPRG  value = 9377201
+MAGQBUT1  value = 13490806
+MAGQBUT2  value = 5019592
+MAGUSIT   value = 15207655
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;3</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-09-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch identifies possible integrity problems in the Imaging and
+associated parent report files.
+ 
+Routines included:
+ 
+MAGGSQI   value = 20833776
+MAGICRPT  value = 16785993
+ 
+Menu options exported:
+NAME: MAG DB IQ
+  MENU TEXT: Imaging Database Integrity Checker Menu
+  TYPE: menu                            CREATOR: BARRIOS,LUCILLE
+  PACKAGE: IMAGING
+ DESCRIPTION:   Menu optons to start the scanning of the Imaging database.
+ITEM: MAG_IC_RPT_GM                     SYNONYM: GM
+ITEM: MAG_IC_RPT_QA                     SYNONYM: QA
+ITEM: MAG_IC_SCAN                       SYNONYM: SC
+  TIMESTAMP: 58681,42457
+  UPPERCASE MENU TEXT: IMAGING DATABASE INTEGRITY CHE
+ 
+ 
+NAME: MAG_IC_RPT_GM
+  MENU TEXT: Integrity Report on Global Moves
+  TYPE: run routine                     CREATOR: BARRIOS,LUCILLE
+  PACKAGE: IMAGING
+ DESCRIPTION:   Report from Imaging Integrity Check, limited to items
+requrired
+ for Central Office.
+  ROUTINE: RPT^MAGICRPT("CO")
+  UPPERCASE MENU TEXT: INTEGRITY REPORT ON GLOBAL MOVE
+ 
+NAME: MAG_IC_RPT_QA
+  MENU TEXT: Comprehensive Image Integrity Report
+  TYPE: run routine                     CREATOR: BARRIOS,LUCILLE
+  PACKAGE: IMAGING
+ DESCRIPTION:   Report from Imaging Integrity Check, including all items
+ required for Quality Assurance.
+  ROUTINE: RPT^MAGICRPT("QA")
+  UPPERCASE MENU TEXT: COMPREHENSIVE IMAGE INTEGRITY
+ 
+NAME: MAG_IC_SCAN
+  MENU TEXT: Scan Database for Integrity Issues
+  TYPE: run routine                     CREATOR: BARRIOS,LUCILLE
+  PACKAGE: IMAGING                      X ACTION PRESENT: YES
+ DESCRIPTION:   Menu option to scan the Imaging database.
+  EXIT ACTION: K MAGN100,MAGZ,VALID     ROUTINE: RPT^MAGGSQI()
+  UPPERCASE MENU TEXT: SCAN DATABASE FOR INTEGRITY IS
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;4</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-09-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Build for MAG*2.5*4 patch.  
+ 
+Clinical workstation software has been modified to block the display of
+images which areOn of Quiestionable Integrity (QI) due to possible
+miss-associated images on the database.
+ 
+A further prevent mechanism has been added to the workstation capture
+software to disable accidental attachment of an image for one patient to
+an existing TIU note of another patient. The software will require the
+selection of an existing TIU note for the patient whose images are being
+captured. If a selection was made on a non-existing note then the "OK"
+button on the display will be disabled, leaving only the Cancel or Help
+button for possible selection. 
+ 
+Contains the following routines:
+ 
+MAGGNTI   value = 9207655
+MAGGTIA   value = 10457801
+MAGGTIA2  value = 4308773
+MAGGTIG   value = 11774320
+MAGGTII   value = 5456481
+MAGGTRAI  value = 8632417
+MAGGTRPT  value = 11812366
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;5</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Imaging patch for Patient Safety; this patch will block the display of
+associated Radiology reports if the image entry has a questionable
+integrity issue.  The Verifier software has been modified to perform a
+database integrity check on all Image file entries as well as verify image
+file migration. It also allow integrity checking of the TEXT files and the
+sorting mechanism has been modified to allow more flexibility.
+ 
+Routine MAGICRPT is being deleted and a new routine MAGCRPT has been
+created to do database scanning; this routine has been corrected to handle
+a null value for the DFN variable.
+ 
+Routine MAGIPOS5 is a post routine and will be deleted at the end of the
+KIDS install. 
+ 
+MAGBAPI   value = 6095017
+MAGCRPT   value = 17451573
+MAGGNTI   value = 9279191
+MAGGSQI   value = 21289551
+MAGGTIA   value = 10453678
+MAGGTIA2  value = 5246980
+MAGGTIG   value = 11875351
+MAGGTII   value = 6127443
+MAGGTRA1  value = 5798386
+MAGGTRAI  value = 8956338
+MAGGTRP1  value = 6036421
+MAGGTRPT  value = 12087508
+MAGIPOS5  value = 29453
+MAGQBPG1  value = 11417193
+MAGQBUT2  value = 15103200
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;8</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-01-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Health Eligibility Center patch implementing the generic carbon copy 
+utility.
+ 
+ 
+Routines:
+ 
+MAGBAPI   value = 5940348
+MAGGSPP   value = 3239627
+MAGGTAU   value = 9198237
+MAGGTU3   value = 7687105
+MAGIPOS8  value = 2442231
+MAGQBGCC  value = 5450619
+MAGQBTM   value = 13283746
+MAGQBUT1  value = 13532907
+MAGQBUT2  value = 15123710
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;3.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2005-11-19 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;2002-04-08 00:00:00</dt>
+<dt>INSTALLED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION OF ENHANCEMENTS:  &nbsp;&nbsp;<pre>
+VISTA Imaging V 3.0. This build includes all files required for a complete
+installation of Vista Imaging Clinical (Capture and Display) and VistARad.
+ 
+Information on VistA Imaging is available on web page
+http://vawww.domain.ext/imaging/
+</pre>
+</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;1</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-04-08 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;7</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-08-14 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This KIDS install will add the following support:
+Imaging import API with Clinical Procedures
+Background Processor Enhacements
+Support for MIL 6.1 drivers (Meteor II and Orion Capture)
+ 
+Routine checksum:
+MAGBAPI   value = 7367416
+MAGGSCP   value = 6108869
+MAGGSERR  value = 3210527
+MAGGSFT   value = 3067100
+MAGGSIA   value = 5464426
+MAGGSIA1  value = 9791476
+MAGGSIM   value = 5360010
+MAGGSIU1  value = 3854213
+MAGGSIU2  value = 4516888
+MAGGSIU3  value = 7186347
+MAGGSIUI  value = 11682244
+MAGGSIV   value = 12079119
+MAGGSPP   value = 3242430
+MAGGSTI   value = 6260731
+MAGGSU1   value = 2676194
+MAGGTAU   value = 9601918
+MAGGTSY1  value = 6104608
+MAGGTU3   value = 7481270
+MAGGTUP   value = 7182048
+MAGIPOS7  value = 2508617
+MAGQBIM   value = 3963432
+MAGQBPG1  value = 11319930
+MAGQBPRG  value = 9369062
+MAGQBTM   value = 14438732
+MAGQBUT   value = 12416907
+MAGQBUT1  value = 13611765
+MAGQBUT2  value = 15727225
+MAGQBUT4  value = 2633801
+MAGQST    value = 714956
+ 
+ 
+ 
+Please note that routine MAGIPOS7 is deleted after the KIDS application 
+is installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;16</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-03-31 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Imaging Patch 16, for VistARad maintenance update.
+Routine Checksums:
+MAGGTAU   value = 9853264
+MAGGTPT1  value = 6979388
+MAGJEX1   value = 25560938
+MAGJEX1B  value = 6011556
+MAGJLS2B  value = 16352911
+MAGJLS3   value = 16365765
+MAGJLST1  value = 28077172
+MAGJMN1   value = 11493328
+MAGJORD   value = 7374192
+MAGJUPD1  value = 17522294
+MAGJUTL3  value = 11237728
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;9</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-04-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ 
+Routing application for VistA Imaging 3.0
+ 
+Checksums:
+ 
+MAGBRTLD  value = 6108978
+MAGBRTUT  value = 7369522
+MAGIPOS9  value = 3409921
+MAGJMN1   value = 11228518
+MAGJRT    value = 11669345
+MAGJUTL3  value = 8695865
+ 
+Please note that routine MAGIPOS9 is deleted after the KIDs installation.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;17</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-04-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is MAG*3.0*17T50.
+ 
+Image Index Conversion.
+ 
+MAGIPS17 value =  3287056
+MAGLOG   value =  3474965
+MAGXCVC  value = 15924595
+MAGXCVH  value =  3688285
+MAGXCVI  value = 11055898
+MAGXCVI1 value = 10939208
+MAGXCVL  value = 16869656
+MAGXCVP  value =  9695429
+MAGXCVR  value = 16626305
+MAGXCVS  value = 14244944
+MAGXCVX  value =  8611516
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;19</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-05-01 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Enhancement patch for MAG ENTERPRISE:
+ 
+Routine checksums:
+MAGIPS19  value = 2463407
+MAGQBPG1  value = 12228392
+MAGQBUT   value = 13147026
+MAGQBUT2  value = 15518936
+MAGQBUT4  value = 14489519
+MAGQBUT5  value = 9940521
+MAGQST    value = 7876444
+MAGUSIT   value = 12029601
+ 
+Please note that routine MAGIPS19 is a KIDs post install routine and is 
+deleted after the KIDs install.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;27</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-06-28 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Imaging Site Usage reportinge reporting reporting.
+ 
+MAGIPS27  value = 5542226
+MAGQE1    value = 7724807
+MAGQE2    value = 8875505
+MAGQE3    value = 13373823
+MAGQE4    value = 7634179
+MAGQE5    value = 12363260
+ 
+Routine MAGIPS27 is deleted once the KIDs installation is complete. 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;25</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-10-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is MAG*3.0*25.
+ 
+Image Index Conversion.
+ 
+MAGIPS25 value =  3992054
+MAGXCVC  value = 12676908
+MAGXCVE  value = 16646332
+MAGXCVH  value =  3720499
+MAGXCVI  value = 10664148
+MAGXCVI1 value = 11438388
+MAGXCVL  value =  7336670
+MAGXCVP  value =  9644213
+MAGXCVR  value = 16855671
+MAGXCVS  value = 15637378
+MAGXCVX  value =  9302002
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;22</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-10-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Imaging Patch 22 -- Vistarad Maintenance
+Routine Checksums:
+ 
+MAGJEX1   value = 25378323
+MAGJEX1B  value = 6070161
+MAGJLS2   value = 17792693
+MAGJLS2B  value = 18169808
+MAGJLS3   value = 17053988
+MAGJLST1  value = 28230644
+MAGJMN1   value = 16954953
+MAGJORD   value = 7481199
+MAGJRT    value = 11832101
+MAGJUPD1  value = 17310296
+MAGJUTL1  value = 11539488
+MAGJUTL3  value = 9066809
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;24</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-10-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ 
+This patch includes the following:
+ 
+EKG enhancements
+Thin Client and Display settings check
+Scanned Document default is now 300x300
+ 
+MAGGTU6   value = 5589547
+MAGIPS24  value = 5023772 (Deleted at install)
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;21</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-11-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Miscellaneous fixes
+ 
+Routines:
+MAGDLB6   value = 3354488
+MAGGSIA   value = 5811759
+MAGGTIA1  value = 6825885
+MAGIPS21  value = 2652995
+ 
+Routine MAGIPS21 is a pre- and post-install routine.  It is deleted at the
+end of installation.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;10</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-11-21 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+                     
+Routines required for capturing DICOM images for Consults and Procedures.
+ 
+Routine checksums:
+ 
+MAGDCCS   value = 12895252
+MAGDCCS2  value = 6369003
+MAGDCCS3  value = 3965440
+MAGDCCSD  value = 4446663
+MAGDCCSS  value = 5605002
+MAGDGMRC  value = 8587567
+MAGDHW0   value = 4070033
+MAGDHWA   value = 13363951
+MAGDHWC   value = 10917214
+MAGDHWS   value = 8433031
+MAGDLB6   value = 3354488
+MAGDLBSR  value = 5467588
+MAGDRA1   value = 7630701
+MAGDRA2   value = 7852272
+MAGDRCU1  value = 8444320
+MAGDRCU2  value = 9677365
+MAGDROUT  value = 5323100
+MAGGNTI   value = 9622527
+MAGGTIA2  value = 7860990
+MAGIPS10  value = 5448905
+MAGSDEL2  value = 7540929
+MAGSDHCP  value = 3713231
+ 
+Please note that routine MAGIPS10 will be deleted after the KIDS Build is 
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;36</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-03-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for the Imaging Site Usage reports.
+ 
+Routines:
+MAGDROUT    value = 5343680
+MAGIPS36    value = 4705155
+ 
+Please note that routine MAGIPS36 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;3</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-03-30 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+VistA Imaging Patch 3 - support for long file names.
+ 
+Checksum values:
+ 
+MAGGTU1   value = 3618392
+MAGIPOS3  value = 4950507
+MAGQBPRG  value = 9753805
+MAGUSIT   value = 7097852
+ 
+Please note: Routine MAGIPOS3 is a post install routines that is deleted
+after the KIDS installation is completed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;11</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-05-21 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 11, Test Build 27.
+ 
+Routines:
+MAG7RS      value = 11923364
+MAG7RSD     value = 5995508
+MAG7RSO     value = 4178690
+MAG7RSR     value = 4411159
+MAG7UDR     value = 4129505
+MAG7UFO     value = 3674965
+MAG7UM      value = 8130703
+MAG7UP      value = 11171313
+MAGBRTE3    value = 5833319
+MAGBRTE4    value = 14663489
+MAGBRTE5    value = 12248946
+MAGBRTLD    value = 6114349
+MAGBRTUT    value = 6312859
+MAGDAUDR    value = 6872220
+MAGDCCS     value = 14263908
+MAGDCCS2    value = 6323959
+MAGDCCS3    value = 4054715
+MAGDCCSD    value = 5138399
+MAGDCCSS    value = 7793439
+MAGDFB      value = 2768480
+MAGDFCNV    value = 4298417
+MAGDGL      value = 8693119
+MAGDHL7     value = 7588848
+MAGDHRS1    value = 4952354
+MAGDHWS     value = 8397303
+MAGDIR8     value = 4729054
+MAGDIR81    value = 13946127
+MAGDIR82    value = 7689405
+MAGDIR83    value = 7543877
+MAGDIR84    value = 7164900
+MAGDIR85    value = 2900846
+MAGDIR8A    value = 10602838
+MAGDIR9A    value = 10819306
+MAGDIR9B    value = 6837304
+MAGDIR9E    value = 15838144
+MAGDIRVE    value = 15724185
+MAGDLB1     value = 12114206
+MAGDLB12    value = 8451648
+MAGDLB5     value = 4070169
+MAGDLB6     value = 4138192
+MAGDLB9     value = 4846825
+MAGDLBAA    value = 6781952
+MAGDLBSR    value = 7596015
+MAGDRA1     value = 7837939
+MAGDRA2     value = 7852272
+MAGDRCU2    value = 9684070
+MAGDRPC1    value = 8949355
+MAGDRPC2    value = 5509304
+MAGDRPC3    value = 11531835
+MAGDRPC4    value = 15375596
+MAGDRPC5    value = 15154889
+MAGDRPC6    value = 9417357
+MAGDRPC7    value = 8750764
+MAGDRPC8    value = 10609976
+MAGDRTIM    value = 7583708
+MAGENV11    value = 3658957
+MAGIPS11    value = 4684033
+MAGJRT      value = 12927055
+MAGXMA      value = 3165496
+ 
+Please note that routine MAGIPS11 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;29</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-05-21 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for the Imaging Site Usage reports.
+ 
+Routines:
+MAGIPS29    value = 7704207
+MAGQE1      value = 4787344
+MAGQE2      value = 6460721
+MAGQE3      value = 15683461
+MAGQE4      value = 5655117
+MAGQE5      value = 10424133
+MAGQST      value = 4955242
+ 
+Please note that routine MAGIPS29 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;33</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-07-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch addresses permissions issues with Windows 2000 and XP.  All
+modifications to the sofware are in the GUI application that is installed
+on the workstation.  The KIDS package is distributed only for updating
+the package file and tracking the installation nationally. 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;15</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-09-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch enhances the import API capabilities.  
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;40</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-09-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 40, Test Build 2.
+ 
+Routines:
+MAG7RS      value = 12193599
+MAGIPS40    value = 4705510
+ 
+Please note that routine MAGIPS40 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;8</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-10-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ 
+ 
+Document scanning and image filtering.
+ 
+Routine checksums:
+ 
+MAGBAPI   value = 13283725
+MAGBAPIP  value = 4490136
+MAGFILEB  value = 11644630
+MAGGNLKP  value = 5120114
+MAGGNTI   value = 9823383
+MAGGSCP   value = 6072520
+MAGGSFL1  value = 5952938
+MAGGSFLT  value = 9149177
+MAGGSFT   value = 3683491
+MAGGSIA   value = 6077587
+MAGGSIA1  value = 13485750
+MAGGSIM   value = 5442685
+MAGGSIU1  value = 5521127
+MAGGSIU2  value = 4915214
+MAGGSIU3  value = 8910698
+MAGGSIUI  value = 15004401
+MAGGSIV   value = 15908776
+MAGGSIV1  value = 3907430
+MAGGSPP   value = 5789193
+MAGGSQI   value = 21356895
+MAGGTAU   value = 11244676
+MAGGTERR  value = 3000489
+MAGGTIA   value = 11274455
+MAGGTIA1  value = 7046008
+MAGGTID   value = 10903946
+MAGGTIG   value = 10401360
+MAGGTII   value = 8729176
+MAGGTMC   value = 4890330
+MAGGTPT1  value = 7555501
+MAGGTRAI  value = 9211973
+MAGGTRP1  value = 6078443
+MAGGTRPT  value = 12184290
+MAGGTSR   value = 4904140
+MAGGTU1   value = 4009879
+MAGGTU3   value = 11515909
+MAGGTU4   value = 8596313
+MAGGTU5   value = 4562085
+MAGGTU6   value = 9042947
+MAGGTU7   value = 9742723
+MAGGTU9   value = 8121952
+MAGGTUP   value = 6949357
+MAGIPOS8  value = 10371822
+MAGLOG    value = 4151777
+MAGQBAB   value = 5521638
+MAGQBGCC  value = 5471832
+MAGQBJB   value = 6294131
+MAGQBJH   value = 8678496
+MAGQBPG1  value = 12026245
+MAGQBPG2  value = 7662428
+MAGQBPRG  value = 9927955
+MAGQBTM   value = 14872817
+MAGQBUT   value = 14453966
+MAGQBUT1  value = 16504458
+MAGQBUT2  value = 15657747
+MAGQBUT4  value = 4347014
+MAGQE5    value = 10174225
+MAGSDEL4  value = 2647473
+MAGSDLGR  value = 6841689
+MAGSIMBR  value = 4052881
+MAGSIXG1  value = 11374305
+MAGSIXGT  value = 10338816
+MAGUSIT   value = 6381382
+ 
+Routine MAGIPOS8 is deleted after the KIDS install.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;30</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-11-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 30, Test Build 11.
+ 
+Routines:
+MAG7RS      value = 12193599
+MAGBRTE4    value = 15019760
+MAGBRTE5    value = 12363938
+MAGBRTLD    value = 5665322
+MAGBRTUT    value = 6805146
+MAGDCCS2    value = 6363543
+MAGDHL7     value = 7399823
+MAGDHRS1    value = 5025884
+MAGDIR81    value = 14282136
+MAGDIR82    value = 13464369
+MAGDIR83    value = 7606355
+MAGDIR85    value = 2914037
+MAGDIR9A    value = 10789655
+MAGDIRVE    value = 15732775
+MAGDLB1     value = 11911075
+MAGDRA1     value = 7842219
+MAGDRCU1    value = 8485773
+MAGDRPC1    value = 8395133
+MAGDRPC2    value = 12950501
+MAGDRPC3    value = 11631756
+MAGDRPC4    value = 15201662
+MAGDRPC5    value = 14221287
+MAGDRPC6    value = 11175169
+MAGDRPC8    value = 10596480
+MAGIPS30    value = 4783130
+MAGQE1      value = 4871610
+MAGQE3      value = 15528150
+MAGQE4      value = 5670112
+MAGQE5      value = 10174225
+MAGQST      value = 4967326
+ 
+Please note that routine MAGIPS30 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;5</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-02-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 5, Test Build 2.
+ 
+Routines:
+MAGIPS05    value = 4705522
+ 
+Please note that routine MAGIPS05 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;48</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-03-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch 48 is a maintanence patch for 
+Imaging Display, Imaging Capture, Annotation editor and BP.
+It deals with issues encountered in Alpha testing of Patch 8.
+  
+This will check the routines from a BUILD file.
+Select BUILD NAME:    MAG*3.0*48     IMAGING
+MAGFILEB  value = 11713219
+MAGGSIU3  value = 8945343
+MAGGSIUI  value = 14792968
+MAGGSPP   value = 5796302
+MAGGTIA   value = 11492904
+MAGGTIG   value = 10449383
+MAGGTII   value = 8845764
+MAGGTLB   value = 13369489
+MAGGTRPT  value = 11950157
+MAGGTU3   value = 11723273
+MAGGTU4   value = 8466131
+MAGGTU5   value = 4744682
+MAGGTU6   value = 10108948
+MAGGTUP   value = 6957380
+MAGIPO48  value = 7416703
+MAGQBGCC  value = 5552170
+MAGQBUT   value = 14796199
+MAGQBUT4  value = 4347014
+MAGSIXG1  value = 12432475
+MAGSIXGT  value = 10585881
+done
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;47</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-04-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Imaging API for the Medicine conversion to CP reports
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;63</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-06-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This will check the routines from a BUILD file.
+Select BUILD NAME:    MAG*3.0*63     IMAGING
+MAGGTII   value = 8558917
+MAGGTU4   value = 12651615
+MAGIPS63  value = 5539441
+done
+The following message is displayed to clients 
+!***************************************************************!
+  
+  PATIENT SAFETY NOTIFICATION
+ 
+      Under certain circumstances, the EKG window will not
+refresh properly when you select a new patient in CPRS; 
+instead of showing the new patient, the EKG window will
+continue to show the previous patient. 
+  
+To prevent this problem:
+  
+     Verify that the 'Show MUSE EKGs' option under
+     Options &gt; View Preferences is checked;
+     OR
+     Do not minimize the Imaging Display window while viewing EKGs.
+   
+This problem will be corrected shortly by Imaging Patch 63.
+!***************************************************************!
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;31</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-08-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is MAG*3.0*31T10.
+ 
+Image Index Conversion.
+ 
+MAGIPS31 value =  6638669
+MAGXCVC  value = 12825393
+MAGXCVI  value = 12567821
+MAGXCVI1 value = 11895918
+MAGXCVL  value =  7379304
+MAGXCVP  value =  9864505
+MAGXCVR  value = 16849068
+MAGXCVS  value = 17548265
+MAGXCVX  value =  9257872
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;45</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-10-20 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This will check the routines from a BUILD file.
+Select BUILD NAME:    MAG*3.0*45     IMAGING
+MAGGTU3   value = 12319136
+MAGGTU4   value = 13208753
+MAGGTU6   value = 10490182
+MAGGTUP   value = 7097744
+MAGIPS45  value = 9265985
+done
+Checksums computed with D CHECK^XTSUMBLD
+ 
+This patch is an enhancement to the previous Clinical Display client.  It 
+allows users to connect and retrieve images and associated information 
+from remote sites.  This patch also provides an auto-caching feature that 
+allows the user to request images be brought to their local machine in 
+preparation for viewing.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;78</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-06-08 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Select BUILD NAME:    MAG*3.0*78     IMAGING
+MAGIPS78  value = 9014720
+MAGQE4    value = 12918538
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;51</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-07-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 51, Test Build 22.
+ 
+Routines:
+MAG7UP      value = 11177267
+MAGBRTE3    value = 5833319
+MAGBRTE4    value = 15295929
+MAGBRTE5    value = 10025015
+MAGBRTK     value = 7162000
+MAGBRTLD    value = 7191644
+MAGBRTUT    value = 6881357
+MAGDCCSS    value = 7813577
+MAGDFB      value = 2735520
+MAGDFCNV    value = 4468938
+MAGDGL      value = 8800264
+MAGDGMRC    value = 8586191
+MAGDHWA     value = 13363551
+MAGDHWC     value = 11574745
+MAGDHWS     value = 8385051
+MAGDIR8     value = 4801612
+MAGDIR81    value = 15887244
+MAGDIR82    value = 13699038
+MAGDIR83    value = 8183019
+MAGDIR8A    value = 10596882
+MAGDIR9A    value = 11238086
+MAGDIR9B    value = 6917351
+MAGDIR9E    value = 13785673
+MAGDLB12    value = 8056663
+MAGDLB6     value = 3475437
+MAGDLBAA    value = 6585681
+MAGDLBV     value = 6999551
+MAGDMEDK    value = 3272291
+MAGDMEDL    value = 6755625
+MAGDQR00    value = 2425880
+MAGDQR01    value = 8020820
+MAGDQR02    value = 15665200
+MAGDQR03    value = 9918762
+MAGDQR04    value = 12503040
+MAGDRA2     value = 7860816
+MAGDRCU2    value = 9684614
+MAGDRPC1    value = 11783859
+MAGDRPC2    value = 13189349
+MAGDRPC3    value = 11696591
+MAGDRPC4    value = 16384505
+MAGDRPC5    value = 14689488
+MAGDRPC6    value = 11177465
+MAGDRPC7    value = 8740525
+MAGDRPC8    value = 10596480
+MAGIPS51    value = 9657731
+MAGJEX2     value = 14452837
+MAGUXRF     value = 4648912
+MAGVCHK     value = 7581330
+ 
+Please note that routine MAGIPS51 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;18</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-07-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+VistARad Patch 18 software.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;61</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-07-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Imaging v3.0 Patch 61. VistA Imaging Index Term Maintenance
+This patch is to provide the utility that will automatically 
+update the Imaging Index Files at all sites by processing a VistA 
+menu option. The Option will install updates to the Index Files that have
+been sent via a MailMan message.  All updates installed will have been
+approved by the VistA Imaging Index Term Review Board.
+ 
+Checksums calculated with CHECK^XTSUMBLD
+This will check the routines from a BUILD file.
+Select BUILD NAME:    MAG*3.0*61     IMAGING
+MAGIP61A  value = 10598429
+MAGIPO61  value = 18706336
+MAGSIXGT  value = 13741457
+MAGXIDX0  value = 12595354
+MAGXIDXU  value = 21328286
+done
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;20</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-07-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Select BUILD NAME:    MAG*3.0*20     IMAGING
+MAGBAPI   value = 74386027
+MAGBAPIP  value = 8622481
+MAGDIR82  value = 62866214
+MAGDLB12  value = 22838427
+MAGGSIUI  value = 60693392
+MAGGSIV   value = 38730975
+MAGGSIV1  value = 21788454
+MAGGTU3   value = 61285454
+MAGGTU6   value = 64383471
+MAGGTU7   value = 22552210
+MAGIPS20  value = 26957915
+MAGIPT20  value = 70909996
+MAGLOG    value = 6935907
+MAGQBAB   value = 10838980
+MAGQBD    value = 7129737
+MAGQBGCC  value = 11208984
+MAGQBIM   value = 7456958
+MAGQBJB   value = 18032148
+MAGQBJH   value = 24339395
+MAGQBJHR  value = 14061671
+MAGQBPG1  value = 74002571
+MAGQBPG2  value = 20522184
+MAGQBPRG  value = 57111603
+MAGQBTM   value = 79154449
+MAGQBUT   value = 78801561
+MAGQBUT1  value = 75489141
+MAGQBUT2  value = 73670919
+MAGQBUT4  value = 78268087
+MAGQBUT5  value = 13804118
+MAGQE1    value = 11840891
+MAGQE2    value = 17337879
+MAGQE3    value = 75394836
+MAGQE5    value = 48023547
+MAGUSIT   value = 17597745
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;50</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-08-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 50, Test Build 31.
+ 
+Routines:
+MAGBRTUT    value = 6909436
+MAGDGMRC    value = 8627087
+MAGDHWA     value = 13381903
+MAGDIR81    value = 15986378
+MAGDIR9B    value = 6944410
+MAGDRPC1    value = 11246032
+MAGDRPC2    value = 13362997
+MAGDRPC3    value = 14213495
+MAGDRPC4    value = 17119065
+MAGDRPC9    value = 9264716
+MAGGTIA2    value = 7600790
+MAGIPS50    value = 7277874
+ 
+Please note that routine MAGIPS50 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;52</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-09-23 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 52, Test Build 16.
+ 
+Routines:
+MAGIPS52    value = 4705533
+ 
+Please note that routine MAGIPS52 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;84</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-07-22 15:48:54</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 84, Test Build 1.
+ 
+Routines:
+MAGDHWS     value = 8664784
+MAGIPS84    value = 5182345
+ 
+Please note that routine MAGIPS84 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;77</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-07-22 15:50:24</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 77, Test Build 7.
+ 
+Routines:
+MAGENV77    value = 7864063
+MAGIPS77    value = 5564319
+ 
+Please note that routine MAGIPS77 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;46</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-07-22 15:53:39</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 46, Test Build 28.
+ 
+Routines:
+MAGDHRC0    value = 4285870
+MAGDHWC     value = 12104444
+MAGDIR81    value = 16164949
+MAGDIR9A    value = 11384181
+MAGDIR9E    value = 14829187
+MAGDTR01    value = 10072315
+MAGDTR02    value = 11542794
+MAGDTR03    value = 17747636
+MAGDTR04    value = 8324327
+MAGDTR05    value = 12647049
+MAGDTR06    value = 10053102
+MAGDTRDX    value = 8254807
+MAGDTRLU    value = 7439670
+MAGGNLKP    value = 6081621
+MAGGNTI1    value = 11025078
+MAGGNTI2    value = 7904476
+MAGGNTI3    value = 5195830
+MAGGTPT1    value = 8609100
+MAGGTU3     value = 12647741
+MAGGTU31    value = 6267048
+MAGGTU4     value = 9595917
+MAGGTU41    value = 10672702
+MAGGTU6     value = 11306571
+MAGGTU71    value = 6245772
+MAGIPS46    value = 9488645
+MAGQE3      value = 15888752
+MAGQE5      value = 13158187
+MAGQE6      value = 5946318
+ 
+Please note that routine MAGIPS46 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;65</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-07-22 15:55:08</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+VistARad Patch 65
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;86</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-07-22 15:56:26</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 86, Test Build 4.
+ 
+Routines:
+MAGDHL7     value = 7016595
+MAGDHW0     value = 4187105
+MAGIPS86    value = 5183006
+ 
+Please note that routine MAGIPS86 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;85</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-07-22 15:57:25</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 85, Test Build 5.
+ 
+Routines:
+MAGBRTE4    value = 15548436
+MAGBRTE5    value = 10484128
+MAGBRTUT    value = 10369180
+MAGDCCS     value = 14379289
+MAGDGMRC    value = 8758583
+MAGDHWS     value = 8766948
+MAGDRPC3    value = 14580986
+MAGDRPC5    value = 14944486
+MAGGSIA1    value = 13865284
+MAGGSIU2    value = 9527311
+MAGGSIUI    value = 12223625
+MAGGTU1     value = 4211501
+MAGIPS85    value = 5272602
+ 
+Please note that routine MAGIPS85 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;81</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-07-22 15:59:57</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Select BUILD NAME:    MAG*3.0*81     IMAGING
+MAGIP81   value = 4894048
+MAGQBPG1  value = 76244753
+MAGQBPRG  value = 57300845
+MAGQBTM   value = 79858508
+MAGQBUT1  value = 76309021
+MAGQBUT2  value = 55361113
+MAGQBUT4  value = 78049028
+MAGQBUT5  value = 15869460
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;69</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-07-22 16:00:42</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 69, Test Build 34.
+ 
+Routines:
+MAGIPS69    value = 5182371
+ 
+Please note that routine MAGIPS69 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;76</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-07-24 09:38:33</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+VistARad patch 76
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;59</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-07-24 09:42:43</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This will check the routines from a BUILD file.
+Select BUILD NAME:    MAG*3.0*59     IMAGING
+MAGBAPIP  value = 9049823
+MAGGNLKP  value = 14546243
+MAGGNTI   value = 37673155
+MAGGNTI1  value = 44242412
+MAGGNTI2  value = 21199592
+MAGGNTI3  value = 11336428
+MAGGSIA   value = 37580788
+MAGGSIA1  value = 40441705
+MAGGSIU2  value = 19991293
+MAGGSIUI  value = 44173317
+MAGGSIV   value = 39311019
+MAGGSIV1  value = 22249629
+MAGGTAU   value = 53570032
+MAGGTERR  value = 6185941
+MAGGTIA1  value = 34754160
+MAGGTID   value = 44603396
+MAGGTII   value = 43921962
+MAGGTLB1  value = 24325063
+MAGGTMC1  value = 10841224
+MAGGTPT1  value = 32058249
+MAGGTRA   value = 11950621
+MAGGTSR   value = 18209701
+MAGGTSR1  value = 6582516
+MAGGTSY2  value = 5995567
+MAGGTSYS  value = 11307252
+MAGGTU1   value = 7410851
+MAGGTU3   value = 33146590
+MAGGTU31  value = 37368094
+MAGGTU4   value = 39449032
+MAGGTU41  value = 29145844
+MAGGTU6   value = 48411406
+MAGGTU71  value = 12408880
+MAGGTU9   value = 41693963
+MAGGTUP   value = 22068923
+MAGGTUX   value = 84671980
+MAGGTUX1  value = 47937341
+MAGGTUX2  value = 16893557
+MAGGTUX3  value = 20033133
+MAGIPS59  value = 30034575
+MAGLOG    value = 8166700
+MAGSIXG1  value = 48513335
+MAGSIXGT  value = 67629374
+done
+ 
+TIU Enhancements patch.
+Adds functionality to Capture Application that will allow user to: 
+Create a New TIU Note
+Create an Addendum to an existing signed TIU Note.
+Set the status of the new note/addendum to
+ - unsigned
+ - administrative closure
+ - Signed.
+  
+Displays the Note Title from the TIU Document file (8925) in the
+  Image List Window of Imaging Display, this assures 
+display of the current Note title because Note Titles sometimes change.
+  
+Imaging Display
+ - Stops users that do not have an Imaging Display security from signing 
+on to Imaging Display. User needs either MAGDISP CLIN or
+MAGDISP ADMIN or both.
+  
+Imaging Capture
+Automatically generates Index Values for new Images that do not have 
+index values as input data.  This happens when Applications using the 
+Import API or Imaging Capture Client versions prior to version 3.0.8
+Index Term Fix:
+Iterate through the entire Image Global and Fix the Index Terms if
+Type Index is missing.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;96</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-07-24 09:45:47</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+VistA Imaging patch 96 - CCOW tag for VistAWeb and update for sensitive 
+patient dialog.
+ 
+Select BUILD NAME:    MAG*3.0*96     IMAGING
+MAGGTU4   value = 40765395
+MAGIPS96  value = 5627154
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;72</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-23 10:53:28</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 72, Test Build 30.
+ 
+Routines:
+MAGGTLB     value = 13513235
+MAGGTSR     value = 8087923
+MAGGTU4     value = 9896091
+MAGGTU6     value = 11332297
+MAGIPS72    value = 5934151
+ 
+Please note that routine MAGIPS72 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;75</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-21 14:49:31</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 75, Test Build 13.
+ 
+Routines:
+MAGIPS75    value = 4828235
+ 
+Please note that routine MAGIPS75 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;102</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-21 16:14:39</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 102, Test Build 2.
+ 
+Routines:
+MAGIP102    value = 4827958
+ 
+Please note that routine MAGIP102 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;95</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-21 16:34:25</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+MUSE EKG maintenance
+   
+This will check the routines from a BUILD file.
+Select BUILD NAME:    MAG*3.0*95     IMAGING
+MAGGTU4   value = 40789937
+MAGIPS95  value = 12175146
+ 
+done
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;103</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-23 11:15:14</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 103, Test Build 2.
+ 
+Routines:
+MAGIP103    value = 4827966
+ 
+Please note that routine MAGIP103 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;54 SEQ #60 - 07/03/2009 16:41PM  ;Created on Jul 03, 2009@16:41:38</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-10-29 16:56:34</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 54, Test Build 40.
+ 
+Routines:
+MAG7UM      value = 8243232
+MAGBRTE4    value = 15309819
+MAGBRTE5    value = 11533293
+MAGBRTUT    value = 10523100
+MAGDCCS     value = 14420572
+MAGDCCS2    value = 6833559
+MAGDCCU1    value = 8041167
+MAGDHL7     value = 7011790
+MAGDHLE     value = 4675728
+MAGDHRC0    value = 4527100
+MAGDHWC     value = 12121799
+MAGDHWS     value = 8776710
+MAGDIR8     value = 5249219
+MAGDIR81    value = 16249703
+MAGDIR82    value = 13986318
+MAGDIR83    value = 8305683
+MAGDIR84    value = 7051552
+MAGDIR9A    value = 11702546
+MAGDIR9B    value = 7619455
+MAGDIR9E    value = 14977047
+MAGDIRVE    value = 15724398
+MAGDLB1     value = 12075022
+MAGDLBAA    value = 6712810
+MAGDMEDL    value = 6951528
+MAGDQR00    value = 2548544
+MAGDQR01    value = 11135896
+MAGDQR02    value = 14306691
+MAGDQR03    value = 17339843
+MAGDQR04    value = 14824047
+MAGDQR05    value = 10792454
+MAGDQR06    value = 7405913
+MAGDQR07    value = 10362545
+MAGDQR08    value = 8854962
+MAGDRA2     value = 7976145
+MAGDRCU1    value = 8596186
+MAGDRCU2    value = 9821221
+MAGDRPC1    value = 9674272
+MAGDRPC2    value = 13440631
+MAGDRPC3    value = 14608057
+MAGDRPC4    value = 17974720
+MAGDRPC5    value = 15092525
+MAGDRPC6    value = 11312515
+MAGDRPC7    value = 9459019
+MAGDRPC8    value = 11952944
+MAGDRPC9    value = 11126815
+MAGDRUID    value = 2900467
+MAGDTR02    value = 11542094
+MAGDTR03    value = 17495982
+MAGDTR05    value = 12670562
+MAGDTR06    value = 10445490
+MAGDUID3    value = 3204144
+MAGENCHK    value = 3430893
+MAGIPS54    value = 11466893
+MAGUE001    value = 4780297
+MAGUE002    value = 3962070
+MAGUE003    value = 2916905
+MAGVCHK     value = 8124399
+MAGXCVC     value = 12902535
+MAGXCVI     value = 12650053
+MAGXCVP     value = 10064211
+MAGXCVR     value = 16926210
+MAGXCVS     value = 18315672
+MAGXIDXU    value = 21366591
+ 
+Please note that routine MAGIPS54 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;101</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-02-11 13:13:40</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+VistARad patch 101
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;93</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-02-11 13:14:22</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Code for the Clinical Display and Capture.
+ 
+ 
+Routines:
+ 
+MAGGA01   value = 29307935
+MAGGA02   value = 57822621
+MAGGA02A  value = 40367747
+MAGGA03   value = 45753507
+MAGGA03A  value = 24276061
+MAGGA03U  value = 15820919
+MAGGA04   value = 10448835
+MAGGAII   value = 118384476
+MAGGI11   value = 19558450
+MAGGI12   value = 30285951
+MAGGI13   value = 36748899
+MAGGI14   value = 39084079
+MAGGNTI   value = 37753394
+MAGGSFL1  value = 17534133
+MAGGSFLT  value = 33107414
+MAGGSIA   value = 34720134
+MAGGSIA1  value = 40524442
+MAGGSQI   value = 71964647
+MAGGTAU   value = 66867957
+MAGGTIA1  value = 33003499
+MAGGTID   value = 47456559
+MAGGTIG   value = 58640406
+MAGGTPT1  value = 37889156
+MAGGTRAI  value = 29892001
+MAGGTRPT  value = 43638944
+MAGGTSYS  value = 11574384
+MAGGTU3   value = 34334075
+MAGGTU31  value = 41847617
+MAGGTU4   value = 53401008
+MAGGTU41  value = 22378971
+MAGGTU42  value = 89107061
+MAGGTU4C  value = 5489850
+MAGGTU4D  value = 5495655
+MAGGTU4L  value = 4501110
+MAGGTU4T  value = 5490003
+MAGGTU6   value = 51862098
+MAGGTU7   value = 23284378
+MAGGTUP   value = 23999096
+MAGGTUX   value = 85905158
+MAGIPS93  value = 176674164
+MAGKIDS   value = 30231662
+MAGKIDS1  value = 40480221
+MAGSIXG1  value = 36487191
+MAGSIXG2  value = 63440737
+MAGSIXG3  value = 65195475
+MAGSIXG4  value = 12614135
+MAGUERR   value = 24572740
+MAGUERR1  value = 25613179
+MAGUTL01  value = 28612084
+MAGUTL02  value = 48311130
+MAGUTL03  value = 11647866
+MAGUTL04  value = 23169366
+MAGUTL05  value = 18410909
+MAGUTL06  value = 18816077
+MAGUTL07  value = 22761121
+MAGUTL08  value = 26051030
+MAGUTL10  value = 8165500
+MAGUXRF   value = 41195502
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;111</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-05-07 09:04:41</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 111, Test Build 2.
+ 
+Routines:
+MAGIP111    value = 4459800
+MAGS2BSE    value = 2910061
+ 
+Please note that routine MAGIP111 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;83</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-06-28 16:05:23</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 83, Test Build 34.
+ 
+Routines:
+MAGDQR21    value = 20769614
+MAGGTII     value = 9489602
+MAGIPS83    value = 6840204
+MAGLOG      value = 5040605
+ 
+Please note that routine MAGIPS83 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;108</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-08-23 11:43:16</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 108, Test Build 4.
+ 
+Routines:
+MAGGNTI     value = 16297431
+MAGGSIU1    value = 5727576
+MAGGSIU2    value = 15503269
+MAGGSIUI    value = 14029420
+MAGGSIV     value = 16492919
+MAGIP108    value = 6746401
+MAGNVIC     value = 3535084
+MAGSIXGT    value = 14416655
+ 
+Please note that routine MAGIP108 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;90</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-08-30 15:28:51</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 90, Test Build 9.
+ 
+Routines:
+MAGGTU41    value = 5443844
+MAGJLS2     value = 25461554
+MAGJLS2B    value = 20391246
+MAGJLS3     value = 18365062
+MAGJLST1    value = 16179057
+MAGJMN1     value = 18586606
+MAGJTU4V    value = 3478059
+MAGJUTL3    value = 19746308
+MAGJUTL4    value = 21177891
+MAGJUTL5    value = 15130172
+MAGJVAPI    value = 5546355
+MAGS2BSE    value = 2835335
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;53</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-09-02 12:46:25</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 53, Test Build 29.
+ 
+Routines:
+MAGBRTK     value = 7352676
+MAGDAIRF    value = 8123428
+MAGDAIRG    value = 10868841
+MAGDIR81    value = 17308670
+MAGDIR8R    value = 11763503
+MAGDIR9A    value = 11731498
+MAGDIR9B    value = 7655058
+MAGDLBAA    value = 8068461
+MAGDRPC9    value = 13044987
+MAGDRPCA    value = 17799839
+MAGDRPCB    value = 19465055
+MAGIPS53    value = 5286805
+ 
+Please note that routine MAGIPS53 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;94</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-09-21 15:08:14</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 94, Test Build 12.
+ 
+Routines:
+MAGGAII     value = 14524600
+MAGGI12     value = 7084999
+MAGGSFT     value = 4413235
+MAGGTU4     value = 10296457
+MAGGTU42    value = 16116783
+MAGGTU4C    value = 3409937
+MAGGTU4D    value = 3409945
+MAGGTU4L    value = 3410009
+MAGGTU4T    value = 3410073
+MAGGTUP     value = 7812293
+MAGIPS94    value = 4941586
+ 
+Please note that routine MAGIPS94 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;114</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-10-05 14:24:48</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 114, Test Build 11.
+ 
+Routines:
+MAGDDR      value = 2636969
+MAGIP114    value = 7030232
+MAGNTLR2    value = 8297941
+MAGNTLRS    value = 20095042
+ 
+Please note that routine MAGIP114 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;66</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-11-30 15:06:42</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 66, Test Build 71.
+ 
+Routines:
+MAGDQR01    value = 11855515
+MAGDQR02    value = 14336295
+MAGDQR03    value = 18389209
+MAGDQR04    value = 15180168
+MAGDQR06    value = 7032267
+MAGIPS66    value = 6107571
+ 
+Please note that routine MAGIPS66 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;105</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-01-06 11:22:10</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 105, Test Build 14.
+ 
+Routines:
+MAGIP105    value = 4466156
+ 
+Please note that routine MAGIP105 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;98</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-02-08 09:32:58</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 98, Test Build 24.
+ 
+Routines:
+MAGDOD01    value = 13883245
+MAGGDEV     value = 5858674
+MAGIPS98    value = 2969837
+MAGSDEL5    value = 15686852
+MAGSDOFL    value = 12685934
+MAGSFTCH    value = 38894121
+MAGSHEC     value = 6865882
+MAGUF       value = 5557376
+ 
+Please note that routine MAGIPS98 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;115</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-03-11 10:10:47</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 115, Test Build 4.
+ 
+Routines:
+MAGJEX1     value = 25703195
+MAGJMN1     value = 19116251
+MAGJPRF1    value = 22808620
+MAGJTU4V    value = 3477480
+MAGJUTL5    value = 15135475
+MAGJVAPI    value = 5898333
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;106</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-04-28 16:12:36</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 106, Test Build 13.
+ 
+Routines:
+MAGDHWC     value = 12231552
+MAGGSIA1    value = 13960534
+MAGGTIA     value = 12401847
+MAGGTU4C    value = 3511227
+MAGGTU4D    value = 3511235
+MAGGTU4L    value = 3511299
+MAGGTU4T    value = 3511363
+MAGIP106    value = 3993590
+MAGNDCMC    value = 5330392
+MAGNGMR     value = 13876633
+MAGNTLR3    value = 2994749
+MAGNUID1    value = 6357640
+MAGNUID2    value = 2830351
+MAGUXRF     value = 6191185
+ 
+Please note that routine MAGIP106 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;39</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-05-31 14:39:08</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 39, Test Build 28.
+ 
+Routines:
+MAGBAPI     value = 17337697
+MAGBRTE4    value = 15016927
+MAGFILEB    value = 11899853
+MAGIP39     value = 15355104
+MAGIP39B    value = 33707188
+MAGIP39E    value = 9567529
+MAGLOG      value = 6505482
+MAGQBAB     value = 6248046
+MAGQBD      value = 4804096
+MAGQBGCC    value = 9817430
+MAGQBIM     value = 5640879
+MAGQBJB     value = 7946372
+MAGQBJH     value = 9334687
+MAGQBPG1    value = 17587779
+MAGQBPG2    value = 7742906
+MAGQBPRG    value = 11705676
+MAGQBTM     value = 16348461
+MAGQBU6A    value = 21126520
+MAGQBUT     value = 30554887
+MAGQBUT1    value = 23611991
+MAGQBUT2    value = 17468675
+MAGQBUT4    value = 13069038
+MAGQBUT5    value = 18100543
+MAGQBUT6    value = 29900309
+MAGQCBP     value = 25623703
+MAGQE1      value = 5411143
+MAGQE2      value = 6604569
+MAGQE5      value = 13439984
+MAGQE6      value = 7370203
+MAGQE7      value = 15755110
+ 
+Please note that routine MAGIP39 is deleted after the KIDS Build is
+installed.
+ 
+Please note that routine MAGIP39B is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;49</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-08-23 12:13:23</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 49, Test Build 32.
+ 
+Routines:
+MAG7UCFG    value = 8010888
+MAG7UD      value = 3154695
+MAGDHLE     value = 5022942
+MAGDHLI     value = 3542011
+MAGDHLL     value = 4260332
+MAGDHLS     value = 13291597
+MAGDHLSO    value = 4951039
+MAGDHLSV    value = 15085746
+MAGDHLT     value = 3638769
+MAGDHLTA    value = 7653532
+MAGDHLTC    value = 6732337
+MAGDHPS     value = 10198148
+MAGDHRC0    value = 4547517
+MAGDHW0     value = 4192697
+MAGDHWA     value = 11046156
+MAGDHWR     value = 4356893
+MAGDIR8A    value = 10347815
+MAGDIR8R    value = 11916565
+MAGDIR9A    value = 13157136
+MAGDRA2     value = 8580195
+MAGDRA3     value = 4189221
+MAGDRAHL    value = 4739804
+MAGDRPC1    value = 9912701
+MAGDRPC3    value = 13481361
+MAGDRPC4    value = 14864088
+MAGDRPC9    value = 12920297
+MAGDRUID    value = 2900467
+MAGENV49    value = 4103690
+MAGIPS49    value = 5298688
+ 
+Please note that routine MAGIPS49 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;117</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-08-31 09:57:30</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 117, Test Build 8.
+ 
+Routines:
+MAGGA02     value = 10126913
+MAGGA02A    value = 13686263
+MAGGA03Q    value = 10905306
+MAGGA03U    value = 4998553
+MAGGI13     value = 7845276
+MAGGROI     value = 4826920
+MAGGSIA1    value = 14320770
+MAGGTIA     value = 12826247
+MAGGTIG     value = 11417887
+MAGGTPT1    value = 10179062
+MAGGTRA     value = 6187130
+MAGGTSY2    value = 3755850
+MAGGTSYS    value = 6588238
+MAGGTU3     value = 8835971
+MAGGTU31    value = 13894838
+MAGGTU4C    value = 3412178
+MAGGTU4D    value = 3412186
+MAGGTU4L    value = 3412250
+MAGGTU4T    value = 3412314
+MAGGTU6     value = 11375864
+MAGGTUP     value = 8164993
+MAGGTUX4    value = 5440465
+MAGGUJB     value = 6496246
+MAGIP117    value = 5023042
+MAGSIXG1    value = 7218955
+MAGSIXG3    value = 13563632
+MAGUXDPS    value = 7753193
+ 
+Please note that routine MAGIP117 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;99</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-10-03 14:37:55</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 99, Test Build 14.
+ 
+Routines:
+MAGDIR9A    value = 13157136
+MAGDIR9B    value = 7763588
+MAGDIR9E    value = 15337169
+MAGGTIA     value = 11668616
+MAGIPS99    value = 6388466
+MAGZTEMP1   value = 12826247
+MAGZTEMP2   value = 12401847
+ 
+Please note that routine MAGIPS99 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;104</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-11-04 13:11:23</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 104, Test Build 5.
+ 
+Routines:
+MAGDQR21    value = 22992217
+MAGIP104    value = 3117560
+MAGJEX1     value = 22704581
+MAGJEX1B    value = 9507612
+MAGJUTL2    value = 14194819
+MAGJUTL5    value = 16389058
+ 
+Please note that routine MAGIP104 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;121</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-03-23 12:57:27</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 121, Test Build 2.
+ 
+Routines:
+MAGGSIA1    value = 15138596
+MAGGSIU4    value = 13298331
+MAGGSIU5    value = 8121967
+MAGGSIUI    value = 14513807
+MAGGSIV     value = 16267430
+MAGIP121    value = 3771935
+MAGQBUT4    value = 13069038
+ 
+Please note that routine MAGIP121 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;120</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-08-29 11:54:07</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 120, Test Build 8.
+ 
+Routines:
+MAGJEX1     value = 23534520
+MAGJEX1A    value = 24904344
+MAGJEX2     value = 13889635
+MAGJLS3     value = 18509439
+MAGJLST1    value = 14882477
+MAGJMN1     value = 19373467
+MAGJMN3     value = 3776166
+MAGJRPT     value = 25862262
+MAGJTU4V    value = 3585975
+MAGJUPD1    value = 19589826
+MAGJUTL2    value = 17540135
+MAGJUTL3    value = 20682689
+MAGJUTL4    value = 21304219
+MAGJUTL5    value = 16379041
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;122</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-11-14 17:15:59</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 122, Test Build 15.
+ 
+Routines:
+MAGDRPC1    value = 9975466
+MAGGA03Q    value = 11636461
+MAGGAII     value = 20413618
+MAGGI12     value = 11845551
+MAGGI13     value = 10164161
+MAGGNTI     value = 16354280
+MAGGTPT1    value = 12237253
+MAGGTRPT    value = 11915258
+MAGGTU4C    value = 3512766
+MAGGTU4D    value = 3512774
+MAGGTU4L    value = 3512838
+MAGGTU4T    value = 3512902
+MAGGTUP     value = 8435949
+MAGIP122    value = 4915830
+MAGSANNO    value = 18481118
+MAGSPID     value = 2819774
+ 
+Please note that routine MAGIP122 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;123</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-11-29 14:30:36</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 123, Test Build 7.
+ 
+Routines:
+MAG7RS      value = 13135219
+MAGDCCS     value = 14748319
+MAGDCCS2    value = 7524490
+MAGDCCSD    value = 5307168
+MAGDHLS     value = 14585928
+MAGDIR81    value = 17859818
+MAGDIR8A    value = 10581895
+MAGDLB1     value = 12766001
+MAGDLB12    value = 8198942
+MAGDLB9     value = 4969298
+MAGDLBAA    value = 8118057
+MAGDQR03    value = 18464598
+MAGDQR04    value = 15569898
+MAGDQR21    value = 23288835
+MAGDRA1     value = 8062807
+MAGDRA2     value = 9317212
+MAGDRAHL    value = 4631070
+MAGDRPC3    value = 13904592
+MAGDRPC9    value = 13063850
+MAGDRPCA    value = 18609605
+MAGDTR05    value = 12846226
+MAGIP123    value = 2905275
+MAGSPID     value = 2839275
+ 
+Please note that routine MAGIP123 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;124</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-02-19 12:34:19</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 124, Test Build 9.
+ 
+Routines:
+MAGIP124    value = 4559147
+ 
+Please note that routine MAGIP124 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;127</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-07-25 15:07:07</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 127, Test Build 9.
+ 
+Routines:
+MAGDTR01    value = 10127414
+MAGDTR03    value = 17783950
+MAGDTR04    value = 8787958
+MAGDTR05    value = 14098871
+MAGGTU4T    value = 3613054
+MAGIP127    value = 4678258
+MAGNTLR2    value = 9701399
+MAGNTLR4    value = 4675421
+MAGNTLR5    value = 3700659
+MAGNTLR6    value = 5942558
+MAGNTLRS    value = 18148694
+ 
+Please note that routine MAGIP127 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;34</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-07-31 12:12:01</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 34, Test Build 35.
+ 
+Routines:
+MAGIPS34    value = 2886768
+ 
+Please note that routine MAGIPS34 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;116</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-07-31 12:12:23</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 116, Test Build 35.
+ 
+Routines:
+MAGIP116    value = 2886566
+ 
+Please note that routine MAGIP116 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;118</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-07-31 12:12:57</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 118, Test Build 35.
+ 
+Routines:
+MAGDCCS     value = 14748319
+MAGDGMRC    value = 9330669
+MAGDLB1     value = 12761979
+MAGDLB6     value = 3631343
+MAGDMEDJ    value = 10380972
+MAGDQR00    value = 2610540
+MAGDQR01    value = 10215111
+MAGDQR02    value = 14623747
+MAGDQR03    value = 26241944
+MAGDQR04    value = 22474528
+MAGDQR05    value = 12458785
+MAGDQR06    value = 12808429
+MAGDQR07    value = 3462324
+MAGDQR08    value = 11135227
+MAGDQR09    value = 9701238
+MAGDQR10    value = 5838068
+MAGDQR11    value = 4093753
+MAGDQR12    value = 6766715
+MAGDQR13    value = 10738725
+MAGDQR22    value = 5932725
+MAGDQR23    value = 3787648
+MAGDQR31    value = 5530671
+MAGDQR32    value = 4894421
+MAGDQR71    value = 3683372
+MAGDQR72    value = 4232194
+MAGDQR73    value = 4336726
+MAGDQR74    value = 4916336
+MAGDQRUE    value = 3231286
+MAGDQRUL    value = 5075915
+MAGDRPC8    value = 12088901
+MAGDRPC9    value = 15300257
+MAGDRPCA    value = 18858560
+MAGDRPCB    value = 19610086
+MAGFXQRS    value = 3528617
+MAGGTID     value = 15318885
+MAGIP118    value = 16658406
+MAGJUTL6    value = 5235694
+MAGKIDS1    value = 8496976
+MAGUAUD     value = 3432831
+MAGUE001    value = 5265937
+MAGUE002    value = 4127699
+MAGUE004    value = 2837439
+MAGUE005    value = 2768991
+MAGUFFLA    value = 4780171
+MAGUFFLL    value = 3976859
+MAGUPSE     value = 3173130
+MAGURQRS    value = 3271458
+MAGVAC01    value = 9767703
+MAGVAD01    value = 2734865
+MAGVAD02    value = 4280272
+MAGVAF01    value = 13045577
+MAGVAF02    value = 3488127
+MAGVAF03    value = 19053073
+MAGVAF04    value = 2921702
+MAGVAF05    value = 4899077
+MAGVAG01    value = 2797051
+MAGVAG02    value = 12435913
+MAGVAG03    value = 15139645
+MAGVAG04    value = 14868843
+MAGVAKL1    value = 7388351
+MAGVAQ01    value = 16822050
+MAGVAQ02    value = 10394360
+MAGVAU01    value = 5159205
+MAGVD001    value = 7603789
+MAGVD002    value = 4124064
+MAGVD003    value = 4420661
+MAGVD004    value = 4488582
+MAGVD005    value = 3174483
+MAGVD006    value = 5561142
+MAGVD007    value = 3685164
+MAGVD008    value = 3954473
+MAGVD010    value = 5632336
+MAGVDATE    value = 3369336
+MAGVDGWP    value = 17603694
+MAGVGUID    value = 9565266
+MAGVIM01    value = 30059037
+MAGVIM02    value = 13662782
+MAGVIM03    value = 9162433
+MAGVIM04    value = 11718870
+MAGVIM05    value = 15242382
+MAGVIM06    value = 12862098
+MAGVIM07    value = 15335247
+MAGVIM08    value = 4973894
+MAGVIM09    value = 5293910
+MAGVIM10    value = 8365751
+MAGVORDR    value = 7090722
+MAGVRS01    value = 2771259
+MAGVRS04    value = 2988202
+MAGVRS05    value = 2843603
+MAGVRS06    value = 2963783
+MAGVRS07    value = 3017184
+MAGVRS08    value = 13251433
+MAGVRS09    value = 3304082
+MAGVRS11    value = 2822694
+MAGVRS14    value = 3873307
+MAGVRS15    value = 3427655
+MAGVRS21    value = 2823667
+MAGVRS24    value = 4410330
+MAGVRS31    value = 3079264
+MAGVRS41    value = 30228912
+MAGVRS42    value = 12201505
+MAGVRS43    value = 7578338
+MAGVRS44    value = 13926434
+MAGVRS45    value = 5247038
+MAGVRS46    value = 5857183
+MAGVRS51    value = 18061747
+MAGVRS52    value = 9106742
+MAGVRS61    value = 17820732
+MAGVRS71    value = 3184401
+MAGVRS81    value = 8694832
+MAGVRS82    value = 7085769
+MAGVSOPC    value = 4221335
+MAGVSOPU    value = 48817298
+MAGVSTDY    value = 3494166
+MAGVUID     value = 16416361
+MAGVUID1    value = 3192862
+ 
+Please note that routine MAGIP118 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;119</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-07-31 12:13:14</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 119, Test Build 4.
+ 
+Routines:
+MAGDQR20    value = 15221835
+MAGDQR21    value = 23569984
+MAGGDEV    value = 5937314
+MAGGTUX5    value = 3577043
+MAGIP119    value = 3152330
+ 
+Please note that routine MAGIP119 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;129</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-08-20 16:58:36</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 129, Test Build 18.
+ 
+Routines:
+MAGGNTI    value = 16501984
+MAGGTU4C    value = 3613451
+MAGIP129    value = 2888745
+ 
+Please note that routine MAGIP129 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;140</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-09-04 16:51:56</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 140
+ 
+Routines:
+MAGIP140    value = 13676169
+MAGGTU4C    value = 5540791
+ 
+Please note that routine MAGIP140 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;131</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-09-30 10:18:33</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 131,
+ 
+Routines:
+MAGIP131    value = 3414337
+MAGGTU4D    value = 5508411
+MAGGTPT1    value = 59311646
+ 
+Please note that routine MAGIP131 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;133</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-10-22 14:42:26</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 133, Test Build 3.
+ 
+Routines:
+MAGJEX1    value = 73078692
+MAGJMN1    value = 98640707
+MAGJRPT    value = 103626332
+MAGJTU4V    value = 5405270
+MAGJUPD1    value = 64000428
+MAGJUTL1    value = 71279028
+MAGJUTL3    value = 139481284
+MAGJUTL5    value = 38140374
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;135</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-10-29 15:30:39</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routines for Patch 135, Test Build 10.
+ 
+Routines:
+MAGBRTE4    value = 15105909
+MAGGSIU4    value = 13652811
+MAGGSIU5    value = 8305153
+MAGIP135    value = 7151218
+MAGQBPG1    value = 22947623
+MAGQBPG2    value = 7983035
+MAGQBPRG    value = 12188271
+MAGQBTM     value = 16822600
+MAGQBUT1    value = 23584558
+MAGQBUT4    value = 13069038
+MAGQE3      value = 15906384
+MAGSDOFF    value = 11766065
+MAGSDOFL    value = 13348358
+ 
+Please note that routine MAGIP135 is deleted after the KIDS Build is
+installed.
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

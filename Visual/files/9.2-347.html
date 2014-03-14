@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTM0Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XDR MERGE VERIFIED DUPLICATES (347) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTM0Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XDR MERGE VERIFIED DUPLICATES</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>MERGE READY TO MERGE VERIFIED DUPLICATES</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+This option is used to merge all duplicate pairs for a selected
+file that have a merge status of Ready to Merge and a status of
+Verified Duplicates.
+ 
+These are duplicate pairs that were not merged during the
+verification process due to interactive package merges that
+needed to occur before the main merge could occur.
+ 
+The style of merge (Interactive versus Non-Interactive) will be
+determined by the Merge Style field in the Duplicate Resolution file.
+ 
+This process will begin with a double check through the package file
+looking to see if any new packages that affect this file merge have
+been added and if any of the packages that previously did not have
+record data now do.  If any new packages have been added and they
+contain record data and have an interactive merge process, the
+Merge Status field will be reset to Not Ready to Merge and the [MERGE]
+process will not be started.
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;MERGE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-339.html">XDR MERGE PROCESS</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1991-06-24 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,57 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS00MDQuNTk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TEAM POSITION HISTORY (404.59) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS00MDQuNTk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TEAM POSITION HISTORY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is the log file of the statuses of the team positions.  Primarily,
+this is used to determine if a position is active for a certain time
+period.
+Sites are NOT allowed to edit the structure of this file.  Making any 
+kind of revision to this file may result in a faulty performance of the
+Primary Care Management Software or other DHCP software that uses this 
+file.  Updates to this file should only be done as a result of an 
+official patch to the Scheduling Module.
+ 
+Sites are NOT allowed to edit this file's fields via FileMan, without 
+the direction of DHCP Customer Support.  Deleting, changing, or adding 
+entries to this file may result in faulty performance of the Primary 
+Care Management Software or other DHCP software that uses this file.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

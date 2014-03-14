@@ -1,0 +1,127 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RAD/NUC MED PROCEDURES (71) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RAD/NUC MED PROCEDURES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains all the procedures that may be associated with an
+imaging exam.  The entries in this file are the allowable choices the user
+will be able to pick from at the procedure prompt. This prompt appears as
+part of the 'Register', 'Case No. Edit' and the 'Exam Status Tracking'
+functions of the module.
+ 
+If the procedure has an inactivation date less than the current date
+then the procedure is not a valid choice and will not appear on the
+list of valid/active procedures when displayed to the user.
+ 
+Once this software is in production, you should never delete any entries.
+Entries can be deactivated by entering an 'inactivation' date for the
+entry. Adding new entries is always allowed.
+ 
+ 
+ Data Storage
+ ------------
+The data for the 'RAD/NUC MED PROCEDURES' file is stored in the ^RAMIS(71,
+global. At the present time this file is very static after day-one
+initialization is complete.  However, it still should be journaled.
+It should also be translated if the operating system supports this function.
+ 
+ Input Templates
+ ---------------
+ The following is a list of input templates used by the package
+ and the entry in the OPTIONS file (#19) that uses the template:
+ 
+ Name                 Routine            Description; Option(s)
+                     Compiled
+ ____                ________            ____________
+ RA PROCEDURE EDIT             Use to enter/edit procedure to the file;
+ 
+If any modifications to this input template are needed for local
+purposes, then great care should be taken not to degrade any branching logic
+in the template.
+ 
+ Print Templates
+ ---------------
+ The following is a list of print templates used by the package:
+ 
+ Name                         Description; Option(s)
+ ____                         ______________________
+ RA ALPHA LIST OF ACTIVES     Prints a listing of procedures and used with
+                              the ALPHA LIST OF ACTIVES sort template to
+                              list only 'active' procedures;
+                              RA ALPHALIST
+ 
+ RA PROCEDURE LIST            Prints a 'long' listing of procedures;
+                              RA PROCLONG, RA INACPRCLONG, RA PROCSERIES
+ 
+ RA PROCEDURE SHORT LIST      Prints a 'short' listing of procedures;
+                              RA PROCSHORT, RA INACPRCSHORT
+ 
+ Sort Templates
+ --------------
+ The following is a list of sort templates used by the package:
+ 
+ Name                         Related Print Template
+ ----                         ----------------------
+ RA ALPHA LIST OF ACTIVES     ALPHA LIST OF ACTIVES
+ 
+ RA PROCEDURES BY             PROCEDURE LIST
+ AMIS CODES
+ 
+ RA SERIES ONLY               PROCEDURE LIST
+ 
+ The modification of any sort templates is not recommended.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;RA</dt>
+</li>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;GMTS</dt>
+</li>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;PXRM</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

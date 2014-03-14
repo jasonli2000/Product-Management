@@ -1,0 +1,115 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC0xMjQ4").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MPIF EXT PDAT REMOTE (1248) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC0xMjQ4" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MPIF EXT PDAT REMOTE</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>PATINFO</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_MPIFEXT2.html">MPIFEXT2</a></td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>ARRAY</td>
+</tr>
+<tr>
+<td>AVAILABILITY</td>
+<td>SUBSCRIPTION</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>1</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Extended PDAT call remote.  ICN or SSN can be passed.
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;ICN</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;16</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ICN for patient requesting data on.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;SSN</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;9</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+SSN for patient data to be returned on.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;RPC</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;1</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;EXIST</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;1</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;5</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+If there is no value or 0 is passed, then a new request for data should 
+be made.  If there is a 1 passed, then if there is an existing request in 
+the ^XTMP("MPIF EXT PDAT",ICN/SSN,SITE) global, then that request should 
+be used to return the data -- request had already been made.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

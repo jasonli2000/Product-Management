@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NS0xNQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>HAWAII (15) &nbsp;&nbsp;  STATE (5)</h1>
+<div id="demo"><table id="NS0xNQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>HAWAII</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>HI</td>
+</tr>
+<tr>
+<td>VA STATE CODE</td>
+<td>15</td>
+</tr>
+<tr>
+<td>AAC RECOGNIZED</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>US STATE OR POSSESSION</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>COUNTY</td>
+<td>
+<ol>
+<li>
+<dt>COUNTY:  &nbsp;&nbsp;HAWAII</dt>
+<dt>VA COUNTY CODE:  &nbsp;&nbsp;001</dt>
+</li>
+<li>
+<dt>COUNTY:  &nbsp;&nbsp;KALAWAO</dt>
+<dt>VA COUNTY CODE:  &nbsp;&nbsp;005</dt>
+</li>
+<li>
+<dt>COUNTY:  &nbsp;&nbsp;MAUI</dt>
+<dt>VA COUNTY CODE:  &nbsp;&nbsp;009</dt>
+</li>
+<li>
+<dt>COUNTY:  &nbsp;&nbsp;HONOLULU</dt>
+<dt>VA COUNTY CODE:  &nbsp;&nbsp;003</dt>
+</li>
+<li>
+<dt>COUNTY:  &nbsp;&nbsp;KAUAI</dt>
+<dt>VA COUNTY CODE:  &nbsp;&nbsp;007</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

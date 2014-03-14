@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzEyMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>HBHC EDIT SYSTEM PARAMETERS (7122) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzEyMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>HBHC EDIT SYSTEM PARAMETERS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>System Parameters Edit</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SYSTEM PARAMETERS EDIT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows entering/editing of the system parameters in the
+HBHC System Parameters file (631.9).
+ 
+The parameter Number of Visit Days to Scan is used by the system as
+a starting point of how many days to include when records are being
+created in the HBHC Visit File (HBHC(632)) using the appointment data
+entered via the Appointment Management [HBHC APPOINTMENT] option.  This
+parameter must be a number between 7 and 365 inclusive, but as a rule,
+the lowest number that accurately reflects the appointment data 
+timeliness should be entered  (e.g. if appointments are entered daily,
+then 7 would be appropriate).
+ 
+All other System Parameter fields are uneditable.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_HBHCEDSP.html">HBHCEDSP</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-01-06 09:03:04</td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>2002-11-06 15:13:32</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

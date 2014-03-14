@@ -1,0 +1,58 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTk0LjUtNDE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>BARCODE FOR BORROWER (41) &nbsp;&nbsp;  LABEL PRINT FIELD (194.5)</h1>
+<div id="demo"><table id="MTk0LjUtNDE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PRINT FIELD</td>
+<td>BARCODE FOR BORROWER</td>
+</tr>
+<tr>
+<td>TYPE OF LABEL</td>
+<td>BORROWER</td>
+</tr>
+<tr>
+<td>TEST VALUE</td>
+<td>6/234</td>
+</tr>
+<tr>
+<td>INTERNAL VARIABLE</td>
+<td>RTV(41)</td>
+</tr>
+<tr>
+<td>BARCODED FIELD</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MUMPS CODE TO SET VARIABLE</td>
+<td>S RTV(41)="??" I @("$D(^"_$P($P(RT0,"^"),";",2)_"0))") S RTV(41)=+$P(^(0),"^",2)_"/"_+RT0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

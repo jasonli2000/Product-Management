@@ -1,0 +1,103 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA5Njk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VBEC POST-CONVERSION UTILITIES (10969) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA5Njk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VBEC POST-CONVERSION UTILITIES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Utilities used after the data conversion has run</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>UTILITIES USED AFTER THE DATA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu contains options that should be run after the data conversion
+has successfully completed. They can also be used to test the data 
+conversion repeatedly prior to running it in a production account.  These 
+options perform clean-up functions, such as deleting data in temporary 
+files used to stage the conversion data prior to writing it out to host 
+system files, and deleting the host system files.  If running in test 
+mode, the option to enable VistA Blood Bank options can be run to make 
+the options accessible to users again after the data conversion is run.  
+If running on a production system, the option to enable VistA Blood Bank 
+options should NOT be run after the data conversion because users should 
+never be allowed to enter data on the VistA Blood Bank system after the 
+production data conversion is run.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-10946.html">VBEC DELETE EXTRACTED DATA</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-10966.html">VBEC BB COMPONENTS ENABLE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-10965.html">VBEC BB COMPONENTS DISABLE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-10947.html">VBEC DELETE SYSTEM LEVEL FILES</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-10972.html">VBEC DELETE CONV. STATS</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;HIST</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-10973.html">VBEC DATA CONVERSION STATS</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;STAT</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2009-06-09 15:33:12</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

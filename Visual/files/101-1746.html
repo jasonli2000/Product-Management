@@ -1,0 +1,125 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE3NDY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU REVIEW SCREEN MENU (1746) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE3NDY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU REVIEW SCREEN MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Screen</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu type option is used for selecting the Review Screen for
+documents.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1747.html">TIU REVIEW BY AUTHOR</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AU</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1748.html">TIU REVIEW BY PATIENT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PT</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1749.html">TIU REVIEW BY RESP PROVIDER</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AT</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1752.html">TIU REVIEW BY TREATING SPECIALTY</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SP</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1750.html">TIU REVIEW BY TRANSCRIPTIONIST</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;TS</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;7</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1751.html">TIU REVIEW BY ALL CATEGORIES</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;ALL</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1804.html">TIU REVIEW BY SUBJECT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SUB</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;6</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1805.html">TIU REVIEW BY SERVICE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SVC</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;7</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I 1 X:$O(^ORD(101,+$P(^ORD(101,DA(1),10,DA,0),"^"),24)) ^(24)</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>40</td>
+</tr>
+<tr>
+<td>PATH SWITCH</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1997-10-06 10:20:16</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

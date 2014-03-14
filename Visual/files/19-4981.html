@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDk4MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>NURQA-PT-RAT (4981) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDk4MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>NURQA-PT-RAT</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>QI Summary Rationale File</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>QI SUMMARY RATIONALE FILE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the user to enter/edit entries in the NURQ Rationale
+(217.2) file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-106.html">NURSING SERVICE</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>Q</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>I $$SURGENVR^<a href="http://code.osehra.org/dox/Routine_NURQUTL1.html">NURQUTL1</a>(2,1) N DA,DIC,DIE,DLAYGO,DR,X,Y F  S DLAYGO=217.2,DIC="^NURQ(217.2,",DIC(0)="AEQL" W ! D ^<a href="http://code.osehra.org/dox/Routine_DIC.html">DIC</a> Q:+Y'>0  S DA=+Y,DIE=DIC,DR=".01" D ^<a href="http://code.osehra.org/dox/Routine_DIE.html">DIE</a> Q:$D(Y)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

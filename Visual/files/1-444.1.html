@@ -1,0 +1,52 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS00NDQuMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RFQ VENDOR (444.1) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS00NDQuMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RFQ VENDOR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains vendors used in the RFQ process who are not found in
+the site's main VENDOR file (#440).  Once a vendor is selected as the
+source during RFQ award, an entry for him should be made in file #440
+so that he will be vendorized by the Austin Automation Center and be
+ready for payment transactions.  In lookups for vendors in the RFQ
+module, file #440 is first searched for the vendor.  If the vendor is
+not found, the search continues in file #444.1.  If not present in this
+file, the user has the option to add a vendor to this file.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzg0OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSX COST ONE MONTH DRUG REPORT (3848) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzg0OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSX COST ONE MONTH DRUG REPORT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Drug Cost by Drug Report for One Month</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DRUG COST BY DRUG REPORT FOR O</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option prints a monthly drug cost report for a month specified by 
+the user. The report lists the total fills, total quantity, total cost,
+and formulary/ non-formulary. It can be printed for all drugs or a specific
+drug, all facilities or a specific facility, and all divisions or
+a specific division. The minimum total number of refills and minimum
+total cost are assigned by the user to further refine the report.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-82.html">CMOP</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PSXCSMON.html">PSXCSMON</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

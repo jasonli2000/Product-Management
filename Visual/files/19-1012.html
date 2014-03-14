@@ -1,0 +1,113 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTAxMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LRAC XREF (1012) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTAxMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LRAC XREF</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Re-cross-reference indexes in LAB REPORTS file</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RE-CROSS-REFERENCE INDEXES IN</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>LRLIASON</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will allow the user to re-cross-reference selected
+indexes from the Lab Reports file.
+  1.  The "A" index contains the reference ranges, critical ranges,
+      and units from file 60.  This index needs to be re-cross-
+      referenced any time changes are made to these fields in file
+      60, if those changes need to be reflected on the cumulative report.
+  2.  The "AC" index contains the pointers to the Lab Data file (63).
+      This index may need to be re-cross-referenced if it is found
+      that the cross-reference contains entries for tests in the
+      cumulative that don't have data names in file 63.
+  3.  The "AR" index contains for each site/specimen the test on
+      each minor header of the cumulative.  This index may have
+      to be re-cross-referenced if it is found that a given
+      test and site/specimen is located in more than one place
+      on the report.
+ 
+The option LRAC DIAG should be used to diagnose when these indexes
+need to be re-cross-referenced.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-1014.html">LRAC A</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-1015.html">LRAC AC</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-1016.html">LRAC AR</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-1017.html">LRAC A AC AR</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;4</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1996-06-10 16:35:45</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAwLjktMjE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IMAGING PATIENT EXAMINED (21) &nbsp;&nbsp;  OE/RR NOTIFICATIONS (100.9)</h1>
+<div id="demo"><table id="MTAwLjktMjE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IMAGING PATIENT EXAMINED</td>
+</tr>
+<tr>
+<td>PACKAGE ID</td>
+<td>OR</td>
+</tr>
+<tr>
+<td>MESSAGE TEXT</td>
+<td>Imaging patient examined.</td>
+</tr>
+<tr>
+<td>MESSAGE TYPE</td>
+<td>PACKAGE PROVIDES A VARIABLE MESSAGE</td>
+</tr>
+<tr>
+<td>ACTION FLAG</td>
+<td>RUN ROUTINE</td>
+</tr>
+<tr>
+<td>ENTRY POINT</td>
+<td>INFODEL</td>
+</tr>
+<tr>
+<td>ROUTINE NAME</td>
+<td><a href="http://code.osehra.org/dox/Routine_ORB3FUP2.html">ORB3FUP2</a></td>
+</tr>
+<tr>
+<td>RELATED PACKAGE</td>
+<td>RA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td>Triggered when a patient is examined in the Imaging service in conjuntion with an order/request. Recipients restricted to ordering provider. Deletion occurs when notification is reviewed.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

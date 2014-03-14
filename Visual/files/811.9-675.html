@@ -1,0 +1,274 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjktNjc1").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-BL ALCOHOL WITHIN SAFE LIMIT (675) &nbsp;&nbsp;  REMINDER DEFINITION (811.9)</h1>
+<div id="demo"><table id="ODExLjktNjc1" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-BL ALCOHOL WITHIN SAFE LIMIT</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>MIGHT DRINK IN SAFE LIMIT</td>
+</tr>
+<tr>
+<td>SEX SPECIFIC</td>
+<td>MALE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This reminder is used for branching logic in the VA-ALCOHOL AUDIT-C 
+POSITIVE F/U EVAL reminder to determine if the patient might be drinking 
+within safe limits. 
+ 
+Some patients with an AUDIT-C of 5 can still be drinking within safe 
+limits and so these patients should be asked specifically if they drink 
+within safe limits.  This reminder is DUE NOW for those patients and the 
+question is presented in the reminder dialog.
+</pre>
+</td>
+</tr>
+<tr>
+<td>BASELINE AGE FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;99Y</dt>
+<dt>NO. OF AGE MATCH LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF AGE NO MATCH LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="601.71-5.html">AUDC</a></dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;AND</dt>
+<dt>MH SCALE:  &nbsp;&nbsp;276</dt>
+<dt>CONDITION:  &nbsp;&nbsp;I +V<5</dt>
+<dt>OCCURRENCE COUNT:  &nbsp;&nbsp;5</dt>
+<dt>INTERNAL CONDITION:  &nbsp;&nbsp;I +V<5</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="601.71-5.html">AUDC</a></dt>
+<dt>MH SCALE:  &nbsp;&nbsp;276</dt>
+<dt>CONDITION:  &nbsp;&nbsp;I V("R",1)="Four or more times a week"</dt>
+<dt>OCCURRENCE COUNT:  &nbsp;&nbsp;5</dt>
+<dt>INTERNAL CONDITION:  &nbsp;&nbsp;I $G(V("R",1))="Four or more times a week"</dt>
+<dt>V SUBSCRIPT LIST:  &nbsp;&nbsp;"R",1;</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="601.71-5.html">AUDC</a></dt>
+<dt>MH SCALE:  &nbsp;&nbsp;276</dt>
+<dt>CONDITION:  &nbsp;&nbsp;I V("R",2)="3 or 4"</dt>
+<dt>OCCURRENCE COUNT:  &nbsp;&nbsp;5</dt>
+<dt>INTERNAL CONDITION:  &nbsp;&nbsp;I $G(V("R",2))="3 or 4"</dt>
+<dt>V SUBSCRIPT LIST:  &nbsp;&nbsp;"R",2;</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="601.71-5.html">AUDC</a></dt>
+<dt>MH SCALE:  &nbsp;&nbsp;276</dt>
+<dt>CONDITION:  &nbsp;&nbsp;I V("R",3)="Never"</dt>
+<dt>OCCURRENCE COUNT:  &nbsp;&nbsp;5</dt>
+<dt>INTERNAL CONDITION:  &nbsp;&nbsp;I $G(V("R",3))="Never"</dt>
+<dt>V SUBSCRIPT LIST:  &nbsp;&nbsp;"R",3;</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FUNCTION FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+Patient who might drink less than the safe limits.
+</pre>
+</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;FI(2)&FI(3)&FI(4)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;3</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;4</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)&FN(2)&FN(3)</dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;AND</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>CUSTOMIZED COHORT LOGIC</td>
+<td>(SEX)&(FI(1)!FF(1))</td>
+</tr>
+<tr>
+<td>INTERNAL PATIENT COHORT LOGIC</td>
+<td>(SEX)&(FI(1)!FF(1))</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS COUNT</td>
+<td>3</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS LIST</td>
+<td>SEX;1;FF1</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AGE FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS COUNT</td>
+<td>3</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS LIST</td>
+<td>2;3;4</td>
+</tr>
+<tr>
+<td>LINKED REMINDER DIALOG</td>
+<td><a href="801.41-663000719.html">VA-ALCOHOL F/U POS AUDIT-C</a></td>
+</tr>
+<tr>
+<td># OF GEN. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>SPONSOR</td>
+<td><a href="811.6-21.html">Office of Patient Care Services</a></td>
+</tr>
+<tr>
+<td>USAGE</td>
+<td>R</td>
+</tr>
+<tr>
+<td>EDIT HISTORY</td>
+<td>
+<ol>
+<li>
+<dt>EDIT DATE:  &nbsp;&nbsp;2008-02-03 22:21:07</dt>
+<dt>EDIT BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>EDIT COMMENTS:  &nbsp;&nbsp;<pre>
+Exchange Install
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

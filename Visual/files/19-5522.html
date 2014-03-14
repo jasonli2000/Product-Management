@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTUyMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ECTP EMP INQ (5522) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTUyMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ECTP EMP INQ</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Employee Inquiry</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>EMPLOYEE INQUIRY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option presents information about current VAMC employees.
+Employee data comes from file 450 - Current Employee
+and file 200 - New Person.  Data includes: service/section, mail
+code, phone, address, and birth date.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-119.html">INTERIM MANAGEMENT SUPPORT</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_ECTPEMP.html">ECTPEMP</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

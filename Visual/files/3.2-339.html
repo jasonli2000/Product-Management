@@ -1,0 +1,62 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My4yLTMzOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>P-WWWMESSAGE-HFS-VXD (339) &nbsp;&nbsp;  TERMINAL TYPE (3.2)</h1>
+<div id="demo"><table id="My4yLTMzOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>P-WWWMESSAGE-HFS-VXD</td>
+</tr>
+<tr>
+<td>RIGHT MARGIN</td>
+<td>80</td>
+</tr>
+<tr>
+<td>FORM FEED</td>
+<td>#</td>
+</tr>
+<tr>
+<td>PAGE LENGTH</td>
+<td>256</td>
+</tr>
+<tr>
+<td>BACK SPACE</td>
+<td>$C(8)</td>
+</tr>
+<tr>
+<td>CLOSE EXECUTE</td>
+<td>W:$X ! S XMREC="R X#255:1" X "U IO:DISCONNECT" D ^WWWMAL83,READ^WWWMAL83 X "C IO:DELETE" K XMIO,IO(1,IO) Q</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td>Does not work on Cache.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,47 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03MTE1LjM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>HDIS XML TEMPLATE (7115.3) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03MTE1LjM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>HDIS XML TEMPLATE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains the schema for XML documents.  It maintains every
+XML element, it's sequence and whether the element has sub-elements
+and whether the element is a multiple.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

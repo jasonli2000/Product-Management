@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODUzNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORB3 FLAGGED ORDERS BULLETIN (8537) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODUzNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORB3 FLAGGED ORDERS BULLETIN</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Send Flagged Orders Bulletin</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SEND FLAGGED ORDERS BULLETIN</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Enter 'yes' to send a bulletin when an order is flagged for clarification.
+'Yes' indicates a MailMan bulletin will be sent to the order's Current
+Provider (usually the Ordering Provider) when the order is flagged for
+clarification.  This parameter has no effect on the Flagged Orders
+notification which is also triggered when an order is flagged for
+clarification.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>FLGOB^<a href="http://code.osehra.org/dox/Routine_ORB3MGR1.html">ORB3MGR1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

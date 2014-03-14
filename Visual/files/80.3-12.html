@@ -1,0 +1,204 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODAuMy0xMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MALE REPRODUCTIVE SYSTEM (12) &nbsp;&nbsp;  MAJOR DIAGNOSTIC CATEGORY (80.3)</h1>
+<div id="demo"><table id="ODAuMy0xMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MALE REPRODUCTIVE SYSTEM</td>
+</tr>
+<tr>
+<td>DISORDER/PROCEDURE</td>
+<td>
+<ol>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;MAJOR PELVIC SURGERY,MALE</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;334</dt>
+<dt>DRGb:  &nbsp;&nbsp;335</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D COM Q:$D(BAD)  S DRG=$S(X?1"Y".E:334,1:335),FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D COM Q:$D(BAD)  S DRG=$S(X?1"Y".E:334,1:335),FIN=1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;TRANSURETHERAL PROSTATECTOMY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;336</dt>
+<dt>DRGb:  &nbsp;&nbsp;337</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE>69:336,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:336,1:337)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE>69:336,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:336,1:337)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;TESTICULAR SURGERY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;338</dt>
+<dt>DRGb:  &nbsp;&nbsp;339</dt>
+<dt>DRGc:  &nbsp;&nbsp;340</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;W !,"Principal diagnosis of malignancy (Y/N) ? " D YN Q:$D(BAD)!(YN?1"N".E)  S DRG=338,FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE<18:340,1:339),FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;W !,"Principal diagnosis of malignancy (Y/N) ? " D YN Q:$D(BAD)!(YN?1"N".E)  S DRG=338,FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE<18:340,1:339),FIN=1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;PENIS SURGERY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;341</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;CIRCUMCISION</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;342</dt>
+<dt>DRGb:  &nbsp;&nbsp;343</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE<18:343,1:342),FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE<18:343,1:342),FIN=1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;OTHER OR PROCEDURE:MALE REPRODUCTIVE</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;344</dt>
+<dt>DRGb:  &nbsp;&nbsp;345</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;W !,"Principal diagnosis of malignancy (Y/N) ? " D YN Q:$D(BAD)  S DRG=$S(YN?1"Y".E:344,1:345),FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;W !,"Principal diagnosis of malignancy (Y/N) ? " D YN Q:$D(BAD)  S DRG=$S(YN?1"Y".E:344,1:345),FIN=1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;MALIGNANCY,MALE REPRODUCTIVE</dt>
+<dt>DRGa:  &nbsp;&nbsp;346</dt>
+<dt>DRGb:  &nbsp;&nbsp;347</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE>69:346,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:346,1:347)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE>69:346,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:346,1:347)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;BENIGN PROSTATIC HYPERTROPHY</dt>
+<dt>DRGa:  &nbsp;&nbsp;348</dt>
+<dt>DRGb:  &nbsp;&nbsp;349</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE>69:348,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:348,1:349)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE>69:348,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:348,1:349)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;INFLAMMATION,MALE REPRODUCTIVE</dt>
+<dt>DRGa:  &nbsp;&nbsp;350</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;STERILIZATION, MALE</dt>
+<dt>DRGa:  &nbsp;&nbsp;351</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;OTHER DISORDER,MALE REPRODUCTIVE</dt>
+<dt>DRGa:  &nbsp;&nbsp;352</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;OTHER OR PROCEDURE:MALE REPRODUCTIVE</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;344</dt>
+<dt>DRGb:  &nbsp;&nbsp;345</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;W !,"Principal diagnosis of malignancy (Y/N) ? " D YN Q:$D(BAD)  S DRG=$S(YN?1"Y".E:344,1:345),FIN=1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;OTHER DISORDER,MALE REPRODUCTIVE</dt>
+<dt>DRGa:  &nbsp;&nbsp;352</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

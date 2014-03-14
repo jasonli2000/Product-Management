@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTQzNjI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SDRR EVENT (4362) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTQzNjI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SDRR EVENT</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Recall Reminder Action</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol will hang off SDAM menu - it is used for the RECALL REMINDER
+project. This protocol will allow for user to enter or edit information 
+that has been stored in the RECALL REMINDERS file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>I $G(SDDIK)>0 N DIK,DA S DIK="^SD(403.5,",DA=SDDIK D ^<a href="http://code.osehra.org/dox/Routine_DIK.html">DIK</a> K SDDIK,DA,DIK W !!?10,"No Recall Record created." H 2</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D SDAM^<a href="http://code.osehra.org/dox/Routine_SDRR1.html">SDRR1</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2012-01-12 14:37:21</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

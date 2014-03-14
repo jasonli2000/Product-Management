@@ -1,0 +1,310 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODQ1MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIUF NATL CS UTILITY (8450) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODQ1MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIUF NATL CS UTILITY</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>NATL Edit Document Definitions</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>NATL EDIT DOCUMENT DEFINITIONS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is an EXTREMELY POWERFUL option for NATIONAL PROGRAMMERS only.  It
+may also be used by CUSTOMER SERVICE, AFTER they have consulted with TIU
+developers.  
+ 
+           **** Who Should Use this Option *****
+ 
+If a site has arranged with Customer Service to move Consult Titles from a
+separate CLASS to Progress Notes, Customer Service may choose to give this
+option to the person doing the moves.  Such persons should NEVER say YES
+to an Override prompt except for the Missing Fields override, as noted
+towards the bottom of this message.  If Customer Service has altered
+this option before giving it to someone, they should restore it to its
+original condition when the person has finished.
+ 
+In all other cases, Customer Service is requested to use the option
+themselves rather than giving it to a site.
+ 
+Since this is NOT a site option, please do NOT give instructions for its
+use in NOIS, in FORUM group messages, etc.
+ 
+ 
+This option is the same as TIUFH EDIT DDEFS MGR except much more powerful.
+ 
+It permits:
+       Changing entries to/from National Standard
+       Moving Titles between CLASSES
+       Changing field OK TO DISTRIBUTE (# .13)
+       
+If user answers Yes to an override/bypass prompt, it also permits:
+       Editing entries without INACTIVATING them
+       Adding an item that is IN USE
+       Deleting an item that is IN USE
+       Selecting an item of the WRONG TYPE to add to a parent
+       Moving documents to a faulty Title
+       Moving a Title to a FAULTY Document Class
+       Moving a FAULTY Title
+       Moving a Title which will lack Technical Fields under the move
+ 
+It does NOT permit:
+       Most actions on National entries
+       Adding an item you don't OWN to a parent
+       Moving DOCUMENTS between CLASSES
+       Adding ACTIVE items to a parent
+       Deleting ACTIVE items from a parent
+ 
+The above actions which are not permitted can still be done by changing
+the offending property.  For example, to move documents between classes,
+first move titles so that the documents are in the same class.
+ 
+ 
+WARNING: This tool permits actions under circumstances which are dangerous
+and may have never been tested.  It is up to CUSTOMER SERVICE to consult
+with TIU developers to find out what preparatory/followup actions may be
+necessary IN ADDITION TO THOSE LISTED HERE, and to test all actions before
+using this option in a live account.  Remember that moving entries in the
+hierarchy can affect inherited Business Rules, Document Parameters, and
+Basic/Technical/Upload Fields, and possibly hard code, for certain
+entries.
+ 
+ 
+  ******* General Instructions for Moving Titles between Classes *********
+ 
+Moving Titles between Classes should be undertaken only after consulting
+TIU developers and/or Customer Service, and in close cooperation with IRM
+at the site.  It may require programmer expertise.
+ 
+The option TIUF NATL CS UTILITY takes you into the Edit Document
+Definitions screen.  Use the Copy/Move action: Move Title.  You will be
+able to select Document Classes OUTSIDE the original class.  This does NOT
+require answering YES to an override prompt.
+ 
+After you move a title, the program will attempt to update documents using
+the moved title.  If a document is being edited while this program is
+attempting to update it, the screen will write the IFN of the document not
+updated, the document IFN will be saved as DA in
+        ^XTMP("TIUFMOVEN"_TITLEDA,DA),
+and the document will be skipped.  The class the Title was moved FROM will
+be saved as OLDCLASS in
+        ^XTMP("TIUFMOVEN"_TITLEDA)=OLDCLASS.
+ 
+At the end of the Move Title action, if all documents have been updated,
+the screen will so state.  If not, the user will be asked to update them
+using action U, 'Update Documents'. This Update (as well as the Move Title
+action) must be done through this option [TIUF NATL CS UTILITY] in order
+to update both Parent Document Type, AND Class cross-references. It may be
+necessary to Update more than once.  The action so states when all
+documents have been successfully updated.
+ 
+The first global, above, is updated with every Update action, and
+increases the efficiency of subsequent Updates.
+ 
+The second global is ESSENTIAL to the process of updating after moving a
+title between classes, since it stores OLDCLASS, which is required for
+updating cross references.
+ 
+These globals will exist for 30 days after the title is moved or updated
+(or until another national move is done on this title, if that time is
+shorter than 30 days).  So please finish your updating within that time
+period.
+ 
+         ******* Updating Documents, One at a Time *******
+ 
+This is an ALTERNATIVE to the Update action described above.  In some
+cases, it may be more convenient to update a single document from
+programmer mode rather than using action Update Documents, which updates
+ALL documents using the title.
+ 
+After moving the title, print out global    ^XTMP("TIUFMOVEN"_TITLEDA, and
+save it.  It has the form: 
+                      ^XTMP("TIUFMOVEN"_TITLEDA)=OLDCLASS
+                      ^XTMP("TIUFMOVEN"_TITLEDA,DA)="", where
+     TITLEDA is the IFN in 8925.1 of the moved title
+     OLDCLASS is the IFN in 8925.1 of the class the title was moved FROM
+     DA is the IFN in 8925 of the document using the title
+ 
+Then use DDEF options to look up XDCDA = the IFN of the Document Class the
+title was moved TO.  Repeat, moved TO.  
+ 
+Now, for every document DA in the above ^XTMP global, call
+  MTRPT1^TIUFHA8(TITLEDA,DA,XDCDA,OLDCLASS).
+ 
+When every document has been successfully updated using this call, you are
+done.
+ 
+          ****** Adding/Deleting Titles which are IN USE ******
+ 
+If you delete a Title which is IN USE from its parent Document Class, the
+documents using it will not function.  However, there have been cases
+where this is the best way to correct a hierarchy which has been
+abnormally altered.  
+ 
+When deleting such an item, note the CLASS it was in.  Then add it to the
+proper Document Class.  Then do Update Parent Document Type for the Title.
+ 
+NOTE: If Parent Document Type is not correct for a document, the document
+will not appear properly in Parent Document Type Cross Reference ADCPT. At
+present the only known consequence of this is generating/failing to
+generate CWAD alerts.  However, future changes, national or local, may
+create other consequences, so please update this field.
+ 
+If the Title has changed CLASS under this "move", you will ALSO need to
+call the following code: D TLDOCMTS^TIUFHA8(TITLEDA,OLDCLASS), where
+TITLEDA is the IEN of the "moved" Title and OLDCLASS is the IEN of the old
+Class the title was in.  Do this AFTER the title is where you want it in
+the hierarchy; it will get its NEW class from its current position in the
+hierarchy.  This code sets the new class nodes for all documents using
+TITLEDA, for cross references APTCL, APTCL38, ACLSB, ACLPT, ACLAU, and
+ACLEC.  If OLDCLASS is not 0, it first kills the nodes for the old class.
+ 
+(Simply reindexing documents will not kill old nodes, since the old class
+is unknown to the computer.)
+ 
+If the Title you are adding as an item was never IN A CLASS, follow the
+above instructions with OLDCLASS=0.
+ 
+NOTE: If a document was never in a class or if it has changed classes
+without calling the above code, it may not appear under appropriate
+options, e.g., Review Progress Notes.  Or it may mistakenly appear under
+some other option.
+ 
+ 
+      ******* Moving Consult Titles to Progress Notes ******
+ 
+These are steps to be followed when moving consult titles which are
+already IN USE from CLASS Consults to a new Consults document class under
+class Progress Notes.
+ 
+1) Inactivate class Consults if you have not already done so.
+ 
+2) Create a new document class ZZCONSULTS under Progress Notes. (Call it,
+say, ZZCONSULTS for now so it won't confuse Joel's code which looks for a
+CL or DC called "CONSULTS.")  Leave it INACTIVE.
+ 
+3) Set up basic fields, upload fields, TIU document parameters, and
+business rules for ZZCONSULTS so that values inherited by titles under it
+will be correct.  (Technical fields can be set up later, using option TIU
+DEFINE CONSULTS.)
+ 
+4) Check titles presently under Class Consults to make sure you want them
+all and that they are named correctly.
+ 
+5) Choose a time when users are not likely to be editing existing
+consult documents. Use option TIUF NATL CS UTILITY to move Consult
+titles from step 3), one at a time, to DC ZZCONSULTS.  If Technical fields
+are missing, answer YES when asked if you want to move the title even
+though it is missing technical fields.  You will take care of these fields
+later. 
+ 
+The option then updates document class ZZCONSULTS, the moved title,
+and the documents using the title. Documents using the title are updated
+with the new Parent Document Type (field # .04).  Class cross-references
+for the document are killed and reset.
+ 
+If some document was not available (locked) at the time the move code
+attempted to update it, you will see a message to that effect when code
+has finished moving the title.  If so, use option TIUF NATL CS UTILITY 
+and run action Update documents, under Copy/Move, for its title.  You may
+have to run it more than once.
+ 
+6) Delete Business Rules and TIU Document Parameters for (old) Consult
+Document Classes under (old) Class Consults, and for (old) Class Consults
+itself.
+ 
+7) Delete (old) Consult Document Classes under Class Consults and then
+(old) Class Consults itself.
+ 
+8) Change name of document class ZZCONSULTS to CONSULTS.
+ 
+9) Rerun option TIU DEFINE CONSULTS.  This option was included in patch
+TIU*1*4.  It should find the new document class CONSULTS and set
+appropriate technical fields.  Patch TIU*1*4 also includes instructions on
+business rules and TIU document parameters for CONSULTS.  If they have not
+already been set up, do this now.  If this option has already been run for
+class CONSULTS, those technical fields may be manually copied into
+document class CONSULTS as an alternative to rerunning the option.
+ 
+10) Check existing consult documents.  Make sure they display in the CPRS
+NOTES tab of the CPRS chart.
+ 
+11) Activate document class CONSULTS and then the titles below it. Make
+sure you can create a consult note and link it to a consult request from
+the NOTES tab of the CPRS chart.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>DISPLAY OPTION?</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K TIUFPRIV</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>Q:'$G(TIUFPRIV)  N TIUFWHO,TIUFMOVE S (TIUFWHO,TIUFMOVE)="N" D EN^<a href="http://code.osehra.org/dox/Routine_TIUFH.html">TIUFH</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1995-07-06 23:46:37</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

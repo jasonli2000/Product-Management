@@ -1,0 +1,50 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS04NjAuNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORDER CHECK DATA CONTEXT (860.6) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS04NjAuNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORDER CHECK DATA CONTEXT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ 
+  This file keeps a list of data contexts. A rule event/element
+ can only compare data fields from the same context. A context
+ may have involve several data sources. For example the data context
+ of 'HL7' has a data source for each hl7 segment.
+ 
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

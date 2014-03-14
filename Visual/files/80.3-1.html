@@ -1,0 +1,275 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODAuMy0x").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>NERVOUS SYSTEM (1) &nbsp;&nbsp;  MAJOR DIAGNOSTIC CATEGORY (80.3)</h1>
+<div id="demo"><table id="ODAuMy0x" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>NERVOUS SYSTEM</td>
+</tr>
+<tr>
+<td>DISORDER/PROCEDURE</td>
+<td>
+<ol>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;CRANOITOMY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;1</dt>
+<dt>DRGb:  &nbsp;&nbsp;2</dt>
+<dt>DRGc:  &nbsp;&nbsp;3</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;R:'$D(AGE) !,"AGE: ",AGE:60 S:AGE<0!(AGE>120) BAD=1 S:AGE<18 DRG=3,FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;W !,"PRINCIPAL DIAGNOSIS OF TRAUMA  (Y/N) ? " D YN S DRG=$S(YN?1"N".E:1,1:2),FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;R:'$D(AGE) !,"AGE: ",AGE:60 S:AGE<0!(AGE>120) BAD=1 S:AGE<18 DRG=3,FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;W !,"PRINCIPAL DIAGNOSIS OF TRAUMA  (Y/N) ? " D YN S DRG=$S(YN?1"N".E:1,1:2),FIN=1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;SPINAL SURGERY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;EXTRACRANIAL VASCULAR</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;CARPAL TUNNEL RELEASE</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;6</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;PERPHERIAL,CRANIAL NRV & OTHER</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;7</dt>
+<dt>DRGb:  &nbsp;&nbsp;8</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:7,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:7,1:8)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:7,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:7,1:8)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;SPINAL DISORDER/INJURY</dt>
+<dt>DRGa:  &nbsp;&nbsp;9</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;NEOPLASM</dt>
+<dt>DRGa:  &nbsp;&nbsp;10</dt>
+<dt>DRGb:  &nbsp;&nbsp;11</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:10,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:10,1:11)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:10,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:10,1:11)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;DEGENERATIVE DISORDERS</dt>
+<dt>DRGa:  &nbsp;&nbsp;12</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;M SCLEROSIS,CEREBELLAR ATAXIA</dt>
+<dt>DRGa:  &nbsp;&nbsp;13</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;SPECIFIC CEREBROVASC DISORDER</dt>
+<dt>DRGa:  &nbsp;&nbsp;14</dt>
+<dt>DRGb:  &nbsp;&nbsp;15</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;W !,"PRINCIPAL DIAGNOSIS OF TIA  (Y/N)  ? " D YN S DRG=$S(YN?1"N".E:14,1:15),FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;W !,"PRINCIPAL DIAGNOSIS OF TIA  (Y/N)  ? " D YN S DRG=$S(YN?1"N".E:14,1:15),FIN=1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;NONSPECIFIC CEREBROVASC DISORD</dt>
+<dt>DRGa:  &nbsp;&nbsp;16</dt>
+<dt>DRGb:  &nbsp;&nbsp;17</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D COM S DRG=$S(X?1"Y".E:16,1:17),FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D COM S DRG=$S(X?1"Y".E:16,1:17),FIN=1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;CRANIAL,PERPHERIAL NERVE</dt>
+<dt>DRGa:  &nbsp;&nbsp;18</dt>
+<dt>DRGb:  &nbsp;&nbsp;19</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:18,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:18,1:19)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:18,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:18,1:19)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;INFECTION</dt>
+<dt>DRGa:  &nbsp;&nbsp;20</dt>
+<dt>DRGb:  &nbsp;&nbsp;21</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;W !,"PRINCIPAL DX OF VIRAL MENINGITIS (Y/N)  ? " D YN S DRG=$S(YN?1"N".E:20,1:21),FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;W !,"PRINCIPAL DX OF VIRAL MENINGITIS (Y/N)  ? " D YN S DRG=$S(YN?1"N".E:20,1:21),FIN=1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;HYPERTENSIVE ENCEPHALOPATHY</dt>
+<dt>DRGa:  &nbsp;&nbsp;22</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;NONTRAUMATIC STUPOR & COMA</dt>
+<dt>DRGa:  &nbsp;&nbsp;23</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;SEIZURE & HEADACHE</dt>
+<dt>DRGa:  &nbsp;&nbsp;24</dt>
+<dt>DRGb:  &nbsp;&nbsp;25</dt>
+<dt>DRGc:  &nbsp;&nbsp;26</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE<18:26,AGE>69:24,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:24,1:25)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE<18:26,AGE>69:24,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:24,1:25)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;TRAUMATIC STUPOR & COMA</dt>
+<dt>DRGa:  &nbsp;&nbsp;27</dt>
+<dt>DRGb:  &nbsp;&nbsp;28</dt>
+<dt>DRGc:  &nbsp;&nbsp;29</dt>
+<dt>DRGd:  &nbsp;&nbsp;30</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;W !,"COMA ONE HOUR OR MORE (Y/N) ? " D YN S:YN?1"Y".E DRG=27,FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE<18:30,AGE>69:28,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:28,1:29)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;W !,"COMA ONE HOUR OR MORE (Y/N) ? " D YN S:YN?1"Y".E DRG=27,FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE<18:30,AGE>69:28,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:28,1:29)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;CONCUSSION</dt>
+<dt>DRGa:  &nbsp;&nbsp;31</dt>
+<dt>DRGb:  &nbsp;&nbsp;32</dt>
+<dt>DRGc:  &nbsp;&nbsp;33</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE<18:33,AGE>69:31,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:31,1:32)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE<18:33,AGE>69:31,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:31,1:32)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;OTHER DIAGNOSIS</dt>
+<dt>DRGa:  &nbsp;&nbsp;34</dt>
+<dt>DRGb:  &nbsp;&nbsp;35</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:34,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:34,1:35)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:34,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:34,1:35)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

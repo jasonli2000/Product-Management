@@ -1,0 +1,90 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTY5MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ECDSS1 (690) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTY5MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ECDSS1</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>National/Local Procedure Reports</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+This option allows you to print/display a report listing Event Capture 
+procedures.  You can to choose to include active or inactive procedures. 
+ 
+If you choose inactive procedures, you are prompted for a device.  The 
+output includes  
+ 
+ - Procedure name 
+ - National Number 
+ - CPT 
+ - Inactive Date 
+ 
+If you choose active procedures, you are prompted to choose a sort method 
+(National, Local, or Both) and a device.  The output includes  
+ 
+ - Procedure name
+ - National Number
+ - CPT
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1996-05-01 14:41:00</td>
+</tr>
+<tr>
+<td>INVOKED BY ROUTINE</td>
+<td>
+<ol>
+<li>
+<dt>INVOKED BY ROUTINE:  &nbsp;&nbsp;VXFCDSS1</dt>
+</li>
+<li>
+<dt>INVOKED BY ROUTINE:  &nbsp;&nbsp;<a href="http://code.osehra.org/dox/Routine_ECDSS1.html">ECDSS1</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>EXIT EXECUTE STATEMENT</td>
+<td>W @IOF</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

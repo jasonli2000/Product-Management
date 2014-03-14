@@ -1,0 +1,96 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTQ0OTA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSO HRC REFILL MENU (4490) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTQ0OTA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSO HRC REFILL MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>HRC Medication Profile Refill Menu</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2436.html">PSO REFILL</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RF</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2452.html">PSO ACTIVITY LOGS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AL</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Activity Logs</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-60.html">OUTPATIENT PHARMACY</a></td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I $$ACTIONS^<a href="http://code.osehra.org/dox/Routine_PSOMPHRC.html">PSOMPHRC</a></td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D A^<a href="http://code.osehra.org/dox/Routine_PSOORUT3.html">PSOORUT3</a>,SHOW^VALM S:$G(PSOACT)["E" XQORM("#")=$O(^ORD(101,"B","PSO LM EDIT SELECT ORDER",0))_"^1:21"</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2011-09-30 13:20:30</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

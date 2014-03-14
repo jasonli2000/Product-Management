@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTExNzA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LA7 HDR RECOVER (11170) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTExNzA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LA7 HDR RECOVER</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Recover/Transmit Lab HDR Result Messages</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RECOVER/TRANSMIT LAB HDR RESUL</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Option to recover from failed Lab HDR ORU Result message
+generation and/or transmission failure. This option allows
+the user to select those VistA Laboratory accessions that
+need to be transmitted to the VA HDR and other subscribers
+of the VistA Laboratory Result Available HL7 message
+capability via the protocol Lab Results Available Event
+[LA7 LAB RESULTS AVAILABLE (EVN)].
+ 
+If the original message generation/transmission failed
+due to system or communication problems then using this
+option will allow the generation of new HL7 messages with
+the results associated with the selected accessions.
+Accessions can be selected using the human-readable
+accession designation (area abbreviation modified date
+accession number - "CH 1225 100") or the accession's
+associated 10 character unique identifier (UID).
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-11.html">AUTOMATED LAB INSTRUMENTS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>RECOVER^<a href="http://code.osehra.org/dox/Routine_LA7HDR.html">LA7HDR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

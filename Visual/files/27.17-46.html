@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MjcuMTctNDY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>Katz Scale (46) &nbsp;&nbsp;  CATASTROPHIC DISABILITY REASONS (27.17)</h1>
+<div id="demo"><table id="MjcuMTctNDY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>Katz Scale</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>CONDITION</td>
+</tr>
+<tr>
+<td>TEST SCORE RANGE</td>
+<td>SCORE'<3&(PERM=1)</td>
+</tr>
+<tr>
+<td>HELP TEXT</td>
+<td><pre>
+The Katz Index of Activities of Daily Living (ADLs) assigns a number
+from 1 to 3 in each of 6 activities.  1 is dependent, 2 is an intermediate
+limitation, and 3 is independent.  The Katz Index may be used to determine
+whether a veteran is catastrophically disabled.
+ 
+This field must contain the number of permanent ADLs for which the veteran
+received a score of 1 (dependent).  It is NOT the overall score on the
+KATZ test (which can range from 6 to 18.)
+</pre>
+</td>
+</tr>
+<tr>
+<td>VALIDATION</td>
+<td>X\1=X&(X'<0)&(X'>6)</td>
+</tr>
+<tr>
+<td>HL7 TRANSMISSION VALUE</td>
+<td>KATZ</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA1OTk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU MAP ACTIVE LOCAL TITLES (10599) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA1OTk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU MAP ACTIVE LOCAL TITLES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Map ACTIVE LOCAL Titles</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>MAP ACTIVE LOCAL TITLES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows CACs to map ALL local titles to the VHA Enterprise
+Standard Document Title Ontology, by iterating through all of the ACTIVE 
+titles defined for the station. This is a necessary prerequisite to
+migrating document management to the HDR.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>Short Menu Text</td>
+<td>Map ALL Local to VHA Titles</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D MAIN^<a href="http://code.osehra.org/dox/Routine_TIUMAP.html">TIUMAP</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>2006-02-28 14:38:01</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

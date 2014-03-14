@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODEwLjktMjA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-ALL LOCATIONS (20) &nbsp;&nbsp;  REMINDER LOCATION LIST (810.9)</h1>
+<div id="demo"><table id="ODEwLjktMjA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-ALL LOCATIONS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+When this special Location List is used, the "AHL" index of the Visit
+file is searched to create a list of every hospital location for
+which one or more visits have been recorded.
+
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

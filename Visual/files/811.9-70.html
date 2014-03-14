@@ -1,0 +1,461 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjktNzA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-IHD LIPID PROFILE (70) &nbsp;&nbsp;  REMINDER DEFINITION (811.9)</h1>
+<div id="demo"><table id="ODExLjktNzA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-IHD LIPID PROFILE</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>IHD Lipid Profile</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The VHA/DOD Clinical Practice Guideline for Management of Dyslipidemia 
+recommends that patients with Ischemic Heart Disease have a lipid 
+profile/LDL every one to two years; and that patients taking lipid 
+lowering medications have a lipid profile/LDL at least every year.
+ 
+This national reminder identifies patients with known IHD (i.e., a 
+documented ICD-9 code for IHD on or after 10/01/99) who have not had a
+serum lipid panel within the last year. If a more recent record
+of an UNCONFIRMED IHD DIAGNOSIS is found, the reminder will not be
+applicable to the patient.  
+ 
+A completed LDL lab test (calculated LDL or direct LDL) or documented
+outside LDL satisfies the reminder for 12 months.
+ 
+A documented order lipid profile health factor satisfies the reminder for
+1 month.
+ 
+A patient's refusal to have an LDL level drawn satisfies the reminder
+for 6 months.
+ 
+Deferring the lipid profile for other reasons satisfies the reminder for
+6 months.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TECHNICAL DESCRIPTION</td>
+<td><pre>
+This reminder is recommended for use by clinicians at Primary Care Clinics
+(Primary Care/Medicine, GIMC, Geriatric, Women's), Cardiology, Cholesterol
+Screening and any other specialty clinics where primary care is given.
+ 
+Setup issues before using this reminder:
+ 
+ 1. Use the Reminder Term options to map local representations of
+    findings:
+ 
+   IHD DIAGNOSIS
+                No mapping necessary.  Use the VA-ISCHEMIC HEART DISEASE 
+                reminder taxonomy distributed with this term.
+ 
+   UNCONFIRMED IHD DIAGNOSIS
+                Use the UNCONFIRMED IHD DIAGNOSIS health factor
+                distributed with this term or add any local health
+                factor representing an unconfirmed or incorrect IHD
+                diagnosis.
+ 
+   LDL          Enter the Laboratory Test names from the Lab Package 
+                for calculated LDL and direct LDL with "I +V&gt;0" in 
+                the CONDITION field.
+ 
+   For the following OUTSIDE LDL Reminder Terms, use the health factors
+   distributed with the reminder term or enter the local Health Factor
+   used to represent these values.
+     OUTSIDE LDL &lt;100
+     OUTSIDE LDL 100-119
+     OUTSIDE LDL 120-129
+     OUTSIDE LDL &gt;129 
+ 
+   ORDER LIPID PROFILE HEALTH FACTOR
+                Use the health factor distributed with this term or add
+                any local health factor representing the order action. 
+                Do not add orderable items to this reminder term (see
+                LIPID PROFILE ORDERABLE).  This represents the date the
+                order was placed, not the date the order will be done in
+                the future.  The order placement will cause the reminder 
+                to be resolved for 1 month.  (Alternatively, copy this
+                reminder and add LIPID PROFILE ORDERABLE to the 
+                resolution findings if you want the next due date to be
+                calculated based on the future date the order is to be 
+                done.)
+ 
+   LIPID PROFILE ORDERABLE
+                Enter orderable items for lipid panels that include LDL
+                tests (calculated LDL and direct LDL).
+                The orderable items are informational findings for
+                this reminder. The order will not resolve the reminder,
+                but it will display in the clinical maintenance.  
+                Ideally, the clinician will look at the clinical
+                maintenance display to avoid entering duplicate orders.
+                This reminder term is not used in the resolution logic
+                since the future order could be for a long distance in 
+                the future. (Copy this reminder and add LIPID PROFILE
+                ORDERABLE to the resolution findings if you want the
+                next due date to be calculated based on the future date
+                the order is to be done.)
+ 
+   OTHER DEFER LIPID PROFILE
+                Enter any local health factors or other findings that 
+                should defer the reminder for 6 months.  For example, 
+                "LIFE EXPECTANCY &lt; 6M".
+ 
+   REFUSED LIPID PROFILE
+                Use the health factor distributed with this term or add
+                any local health factor representing refusal of lipid 
+                profile test.
+ 
+   LIPID LOWERING MEDS
+                Enter the formulary drug names for investigation drugs.
+                Mapping non-investigative formulary drugs to the
+                VA-GENERIC drugs will ensure the lipid lowering 
+                medications are found. The medications are informational 
+                findings for this reminder.
+ 
+2. Use the Reminder Dialog edit option to define the national reminder
+   dialog finding items which should be updated during CPRS GUI reminder
+   processing.
+ 
+   Add local Order Dialog entries to the Dialog elements used for
+   ordering a calculated LDL and/or direct LDL.
+ 
+   Review dialog elements in the national reminder dialog and change any 
+   national health factors to local health factors, if necessary.  It is 
+   not unusual for local findings to be used in your national dialogs.
+   Any local findings used in the national dialogs should be mapped to 
+   the appropriate national reminder term.
+ 
+3. Alternatively, use the Reminder Dialog options to copy the national
+   dialog, dialog elements, and dialog groups to make local changes.
+ 
+   If your site has a Lipid Panel TIU Object, add this TIU Object to the 
+   local dialog element header text.  The TIU Object should include Chol,
+   Trigly, HDL, LDL-C, Direct LDL values and dates.
+ 
+   Add local dialog elements with local Order Dialogs for additional      
+   ordering options for the clinicians. Some sites have clinicians 
+   order a consult to a service that corrects unconfirmed diagnoses
+   the clinician finds in a patient's record.  If your site has this
+   method in place, copy the reminder dialog to a local reminder 
+   dialog and then add the local dialog element for the consult order
+   to the reminder dialog so this practice can continue.
+</pre>
+</td>
+</tr>
+<tr>
+<td>BASELINE AGE FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;1Y</dt>
+<dt>NO. OF AGE MATCH LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF AGE NO MATCH LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-27.html">VA-IHD DIAGNOSIS</a></dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+Patient has no IHD Diagnosis on file.
+</pre>
+</dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;AND</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;OCT 01, 1999</dt>
+<dt>USE INACTIVE PROBLEMS:  &nbsp;&nbsp;N</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-32.html">VA-LDL</a></dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+Patient with IHD and no LDL lab results on file in the past year.
+</pre>
+</dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>CONDITION:  &nbsp;&nbsp;I +V>0</dt>
+<dt>INTERNAL CONDITION:  &nbsp;&nbsp;I +V>0</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-35.html">VA-OUTSIDE LDL <100</a></dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-1Y</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-34.html">VA-OUTSIDE LDL 100-119</a></dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-1Y</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-52.html">VA-OUTSIDE LDL 120-129</a></dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-1Y</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-36.html">VA-OUTSIDE LDL >129</a></dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-1Y</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-61.html">VA-ORDER LIPID PROFILE HEALTH FACTOR</a></dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-1M</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-40.html">VA-REFUSED LIPID PROFILE</a></dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-6M</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-41.html">VA-OTHER DEFER LIPID PROFILE</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+The lipid profile is deferred for 6 months.
+</pre>
+</dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-6M</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-42.html">VA-UNCONFIRMED IHD DIAGNOSIS</a></dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;AND NOT</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-54.html">VA-LIPID LOWERING MEDS</a></dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+No active lipid lowering agents on file.
+</pre>
+</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-90D</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-39.html">VA-LIPID PROFILE ORDERABLE</a></dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FUNCTION FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(1)>MRD(10)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;10</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>CUSTOMIZED COHORT LOGIC</td>
+<td>FI(1)&FF(1)</td>
+</tr>
+<tr>
+<td>INTERNAL PATIENT COHORT LOGIC</td>
+<td>FI(1)&FF(1)</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS COUNT</td>
+<td>2</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS LIST</td>
+<td>1;FF1</td>
+</tr>
+<tr>
+<td>INTERNAL RESOLUTION LOGIC</td>
+<td>(0)!FI(2)!FI(3)!FI(4)!FI(5)!FI(6)!FI(7)!FI(8)!FI(9)</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS COUNT</td>
+<td>8</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS LIST</td>
+<td>2;3;4;5;6;7;8;9</td>
+</tr>
+<tr>
+<td>AGE FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS COUNT</td>
+<td>3</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS LIST</td>
+<td>10;12;14</td>
+</tr>
+<tr>
+<td>WEB SITES</td>
+<td>
+<ol>
+<li>
+<dt>URL:  &nbsp;&nbsp;http://www.oqp.domain.ext/cpg/DL/dl_cpg/algo4frameset.htm</dt>
+<dt>WEB SITE TITLE:  &nbsp;&nbsp;VHA/DoD CPG for Dyslipidemia</dt>
+<dt>WEB SITE DESCRIPTION:  &nbsp;&nbsp;<pre>
+The VHA/DoD CPG for Management of Dyslipidemia is a comprehensive 
+guideline incorporating current information and practices for 
+practitioners throughout the DoD and Veterans Health Administration 
+system. See Section S, Table 3b for reference to LDL&lt;120 in the 
+Guideline.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>LINKED REMINDER DIALOG</td>
+<td><a href="801.41-269.html">VA-IHD LIPID PROFILE</a></td>
+</tr>
+<tr>
+<td># OF GEN. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>SPONSOR</td>
+<td><a href="811.6-15.html">Office of Quality & Performance</a></td>
+</tr>
+<tr>
+<td>USAGE</td>
+<td>*</td>
+</tr>
+<tr>
+<td>EDIT HISTORY</td>
+<td>
+<ol>
+<li>
+<dt>EDIT DATE:  &nbsp;&nbsp;2005-03-11 12:24:12</dt>
+<dt>EDIT BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>EDIT COMMENTS:  &nbsp;&nbsp;<pre>
+Exchange Install
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTMyNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RMPR VERIFY/REPAIR PC NUMBER (9324) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTMyNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RMPR VERIFY/REPAIR PC NUMBER</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>VERIFY/REPAIR PURCHASE CARD NUMBER</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>VERIFY/REPAIR PURCHASE CARD NU</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option was created temporarily to be used by sites that has problem
+of reconciling Purchase Card order.  When Citi Bank replaces the old
+Credit Card number,  Oracle data that comes back has a new Credit Card
+number, thus prosthetics reconciliation doesn't work.  In order for
+prostehtics user to reconcile, oracle data must be changed back to the old
+Credit Card  number. This option also prints a report that shows all the
+Purchase Order by 16 digit credit card number entered based on the date 
+range.  This option will be removed,  once IFCAP released a patch to allow
+reconciliation of purchase card  order with a different credit card
+number.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_RMPR4C2.html">RMPR4C2</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTIwMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LR INTEGRITY LOAD (1200) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTIwMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LR INTEGRITY LOAD</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Load Integrity File</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LOAD INTEGRITY FILE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ This option is used to load L* routines into LR ROUTINE INTEGRITY CHECKER
+file (69.91). This option is sensitive to the version number of the
+routine located on the second line of each routine. Once a version number
+has been selected, each routine will be checked for that version number.
+If the routine begins with a 'L' and has the corrected version number, it
+is entered to the file. Routines size ($L) and total ASCII ($A) for each
+routine is entered in to the file. Once the file is loaded any changes to
+loaded routine can be detected. This has many uses, eg. checking patch
+application, or determining routine map size.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_LRNITEGL.html">LRNITEGL</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

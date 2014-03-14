@@ -1,0 +1,105 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI0NjA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSO LM SELECT MENU (2460) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI0NjA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSO LM SELECT MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Order Selection Menu</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2436.html">PSO REFILL</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RF</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2437.html">PSO RENEW</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RN</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2461.html">PSO EDIT ORDERS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;ED</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2462.html">PSO RELEASE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RL</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2435.html">PSO PARTIAL</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PR</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2637.html">PSO CANCEL</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DC</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-60.html">OUTPATIENT PHARMACY</a></td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I $$ACTIONS^<a href="http://code.osehra.org/dox/Routine_PSOLMUTL.html">PSOLMUTL</a></td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D A^<a href="http://code.osehra.org/dox/Routine_PSOORUT3.html">PSOORUT3</a>,SHOW^VALM S:$G(PSOACT)["E" XQORM("#")=$O(^ORD(101,"B","PSO LM EDIT SELECT ORDER",0))_"^1:21"</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>25</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2006-05-25 15:17:28</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

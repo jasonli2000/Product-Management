@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTE0MTY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LA7S LOAD MAPPING SCT (11416) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTE0MTY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LA7S LOAD MAPPING SCT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Load SNOMED SCT Mapping</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LOAD SNOMED SCT MAPPING</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>LRLIASON</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the user to load SNOMED CT (SCT) mappings and term
+disposition into the target file entry. This mapping is usually provided 
+by STS after they have extracted and mapped the site's local terms to the 
+appropriate SCT code. If no mapping is provided then a disposition is 
+stored with the reason. A SCT mapping can also be provided as part of the 
+mediation process that occurs when a new term is added either by the site 
+or via an HL7 interface with the new term.
+ 
+The SCT mapping file is a text file that is usually provided via an FTP 
+transfer. This option prompts the user to specify the location of the 
+file, loads the contents of the file into a temporary holding LAB MAPPING
+TRANSPORT file (#95.4) and then allows the user to apply the mappings to 
+the target entries.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-11.html">AUTOMATED LAB INSTRUMENTS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>LOADSCT^<a href="http://code.osehra.org/dox/Routine_LRSRVR8.html">LRSRVR8</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

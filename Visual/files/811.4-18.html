@@ -1,0 +1,109 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjQtMTg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-WH MAMMOGRAM IN WH PKG (18) &nbsp;&nbsp;  REMINDER COMPUTED FINDINGS (811.4)</h1>
+<div id="demo"><table id="ODExLjQtMTg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-WH MAMMOGRAM IN WH PKG</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PXRMCWH.html">PXRMCWH</a></td>
+</tr>
+<tr>
+<td>ENTRY POINT</td>
+<td>MAM</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>VA-Mammogram in WH pkg</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This computed finding calls an API to the WH package that returns up to n 
+number for a specific date range of Mammogram procedures found in the WH 
+package.
+
+The results from the computed finding will be returned in the Data Array; 
+the format of the array is:
+DATA(n,"LINK")=
+DATA(n,"STATUS")=
+DATA(n,"VALUE")=
+DATA(n,"WVIEN")=
+
+The data assigned to the Link subscript is a boolean value. If the value is 
+a 1, then the Mammogram procedure was entered through the Radiology package.
+
+The data assigned to the Status subscript is used to determine if the 
+procedure is Open, Closed, or Pending. Pending means that the Mammogram 
+procedure in the Women's Health package needs to have a result entered. Open 
+means that the Mammogram procedure has been resulted but the provider has 
+not closed the case. Closed means that a result has been entered for the 
+procedure and it has been closed.
+
+The data assigned to the Value subscript is used to determine the diagnosis 
+of the Mammogram procedure. The diagnosis in the Women's Health package can 
+be either Normal, Abnormal, or Unsatisfactory. 
+
+The data assigned to the WVIEN subscript is the Women's Health procedure 
+IEN.
+
+The text display in the Clinical Maintenance will be found in the Text 
+array.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>MULTIPLE</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>EDIT HISTORY</td>
+<td>
+<ol>
+<li>
+<dt>EDIT DATE:  &nbsp;&nbsp;2005-05-25 15:50:28</dt>
+<dt>EDIT BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>EDIT COMMENTS:  &nbsp;&nbsp;<pre>
+Exchange Install
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

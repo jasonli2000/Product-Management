@@ -1,0 +1,59 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS00Ni4xNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RAI MDS ASIH PATIENT (46.14) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS00Ni4xNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RAI MDS ASIH PATIENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+In the initial design of the RAI/MDS interface, the need to create a
+discharge when a patient exceeds 30 days in ASIH was overlooked.  Because
+the RAI/MDS interface is triggered by PIMS ADT events, there is no PIMS
+event for this discharge.  In fact, the PIMS software creates a pseudo
+discharge at the time the patient goes on ASIH with a date/time of NOW
+plus 30 days.  Therefore, if the 30 days is exceeded, the discharge goes
+into affect.  If the patient returns or dies while ASIH, the discharge is
+either deleted or modified.
+In order to maintain control of the patients on ASIH, a new file was
+created.  In addition, a routine which will periodically run checking the
+entries for patients who have exceeded the 30 day stay.  Whenever a stay
+is found to exceed the 30 days, an HL7 Discharge (A03) will be created and
+sent to the COTS system and the entry in the RAI MDS ASIH PATIENT file
+will be inactivated.  This file and associated routine and option are part
+of patch DG*5.3*328.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

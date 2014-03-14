@@ -1,0 +1,104 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTExNjc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SCMC PATIENT TEAM POSITION CHANGES (1167) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTExNjc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SCMC PATIENT TEAM POSITION CHANGES</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>PCMM Patient Team Position Update Event Driver</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This should be fired off whenever the PATIENT TEAM POSITION ASSIGNMENT 
+file (#404.43) is updated
+ 
+Protocol Name: SCMC Patient Team Position Changes, hang an entry off of 
+this to use this protocol (I do not believe you will be using this one)
+ 
+Description: This should be fired off whenever the PATIENT TEAM POSITION 
+ASSIGNMENT file (#404.43)is updated.
+ 
+Available Variables:
+====================
+SCPCTP   = null or 0 if not a primary care assignment
+           1 if a primary care practitioner assignment
+           2 if a primary care attending assignment
+SCPTTPB4 = 0 Node of Patient Team Position Assignment (#404.43) Before 
+SCPTTPAF = 0 Node of Patient Team Position Assignment (#404.43) After
+SCTMNDB4 = 0 Node of Team (#404.51) Before
+SCTMNDAF = 0 Node of Team (#404.51) After
+SCTPNDB4 = 0 Node of Team Position (#404.57) Before
+SCTPNDAF = 0 Node of Team Position (#404.57) After
+SCPTTP   = Pointer to Patient Team Position Assignment (#404.43)
+SCTPB4   = Pointer to Team Position (404.57) Before
+SCTPAF   = Pointer to Team Position (404.57) After
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>extended action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1170.html">SCMC PT POSITION CHANGE MAIL MESSAGE</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1996-07-15 14:40:47</td>
+</tr>
+<tr>
+<td>DEFAULT WORD PROCESSING ANSWER</td>
+<td><pre>
+ 
+ 
+ 
+ 
+ 
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

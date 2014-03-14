@@ -1,0 +1,134 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTM1MTk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LEXICAL SERVICES UPDATE (3519) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTM1MTk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LEXICAL SERVICES UPDATE</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Lexical Services Update</td>
+</tr>
+<tr>
+<td>SYNONYM</td>
+<td>
+<ol>
+<li>
+<dt>SYNONYM:  &nbsp;&nbsp;LEXICON UPDATE</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>LEX UPD</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol is used to notify other applications and processes 
+when the Lexicon Utility, ICD-9 files, or the CPT/HCPCS files
+are updated.  When a file is updated, the file number will be
+added to the LEXSCHG local array: 
+ 
+   Entry                 Exit
+ 
+   Package files
+   were Updated          Package Update Protocols Invoked 
+   ----------------      ---------------------------------------------
+   LEXSCHG("LEX")=0      LEXSCHG("LEX")=NOW     LEXICON UPDATE
+   LEXSCHG("ICD")=0      LEXSCHG("ICD")=NOW     ICD CODE UPDATE EVENT 
+   LEXSCHG("CPT")=0      LEXSCHG("CPT")=NOW     ICPT CODE UPDATE EVENT
+ 
+NOTE: Calling application must NEW or KILL LEXSCHG.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>extended action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3521.html">ICPT CODE UPDATE EVENT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CPT</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3520.html">ICD CODE UPDATE EVENT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;ICD</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-155.html">LEXICON UTILITY</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>H 2 S:+($G(XQORQUIT))'>0 LEXSCHG("LEX")=$$NOW^XLFDT</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S:'$D(LEXSCHG) XQORQUIT=1</td>
+</tr>
+<tr>
+<td>REQUIRED VARIABLES</td>
+<td>
+<ol>
+<li>
+<dt>REQUIRED VARIABLES:  &nbsp;&nbsp;LEXSCHG</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I $D(LEXSCHG)</td>
+</tr>
+<tr>
+<td>IDENTIFIER</td>
+<td>LEX</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2011-06-28 12:33:19</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

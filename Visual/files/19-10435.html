@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA0MzU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBT ENTERED NOT REVIEWED (10435) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA0MzU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBT ENTERED NOT REVIEWED</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>CT Entered/Not Reviewed Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CT ENTERED/NOT REVIEWED REPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This new report will allow the MCCF staff to identify encounters that have
+been:
+    1.  Reviewed by the coders and are ready to bill (indicated by a 
+        non-blank findings type) and
+    2.  not reviewed by code (indicated by a blank findings type)
+ 
+The report prints all outpatient reimbursable insurance claims in file 
+#399 with a status of Entered/Not Reviewed.  The user input criteria for 
+the report is the Event Date range.
+ 
+The user is prompted for the EVENT START DATE and EVENT END DATE.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ENR^<a href="http://code.osehra.org/dox/Routine_IBTOECT.html">IBTOECT</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

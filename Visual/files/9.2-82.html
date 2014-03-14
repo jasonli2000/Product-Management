@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTgy").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQSMD-REMOVE (82) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTgy" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQSMD-REMOVE</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Remove all options from a user</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+   If you answer yes ('Y') to this prompt all of the options
+that have been delegated to this user will be removed after
+they have been transferred to a second user.  In this way
+a new delegate will take the place of the former delegate
+and the former delegate will no longer have any options to
+manage.
+   In order to remove all options from an existing delegate you
+must have a Delegation [Level] in the User File that is numerically
+lower than the Delegation Level of the person that you are
+trying to remove from the Delegation System.  If you do not,
+the existing delegate will retain the options already delegated
+to her.  Delegation Level may be changed by a programmer using
+FileMan.  The Delegation Level is automatically set to the number
+of steps a delegate is away from the original delegation of the
+Site Manager.
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;LEVEL</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-85.html">XQSMD-LEVEL</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-01-20 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

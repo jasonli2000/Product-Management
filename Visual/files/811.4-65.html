@@ -1,0 +1,129 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjQtNjU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-ACTIVE PATIENT RECORD FLAGS (65) &nbsp;&nbsp;  REMINDER COMPUTED FINDINGS (811.4)</h1>
+<div id="demo"><table id="ODExLjQtNjU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-ACTIVE PATIENT RECORD FLAGS</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PXRMPRF.html">PXRMPRF</a></td>
+</tr>
+<tr>
+<td>ENTRY POINT</td>
+<td>PRF</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>VA-Active Patient Record Flags</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This multiple occurrence computed finding will return active patient
+record flags. The Computed Finding Parameter is used to precisely
+specify what flags to search for. There are three parameters that
+can be used: C for category, T for type, and F for a specific flag.
+The possible values are:
+
+ Category - N (national), L (local)
+ Type - B (behavioral), C (clinical), O (other), and R (research)
+ Flag - exact name of the flag
+
+Use the "^" character to include more than one parameter in the
+search specification.
+
+Some examples:
+ C:L - would search for local flags
+ C:N^T:B - would search for national flags whose type is behavioral
+ F:DRINKING PROBLEM - would search for the flag DRINKING PROBLEM
+ T:C^F:INFECTIOUS DISEASE - would search for the flag INFECTIOUS
+   DISEASE whose type is clinical
+
+Only active flags that meet all the specified criteria will be
+returned. If no search parameters are specified then no flags will be
+returned.
+
+The date associated with a flag is the assigned date.
+
+The following "CSUB" data is returned for each flag that is found:
+
+APPRVBY  - approved by
+ASSIGNDT - assigned date/time
+CATEGORY - category
+DATE     - assigned date/time
+FLAG     - flag name
+FLAGTYPE - flag type
+ORIGSITE - originating site
+OWNER    - owner site
+REVIEWDT - review date/time
+TIULINK  - pointer to the TIU note (only applies if the flag is linked to a
+           TIU note)
+TIUTITLE - the note title (only applies if the flag is linked to a
+           TIU note)
+
+
+
+
+
+
+
+
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>MULTIPLE</td>
+</tr>
+<tr>
+<td>CF PARAMETER REQUIRED</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>EDIT HISTORY</td>
+<td>
+<ol>
+<li>
+<dt>EDIT DATE:  &nbsp;&nbsp;2009-10-01 17:12:45</dt>
+<dt>EDIT BY:  &nbsp;&nbsp;File: 200, IEN: 123456789066</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

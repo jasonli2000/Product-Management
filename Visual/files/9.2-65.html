@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTY1").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUAOLDPURGE (65) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTY1" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUAOLDPURGE</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>PURGING THE LOG OF OLD ACCESS AND VERIFY CODES</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+None
+A log of all the access codes that have ever been used is kept on the
+system.  This prevents a user from having an access code which used to
+belong to someone else.  This is valuable for security reasons.
+ 
+However, in time, it may be desirable to reduce the size of this file,
+and make available those access codes which haven't been used in quite
+a while.
+ 
+This is done through the option which purges the log of old access codes.
+You may specify the number of days worth of codes you wish to keep.
+ 
+A log is also kept for each user of old verify codes.  This same option
+purges all inactive verify codes older than the number of days specified.
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>Want to LOAD KEYWORDS (Y/N)?</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-01-20 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

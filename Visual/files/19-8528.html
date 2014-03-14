@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODUyOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORB3 PROVIDER RECIPIENTS (8528) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODUyOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORB3 PROVIDER RECIPIENTS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Set Provider Recipients for Notifications</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SET PROVIDER RECIPIENTS FOR NO</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Any one or combination of 'P', 'A', 'T', and/or 'O'.  
+Set of codes indicating default (provider) recipients of a notification by
+their title or relationship to the patient.  Notifications can be set up 
+with any or all of the following codes:
+   P (Primary Provider):     Deliver notification to the patient's Primary
+                             Provider.
+   A (Attending Physician):  Deliver notification to the patient's 
+                             Attending Physician.
+   T (Patient Care Team):    Deliver notification to the patient's primary
+                             care Team.
+   O (Ordering Provider):    Deliver notification to the provider who placed
+                             the order which triggered the notification.
+The providers, physicians and teams must be set up properly and accurately
+for the correct individuals to receive the notification.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>TITLR^<a href="http://code.osehra.org/dox/Routine_ORB3MGR1.html">ORB3MGR1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTM4MTM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSU EVENT LAB (3813) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTM4MTM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSU EVENT LAB</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>LAB RESULTS => Send to PBM</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This Protocol is triggered by the LR7O ALL EVSEND RESULTS protocol.  It 
+calls a Pharmacy routine that creates an HL7 message and sends it to the 
+national PBM Lab data data base.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-97.html">PHARMACY BENEFITS MANAGEMENT</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>Q</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2006-03-08 14:01:41</td>
+</tr>
+<tr>
+<td>LOGICAL LINK</td>
+<td>File: 870, IEN: 209</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

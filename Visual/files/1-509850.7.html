@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS01MDk4NTAuNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>A&SP WORKLOAD (509850.7) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS01MDk4NTAuNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>A&SP WORKLOAD</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The A&amp;SP CLINIC WORKLOAD file (#509850.7) contains each month's
+capitation statistics.  Data in this file are used to compile 
+statistics which includes a display of total and unique visits by
+zip code, procedure, and disease code for any specified month.
+  
+Data in this file SHOULD NOT be altered through the use of VA FileMan;
+input should take place ONLY through the QUASAR menu options.
+  
+Per VHA Directive 10-93-142, this file definition SHOULD NOT be modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

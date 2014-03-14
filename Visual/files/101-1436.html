@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE0MzY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PXCE GMPL OE DATA ENTRY (1436) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE0MzY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PXCE GMPL OE DATA ENTRY</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Patient Problem List</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol can be added to the PCE menu protocols, PXCE MAIN MENU and 
+PXCE SDAM MENU, to allow the user of PCE's user interface to go to 
+Problem List without leaving the interface.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>extended action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-111.html">PCE PATIENT CARE ENCOUNTER</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D JUSTDFNK^<a href="http://code.osehra.org/dox/Routine_PXCEPAT.html">PXCEPAT</a>,DONE^PXCE</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D FULL^<a href="http://code.osehra.org/dox/Routine_VALM1.html">VALM1</a>,JUSTDFN^PXCEPAT S:$G(DFN)'>0 XQORQUIT=1</td>
+</tr>
+<tr>
+<td>IDENTIFIER</td>
+<td>PL</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1996-08-22 17:09:43</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

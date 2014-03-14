@@ -1,0 +1,122 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTc1").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RAD/NUC MED REPORT DELETION (75) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTc1" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RAD/NUC MED REPORT DELETION</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>Imaging Report Deleted (|2|)</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This bulletin is used to notify a mail group that a radiology report
+has been deleted.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+The report for the exam with the following identification was deleted:
+             1) Patient         : |1|
+             2) Patient SSN     : |2|
+             3) Case Number     : |3|
+             4) Exam Date/Time  : |4|
+             5) Desired Date    : |5|
+             6) Report Status   : |6|
+             7) Imaging Loc     : |7|
+</pre>
+</td>
+</tr>
+<tr>
+<td>PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patient whose report was deleted.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Social Security Number of patient whose report was deleted.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Case Number of the deleted report.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;4</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Date/Time of visit for the deleted report.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;5</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Desired Date of the examination for the deleted report.  This data is
+derived from the Examinations multiple of the Radiology Patient file.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;6</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Status of the report at the time of deletion.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;7</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the imaging location where the exam was performed.  Data is
+derived from the imaging location on the exam record.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

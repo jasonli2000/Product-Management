@@ -1,0 +1,58 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS00MDkuNjI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>APPOINTMENT GROUP (409.62) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS00MDkuNjI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>APPOINTMENT GROUP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This table file contains entries that describe appointment
+categories/groups.  An APPOINTMENT STATUS(#409.63) file entry can be
+associated with one or more of these groups This relationship is defined
+by the ASSOOICATED GROUPS(#100) multiple of that APPOINTMENT
+STATUS file.
+ 
+The SDAM APPT MGT (Appointment Management) option of the Scheduling
+package uses this association. In that option, the user is allowed to
+select which 'group' of appointments to view. Appointments with
+a current status associated with that group are then displayed.
+ 
+If a group needs to be added/modified/deleted, a patch will be
+issued instructing the site how to make the change. Otherwise,
+this table file should not be edited in any way by the site.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

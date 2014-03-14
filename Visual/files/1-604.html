@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02MDQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ADDICTION SEVERITY INDEX (604) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02MDQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ADDICTION SEVERITY INDEX</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+                              ADDICTION SEVERITY INDEX
+                                   FIFTH EDITION
+ Locally Developed by D. LaLIBERTE White City VA Domiciliary
+National Mental Health Software Development: Allan Finkelstein, Ph.D.
+ 
+This is the main ASI file and contains all data for each administration.
+It is a flat file with one record per administration.
+Questions and format are determined by the publishers of the ASI and may
+not be locally modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

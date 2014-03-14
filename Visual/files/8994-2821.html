@@ -1,0 +1,177 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC0yODIx").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SPN PROGRESS NOTES WRAPPER (2821) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC0yODIx" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SPN PROGRESS NOTES WRAPPER</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>COL</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_SPNJRPPN.html">SPNJRPPN</a></td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>SINGLE VALUE</td>
+</tr>
+<tr>
+<td>AVAILABILITY</td>
+<td>AGREEMENT</td>
+</tr>
+<tr>
+<td>INACTIVE</td>
+<td>ACTIVE</td>
+</tr>
+<tr>
+<td>APP PROXY ALLOWED</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Submits progress note to VistA and returns a confirmation or error 
+message, if problem occurred.
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;DFN</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+DFN/Internal Number of Patient
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;TITLE</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+TIU Document Definition
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;VDT</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Time/Date of Visit (Not used, leave blank)
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;VLOC</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Visit Location (Not used, leave blank)
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;VSIT</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Visit file number (Not used, leave blank)
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;TIUX</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LIST</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Array containing field data and body document
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;VSTR</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Visit string (VLOC;VDT;VTYPE)
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;SUPPRESS</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Suppress execution of Commit Action? (Not used, leave blank)
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;NOASF</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Set Asave Cross-reference? (Not used, leave blank)
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;DUZ</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Internal ID of employee entering Progress Note
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;SPNSIG</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Electronic Signature Code of employee
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>RETURN PARAMETER DESCRIPTION</td>
+<td><pre>
+ 
+Returns: Confirmation Number, which will be the number '1' if successful.
+('NOT A VALID SIGNATURE' will return if the ESIG is not valid for   
+employee's DUZ, 'DOCUMENT NOT CREATED' will return if the note was not 
+successfully stored, and 'MUST SIGN NOTE IN CPRS' if note was created, 
+but not successfully signed.)
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,59 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OTA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>WV PATIENT (790) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OTA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>WV PATIENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains the names of patient's tracked by the Women's Health
+application.  Patient names may be either manually entered by a case
+manager or loaded through the Automatically Load Patients [WV AUTOLOAD
+PATIENTS] option.
+ 
+Other data stored in this file can be categorized as demographic,
+administrative, and clinical information.  The clinical data reflects
+current breast and cervical treatment needs, pregnancy information, breast
+and cervical treatment regimes, family history of breast cancer and DES,
+name of facility responsible for breast and treatment needs, and personal
+history of sexual trauma. Information specific to the results of breast
+and cervical exams and procedures are stored in the WV Procedure (#790.1)
+file.  Administrative data is limited to the name of the current case
+manager, the date of first encounter, and the date the patient record was
+inactivated.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

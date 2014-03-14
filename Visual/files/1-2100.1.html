@@ -1,0 +1,54 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0yMTAwLjE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GENERIC CODE SHEET STACK (2100.1) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0yMTAwLjE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GENERIC CODE SHEET STACK</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file stores the FMS documents for the batch type FINANCIAL
+MANAGEMENT.
+ 
+This file is used to manage the transmission of the FMS code sheets
+between DHCP and FMS.  When FMS code sheets are created manually or
+automatically, the code sheets are queued for transmission or
+transmitted immediately from this file.
+ 
+This file is used internally by the Generic Code Sheet System and
+should not be edit through VA FileMan.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

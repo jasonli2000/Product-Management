@@ -1,0 +1,90 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTYwMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENEQINV7 (1602) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTYwMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENEQINV7</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Non-EIL Inventory</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>NON-EIL INVENTORY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option generates the Non-EIL Inventory report. Equipment that belongs
+to the user-specified CMR and is not required to be accountable by VHA
+Directive will be printed on this report.
+ 
+See the CMR Inventory (EIL) report to print accountable equipment that
+belongs to a CMR.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-18.html">ENGINEERING</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K ENNXEXP</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S ENNXEXP=1</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>CMR^<a href="http://code.osehra.org/dox/Routine_ENEQRPI.html">ENEQRPI</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

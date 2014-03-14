@@ -1,0 +1,250 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NzkuMi0x").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GENERAL RADIOLOGY (1) &nbsp;&nbsp;  IMAGING TYPE (79.2)</h1>
+<div id="demo"><table id="NzkuMi0x" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TYPE OF IMAGING</td>
+<td>GENERAL RADIOLOGY</td>
+</tr>
+<tr>
+<td>ACTIVITY LOG CUT-OFF</td>
+<td>90</td>
+</tr>
+<tr>
+<td>REPORT CUT-OFF</td>
+<td>90</td>
+</tr>
+<tr>
+<td>CLINICAL HISTORY CUT-OFF</td>
+<td>90</td>
+</tr>
+<tr>
+<td>TRACKING TIME CUT-OFF</td>
+<td>90</td>
+</tr>
+<tr>
+<td>ORDER DATA CUT-OFF</td>
+<td>90</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>RAD</td>
+</tr>
+<tr>
+<td>OPERATING CONDITIONS</td>
+<td>NORMAL</td>
+</tr>
+<tr>
+<td>NEXT CASE NUMBER</td>
+<td>13</td>
+</tr>
+<tr>
+<td>CASE NUMBER TURNOVER DATE</td>
+<td>1995-12-16 00:00:00</td>
+</tr>
+<tr>
+<td>INTRODUCTION TEXT</td>
+<td><pre>
+---------------Radiology Site Parameter Initialization Routine-------------
+  In order to run the radiology module you must have at least one
+  radiology division and one radiology loacation defined in the
+  database.
+ 
+  Use this program to either initialize your division and location
+  parameters or to update them if they are already defined.
+ 
+Radiology Division
+------------------
+The radiology module is designed to handle multiple divisions within a
+medical center.  While most medical centers only have one division,
+there are a number that are multi-divisional.  As a result, it was necessary
+to structure the entire system around the division concept.
+ 
+However, single division medical centers will not notice this in the 
+everyday execution of the module.  Only in the initial set-up will there
+be any reference to 'division' for these single division sites.
+ 
+Each division will have its own set of parameters defining such
+division-wide criteria as, should the exam 'requested date' be asked
+and are impressions required on reports.
+ 
+Radiology Location
+------------------
+Within a specific division there may be a number of physical locations
+where a radiology procedure can be performed.  For example, a division
+may have its main radiology department on the second floor and it may also 
+have a satelite location on the first floor at an outpatient clinic area.
+ 
+The module is designed to handle multiple locations within a division.
+Each location will have its own set of parameters defining such
+location-specific criteria as printer devices for flash cards and jacket
+labels.
+ 
+Location Within Division Diagram
+--------------------------------
+The following diagram illustrates the multi-division, multi-location within
+a division concept.
+ 
+|PAGEFEED(10)|        Div #1                 Div #2 . . . . . . . . . Div #n
+       /  |  \                   |                    /  /  \  \
+      /   |   \                  |                   /  /    \  \
+     /    |    \                 |                  /  /      \  \
+    /     |     \                |                 /  /        \  \
+   /      |      \               |                /  /          \  \
+ Loc     Loc     Loc            Loc             Loc  Loc       Loc  Loc
+  A       B       C              D               E    F . . . . y    z
+ 
+NOTE: A location can only be associated with one division.
+ 
+Prerequistes for Initialization
+-------------------------------
+If you are running this routine for the first time then you will not be 
+able to answer many of the location parameter prompts.
+These parameters are pointer fields to files that you will need to 
+build as part of the initialization process (day-one files).
+ 
+However, the important thing at this point is to enter at least one
+division and one location under that division.
+ 
+The other steps required as a prerequisite to the initialization process
+are the following:
+          1) site manager should add the 'RA OVERALL' menu option to
+             the 'XUCORE' menu option so s/he will have access to 
+             the module.
+          2) site manager should give the radiology coordinator access
+             to the 'RA OVERALL' menu.
+          3) site should manager should have all 'RA' keys.
+          4) radiology coordinator should have all 'RA' keys except
+             the 'RA SITE' key. ('RA SITE' is used as a lock to the 
+             'Computer Site Manager Menu'. Functions in this menu should
+             only be performed by the site manager after discussions
+             with the coordinator.)
+ 
+After these actions are taken, the initialization of the module can be
+accomplished entirely within the radiology module itself.
+ 
+File Manager
+------------
+Use of File Manager should not be needed unless a change in a template
+is desired.  However, be advised that some input templates contain a large
+amount of branching logic and as a result modifications of these
+templates should be approached with great care.
+ 
+The following input templates fall under this category:
+           a) RA REGISTER           - exam registration
+           b) RA EXAM EDIT          - exam edit
+           c) RA REPORT EDIT        - report entry/edit
+           d) RA STATUS CHANGE      - status tracking
+           e) PROCEDURE EDIT        - editing the procedure type file
+           f) STATUS ENTRY          - editing examination status file
+           g) RA VERIFY REPORT ONLY    - verifying reports
+ 
+ 
+Day-One Files
+-------------
+The following chart lists which day-one files that have to be initialized.
+The chart also indicates which radiology option to use to accomplish this 
+initialization and whether the file is pointed to by a division or
+location parameter field.
+ 
+ File Name                Option                          Parameter Field
+ and Number               &lt;menu&gt;;&lt;menu&gt;...;&lt;option&gt;       Div      Loc
+ ----------               -------------------------       ---------------
+ FLASH CARD FORMATS       SUPERVISOR;UTILITY;FLASH                  X
+ EXAM ROOM                SUPERVISOR;SYSTEM;EXAM                    X
+ FILM TYPE                SUPERVISOR;UTILITY;FILM                
+ EXAMINATION STATUS       SUPERVISOR;UTILITY;EXAMINATION            
+ RADIOLOGY PERSONNEL      SUPERVISOR;RADIOLOGY PERSONNEL;
+                              ...CLASSIFICATION      
+ PROCEDURE FILE           SUPERVISOR;UTILITY;PROCEDURE
+ PROCEDURE MODIFIER       SUPERVISOR;UTILITY;
+                              ...PROCEDURE MODIFIER 
+ CONTRACT/SHARING
+   AGREEMENT              SUPERVISOR;UTILITY;SHARING
+ STANDARD REPORTS         SUPERVISOR;UTILITY;STANDARD
+ 
+Other initialization procedures are indicated in the following chart.
+ 
+ Procedure                   Option &lt;menu&gt;;&lt;menu&gt;...&lt;option&gt;
+ ---------                   -------------------------------
+ Device Specification        COMPUTER SITE MANAGER;DEVICE SPECIFICATION
+                                 - assign default printer devices for 
+                                   each location.
+                                 - create a table of input devices for 
+                                   each location. The system uses this
+                                   table upon user entry into the radiology
+                                   module to determined the user's radiology
+                                   location. If user's current device is not
+                                   in the table then user will have to be
+                                   prompted for radiology location. Once
+                                   the module knows the user's location
+                                   the system will automatically use the 
+                                   parameters for that location and division
+                                   during the session.
+ 
+ Failsoft/Timeout             COMPUTER SITE MANAGER;FAILSOFT
+                                 - specify DTIME for radiology module
+                                 - specify if computer system is in
+                                   normal operating mode or a failsoft
+                                   mode as far as radiology is concerned.
+                                   If radiology is placed into a failsoft
+                                   mode the devices specifications are not
+                                   used by the system.
+ 
+ Re-specify Division Parameters    SUPERVISOR;SYSTEM DEFINITION;DIVISION
+  
+ Re-specify Location Parameters    SUPERVISOR;SYSTEM DEFINITION;LOCATION
+ 
+Note: The text you have been reading is located in the 'IMAGING TYPE'
+      file, under the 'INTRODUCTORY TEXT' field of the 'RADIOLOGY'
+      imaging type entry.
+ 
+-------------------------------------------------------------------------
+</pre>
+</td>
+</tr>
+<tr>
+<td>PFSS Dept. Code</td>
+<td>105</td>
+</tr>
+<tr>
+<td>WORK RVU (wRVU) SCALING FACTOR</td>
+<td>
+<ol>
+<li>
+<dt>CALENDAR YEAR:  &nbsp;&nbsp;2006</dt>
+<dt>SCALING FACTOR:  &nbsp;&nbsp;1.21</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

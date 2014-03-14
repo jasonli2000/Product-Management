@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#Ljg1LTE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>1 (1) &nbsp;&nbsp;  LANGUAGE (.85)</h1>
+<div id="demo"><table id="Ljg1LTE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID NUMBER</td>
+<td>1</td>
+</tr>
+<tr>
+<td>NAME</td>
+<td>ENGLISH</td>
+</tr>
+<tr>
+<td>ORDINAL NUMBER FORMAT</td>
+<td>I $G(Y) S Y=Y_$S(Y#10=1&(Y#100-11):"ST",Y#10=2&(Y#100-12):"ND",Y#10=3&(Y#100-13):"RD",1:"TH")</td>
+</tr>
+<tr>
+<td>DATE/TIME FORMAT</td>
+<td>S:Y Y=$S($E(Y,4,5):$P("JAN^FEB^MAR^APR^MAY^JUN^JUL^AUG^SEP^OCT^NOV^DEC","^",+$E(Y,4,5))_" ",1:"")_$S($E(Y,6,7):+$E(Y,6,7)_",",1:"")_($E(Y,1,3)+1700)_$P("@"_$E(Y_0,9,10)_":"_$E(Y_"000",11,12)_$S($E(Y,13,14):":"_$E(Y_0,13,14),1:""),"^",Y[".")</td>
+</tr>
+<tr>
+<td>DATE/TIME FORMAT (FMTE)</td>
+<td>N RTN,%T S %T="."_$E($P(Y,".",2)_"000000",1,7),%F=$G(%F),RTN="F"_$S(%F<1:1,%F>7:1,1:+%F\1)_"^DILIBF" D @RTN S Y=%R</td>
+</tr>
+<tr>
+<td>TIME</td>
+<td>S Y=$S($L($G(Y),".")>1:$E(Y_0,9,10)_":"_$E(Y_"000",11,12)_$S($E(Y,13,14):":"_$E(Y_0,13,14),1:""),1:"")</td>
+</tr>
+<tr>
+<td>CARDINAL NUMBER FORMAT</td>
+<td>I Y S Y=$FN(Y,",")</td>
+</tr>
+<tr>
+<td>UPPERCASE CONVERSION</td>
+<td>S Y=$TR(Y,"abcdefghijklmnopqrstuvwxyz","ABCDEFGHIJKLMNOPQRSTUVWXYZ")</td>
+</tr>
+<tr>
+<td>LOWERCASE CONVERSION</td>
+<td>S Y=$TR(Y,"ABCDEFGHIJKLMNOPQRSTUVWXYZ","abcdefghijklmnopqrstuvwxyz")</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

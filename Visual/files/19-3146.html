@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzE0Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCAK PURGE TEMP (3146) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzE0Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCAK PURGE TEMP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Purge Temporary Archive Storage File</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PURGE TEMPORARY ARCHIVE STORAG</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will purge ALL of the archive data items in the temporary
+storage archive file (AR ARCHIVE File 430.8).  If there are records
+remaining in the Pending Archive status you will have to build this
+file again. 
+ 
+** THIS OPTION DOES NOT RESET THE RECORDS TO THE ARCHIVED STATUS **
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-53.html">ACCOUNTS RECEIVABLE</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D ^<a href="http://code.osehra.org/dox/Routine_PRCAKTP.html">PRCAKTP</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

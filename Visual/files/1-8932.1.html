@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS04OTMyLjE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PERSON CLASS (8932.1) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS04OTMyLjE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PERSON CLASS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file holds the CMS (HCFA) provider type data.
+ 
+In 2001, ANSI ASC X12N asked the National Uniform Claim Committee (NUCC)
+to become the official maintainer of the Health Care Provider Taxonomy
+List (provider type).
+ 
+PERSON CLASS is to be used for identifying provider types for roll-ups.
+ 
+Patches need to review the technical description on field 90002.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

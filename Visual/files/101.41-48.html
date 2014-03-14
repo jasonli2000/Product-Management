@@ -1,0 +1,119 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLjQxLTQ4").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRVOR (48) &nbsp;&nbsp;  ORDER DIALOG (101.41)</h1>
+<div id="demo"><table id="MTAxLjQxLTQ4" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRVOR</td>
+</tr>
+<tr>
+<td>DISPLAY TEXT</td>
+<td>VITAL SIGNS</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>dialog</td>
+</tr>
+<tr>
+<td>DISPLAY GROUP</td>
+<td><a href="100.98-12.html">VITALS/MEASUREMENTS</a></td>
+</tr>
+<tr>
+<td>SIGNATURE REQUIRED</td>
+<td>ORES</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-35.html">ORDER ENTRY/RESULTS REPORTING</a></td>
+</tr>
+<tr>
+<td>ITEMS</td>
+<td>
+<ol>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-4.html">OR GTX ORDERABLE ITEM</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Vital Sign:</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>INDEX:  &nbsp;&nbsp;S.V/M</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the vital sign you wish to be taken.</dt>
+<dt>SCREEN:  &nbsp;&nbsp;I $$ACTIVE^<a href="http://code.osehra.org/dox/Routine_ORDD43.html">ORDD43</a>(Y)</dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;N IDX,SCR S IDX=$G(ORDIALOG(PROMPT,"D")),SCR=$G(ORDIALOG(PROMPT,"S")) D XHELP^<a href="http://code.osehra.org/dox/Routine_ORDD43.html">ORDD43</a>(IDX,SCR)</dt>
+<dt>EXIT ACTION:  &nbsp;&nbsp;N OI S OI=+$G(ORDIALOG(PROMPT,INST)) D:OI ORDMSG^ORCD(OI)</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-6.html">OR GTX START DATE/TIME</a></dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;RCW</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the date [time optional] when you wish these signs to be taken.</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y="NOW"</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-170.html">OR GTX SCHEDULE</a></dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;C</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter either a standard administration schedule or one of your own, up to 70 characters.</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-19.html">OR GTX FREE TEXT 1</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Special Instructions:</dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;RC</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter any special instructions for this order, up to 240 characters.</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-24.html">OR GTX STOP DATE/TIME</a></dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;RCW</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the date [time optional] to stop taking this vital sign.</dt>
+<dt>POST-SELECTION ACTION:  &nbsp;&nbsp;I $$FTDCOMP^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a>("START DATE/TIME","STOP DATE/TIME",">") K DONE,ORDIALOG(PROMPT,ORI) W $C(7),!,"Cannot end before start date/time!",!</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y=$$VAL^ORCD("START DATE/TIME")</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>LISTBOX TEXT</td>
+<td>Vitals</td>
+</tr>
+<tr>
+<td>WINDOW FORM ID</td>
+<td>171</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-06-14 09:02:59</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

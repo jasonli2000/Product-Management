@@ -1,0 +1,96 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My41LTE3").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MESSAGE P-MESSAGE-HFS-OPENM-NT (17) &nbsp;&nbsp;  DEVICE (3.5)</h1>
+<div id="demo"><table id="My41LTE3" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MESSAGE P-MESSAGE-HFS-OPENM-NT</td>
+</tr>
+<tr>
+<td>LOCATION OF TERMINAL</td>
+<td>HFS (OpenM-NT) FILE =>  MESSAGE</td>
+</tr>
+<tr>
+<td>MNEMONIC</td>
+<td>
+<ol>
+<li>
+<dt>MNEMONIC:  &nbsp;&nbsp;P-MESSAGE-HFS</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>$I</td>
+<td>V:\PLATINUM\XMHFS.TMP</td>
+</tr>
+<tr>
+<td>SIGN-ON/SYSTEM DEVICE</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>HOST FILE SERVER</td>
+</tr>
+<tr>
+<td>SUBTYPE</td>
+<td><a href="3.2-191.html">P-MESSAGE-HFS-OPENM-NT</a></td>
+</tr>
+<tr>
+<td>ASK DEVICE</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>ASK PARAMETERS</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>ASK HOST FILE</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>ASK HFS I/O OPERATION</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>OPEN PARAMETERS</td>
+<td>"RWNS"</td>
+</tr>
+<tr>
+<td>PRE-OPEN EXECUTE</td>
+<td>D EN^<a href="http://code.osehra.org/dox/Routine_XMAPHOST.html">XMAPHOST</a> Q:$G(POP)  S IO=$P(IO,".")_$J_"."_$P(IO,".",2)</td>
+</tr>
+<tr>
+<td>OPEN COUNT</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

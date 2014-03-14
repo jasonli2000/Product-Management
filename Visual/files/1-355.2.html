@@ -1,0 +1,52 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zNTUuMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TYPE OF INSURANCE COVERAGE (355.2) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zNTUuMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TYPE OF INSURANCE COVERAGE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains the types of coverages that an insurance company is
+generally associated with.  If an insurer is identified with more than 
+one type of coverage then  it should be identified as HEALTH INSURANCE as
+this encompases all.
+ 
+Sites should not add, edit or delete entries from this file.
+ 
+Per VHA Directive 10-93-142, this file definition should not be modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

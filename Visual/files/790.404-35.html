@@ -1,0 +1,106 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NzkwLjQwNC0zNQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MAM result NEM, next MAM 6M (35) &nbsp;&nbsp;  WV NOTIFICATION PURPOSE (790.404)</h1>
+<div id="demo"><table id="NzkwLjQwNC0zNQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NOTIFICATION PURPOSE</td>
+<td>MAM result NEM, next MAM 6M</td>
+</tr>
+<tr>
+<td>PRIORITY</td>
+<td>ASAP</td>
+</tr>
+<tr>
+<td>ACTIVE</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ASSOCIATE WITH BR/CX TX</td>
+<td>BREAST TX</td>
+</tr>
+<tr>
+<td>RESULT OR REMINDER LETTER</td>
+<td>RESULT</td>
+</tr>
+<tr>
+<td>BR TX NEED</td>
+<td><a href="790.51-2.html">Mammogram, Repeat</a></td>
+</tr>
+<tr>
+<td>BR TX DUE DATE</td>
+<td>6M</td>
+</tr>
+<tr>
+<td>LETTER TEXT</td>
+<td><pre>
+|NOWRAP|
+ 
+|CENTER("Women's Health Clinic")|
+ 
+|CENTER("Your Street")|
+ 
+|CENTER("Your City, ST  Zip Code")|
+ 
+ 
+     |TODAY|
+ 
+ 
+                                                       |$E(SSN#,6,9)|
+     |$P(NAME,",",2)| |$P(NAME,",")|
+     |COMPLETE ADDRESS|
+ 
+ 
+ 
+ 
+ 
+- -                                                                    - -
+ 
+     Dear Ms. |$P(NAME,",",1)|,
+ 
+     This is the body of the letter and should be edited to say what
+     you want for this Purpose of Notification.
+ 
+ 
+     Sincerely,
+ 
+ 
+ 
+     Your Name
+     Women's Health Program
+     phone: nnn-nnnn
+ 
+ 
+     printed: |NOW|
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

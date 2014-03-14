@@ -1,0 +1,97 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTE5Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUSERDEAC (193) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTE5Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUSERDEAC</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>XUSER DEACTIVATION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This bulletin will be sent to an assigned mail Group when a user get 
+deactivated.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+ 
+      User name : |1|
+      Title     : |2|
+      Service   : |3|
+ 
+was deactivated on |4|.
+</pre>
+</td>
+</tr>
+<tr>
+<td>PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Name of user who gets deactivated.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Title.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Service.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;4</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Date of user gets deactivated.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

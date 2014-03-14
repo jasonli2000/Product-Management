@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTg1MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RCDPE UNMATCH ERA (9851) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTg1MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RCDPE UNMATCH ERA</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Unmatch An ERA</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>UNMATCH AN ERA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows you to remove the match status from an ERA if it was
+added in error.  You may only select an ERA that was previously marked as
+matched and that has had no receipt created for it yet.  If the worklist
+entry has been created, it will be deleted before it allows the unmatch
+to occur.  If the ERA was matched to an EFT, the EFT will be remarked as
+unmatched too.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-53.html">ACCOUNTS RECEIVABLE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>UNMATCH^<a href="http://code.osehra.org/dox/Routine_RCDPEM2.html">RCDPEM2</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNjkyMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>QAOS RPT TXSP CARE TYPE (6920) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNjkyMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>QAOS RPT TXSP CARE TYPE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Display Treating Specialty Care Types</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DISPLAY TREATING SPECIALTY CAR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option produces a report showing all the treating specialties in use
+at your facility and their associated care type (acute, special,
+intermediate, NHCU, psych.).  If a specialty is not associated with a care
+type it will be flagged as "NOT SPECIFIED".  The report may be sorted by
+care type or specialty.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_QAOSPTX0.html">QAOSPTX0</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-04-21 15:21:32</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

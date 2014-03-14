@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTU4Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SPNL OUTPATIENT OUTCOMES (9586) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTU4Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SPNL OUTPATIENT OUTCOMES</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Outpatient Rehabilitation Outcomes</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>OUTPATIENT REHABILITATION OUTC</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option controls viewing, editing, and creation of Outcomes records
+for outpatient rehabilitation episodes of care.  An episode of care
+consists of a series of outcomes records with the same care start date and
+the same care end date.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-148.html">SPINAL CORD DYSFUNCTION</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>I $D(IOF) W @IOF D ZAP^<a href="http://code.osehra.org/dox/Routine_SPNOGRDA.html">SPNOGRDA</a> D DISP^<a href="http://code.osehra.org/dox/Routine_SPNMAIN.html">SPNMAIN</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>I $D(IOF) W @IOF</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>OUT^<a href="http://code.osehra.org/dox/Routine_SPNCTOUA.html">SPNCTOUA</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

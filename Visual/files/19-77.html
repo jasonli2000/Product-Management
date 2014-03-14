@@ -1,0 +1,87 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUPMDISP (77) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUPMDISP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Display of Programmer Mode Entry List</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DISPLAY OF PROGRAMMER MODE ENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This displays which users entered into programmer mode, sorts
+by user name then date/time.  Prompts for print device to
+generate a hard copy if desired.  Gives count of entries by user.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>print</td>
+</tr>
+<tr>
+<td>DISPLAY OPTION?</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>DELEGABLE</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DIC {DIP}</td>
+<td>%ZUA(3.07,</td>
+</tr>
+<tr>
+<td>L.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FLDS</td>
+<td>[XUPMDISPLAY]</td>
+</tr>
+<tr>
+<td>BY</td>
+<td>[XUPMDISPS]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

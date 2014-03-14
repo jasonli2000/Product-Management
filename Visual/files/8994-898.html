@@ -1,0 +1,91 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC04OTg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DVBAB REPORT PENDING7131 (898) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC04OTg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DVBAB REPORT PENDING7131</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>STRT</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_DVBAB57.html">DVBAB57</a></td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>GLOBAL ARRAY</td>
+</tr>
+<tr>
+<td>AVAILABILITY</td>
+<td>RESTRICTED</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Generates a list of pending 7131 requests.
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;SELDIV</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;DIV</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;DVBADLMTR</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;1</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This parameter is used to indicate whether the report will create a plain 
+text format or a comma delimited output format. DVBADLMTR=0 means report 
+will be in plain text and DVBADLMTR=1 means create output in comma 
+delimited format.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTExMzc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORAM COMPLICATIONS REPORT (11137) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTExMzc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORAM COMPLICATIONS REPORT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Anticoagulation Complication Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ANTICOAGULATION COMPLICATION R</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Option to generate a report of complications to patients being tracked by 
+Anticoagulation Management.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>Short Menu Text</td>
+<td>COMPLICATION SEARCH</td>
+</tr>
+<tr>
+<td>DISPLAY OPTION?</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>COMPRPT^<a href="http://code.osehra.org/dox/Routine_ORAMX.html">ORAMX</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>2008-10-08 12:27:27</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

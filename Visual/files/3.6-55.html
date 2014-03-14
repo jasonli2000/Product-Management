@@ -1,0 +1,121 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTU1").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RT ATTEMPT-ON-MISSING-REC (55) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTU1" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RT ATTEMPT-ON-MISSING-REC</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>ATTEMPT TO PROCESS A MISSING RECORD</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+An attempt was made to process |1|'s |7|
+                       missing |2|.
+ 
+The following is information related to the attempt:
+        - WHO made the attempt        : |6|
+        - WHEN was the attempt made   : |3|
+        - What DEVICE was it made on  : |5|
+        - What CPU was it made on     : |8|
+        - Type of MOVEMENT attempted  : |4|
+ 
+</pre>
+</td>
+</tr>
+<tr>
+<td>PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The patient's name
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Type of record
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+When attempt was made.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;4</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Type of movement attempted.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;5</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Device where attempt was made.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;6</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+User who made the attempt.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;7</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+SSN of patient.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;8</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+CPU and UCI where attempt was made.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

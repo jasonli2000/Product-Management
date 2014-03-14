@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjAwMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DG CONSISTENCY PURGE (2002) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjAwMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DG CONSISTENCY PURGE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Purge Inconsistent Data Elements</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PURGE INCONSISTENT DATA ELEMEN</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>DG CONSISTENCY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to purge data from the INCONSISTENT DATA file.
+The user selects a date from which the option will check each patient
+to see if he/she has been admitted or registered since that date.
+If not, the inconsistent data elements for that patient will be 
+removed from the file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_DGRPCK.html">DGRPCK</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

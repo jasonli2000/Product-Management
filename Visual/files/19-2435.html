@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjQzNQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBT SUP MANUALLY QUE ENCTRS (2435) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjQzNQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBT SUP MANUALLY QUE ENCTRS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Manually Add Opt. Encounters to Claims Tracking</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>MANUALLY ADD OPT. ENCOUNTERS T</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the user to select a date range of outpatient encounters
+and tries to add them to the Claims tracking module.
+ 
+The option will automatically queue off a task to add encounters and when 
+complete send the requesting user a mail message.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_IBTRKR4.html">IBTRKR4</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-09-16 13:11:47</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzgyOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSXR TURNAROUND TIME REPORT (3828) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzgyOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSXR TURNAROUND TIME REPORT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Turnaround Time Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>TURNAROUND TIME REPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option queues the CMOP Rx Turnaround Time report for the selected
+date range. The report is based on the time difference between the 
+transmission date/time and the date/time the pharmacist at the CMOP marked
+the prescription as completed/released. Information includes the average,
+minimum, and maximum turnaround times and the total number of Rx's released.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-82.html">CMOP</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>REMOTE^<a href="http://code.osehra.org/dox/Routine_PSXTNRPT.html">PSXTNRPT</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

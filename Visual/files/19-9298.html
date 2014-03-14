@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTI5OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMTS GUI HS LIST METHOD (9298) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTI5OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMTS GUI HS LIST METHOD</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Method of compiling 'Health Summary Types List'</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>METHOD OF COMPILING 'HEALTH SU</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Use this option to edit the method used to build the list of Health
+Summary Types displayed on the Reports Tab in CPRS.  There are 2 
+methods:
+
+   Overwrite   System-defined Health Summary Types are added 
+               to the list.  If there are User-defined Health
+               Summary Types, then they will replace the System
+               defined Health Summary Types already on the list.
+
+   Append      System-defined Health Summary Types are added to
+               the list.  If there are User-defined Health Summary
+               Types, then they will added to the list along with 
+               the System-defined types.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>METH^<a href="http://code.osehra.org/dox/Routine_GMTSXA.html">GMTSXA</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

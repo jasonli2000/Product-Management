@@ -1,0 +1,50 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuMDctNDY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GET PATIENT (46) &nbsp;&nbsp;  EXECUTE CODE (62.07)</h1>
+<div id="demo"><table id="NjIuMDctNDY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GET PATIENT</td>
+</tr>
+<tr>
+<td>EXECUTE CODE</td>
+<td>S U="^" X:$D(LRDPF) ^LAB("X","PT1") S:'$D(LRDPF) X=$S($D(^DPT(DFN,0))#2:^(0),$D(^LAB(62.3,DFN,0)):^(0),1:"") S PNM=$P(X,U,1),SEX=$P(X,U,2),SEX=$S(SEX="":"M",1:SEX),DOB=$P(X,U,3),X=$P(X,U,9) X ^LAB("X","PT2")</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>XECUTE</td>
+</tr>
+<tr>
+<td>SUBSCRIPT NAME</td>
+<td>PT</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

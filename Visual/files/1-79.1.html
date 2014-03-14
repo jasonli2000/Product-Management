@@ -1,0 +1,128 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OS4x").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IMAGING LOCATIONS (79.1) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OS4x" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IMAGING LOCATIONS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains, for each imagaing location entry, parameters that the
+module uses during various stages of exam and report processing and
+inquiring.  The parameter switches allow the 'customizing' of the module
+for each location by the package coordinator.
+ 
+Within an imaging division there may be a number of physical locations
+where a imaging procedure can be performed.  The module is designed to
+handle multiple locations within a division.  However, each location can
+only be associated with one division.
+ 
+These parameters are loaded into the user's partition once the module
+determines which division and location the user is currently
+associated with.  This is determined by one of two ways: 1) the device
+the user is using is an entry in the 'INPUT DEVICES' sub-file for
+a location or 2) if (1) is not true than the module will simply
+ask the user what his/her current location is.
+ 
+Entries in this file should not be deleted.  Adding new entries is always
+allowed.
+ 
+ Data Storage
+ ------------
+The data for the 'IMAGING LOCATIONS' file is stored in the ^RA(79.1,
+global. At the present time this file is very static after day-one
+initialization is complete.  However, it still should be journaled.
+It should also be translated if the operating system supports this function.
+ 
+ Input Templates
+ ---------------
+The following is a list of input templates used by the package
+and the entry in the OPTIONS file (#19) that uses the template:
+ 
+                     Compiled
+ Name                Routine      Description; Option(s)
+ ----                -------     -----------------------
+ RA LOCATION PARAMETERS          Used to enter/edit location parameters
+                                 that are controlled by the package
+                                 coordinator;
+                                 RA SYSLOC
+ 
+ RA SITE MANAGER                 Used to enter/edit location parameters
+                                 that are controlled by IRM;
+                                 RA DEVICE
+ 
+If any modifications to these input templates are needed for local
+purposes, then great care should be taken not to degrade any branching logic
+in the template.
+ 
+ Print Templates
+ ---------------
+ The following is a list of print templates used by the package:
+ 
+ Name                  Description; Option(s)
+ ----                  ----------------------
+ RA IMAGE LOC LIST     Print the location parameters for the entries in
+                       this file;
+                       RA SYSLOCLIST
+ 
+ RA EXAM ROOM LIST     Prints a list of cameras/equip/rms
+                       and the locations
+                       associated with the camera/equip/rm;
+                       RA SYSEXLIST
+ 
+ Sort Templates
+ --------------
+ The following is a list of sort templates used by the package:
+ 
+ Name                  Related Print Template
+ ----                  ----------------------
+ RA IMAGE LOC LIST     RA IMAGE LOC LIST
+ 
+ RA EXAM ROOM LIST     RA EXAM ROOM LIST
+ 
+ The modification of any sort templates is not recommended.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;RA</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

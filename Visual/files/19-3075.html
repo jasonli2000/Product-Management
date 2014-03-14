@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzA3NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCAC DCDOJ REREFER (3075) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzA3NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCAC DCDOJ REREFER</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Re-Refer to RC/DOJ</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RE-REFER TO RC/DOJ</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Use this option to refer bills that are currently referred to the
+Department of Justice or Regional Counsel.  This option should not be
+used for Third Party Bills that are referred electronically.
+This option will create a Reestablish to RC/DOJ AR Transaction  
+and update the appropriate AR File 430 fields. 
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D EN^<a href="http://code.osehra.org/dox/Routine_RCRCRT1.html">RCRCRT1</a>(5)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

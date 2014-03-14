@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTY5Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>HL TRANSMISSION LOG (1693) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTY5Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>HL TRANSMISSION LOG</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Start/Stop Log of HL7 Transmissions</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>START/STOP LOG OF HL7 TRANSMIS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to start/stop the log of HL7 transmissions.  The log
+should normally only be started when you are testing the HL7 interface.
+After testing is finished, the log should be stopped to save disk space
+and reduce global sets.  The log data is stored descendant from the
+^TMP("HL",ION) global node, where ION is equal to the name of the HL7
+Device that was entered into the HL7 Non-DHCP Application Parameter file.
+It can be purged at any time by killing the ^TMP("HL",ION) global.  You
+are also asked if you want to purge the data whenever you start/stop the
+log.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-33.html">HEALTH LEVEL SEVEN</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>LOG^<a href="http://code.osehra.org/dox/Routine_HLUOPT.html">HLUOPT</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

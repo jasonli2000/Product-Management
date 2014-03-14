@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTk4MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MCESTONGIENDO (5980) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTk4MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MCESTONGIENDO</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Turn On Release Control/Elec. Signature</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>TURN ON RELEASE CONTROL/ELEC.</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is a one time option that will turn on Release Control/Electronic
+Signature.  It should only be used by the Manager of this
+department.  Once this option is executed there is no way to turn it
+off.  Once this is turned on the non-key holders will not be able to
+print a record until it is released.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D ^<a href="http://code.osehra.org/dox/Routine_MCDIEDIE.html">MCDIEDIE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ESTOON^<a href="http://code.osehra.org/dox/Routine_MCESCONV.html">MCESCONV</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

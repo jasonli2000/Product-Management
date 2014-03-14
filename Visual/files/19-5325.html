@@ -1,0 +1,87 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTMyNQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA FLASHFORM (5325) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTMyNQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA FLASHFORM</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Label/Header/Footer Formatter</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LABEL/HEADER/FOOTER FORMATTER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This function allows the coordinator to design site
+specific formats for the following:
+ 
+      1) Flash Cards
+      2) Exam Labels
+      3) Jacket Labels
+      4) Report Headers
+      5) Report Footers
+ 
+After a format has been entered or edited, the system will display
+a test version of the format.
+ 
+The 'Imaging Locations' file uses this file to obtain the format
+specifications for the following location parameters:
+ 
+      1) Default Flash Card Format
+      2) Default Exam Label Format
+      3) Default Jacket Label Format
+      4) Default Report Header Format
+      5) Default Report Footer Format
+ 
+  These parameters are set using the 'Location Parameter Set-Up'
+function.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>6^<a href="http://code.osehra.org/dox/Routine_RAMAIN.html">RAMAIN</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

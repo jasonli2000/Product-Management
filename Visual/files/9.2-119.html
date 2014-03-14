@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUDOC DEVICE PROMPT SPOOLING (119) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUDOC DEVICE PROMPT SPOOLING</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>SENDING OUTPUT TO THE SPOOLER</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+ 
+Output may be sent to the spool device with the optional specifications of
+subtype, right margin, or page length.  For example:
+ 
+     DEVICE: SPOOL                  to spool with defaults, often right
+                                    margin of 132 and page length of 66.
+ 
+     DEVICE: SPOOL;96;66            to use a margin of 96 and page length of
+                                    66 lines.
+ 
+     DEVICE: SPOOL;P-OTHER80        to use the characteristics of the
+                                    P-OTHER80 subtype (with an 80 column
+                                    rather than 132 column page width).
+ 
+The user is prompted for a spool document name once the spool device has
+been requested.  As a shortcut, the spool document may be named when
+responding to the device prompt:
+ 
+     DEVICE: SPOOL;MYDOC            to name the spool document MYDOC.
+ 
+     DEVICE: SPOOL;P-OTHER80;MYDOC  to use the P-OTHER80 characteristics.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-04-19 11:17:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,108 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE4MTc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU ACTION MENU LINK (1817) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE4MTc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU ACTION MENU LINK</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Link ...</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Allows authorized users to (re)-link documents to either problems,
+patients/visits, or records in other applications (e.g., Consult Results
+to Consult Requests, Patient Record Flag Documents to Flags, etc.). Such
+associations permit a variety of clinically useful "views" of the on-line
+record.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1816.html">TIU ACTION LINK TO PROBLEMS</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1815.html">TIU ACTION LINK TO VISIT</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2058.html">TIU ACTION LINK WITH CLIENT RECORD</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S XQORM(0)="AD",XQORM("??")="D LINKHELP^<a href="http://code.osehra.org/dox/Routine_TIUHELP.html">TIUHELP</a>",VALMBCK=""</td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I '$G(TIUGLINK)</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>W !</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Specify Linkage:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2006-05-05 12:43:19</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

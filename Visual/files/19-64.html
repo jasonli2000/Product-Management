@@ -1,0 +1,93 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNjQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUAUTODEACTIVATE (64) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNjQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUAUTODEACTIVATE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Automatic Deactivation of Users</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>AUTOMATIC DEACTIVATION OF USER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will go thru the New Person file, and search for users with 
+a termination date in the past who still have an access code.  It will 
+delete there access code and Keys. It calls the XU USER TERMINATE 
+protocol in the OPTION FILE so other applications can take any action they
+need. If the DELETE ALL MAIL ACCESS field is set then the user will be
+removed them from the mail system, this will delete their mail boxes and
+delete them from any mail groups. 
+ 
+Patch XU*8*514 implements the Logical Access Controls section of VA 
+Handbook 6500. Item 'd' states that accounts are automatically disabled
+if inactive for 30 days.
+ 
+The routine checks for users that have an access code and a Last Signon 
+Date (#202) where the Last Signon Date is more than 30 days old and sets 
+the DISUSER (#7) flag for the user. If the site has set the ACADEMIC
+AFFILIATION WAIVER (#13) field to YES in the KERNEL SYSTEM PARAMETERS file
+(#8989.3) then a 90 day limit is used in place of 30 days.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>DELEGABLE</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>CHECK^<a href="http://code.osehra.org/dox/Routine_XUSTERM1.html">XUSTERM1</a></td>
+</tr>
+<tr>
+<td>INDEPENDENTLY INVOCABLE</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

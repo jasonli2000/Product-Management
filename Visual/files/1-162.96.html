@@ -1,0 +1,51 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0xNjIuOTY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FEE BASIS GEOGRAPHIC INDEX (162.96) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0xNjIuOTY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FEE BASIS GEOGRAPHIC INDEX</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains by calendar year all relative value units
+associated with a geographic area.  Geographic area is defined
+with Zip Codes.  This is a table file that should not be altered
+at the station unless instructed to do so.  The relative values
+are set by the Health Care Finance Administration.
+ 
+Per VHA Directive 10-93-142, this file definition should not be modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

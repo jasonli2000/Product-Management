@@ -1,0 +1,62 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTM2LjUtMzc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>REPEAT VENTILATOR SUPPORT W/IN 30 DAYS (37) &nbsp;&nbsp;  PERIOPERATIVE OCCURRENCE CATEGORY (136.5)</h1>
+<div id="demo"><table id="MTM2LjUtMzc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OCCURRENCE CATEGORY</td>
+<td>REPEAT VENTILATOR SUPPORT W/IN 30 DAYS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Definition Revised (2008)
+Indicate if the patient was placed on ventilator support 
+postoperatively within 30 days and this repeat ventilator support
+is related to the index operation (For example, the patient is on
+the ventilator intra-op and immediately post-op.  Then patient is
+weaned and the ventilator is discontinued.  Later, the patient gets
+into trouble and mechanical ventilation has to be reinstated.) 
+However, if the patient returns to the OR within 30 days and gets
+extubated immediately after, it is not considered repeat ventilator
+support.
+</pre>
+</td>
+</tr>
+<tr>
+<td>INTRAOPERATIVE ALLOWED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>CARDIAC ONLY</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

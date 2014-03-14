@@ -1,0 +1,120 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI2ODU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RG PT SUBSCRIPTION RECEIVER (2685) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI2ODU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RG PT SUBSCRIPTION RECEIVER</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Process a CIRN patient subscription request</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This client protocol is used to process subscription control Master Files
+Notification messages.  The protocol is also used to reroute the message
+from the  CIRN Master Of Record (CMOR) to all other subscribers of the
+identified patient.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>subscriber</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-170.html">CLINICAL INFO RESOURCE NETWORK</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2000-05-25 14:44:23</td>
+</tr>
+<tr>
+<td>RESPONSE MESSAGE TYPE</td>
+<td><a href="771.2-33.html">MFN</a></td>
+</tr>
+<tr>
+<td>RECEIVING APPLICATION</td>
+<td><a href="771-29.html">RG SUBSCRIPTION</a></td>
+</tr>
+<tr>
+<td>TRANSACTION MESSAGE TYPE</td>
+<td><a href="771.2-33.html">MFN</a></td>
+</tr>
+<tr>
+<td>EVENT TYPE</td>
+<td><a href="779.001-151.html">Z15</a></td>
+</tr>
+<tr>
+<td>MESSAGE STRUCTURE</td>
+<td>File: 779.005, IEN: i</td>
+</tr>
+<tr>
+<td>PROCESSING ID</td>
+<td>P</td>
+</tr>
+<tr>
+<td>APPLICATION ACK TYPE</td>
+<td><a href="779.003-3.html">NE</a></td>
+</tr>
+<tr>
+<td>VERSION ID</td>
+<td><a href="771.5-3.html">2.3</a></td>
+</tr>
+<tr>
+<td>PROCESSING ROUTINE</td>
+<td>D REC^<a href="http://code.osehra.org/dox/Routine_RGJCREC.html">RGJCREC</a></td>
+</tr>
+<tr>
+<td>SENDING FACILITY REQUIRED?</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>RECEIVING FACILITY REQUIRED?</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DATE/TIME OF MESSAGE REQUIRED?</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ROUTING LOGIC</td>
+<td>D ROUTE^<a href="http://code.osehra.org/dox/Routine_RGJCSUB.html">RGJCSUB</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

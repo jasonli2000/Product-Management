@@ -1,0 +1,99 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTM5MTE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCV_IFCAP_01_EV_DYNAMED_UPDATE (3911) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTM5MTE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCV_IFCAP_01_EV_DYNAMED_UPDATE</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Update DynaMed due to order changes</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Sends message from IFCAP to DynaMed for RIL and 2237
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>event driver</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2005-08-13 14:03:51</td>
+</tr>
+<tr>
+<td>SENDING APPLICATION</td>
+<td><a href="771-150.html">PRCV_IFCAP_2237</a></td>
+</tr>
+<tr>
+<td>TRANSACTION MESSAGE TYPE</td>
+<td><a href="771.2-88.html">OMN</a></td>
+</tr>
+<tr>
+<td>EVENT TYPE</td>
+<td><a href="779.001-244.html">O07</a></td>
+</tr>
+<tr>
+<td>ACCEPT ACK CODE</td>
+<td><a href="779.003-1.html">AL</a></td>
+</tr>
+<tr>
+<td>APPLICATION ACK TYPE</td>
+<td><a href="779.003-1.html">AL</a></td>
+</tr>
+<tr>
+<td>VERSION ID</td>
+<td><a href="771.5-5.html">2.4</a></td>
+</tr>
+<tr>
+<td>RESPONSE PROCESSING ROUTINE</td>
+<td>D BEGIN^<a href="http://code.osehra.org/dox/Routine_PRCVEE5.html">PRCVEE5</a></td>
+</tr>
+<tr>
+<td>SUBSCRIBERS</td>
+<td>
+<ol>
+<li>
+<dt>SUBSCRIBERS:  &nbsp;&nbsp;<a href="101-3912.html">PRCV_IFCAP_01_SU_DYNAMED_UPDATE</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

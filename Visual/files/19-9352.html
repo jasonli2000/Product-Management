@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTM1Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRC PRINT BY SEARCH (9352) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTM1Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRC PRINT BY SEARCH</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Print Consults by Provider, Location, or Procedure</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PRINT CONSULTS BY PROVIDER, LO</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will compile a list of consult requests based on Provider,
+Location, or Procedure search criteria. Date range, status, and output
+formats are selectable parameters.
+ 
+There are additional prompts for selection of local, remote, or both local
+and remote Provider(s) and Location(s). For the purposes of this 
+option, "local" refers to non-Inter-facility requests and Inter-facility
+requests originating locally; "remote" only refers to Inter-facility
+requests originating at another site.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_GMRCPSL1.html">GMRCPSL1</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2001-09-04 14:54:47</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

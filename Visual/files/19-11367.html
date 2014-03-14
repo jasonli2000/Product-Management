@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTEzNjc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRSN COPY ETA TO POC (11367) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTEzNjc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRSN COPY ETA TO POC</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Copy ETA personnel to POC personnel</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>COPY ETA PERSONNEL TO POC PERS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will DELETE ALL existing POC data entry and approval 
+personnel. Then it will copy ETA timekeepers to POC data entry and ETA 
+supervisors to POC approval personnel. Employees with an * in front of 
+their name are separated and will NOT be copied.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-101.html">PAID</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>TL2PEV^<a href="http://code.osehra.org/dox/Routine_PRSNCTL.html">PRSNCTL</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExNjA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XM-I-N-XMIT QUEUES (1160) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExNjA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XM-I-N-XMIT QUEUES</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>TRANSMIT QUEUES</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+
+When a message is addressed to a remote site, the message is placed in a
+special basket in the Postmaster's (DUZ=.5) mailbox (file 3.7).  This basket
+is also called a queue.  The basket IEN is 1000 plus the IEN of the Domain in
+the Domain file (4.2).  The basket name is the name of the Domain.  For
+example, if the message is addressed to someone at FORUM, and DOMAIN.EXT is
+at IEN 4 in file 4.2, then the message is placed in the Postmaster's mailbox,
+in a basket named DOMAIN.EXT, whose IEN is 1004.  If the basket doesn't
+exist, it is created automatically.  Once the message has been transmitted,
+it is deleted from the basket. (The message is not placed in the WASTE basket.)
+
+Users who are surrogates of the Postmaster can "become" the Postmaster and
+read the baskets containing the messages waiting to be transmitted.  They are
+not able do anything that would let them see the text of the messages, but they
+are able to take other actions with them, like move them to the head or end of
+the queue.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>2002-05-08 08:34:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

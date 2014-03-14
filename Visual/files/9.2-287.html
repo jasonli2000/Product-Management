@@ -1,0 +1,93 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTI4Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XMNET-MULTIMEDIA-OVERVIEW (287) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTI4Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XMNET-MULTIMEDIA-OVERVIEW</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Multimedia Technical Overview</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+ When using an imaging workstations, a user can view images that are linked
+ to a message on a second screen.  This works using standard calls to the
+ API of the imaging product.  Images are brought off of a file server on
+ the local area network via ethernet and displayed.  Network transmissions 
+ of messages are performed from a platform that has both NFS capabilities
+ and TCP/IP.  Images are delivered off of the file server that is on the
+ local area network into a directory that is mounted via NFS onto this 
+ platform, again by a call to the imaging API.  The relationships of
+ multimedia [HARDWARE] must be setup correctly.
+ The network transmission works by sending a message first.  During the
+ exchange of message protocol data units, information is exchanged about
+ the [BLOB] that is going to be sent via FTP.  The sender indicates that
+ there is a BLOB to send.  The receiver replies with the IP address to 
+ send the message to and the directory to put it in.  The sender then
+ constructs a series of commands that will access the FTP software
+ running on that machine, stores in as a file that can be executed in
+ batch mode and puts an entry MUMPS global to indicate that the file needs
+ to be executed.  A background process in MUMPS (XMRTCP), polls this file
+ every few seconds and when it sees an entry, it makes a request to the
+ imaging API to move the appropriate image into the export directory.  
+ When the image is in the export directory the aforementioned file is
+ executed and the image is FTP'd to receiver of the message.  
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;BLOB</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-288.html">XMNET-BLOB-HARDWARE</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;HARDWARE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-289.html">XMNET-MULTIMEDIA-HARDWARE</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1993-12-06 20:30:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

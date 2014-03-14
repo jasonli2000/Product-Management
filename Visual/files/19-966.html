@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTY2").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LRUPAC (966) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTY2" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LRUPAC</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Lab accession and test counts</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LAB ACCESSION AND TEST COUNTS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Lists counts of each type of specimen and counts of each test from one date to another in the Accession Area file.  If Autopsy, Surgical pathology, Cytopathology, or EM is selected only accession counts are given.
+  NOTE: This option will count all accession for the time period selected.
+It will produce a total ordered test count. Use the option 'COUNT ACCESSION
+TESTS' option to determine the total number verified.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_LRUPAC.html">LRUPAC</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

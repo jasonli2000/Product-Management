@@ -1,0 +1,1335 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjktNTY4MDIy").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-IRAQ & AFGHAN POST-DEPLOY SCREEN (568022) &nbsp;&nbsp;  REMINDER DEFINITION (811.9)</h1>
+<div id="demo"><table id="ODExLjktNTY4MDIy" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-IRAQ & AFGHAN POST-DEPLOY SCREEN</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>Iraq&Afghan Post-Deployment Screen</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Patients who served in combat in either Operation Iraqi Freedom (Iraq, 
+Kuwait, Saudi Arabia, Turkey) or in Operation Enduring Freedom
+(Afghanistan, Georgia, Kyrgyzstan, Pakistan, Tajikistan, Uzbekistan, The
+Philippines) should be screened for illnesses related to their service.  
+Screening for PTSD, depression, problem alcohol use, infectious diseases,
+and embedded fragments should be part of the initial evaluation of these
+Veterans.
+ 
+COHORT: veterans with separation date after 9/11/01.  This finding is 
+part of the reminder term: VA-IRAQ/AFGHAN PERIOD OF SERVICE and is 
+determined by a computed finding.
+ 
+An additional reminder term VA-ACTIVE DUTY is also available to cause 
+patients to be part of the cohort.  If a site wishes to screen active 
+duty patients then the computed finding for VA-PATIENT TYPE should be 
+added to the term with a condition of I V="ACTIVE DUTY".
+ 
+Patients who have OEF/OIF service as recorded in the patient registration 
+data are automatically part of the cohort and patients who did not serve
+in OEF/OIF are not included in the denominator.
+ 
+RESOLUTION: entry of a health factor for NO IRAQ/AFGHAN SERVICE which is
+found in the reminder term IRAQ/AFGHAN SERVICE NO will resolve the 
+reminder only if the patient does not have an entry of OEF/OIF service in 
+the patient file.
+If the Veteran is known to have OEF/OIF service, based on the 
+registration data then the location of service is not required.
+ 
+If the veteran served in Iraq or Afghanistan as recorded in the
+patient registration data (File 1), then the patient must be screened or
+the registration data must be updated.
+ 
+For all applicable patients who are not cognitively impaired: 
+all the other items are required to resolve the reminder
+and must be completed after the date of the most recent service 
+separation:
+  a) screen for PTSD, 
+  b) screen for depression, 
+  c) screen for alcohol use,
+  d) all 3 screening questions related to infectious diseases.
+   (The 4th question for embedded fragments is new as of the summer of 
+2008 and because of this, cannot be required at this time by the reminder 
+logic).
+ 
+The clinical maintenance will display information on which portions of 
+the screen are not yet completed.
+ 
+All of the individual elements of the screening tool are exported with
+attached health factors and reminder terms.
+ 
+PTSD, depression and alcohol screening must be recorded in the MH package 
+and the dialog for this rmeinder requires use of the MH instruments for 
+these screens.  Screens done prior to 10/1/08 using health factors will 
+still resolve the reminder since those health factors are in the reminder 
+terms that are part of the logic in this reminder.
+ 
+The HFs for all of these screens should be entered in the site parameters
+as ones that cannot be added outside of a reminder dialog.  Use the
+parameter ORWPCE EXCLUDE HEALTH FACTORS to exclude these from the
+electronic encounter forms.  Entry of these health factors should ONLY 
+occur during reminder dialog use.
+ 
+Update October 2008 - patch PXRM*2*11
+1. Health factors for PTSD screening, depression screening and alcohol 
+screening are not allowed after 10/1/08 per the Office of Mental Health.
+2. A HF for done elsewhere is included.
+3. Combat vets need to be screened
+4. The computed finding was rmeoved from the reminder term for VA-ACTIVE 
+DUTY since only a few sites screen active duty patients and patch 11 
+required an overwrite of this term.
+5. Add embedded fragments question and remove other symptoms.
+ 
+Update January 2009 - patch PXRM*2*12
+1. Change combat vet screening requirement to OEF/OIF service based on 
+recent data that these fields are more accurate.
+2. Fix problem that active duty patients who did not serve in OEF/OIF 
+have reminder continue to show as due.
+3. Refusals of screening must be done after the most recent service 
+separation.
+</pre>
+</td>
+</tr>
+<tr>
+<td>BASELINE AGE FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;99Y</dt>
+<dt>NO. OF AGE MATCH LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF AGE NO MATCH LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-134.html">VA-IRAQ/AFGHAN SERVICE NO</a></dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-135.html">VA-IRAQ/AFGHAN PERIOD OF SERVICE</a></dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+Last Service Separation Date prior to 9/11/01 or missing.
+</pre>
+</dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;AND</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;SEP 11, 2001</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-568012.html">VA-IRAQ/AFGHAN SERVICE</a></dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-948.html">VA-DEPRESSION SCREEN OEF/OIF</a></dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-944.html">VA-COMBAT VET</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+Combat Vet eligible or prior Combat Vet eligibility found.  
+ 
+Update the patient's demographic data as needed.
+\\
+</pre>
+</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;4</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-133.html">VA-ALCOHOL USE SCREEN</a></dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+Screening for at risk alcohol use using the AUDIT-C screening tool should
+be performed yearly for any patient who has consumed alcohol in the past
+year. No record of prior screening for alcohol use was found in this 
+patient's record.
+\\
+</pre>
+</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-568013.html">VA-PTSD SCREEN</a></dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-568015.html">VA-UNEXPLAINED FEVER (IRAQ/AFGHANISTAN)</a></dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+Screen for unexplained fevers that might represent occult malaria or 
+infection with leishmaniasis.
+\\
+</pre>
+</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-947.html">VA-EMBEDDED FRAGMENTS (IRAQ/AFGHANISTAN)</a></dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-568014.html">VA-GI SYMPTOMS (IRAQ/AFGHANISTAN)</a></dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+Screen for diarrhea or other GI complaints that might suggest giardia, 
+amoebiasis or other GI infection.
+\\
+</pre>
+</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-568016.html">VA-PERSISTENT RASH (IRAQ/AFGHANISTAN)</a></dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+Screen for persistent rash that might represent infection with
+leishmaniasis.
+\\
+</pre>
+</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-617.html">VA-PTSD AVOIDANCE ALL</a></dt>
+<dt>WITHIN CATEGORY RANK:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-620.html">VA-PTSD DETACHMENT ALL</a></dt>
+<dt>WITHIN CATEGORY RANK:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-618.html">VA-PTSD NIGHTMARES ALL</a></dt>
+<dt>WITHIN CATEGORY RANK:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-619.html">VA-PTSD ON GUARD ALL</a></dt>
+<dt>WITHIN CATEGORY RANK:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-631.html">VA-REFUSED PTSD SCREEN</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+Refused PTSD Screen
+</pre>
+</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-568018.html">VA-REFUSED ALCOHOL SCREENING</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+Refused Alcohol Screening
+</pre>
+</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-81.html">VA-REFUSED DEPRESSION SCREENING</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+Refused Depression Screening
+</pre>
+</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-568019.html">VA-ACTIVE DUTY</a></dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-568020.html">VA-REFUSED ID & OTHER SX SCREEN</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+The patient declined to answer some or all of the infectious disease and 
+other symptom questions.  Please ask these screening questions again if 
+they remain unaddressed.
+</pre>
+</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-1Y</dt>
+<dt>WITHIN CATEGORY RANK:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;3</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-806.html">VA-COGNITIVE IMPAIRMENT</a></dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-2Y</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-945.html">VA-OEF/OIF SCREEN DONE ELSEWHERE</a></dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-568017.html">VA-OTHER SYMPTOMS (IRAQ/AFGHANISTAN)</a></dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FUNCTION FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(1)>MRD(2)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+1. PTSD Screening completed since service discharge
+</pre>
+</dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+1. PTSD Screen NEEDED
+</pre>
+</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(7,12,13,14,15)>MRD(2)!(DIFF_DATE(7,2)<120)!(DIFF_DATE(12,2)<120)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;7</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;12</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;13</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;14</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;15</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-7.html">DIFF_DATE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;7</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;4</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-7.html">DIFF_DATE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;12</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)!(FN(3)<120)!(FN(4)<120)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+2. Depression Screening completed since service discharge
+</pre>
+</dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+2. Depression Screening NEEDED
+</pre>
+</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(4)>MRD(2)!(DIFF_DATE(4,2)<120)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;4</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-7.html">DIFF_DATE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)!(FN(3)<120)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;4</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+3. Alcohol Screening completed since service discharge
+</pre>
+</dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+3. Alcohol Screening NEEDED
+</pre>
+</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(6)>MRD(2)!(DIFF_DATE(6,2)<120)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;6</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-7.html">DIFF_DATE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;6</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)!(FN(3)<120)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;5</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+4A. Screen for GI symptoms done or not required.
+</pre>
+</dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+4A. Screen for GI symptoms NEEDED
+</pre>
+</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(10,20)>MRD(2)!'(FI(2)!FI(19))!(DIFF_DATE(10,2)<120)!(DIFF_DATE(20,2)<120)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;10</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;20</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;4</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;19</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;5</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-7.html">DIFF_DATE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;10</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;6</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-7.html">DIFF_DATE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;20</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)!'(FN(3)!FN(4))!(FN(5)<120)!(FN(6)<120)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;6</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+4B. Screen for Fevers done or not required.
+</pre>
+</dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+4B. Screen for Fevers NEEDED
+</pre>
+</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(8,20)>MRD(2)!'(FI(2)!FI(19))!(DIFF_DATE(8,2)<120)!(DIFF_DATE(20,2)<120)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;8</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;20</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;4</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;19</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;5</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-7.html">DIFF_DATE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;8</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;6</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-7.html">DIFF_DATE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;20</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)!'(FN(3)!FN(4))!(FN(5)<120)!(FN(6)<120)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;7</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+4C. Screen for Skin Rash done or not required.
+</pre>
+</dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+4C. Screen for Skin Rash NEEDED
+</pre>
+</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(11,20)>MRD(2)!'(FI(2)!FI(19))!(DIFF_DATE(11,2)<120)!(DIFF_DATE(20,2)<120)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;20</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;4</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;19</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;5</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-7.html">DIFF_DATE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;6</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-7.html">DIFF_DATE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;20</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)!'(FN(3)!FN(4))!(FN(5)<120)!(FN(6)<120)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;8</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+4D. Screen for Embedded Fragments done or not required.
+</pre>
+</dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+4D. Screen for Embedded Fragments NEEDED
+</pre>
+</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(9,20)>MRD(2)!'(FI(2)!FI(19))</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;9</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;20</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;4</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;19</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)!'(FN(3)!FN(4))</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;9</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+The patient's most recent service separation date is more recent than
+their last screening - rescreening is needed after any new period of
+service.
+</pre>
+</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(2)>MRD(1,8,10,11,22)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;8</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;10</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;22</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;3</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;10</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+OEF/OIF Post-Deployment Screening was completed at another site.
+</pre>
+</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(22)>MRD(2)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;22</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;16</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(16)>MRD(2)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;16</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;17</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(17)>MRD(2)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;17</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;18</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(18)>MRD(2)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;18</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;20</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(3)>MRD(1)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;3</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>CUSTOMIZED COHORT LOGIC</td>
+<td>((FI(2)!FI(19))&'FF(1))!(FI(3)&FF(20))&'FI(21)</td>
+</tr>
+<tr>
+<td>INTERNAL PATIENT COHORT LOGIC</td>
+<td>((FI(2)!FI(19))&'FF(1))!(FI(3)&FF(20))&'FI(21)</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS COUNT</td>
+<td>6</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS LIST</td>
+<td>2;19;FF1;3;FF20;21</td>
+</tr>
+<tr>
+<td>CUSTOMIZED RESOLUTION LOGIC</td>
+<td>((FI(16)&FF(16))!(FF(2)&(FI(16)!FI(7)!(FI(12)&FI(13)&FI(14)&FI(15)))))&(((FF(3)&FI(4))!(FI(18)&FF(18))))&((FF(4)&FI(6))!(FI(17)&FF(17)))&((FI(20)&FF(5))!(FF(5)&FI(10)&FF(6)&FI(8)&FF(7)&FI(11)))!(FI(22)&FF(10))</td>
+</tr>
+<tr>
+<td>INTERNAL RESOLUTION LOGIC</td>
+<td>((FI(16)&FF(16))!(FF(2)&(FI(16)!FI(7)!(FI(12)&FI(13)&FI(14)&FI(15)))))&(((FF(3)&FI(4))!(FI(18)&FF(18))))&((FF(4)&FI(6))!(FI(17)&FF(17)))&((FI(20)&FF(5))!(FF(5)&FI(10)&FF(6)&FI(8)&FF(7)&FI(11)))!(FI(22)&FF(10))</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS COUNT</td>
+<td>27</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS LIST</td>
+<td>16;FF16;FF2;16;7;12;13;14;15;FF3;4;18;FF18;FF4;6;17;FF17;20;FF5;FF5;10;FF6;8;FF7;11;22;FF10</td>
+</tr>
+<tr>
+<td>AGE FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS COUNT</td>
+<td>6</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS LIST</td>
+<td>1;5;9;23;FF8;FF9</td>
+</tr>
+<tr>
+<td>WEB SITES</td>
+<td>
+<ol>
+<li>
+<dt>URL:  &nbsp;&nbsp;http://www.oqp.domain.ext/cpg/cpg.htm</dt>
+<dt>WEB SITE TITLE:  &nbsp;&nbsp;VA/DOD Guidelines - Office of Quality and Performance</dt>
+</li>
+<li>
+<dt>URL:  &nbsp;&nbsp;http://www.oqp.domain.ext/cpg/MDD/MDD_Base.htm</dt>
+<dt>WEB SITE TITLE:  &nbsp;&nbsp;VA/DOD Depression Guideline</dt>
+</li>
+<li>
+<dt>URL:  &nbsp;&nbsp;http://www.oqp.domain.ext/cpg/cpgn/mus/mus_base.htm</dt>
+<dt>WEB SITE TITLE:  &nbsp;&nbsp;VA/DOD Medically Unexplained Symptoms: Pain and Fatigue</dt>
+</li>
+<li>
+<dt>URL:  &nbsp;&nbsp;http://www.oqp.domain.ext/cpg/PDH/PDH_base.htm</dt>
+<dt>WEB SITE TITLE:  &nbsp;&nbsp;Post Deployment Health Evaluation and Management</dt>
+</li>
+<li>
+<dt>URL:  &nbsp;&nbsp;http://www.oqp.domain.ext/cpg/SUD/SUD_Base.htm</dt>
+<dt>WEB SITE TITLE:  &nbsp;&nbsp;VA/DOD Substance Abuse Guideline</dt>
+</li>
+<li>
+<dt>URL:  &nbsp;&nbsp;http://vaww.domain.ext/environagents/</dt>
+<dt>WEB SITE TITLE:  &nbsp;&nbsp;VA Environmental Agents Service</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>LINKED REMINDER DIALOG</td>
+<td><a href="801.41-947.html">VA-IRAQ & AFGHANISTAN POST DEPLOYMENT SCREEN</a></td>
+</tr>
+<tr>
+<td>GENERAL COHORT FOUND TEXT</td>
+<td><pre>
+Patients who served in combat in either Iraq (Operation Iraqi Freedom) or 
+in Afghanistan (Operation Enduring Freedom) should be screened for 
+illnesses related to their service.  Screening for PTSD, depression, 
+problem alcohol use, infectious diseases, and chronic symptoms should be
+part of the initial evaluation of these Veterans.
+</pre>
+</td>
+</tr>
+<tr>
+<td># OF GEN. COHORT FOUND LINES</td>
+<td>5</td>
+</tr>
+<tr>
+<td># GEN. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>SPONSOR</td>
+<td><a href="811.6-20.html">Office of Public Health and Environmental Hazards</a></td>
+</tr>
+<tr>
+<td>USAGE</td>
+<td>CR</td>
+</tr>
+<tr>
+<td>EDIT HISTORY</td>
+<td>
+<ol>
+<li>
+<dt>EDIT DATE:  &nbsp;&nbsp;2009-11-18 10:04:10</dt>
+<dt>EDIT BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>EDIT COMMENTS:  &nbsp;&nbsp;<pre>
+Exchange Install
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

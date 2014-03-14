@@ -1,0 +1,115 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC0yNTg3").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DSIF GET OBLIG (2587) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC0yNTg3" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DSIF GET OBLIG</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>GETOBLIG</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DSIFBAT5</td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>GLOBAL ARRAY</td>
+</tr>
+<tr>
+<td>AVAILABILITY</td>
+<td>AGREEMENT</td>
+</tr>
+<tr>
+<td>WORD WRAP ON</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>3.2</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Used to return a list of obligations based upon Control point and number 
+of years past to return.  Example, control point 038 with 2 years, will 
+return all obligations from control point 038 from today - two years 
+to today
+ 
+on error returns -1^error message
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;FUND CONTROL POINT</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;99</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Pass in the control point used to return current obligations.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;FBYEAR</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;4</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Years to search for existing obligations, default is current year and 
+last year.  If you input 3 it will display current year and go back 3 
+years.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>RETURN PARAMETER DESCRIPTION</td>
+<td><pre>
+ ^TMP($J,"DSIFBAT5",0)=1 or -1^Error message
+ ^TMP($J,"DSIFBAT5",n)=Obligation number^Fund control point^Supply 
+ Status^Obligation date^Total amount^Actual 1358 balance^Estimated 
+ remaining 1358 Bal (#94-#96)
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

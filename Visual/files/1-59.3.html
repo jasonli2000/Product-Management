@@ -1,0 +1,57 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS01OS4z").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GROUP DISPLAY (59.3) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS01OS4z" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GROUP DISPLAY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file is used to display the waiting group for the Bingo Board system.
+This file also determines how and what information is displayed on the
+waiting room monitor.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;PSO</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

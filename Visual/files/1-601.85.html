@@ -1,0 +1,49 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02MDEuODU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MH ANSWERS (601.85) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02MDEuODU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MH ANSWERS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+When a patient answers a question, the results are stored in this file. An
+entry for each question answered, in each administration is stored. Each 
+entry has an MH ADMINISTRATON ID field(#.01) of the MH ADMINISTRATION file
+(#601.84), a Question NUMBER field (#.01) of the MH QUESTIONS file (#601.72)
+and the response.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,87 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC0xNTI0").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RMPR VIEW REQ COMP NOTE (1524) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC0xNTI0" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RMPR VIEW REQ COMP NOTE</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>EN4</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_RMPR9VR.html">RMPR9VR</a></td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>ARRAY</td>
+</tr>
+<tr>
+<td>AVAILABILITY</td>
+<td>SUBSCRIPTION</td>
+</tr>
+<tr>
+<td>INACTIVE</td>
+<td>ACTIVE</td>
+</tr>
+<tr>
+<td>WORD WRAP ON</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This procedure supplies the View Request Completion Note of file #668.
+.
+Entry Point:  EN4(RESULTS,RMPRA)^RMPR9VR
+ 
+RESULTS Array:  Word processing fields 0-infinite lines.
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;IEN</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;150</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;1</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

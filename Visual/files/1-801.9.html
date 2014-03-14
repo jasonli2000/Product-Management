@@ -1,0 +1,64 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS04MDEuOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>REMINDER RESOLUTION STATUS (801.9) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS04MDEuOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>REMINDER RESOLUTION STATUS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file defines the resolution statuses that may be related to a
+finding.  National resolution statuses are distributed in this file, but
+sites may create local resolution statuses.  If local resolutions are
+defined, they must be mapped to a national resolution status.  The
+national resolution statuses are used by the process that creates dialog
+sentences for finding items.  
+ 
+The distributed national resolution statuses may not be deleted. 
+ 
+Most of the findings from files can be automatically analyzed and
+associated with a resolution status.  For example, Education topics
+entered for a current visit are "DONE AT ENCOUNTER", Education topics
+entered for a historical visit are "DONE ELSEWHERE", Education topics with
+a Level of Understanding of Refused are "PATIENT REFUSED" resolutions. The
+health factor is a file of findings that we cannot categorize without the
+sites telling us what the related resolution status should be.
+ 
+The statuses will be used in the future for roll-up counts to reflect how
+reminders were resolved (done, historical, refused, contraindicated,
+ordered).
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

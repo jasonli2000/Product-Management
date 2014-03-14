@@ -1,0 +1,120 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC0yNTQ5").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DSIV PATIENT INSURANCE DATA (2549) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC0yNTQ5" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DSIV PATIENT INSURANCE DATA</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>INSUR</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DSIVIC3</td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>ARRAY</td>
+</tr>
+<tr>
+<td>AVAILABILITY</td>
+<td>AGREEMENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Wraps $$INSUR^IBBAPI to return insurance data for patient.
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;DFN</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;20</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patient internal entry number.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;FMDT</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;14</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Date insured (default is today).
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;FILTER</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;8</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Status codes specifying results to be included or excluded.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;FIELDS</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;80</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;4</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+List of fields to be returned (default is all).
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>RETURN PARAMETER DESCRIPTION</td>
+<td><pre>
+Array of insurance information: Insurer sequence &lt;comma&gt; field &lt;up-arrow&gt; 
+data.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

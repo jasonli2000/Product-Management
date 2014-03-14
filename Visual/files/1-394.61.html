@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zOTQuNjE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VAQ - TRANSACTION (394.61) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zOTQuNjE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VAQ - TRANSACTION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file holds information describing each PDX transaction.  A PDX
+transaction is created when one of the following events occur.
+ 
+  (1) A PDX Request is defined and sent
+  (2) A PDX Request is received from a remote facility
+  (3) An Unsolicited PDX is defined and sent
+  (4) An Unsolicited PDX is received from a remote facility
+ 
+Per VHA Directive 10-93-142, this file definition should not be modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,62 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE4NTE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIUF CHANGE SORT ATTR VALUE (1851) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE4NTE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIUF CHANGE SORT ATTR VALUE</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Value of Attribute</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S TIUFATTR=TIUFTMPA S X=$P(TIUFATTR,U),X=$G(^TMP("TIUF",$J,"SORT"_X)),X=X_";ORD(101," W:'X !,"  ?? Viewing ALL: No Attribute Value" H:'X 2 D:X EN^XQOR</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1997-10-06 10:20:17</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

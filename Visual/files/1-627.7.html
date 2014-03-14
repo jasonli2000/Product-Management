@@ -1,0 +1,50 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02MjcuNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DSM (627.7) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02MjcuNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DSM</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The DSM (#627.7) file holds the DSM-III codes originally stored in the
+DSM3 (#627) file, DSM-III-R codes originally stored in the DSM-III-R
+(#627.5) file, and DSM-IV diagnostic codes.  In addition, it will hold
+all codes created be DSM versions following IV.  Each entry is unique
+to a DSM version (even if entries are identical) and is identified
+by the DSM VERSION field.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

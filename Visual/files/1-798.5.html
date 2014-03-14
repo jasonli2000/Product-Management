@@ -1,0 +1,49 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OTguNQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ROR ICD SEARCH (798.5) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OTguNQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ROR ICD SEARCH</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file stores all the ICD diagnostic codes used to identify patients
+for a given registry during the Registry Update process. The B cross
+reference for the ICD code is used in the EXPRESSION field of the ROR
+SELECTION RULES file (#798.2).  The file design allows CCR to support an
+unlimited number of codes selected from the ICD DIAGNOSIS file (#80).
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

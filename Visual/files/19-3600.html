@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzYwMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBDF VALIDATE FORMS (3600) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzYwMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBDF VALIDATE FORMS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Validate Forms</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>VALIDATE FORMS</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>** This option is OUT OF ORDER **</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Report used to validate the data that will be passed to PCE
+when an Encounter Form is scanned.  The report may be sorted
+by Division, Clinic Group, Clinic or Form.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-76.html">AUTOMATED INFO COLLECTION SYS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_IBDFFV.html">IBDFFV</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

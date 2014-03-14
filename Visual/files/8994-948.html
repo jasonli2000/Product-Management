@@ -1,0 +1,121 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC05NDg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MAGGRADPTR (948) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC05NDg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MAGGRADPTR</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>MAGPTR</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_MAGGTRA.html">MAGGTRA</a></td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>SINGLE VALUE</td>
+</tr>
+<tr>
+<td>AVAILABILITY</td>
+<td>RESTRICTED</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Files the image pointer into the Radiology package and the Radiology
+pointers into the Imaging package.
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;XDUZ</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;30</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Not being used anymore, kept for backward compatibility.
+DUZ of user.   
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;MAGIEN</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;30</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Internal entry number of Image File entry  ^MAG(2005,
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;DATA</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;255</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+First "^" piece is MAGIEN, The IMAGE File Internal number.  ^MAG(2005,
+Next  "^" pieces are the same RAD DATA that was sent in the 
+ RPC Call MAGGRADLIST, as the return Array.
+    RADFN_"^"_RADTI_"^"_RACNI_"^"_RANME_"^"_RASSN_"^"
+   _RADATE_"^"_RADTE_"^"_RACN_"^"_RAPRC_"^"_RARPT_"^"_RAST
+The same DATA that the RAD procedure RAPTLU saved in ^TMP($J,"RAEX",RACNT)
+ 
+We saved the variables that the RAD Routine RAPTLU set up when creating
+the list of Rad Exams for the patient. We send it back as input here,
+Initialize the variables so when we need to call any Rad Procedure, we
+have what we need.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>RETURN PARAMETER DESCRIPTION</td>
+<td><pre>
+If successful,   '1^message'
+If unsuccessful, '0^message'
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

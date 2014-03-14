@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzQ2Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRA PRINT ALLERGIES LIST (3462) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzQ2Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRA PRINT ALLERGIES LIST</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Allergies File List</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ALLERGIES FILE LIST</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option prints a captioned list of all entries in the GMR Allergies
+file (#120.82). The list is sorted alphabetically by NAME. The user may
+list all entries by accepting the default answer (FIRST) to the 'sort by'
+prompt or may select a subset to print. The list contains the allergy
+name; type; whether it is a nationally distributed entry; synonyms, if
+any; VA Drug Class, if applicable; and drug ingredients, if applicable.
+This option is meant to be a helpful tool for the ADPAC to maintain the
+GMR Allergies file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>print</td>
+</tr>
+<tr>
+<td>DIC {DIP}</td>
+<td>GMRD(120.82,</td>
+</tr>
+<tr>
+<td>L.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FLDS</td>
+<td>[CAPTIONED]</td>
+</tr>
+<tr>
+<td>BY</td>
+<td>@.01</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

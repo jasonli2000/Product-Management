@@ -1,0 +1,57 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zNTM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>BILL FORM TYPE (353) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zNTM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>BILL FORM TYPE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is a reference file containing the types of health insurance
+claim forms used in billing.
+ 
+Sites may add local forms to this file however, the number of entries
+for locally added forms should be in the stations number range of
+Station number time 1000.  
+ 
+If other than UB-04 forms are pointed to by the BILL/CLAIMS file, then
+the follow-up letter job will create a separate tasked job for each
+bill to the Follow-up Printer for that form using the specified routine
+for that form.
+ 
+Per VHA Directive 10-93-142, this file definition should not be modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

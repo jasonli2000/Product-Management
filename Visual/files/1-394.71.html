@@ -1,0 +1,96 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zOTQuNzE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VAQ - DATA SEGMENT (394.71) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zOTQuNzE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VAQ - DATA SEGMENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file defines each data segment currently supported by PDX.
+ 
+ 
+Global format of Extraction Array:
+     Root@("VALUE",file,field,sequence number)=value
+     Root@("ID",file,field,sequence number)=identifier
+ 
+Extraction methods must account for data encryption.
+ 
+Display methods must take the output of their associated extraction method
+as input.
+ 
+Global format of Display Array:
+     Root@("DISPLAY",line number,0)=information displayed on specified
+                                    line number of screen
+ 
+Methods must use the following parameters (where needed):
+     ROOT - Where to store the information (full global reference)
+     DFN - Internal file number for requested patient (pointer to PATIENT
+           File)
+     SEGPTR - Internal file number of segment (pointer to VAQ - DATA
+              SEGMENT File)
+     XTRCT - Where the extracted information resides (full global
+             reference)
+     OFFSET - Where line numbering should begin from
+     TIMLIM - Time limit to apply to extraction
+     OCCLIM - Occurrence limit to apply to extraction
+ 
+Methods must return the following:
+     0 - Extraction was successful (if an Extraction Array was returned)
+     n - Number of lines in display (if a Display Array was returned)
+     -1^ErrorText - Method was not successful
+ 
+Sample methods:
+     $$EXTRACT^VAQZZZ(DFN,SEGPTR,TIMLIM,OCCLIM,ROOT,OFFSET) - Display
+                                                              Array is
+                                                              returned
+     $$EXTRACT^VAQZZZ(DFN,SEGPTR,TIMLIM,OCCLIM,ROOT)  - Extraction Array
+                                                        is returned
+     $$DISPLAY^VAQZZZ(XTRCT,SEGPTR,ROOT,OFFSET) - Display Array, built from
+                                                  input extraction array,
+                                                  is returned
+ 
+Sample use:
+     S ROOT="^TMP(""VAQ"","_$J_")"
+     S SEGPTR=internal file number for segment
+     S DFN=internal file number of patient
+     S TIMLIM=time limit to use when extracting segment (if applicable)
+     S OCCLIM=occurrence limit to use when extracting segment (if
+              applicable)
+     X ("S X="_^VAT(394.71,SEGPTR,"XRTN"))
+     The variable X is now set to the proper exit code (X&lt;0 on error)
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

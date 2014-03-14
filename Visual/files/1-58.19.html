@@ -1,0 +1,62 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS01OC4xOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PHARMACY AOU INVENTORY (58.19) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS01OC4xOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PHARMACY AOU INVENTORY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains information that pertains to each individual inventory 
+such as date/time of inventory, responsible employee, ID number, and
+inventory group.
+ 
+*** NOTE *** There is a cross-reference called "AINV" that is not
+VA FileMan compatible and has SACC exemption which allows its use.
+If you create any local cross-references for this file DO NOT use the
+name "AINV" as this will overwrite the existing cross-reference.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;PSGW</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

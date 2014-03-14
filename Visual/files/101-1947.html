@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE5NDc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU ACTION SELECT NEW PATIENT (1947) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE5NDc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU ACTION SELECT NEW PATIENT</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Select New Patient</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Select a new patient.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D:$D(^TMP("TIUR",$J)) HDR^TIUROR S VALMBCK=$S($D(^TMP("TIUR",$J,0)):"R",1:"Q"),VALMBG=1</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>K ^TMP("TIURSAVE",$J),^TMP("TIURSIDX",$J),^TMP("VALM VIDEO",$J),VALMY D FULL^<a href="http://code.osehra.org/dox/Routine_VALM1.html">VALM1</a>,INIT^TIUROR(+$G(^TMP("TIUR",$J,"CLASS")),1)</td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I '$G(TIUGLINK),+$G(ORVP)'>0</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2001-04-30 10:27:15</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

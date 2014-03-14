@@ -1,0 +1,80 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDgxMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRV SF511 (4813) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDgxMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRV SF511</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>V/M Graphic Reports</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>V/M GRAPHIC REPORTS</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>GMRV*5*19 - shutdown Vitals CHUI</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option prints specific Vitals/Measurements graphic reports including
+the Vital Flow Sheet (SF511), the B/P Plotting Chart (SF512-A), the
+Weight Chart (VAF10-2614f), and the Pulse Oximetry/Respiration Graph (SF
+512).
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-104.html">GEN. MED. REC. - VITALS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN1^<a href="http://code.osehra.org/dox/Routine_GMRVSR0.html">GMRVSR0</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-03-09 15:56:13</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

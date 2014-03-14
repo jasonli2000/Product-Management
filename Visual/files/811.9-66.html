@@ -1,0 +1,442 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjktNjY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-HOMELESSNESS SCREENING (66) &nbsp;&nbsp;  REMINDER DEFINITION (811.9)</h1>
+<div id="demo"><table id="ODExLjktNjY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-HOMELESSNESS SCREENING</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>Homelessness Screening</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Secretary of the Department of Veterans Affairs has made it a 
+priority to eliminate homelessness in our Veteran population.
+ 
+The objective of the VA-Homelessness Screening Clinical Reminder is to: 
+(a) identify Veterans and their families who are at imminent risk of 
+homelessness or who have very recently become homeless; (b) ensure that 
+those who are at-risk or who are currently homeless are referred for the
+appropriate assistance; and (c) update the current living situation for
+Veterans. Information collected by the VA-Homelessness Screening reminder
+will guide staff to refer Veterans for further assessment and the
+appropriate intervention to prevent or quickly end homelessness.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TECHNICAL DESCRIPTION</td>
+<td><pre>
+The reminder applies to all Veterans, EXCEPT any Veteran where one of
+the following findings in the Reminder Term (Finding #1) apply: 
+1. Those who have had a visit in one of the specific Stop Code Clinics
+(Homelessness-related) listed in the Reminder Location List ; or 
+ 
+2. Those who have had the Health Factor, ALREADY RECEIVING ASSIST WITH
+HOUSING entered into a visit by using the corresponding option in the
+dialog; or 
+ 
+3. Those that have had a Progress Note written with a SPECIFIC Title (that
+is already entered into the logic of the Computed Finding [VA-PROGRESS
+NOTE]) by a provider in a NON-Homelessness Stop Code clinic, who provided
+those services.
+ 
+Entering a Beginning Date/Time of T-6M on that Reminder Term is a logic
+trick to ensure that only visits in those locations, or the Specific
+Health Factor, or the specific Progress Note Title IN THE PAST 6 MONTHS
+are evaluated.
+ 
+This reminder's frequency is set to 1 year, but this required somewhat
+complex resolution logic so that various findings and conditions resolve
+the reminder for different time frames.
+ 
+Negative Screens result in resolution for 6 Months. This was accomplished 
+by creating a Function Finding - FF(#1), that sets the frequency.
+ 
+ ---- Begin: FF(1) ----------------------------------------------
+              Function String: MAX_DATE(3,5)'&lt;MAX_DATE(2,4) 
+     Expanded Function String: 
+      MAX_DATE(POSITIVE - HAS WORRIES ABOUT HOUSING, 
+      POSITIVE - HAS NO STABLE HOUSING)'&lt;MAX_DATE(
+      NEGATIVE - HAS STABLE HOUSING,NEGATIVE - HAS NO HOUSING CONCERNS)
+          Match Frequency/Age: 6 months for all ages 
+                   Found Text: Positive Screen more recent than Negative
+                   Screen. Frequency changed to 6M.
+ ---- End: FF(1) ----------------------------------------------
+ 
+Finding #9 - NURSING HOME RESIDENT - resolves the reminder for 2 years 
+(Frequency set on that finding, but Beginning Date/Time set to T-2Y, so 
+that after 2 years, the finding no longer applies, and normal frequency 
+(1Y) applies), until and if that living arrangement is documented again.
+ 
+Findings #2 &amp; #4 - NEGATIVE - HAS STABLE HOUSING and NEGATIVE - HAS NO 
+HOUSING CONCERNS - are BOTH Required for Negative Screen. If BOTH are
+found, the reminder is resolved for 1 year, but if 3 consecutive screens
+are negative, and the Computed Finding that looks at the Reminder
+Definition VA-HOMELESSNESS FREQUENCY 2Y is evaluated as TRUE, it is
+resolved for 2 years.
+ 
+A Positive Screen (Finding #5 - POSITIVE - HAS NO STABLE HOUSING; or
+Finding #3 -POSITIVE - HAS WORRIES ABOUT HOUSING ) resolves for 6 months,
+as does documenting UNABLE TO PERFORM HOMELESS SCREEN (Finding #7).
+ 
+Finding #6 (Declines Homeless Screen) Resolves for 1 year.
+                                 
+Customized RESOLUTION LOGIC defines findings that resolve the Reminder:
+ FI(9)!(FI(2)&amp;FI(4))!FI(6)!FI(3)!FI(5)!FI(7)
+ 
+Expanded Resolution Logic:
+ FI(NURSING HOME RESIDENT)!(FI(NEGATIVE - HAS STABLE HOUSING)&amp;
+ FI(NEGATIVE - HAS NO HOUSING CONCERNS))!FI(DECLINES HOMELESS SCREEN)!
+ FI(POSITIVE - HAS WORRIES ABOUT HOUSING)!
+ FI(POSITIVE - HAS NO STABLE HOUSING)!
+ FI(UNABLE TO PERFORM HOMELESS SCREEN)
+</pre>
+</td>
+</tr>
+<tr>
+<td>BASELINE AGE FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;1Y</dt>
+<dt>AGE MATCH TEXT:  &nbsp;&nbsp;<pre>
+All Veterans should be screened for current or imminent homelessness, 
+annually. Veterans who are homeless or are in imminent danger of becoming 
+homeless should be screened every 6 months.
+</pre>
+</dt>
+<dt>NO. OF AGE MATCH LINES:  &nbsp;&nbsp;3</dt>
+<dt>NO. OF AGE NO MATCH LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-479.html">VA-HOMELESSNESS - ALREADY RECEIVING SERVICES</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+Either a visit in a clinic with a Stop Code indicating homelessness, or 
+the Health Factor, "ALREADY RECEIVING ASSIST WITH HOUSING", or a local
+Progress Note title indicative of Homelessness assistance was found. Any 
+of which EXCLUDES Homelessness Screening for 6 months.
+</pre>
+</dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;AND NOT</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-6M</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;4</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="9999999.64-2212.html">NEGATIVE - HAS STABLE HOUSING</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+Veteran has current stable housing.
+</pre>
+</dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>WITHIN CATEGORY RANK:  &nbsp;&nbsp;0</dt>
+<dt>OCCURRENCE COUNT:  &nbsp;&nbsp;3</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="9999999.64-2221.html">POSITIVE - HAS WORRIES ABOUT HOUSING</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+The last homelessness screen was POSITIVE - Veteran has worries about 
+next 60 days.
+</pre>
+</dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>WITHIN CATEGORY RANK:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;2</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="9999999.64-2228.html">NEGATIVE - HAS NO HOUSING CONCERNS</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+Veteran has no immediate housing concerns.
+</pre>
+</dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>WITHIN CATEGORY RANK:  &nbsp;&nbsp;0</dt>
+<dt>OCCURRENCE COUNT:  &nbsp;&nbsp;3</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="9999999.64-2220.html">POSITIVE - HAS NO STABLE HOUSING</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+The last homelessness screen was POSITIVE - Veteran has no stable housing.
+</pre>
+</dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>WITHIN CATEGORY RANK:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="9999999.64-2230.html">DECLINES HOMELESS SCREEN</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+Veteran declined homelessness screening at this visit.
+</pre>
+</dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>WITHIN CATEGORY RANK:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="9999999.64-2227.html">UNABLE TO PERFORM HOMELESS SCREEN</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+Veteran or caregiver unable to answer homelessness screening questions at 
+this visit.
+</pre>
+</dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-6M</dt>
+<dt>WITHIN CATEGORY RANK:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;2</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="9999999.64-2226.html">NURSING HOME RESIDENT</a></dt>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;2Y</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+Veteran is living in a stable institutional setting.
+</pre>
+</dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-2Y</dt>
+<dt>WITHIN CATEGORY RANK:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.4-35.html">VA-REMINDER DEFINITION</a></dt>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;2Y</dt>
+<dt>CONDITION:  &nbsp;&nbsp;I V="DUE NOW"</dt>
+<dt>INTERNAL CONDITION:  &nbsp;&nbsp;I V="DUE NOW"</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>COMPUTED FINDING PARAMETER:  &nbsp;&nbsp;VA-HOMELESSNESS FREQUENCY 2Y</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FUNCTION FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+Positive Screen more recent than Negative Screen. Frequency changed to 6M.
+</pre>
+</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;(FI(3)!FI(5))&(MAX_DATE(3,5)'<MAX_DATE(2,4))</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;3</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;5</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-3.html">MAX_DATE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;5</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;4</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-3.html">MAX_DATE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;4</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;(FN(1)!FN(2))&(FN(3)'<FN(4))</dt>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;6M</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERNAL PATIENT COHORT LOGIC</td>
+<td>(SEX)&(AGE)&'FI(1)</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS COUNT</td>
+<td>3</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS LIST</td>
+<td>SEX;AGE;1</td>
+</tr>
+<tr>
+<td>CUSTOMIZED RESOLUTION LOGIC</td>
+<td>FI(9)!(FI(2)&FI(4))!FI(6)!FI(3)!FI(5)!FI(7)</td>
+</tr>
+<tr>
+<td>INTERNAL RESOLUTION LOGIC</td>
+<td>FI(9)!(FI(2)&FI(4))!FI(6)!FI(3)!FI(5)!FI(7)</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS COUNT</td>
+<td>7</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS LIST</td>
+<td>9;2;4;6;3;5;7</td>
+</tr>
+<tr>
+<td>AGE FINDINGS COUNT</td>
+<td>3</td>
+</tr>
+<tr>
+<td>AGE FINDINGS LIST</td>
+<td>9;10;FF1</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>LINKED REMINDER DIALOG</td>
+<td><a href="801.41-3458.html">VA-HOMELESSNESS SCREENING</a></td>
+</tr>
+<tr>
+<td># OF GEN. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>SPONSOR</td>
+<td><a href="811.6-36.html">HOMELESSNESS OFFICE</a></td>
+</tr>
+<tr>
+<td>USAGE</td>
+<td>*</td>
+</tr>
+<tr>
+<td>EDIT HISTORY</td>
+<td>
+<ol>
+<li>
+<dt>EDIT DATE:  &nbsp;&nbsp;2012-10-18 15:54:47</dt>
+<dt>EDIT BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>EDIT COMMENTS:  &nbsp;&nbsp;<pre>
+Exchange Install
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

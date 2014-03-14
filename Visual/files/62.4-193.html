@@ -1,0 +1,117 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuNC0xOTM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MLA1000C (193) &nbsp;&nbsp;  AUTO INSTRUMENT (62.4)</h1>
+<div id="demo"><table id="NjIuNC0xOTM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MLA1000C</td>
+</tr>
+<tr>
+<td>PROGRAM</td>
+<td>LAMLA1KC</td>
+</tr>
+<tr>
+<td>LOAD/WORK LIST</td>
+<td>File: 68.2, IEN: 21</td>
+</tr>
+<tr>
+<td>ENTRY for LAGEN ROUTINE</td>
+<td>Accession cross-reference</td>
+</tr>
+<tr>
+<td>CROSS LINKED BY</td>
+<td>ID</td>
+</tr>
+<tr>
+<td>METHOD</td>
+<td>MLA1000C</td>
+</tr>
+<tr>
+<td>DEFAULT ACCESSION AREA</td>
+<td><a href="68-3.html">COAG</a></td>
+</tr>
+<tr>
+<td>OVERLAY DATA</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>NEW DATA</td>
+<td>D NEW^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>RESTART</td>
+<td>D RESTART^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>CHEM TESTS</td>
+<td>
+<ol>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-467.html">PT</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(430,1)</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERFACE NOTES</td>
+<td><pre>
+Sample LA format:
+^LA(5,"ENV") = VAH^ROU^50000VA0
+^LA(5,"I") = 6
+^LA(5,"I",O) = 6
+^LA(5,"I",1) = R|848|61  |001|1|1| 13.9|0|  |0|  |000|0| |0|0|1.2|
+^LA(5,"I",2) = R|849|61  |003|1|1| 42.5|0|  |0|  |000|0| |0|0|   |
+^LA(5,"I",3) = R|850|62  |001|1|1| 12.3|0|  |0|  |000|0| |0|0|0.9|
+^LA(5,"I",4) = R|851|62  |003|1|1| 27.7|0|  |0|  |000|0| |0|0|   |
+^LA(5,"I",5) = R|852|63  |001|1|1| 12.0|0|  |0|  |000|0| |0|0|   |
+^LA(5,"I",5) = R|853|63  |003|1|1| 28.2|0|  |0|  |000|0| |0|0|   |
+ 
+PARAM 3: should have the test identifier entered for all tests except 
+the INR.  The identifier number can be found in the Test ID section of 
+the MLA documentation.  The most common ones are: PT=1, APTT=3, 
+Fibrinogen=4, TT=5. The documentation will list tehm as 001 or 012 but you 
+should just enter the number without the preceding zeros.
+PARAM 1 is used to hold the extract code for the INR, it should be: 
+S V=+Y(2) D NUM
+Wiring requirements are:
+BAUD RATE=1200, PARITY=none, STOP BITS=1, CHARACTER BITS=8 (standard
+unmodified LSI port). Set instrument to SEND DURING RUN=ON, 
+DATA FORMAT=E1000C. Pins 2 and 3 will need to be reversed.
+</pre>
+</td>
+</tr>
+<tr>
+<td>METH NAME</td>
+<td><a href="62.4-193.html">MLA1000C</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

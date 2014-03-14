@@ -1,0 +1,200 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODkyNS4xLTYxOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OPERATION REPORT (619) &nbsp;&nbsp;  TIU DOCUMENT DEFINITION (8925.1)</h1>
+<div id="demo"><table id="ODkyNS4xLTYxOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OPERATION REPORT</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>ORPT</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>OPERATION REPORT</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>TITLE</td>
+</tr>
+<tr>
+<td>CLASS OWNER</td>
+<td><a href="8930-55.html">CLINICAL COORDINATOR</a></td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td><a href="8925.6-11.html">ACTIVE</a></td>
+</tr>
+<tr>
+<td>NATIONAL STANDARD</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>UPLOAD TARGET FILE</td>
+<td><a href="1-8925.html">TIU DOCUMENT</a></td>
+</tr>
+<tr>
+<td>LAYGO ALLOWED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>TARGET TEXT FIELD SUBSCRIPT</td>
+<td>2;TEXT</td>
+</tr>
+<tr>
+<td>UPLOAD CAPTIONED ASCII HEADER</td>
+<td>
+<ol>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;PATIENT NAME</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;PT NAME</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;.02</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;DOE,JOHN B.</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;PATIENT SSN</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;PT SSN</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;.02</dt>
+<dt>LOOKUP LOCAL VARIABLE NAME:  &nbsp;&nbsp;TIUSSN</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;555-12-3445</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+<dt>TRANSFORM CODE:  &nbsp;&nbsp;S X=$TR(X,"-/","")</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;DOCUMENT NUMBER</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;DOCUMENT NUMBER</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;.001</dt>
+<dt>LOOKUP LOCAL VARIABLE NAME:  &nbsp;&nbsp;TIUSDA</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;134567</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;SURGICAL CASE</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;SURGICAL CASE</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;1405</dt>
+<dt>LOOKUP LOCAL VARIABLE NAME:  &nbsp;&nbsp;TIUSRCN</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;143342</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;NO</dt>
+<dt>TRANSFORM CODE:  &nbsp;&nbsp;S X="S.`"_X</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;OPERATION DATE</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;OPERATION DATE</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;.07</dt>
+<dt>LOOKUP LOCAL VARIABLE NAME:  &nbsp;&nbsp;TIUODT</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;04/29/2001</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+<dt>TRANSFORM CODE:  &nbsp;&nbsp;S X=$$IDATE^TIULC(X)</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;DICTATED BY</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;DICTATING SURGEON</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;1202</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;CASEY,BEN</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;ATTENDING SURGEON</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;ATTENDING SURGEON</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;1209</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;WELBY,MARCUS</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;URGENCY</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;STAT or ROUTINE</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;.09</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;PRIORITY</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;DICTATION DATE</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;DICTATION DATE</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;1307</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;04/28/2001</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;NO</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;TRANSCRIPTIONIST</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;TRANSCRIPTIONIST ID</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;1302</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;T1212</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;NO</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;NO</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>OK TO DISTRIBUTE</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>SUPPRESS VISIT SELECTION</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>UPLOAD LOOK-UP METHOD</td>
+<td>D LOOKUP^<a href="http://code.osehra.org/dox/Routine_TIUPUTS.html">TIUPUTS</a></td>
+</tr>
+<tr>
+<td>UPLOAD POST-FILING CODE</td>
+<td>D FOLLOWUP^<a href="http://code.osehra.org/dox/Routine_TIUPUTS.html">TIUPUTS</a>(+$G(TIUREC("#")))</td>
+</tr>
+<tr>
+<td>UPLOAD FILING ERROR CODE</td>
+<td>D FIX^<a href="http://code.osehra.org/dox/Routine_TIUPUTS.html">TIUPUTS</a></td>
+</tr>
+<tr>
+<td>PRINT METHOD</td>
+<td>D ENTRY^<a href="http://code.osehra.org/dox/Routine_SROESPR.html">SROESPR</a></td>
+</tr>
+<tr>
+<td>ON BROWSE EVENT</td>
+<td>D GETOP^<a href="http://code.osehra.org/dox/Routine_TIUSROI.html">TIUSROI</a>(.TIUY,TIUDA,"OP")</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2004-04-27 15:03:11</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

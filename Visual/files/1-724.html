@@ -1,0 +1,55 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03MjQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DSS UNIT (724) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03MjQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DSS UNIT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains all DSS units defined for use in the Event
+Capture software. Entries cannot be deleted but may be
+inactivated using the Event Capture software. The fields
+representing service, medical specialty and cost center
+are required for each DSS unit. These fields can be edited
+using options on the Event Capture Management Menu
+but cannot be deleted.
+ 
+This file should NOT be modified directly using VA FileMan.
+The Event Capture Management Menu provides the options
+necessary to create, edit, and inactivate all DSS units.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

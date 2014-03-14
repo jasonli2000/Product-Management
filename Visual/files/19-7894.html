@@ -1,0 +1,134 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzg5NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSA PV LOCATION MENU (7894) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzg5NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSA PV LOCATION MENU</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Pharmacy Location Maintenance Menu</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PHARMACY LOCATION MAINTENANCE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Pharmacy Location Maintenance menu contains options that set up and
+edit pharmacy locations. The drug balances can be inititalized and
+adjusted. The drug stock and reorder levels can be entered and edited.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-4003.html">PSA LOCATION EDIT</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;1</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;10</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-4034.html">PSA BALANCE INITIALIZE</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;3</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;30</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-4024.html">PSA BALANCE ADJUSTMENTS</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;2</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;20</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-7898.html">PSA PV DRUG ENTER/EDIT</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;4</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;40</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-7888.html">PSA STOCK AND REORDER LEVELS</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;5</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;50</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-7899.html">PSA TRANSFER DRUGS</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;6</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;60</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-9368.html">PSA MSG RECIPIENTS</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;7</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;70</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-10519.html">PSA OUTDATED MEDICATIONS</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;8</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;80</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-84.html">DRUG ACCOUNTABILITY</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K PSAPVMEN</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S PSAPVMEN=1 W !!?10,"Prime Vendor Interface"</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2006-07-11 21:23:42</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

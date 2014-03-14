@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAwLjktNDU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DNR EXPIRING (45) &nbsp;&nbsp;  OE/RR NOTIFICATIONS (100.9)</h1>
+<div id="demo"><table id="MTAwLjktNDU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DNR EXPIRING</td>
+</tr>
+<tr>
+<td>PACKAGE ID</td>
+<td>OR</td>
+</tr>
+<tr>
+<td>MESSAGE TEXT</td>
+<td>DNR order nearing expiration.</td>
+</tr>
+<tr>
+<td>MESSAGE TYPE</td>
+<td>NOTIFICATION FILE PROVIDES MESSAGE</td>
+</tr>
+<tr>
+<td>ACTION FLAG</td>
+<td>RUN ROUTINE</td>
+</tr>
+<tr>
+<td>ENTRY POINT</td>
+<td>EXDNR</td>
+</tr>
+<tr>
+<td>ROUTINE NAME</td>
+<td><a href="http://code.osehra.org/dox/Routine_ORB3FUP1.html">ORB3FUP1</a></td>
+</tr>
+<tr>
+<td>RELATED PACKAGE</td>
+<td>OR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td>Triggered when a DNR order is about to expire. Recipients include ordering provider, attending physician, primary provider and teams.  Deletion occurs for all recipients when the order is renewed or DCed.</td>
+</tr>
+<tr>
+<td>FOLLOW-UP TYPE</td>
+<td>EXPIRING_ORDER</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

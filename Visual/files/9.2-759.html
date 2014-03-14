@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTc1OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQ EXIT ACTIONS (759) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTc1OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQ EXIT ACTIONS</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>The Use and Abuse of Exit Actions</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+     
+     Each option in the Option File has an EXIT ACTION Field
+associated with it: ^DIC(19,{Option IEN},15). This field may contain M
+programming code which will be executed each time that this option is
+popped from the user stack. EXIT ACTIONS are the opposite or ENTRY
+ACTIONS, not surprisingly.
+  
+     If you think of a menu as a tree with a Primary Menu trunk, the ENTRY
+ACTION  will be executed as you move up the branches, and the EXIT ACTION
+Field will be executed as you move down.  "Neither the twain shall
+meet."  The HEADER, by the way, will run no matter which way you are
+going.  Think of that.
+  
+     The EXIT ACTION is often used to clean up after an option has been
+run, sometimes with a call to the Kernel utility KILL^XUSCLEAN.  If there
+are variables that the application wishes to protect from this call,
+[protected variables], there is a field in the Option File where these
+variables may be entered, and they will not be killed.
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;PROTECTED VARIABLES</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-764.html">XQ PROTECTED VARIABLES</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1998-04-20 09:43:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

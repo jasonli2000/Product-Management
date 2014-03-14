@@ -1,0 +1,137 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTUwNQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORCL CPRS ACCESS (9505) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTUwNQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORCL CPRS ACCESS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>GUI Access - Tabs, RPL</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>GUI ACCESS - TABS, RPL</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option provides input template access for editing CPRS GUI access 
+restrictions in the NEW PERSON file [^VA(200,] for cover sheet tabs and 
+user-specific restricted patient selection lists.
+ 
+Note that there is a logic path followed by the GUI application with 
+regard to the entries in all of these fields under discussion.  The 
+possible scenarios are:
+ 
+Scenario A - The user is restricted to, and sees only, the REPORTS tab of 
+the CPRS GUI application.  In addition, the Tools/Options menu restricts 
+access to patient selection settings.  
+ 
+Scenario B - The user sees all tabs and can select from all patients.  
+ 
+Scenario C - The user has no access to the CPRS GUI.  
+ 
+Scenario D - The user has access to the Reports Tab only, and all 
+patients.
+ 
+The following matrix should indicate what to expect:
+ 
+    Restr. Pt. List     OE/RR Team           Tab(s)      Scenario
+    = = = = = = = =     = = = = = =          = = = =     = = = = =
+    (blank)             (none)               (none)      C
+    (blank)             XYZ Team             (none)      C
+    (blank)             XYZ Team             RPT         C
+    Y                   (none/invalid)       RPT         C
+    N                   XYZ Team             RPT         D
+    Y                   XYZ Team             RPT         A
+    N                   N/A                  COR         B
+    N                   N/A                  COR, RPT    B
+    Y                   N/A                  COR         B
+    Y                   N/A                  COR, RPT    B
+    (blank)             N/A                  COR         C
+    (blank)             N/A                  COR, RPT    C
+ 
+It will be seen that the "COR" tab overrules other tab settings, allows 
+access to all tabs, and also allows access to all patients - except when 
+the "RESTRICTED PATIENT SELECTION" entry is left blank.  
+ 
+Note that more than one entry can be made for the same tab.  For example, 
+a "RPT" tab entry could be made for a user with valid dates equating to 
+the second week of the current month, then another "RPT" entry made with 
+dates allowing access for the first week of the next month.  To create a 
+duplicate entry of the same tab, the user must select "No" when prompted 
+for the new entry on a blank line.  Some users may not be familiar with 
+this standard Fileman behavior.  
+ 
+The ruling logic for multiple entries of the same tab is:
+ 
+    If any entry for a given tab allows access to the tab 
+    as of the date of login, then the tab is allowed, regardless  
+    of any other entries which may exist for that tab.  
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>edit</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-35.html">ORDER ENTRY/RESULTS REPORTING</a></td>
+</tr>
+<tr>
+<td>DIC {DIC}</td>
+<td>VA(200,</td>
+</tr>
+<tr>
+<td>DIC(0)</td>
+<td>AEMQ</td>
+</tr>
+<tr>
+<td>DIE</td>
+<td>VA(200,</td>
+</tr>
+<tr>
+<td>DR {DIE}</td>
+<td>[OR USER ACCESS OPTIONS]</td>
+</tr>
+<tr>
+<td>NO UP-ARROW</td>
+<td>BACK JUMPING OK, NO EXIT</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

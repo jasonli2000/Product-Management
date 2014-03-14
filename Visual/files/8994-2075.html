@@ -1,0 +1,116 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC0yMDc1").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DSIR FEES REC RPT (2075) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC0yMDc1" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DSIR FEES REC RPT</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>FEESREC</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DSIRBIR0</td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>GLOBAL ARRAY</td>
+</tr>
+<tr>
+<td>WORD WRAP ON</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This RPC produces the data for the Fees Recieved report.
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;START DATE</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;7</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The internal FileMan format date to start the report.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;END DATE</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;7</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is an optional date (FM format) to end the reporting period.  The 
+default will be the current date the report is requested.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;DIVISIONS</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;999</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is a variable '^' delimited containing selected Divisions from which 
+the user may see data.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>RETURN PARAMETER DESCRIPTION</td>
+<td><pre>
+Global Array - '^' delimited.
+ 
+-1^Missing Start Date!
+-2^No Payment Activity Found for Date Range!
+Bill IEN ^ Patient Name/FOIA^ Requestor ^ Open Date ^ Date Bill Entered ^
+     Payment Date ^ Payment Amount ^ Waived ^ Allowance ^ Division ^ 
+     Division Name
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

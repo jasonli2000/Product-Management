@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjA0Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DG PTF TRANSMITTED RECORDS (2047) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjA0Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DG PTF TRANSMITTED RECORDS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Transmitted Records List</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>TRANSMITTED RECORDS LIST</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Report in SSN order of all PTF records transmitted to Austin for a 
+specified date range.  This can then be compared to the EAL from Austin.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_DGPTOTRL.html">DGPTOTRL</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

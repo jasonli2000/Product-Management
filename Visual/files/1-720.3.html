@@ -1,0 +1,59 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03MjAuMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>EC EVENT CODE SCREENS (720.3) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03MjAuMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>EC EVENT CODE SCREENS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains information that is used to screen procedures
+based on a unique location, DSS unit, category, and procedure.
+Information in this file should only be entered or edited
+through the Event Code Screen (Create) option. Access
+to this option is restricted to the Event Capture Management
+Menu.
+ 
+One important note, information related to the event code
+screen cannot be deleted; however, it may be inactivated
+using the Inactivate Event Code Screens option within the
+Event Capture software.
+ 
+This file should NOT be modified directly using VA FileMan.
+This information is created and edited using the Event Capture
+Management Menu options.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

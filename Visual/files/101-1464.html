@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE0NjQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA OERR PROFILE (1464) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE0NjQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA OERR PROFILE</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Rad/Nuc Med Profile</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This action protocal is used in OE/RR for reporting results
+of radiology and nuclear medicine reports.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K RAF1,RAREPORT D READ^<a href="http://code.osehra.org/dox/Routine_ORUTL.html">ORUTL</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>Q:'$D(ORVP)  S RADFN=+ORVP,RAHEAD="**** RAD/NUC MED PATIENT EXAMS ****" S (RAF1,RAREPORT)=1 D ^<a href="http://code.osehra.org/dox/Routine_RAPTLU.html">RAPTLU</a> Q:X["^"!'$D(RADUP)  D OERR^<a href="http://code.osehra.org/dox/Routine_RAORDQ.html">RAORDQ</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1996-08-23 09:58:38</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

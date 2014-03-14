@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjIwMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SDDISCHARGE (2203) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjIwMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SDDISCHARGE</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Discharge from Clinic</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DISCHARGE FROM CLINIC</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to discharge a patient from a clinic in which he/she
+is enrolled.  Once discharged from the clinic the patient would have to
+either be re-enrolled or scheduled for a consultation if further visits
+are necessary.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-48.html">SCHEDULING</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D SDCD^<a href="http://code.osehra.org/dox/Routine_SDKILL.html">SDKILL</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>K SDFN,SDCLN D ^<a href="http://code.osehra.org/dox/Routine_SDCD.html">SDCD</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

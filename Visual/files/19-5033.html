@@ -1,0 +1,93 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTAzMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PXRR LOCATION ENCOUNTER COUNTS (5033) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTAzMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PXRR LOCATION ENCOUNTER COUNTS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Location Encounter Counts</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LOCATION ENCOUNTER COUNTS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This report provides the number of PCE outpatient encounters within an
+encounter date range, by location.
+ 
+The location report selection criteria can be based on facility, hospital
+location(s), or clinic stop(s). The selection criteria are:
+ 
+     Facility - select the facilities encounters to include in the report.
+ 
+     Service Category - only encounters with the specified service
+     category or categories will be used to generate the report. This
+     defaults to "AI" for Ambulatory encounters and clinic encounters
+     where the patient had an inpatient status.
+ 
+     Encounter Date Range - only encounters that fall within the specified
+     date range will be used to generate the report.
+ 
+     Location criteria can specify All Hospital Locations, Selected
+     Hospital Locations, All Clinic Stops, or Selected Clinic Stops.
+ 
+         Hospital Locations - only encounters, where the
+         encounter's hospital location is the same as one of the selected
+         hospital locations, will be used to generate the report.
+         
+         Clinic Stops - only encounters, where the encounter's clinic stop
+         is the same as one of the selected clinic stops, will be used to
+         generate the report.
+ 
+The report lists the number of encounters alphabetically by the location
+criteria selected. 
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>MAIN^<a href="http://code.osehra.org/dox/Routine_PXRRLCD.html">PXRRLCD</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

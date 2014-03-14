@@ -1,0 +1,136 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTEzMTE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUSAP PROXY CONN DETAIL ALL (11311) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTEzMTE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUSAP PROXY CONN DETAIL ALL</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Proxy (Connector) Detail Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PROXY (CONNECTOR) DETAIL REPOR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option provides information about Connector Proxy accounts for the 
+purposes of:
+1) Monitoring compliance with the 3-year mandate (per VA Handbook 6500)
+   to expire/change verify codes for service accounts;
+2) Reporting any mis-configured connector proxy accounts;
+3) Listing account activity to help determine whether accounts are 
+   active, and are being accessed from which remote locations.
+ 
+When running the report, the following options determine how much 
+additional content is listed for each account:
+- Check/display connector proxy fields? YES/NO (checks for mis-configured
+  accounts)
+- Scan sign-on log for connector proxy activity? YES/NO (lists account
+  activity)
+ 
+Possible categorizations for whether accounts are reported as "Compliant 
+w/3-year Service Account Mandate?" are:
+- YES (account is complaint) 
+- *** NO &lt;---- MUST FIX *** 
+  (date created and date verify code last changed &gt; 3 years in the past)
+- No, but user not active. 
+- UNABLE TO DETERMINE 
+  (until patch XU*8.0*574, date verify code last changed for Connector
+  Proxy accounts was incorrectly recorded as 4/10/2005)
+- unable to det. but not active.
+ 
+If an account's Date Verify Code Last Changed is listed as "(changed but 
+date not recorded)", that means the "fake" 4/10/2005" date is present, 
+and unless the account was created within the last 3 years, it is 
+impossible to determine if the account is in compliance with the 3-year 
+mandate.
+ 
+Also, if there is a value in the XUS Logon Attempt Count field, that 
+value is displayed, as it could indicate a remote system attempting to 
+connect and failing with an invalid verify code.
+ 
+If the option to "Check/display connector proxy fields?" is selected, the 
+following checks are performed:
+- Warnings: (any field listed in the warning section should not be 
+  populated. However, before changing, consult the National Help Desk or 
+  Customer Support as some applications may (currently) be depending 
+  (incorrectly) on a mis-configured connector configuration. 
+- Values for other fields allowed/expected: (field normally populated for
+  connector proxies)
+- Other Fields Populated (not expected fields, but not problematic either)
+- Other Multiples Populated (not expected, but not problematic either)
+ 
+If the option to "Scan sign-on log for connector proxy activity?" is 
+selected, the report will scan the sign-on log for all signon activity 
+associated with the account. Any activity found is displayed, organized 
+by client IP address, and within IP address, by date of sign-on. The 
+purpose of this report section is to help a site determine which accounts 
+are active, and which external systems (by IP address) are logging onto 
+the site with the specified account. This may help determine which remote 
+applications a change to the account (such as verify code change) might 
+impact, and may also help a site determine whether too many remote 
+applications/data centers are using the same account (which could result 
+in a more widespread service disruption if an account must be changed). 
+ 
+This option can be scheduled.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-3.html">KERNEL</a></td>
+</tr>
+<tr>
+<td>DELEGABLE</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ENALL^<a href="http://code.osehra.org/dox/Routine_XUSAP1.html">XUSAP1</a></td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

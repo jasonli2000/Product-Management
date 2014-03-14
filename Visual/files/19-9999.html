@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTk5OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RORMNT ACL REINDEX (9999) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTk5OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RORMNT ACL REINDEX</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Re-index the ACL cross-reference</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RE-INDEX THE ACL CROSS-REFEREN</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ 
+The 'Re-index the ACL cross-reference' option lets users re-index the
+"ACL" cross-reference of the ROR REGISTRY PARAMETERS file (#798.1). This
+cross-reference should be rebuilt after changes in the allocation of the
+security keys associated with any registry.
+ 
+Usually, this is done by the nightly task (the [ROR TASK] option).  
+However, if you want the changes to be in effect immediately, you should
+rebuild this cross-reference manually.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>Short Menu Text</td>
+<td>Reindex the ACL xref</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-186.html">CLINICAL CASE REGISTRIES</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>RNDXACL^<a href="http://code.osehra.org/dox/Routine_RORVM001.html">RORVM001</a></td>
+</tr>
+<tr>
+<td>INDEPENDENTLY INVOCABLE</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

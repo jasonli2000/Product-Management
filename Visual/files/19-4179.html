@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDE3OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DVB HSUSP-VIEWFILE (4179) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDE3OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DVB HSUSP-VIEWFILE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>View the HINQ Suspense File</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>VIEW THE HINQ SUSPENSE FILE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option lists HINQ suspense file entries on the screen.  Entries
+are displayed in order according to the last status update date and
+time, beginning with the most recent.  Only entries whose last status
+update date is on or after the last network workday will be shown.
+For each entry displayed, the following information is given:  patient's
+name, SSN, suspense file status, last status update date, and the names
+and times of users who requested an entry for the patient.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_DVBHQUE.html">DVBHQUE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

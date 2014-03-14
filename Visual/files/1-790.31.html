@@ -1,0 +1,51 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OTAuMzE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>WV RESULTS/DIAGNOSIS (790.31) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OTAuMzE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>WV RESULTS/DIAGNOSIS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file stores a list of official results/diagnosis based on the
+Bethesda Classification system for PAP smears and the American College of
+Radiology (ACR) for mammograms.  Every result or diagnosis is associated
+with procedure types appropriate for that term.  File data is used to
+document appropriate results for procedures performed on women patients
+through the Add a New Procedure and Edit a Procedure options.  This file
+is exported with data and should not be locally edited.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

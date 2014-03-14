@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI1NDg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSJI LM LBLI (2548) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI1NDg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSJI LM LBLI</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Individual Labels (IV)</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the printing of labels for a patient's order.
+The user may choose whether or not the labels are to be counted
+as daily usage.  This is often used for on-call orders or those
+not automatically delivered without a written request.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-77.html">INPATIENT MEDICATIONS</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>S VALMBCK="R" K PSJHIDFG</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S PSJHIDFG=1 N PSJLMPRO D ^<a href="http://code.osehra.org/dox/Routine_PSIVXU.html">PSIVXU</a> Q:$D(XQUIT)  S PSIVAC="PROL",PSIVBR="D ENLBLI^<a href="http://code.osehra.org/dox/Routine_PSIVLBL1.html">PSIVLBL1</a>" D FULL^<a href="http://code.osehra.org/dox/Routine_VALM1.html">VALM1</a>,ENCHS^PSIV,ENIVKV^PSGSETU K J,N,J2,P17,PS,PSIVAC,PSIVBR,PSIVCT,PSIVNOL,PSIVNOW,TN,ZQ7</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-02-12 10:39:03</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

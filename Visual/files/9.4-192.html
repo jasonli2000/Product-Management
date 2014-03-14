@@ -1,0 +1,236 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTE5Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VISTALINK (192) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTE5Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VISTALINK</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>XOBV</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>VistaLink</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;1.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2012-05-08 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;2003-11-21 00:00:00</dt>
+<dt>INSTALLED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION OF ENHANCEMENTS:  &nbsp;&nbsp;<pre>
+This build contains TCP/IP transport functionality that enables
+synchronous communication from the following:
+   1) from non-M based systems to M-based VistA servers
+   2) from M VistA servers to non-M systems (typically Java/J2EE based
+      systems)
+ 
+The communications are in the form of requests. For requests received by
+the M-based system, the VISTALINK package contains a Request Manager to
+manage these requests. Requests are forwarded to the appropriate Request
+Handler.
+ 
+The VISTALINK package contains two native request handlers. One handles 
+system-type requests, like client heartbeats and close socket requests. 
+The other handler processes RPC requests.
+ 
+Other packages can also supply handlers. For example, VISTALINK SECURITY
+(XOBS) supplies a handler that is used to process VistA security-related
+requests.
+ 
+VISTALINK allows the following request formats:
+   1) XML and conform to a XML Schema 
+   2) a proprietary format (package must supply a proprietary parser)
+   3) both 1 and 2
+ 
+VISTALINK also supplies a Java/J2EE component that allows developers of
+Java applications to make synchronous requests on the M server and for M
+applications to make synchronous requests of Java/J2EE application
+servers. The Java/J2EE side implements the J2EE Connector Architecture
+v1.0 framework (J2CA).
+ 
+** NOTE: As of 7/2005, VISTALINK only supports Java to M communication.
+ 
+Finally, VISTALINK contains a number of library calls available to 
+other packages for developing a request handler if needed. (Currently, 
+only VISTALINK SECURITY is allowed to use these calls.)
+</pre>
+</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;1</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-03-30 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;File: 200, IEN: 990</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This build contains the M side software for the Foundations Toolbox.
+ 
+ 
+This build requires that the M XML Parser 1.1 be installed in the account.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;1 SEQ #1</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-09-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ This patch will set the RPC Broker variable XWBOS in VistALink routine
+ XOBVSKT which is used in TCP/IP socket processes.
+ 
+ Setting this variable is necessary to accomodate remote procedure calls 
+ that test for this variable directly.
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;1.5</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2005-09-09 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;2006-06-08 00:00:00</dt>
+<dt>INSTALLED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION OF ENHANCEMENTS:  &nbsp;&nbsp;<pre>
+This build contains TCP/IP transport functionality that enables
+synchronous communication from the following:
+   1) from non-M based systems to M-based VistA servers
+   2) from M VistA servers to non-M systems (typically Java/J2EE based
+      systems)
+ 
+The communications are in the form of requests. For requests received by
+the M-based system, the VISTALINK package contains a Request Manager to
+manage these requests. Requests are forwarded to the appropriate Request
+Handler.
+ 
+The VISTALINK package contains two native request handlers. One handles 
+system-type requests, like client heartbeats and close socket requests. 
+The other handler processes RPC requests.
+ 
+Other packages can also supply handlers. For example, VISTALINK SECURITY
+(XOBS) supplies a handler that is used to process VistA security-related
+requests.
+ 
+VISTALINK allows the following request formats:
+   1) XML and conform to a XML Schema 
+   2) a proprietary format (package must supply a proprietary parser)
+   3) both 1 and 2
+ 
+VISTALINK also supplies a Java/J2EE component that allows developers of
+Java applications to make synchronous requests on the M server and for M
+applications to make synchronous requests of Java/J2EE application
+servers. The Java/J2EE side implements the J2EE Connector Architecture
+v1.0 framework (J2CA).
+ 
+** NOTE: VISTALINK v1.5 only supports Java to M communication.
+ 
+Finally, VISTALINK contains a number of library calls available to 
+other packages for developing a request handler if needed. (Currently, 
+only VISTALINK SECURITY is allowed to use these calls.)
+ 
+[Build: 1.5.0.026]
+</pre>
+</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;1 SEQ #1</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-11-22 19:11:56</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For complete information, see the patch description for patch XOBV*1.5*1
+in the National Patch Module on FORUM.
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;1.6</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2009-05-08 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;2011-01-20 00:00:00</dt>
+<dt>INSTALLED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION OF ENHANCEMENTS:  &nbsp;&nbsp;<pre>
+This build contains TCP/IP transport functionality that enables
+synchronous communication from the following:
+   1) from non-M based systems to M-based VistA servers
+   2) from M VistA servers to non-M systems (typically Java/J2EE based
+      systems)
+ 
+The communications are in the form of requests. For requests received by
+the M-based system, the VISTALINK package contains a Request Manager to
+manage these requests. Requests are forwarded to the appropriate Request
+Handler.
+ 
+The VISTALINK package contains two native request handlers. One handles 
+system-type requests, like client heartbeats and close socket requests. 
+The other handler processes RPC requests.
+ 
+Other packages can also supply handlers. For example, VISTALINK SECURITY
+(XOBS) supplies a handler that is used to process VistA security-related
+requests.
+ 
+VISTALINK allows the following request formats:
+   1) XML and conform to a XML Schema 
+   2) a proprietary format (package must supply a proprietary parser)
+   3) both 1 and 2
+ 
+VISTALINK also supplies a Java/J2EE component that allows developers of
+Java applications to make synchronous requests on the M server and for M
+applications to make synchronous requests of Java/J2EE application
+servers. The Java/J2EE side implements the J2EE Connector Architecture
+v1.0 framework (J2CA).
+ 
+** NOTE: As of 7/2005, VISTALINK only supports Java to M communication.
+ 
+Finally, VISTALINK contains a number of library calls available to 
+other packages for developing a request handler if needed. (Currently, 
+only VISTALINK SECURITY is allowed to use these calls.)
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

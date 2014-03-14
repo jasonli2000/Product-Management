@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODM1Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>WV TRANSFER CASE MANAGER (8357) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODM1Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>WV TRANSFER CASE MANAGER</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Transfer a Case Manager's Patients</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>TRANSFER A CASE MANAGER'S PATI</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The purpose of this option is to aid in the transfer of all of one Case 
+Manager's patients to another Case Manager when there is a turnover
+in staff.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-169.html">WOMEN'S HEALTH</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>TRANS^<a href="http://code.osehra.org/dox/Routine_WVCMGR.html">WVCMGR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

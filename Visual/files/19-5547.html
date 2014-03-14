@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTU0Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ECTS AMIS 401 (5547) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTU0Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ECTS AMIS 401</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>AMIS 401 - Patient Care by Vet. Category</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>AMIS 401 - PATIENT CARE BY VET</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Data for this report is pulled from the AMIS Segment file.  For a
+selected date range, sorted by division, the report displays the
+following fields:  patient classification category, number of
+applications for care, inpatient hospital care received,
+outpatient care received, and the acceptance rate.
+Acceptance rate is calculated by this formula:
+((hospital care received + NHCU care received + domiciliary care
+received + outpatient care received) divided by the total number
+of applications for care).
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-119.html">INTERIM MANAGEMENT SUPPORT</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_ECTSCAT.html">ECTSCAT</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1990-11-16 11:08:20</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjEzMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGPM WARD OOS EDIT (2131) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjEzMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGPM WARD OOS EDIT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Edit Ward Out-of-Service Dates</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>EDIT WARD OUT-OF-SERVICE DATES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Use this option to place a ward out-of-service or return a ward to service.
+If you are placing a ward out-of-service indefinately, do not answer the
+'RETURN TO SERVICE' prompt.  You will be asked how long you wish to show
+statistics for this ward on the G&amp;L.  If you do not answer these questions,
+the data will always show on the G&amp;L.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>WARD^<a href="http://code.osehra.org/dox/Routine_DGPMDDOS.html">DGPMDDOS</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

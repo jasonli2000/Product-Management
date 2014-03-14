@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzk2OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSD LABEL DRUG/NUMBER (3969) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzk2OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSD LABEL DRUG/NUMBER</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Label for Dispensing (Barcode)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LABEL FOR DISPENSING (BARCODE)</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows pharmacy to print the dispensing number/drug barcode
+label that is attached to the drug delivered to the NAOUs.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-83.html">CONTROLLED SUBSTANCES</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PSDLBL.html">PSDLBL</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

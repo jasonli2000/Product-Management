@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTQyLjEtMjg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PHARMACY OUTPATIENT (28) &nbsp;&nbsp;  HEALTH SUMMARY COMPONENT (142.1)</h1>
+<div id="demo"><table id="MTQyLjEtMjg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PHARMACY OUTPATIENT</td>
+</tr>
+<tr>
+<td>PRINT ROUTINE</td>
+<td>MAIN;GMTSPSO</td>
+</tr>
+<tr>
+<td>TIME LIMITS APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>RXOP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This component contains information from the Outpatient Pharmacy package.
+Only time limits apply.  Data presented include:  drug, prescription number,
+status expiration/cancellation date (when appropriate), quantity, issue
+date, last fill date, refills remaining, provider, and cost/fill (when
+available).
+ 
+Note: If no time limit is defined, only active outpatient orders are
+reported. If a time limit is defined, all outpatient pharmacy orders which
+have an expiration or cancel date within the time limit range are
+reported.
+</pre>
+</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>Outpatient Pharmacy not yet available</td>
+</tr>
+<tr>
+<td>DEFAULT HEADER NAME</td>
+<td>Outpatient Pharmacy</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

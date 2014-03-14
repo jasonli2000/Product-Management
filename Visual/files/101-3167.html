@@ -1,0 +1,163 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTMxNjc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBJT EDI STATUS MENU (3167) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTMxNjc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBJT EDI STATUS MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>EDI Status Menu</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1121.html">IBJ EXIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;EX</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;37</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1126.html">IBJT NS VIEW INS CO SCREEN</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;VI</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;31</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1127.html">IBJT NS VIEW EXP POL SCREEN</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;VP</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;32</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1128.html">IBJT NS VIEW AN BEN SCREEN</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AB</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;33</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1130.html">IBJT BILL DX SCREEN</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DX</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1131.html">IBJT BILL PROCEDURES SCREEN</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PR</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;12</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1132.html">IBJT AR ACCOUNT PROFILE SCREEN</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AR</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;21</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1135.html">IBJT ACTIVE LIST SCREEN SKIP</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AL</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;27</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1138.html">IBJT CLAIM SCREEN SKIP</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CI</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;17</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1140.html">IBJT PT ELIGIBILITY SCREEN</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;EL</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;34</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1141.html">IBJT CT/IR COMMUNICATIONS LIST SCREEN</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;IR</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;23</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1143.html">IBJT HS HEALTH SUMMARY</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;HS</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;24</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1144.html">IBJT AR COMMENT HISTORY SCREEN</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CM</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;22</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-457.html">VALM BLANK 2</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;19</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1129.html">IBJT BILL CHARGES SCREEN</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;BC</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>I $G(IBPRVSCR)'="IBJTED",$G(IBFASTXT)>2 S VALMBCK="Q"</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>K IBFASTXT</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D BM^<a href="http://code.osehra.org/dox/Routine_IBJU1.html">IBJU1</a>(21,17),SHOW^VALM</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2012-02-16 14:00:25</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,365 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODAuMy02").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DIGESTIVE SYSTEM (6) &nbsp;&nbsp;  MAJOR DIAGNOSTIC CATEGORY (80.3)</h1>
+<div id="demo"><table id="ODAuMy02" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DIGESTIVE SYSTEM</td>
+</tr>
+<tr>
+<td>DISORDER/PROCEDURE</td>
+<td>
+<ol>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;RECTAL RESECTION</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;146</dt>
+<dt>DRGb:  &nbsp;&nbsp;147</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:146,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:146,1:147)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:146,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:146,1:147)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;MAJOR SM & LG BOWEL SURGERY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;148</dt>
+<dt>DRGb:  &nbsp;&nbsp;149</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:148,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:148,1:149)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:148,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:148,1:149)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;ADHESIOLYSIS</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;150</dt>
+<dt>DRGb:  &nbsp;&nbsp;151</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:150,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:150,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:150,1:151)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:150,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:150,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:150,1:151)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;MINOR SM & LG BOWEL SURGERY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;152</dt>
+<dt>DRGb:  &nbsp;&nbsp;153</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:152,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:152,1:153)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:152,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:152,1:153)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;STOMACH,ESO,DUODENUM SURGERY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;154</dt>
+<dt>DRGb:  &nbsp;&nbsp;155</dt>
+<dt>DRGc:  &nbsp;&nbsp;156</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE<18:156,AGE>69:154,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:154,1:155)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE<18:156,AGE>69:154,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:154,1:155)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;ANUS SURGERY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;157</dt>
+<dt>DRGb:  &nbsp;&nbsp;158</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:157,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:157,1:158)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:157,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:157,1:158)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;HERNIA SURGERY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;159</dt>
+<dt>DRGb:  &nbsp;&nbsp;160</dt>
+<dt>DRGc:  &nbsp;&nbsp;161</dt>
+<dt>DRGd:  &nbsp;&nbsp;162</dt>
+<dt>DRGe:  &nbsp;&nbsp;163</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE<18:163,1:"") S:DRG FIN=1 I 'DRG R !,"Ingiunal or Femoral OR Procedure  (Y/N)  ? ",IF:60 S:IF'?1"Y".E&(IF'?1"N".E) BAD=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;S DRG=$S(IF?1"N".E&(AGE>69):159,IF?1"Y".E&(AGE>69):161,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E&(IF?1"N".E):159,X?1"N".E&(IF?1"N"):160,X?1"Y".E:161,1:162)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE<18:163,1:"") S:DRG FIN=1 I 'DRG R !,"Ingiunal or Femoral OR Procedure  (Y/N)  ? ",IF:60 S:IF'?1"Y".E&(IF'?1"N".E) BAD=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;S DRG=$S(IF?1"N".E&(AGE>69):159,IF?1"Y".E&(AGE>69):161,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E&(IF?1"N".E):159,X?1"N".E&(IF?1"N"):160,X?1"Y".E:161,1:162)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;APPENDECTOMY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;164</dt>
+<dt>DRGb:  &nbsp;&nbsp;165</dt>
+<dt>DRGc:  &nbsp;&nbsp;166</dt>
+<dt>DRGd:  &nbsp;&nbsp;167</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;R !,"Complicated Diagnosis  (Y/N)  ? ",CD:60 S:CD'?1"Y".E&(CD'?1"N".E) BAD=1 D AGE</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;S DRG=$S(AGE>69&(CD?1"Y".E):164,AGE>69&(CD?1"N".E):166,1:""),FIN=1 I 'DRG D COM S DRG=$S(CD?1"Y".E&(X?1"Y".E):164,CD?1"Y".E&(X?1"N".E):165,X?1"Y".E:166,1:167)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;R !,"Complicated Diagnosis  (Y/N)  ? ",CD:60 S:CD'?1"Y".E&(CD'?1"N".E) BAD=1 D AGE</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;S DRG=$S(AGE>69&(CD?1"Y".E):164,AGE>69&(CD?1"N".E):166,1:""),FIN=1 I 'DRG D COM S DRG=$S(CD?1"Y".E&(X?1"Y".E):164,CD?1"Y".E&(X?1"N".E):165,X?1"Y".E:166,1:167)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;MOUTH SURGERY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;168</dt>
+<dt>DRGb:  &nbsp;&nbsp;169</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:168,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:168,1:169)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:168,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:168,1:169)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;OTHER OR PROCEDURES,DIGESTIVE</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;170</dt>
+<dt>DRGb:  &nbsp;&nbsp;171</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:170,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:170,1:171)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:170,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:170,1:171)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;MALIGNANCY,DIGESTIVE SYSTEM</dt>
+<dt>DRGa:  &nbsp;&nbsp;172</dt>
+<dt>DRGb:  &nbsp;&nbsp;173</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:172,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:172,1:173)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:172,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:172,1:173)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;HEMORRHAGE,DIGESTIVE SYSTEM</dt>
+<dt>DRGa:  &nbsp;&nbsp;174</dt>
+<dt>DRGb:  &nbsp;&nbsp;175</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:174,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:174,1:175)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:174,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:174,1:175)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;ULCER,DIGESTIVE SYSTEM</dt>
+<dt>DRGa:  &nbsp;&nbsp;176</dt>
+<dt>DRGb:  &nbsp;&nbsp;177</dt>
+<dt>DRGc:  &nbsp;&nbsp;178</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;R !,"Complicated Principal Diagnosis  (Y/N)  ? ",CD:60 S:CD'?1"Y".E&(CD'?1"N".E) BAD=1 S DRG=$S(CD?1"Y".E:176,1:"") S:DRG FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE>69:177,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:177,1:178)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;R !,"Complicated Principal Diagnosis  (Y/N)  ? ",CD:60 S:CD'?1"Y".E&(CD'?1"N".E) BAD=1 S DRG=$S(CD?1"Y".E:176,1:"") S:DRG FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE>69:177,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:177,1:178)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;INFLAMMATORY BOWEL DISORDER</dt>
+<dt>DRGa:  &nbsp;&nbsp;179</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;OBSTRUCTION,DIGESTIVE SYSTEM</dt>
+<dt>DRGa:  &nbsp;&nbsp;180</dt>
+<dt>DRGb:  &nbsp;&nbsp;181</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:180,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:180,1:181)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE>69:180,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:180,1:181)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;ESOPHAGITIS & MISC DISORDERS</dt>
+<dt>DRGa:  &nbsp;&nbsp;182</dt>
+<dt>DRGb:  &nbsp;&nbsp;183</dt>
+<dt>DRGc:  &nbsp;&nbsp;184</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE<18:184,AGE>69:182,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:182,1:183)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE<18:184,AGE>69:182,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:182,1:183)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;DENTAL & ORAL DISORDERS</dt>
+<dt>DRGa:  &nbsp;&nbsp;185</dt>
+<dt>DRGb:  &nbsp;&nbsp;186</dt>
+<dt>DRGc:  &nbsp;&nbsp;187</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;R !,"Extraction and/or Restoration  (Y/N)  ? ",X:60 S:X'?1"Y".E&(X'?1"N".E) BAD=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;S DRG=$S(X?1"Y".E:187,1:""),FIN=1 I 'DRG D AGE Q:$D(BAD)  S DRG=$S(X?1"Y".E:187,AGE>17:185,1:186)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;R !,"Extraction and/or Restoration  (Y/N)  ? ",X:60 S:X'?1"Y".E&(X'?1"N".E) BAD=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;S DRG=$S(X?1"Y".E:187,1:""),FIN=1 I 'DRG D AGE Q:$D(BAD)  S DRG=$S(X?1"Y".E:187,AGE>17:185,1:186)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;OTHER DIAGNOSES,DIGESTIVE SYS</dt>
+<dt>DRGa:  &nbsp;&nbsp;188</dt>
+<dt>DRGb:  &nbsp;&nbsp;189</dt>
+<dt>DRGc:  &nbsp;&nbsp;190</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE<18:190,AGE>69:188,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:188,1:189)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE<18:190,AGE>69:188,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:188,1:189)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

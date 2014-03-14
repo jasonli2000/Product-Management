@@ -1,0 +1,95 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzg3NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCH PA STATS DAILY (7875) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzg3NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCH PA STATS DAILY</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Purchasing Agent Statistics by Date</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PURCHASING AGENT STATISTICS BY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option prints detailed total line counts and total dollar values for
+purchasing agents for a given time period.  A single PA or a range of
+PAs can be specified.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>print</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S DIPCRIT=1</td>
+</tr>
+<tr>
+<td>DIC {DIP}</td>
+<td>PRC(442,</td>
+</tr>
+<tr>
+<td>L.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FLDS</td>
+<td>[PRCH TOT AMT DAILY]</td>
+</tr>
+<tr>
+<td>BY</td>
+<td>[PRCHOUT PA STATS DAILY]</td>
+</tr>
+<tr>
+<td>DIS(0)</td>
+<td>N NDUZ S NDUZ=$P($G(^PRC(442,D0,1)),"^",10) I $P($G(^VA(200,+NDUZ,400)),"^")'=""</td>
+</tr>
+<tr>
+<td>DIPCRIT</td>
+<td>PRINT SEARCH/SORT CRITERIA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

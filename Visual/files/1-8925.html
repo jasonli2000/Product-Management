@@ -1,0 +1,62 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS04OTI1").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU DOCUMENT (8925) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS04OTI1" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU DOCUMENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file stores textual information for the clinical record database.
+Though it is designed to initially accommodate Progress Notes, Consult 
+Reports, and Discharge Summaries, it is intended to be sufficiently
+flexible to accommodate textual reports or provider narrative of any
+length or type, and to potentially accommodate such data transmitted 
+from remote sites, which may be excluded from the corresponding local 
+DHCP Package databases (e.g., Operative Reports, Radiology Reports, 
+Pathology Reports, etc.) to avoid confusion with local workload.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;TIU</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

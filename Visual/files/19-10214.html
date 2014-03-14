@@ -1,0 +1,83 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTAyMTQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ECX PHA SOURCE AUDIT (10214) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTAyMTQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ECX PHA SOURCE AUDIT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Pharmacy Extracts Audit</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PHARMACY EXTRACTS AUDIT</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>OUT OF ORDER, DO NOT USE THIS OPTION!!!</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu option allows the user to select one of the three Pharmacy
+Extracts to generate a report of extract records with unusual volumes
+and/or Feeder Keys of all zeros.  At the beginning of each report, after
+the extract and date range has been specified, statistics will be
+displayed on the volume to allow the user to decide if further auditing is
+required by continuing with the Unusual Volume Report and/or the Zero
+Feeder Keys Report.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-165.html">DSS EXTRACTS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_ECXAPHA.html">ECXAPHA</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2001-08-02 15:01:45</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

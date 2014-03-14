@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzM0OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSOD DUE BUILD QUESTIONNAIRE (3349) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzM0OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSOD DUE BUILD QUESTIONNAIRE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Create/Edit a Questionnaire</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CREATE/EDIT A QUESTIONNAIRE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Use this option to Create or edit a Questionnaire.  The user must select
+one or more Drugs to use the Auto print on Action Profiles.  The user
+may create a set of questions.  There is no need to add questions to the
+DUE QUESTION file since they may be added from this option.  A
+questionnaire must be marked as Active and Active For Profiles for the
+auto print on Action Profiles.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-60.html">OUTPATIENT PHARMACY</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>BUILD^<a href="http://code.osehra.org/dox/Routine_PSODUE.html">PSODUE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

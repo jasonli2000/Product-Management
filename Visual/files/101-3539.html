@@ -1,0 +1,141 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTM1Mzk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RCDPE EOB WORKLIST RESEARCH MENU (3539) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTM1Mzk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RCDPE EOB WORKLIST RESEARCH MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Research Menu</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is the main menu that contains the actions that can be performed to 
+research a payment/denial for a claim when reviewing an EOB.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3542.html">RCDPE EOB WORKLIST REL HOLD</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3541.html">RCDPE EOB WORKLIST TPJI</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;20</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3545.html">RCDPE EOB WORKLIST ON HOLD RPT</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;50</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3546.html">RCDPE EOB WORKLIST CL MATCH RPT</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;60</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3552.html">RCDPE EOB WL RESEARCH EXIT</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;100</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3566.html">RCDPE EOB WL REVIEW</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;80</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3540.html">RCDPE VIEW/PRINT WORKLIST EOB</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;70</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3563.html">RCDPE EOB WORKLIST BILL COMMENT</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;65</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3562.html">RCDPE EOB WORKLIST REESTABLISH</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;67</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3561.html">RCDPE EOB WORKLIST ADJUST</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;8</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3544.html">RCDPE EOB WORKLIST FULL ACCT PROF</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;9</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4483.html">RCDPE EOB WORKLIST ADMIN COST ADJ</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;10</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-53.html">ACCOUNTS RECEIVABLE</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>I $G(RCFASTXT) S VALMBCK="Q"</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a></td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2012-01-12 14:06:14</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

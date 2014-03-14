@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjg0OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCT COMMENT ALIGNMENT (2849) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjg0OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCT COMMENT ALIGNMENT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Comment Alignment</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>COMMENT ALIGNMENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will allow the alignment of comments in a barcode program.
+Comments can also be aligned by using the FileMan programmer 'Y' option
+during the edit function.  By executing the following code, comments
+can be aligned at any column for a range of lines:
+                  S Y=[column] D CON^PRCTBAR
+For example:
+ 
+While editing you barcode program, you decide you want your comments
+aligned at the 28th column for lines 20-40.  At the 'EDIT Option:' prompt,
+enter a 'Y'.  You would then enter 'S Y=28 D CON^PRCTBAR'.  FileMan
+will then ask you the range of lines you want to process.  By enter
+the range from 20 thru 40, those lines will have comments aligned to the
+28 column.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>COM^<a href="http://code.osehra.org/dox/Routine_PRCTBAR.html">PRCTBAR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

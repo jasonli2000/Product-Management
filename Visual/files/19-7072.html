@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzA3Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ACKQAS PAT INQ (7072) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzA3Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ACKQAS PAT INQ</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Inquire - A&SP Patient</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>INQUIRE - A&SP PATIENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Inquire - A&amp;SP Patient option displays demographic information 
+for an A&amp;SP patient which includes date of birth, social security 
+number, eligibility, and initial visit date.  Additionally the option 
+shows inpatient status and diagnostic history.  Output can be sent to 
+a printer.
+  
+After selecting the A&amp;SP patient's name, you are given an
+opportunity to update the diagnostic history. The Problem List is
+recompiled using this logic:  All clinic visits for the patient 
+are examined. Unique diagnostic codes and the earliest date for 
+each code are determined. The A&amp;SP PATIENT file is updated with 
+these codes and dates. Also, the earliest diagnostic date found 
+becomes the INITIAL VISIT DATE.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-150.html">QUASAR</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_ACKQNQ.html">ACKQNQ</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

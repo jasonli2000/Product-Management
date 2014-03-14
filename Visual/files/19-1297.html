@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTI5Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LR WKLD LMIP 4 (1297) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTI5Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LR WKLD LMIP 4</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>PHASE 4: Create E-mail message for NDB.</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PHASE 4: CREATE E-MAIL MESSAGE</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>LRSUPER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ This is the last phase of data collection leading to the creation
+of a mail message containing LMIP data. This option will take the
+formatted data from the temporary file and place the data into 
+appropriately formatted mail message. The mail message will be sent only
+to the user creating the message. The User must forward the message
+via mailman options to the National Data location.
+  Consult LMIP directive for the proper forwarding procedures.
+  If for some reason the message creation fails, this option can be
+ran multiple times. The National Data center will only accept 1 
+data message for a single month. Send only one message to the National
+Data base. The second one for any month will not be processed.
+  Consult your package documentation for more information.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_LRCAPAM4.html">LRCAPAM4</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

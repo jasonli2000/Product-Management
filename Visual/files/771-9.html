@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NzcxLTk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>EPI-LAB (9) &nbsp;&nbsp;  HL7 APPLICATION PARAMETER (771)</h1>
+<div id="demo"><table id="NzcxLTk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>EPI-LAB</td>
+</tr>
+<tr>
+<td>ACTIVE/INACTIVE</td>
+<td>ACTIVE</td>
+</tr>
+<tr>
+<td>MAIL GROUP</td>
+<td><a href="3.8-39.html">EPI</a></td>
+</tr>
+<tr>
+<td>*HL7 SEGMENT</td>
+<td>
+<ol>
+<li>
+<dt>HL7 SEGMENT:  &nbsp;&nbsp;<a href="771.3-2.html">MSH</a></dt>
+<dt>FIELDS USED IN THIS SEGMENT:  &nbsp;&nbsp;1,2,3,4,5,6,7,8,9,10,11,12</dt>
+</li>
+<li>
+<dt>HL7 SEGMENT:  &nbsp;&nbsp;<a href="771.3-5.html">PID</a></dt>
+<dt>FIELDS USED IN THIS SEGMENT:  &nbsp;&nbsp;1,2,3,4,5,6,7,8,9,19</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>*HL7 MESSAGE</td>
+<td>
+<ol>
+<li>
+<dt>HL7 MESSAGE:  &nbsp;&nbsp;<a href="771.2-3.html">ORU</a></dt>
+<dt>PROCESSING ROUTINE:  &nbsp;&nbsp;Q</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>COUNTRY CODE</td>
+<td><a href="779.004-1.html">USA</a></td>
+</tr>
+<tr>
+<td>HL7 FIELD SEPARATOR</td>
+<td>|</td>
+</tr>
+<tr>
+<td>HL7 ENCODING CHARACTERS</td>
+<td>~^\&</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

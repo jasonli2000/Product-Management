@@ -1,0 +1,107 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE5NTM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU COMPLETE NOTES MENU (1953) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE5NTM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU COMPLETE NOTES MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Select action</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu is used by the List template for the completion of notes.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1785.html">TIU BROWSE ACTION SIGN/COSIGN</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Sign</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1779.html">TIU BROWSE ACTION EDIT</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Edit</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1778.html">TIU BROWSE ACTION DELETE</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Delete</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>S:$D(DIROUT) TIUQUIT=1</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S XQORM("SH")=0</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>S VALMSG="+ Next Screen  - Prev Screen  ?? More actions" D RESIZE^<a href="http://code.osehra.org/dox/Routine_TIULM.html">TIULM</a>(20,20),SHOW^VALM S XQORM("B")=$S(VALMLST<VALMCNT:"Next Screen",(VALMLST'<VALMCNT)&(+$P($G(^TIU(8925,+TIUDA,0)),U,5)=7):"Quit",1:"Sign")</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>(S)ign, (E)dit, or (D)elete this note?</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2001-04-30 10:27:15</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

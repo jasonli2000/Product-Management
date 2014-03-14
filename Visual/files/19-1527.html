@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTUyNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENBCNXRES (1527) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTUyNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENBCNXRES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Restart Processing of Uploaded NX Inventory Data</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RESTART PROCESSING OF UPLOADED</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Used to resume processing of NX inventory that has been uploaded from
+a portable bar code reader. User will need PROCESS ID and TIME STAMP
+from failed process. If this information is unavailable, data upload
+must be re-started from the beginning.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>RES^<a href="http://code.osehra.org/dox/Routine_ENEQNX1.html">ENEQNX1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

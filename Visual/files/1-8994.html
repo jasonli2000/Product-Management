@@ -1,0 +1,64 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS04OTk0").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>REMOTE PROCEDURE (8994) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS04OTk0" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>REMOTE PROCEDURE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file is used as a repository of server-based procedures in the context
+of the Client/Server architecture.  By using the Remote Procedure Call (RPC)
+Broker, applications running on client workstations can invoke (call) the
+procedures in this file to be executed by the server and the results will be
+returned to the client application.
+
+Each remote procedure entry is associated with an entry point (ROUTINE with
+optional TAG).  Calls to these procedures can include parameters of different
+value types.  The resulting value of the call can be either a string, a list
+of strings or a word processing string as indicated by the RETURN VALUE TYPE
+field (.04).
+
+The remote procedure may be available for use by anyone or its use may be
+restricted to one or more application.  The range of availability is indicated
+by the AVAILABILITY field.  IF THERE IS NO ENTRY IN THE AVAILABILITY FIELD,
+then the procedure is assumed to be PUBLIC.
+
+A remote procedure may be removed from service for a period of time by setting
+the INACTIVE field.  A request for use of a procedure which is marked inactive
+will result in an error being returned to the originating application.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

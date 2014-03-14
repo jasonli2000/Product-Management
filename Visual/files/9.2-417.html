@@ -1,0 +1,117 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTQxNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSO VIEW INTERVENTIONS (417) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTQxNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSO VIEW INTERVENTIONS</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Describes option to view interventions in captioned format</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+                VIEW INTERVENTION
+ 
+The VIEW INTERVENTION option is used to view one or more 
+interventions in a captioned format.  The option appears on the INTM 
+(Pharmacy Intervention Menu) menu as:
+ 
+          VINT   View Intervention
+ 
+You can choose this option by entering VINT at the
+ 
+        Select Pharmacy Intervention Menu option:
+ 
+prompt.
+ 
+You will first be asked which intervention you wish to view.  You may either 
+enter the date of the intervention and choose the correct one when listed or 
+you may enter the patient's chart number or name.  The chart number or 
+name would be the prefered method.  You may keep entering another one, 
+then when you have entered all the ones you wish to view just enter a return at 
+the 'Another One' prompt.
+ 
+Select APSP INTERVENTION INTERVENTION DATE: 6-13   JUN 13, 1990
+     1     6-13-1990       WATERMAN,RAE     IBUPROFEN 400MG TAB
+     2     6-13-1990       KENNEDY,ANITA     PENICILLIN VK 250MG TAB
+CHOOSE 1-2: 1
+ANOTHER ONE: KENNEDY,ANITA                   F 12-24-22 002300023   SE 1000
+78  6-13-1990       KENNEDY,ANITA     PENICILLIN VK 250MG TAB
+ANOTHER ONE
+ 
+You will then be displayed the entries selected in a captioned format.
+ 
+INTERVENTION DATE: JUN 13, 1990         PATIENT: WATERMAN,RAE
+  PROVIDER: MARTIN,GRETCHEN             PHARMACIST: MASON,BILL
+  DRUG: IBUPROFEN 400MG TAB             INSTITUTED BY: PHARMACY
+  INTERVENTION: INCORRECT DOSE          RECOMMENDATION: CHANGE 
+DOSE
+  WAS PROVIDER CONTACTED: YES           PROVIDER CONTACTED: 
+MARTIN,GRETCHEN
+  RECOMMENDATION ACCEPTED: YES
+ REASON FOR INTERVENTION:
+ OVERDOSE
+ ACTION TAKEN:
+ CONTACTED PROVIDER
+ 
+INTERVENTION DATE: JUN 13, 1990         PATIENT: KENNEDY,ANITA
+  PROVIDER: CURTIS,CLAYTON              PHARMACIST: ADAM,ADAM
+  DRUG: PENICILLIN VK 250MG TAB         INSTITUTED BY: PHARMACY
+  INTERVENTION: ALLERGY                 RECOMMENDATION: CHANGE 
+DRUG
+  WAS PROVIDER CONTACTED: YES           PROVIDER CONTACTED: 
+CURTIS,CLAYTON
+  RECOMMENDATION ACCEPTED: YES
+ REASON FOR INTERVENTION:
+ Patient allergy to penicillin.
+ ACTION TAKEN:
+ Prescribed erythromycin
+ CLINICAL IMPACT:
+ None due to intervention
+ FINANCIAL IMPACT:
+ none
+ 
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1990-09-16 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

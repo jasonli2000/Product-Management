@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS01MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MEDICATION INSTRUCTION (51) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS01MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MEDICATION INSTRUCTION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+  This file holds the abbreviations which are often used when entering the
+Rx sig.  Each record holds an expansion of the abbreviation which is used
+to complete the sig as it is printed on the Rx label.  Care should be taken
+to not delete entries in this file after going into production use of the
+pharmacy package.  If an entry were deleted then any sigs that contain
+the abbreviation would not find it when printed later and thus could confuse
+the patient.
+ 
+The above description indicates that this file is not strictly 'pointed to'
+in the classical VA FileMan sense, but that logically it is nearly the
+same thing.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;PS</dt>
+</li>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;PSO</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

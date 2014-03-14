@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTI3NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FBAA FMS UPDATE (5275) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTI3NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FBAA FMS UPDATE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Update FMS Vendor File in Austin</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>UPDATE FMS VENDOR FILE IN AUST</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>FBAASUPERVISOR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option creates a Master Record Adjustment (MRA) transaction which
+results in the updating of selected vendor demographic data in the FMS
+vendor file in Austin.
+  
+This option should only be used if a vendor entry is correctly entered into
+the DHCP Fee Basis Vendor file but needs to update the FMS vendor file
+with the appropriate information.
+ (NOTE:  The vendor may not exist on the FMS system or may exist, but
+         the information does not reflect accurate information.)
+  
+Use of this option should update the FMS vendor file to reflect what is
+currently in the DHCP system.  Information at all other VA Medical Centers
+using this vendor will also be updated.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>UPDATE^<a href="http://code.osehra.org/dox/Routine_FBAAAV.html">FBAAAV</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-08-14 18:03:54</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

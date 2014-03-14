@@ -1,0 +1,64 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTE0Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGRU RAI ERROR (143) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTE0Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGRU RAI ERROR</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>RAI/MDS HL7 MESSAGE ERROR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This will be generated when there is a problem building or sending an
+HL7 message for the RAI/MDS system.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+     Patient |1|,
+ 
+         The following error occurred when the HL7 |2| message
+         to the COTS RAI/MDS system was created or transmitted:
+           |3|
+ 
+     Entered By  |4|
+     Date/Time   |5|
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

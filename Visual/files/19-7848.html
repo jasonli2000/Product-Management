@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzg0OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSSJU DRUG/ATC SET UP (7848) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzg0OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSSJU DRUG/ATC SET UP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Dispense Drug/ATC Set Up</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DISPENSE DRUG/ATC SET UP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+  This allows the user to edit the drug fields necessary to send drugs to
+ ATC Unit Dose dispensing machine.  In order for a drug to be sent to the
+ATC, the drug must have a CANISTER NUMBER for each ward group that will be
+sending a pick list to the ATC, and the drug must also have a MNEMONIC.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ENATC^<a href="http://code.osehra.org/dox/Routine_PSGFILD3.html">PSGFILD3</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,115 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuNC0xMTY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>COBAS FARA (116) &nbsp;&nbsp;  AUTO INSTRUMENT (62.4)</h1>
+<div id="demo"><table id="NjIuNC0xMTY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>COBAS FARA</td>
+</tr>
+<tr>
+<td>PROGRAM</td>
+<td>LACFARA</td>
+</tr>
+<tr>
+<td>LOAD/WORK LIST</td>
+<td>File: 68.2, IEN: 8</td>
+</tr>
+<tr>
+<td>ENTRY for LAGEN ROUTINE</td>
+<td>Accession cross-reference</td>
+</tr>
+<tr>
+<td>CROSS LINKED BY</td>
+<td>IDE</td>
+</tr>
+<tr>
+<td>METHOD</td>
+<td>FARA</td>
+</tr>
+<tr>
+<td>OVERLAY DATA</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>NEW DATA</td>
+<td>D NEW^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>RESTART</td>
+<td>D RESTART^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>CHEM TESTS</td>
+<td>
+<ol>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-460.html">COCAINE</a></dt>
+<dt>PARAM 3:  &nbsp;&nbsp;COCA</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(144,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-212.html">BARBITURATES</a></dt>
+<dt>PARAM 3:  &nbsp;&nbsp;BARB</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(25,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-708.html">BENZODIAZEPINES</a></dt>
+<dt>PARAM 3:  &nbsp;&nbsp;BENZ</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(216,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-926.html">METHAMPHETAMINE</a></dt>
+<dt>PARAM 3:  &nbsp;&nbsp;METH</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(307,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-213.html">AMPHETAMINES</a></dt>
+<dt>PARAM 3:  &nbsp;&nbsp;AMPH</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(26,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-957.html">OPIATES</a></dt>
+<dt>PARAM 3:  &nbsp;&nbsp;OPIA</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(326,1)</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERFACE NOTES</td>
+<td><pre>
+Uses Param 3 to identify test which must match the test name that
+is transmited.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

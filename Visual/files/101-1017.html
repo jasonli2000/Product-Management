@@ -1,0 +1,138 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTEwMTc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCP DIST ORDER PROCESSING (1017) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTEwMTc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCP DIST ORDER PROCESSING</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Distribution Order Processing</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol menu provides the options to generate and post orders from
+a primary inventory point to a secondary inventory point.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1018.html">PRCP DIST ORDER DELETE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DO</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;23</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Delete Order</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1019.html">PRCP DIST ORDER ITEM EDIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;EI</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Edit Items On Order</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1020.html">PRCP DIST ORDER ITEM DELETE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DI</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;21</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Delete Item On Order</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1015.html">PRCP DIST ORDER CHECK</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CO</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;15</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Check Order/Items</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1016.html">PRCP DIST ORDER RELEASE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RO</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;31</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Release Order</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1021.html">PRCP DIST ORDER PICKING TICKET</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PT</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;33</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Picking Ticket Print</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1022.html">PRCP DIST ORDER POSTING</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PO</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;35</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Post Order</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1035.html">PRCP DIST ORDER INV ITEM EDIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;EE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;17</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;E/E Inventory Items</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3021.html">PRCP SEND DIST ORDER</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SO</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;32</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I 1 X:$D(^ORD(101,+$P(^ORD(101,DA(1),10,DA,0),"^"),24)) ^(24)</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a></td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>IDENTIFIER</td>
+<td>DP</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2001-02-28 10:31:43</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

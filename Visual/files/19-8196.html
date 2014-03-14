@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODE5Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SRHL PARAMETER (8196) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODE5Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SRHL PARAMETER</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Update Interface Parameter Field</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>UPDATE INTERFACE PARAMETER FIE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option may be used to edit the site parameter that determines which
+Surgery HL7 interface will be used, the interface compatible with VistA
+HL7 v1.6 or the older one compatible with VistA HL7 v1.5.
+ 
+If applications communicating with the Surgery HL7 interface must use the
+interface designed for use with HL7 v1.5, enter YES.  Otherwise, enter NO
+or leave this field blank.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-127.html">SURGERY</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>CHNG^<a href="http://code.osehra.org/dox/Routine_SRHLU.html">SRHLU</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,211 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuNC0xMzg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MODU KEYPAD (138) &nbsp;&nbsp;  AUTO INSTRUMENT (62.4)</h1>
+<div id="demo"><table id="NjIuNC0xMzg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MODU KEYPAD</td>
+</tr>
+<tr>
+<td>PROGRAM</td>
+<td>LAMODU</td>
+</tr>
+<tr>
+<td>ENTRY for LAGEN ROUTINE</td>
+<td>Accession cross-reference</td>
+</tr>
+<tr>
+<td>CROSS LINKED BY</td>
+<td>IDE</td>
+</tr>
+<tr>
+<td>*ECHO ALL INPUT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>OVERLAY DATA</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>NEW DATA</td>
+<td>D NEW^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>RESTART</td>
+<td>D RESTART^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>CHEM TESTS</td>
+<td>
+<ol>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-141.html">URINE COLOR</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),10) D COLOR</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(683,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-489.html">APPEARANCE</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),11) D APP</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(162,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-143.html">SPECIFIC GRAVITY</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),13,17)</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(685,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-150.html">URINE PH</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),18,20)</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(692,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-149.html">URINE PROTEIN</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),21) D PLUS</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(691,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-148.html">URINE GLUCOSE</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),22) D PLUS</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(690,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-147.html">URINE KETONES</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),23) D PLUS</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(689,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-146.html">URINE BILIRUBIN</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),24) D PLUS</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(688,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-1158.html">URINE BLOOD</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),25) D PLUS</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(687,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-144.html">UROBILINOGEN</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),27) D PLUS</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(686,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-151.html">URINE WBC/HPF</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),30) D RANGE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(693,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-272.html">URINE RBC/HPF</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),31) D RANGE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(694,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-1134.html">SQUAMOUS EPITHELIAL</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),32) D RANGE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(777,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-1135.html">RENAL EPITHELIAL CELLS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),33) D RANGE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(778,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-157.html">HYALINE CASTS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),34) D RANGE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(702,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-158.html">GRANULAR CASTS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),35) D RANGE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(703,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-153.html">URINE BACTERIA</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),37) D ESTM</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(696,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-154.html">URINE MUCUS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),38) D ESTM</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(697,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-270.html">URINE CRYSTALS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),39) D ESTM</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(699,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-1126.html">TRICHOMONAS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),40) D ESTM</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(710,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-161.html">URINE YEAST</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),41) D ESTM</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(706,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-1150.html">OTHER</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;I $D(TY(5)) S RMK=RMK_"QNS; " K V</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(780,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-1150.html">OTHER</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;I $D(TY(300)) S V=TY(300) D ESTM S RMK="URIC ACID CRYSTALS, "_V_"; " K V</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(780,1)</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>LOAD CHEM TESTS</td>
+<td>TMP GLOBAL</td>
+</tr>
+<tr>
+<td>INTERFACE NOTES</td>
+<td><pre>
+The program LAMODU is used with the Modulus Urocomp keypads with or without
+the keypad being interfaced to a urinalysis instrument.  Param 1 is used
+to extract the results for the test.  The position of the results on the
+data stream will be dependent on being interfaced to a Clinitek 200, 2000,
+or used as a seperate workstation.
+ 
+Coded comments can be done similar to the Biovation keypads
+(explained in the INTERFACE NOTES field).
+If Param 3 is not used the default is 'None$Few$Mod$Many$Profuse$Noted'
+where a degree of 1 would give the result Few.
+ 
+The field 'LOAD CHEM TESTS' should be set to 'U' if you have many comments.
+This will avoid possible store errors.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

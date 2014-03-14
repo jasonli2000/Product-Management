@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE4NTM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIUFH ACTION JUMP TO DDEF (1853) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE4NTM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIUFH ACTION JUMP TO DDEF</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Jump to Document Def</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+User selects any Document Definition in the Clinical Document Hierarchy
+and action expands the display to include the selected entry.  Users
+cannot jump to Orphans or Objects since they do not belong to the
+hierarchy.  Users cannot jump to Shared Components since they may occur
+more than once in the hierarchy.
+ 
+This is a quick way to get several layers deep into the hierarchy in one
+step.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D EXPDEF^<a href="http://code.osehra.org/dox/Routine_TIUFH1.html">TIUFH1</a>(1)</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1998-03-30 14:21:21</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

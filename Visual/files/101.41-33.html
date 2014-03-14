@@ -1,0 +1,153 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLjQxLTMz").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FHW8 (33) &nbsp;&nbsp;  ORDER DIALOG (101.41)</h1>
+<div id="demo"><table id="MTAxLjQxLTMz" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FHW8</td>
+</tr>
+<tr>
+<td>DISPLAY TEXT</td>
+<td>Tubefeeding</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>dialog</td>
+</tr>
+<tr>
+<td>DISPLAY GROUP</td>
+<td><a href="100.98-39.html">TUBEFEEDINGS</a></td>
+</tr>
+<tr>
+<td>SIGNATURE REQUIRED</td>
+<td>ORES</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-9.html">DIETETICS</a></td>
+</tr>
+<tr>
+<td>VERIFY ORDER</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ITEMS</td>
+<td>
+<ol>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-4.html">OR GTX ORDERABLE ITEM</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Product:</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>MULTIPLE VALUED:  &nbsp;&nbsp;YES</dt>
+<dt>MAX NUMBER OF MULTIPLES:  &nbsp;&nbsp;5</dt>
+<dt>TITLE:  &nbsp;&nbsp;Tubefeeding:</dt>
+<dt>INDEX:  &nbsp;&nbsp;S.TF</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the product to be administered.</dt>
+<dt>SCREEN:  &nbsp;&nbsp;I $$ACTIVE^<a href="http://code.osehra.org/dox/Routine_ORDD43.html">ORDD43</a>(Y)</dt>
+<dt>POST-SELECTION ACTION:  &nbsp;&nbsp;D ORDMSG^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a>(+Y)</dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;N IDX,SCR S IDX=$G(ORDIALOG(PROMPT,"D")),SCR=$G(ORDIALOG(PROMPT,"S")) D XHELP^<a href="http://code.osehra.org/dox/Routine_ORDD43.html">ORDD43</a>(IDX,SCR)</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>LEADING TEXT:  &nbsp;&nbsp;Tubefeeding:</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;1.1</dt>
+<dt>PARENT:  &nbsp;&nbsp;<a href="101.41-4.html">OR GTX ORDERABLE ITEM</a></dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-34.html">OR GTX STRENGTH FH</a></dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the strength of the product to be given.</dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;D SETLIST^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a></dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y=4</dt>
+<dt>TRAILING TEXT:  &nbsp;&nbsp;strength</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;1.2</dt>
+<dt>PARENT:  &nbsp;&nbsp;<a href="101.41-4.html">OR GTX ORDERABLE ITEM</a></dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-136.html">OR GTX INSTRUCTIONS</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Quantity:</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter quantity as 2000 K, 100 ML/HOUR, 8 OZ/TID, etc; total quantity may not exceed 5000ml.</dt>
+<dt>POST-SELECTION ACTION:  &nbsp;&nbsp;D QUANTITY^<a href="http://code.osehra.org/dox/Routine_ORCDFHTF.html">ORCDFHTF</a> I '$G(DONE) W $C(7),!,ORDIALOG(PROMPT,"?"),!</dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;D QUANHELP^<a href="http://code.osehra.org/dox/Routine_ORCDFHTF.html">ORCDFHTF</a></dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-19.html">OR GTX FREE TEXT 1</a></dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter any special instructions for this order, up to 240 characters.</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-175.html">OR GTX CANCEL FUTURE ORDERS</a></dt>
+<dt>TITLE:  &nbsp;&nbsp;Cancel tray orders:</dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;W</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter NO to continue the current diet order during this tubefeeding; YES will cancel the diet and any early or late trays already ordered.</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-1647.html">OR GTX DATE/TIME</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Start Time:</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;CW</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the date/time for this order to take effect.</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;I ORCAT="O",$G(ORDIALOG(PROMPT,"LIST"))</dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;D LIST^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a></dt>
+<dt>ENTRY ACTION:  &nbsp;&nbsp;D DATES^<a href="http://code.osehra.org/dox/Routine_ORCDFHTF.html">ORCDFHTF</a> I FIRST,$G(ORDIALOG(PROMPT,"LIST")) D LIST^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D EN^<a href="http://code.osehra.org/dox/Routine_ORCDFHTF.html">ORCDFHTF</a></td>
+</tr>
+<tr>
+<td>QUICK SETUP</td>
+<td>S ORCAT=""</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D EX^<a href="http://code.osehra.org/dox/Routine_ORCDFHTF.html">ORCDFHTF</a></td>
+</tr>
+<tr>
+<td>WINDOW FORM ID</td>
+<td>117</td>
+</tr>
+<tr>
+<td>AUTO-ACCEPT QUICK ORDER</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-06-14 09:03:00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

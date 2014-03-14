@@ -1,0 +1,107 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzA4Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ACKQAS CLINICIAN ENTRY (7083) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzA4Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ACKQAS CLINICIAN ENTRY</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Staff (Enter/Edit)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>STAFF (ENTER/EDIT)</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Staff (Enter/Edit) option allows you to enter data for 
+clinicians, fee-basis personnel, other providers (e.g., health 
+technician), and students into the A&amp;SP STAFF file (#509850.3). The 
+information includes the staff person's name, activation and 
+inactivation dates, status, and an ID number for sites that choose to 
+use code numbers.
+  
+Names added to the A&amp;SP STAFF file (#509850.3) must be in the NEW 
+PERSON file (#200). The A&amp;SP Service Chief should contact IRM if an 
+entry needs to be made to the NEW PERSON file.
+  
+An activation date is required to associate the staff member with a 
+clinic visit. The activation date is the date the staff member became 
+an active member. For the staff member to receive credit for a patient 
+visit, he or she must have been active on or before the visit date.
+  
+Inactive staff members should never be deleted because entries in the 
+A&amp;SP CLINIC VISIT file (#509850.6) reference them. This option is used 
+to activate and inactivate staff members as appropriate.
+  
+Selected clinicians can be designated as supervisors. Supervisors 
+have access to certain functionality that is not available to other 
+staff members (e.g., adequating any C&amp;P exam).
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-150.html">QUASAR</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K ACKLAYGO,DLAYGO</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S ACKLAYGO="",DLAYGO=509850.3 D NMVD^<a href="http://code.osehra.org/dox/Routine_ACKQCLED.html">ACKQCLED</a> W @IOF,!,"This option allows you to enter data for A&SP staff members.",!,"This includes name, activation/inactivation dates, and status.",!</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_ACKQCLED.html">ACKQCLED</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

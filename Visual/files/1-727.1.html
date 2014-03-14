@@ -1,0 +1,50 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03MjcuMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>EXTRACT DEFINITIONS (727.1) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03MjcuMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>EXTRACT DEFINITIONS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file provides a mechanism for sites to tailor the running of
+package extracts by defining the frequency (daily, weekly, or monthly)
+with which the extracts will run and the number of days in the past
+for which data will be extracted.  The EXTRACT NAME field (#.01) and
+the FILE NUMBER field (#1) are national standard entries, exported with
+the file, and should not be edited locally.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

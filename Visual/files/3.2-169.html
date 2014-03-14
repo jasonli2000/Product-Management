@@ -1,0 +1,86 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My4yLTE2OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>P-BROWSER (169) &nbsp;&nbsp;  TERMINAL TYPE (3.2)</h1>
+<div id="demo"><table id="My4yLTE2OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>P-BROWSER</td>
+</tr>
+<tr>
+<td>SELECTABLE AT SIGN-ON</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>RIGHT MARGIN</td>
+<td>80</td>
+</tr>
+<tr>
+<td>FORM FEED</td>
+<td>#</td>
+</tr>
+<tr>
+<td>PAGE LENGTH</td>
+<td>65500</td>
+</tr>
+<tr>
+<td>BACK SPACE</td>
+<td>$C(8)</td>
+</tr>
+<tr>
+<td>OPEN EXECUTE</td>
+<td>S:$G(XMR)]"" DDBDMSG=$P(XMR,"^") D OPEN^<a href="http://code.osehra.org/dox/Routine_DDBRZIS.html">DDBRZIS</a></td>
+</tr>
+<tr>
+<td>OPEN EXECUTE DESCRIPTION</td>
+<td><pre>
+UPDATED 7/25/05 WJW FOR Cache
+
+Changed from:
+
+D OPEN^DDBRZIS
+
+to:
+
+S:$G(XMR)]"" DDBDMSG=$P(XMR,"^") D OPEN^DDBRZIS
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>CLOSE EXECUTE</td>
+<td>D CLOSE^<a href="http://code.osehra.org/dox/Routine_DDBRZIS.html">DDBRZIS</a></td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td>Browser Device</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

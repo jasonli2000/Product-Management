@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTY3Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENFA SEND SINGLE (1672) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTY3Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENFA SEND SINGLE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Send a Single FA Document</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SEND A SINGLE FA DOCUMENT</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>ENFACS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will send a FA Document (code sheet) to the Fixed Assets
+package (FAP) in Austin for a selected equipment entry. Appropriate data
+is extracted from the Equipment file and used to populate the code sheet.
+FA Documents will not be created for equipment entries already established
+in FAP.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-18.html">ENGINEERING</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S ENBAT("XMT")=1 D EQUIP^<a href="http://code.osehra.org/dox/Routine_ENFAXMTM.html">ENFAXMTM</a> K ENBAT("XMT")</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

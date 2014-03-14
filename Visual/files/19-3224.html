@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzIyNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSNVFY (3224) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzIyNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSNVFY</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Verify Matches</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>VERIFY MATCHES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Using this option, you can verify, one at a time, the unverified drugs that
+have been matched using the option "Rematch / Match Single Drugs". The
+unverified matches are stored in the National Drug Translation file. It
+is not necessary to verify all of the matches at once. It will also allow
+you to rematch a drug if you do not like the match. It is a requirement of
+the software that all matched drugs be verified. The same person should
+not match the drugs and then verify the matches.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PSNVFY.html">PSNVFY</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

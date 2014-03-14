@@ -1,0 +1,62 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExMzQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ECSSPROCCODE (1134) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExMzQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ECSSPROCCODE</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Procedure Code</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+This is the procedure/cpt code value (not the description).  The National Procedure, Local Procedure, and CPT code are all valid for this column.  The procedure/cpt must exist on the EC National Procedure file (#725) or the CPT file (#81), and
+the EC Event Code Screen must be 'active' for the Station, DSS Unit IEN, and Procedure/CPT combination.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>2001-05-29 13:54:57</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>EXIT EXECUTE STATEMENT</td>
+<td>W @IOF</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE4ODY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIUFD EDIT TECHNICAL FIELDS (1886) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE4ODY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIUFD EDIT TECHNICAL FIELDS</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Technical Fields</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+MANAGER OPTIONS
+Technical fields are mainly M code (which requires Programmer access),
+although some are just very technical, requiring detailed knowledge of the
+utility.  Many Technical Fields can be inherited from ancestor entries.
+ 
+There is one technical field for Objects: Object Method.  For nonObjects,
+Technical fields include: Entry Action, Exit Action, Edit Template, Print
+Method, Print Form Header, Print Form Number, Print Group, Visit Linkage
+Method, Validation Method, and Allow Custom Form Headers.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D EDTECH^<a href="http://code.osehra.org/dox/Routine_TIUFD4.html">TIUFD4</a></td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I TIUFWHO="N"!('$P(TIUFNOD0,U,13))&(($P(TIUFNOD0,U,4)="CL")!($P(TIUFNOD0,U,4)="DC")!($P(TIUFNOD0,U,4)="DOC")!($P(TIUFNOD0,U,4)="O"))</td>
+</tr>
+<tr>
+<td>MENU DEFAULT</td>
+<td>ent</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1998-07-12 17:31:56</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

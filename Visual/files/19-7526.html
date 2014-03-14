@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzUyNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRPF REMARKS CODE EDIT (7526) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzUyNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRPF REMARKS CODE EDIT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Enter/Edit Remarks Codes</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ENTER/EDIT REMARKS CODES</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>DISABLED DUE TO PATIENT FUNDS MIGRATION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the user to enter or edit the remarks codes found in
+file 470.6.  These codes are used as a shorthand method of entering
+standard phrases into the remarks field.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-160.html">INTEGRATED PATIENT FUNDS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>RCODE^<a href="http://code.osehra.org/dox/Routine_PRPFED1.html">PRPFED1</a></td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>NO</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

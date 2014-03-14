@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTk1").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQAB ERROR LOG XMIT (195) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTk1" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQAB ERROR LOG XMIT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Errors Logged in Alpha/Beta Test (QUEUED)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ERRORS LOGGED IN ALPHA/BETA TE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ 
+This option is used to identify any errors associated with an application
+package which is in either alpha or beta test.  The identified errors are
+combined in a mail message which includes the type of error, the routine
+involved, the date (usually the previous day), and the option which was
+being used at the time of the error, and the number of times the error was
+logged.  The volume and uci are included so that stations with error logs
+being maintained on different cpus can run the task on each different
+system.  This option was designed to be tasked.  It does not require a
+device and generates a mail message to the developing ISC.  An alpha or
+beta package is indicated by the presence of the package (and its
+namespaces in the Alpha/Beta Package multiple of the Kernel Site Parameter
+file.  The option should usually be scheduled to run after midnight, and
+scheduled for re-queuing at a daily interval.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_XQABERR.html">XQABERR</a></td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

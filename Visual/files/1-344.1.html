@@ -1,0 +1,50 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zNDQuMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>AR DEPOSIT (344.1) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zNDQuMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>AR DEPOSIT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file stores information associated with SF-215 or Deposit Tickets.
+Multiple Receipts can be open by different cashiers, but they are all
+tied to a deposit ticket that tracks the date the money 
+is deposited to bank, who deposited the money, total deposit, etc.
+ 
+Per VHA Directive 10-93-142, this file definition should not be modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

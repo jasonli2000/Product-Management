@@ -1,0 +1,62 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjUtMjU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-HBe Ag positive (25) &nbsp;&nbsp;  REMINDER TERM (811.5)</h1>
+<div id="demo"><table id="ODExLjUtMjU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-HBe Ag positive</td>
+</tr>
+<tr>
+<td>DATE CREATED</td>
+<td>2000-05-31 00:00:00</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This term represents laboratory tests for Hepatitis B e antigen positive.
+ 
+Enter findings from the laboratory test file that are used locally to
+represent this term. Use the condition field to clearly identify the
+positive results. e.g., I (V["positive")!(V="+")
+ 
+In order for the VHA to do surveillance for Hepatitis B, the Infectious
+Disease Program Office is looking for laboratory evidence of infection
+with hepatitis B.  This laboratory evidence of infection includes the
+standard serological marker of the presence of Hepatitis B e antigen.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

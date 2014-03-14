@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTc3NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBDF DELETE FORM (775) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTc3NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBDF DELETE FORM</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Delete Unused Form</td>
+</tr>
+<tr>
+<td>SYNONYM</td>
+<td>
+<ol>
+<li>
+<dt>SYNONYM:  &nbsp;&nbsp;DF</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ 
+Allows the user to delete a form. Deletion is not allowed if the form is
+in use by any clinic. In that case the form must first be deleted from the
+clinic setup, and then actually deleted using this action. This two step
+process is used to be on the safe side, since a form may be in use by more
+than one clinic.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-76.html">AUTOMATED INFO COLLECTION SYS</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D DELFORM^<a href="http://code.osehra.org/dox/Routine_IBDF6A.html">IBDF6A</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1997-05-01 16:37:54</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

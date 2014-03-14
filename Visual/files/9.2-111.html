@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUFILE ACCESS USE3.2 (111) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUFILE ACCESS USE3.2</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>LEVELS OF ACCESS CONTINUED</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+These are the six levels of access.  Any or all may be enabled for each of
+the user's accessible files.  This is done by changing the field value from
+null to 'YES'.  This flag is overriden for programmer-users whose DUZ(0)=@.
+ 
+Granting all of the first four levels of access - read, write, delete, and
+laygo - will permit adding and deleting file entries as well as editing
+their attribute field data values.  This will be true unless the attribute
+field has been protected.  If so, that is, if there is a read, write, or
+delete protection within the data dictionary for a given field, the user's
+VA FileMan access code, DUZ(0), will be checked.  Access will be limited if
+the user's DUZ(0) doesn't contain a character matching the field protection.
+Again, DUZ(0)=@ will override this restriction.
+ 
+The last two kinds of access - DD and audit - pertain to the structure of
+the file itself.  While this provides a generous scope for VA FileMan
+data dictionary modification, it falls short of, for example, deleting a
+file or field protected with '@'. 
+ 
+The same applies to templates.  If the template is protected, the user who
+has access to the file will not have VA FileMan access to the template
+unless there is a match in the DUZ(0) character string.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-02-13 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

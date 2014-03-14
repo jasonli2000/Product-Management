@@ -1,0 +1,247 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjktMjQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ZZVA-FECAL OCCULT BLOOD TEST (24) &nbsp;&nbsp;  REMINDER DEFINITION (811.9)</h1>
+<div id="demo"><table id="ODExLjktMjQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ZZVA-FECAL OCCULT BLOOD TEST</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>ZZ Fecal Occult Blood Test</td>
+</tr>
+<tr>
+<td>DO IN ADVANCE TIME FRAME</td>
+<td>1M</td>
+</tr>
+<tr>
+<td>RELATED REMINDER GUIDELINE</td>
+<td><a href="811.9-6.html">ZZVA-*COLORECTAL CANCER SCREEN (FOBT)</a></td>
+</tr>
+<tr>
+<td>INACTIVE FLAG</td>
+<td>INACTIVE</td>
+</tr>
+<tr>
+<td>INACTIVE CHANGE DATE</td>
+<td>2005-03-11 12:42:51</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Fecal occult blood test due every year for patients ages 50 and older with
+no DX of colorectal cancer.  This reminder conservatively recommends that
+if a sigmoidoscopy was received, the next fecal occult blood test would be
+due a year later.
+  
+This reminder is based on guidelines provided by the Ambulatory Care
+Expert Panel.  It also satisfies the "Colorectal Cancer Screen - FOBT"
+guidelines specified in the "Guidelines for Health Promotion and Disease
+Prevention", M-2, Part IV, Chapter 9.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TECHNICAL DESCRIPTION</td>
+<td><pre>
+This reminder depends on Exam findings where an FOBT is completed in the
+clinic, or on Taxonomy Findings representing FOBT.
+ 
+Check the Taxonomy Findings entries representing HX of Colorectal Cancer.
+If this taxonomy needs modification, copy the taxonomy to a new taxonomy
+for your site, and make the appropriate modifications.
+ 
+Check the Taxonomy Findings entries representing Fecal Occult Blood Test.
+This represents coded standard entries in the CPT file and ICD
+Operation/Procedure file.  If this taxonomy needs modification, copy the
+taxonomy to a new taxonomy for your site, and make the appropriate
+modifications.
+ 
+Copy the reminder to a new reminder for your local site's modifications.
+ 
+NOTE:  The Laboratory data is not available use in the reminder.  When the
+lab package begins passing CPT codes for fecal occult blood tests to PCE,
+this reminder is ready to make use of the information.
+</pre>
+</td>
+</tr>
+<tr>
+<td>BASELINE AGE FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;1Y</dt>
+<dt>MINIMUM AGE:  &nbsp;&nbsp;50</dt>
+<dt>NO. OF AGE MATCH LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF AGE NO MATCH LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="9999999.15-660001.html">FOBT(CLINIC)</a></dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.2-4.html">VA-COLORECTAL CA</a></dt>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;0Y</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+Patient known to have HX of colorectal cancer.  Please verify appropriate
+TX &amp; F/U is ongoing.
+</pre>
+</dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+No HX of colorectal cancer on file - presumed no HX.
+</pre>
+</dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;AND NOT</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;2</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.2-27.html">VA-FOBT</a></dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.2-15.html">VA-FLEXISIGMOIDOSCOPY</a></dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="9999999.64-49.html">INACTIVATE FOBT CANCER SCREEN</a></dt>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;0Y</dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;AND NOT</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="9999999.64-50.html">ACTIVATE FOBT CANCER SCREEN</a></dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERNAL PATIENT COHORT LOGIC</td>
+<td>(SEX)&(AGE)&'FI(2)&'FI(5)</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS COUNT</td>
+<td>4</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS LIST</td>
+<td>SEX;AGE;2;5</td>
+</tr>
+<tr>
+<td>INTERNAL RESOLUTION LOGIC</td>
+<td>(0)!FI(1)!FI(3)!FI(4)</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS COUNT</td>
+<td>3</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS LIST</td>
+<td>1;3;4</td>
+</tr>
+<tr>
+<td>AGE FINDINGS COUNT</td>
+<td>2</td>
+</tr>
+<tr>
+<td>AGE FINDINGS LIST</td>
+<td>2;5</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS COUNT</td>
+<td>1</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS LIST</td>
+<td>6</td>
+</tr>
+<tr>
+<td># OF GEN. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>RESCISSION DATE</td>
+<td>2005-02-04 00:00:00</td>
+</tr>
+<tr>
+<td># SUM. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>USAGE</td>
+<td>C</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

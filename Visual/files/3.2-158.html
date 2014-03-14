@@ -1,0 +1,86 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My4yLTE1OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>P-KYOCERA.132 (158) &nbsp;&nbsp;  TERMINAL TYPE (3.2)</h1>
+<div id="demo"><table id="My4yLTE1OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>P-KYOCERA.132</td>
+</tr>
+<tr>
+<td>SELECTABLE AT SIGN-ON</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>RIGHT MARGIN</td>
+<td>132</td>
+</tr>
+<tr>
+<td>FORM FEED</td>
+<td>#</td>
+</tr>
+<tr>
+<td>PAGE LENGTH</td>
+<td>60</td>
+</tr>
+<tr>
+<td>BACK SPACE</td>
+<td>$C(8)</td>
+</tr>
+<tr>
+<td>OPEN EXECUTE</td>
+<td>W $C(33,82,33)_" RES; FONT 15; EXIT;"_$C(27)_"&s0C"</td>
+</tr>
+<tr>
+<td>CLOSE EXECUTE</td>
+<td>W $C(27)_"E"</td>
+</tr>
+<tr>
+<td>10 PITCH</td>
+<td>"!R! FONT 1; EXIT;"</td>
+</tr>
+<tr>
+<td>12 PITCH</td>
+<td>"!R! FONT 6; EXIT;"</td>
+</tr>
+<tr>
+<td>16 PITCH</td>
+<td>"!R! FONT 15; EXIT;"</td>
+</tr>
+<tr>
+<td>DEFAULT PITCH</td>
+<td>"!R! FONT 15; EXIT;"</td>
+</tr>
+<tr>
+<td>RESET</td>
+<td>$C(27)_"E"</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

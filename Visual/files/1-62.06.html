@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02Mi4wNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ANTIMICROBIAL SUSCEPTIBILITY (62.06) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02Mi4wNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ANTIMICROBIAL SUSCEPTIBILITY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ 
+This file is used by each laboratory to define specific information
+about the types of antibacterial antibiotics your laboratory uses.
+(NOTE: TB drugs do not have entries in this file.)  It contains
+approximately 40 pre-supplied entries.  Each of the entries may be
+defined according to the needs of your hospital.  Information which
+is site-configurable for each antibiotic includes the sensitivity result
+(S,I or R), the interpretation for each type of result, the type of
+specimen the antibiotic is used on, the type of template the system
+uses to display the result and the abbreviation.  (The abbreviation is
+also used to report these antibiotics on the specialized 'Infection
+Control' and 'Antibiotic Trends' microbiology reports.
+ 
+^LAB(62.06,"AJ",'DRUG NODE','INTERPRETATION')=""
+ 
+^LAB(62.06,"AI",'DRUG NODE') = INTERNAL # ANTIBIOTIC ^ ABBREVIATION
+ 
+^LAB(62.06,"AI",'DRUG NODE','RESULT') = INTERPRETATION
+ 
+^LAB(62.06,"AI",'DRUG NODE','RESULT','ORGANISM (INTRP)','SPECIMEN (INTRP)')
+         = ALTERNATE INTERPRETATION
+ 
+^LAB(62.06,"AS",'DRUG NODE') = DEFAULT SCREEN
+ 
+^LAB(62.06,"AS",'DRUG NODE','ORGANISM (SCREEN)','SPECIMEN (SCREEN)')
+         = ALTERNATE SCREEN
+ 
+^LAB(62.06,"AO",'PRINT ORDER','NUMBER')=""
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

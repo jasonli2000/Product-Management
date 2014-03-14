@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODAwMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VAFC BATCH UPDATE (8000) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODAwMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VAFC BATCH UPDATE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>UPDATE BATCH JOB FOR HL7 v2.3</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>UPDATE BATCH JOB FOR HL7 V2.3</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is not intended to be run from programmer mode.  No output to
+the screen is intended.  When this job is scheduled through TaskMan it
+will collect and transmitt all the entries in the PIVOT file that are of
+an update to patient information.  The job will build PIMS A08 HL7 v2.3
+messages and broadcast them to any subscriber.
+
+The job should be re-scheduled to run about every 10 minutes.  The task
+interval will determine approximately the maximum time it takes for an
+update to patient information to be broadcast in a HL7 message.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>MAIN^<a href="http://code.osehra.org/dox/Routine_VAFCMSG.html">VAFCMSG</a></td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

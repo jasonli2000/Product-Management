@@ -1,0 +1,51 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zODkuOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>STATION NUMBER (TIME SENSITIVE) (389.9) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zODkuOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>STATION NUMBER (TIME SENSITIVE)</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The purpose of this file is to allow DHCP software flexibility and
+reliability when the station number of a medical center changes or when
+one or more stations have merged into one station.
+ 
+Adding or modifing entries in this file may affect many DHCP applications.
+Control of entry into this file should be carefully controlled by the
+IRM Service Chief.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

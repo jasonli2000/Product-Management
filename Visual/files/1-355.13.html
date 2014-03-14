@@ -1,0 +1,55 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zNTUuMTM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>INSURANCE FILING TIME FRAME (355.13) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zNTUuMTM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>INSURANCE FILING TIME FRAME</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains the list of valid Standard Insurance Filing Time Frames. 
+The time frame is the maximum amount of time from the date of service that 
+the Insurance Company or Plan allows for submitting claims.  
+ 
+The time frames in this file are those that may be automatically applied 
+and therefore have a corresponding function to calculate the time frame 
+relative to a date of service.
+ 
+Do NOT add, edit, or delete entries in this file.
+ 
+Per VHA Directive 10-93-142, this file definition should not be modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,83 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0yMDA2LjU5OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DICOM ERROR MESSAGE QUEUE (2006.598) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0yMDA2LjU5OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DICOM ERROR MESSAGE QUEUE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ +---------------------------------------------------------------+
+ |                                                               |
+ | Property of the US Government.                                |
+ | No permission to copy or redistribute this software is given. |
+ | Use of unreleased versions of this software requires the user |
+ | to execute a written test agreement with the VistA Imaging    |
+ | Development Office of the Department of Veterans Affairs,     |
+ | telephone (301) 734-0100.                                     |
+ |                                                               |
+ | The Food and Drug Administration classifies this software as  |
+ | a medical device.  As such, it may not be changed in any way. |
+ | Modifications to this software may result in an adulterated   |
+ | medical device under 21CFR820, the use of which is considered |
+ | to be a violation of US Federal Statutes.                     |
+ |                                                               |
+ +---------------------------------------------------------------+
+ 
+As a DICOM Gateway performs its various tasks, there are occasions
+where error messages need to be transmitted to remote recipients
+(FileMan users and/or mailgroups as well as SMTP mail recipients).
+ 
+When such a message needs to be transmitted, a new entry is made
+into this table, which will contain the message text and some
+information about the message. Then an attempt is made to transmit
+the message.
+When the transmission is successful, the entry is removed from
+this table.
+ 
+When the transmission is not successful (which is likely since
+many errors that need to be transmitted have to report some
+type of "network failure") the text remains in this table while
+the software on the DICOM Gateway can enter its further error
+processing.
+ 
+A supervisory task on the DICOM Gateway scans the content of
+this table on a regular basis and will transmit any "left over"
+messages.
+As soon as a message has been transmitted successfully, its
+entry in this table will be removed.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

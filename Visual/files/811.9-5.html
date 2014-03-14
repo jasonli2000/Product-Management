@@ -1,0 +1,222 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjktNQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ZZVA-*HYPERTENSION SCREEN (5) &nbsp;&nbsp;  REMINDER DEFINITION (811.9)</h1>
+<div id="demo"><table id="ODExLjktNQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ZZVA-*HYPERTENSION SCREEN</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>ZZ Hypertension Detection</td>
+</tr>
+<tr>
+<td>DO IN ADVANCE TIME FRAME</td>
+<td>3M</td>
+</tr>
+<tr>
+<td>RELATED REMINDER GUIDELINE</td>
+<td><a href="811.9-5.html">ZZVA-*HYPERTENSION SCREEN</a></td>
+</tr>
+<tr>
+<td>INACTIVE FLAG</td>
+<td>INACTIVE</td>
+</tr>
+<tr>
+<td>INACTIVE CHANGE DATE</td>
+<td>2005-03-11 12:42:50</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+BP due every two years to detect hypertension. 
+ 
+This VA-*HYPERTENSION SCREEN reminder is defined based on the following
+"Hypertension Detection" guidelines specified in the VHA HANDBOOK 1101.8,
+APPENDIX A.
+ 
+    Target Condition: Hypertension, Cardiovascular Disease
+ 
+    Target Group: General outpatient population
+ 
+    Recommendation: Check blood pressure at least once every two years
+    for all Primary Care clinic patients.
+ 
+    Goal for FY2000: 90% of Primary Care clinic patients have had their
+    blood pressure checked in the past two years.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TECHNICAL DESCRIPTION</td>
+<td><pre>
+If this reminder is not going to be used at your facility, the INACTIVE
+FLAG should be set to inactive.
+ 
+This reminder represents the minimum criteria for checking if the patient
+has received a blood pressure check.  As distributed, the reminder checks
+for an ICD Diagnosis or a CPT procedure code representing "Hypertension
+Screen", or a record of a blood pressure (BP) in the Vitals/Measurements
+package.
+ 
+The Ambulatory Care EP recommends a variation on this reminder
+represented in the "VA-BLOOD PRESSURE CHECK" reminder.  This reminder
+includes an alteration of the blood pressure reminder guidelines when the
+patient has a history of hypertension on file.
+ 
+Please review both of these reminder definitions, choose one of them to
+use.  If local modifications need to be made, copy the preferred reminder
+to a new reminder and make your reminder modifications.
+</pre>
+</td>
+</tr>
+<tr>
+<td>BASELINE AGE FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;2Y</dt>
+<dt>NO. OF AGE MATCH LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF AGE NO MATCH LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="120.51-1.html">BLOOD PRESSURE</a></dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+Vitals: Date of last Vitals BP Measurement unknown.
+</pre>
+</dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.2-23.html">VA-HYPERTENSION SCREEN</a></dt>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;2Y</dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+Date of last ICD or CPT coded hypertension screen unknown.
+</pre>
+</dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERNAL PATIENT COHORT LOGIC</td>
+<td>(SEX)&(AGE)</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS COUNT</td>
+<td>2</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS LIST</td>
+<td>SEX;AGE</td>
+</tr>
+<tr>
+<td>INTERNAL RESOLUTION LOGIC</td>
+<td>(0)!FI(1)!FI(2)</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS COUNT</td>
+<td>2</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS LIST</td>
+<td>1;2</td>
+</tr>
+<tr>
+<td>AGE FINDINGS COUNT</td>
+<td>1</td>
+</tr>
+<tr>
+<td>AGE FINDINGS LIST</td>
+<td>2</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td># OF GEN. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>RESCISSION DATE</td>
+<td>2005-02-04 00:00:00</td>
+</tr>
+<tr>
+<td># SUM. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>USAGE</td>
+<td>C</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

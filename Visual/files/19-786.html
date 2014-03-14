@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzg2").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LRRS (786) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzg2" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LRRS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Interim reports by location (manual queue)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>INTERIM REPORTS BY LOCATION (M</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Detailed report format for all data for one day sorted by location.
+This option is an alternative to having the Interim report tasked
+to the taskmanager.  For tasking, see option LRTASK DAILY INTERIM 1.
+If no results are available for a location, the option will print out
+the location heading followed by the next location heading.  This
+option will only print verified results, is not part of the
+cumulative report and should not be charted.  The date chosen 
+for this report is the collection date.  If a test is ordered on one
+day and verified on the next day, you must select the order date 
+to see the report with this option.
+The report prints site codes for tests.  You will be asked if you would
+like to print an address page.  The address page prints on a separate page(s)
+at the end of the report and lists the performing lab name, address and site
+code.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_LRRS12.html">LRRS12</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

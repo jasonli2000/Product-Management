@@ -1,0 +1,58 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuMS0yNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PLT. EST (27) &nbsp;&nbsp;  DELTA CHECKS (62.1)</h1>
+<div id="demo"><table id="NjIuMS0yNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PLT. EST</td>
+</tr>
+<tr>
+<td>XECUTABLE CODE</td>
+<td>X ^LAB(62.1,27,2) I $D(X),LRIDTX]"" S LRPL=$P(^(392),"^",1) S:X="A"&(LRPL>$P(^LAB(60,9,1,70,0),"^",2))&(LRPL<420.1) R=1 S:X="R"&(LRPL<140.1) R=1 S:X="I"&(LRPL>419.9) R=1 W "  PLT COUNT: ",LRPL W:'$D(R) *7,"  **CHECK PLT. EST**" K R</td>
+</tr>
+<tr>
+<td>OVERFLOW 1</td>
+<td>S LRIDTX=$S($D(^LRO(68,10,1,LRAD,1,LRAN,3)):9999999-^(3),1:"") S:'$D(^LR(LRDFN,"CH",+LRIDTX,392)) LRIDTX="" Q</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Could be used on the test, PLT. EST.  Checks if a platelet count was
+verified on this accession and if so, displays that value.
+If PLT. EST is 'R' and PLT &gt; 140
+or PLT. EST is 'I' and PLT &lt; 420
+or PLT. EST is 'A' and PLT &gt; 420 or PLT &lt; Ref Low
+then a warning will be displayed.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

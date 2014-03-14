@@ -1,0 +1,225 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTEwOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SURVEY GENERATOR (108) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTEwOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SURVEY GENERATOR</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>QAP</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>Generates surveys and allows participation in them.</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This package will completely generate a survey with information provided
+by the survey author, then allow participation of designated audiences.
+Once the participation is finished, the author may generate statistics.
+</pre>
+</td>
+</tr>
+<tr>
+<td>FILE</td>
+<td>
+<ol>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-748.html">SURVEY</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-748.25.html">SURVEY QUESTIONS</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-748.3.html">SURVEY RESPONSE DATA</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-748.2.html">DEMOGRAPHIC REFERENCE</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DEVELOPER (PERSON/SITE)</td>
+<td>Tommy Martin, VAMC Dublin, GA</td>
+</tr>
+<tr>
+<td>*LOWEST FILE NUMBER</td>
+<td>748</td>
+</tr>
+<tr>
+<td>*HIGHEST FILE NUMBER</td>
+<td>748.3</td>
+</tr>
+<tr>
+<td>DEVELOPMENT ISC</td>
+<td>Dublin, GA</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>National</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>2.0</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;2.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2005-11-19 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;1996-08-22 00:00:00</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;5</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-08-22 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch 5 provides the following:
+  
+Routine:   NOIS:             Fix:
+  
+QAPCOPY    DAY-0496-41627    Recreate 'AB' (full file) index on field
+                             within multiple (authorized editors). Failure
+                             to recreate 'AB' index prevented authorized
+                             editors from editing the copied survey.
+  
+QAPPTUSR   LEX-1195-42218    Prevent users from printing hard copy of
+                             surveys while the survey is still under
+                             development.
+  
+QAPSCRN1   DAY-0496-40265    Eliminate undefined variable QAPCNT that
+                             occurred at SUSPEND^QAPSCRN1 when the user
+                             timed out on the first question in the
+                             survey.
+QAPUTIL2   ----              TRAP^QAPUTIL2 errored with UNDEFined
+                             variable, FILEDA, when testing UNDEFined
+                             variable, QAPCNT, error in QAPSCRN1.
+   
+New Checksums:
+  
+QAPCOPY   value = 8115210
+QAPPTUSR  value = 6033850
+QAPSCRN1  value = 19389275
+QAPUTIL2  value = 13751688
+  
+  
+Requirements:  
+  
+There are no special requirements for installation. However, it is
+recommended that options QAP PARTICIPANT MENU and QAP SURVEY 
+MANAGEMENT MENU be disabled for the few moments needed to run
+the KIDS install of this distribution.
+ 
+ 
+User Impact:
+ 
+Users may be affected if they are in the process of responding to a survey
+or printing hard copy or copying a survey. The impact is from the old
+version of the routine not being found since the new version is now
+present (after the users process looked up the old version directory
+location).  The likelihood of this occurrance is quite small.  The user
+will need to restart their survey and should be able to pick up where they
+left off.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;6</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-10-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is Patch 6 to Survey Generator v 2.0.  It provides:
+ 
+Routine:   NOIS:             Fix:
+ 
+QAPDEM1    DAY-0796-40387    Prevent UNDEF error in a case where an 
+                             application lookup routine is invoked in
+                             place of DIC lookup and Y is not set to
+                             -1 when an error occurred in the lookup.
+                             This occurred when the demographic was a 
+                             pointer to a file that pointed to another
+                             file and the application lookup routine was 
+                             on the first file.
+ 
+           BRX-1195-11059    Demographic questions in free text format 
+                             were supposed to be limited to a length of
+                             from 1 to 40 characters; not 3 to 40.  The 
+                             DIR(0) was set to a limit of 3 to 40; even
+                             though the DD is set to handle 1 to 40.
+ 
+QAPPT1     DAY-1195-40313    Users were unable to print a copy of the
+                             incomplete survey with their answers, as 
+                             documented on page 63 of the Users Guide.
+                             This fix allows the intended use of the
+                             "Print A Copy For Yourself"  option.
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>POST-INITIALIZATION ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_QAPPOST.html">QAPPOST</a></td>
+</tr>
+<tr>
+<td>POST-INIT COMPLETION DATE</td>
+<td>1996-08-22 14:19:24</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

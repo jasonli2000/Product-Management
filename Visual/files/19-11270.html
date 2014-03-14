@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTEyNzA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBCNE EIV PAYER LINK NOTIFY (11270) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTEyNzA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBCNE EIV PAYER LINK NOTIFY</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Unlinked payers notification</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>UNLINKED PAYERS NOTIFICATION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option sends a Mailman notification to eIV mail group that contains total number of nationally active unlinked payers with potential insurance company matches along with the list of nationally active linked payers that are locally inactive.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D EN^<a href="http://code.osehra.org/dox/Routine_IBCNEML.html">IBCNEML</a></td>
+</tr>
+<tr>
+<td>INDEPENDENTLY INVOCABLE</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

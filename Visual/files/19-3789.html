@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzc4OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSGW TRANSFER ENTRIES (3789) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzc4OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSGW TRANSFER ENTRIES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Transfer AOU Stock Entries</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>TRANSFER AOU STOCK ENTRIES</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>PSGW TRAN</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will "copy" the active stock entries from a selected
+Area of Use into one or more selected Areas.  As many as 10 Areas
+may be chosen for transfer at one time.  You may transfer either
+the drug name only, or the drug name, stock level, and location
+code.  The "copy" process will not copy inactive drugs or duplicate 
+entries.  The actual transfer takes place in a background job which
+is automatically queued.  When the transfer is complete, you will
+be notified by a MailMan message.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PSGWTR.html">PSGWTR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODIx").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LRMISTUF (821) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODIx" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LRMISTUF</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Results entry (batch)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RESULTS ENTRY (BATCH)</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Results entry (batch) allows you to enter either preliminary or final data
+for one field and test for multiple accession numbers in one session.  
+The field choices are Bacteriology, Mycology, TB, Virology, Mycobacter-
+iology, Parasite Report Remark, Gram Stain, Urine Screen, Sputum Screen,
+Parasitology Smear/Prep, Mycology Smear/Prep, and Acid Fast Stain.  These
+choices are dependent on the microbiology test selected and specified on
+the test's edit code.  There are three levels of automation to choose from:
+1) result is entered and you are not allowed to change it, 2) result
+is entered and you are allowed to change it, 3) no result is entered
+for you.  You must have the LRVERIFY security key to use this option.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_LRMISTF.html">LRMISTF</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

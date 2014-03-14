@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA1NjY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MDCVT CONVERSION LOCKOUT (10566) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA1NjY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MDCVT CONVERSION LOCKOUT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Conversion Lockout</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CONVERSION LOCKOUT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will let the user place a specialty/procedure or ALL
+specialty/procedures Enter/Edit and Report options 'OUT OF SERVICE'
+in the Medicine package.  It will also set Kernel site parameter
+MD MEDICINE CONVERTED to "YES" when all specialties/procedures enter/edit
+and report options are disabled or when the user indicated that all
+Medicine reports have been converted.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-197.html">CLINICAL PROCEDURES</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>LOCKOUT^<a href="http://code.osehra.org/dox/Routine_MDCVT.html">MDCVT</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

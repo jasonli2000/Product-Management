@@ -1,0 +1,89 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTIwNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LROPTLST (1204) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTIwNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LROPTLST</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Listing of Laboratory Menus/Options</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LISTING OF LABORATORY MENUS/OP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to provide a listing of options for a given Menu.
+The option will print by menu all of the options for that menu, including
+any sub menus. This listing can be used as a checklist of options tested.
+The listing will provide the the following:
+  Menu Text                 Option Name (Program name if any)
+       The description of the option from the option file #19
+ 
+         ---------------------------------------------
+ 
+Generally LRMENU option is entered; however any menu can be used.
+This option is a simplified version of diagram menus.
+Very helpful when checking off options when testing a new release, or
+when comparing local menus to distributed versions.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>QUE^<a href="http://code.osehra.org/dox/Routine_LROPTLST.html">LROPTLST</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-07-27 09:09:23</td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>1989-10-16 10:33:37</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

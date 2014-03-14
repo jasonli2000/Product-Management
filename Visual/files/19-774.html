@@ -1,0 +1,104 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzc0").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LA KB DIFF (774) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzc0" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LA KB DIFF</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Keypad differential for CRT's</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>KEYPAD DIFFERENTIAL FOR CRT'S</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is an option for entering differential counts in hematology using
+a CRT keyboard.  It functions very much like an automated instrument
+that is connected to the LSI.  The parameters that define what characters
+on the keyboard represent what portions of the differential are defined
+in the AUTO INSTRUMENT file under the entry KEYBOARD DIFF.  For each
+test there are 3 parameters (PARAM).  PARAM 3 is the character on the 
+keyboard that represents that test.  For example, if the test SEGS had a 
+PARAM 3 equal to 1, then whenever the character 1 was pressed, a SEG would
+be added to the total count of SEGS.  Tests that occupy internal numbers
+1-27 in the AUTO INSTRUMENT file at the level CHEM TESTS are used in the
+entry of the WBC count.  WBC count occupies three rows of characters: (1-9),
+(10-18), (19-27).  The keys '-', '!', '?' are reserved functions.
+  If PARAM 2 is equal to 1 for these tests, then
+these tests will be used in the total count of WBC cells.
+PARAM 2 equal to 2 means that the test is not included in the total count.
+PARAM 1 is used to change the value of V, which is the value of the test
+you are counting or editing.  For example, using the previous example,
+whenever you press 1, you are adding 1 to the total count of SEGS, so the
+value of SEGS (V at this point) is changed to a percentage of total WBC
+cells counted.
+RBC Morphology tests are located at internal numbers 31-58 occupying
+3 rows on the keyboard (31-39), (40-48), (49-58).  
+The backslash '\' is used to display the WBC values.
+To verify data entered with this option use the EA option.
+The conditions of reviewing and
+verifying data entered with this option are the same as any other
+automated instrument.  The LOAD/WORK LIST field entries used to test
+this option are as follows:
+NAME: DIFF
+LOAD TRANSFORM: UNIVERSAL
+TYPE: SEQUENCE/BATCH
+CUPS PER TRAY: 0
+FULL TRAY'S ONLY: NO
+VERIFY BY: ACCESSION
+PROFILE: DIFF
+ACCESSION AREA: (whatever is appropriate)
+TEST: (whatever is appropriate)
+ 
+This option will only work with CRT's that have cursor addressing
+capabilities and is VT-100 compatible.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_LAKDIFF.html">LAKDIFF</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

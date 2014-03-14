@@ -1,0 +1,108 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTExNjY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SCMC PATIENT TEAM CHANGES (1166) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTExNjY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SCMC PATIENT TEAM CHANGES</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>PCMM Patient Team Update Event Driver</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is fired off whenever the Patient Team Assignment File (#404.42) is
+updated.
+ 
+Available Output Variables:
+===========================
+SCPCTM   = 1 if it this is a primary care team assignment, 0 otherwise
+SCPTTMB4 = 0 Node of Patient Team Assignment (#404.42) Before 
+SCPTTMAF = 0 Node of Patient Team Assignment (#404.42) After
+SCTMNDB4   = 0 Node of Team (#404.51) Before
+SCTMNDAF   = 0 Node of Team (#404.51) After
+SCPTTM     = Pointer to Patient Team Assignment (#404.42)
+SCTMB4     = Pointer to Team (404.51) Before
+SCTMAF     = Pointer to Team (404.51) After
+ 
+Notes:
+ o  The 7th piece of the Team File (i.e. $P(SCTMND,U,7)) is a pointer 
+     to the institution file.
+ o  The 8th piece of the Patient Team Assignment File is the Assignment 
+    Type Field (#.08).  Its internal value is '1' if it is a primary 
+    care assignment.  Its value could be either null or '99'.  '99' is 
+    'Other'.  You can check the variable, SCPCTM (1 or 0) to see if 
+    this is a primary care team assignment.
+ 
+Note: Utility: $$INSTPCTM^SCAPMC(DFN,DATE,SCERR)
+   Input:
+      DFN   - ien of PATIENT File (#2)
+      DATE  - date to check (default=DT)
+      SCERR - error array (default=^TMP("SCERR",$J)) - contains info 
+              about bad data.  It is only set if there is bad data.
+   Returned:
+      0 if no Primary Care Team on Date or
+      SC4^Institution Name^SCTM^Team Name
+          SC4  = ien of Institution File
+          SCTM = ien of Team File
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>extended action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1169.html">SCMC PT TEAM CHANGE MAIL MESSAGE</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-48.html">SCHEDULING</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1996-07-15 14:40:47</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,83 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC0xNTE3").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RMPR IFCAP CHECK AUTH (1517) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC0xNTE3" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RMPR IFCAP CHECK AUTH</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>EN1</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>RMPR9SPC</td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>ARRAY</td>
+</tr>
+<tr>
+<td>AVAILABILITY</td>
+<td>SUBSCRIPTION</td>
+</tr>
+<tr>
+<td>INACTIVE</td>
+<td>ACTIVE</td>
+</tr>
+<tr>
+<td>WORD WRAP ON</td>
+<td>FALSE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ 
+Check if user has any Purchase Cards Assigened.
+ 
+RESULTS(0)=You are not an authorized Purchase Card User, CONTACT FISCAL!
+Or
+RESULTS(0)=You are not defined in the Prosthetics Site Parameter File.
+Or
+RESULTS(0)=9
+Ien to file 669.9
+ 
+New X-ref in file 669.9 on Purchasing Agent Field.  Set with routine 
+RMPR9X.
+"PA ,DUZ,IEN
+^RMPR(669.9,"PA",88,9) = 
+^RMPR(669.9,"PA",2182,9) =
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

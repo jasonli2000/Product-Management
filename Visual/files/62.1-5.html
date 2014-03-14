@@ -1,0 +1,50 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuMS01").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MCHC (5) &nbsp;&nbsp;  DELTA CHECKS (62.1)</h1>
+<div id="demo"><table id="NjIuMS01" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MCHC</td>
+</tr>
+<tr>
+<td>XECUTABLE CODE</td>
+<td>X ^LAB(62.1,1,1) Q:'$D(X)  W:X>36 !,*7,"==> CHECK MCHC VALUE <==",!</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Could be used on the test, MCHC.  Displays a warning if the MCHC is &gt; 36.
+The ABS VALUE delta check is also done.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTEwMjI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCP DIST ORDER POSTING (1022) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTEwMjI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCP DIST ORDER POSTING</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Post Order</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol allows the user to post the items on the distribution order
+to the secondary inventory point.  Before the order can be posted, the
+order must have the picking ticket printed on a printer.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D POST^<a href="http://code.osehra.org/dox/Routine_PRCPOPP.html">PRCPOPP</a></td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I $$CHECK^<a href="http://code.osehra.org/dox/Routine_PRCPOPL.html">PRCPOPL</a>("POST")</td>
+</tr>
+<tr>
+<td>IDENTIFIER</td>
+<td>PO</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2000-10-27 09:30:48</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

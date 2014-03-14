@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTEwMjA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCP DIST ORDER ITEM DELETE (1020) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTEwMjA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCP DIST ORDER ITEM DELETE</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Delete Items on Distribution Order</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol allows the user to delete specific items from the
+distribution order.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D ITEMDELM^<a href="http://code.osehra.org/dox/Routine_PRCPOPD.html">PRCPOPD</a></td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I $$CHECK^<a href="http://code.osehra.org/dox/Routine_PRCPOPL.html">PRCPOPL</a>("DELETE"),$$CHECK^PRCPOPL("DELETEITEM")</td>
+</tr>
+<tr>
+<td>IDENTIFIER</td>
+<td>DI</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2001-02-28 10:31:43</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

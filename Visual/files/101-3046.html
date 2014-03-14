@@ -1,0 +1,94 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTMwNDY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU BROWSE ACTION ID NOTE (3046) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTMwNDY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU BROWSE ACTION ID NOTE</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Interdiscipl'ry Note</td>
+</tr>
+<tr>
+<td>SYNONYM</td>
+<td>
+<ol>
+<li>
+<dt>SYNONYM:  &nbsp;&nbsp;ID</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option permits the user to add a new entry to an interdisciplinary
+note or to detach an entry from an interdisciplinary note.
+ 
+The other ID action, attaching a stand-alone note to an interdisciplinary
+note, may not be executed from the browse, it must be done from the review
+screen.
+ 
+The action taken depends on the note currently browsed. If the browsed
+note is an interdisciplinary note, the option attempts to add a new entry
+to it. If the browsed note is an individual entry of an interdisciplinary
+note, the option attempts to detach the entry from the interdisciplinary
+note.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D IDNOTEB^<a href="http://code.osehra.org/dox/Routine_TIUGR1.html">TIUGR1</a>(TIUDA)</td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I '$D(ORTAB)&($G(^TMP("TIUR",$J,"CLASS"))'=244)&($G(TIUTYP)'=244)</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2001-04-30 10:27:15</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

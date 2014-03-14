@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTEyMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FBAA MRA VENDOR REINSTATE (5123) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTEyMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FBAA MRA VENDOR REINSTATE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Reinstate Vendor MRA</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>REINSTATE VENDOR MRA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The 'Reinstate Vendor MRA' option is used to reactivate a vendor formerly in delete status.
+  
+  
+ 1)  If the vendor is in delete status on both your system as well as
+     Central FEE, you only need to use the 'Reinstate Vendor MRA' option.
+ 
+ 2)  If the vendor is in delete status on your system, but no longer
+     resides on the Central FEE system, use the 'Update FMS Vendor File 
+     in Austin' option.
+  
+ 3)  If a vendor which you were now adding to your system somehow
+     already resided on the Central FEE system, but in delete status,
+     you would need to add the vendor to your system, transmit data
+     to Austin, and then invoke the 'Reinstate Vendor MRA' option.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_FBAARV.html">FBAARV</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

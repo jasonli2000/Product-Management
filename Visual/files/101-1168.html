@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTExNjg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SC DISPLAY TEAM INFO (1168) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTExNjg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SC DISPLAY TEAM INFO</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Display Team Information</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Display team information for a selected patient.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-48.html">SCHEDULING</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K ^TMP("SCTI",$J),TDFN</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D SEL^<a href="http://code.osehra.org/dox/Routine_SCMCU1.html">SCMCU1</a> S:$G(TDFN)'>0 VALMBCK="R" Q:$G(TDFN)'>0  D EN^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a>("SC TEAM INFORMATION")</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2000-03-13 13:27:36</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

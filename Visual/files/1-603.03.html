@@ -1,0 +1,55 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02MDMuMDM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>CLOZAPINE PARAMETERS (603.03) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02MDMuMDM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>CLOZAPINE PARAMETERS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains various parameters for the Clozapine rollup.  No option
+is assigned for the sites to manipulate the data. This file is used and
+maintained by the National Clozapine Coordinating Center (NCCC) through
+the YSCLSERVER option.  The TRANSMISSION DAY field forces all of the sites
+to transmit on the same day, in the past we had to allow scattered
+reporting due to network limits.  We no longer have this problem.  All
+transmissions will occur on Tuesday unless the NCCC in Dallas wishes to
+change the day.  The DEBUG MODE field allows data to be transmitted to a
+test location without contaminating the database in Hines. The three date
+fields TRANSMISSION START, TRANSMISSION END and LAST DEMOGRAPHICS
+TRANSMISSION report back to the NCCC through the server.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTMxNjY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBJT EDI STATUS SCREEN (3166) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTMxNjY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBJT EDI STATUS SCREEN</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>EDI Status</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This action is used to display latest status message, return message 
+and transmit message for a selected bill.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>I '$$PRVSCR^<a href="http://code.osehra.org/dox/Routine_IBJTU1.html">IBJTU1</a>("IBJTED") D EN^<a href="http://code.osehra.org/dox/Routine_IBJTED.html">IBJTED</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2011-11-02 12:02:45</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

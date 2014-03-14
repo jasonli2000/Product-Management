@@ -1,0 +1,113 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTQxNTU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU ACTION MENU MAPPING (4155) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTQxNTU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU ACTION MENU MAPPING</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Map Titles</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Menu of actions which may be executed to map local TIU Titles to VHA 
+Enterprise Standard Titles.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4156.html">TIU ACTION CHANGE VIEW MAPPING</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4154.html">TIU ACTION MAP TITLES</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1931.html">TIU ACTION SEARCH LIST</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1761.html">TIU ACTION QUIT</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4157.html">TIU ACTION MAP TITLES DIRECT</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S XQORFLG("SH")=0 S:$G(VALMSG)'["*" VALMSG="+ Next Screen  - Prev Screen  ?? More Actions",VALM("MAX")=+$G(VALMCNT)</td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I 1 X:$D(^ORD(101,+$P(^ORD(101,DA(1),10,DA,0),"^"),24)) ^(24)</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>S XQORM("#")=$G(^TMP("TIUMLIST",$J,"#")) D RESIZE^<a href="http://code.osehra.org/dox/Routine_TIULM.html">TIULM</a>(21,18),SHOW^VALM K XQORM("XLATE","FIND")</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2006-12-11 16:26:01</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

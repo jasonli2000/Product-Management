@@ -1,0 +1,135 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA4Nzc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RCDMCR1 DEBT VALIDITY TASK RPT (10877) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA4Nzc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RCDMCR1 DEBT VALIDITY TASK RPT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>DMC Debt Validity Report - Scheduled Task</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DMC DEBT VALIDITY REPORT - SCH</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This Accounts Receivable option is used to schedule the DMC Debt Validity
+Report to run on a recurring basis with out user intervention. The report
+is used to assist users in focusing on reviewing the legitimacy of first
+party bills for veterans who are SC 50% to 100% or in receipt of VA
+Pension benefits. The report contains information on veterans who meet the
+above criteria and have bills for episodes of care within the previous X
+days with a DMC Debt Valid field not flagged as 'YES' or 'NO' and for
+which the Current Status is Active, Open or Suspended. 
+ 
+X will be the value entered in the "NUMBER OF DAYS FOR DMC REPORTS"
+(#8.02) field of the AR SITE PARAMETER (#342) file. If this value isn't
+entered the report will default to bills from episodes of care for the
+past 365 days. This parameter can be edited using the Enter/Edit DMC
+Report # Days for Episodes of Care [RCDMC EDIT DMC REPORT # OF DAY]
+option.
+ 
+Authorized billing staff can use the report to ensure that all bills
+meeting the above criteria are reviewed and if necessary the appropriate
+action is taken as follows:
+     Bill is appropriate - Update the Debt Validity Status field to 'YES'
+                           in order that the bill is referred to DMC via
+                           the automated process if all other DMC criteria
+                           is met 
+     Bill is inappropriate - Update the Debt Validity Status Field to 'NO'
+                             and staff will cancel the bill using existing
+                             functionality 
+     Inappropriate bill sent to DMC - Staff to initiate action to cancel
+                                      DMC collection or refund payments
+                                      using existing functionality
+ 
+The scheduled report can only be printed in the detailed format and it
+should be sent to a device that is 132 characters wide.
+ 
+The report will include the following data elements:
+   Data Elements                      From File #
+   -------------------------------    ---------------------------------
+   Veteran's Name                     #2 (Patient File) 
+   SSN (Last 4 digits)                #2
+   Claim Number(CXXXXXXXX)            #2
+   Claim Location(Station Number)     #2
+   Eligibility/Effective Date         #2
+   Bill Number                        #430 (Accounts Receivable)
+   RX Fill/Re-Fill Date.              File #52 pointed to by File #350
+   Outpatient Visit Date              File #409.68 pointed to by file #350
+   Discharge Date                     File #405 pointed to by file #350
+   AR Status(Open/Active/Suspended)   #430
+   DMC Referral Date                  #430  
+   DMC Debt Valid (Null/PENDING)      #430 
+  
+   Summary at bottom of report:
+           
+       Total Number of Bills Referred
+       Total Number of unique veterans referred       
+       Total AR Dollars referred   
+ 
+       Total Number of Bills
+       Total Number of unique veterans
+       Total AR Dollars
+ 
+Note: When the veteran is not Service Connected 50% to 100% and is not
+Receiving a VA Pension the new software will also include the
+functionality to consider a veteran as Receiving a VA Pension if he/she is
+receiving A&amp;A or Housebound Benefits.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-53.html">ACCOUNTS RECEIVABLE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>QUERPT^<a href="http://code.osehra.org/dox/Routine_RCDMCR1A.html">RCDMCR1A</a></td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

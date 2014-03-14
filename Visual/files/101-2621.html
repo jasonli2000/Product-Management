@@ -1,0 +1,100 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI2MjE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRCACT EDIT CONSULT/REQUEST (2621) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI2MjE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRCACT EDIT CONSULT/REQUEST</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Edit a consult that has been denied for resubmission.</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+When a consult has been entered and submitted to a service, and that
+service has denied the request (for whatever reason), then this option
+allows the clinician to edit the consult to correct/add information needed
+by the requested service to evaluate and accept the consult.  When the
+consult is edited, it may then be resubmitted to the consult service.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2622.html">GMRCACT EDIT FIELD</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;ED</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Edit A Field</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2623.html">GMRCACT RESUBMIT DENIED CONSULT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RS</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;ReSubmit Consult</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a></td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Item/Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>22</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>3</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1999-07-19 16:41:55</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

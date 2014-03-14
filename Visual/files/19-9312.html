@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTMxMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RG PROCESS CONTROL (9312) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTMxMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RG PROCESS CONTROL</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Stop/Send/Suspend MPI/PD Messages</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>STOP/SEND/SUSPEND MPI/PD MESSA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ This option is used to edit the STOP MPI/PD MESSAGING field (#16) 
+ in the CIRN SITE PARAMETER file (#991.8), to stop/suspend/send messages.
+  
+ STOP - should be used only to totally shutdown HL7 V2.3 and MPI/PD
+        messages. It should only be used under the direction of 
+        System Design and Development.
+  
+ SUSPEND - should be used in an emergency situation to suspend HL7 V2.3 
+           and MPI/PD messages if the volume of messages is affecting 
+           system performance. System Design and Development should also
+           be called in this situation.
+  
+ SEND - normal operating mode.  
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-170.html">CLINICAL INFO RESOURCE NETWORK</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_RGRSPARM.html">RGRSPARM</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

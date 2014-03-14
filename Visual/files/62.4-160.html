@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuNC0xNjA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LSI #1 (160) &nbsp;&nbsp;  AUTO INSTRUMENT (62.4)</h1>
+<div id="demo"><table id="NjIuNC0xNjA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LSI #1</td>
+</tr>
+<tr>
+<td>PROGRAM</td>
+<td>LAB</td>
+</tr>
+<tr>
+<td>NEW DATA</td>
+<td>S T=1 D SET</td>
+</tr>
+<tr>
+<td>RESTART</td>
+<td>K ^LA(1),^LA("Q")</td>
+</tr>
+<tr>
+<td>ALARM TERMINAL</td>
+<td>
+<ol>
+<li>
+<dt>ALARM TERMINAL:  &nbsp;&nbsp;WORK</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERFACE NOTES</td>
+<td><pre>
+This is the entry to be used as the system line from the LSI to the CPU.
+ 
+For sites running multiple LSI's for automated instruments, the
+following information is needed to set the fields NEW DATA and RESTART
+in the auto instrument file.  Let * equla 1, 11, 21, 31, etc.
+(corresponding to the internal entry number in the auto instrument file
+for the LSI).
+ 
+NEW DATA: S T=* D SET
+ 
+RESTART: K ^LA(*),^LA("Q")
+ 
+For all LSI's except for #1 the RESTART field should only be:
+RESTART: K ^LA(*)
+ 
+Remember to replace * with the appropriate number in the examples.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

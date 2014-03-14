@@ -1,0 +1,118 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC0xNTkw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DSIC DDR UPDATE SUBFILE (1590) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC0xNTkw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DSIC DDR UPDATE SUBFILE</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>UPDATE1</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DSICDDR0</td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>ARRAY</td>
+</tr>
+<tr>
+<td>AVAILABILITY</td>
+<td>AGREEMENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This will add a new record to a multiple in a file.   The multiple can be 
+at any level as long as the IENS is properly defined.  Additional fields 
+can filed with the record.
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;FILE</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;20</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the number of the subfile to which a new record is to be added
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;IENS</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;50</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the standard Fileman DBS parameter for calling UPDATE^DIE when 
+adding a record to a multiple in a file.  If IENS is not passed or is 
+passed as &lt;null&gt;, then this will add the record at the top level of the 
+file.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;DATA</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LIST</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;250</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is a list of fields and their internal values to be filed with the
+new record.  Obviously the .01 field should have a value to be filed.  The
+format of the DATA array: DATA(field#)=value
+ 
+On the GUI side this would be:  Param.List['field#'] := value
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>RETURN PARAMETER DESCRIPTION</td>
+<td><pre>
+If the record is successfully created, return -1^new subfile record number
+Else, return -1^message
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

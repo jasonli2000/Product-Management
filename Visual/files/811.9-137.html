@@ -1,0 +1,418 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjktMTM3").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-GEC REFERRAL NURSING ASSESSMENT (137) &nbsp;&nbsp;  REMINDER DEFINITION (811.9)</h1>
+<div id="demo"><table id="ODExLjktMTM3" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-GEC REFERRAL NURSING ASSESSMENT</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>GEC REFERRAL NURSING ASSESSMENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Office of Geriatric Extended Care (OGEC) approved the paper-based
+GEC Referral as the preferred method for assessing and screening patients
+for long-term and extended care services.  As part of the Long Term Care
+Initiative and the Veterans Millennium Health Care and Benefits Act,
+Public Law 106-177, OGEC identified this tool as the means to standardize
+long-term care assessments and to prepare for the national collection of
+data regarding long-term care needs in the veteran population.
+ 
+Current VHA methods of assessing patients to determine the level of care
+required of extended care service are inconsistent.  Some facilities use
+the VA Form 10-7108, VA Form 10064a (Patient Assessment Instrument) or VA
+Form 1204 (Referral for Community Nursing Home Care), while other sites
+use various other assessments or consults.  OGEC seeks to standardize the
+process of assessment as well as the data set in order to establish a
+basis upon which program evaluation and quality performance can be
+managed.
+ 
+Four clinical reminder dialogs collect data regarding the need for
+long-term care services in a standard format across VHA.  This provides
+a mechanism for clinicians to administer comprehensive long-term care
+assessments, stores the information within the patient medical record and
+allows clinicians to notify local OGEC staff.  The screening data is
+collected as health factors and is stored in the V Health Factor file.  
+There is no cohort or resolution logic associated. The four reminder
+dialogs are GEC Referral Social Services, GEC Referral Nursing Assessment,
+GEC Referral Care Recommendations, and GEC Referral Care Coordination. An
+M-based option routine accompanies these reminders that extracts the data
+and makes it available for ad hoc reporting.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TECHNICAL DESCRIPTION</td>
+<td><pre>
+I.      Basics.
+II.     GEC Health Factors and their use.
+III.    GEC Status Indicator.
+IV.     GEC Referral ad hoc reports (CPRS GUI).
+V.      GEC Referral Reminders and Dialogs.
+    A.  GEC Consult Order.
+VI.     GEC Interdisciplinary Notes.
+VII.    GEC Referral Reports (LM CHUI).
+VIII.   GEC Reminder Terms.
+IX.     Training.
+ 
+I.      Basics
+The GEC Referral is comprised of 4 reminder dialogs: VA-GEC SOCIAL 
+SERVICES, VA-GEC NURSING ASSESSMENT, VA-GEC CARE RECOMMENDATIONS and 
+VA-GEC CARE COORDINATION.  These dialogs are designed for use as TIU 
+templates to enter data regarding the need for extended care.  Data 
+entered via the dialogs are captured as health factors to be used for 
+local and national reporting.  The software includes a new report menu 
+that may be used for local analysis.
+ 
+II.     GEC Health Factors
+The GEC Referral project distributes a large set of national health 
+factors.  They may be identified by the GEC name-space and constitute the 
+foundation of the GEC Referral project.  They establish a standard set of 
+screening data, to be used across the Veterans Health Administration, and 
+will be rolled-up nationally in Phase II.  
+ 
+The Health Factor and V Health Factor files include factors and 
+categories.  For this project, each section of the Referral is correlated 
+to a health factor category.  Once entered, the data is stored in the 
+Patient Care Encounter files.  The structure of these underlying files 
+has a direct impact on the design of the GEC software.  Extracting, 
+viewing and managing this set of data requires the GEC dialogs to remain 
+as they are released.  Consequently, the Clinical Reminders package has 
+been modified to prevent the GEC national reminders from being copied.  
+This change was made to the Reminder Dialog, Dialog Group and Dialog 
+Element levels.  To accommodate local business practices, sites will be 
+permitted to add locally created health factors to the GEC dialogs.  A 
+new List Manager screen is included to facilitate additions and any 
+subsequent edits to those Groups and Elements added locally.  
+ 
+NOTES:
+ 
+      -Dialog elements that have an order associated as a finding item
+       will continue to be an editable field using the dialog editor.
+      -Any local changes to the GEC dialogs will not be included with 
+       the reports or future national extracts.
+      -GEC health factors are populated with a synonym for identification.
+      -Sites are discouraged from using the GEC health factors 
+       elsewhere. Phase II of the GEC project will involve national
+       roll-up. Since this project has yet to be started, potential
+       extraction rules may not be able to distinguish the data source.
+      -Users should not enter GEC health factors from the Encounter
+       form. While it is possible to do so, Patient Care Encounter only 
+       allows one instance of a combination of the health factor, patient
+       and visit IEN.  If one is entered via the Encounter, any subsequent
+       entry of that health factor from the reminder dialog will not be
+       available for the GEC reports.  This is a consequence of the GEC
+       report routines relying on the health factor's Data Source.
+ 
+ 
+III.    GEC Status Check
+There is no limit to the entry of GEC Referral data.  Thus, there may be 
+multiple entries of the same health factors over time.  Since the data is 
+entered via separate dialogs, extraction and viewing requires the data to 
+be discretely identified.  The GEC software depends upon the user to 
+indicate when the data from a given referral should be concluded.  The 
+referral is finalized using a new feature called the GEC Status 
+Indicator.  This indicator is presented to the user as a modal dialog at 
+the conclusion of the VA-GEC CARE COORDINATION dialog.  It will prompt 
+the user to indicate the conclusion of the Referral with a Yes or NO 
+response and will list any missing dialogs.  If YES is selected, the data 
+for the current episode of the Referral is closed.  If No is selected, 
+the Indicator is displayed with each succeeding GEC dialog until Yes is 
+selected.
+ 
+To assist the ongoing management of completing GEC Referrals, the GEC 
+Status Indicator may be added to the CPRS GUI Tools drop-down menu.  The 
+parameter to activate the Indicator is PXRM GEC STATUS CHECK.  If may be 
+set at the User or Team level.  If added to the drop-down menu, the 
+Indicator may be viewed at any time and used to close the referral if 
+needed.
+ 
+ 
+IV.     GEC Referral Ad hoc Reports
+Two new health summary components have been created and distributed with 
+this software:  GEC Completed Referral Count (GECC) and GEC Health Factor 
+Category (GECH).  The first displays all GEC referral data according to 
+the occurrence and time limits identified.  The GEC Health Factor 
+Category component, in conjunction with PX*1*123 and GMTS*2.7*63, permits 
+GEC data to be viewed by health factor or health factor category.  If a 
+user should have access to these GEC reports, they must have access to 
+the Ad Hoc Health Summary type.  [This can be set using GMTS GUI HS LIST 
+PARAMETERS.]
+ 
+V.      GEC Referral Reminders and Dialogs
+The GEC reminders are comprised of dialogs and health factors only.  They 
+have neither cohort nor resolution logic and will not become due.  They 
+are intended only as TIU templates and do not need to be assigned to the 
+CPRS Cover Sheet.  Due to potential complications with reporting and 
+duplicate entries, it is recommended that the GEC dialogs not be added to 
+the Reminders drawer/Cover sheet.  The Referral was designed for 
+inter-disciplinary use with dialogs created for separate services.  
+However, a single user may perform them all.  With only a few exceptions, 
+each section of the dialogs is mandatory and is marked with an asterisk 
+(*).  The completion of all four dialogs constitutes a discrete episode 
+of the GEC Referral.
+ 
+The VA-GEC REFERRAL SOCIAL SERVICES, VA-GEC REFERRAL NURSING ASSESSMENT 
+and VA-GEC REFERRAL CARE RECOMMENDATIONS dialogs comprise the clinical 
+screening.  The VA-GEC REFERRAL CARE COORDINATION dialog is used 
+administratively to record the arrangement of and funding for extended 
+care services.  These dialogs may be performed in any order local 
+practices dictate.  However, it is expected the screening portion will be 
+completed prior to the coordination of services.  When the screen is 
+complete, a consult order should be placed to the service responsible for 
+arranging services.
+ 
+A.       GEC Consult Order
+Most sites have either an individual or service responsible for arranging 
+and coordinating extended care services.  To accommodate local business 
+practices and flexibility, sites may associate any consult service (or 
+menu) they already have in place.  If none exist, the sites may create a 
+consult or establish some alternative practice to ensure that both 
+services are arranged and that the VA-GEC REFERRAL CARE COORDINATION 
+dialog is completed.  
+ 
+A placeholder for this consult is included at the end of the VA-GEC 
+REFERRAL SOCIAL SERVICES, VA-GEC REFERRAL NURSING ASSESSMENT and VA-GEC 
+REFERRAL CARE RECOMMENDATIONS dialogs.  It must be substituted or deleted 
+at the time of installation.  
+ 
+Pre-Installation Requirements
+ 
+Since nationally created orders do not map to local orderable items, 
+orders do not pass through Reminder Exchange.  Installation of the 
+Referral will prompt for a resolution of this dialog element.  Resolution 
+will consist of either replacing the order with a locally created order, 
+deleting the element or skipping the step.
+ 
+Consult quick orders are existing functionality that are probably in use 
+at your site.  It is also possible that an order has already been created 
+that could be used.  To determine this, the installer should contact the 
+CPRS CAC prior to installation and determine if an order is available.  
+If it is, installation will only require entry of the Fileman name-space 
+of the order at the prompt.  If it is not, follow the steps in the CAC 
+section below.
+ 
+During installation you will be presented with the following prompt:
+ 
+        REMINDER DIALOG entry VA-ORDER GEC REFERRAL CONSULT does not
+        EXIST, what do you want to do?
+ 
+        Select one of the following:
+ 
+             D   Delete (from the reminder/dialog)
+             P   Replace (in the reminder/dialog) with an existing entry
+             Q   Quit the install
+ 
+The installer should select P (Replace with an existing entry), and enter
+the name of the existing quick order provided by the CAC using Fileman
+name.  [NOTE: The same quick order may be used on each of the dialogs].
+ 
+CAC Section
+1. The CAC should first determine if a Consult Service exists for 
+the management of extended care services.  If it exists, this service can 
+be used for the quick order and you can proceed to step 2.  If one does 
+not exist, the CAC will need to create a Consult Service by using the 
+[GMRC Manager] option [GMRC SETUP REQUEST SERVICES].
+    a. Recipients of the consult notifications should be GEC staff 
+       responsible for coordinating extended care service (or any
+       appropriate user).
+2. The CAC should create a consult quick order using the [ORCM MGMT] 
+option [ORCM MENU].  This order should be associated to the Consult 
+Service in the Consult to Service/Specialty field of the quick order.
+3. The CAC should then provide the name of the consult quick order 
+to the installer.  The installer will then perform the installation and 
+enter the name of the order at the prompt as above.
+ 
+VI.     GEC Interdisciplinary Notes
+The GEC Referral dialogs are intended for use as TIU templates.  It is 
+also expected that they will be used as part of a TIU Interdisciplinary 
+(ID) note.  This will require new TIU Document Definitions or the 
+association of existing titles to the dialogs.  This project does not 
+stipulate the titles to be used, preferring to allow the sites to use 
+those titles that would best suit their business practices.  However, the 
+Office of Geriatrics Extended Care requests that the parent ID note title 
+be:
+        "GEC EXTENDED CARE REFERRAL"
+ 
+To create a TIU Document Definition, perform the following steps:
+A.      Access the TIU IRM MAINTENANCE MENU.
+B.      Select TIUF DOCUMENT DEFINITION MGR.
+C.      Select Create Document Definitions or Edit Document Definitions.
+D.      Select class and create title.
+ 
+ 
+To associate reminder dialogs with TIU templates, perform the following 
+steps*:
+ 
+A.      Make the GEC Referral dialogs eligible to be used as a template 
+        by using the parameter: TIU TEMPLATE REMINDER DIALOGS.
+B.      Associate the dialog to a TIU Document Definition.
+        1. Go to Shared Templates
+        2. Click "New Template."
+        3. Enter a name.
+        4. Select the Template Type as Reminder Dialog.
+        5. Pick a GEC dialog from the Reminder Dialog field.
+        6. Under Shared Templates, pick Document Titles.
+        7. In the Associated Title field, pick the Document Definition
+           created or designated for this dialog.
+        8. Click Apply.
+ 
+(*You will require the Clinical Applications Coordinator User Class.)
+ 
+VII.    GEC Referral Reports
+The software includes a new set of reports that provide a variety of GEC 
+health factor perspectives.  The reports are released as an option within 
+the Clinical Reminder namespace and may be assigned as necessary.  The 
+option is [PXRM GEC REFERRAL REPORT] and may be added to the PXRM 
+MANAGERS MENU.  The reports capture data elements for reporting and 
+tracking use of the GEC Referral Screening Tool.   The reports may be 
+generated in formatted or delimited output.  The Summary (Score) report 
+provides summary (calculated) totals from specific sections of the 
+screening tool identified by the Office of Geriatrics Extended Care.
+ 
+VIII.   GEC Reminder Terms
+Phase I of the GEC Referral project distributes a set of terms that will 
+be used with Phase II.  Since Phase II has not yet been initiated, the 
+functional requirements and design have not been identified.  However, it 
+is expected to include the national roll-up of GEC screening data using 
+the Generic Extract Utility released concurrently with Clinical Reminders 
+v2.0.  To allow the greatest degree of flexibility in design, one 
+reminder term is released for each GEC Referral health factor. The terms 
+are mapped to the health factors on the VA-GEC REFERRAL reminder 
+dialogs.  The terms will be installed silently and reside dormant until 
+Phase II of the GEC Referral project is implemented.  The reminder 
+definitions used with these terms will be deleted via post-install 
+routine after installation.
+ 
+IX.     Training
+The Office of Geriatric Extended Care (OGEC) will establish a web site to 
+provide training on the GEC screening tool.  This training module is 
+being developed with assistance from Employee Education Service and built 
+by ImageITS, a private firm.  The module will consist of an interactive 
+tutorial and reference material.  OGEC will coordinate the training 
+initiative and serve as the custodian of the web site's content.  
+Facilities may contact OGEC to obtain the website's URL or for more 
+information.   
+</pre>
+</td>
+</tr>
+<tr>
+<td>INTERNAL PATIENT COHORT LOGIC</td>
+<td>(SEX)&(AGE)</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS COUNT</td>
+<td>2</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS LIST</td>
+<td>SEX;AGE</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AGE FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>LINKED REMINDER DIALOG</td>
+<td><a href="801.41-663000932.html">VA-GEC REFERRAL NURSING ASSESSMENT</a></td>
+</tr>
+<tr>
+<td># OF GEN. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>SPONSOR</td>
+<td><a href="811.6-663006.html">Office of Geriatric Extended Care</a></td>
+</tr>
+<tr>
+<td>USAGE</td>
+<td>C</td>
+</tr>
+<tr>
+<td>EDIT HISTORY</td>
+<td>
+<ol>
+<li>
+<dt>EDIT DATE:  &nbsp;&nbsp;2005-03-11 12:34:49</dt>
+<dt>EDIT BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>EDIT COMMENTS:  &nbsp;&nbsp;<pre>
+Exchange Install
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

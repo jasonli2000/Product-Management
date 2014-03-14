@@ -1,0 +1,131 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTE3OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OS-OPENM (178) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTE3OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OS-OPENM</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>OSI</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>This is a place-holder for OpenM information patches</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>2</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;2.0</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;11</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-04-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;File: 200, IEN: 520628471</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The pre-installation for this patch runs routine ^NVS11PRE.  This routine
+updates the PACKAGE file (#9.4) to ensure that there is a version 2.0
+entry for the record for the "OS-OPENM" package reocrd.
+ 
+The core function of this patch removes Y2K monitoring routines and server
+options. This patch also contains a revised routine ^NVSMSG.  The repair
+is to date format during the creation of a VA MailMan message.  Various
+other clean up has been done to NVSMSG.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;11 SEQ #10</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-04-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The pre-installation for this patch runs routine ^NVS11PRE.  This routine
+updates the PACKAGE file (#9.4) to ensure that there is a version 2.0
+entry for the record for the "OS-OPENM" package reocrd.
+ 
+The core function of this patch removes Y2K monitoring routines and server
+options. This patch also contains a revised routine ^NVSMSG.  The repair
+is to date format during the creation of a VA MailMan message.  Various
+other clean up has been done to NVSMSG.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;12 SEQ #11</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-05-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This build contains revised Avanti System backup procedure routines
+for patch OSI*2.0*12.
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;4.0</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;3 SEQ #2</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-12-31 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This build contains a single routine that is run as a post-installation 
+process.  This routine is only appropriate for VMS/Cache systems and a 
+specific check for that environment is made before any processing is done.
+ 
+If appropriate, the routine examines the Terminal Type file (#3.2) for any
+entries containing the name prefix P-MESSAGE.  If any are found, the OPEN 
+EXECUTE and CLOSE EXECUTE fields are modified to match current VistA 
+standards for VMS/Cache installations.
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

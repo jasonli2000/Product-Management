@@ -1,0 +1,83 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODAzNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DMSQ PS COLUMNS BY DOMAIN (8036) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODAzNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DMSQ PS COLUMNS BY DOMAIN</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Columns by Domain</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>COLUMNS BY DOMAIN</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This report counts the number of columns in each domain category, so
+you can see how many are pointers, dates, or numbers.  It only looks at
+columns from regular (non-index) tables and excludes the automatically
+generated Table_ID columns built from internal entry numbers.
+ 
+Here is an example of percentages from a sample account:
+ 
+ Ingeger           7499     22.2%
+ Character        10972     32.5%
+ Pointer           4730     14.0%
+ Set-of-Codes      4575     13.5%
+ Number            2429      7.2%
+ Moment            1272      3.8%
+ Date              1393      4.1%
+ Word-processing    687      2.0%
+ MUMPS              180       .5%
+ Variable pointer    58       .2%
+ 
+ TOTAL            33795
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN9^<a href="http://code.osehra.org/dox/Routine_DMSQP1.html">DMSQP1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

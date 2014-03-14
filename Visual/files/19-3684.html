@@ -1,0 +1,131 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzY4NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSJI USR2 (3684) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzY4NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSJI USR2</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>IV Menu</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>IV MENU</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+  This option is designed for use by pharmacy technicians.  The user is 
+allowed to change inpatient sites, IV rooms, and report/label devices,
+perform drug inquires, view inpatient profiles, place orders, print labels,
+update and print ward lists, print manufacturing lists, perform suspense
+functions, enter returned and destroyed data, and print inpatient
+reports.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3674.html">PSJI LBLMENU</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3672.html">PSJI SUSMENU</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3676.html">PSJI REPORTS</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3663.html">PSJI MAN</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3664.html">PSJI PROFILE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3658.html">PSJI RETURNS</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3671.html">PSJI UP</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3670.html">PSJI WARD</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3678.html">PSJI DRUG INQUIRY</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3654.html">PSJI DEVICE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3701.html">PSJ PR</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3702.html">PSJ OE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3700.html">PSJI CHANGE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3714.html">PSJI ORDER</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D ^<a href="http://code.osehra.org/dox/Routine_PSIVXU.html">PSIVXU</a> Q:$D(XQUIT)  D ENIVKV^<a href="http://code.osehra.org/dox/Routine_PSGSETU.html">PSGSETU</a> K P,PS,PSIV</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2009-04-23 11:28:30</td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>1990-01-30 14:25:15</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

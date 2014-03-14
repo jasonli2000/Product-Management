@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTUz").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQBUILDTREE-VER (53) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTUz" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQBUILDTREE-VER</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>VERIFY MODE FOR REBUILDING MENUS</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+The option which forces the rebuilding of menus on a CPU can be run in
+one of two modes: automatic or verify.
+ 
+The option will first go thru the user file, and compile a list of primary
+menus of active users (those with access codes).  It will list these 
+primary menus, along with how many users have each, and the most recent
+date accessed.  If there is an existing tree built, the date it was
+created will also print.
+ 
+If the option is run in AUTOMATIC mode, all primary menus listed will
+have a tree built. This could be time-consuming.  If run in VERIFY mode,
+you will be prompted for each primary menu, one at a time, and you
+can decide which you would like to build, based on last date accessed
+and number of users accessing it.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-01-20 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

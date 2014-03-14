@@ -1,0 +1,51 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0xNTQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SCD (SPINAL CORD) REGISTRY (154) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0xNTQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SCD (SPINAL CORD) REGISTRY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is the local registry file for SCD.  It contains the main data
+for a SCD patient.  Once a patient is entered in this file, the
+patient can not be removed.  This file points to the patient file 
+because a patient must exist in the patient file in order for an entry 
+to be made in this file.  The IEN for a patient in this file will be 
+the same as the IEN in the patient file because the pointer number 
+is used as the IEN in the this file.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

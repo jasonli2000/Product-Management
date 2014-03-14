@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OTkuNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ROR HISTORICAL DATA EXTRACTION (799.6) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OTkuNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ROR HISTORICAL DATA EXTRACTION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Records of this file store parameters of the 
+historical data extractions (backpulls) performed
+on the registries and reflect status of these data
+extractions.
+ 
+Records of the file are uniquely identified by the
+historical data extraction name (the "A" primary
+key and the uniqueness index "B" are used for that
+purpose).
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

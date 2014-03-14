@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ACCESSION (68) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ACCESSION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ 
+This file contains entries which represent the functional subdivisions
+or departments of the laboratory, referred to by the Laboratory package
+software as accession areas.  The file is used to define the site-specific
+information needed by your laboratory for each accession area.  This 
+includes the type of accession transform (or how often the accession 
+numbers assigned to test performed in that area will be reset to 1), the
+abbreviation of the area (which becomes part of the accession identifying
+the specimen and test results), the order in which the data for tests
+performed in the area will be displayed and other specific information.
+ 
+Definitions of variables used:
+ LRDFN = Internal entry in LR( that is being worked on.
+ LRIDT = Inverse date/time that data is stored at. ^LR(LRDFN,"CH",
+ LRAA = internal value of accession area ^LRO(68,
+ LRAD = date working on in accession area ^LRO(68,LRAA,1,
+ LRAN = accession number working on ^LRO(68,LRAA,1,LRAD,1,
+ LRODT = order date ^LRO(69,
+ LRSN = order entry within date ^LRO(69,LRORD,1,
+CROSS REFERENCE DESCRIPTION:
+ ^LRO(68,"B",'ACCESSION AREA',LRAA)
+ ^LRO(68,"AC",LRDFN,'DATE RESULTS AVAILABLE','DATA NODE') =
+    used by the cumulative
+ ^LRO(68,"AD",'LAB SECTION',LRAC)
+ ^LRO(68,"AVS",LRAA,LRAD,LRAN)=LRDFN^LRIDT
+    used by micro verify by supervisor
+ ^LRO(68,"MI",LRDFN,LRIDT)
+    used by micro for cumulative report
+ ^LRO(68,LRAA,1,LRAD,1,LRAN,"AE")
+    used for WKLD count
+  
+ ^LRO(68,LRAA,1,LRAD,1,"B",'ENTRY FILE 69',LRAN)
+ ^LRO(68,LRAA,1,LRAD,1,"C",'IDENTITY',LRAN)
+ ^LRO(68,LRAA,1,LRAD,1,"E",'LAB ARRIVAL TIME',LRAN)
+ ^LRO(68,LRAA,1,LRAD,1,"D",'ORDER #',LRAN)
+ ^LRO(68,LRAA,1,LRAD,1,"AC",'DATE/TIME COMPLETE',LRAN)
+ ^LRO(68,LRAA,1,LRAD,1,"AD",'DATE COMPLETE',LRAN)
+ ^LRO(68,LRAA,1,LRAD,4,"B",'LAB TEST',LRAN)
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

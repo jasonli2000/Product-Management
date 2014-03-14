@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTAyMTc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU169 DDEFS, C&P WORKSHEETS (10217) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTAyMTc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU169 DDEFS, C&P WORKSHEETS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Create DDEFS for C&P Worksheets</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CREATE DDEFS FOR C&P WORKSHEET</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option creates new Document Definitions (DDEFS) for the C&amp;P Worksheet
+Module. The option is exported with patch TIU*1*169.  It is this option,
+not the patch itself, which actually creates the new Document Definitions.
+ 
+This option must be run after the patch is installed.  When the option has
+run successfully to the end and messages have indicated that all DDEFS
+have been created successfully with no problems encountered, the option
+may be deleted.
+ 
+This option may be rerun if desired.  However, it will not attempt to
+recreate entries that were already created successfully the first time the
+option was run.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>DISPLAY OPTION?</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D BEGIN^<a href="http://code.osehra.org/dox/Routine_TIUPS169.html">TIUPS169</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,158 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzY3Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSJI MGR (3673) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzY3Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSJI MGR</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>IV Menu</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>IV MENU</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu is the main starting point for the IV system.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3664.html">PSJI PROFILE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3675.html">PSJI SUPERVISOR</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3658.html">PSJI RETURNS</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3676.html">PSJI REPORTS</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3678.html">PSJI DRUG INQUIRY</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3654.html">PSJI DEVICE</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;CRL</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3674.html">PSJI LBLMENU</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3672.html">PSJI SUSMENU</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3700.html">PSJI CHANGE</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;CIR</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3671.html">PSJI UP</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3670.html">PSJI WARD</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3663.html">PSJI MAN</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3701.html">PSJ PR</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;IPF</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;6</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3702.html">PSJ OE</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;IOE</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3714.html">PSJI ORDER</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-9580.html">PSJI RETURN BY BARCODE ID</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-11445.html">PSJ CHECK DRUG INTERACTION</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-11469.html">PSJ ECO</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;ECO</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;4.5</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K PSIVSN,PSIVPR,PSIV,P,PS</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D ^<a href="http://code.osehra.org/dox/Routine_PSIVXU.html">PSIVXU</a> Q:$D(XQUIT)  D ENIVKV^<a href="http://code.osehra.org/dox/Routine_PSGSETU.html">PSGSETU</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-05-29 12:05:25</td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>2013-02-21 01:00:09</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

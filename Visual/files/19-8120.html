@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODEyMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA PROCPARENT (8120) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODEyMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA PROCPARENT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Parent Procedure List</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PARENT PROCEDURE LIST</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The 'Parent Procedure List' option allows the user to display the data
+associated with parent procedures.  This option allows the user to select
+the imaging types so parent procedures of the selected imaging types are
+displayed.  The user may also specify if active procedures, inactive
+procedures, or both inactive and active procedures are to be displayed.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>DISPLAY OPTION?</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>18^<a href="http://code.osehra.org/dox/Routine_RAMAINP1.html">RAMAINP1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

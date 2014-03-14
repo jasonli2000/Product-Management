@@ -1,0 +1,50 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0xLjUyMTc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SQLI_COLUMN (1.5217) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0xLjUyMTc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SQLI_COLUMN</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+A set of formatting and physical structure specifications.
+Each column specification has a column type table element
+(SQLI_TABLE_ELEMENT) which contains the relational specifications, name
+and domain. The column specification contains those attributes required
+to locate the value in the global structure, and to project the value to
+the user.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

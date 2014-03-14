@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTEwNjE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>HBHC MFH AUTO-Q LICENSE DUE (11061) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTEwNjE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>HBHC MFH AUTO-Q LICENSE DUE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Auto-queued License Due Reminder e-mail</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>AUTO-QUEUED LICENSE DUE REMIND</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option runs a monthly auto-queued batch job to create an e-mail
+message for HBPC Medical Foster Home(s) (MFH) with License due within the
+next 3 months, based on month only.  This job should be scheduled for the
+1st day of each month, regardless of day of the week for 1st.
+ 
+Note:  This option does NOT need to be scheduled to run for HBPC MFH sites
+which are in states that do not require licensure.
+ 
+The MFH License data used by this option resides in the HBHC MEDICAL
+FOSTER HOME file (#633.2).
+ 
+Members in mail group HBHC MEDICAL FOSTER HOME receive the reminder mail
+message.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-152.html">HOSPITAL BASED HOME CARE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DQ^<a href="http://code.osehra.org/dox/Routine_HBHCRP29.html">HBHCRP29</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

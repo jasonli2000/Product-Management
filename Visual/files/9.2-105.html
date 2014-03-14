@@ -1,0 +1,92 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTEwNQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUFILE ACCESS USE3 (105) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTEwNQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUFILE ACCESS USE3</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>LEVELS OF ACCESS AUTHORITY</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+  READ ACCESS   permits display of data on file.  This allows use of the VA
+                FileMan 'Print', 'Search', 'Inquire', 'Statistics', and
+                'List File Attributes' options.
+ 
+ WRITE ACCESS   permits changing data values that are currently on file via
+                the 'Enter/Edit' option.  It will not permit the adding of
+                new entries to the file.
+ 
+DELETE ACCESS   permits deletion of an entire file entry with 'Enter/Edit'
+                or transfer of entries with 'Transfer'.  It does not permit
+                deletion of the file or any of its attribute fields.
+ 
+ LAYGO ACCESS   permits adding a new entry to a file with the 'Enter/Edit'
+                option as long as write access has also been enabled.
+ 
+    DD ACCESS   permits data dictionary access for changing or deleting the
+                structure of the file itself.  The 'Modify' and 'Utility'
+                options are enabled.
+ 
+ AUDIT ACCESS   allows the [AUDIT] of data changes provided that DD access
+                has also been granted.                           [CONTINUE]
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;AUDIT</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-108.html">XUFILE ACCESS USE3.1</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;CONTINUE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-111.html">XUFILE ACCESS USE3.2</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-02-13 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

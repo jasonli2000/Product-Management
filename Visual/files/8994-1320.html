@@ -1,0 +1,121 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC0xMzIw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBO MT LTC COPAY QUERY (1320) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC0xMzIw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBO MT LTC COPAY QUERY</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>RETURN</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_IBOMTLTC.html">IBOMTLTC</a></td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>GLOBAL ARRAY</td>
+</tr>
+<tr>
+<td>AVAILABILITY</td>
+<td>RESTRICTED</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This remote procedure will produce a report showing both MT and LTC copay 
+information at a remote facility.
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;IBICN</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;40</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the patient's ICN used to identify the patient at a remote 
+facility.  This is an optional paramater, the patient's DFN if known my 
+be passed instead.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;DFN</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;30</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the patient's DFN, it is not required but will be used if 
+passed.  If it is not passed, then the patient's ICN will be necessary.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;IBBDT</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;7</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the starting date of the date range of the information 
+requested.  It is required.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;IBEDT</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;7</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the ending date of the date range requested.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>RETURN PARAMETER DESCRIPTION</td>
+<td><pre>
+The return value will be a global array that will be in output format 
+ready to display or print as necessary.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

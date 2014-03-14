@@ -1,0 +1,57 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zNjYuMDI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PHARMACY BENEFITS MANAGER (PBM) (366.02) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zNjYuMDI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PHARMACY BENEFITS MANAGER (PBM)</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This Integrated Billing (IB) file was created for the e-Pharmacy Project.
+It is maintained centrally, via real time HL7 Table Update Messages, using
+the WebMD database.
+Never maintain locally, except via a designated and secured option that 
+edits selected APPLICATION Subfile fields, such as LOCAL ACTIVE?.
+ 
+A Pharmacy Benefits Manager (PBM) administers a plan on behalf of the
+insurance company payer.
+A PBM is typically a separate, contracted entity, but it may be the 
+insurance company payer.
+A PBM is uniquely identified by its' name.
+ 
+Per VHA Directive 10-93-142, this file definition should not be modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

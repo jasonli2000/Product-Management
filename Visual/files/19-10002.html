@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTAwMDI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FBUC DISAPPROVED EDI (10002) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTAwMDI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FBUC DISAPPROVED EDI</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Disapproved EDI Claim Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DISAPPROVED EDI CLAIM REPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will list unauthorized claims that are an EDI claim from the 
+FPPS system and have been dispositioned within the specified period as 
+Disapproved, Cancelled/Withdrawn, or Abandoned.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-114.html">FEE BASIS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_FBUCDE.html">FBUCDE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

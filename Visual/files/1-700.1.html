@@ -1,0 +1,48 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03MDAuMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PFT PREDICTED VALUES (700.1) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03MDAuMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PFT PREDICTED VALUES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file holds the set of Predicted Value and Correction formulas for
+use by the PFT report.  The formulas are selected from the PFT FORMULA
+file (700.2).   There are 2 sets present (Male and Female).  The
+Male and Female sets can be changed through the Pulmonary Managers' menu.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

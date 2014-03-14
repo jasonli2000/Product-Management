@@ -1,0 +1,65 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS00MDkuNjg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OUTPATIENT ENCOUNTER (409.68) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS00MDkuNjg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OUTPATIENT ENCOUNTER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ This file contains all outpatient encounters since 10/1/93 that have been
+ successfully checked out or need to be checked out. The types of
+ encounters that caused entries to be added to this file are appointments,
+ add/edit stop codes and dispositions.
+ 
+ If the encounter needs to be checked out then it will have a status
+ of 'PENDING ACTION'. The site will not receive workload credit if
+ the status remains 'PENDING ACTION'.  'PENDING ACTION' includes both 
+ 'ACTION REQUIRED' and 'NO ACTION TAKEN' statuses.
+ 
+ If the encounter has been no-showed or cancelled then it will NOT be
+ in this file.
+ 
+ Inpatient encounters will always have a status of 'INPATIENT APPOINTMENT'.
+ 
+ Appointments made for non-count clinics will always have a status of
+ 'NON-COUNT'.
+ 
+ All other encounters will have a status of 'CHECKED OUT'.
+ 
+
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

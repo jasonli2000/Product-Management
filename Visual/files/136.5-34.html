@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTM2LjUtMzQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>NEW MECHANICAL CIRCULATORY SUPPORT (34) &nbsp;&nbsp;  PERIOPERATIVE OCCURRENCE CATEGORY (136.5)</h1>
+<div id="demo"><table id="MTM2LjUtMzQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OCCURRENCE CATEGORY</td>
+<td>NEW MECHANICAL CIRCULATORY SUPPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Definition Revised (2004):
+Indicate if the patient left the operating room suite with or required
+post-op placement of a new IABP, ECMO, or VAD for circulatory support
+within 30 days perioperatively. A "yes" response is appropriate even if
+the pump is only used for a short time perioperatively. A "yes"
+response, however, is only correct if the patient did not enter the
+operating room with this same mechanical circulatory support, and the
+device insertion occurred AFTER the induction of anesthesia.
+ 
+If patient had/required new mechanical circulatory support, indicate 
+whether the placement occurred intraoperatively or postoperatively.  
+Indicate the one appropriate response:
+ - intraoperatively: occurring while patient was in the operating room.
+ - postoperatively:  occurring after patient left the operating room.
+ 
+A "no" response is appropriate if the circulatory support device was 
+placed as a prophylaxis before the induction of anesthesia; however, if
+it was placed for any reason after the induction of anesthesia, then a
+"yes" response is appropriate. A "no" response is also appropriate if
+the primary operation is to insert a ventricular assist device.
+</pre>
+</td>
+</tr>
+<tr>
+<td>INTRAOPERATIVE ALLOWED</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CARDIAC ONLY</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

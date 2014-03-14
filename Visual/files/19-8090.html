@@ -1,0 +1,100 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODA5MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LR ORDERED TESTS BY PHY (8090) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODA5MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LR ORDERED TESTS BY PHY</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>ORDERED TEST COST BY PROVIDER</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ORDERED TEST COST BY PROVIDER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option provides a listing of tests sorted by combination of ordering
+providers and locations. The user can select any date range.
+The option will list for each sort criteria the test, test price/cost,
+and urgency subtotals and totals. A detailed listing is also available.
+ 
+NOTE: This option uses the data stored in LAB ORDER ENTRY (#69) to produce
+the report. If Orders and Accessions have been purged for the date range
+selected, a report will not be generated. Selected date range should be
+within the limits of stored data.
+ 
+This report can be generated using either test price or cost. The value
+for price or cost is determined locally and the appropriate file is
+populated with a dollar figure.
+ 
+The report's price or cost is determined by using series of fields to
+identify the price/cost. The first field is the SP COST field (#1) or SP
+PRICE (#2) of the SPECIMEN subfile multiple (#64.01) of the WKLD CODE file
+(#64). If no price or cost is found, the next fields checked are the COST
+field (#7) or COST (#8) of the File #64. If no price/cost is found in
+these fields, the last field checked is the TEST COST field (#1) of the
+LABORATORY TEST file (#60). Default value for PRICE/COST is $1.00.
+ 
+Depending on the sort scheme, locations can be either Hospital Location or
+Institutions. The user is also allowed to enter FREE TEXT non-standard
+locations. If the
+report should contain all locations or providers, bypass the prompt for
+specific data.
+   
+There are several methods available to sort the data for the report.
+   
+This report maybe useful to track tests done by hosptial locations,
+institutions or providers.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_LRTOCOST.html">LRTOCOST</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

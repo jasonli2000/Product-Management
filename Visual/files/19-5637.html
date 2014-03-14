@@ -1,0 +1,65 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTYzNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LBRY ADMIN RECIPIENTS (5637) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTYzNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LBRY ADMIN RECIPIENTS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Administrative Titles with Recipients</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ADMINISTRATIVE TITLES WITH REC</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This report lists all the "Administrative" titles and their recipients.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ART^<a href="http://code.osehra.org/dox/Routine_LBRYRPT0.html">LBRYRPT0</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

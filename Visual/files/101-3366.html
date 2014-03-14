@@ -1,0 +1,98 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTMzNjY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSO RECEIVE ORDER (3366) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTMzNjY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSO RECEIVE ORDER</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Receive external Outpatient order</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol is used to receive Outpatient Pharmacy orders from an 
+external source.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>subscriber</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-60.html">OUTPATIENT PHARMACY</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2002-10-25 14:58:05</td>
+</tr>
+<tr>
+<td>RESPONSE MESSAGE TYPE</td>
+<td><a href="771.2-13.html">ORR</a></td>
+</tr>
+<tr>
+<td>RECEIVING APPLICATION</td>
+<td><a href="771-73.html">PSO RECEIVE</a></td>
+</tr>
+<tr>
+<td>EVENT TYPE</td>
+<td><a href="779.001-38.html">O01</a></td>
+</tr>
+<tr>
+<td>LOGICAL LINK</td>
+<td><a href="870-53.html">PSO LLPO</a></td>
+</tr>
+<tr>
+<td>PROCESSING ROUTINE</td>
+<td>D EN^<a href="http://code.osehra.org/dox/Routine_PSOHLINC.html">PSOHLINC</a></td>
+</tr>
+<tr>
+<td>SENDING FACILITY REQUIRED?</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>RECEIVING FACILITY REQUIRED?</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ROUTING LOGIC</td>
+<td>Q</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,69 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0yMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>NAME COMPONENTS (20) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0yMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>NAME COMPONENTS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file, introduced with Name Standardization (Patch XU*8.0*134), holds
+the component parts of a person's name as follows:
+ 
+  Family (Last) Name (field #1)
+  Given (First) Name (field #2)
+  Middle Name (field #3) 
+  Prefix (field #4)
+  Suffix (field #5)
+  Degree (field #6)
+ 
+The "source name" that has these components is identified by the following
+three fields:
+                                                      
+  File (field #.01)
+  Field (field #.02)
+  IENS (field #.03)
+ 
+The "ANAME" cross-reference on the Family (Last) Name, Given (First) Name,
+Middle Name, and Suffix fields keeps each component in synchronization
+with the corresponding source name. In the case of Patch XU*8.0*134, the
+source name is the .01 field (the Name field) of the NEW PERSON file
+(#200).
+ 
+The Degree and Prefix fields are not considered part of a standard name,
+but can be used to build formatted names for display.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

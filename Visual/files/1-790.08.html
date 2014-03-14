@@ -1,0 +1,51 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OTAuMDg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>WV LAB TESTS (790.08) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OTAuMDg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>WV LAB TESTS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file is used to store lab test data sent from the LAB DATA file (#63)
+until such time as a Women's Health package user can determine if the lab
+test should be entered as a procedure in the WV PROCEDURE file (#790.1).
+If the lab test is converted into a procedure entry in FILE 790.1, it will
+be deleted from this file. Also, the Women's Health package user may
+decide to delete the lab test from this file if it is determined that the
+lab test is not to be tracked in FILE 790.1.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

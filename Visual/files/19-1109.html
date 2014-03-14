@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTEwOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LRRD BY MD (1109) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTEwOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LRRD BY MD</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Interim reports for 1 provider (manual queue)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>INTERIM REPORTS FOR 1 PROVIDER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option reports all verified results for one day for one provider.
+The user will request the date and provider.  This option will only
+print verified results.  The date requested should be the date the
+lab work was collected.  This option is to be used for information only
+and should not be charted.
+The report prints site codes for tests.  You will be asked if you would
+like to print an address page.  The address page prints on a separate page(s)
+at the end of the report and lists the performing lab name, address and site
+code.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>SINGLE^<a href="http://code.osehra.org/dox/Routine_LRRD.html">LRRD</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

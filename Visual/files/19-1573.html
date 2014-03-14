@@ -1,0 +1,86 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTU3Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENPLM04 (1573) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTU3Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENPLM04</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>NRM Prioritization Scoring Sheet</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>NRM PRIORITIZATION SCORING SHE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option prints the NRM Prioritization Methodology Scoring sheet on
+terminal display or 80 column printer.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>print</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-18.html">ENGINEERING</a></td>
+</tr>
+<tr>
+<td>DIC {DIP}</td>
+<td>ENG("PROJ",</td>
+</tr>
+<tr>
+<td>L.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FLDS</td>
+<td>[ENPLP003]</td>
+</tr>
+<tr>
+<td>BY</td>
+<td>.01</td>
+</tr>
+<tr>
+<td>DIS(0)</td>
+<td>I $D(^ENG("PROJ",D0,0)),$P(^(0),U,6)="NR"</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

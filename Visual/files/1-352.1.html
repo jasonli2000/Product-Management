@@ -1,0 +1,50 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zNTIuMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>BILLABLE APPOINTMENT TYPE (352.1) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zNTIuMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>BILLABLE APPOINTMENT TYPE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Records for each appointment type with indicators for  IGNORE 
+MEANS TEST, PRINT ON INSURANCE REPORT, and DISPLAY ON INPUT
+SCREEN.  Also contains effective date of determination.
+Accessed by extrinsic function ^IBEFUNC.
+ 
+Per VHA Directive 10-93-142, this file definition should not be modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

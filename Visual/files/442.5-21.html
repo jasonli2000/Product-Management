@@ -1,0 +1,61 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NDQyLjUtMjE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>1358 OBLIGATION (21) &nbsp;&nbsp;  PAT TYPE (442.5)</h1>
+<div id="demo"><table id="NDQyLjUtMjE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>1358 OBLIGATION</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>1358</td>
+</tr>
+<tr>
+<td>ORDER</td>
+<td>21</td>
+</tr>
+<tr>
+<td>REC RPT REQUIRED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The original 1358 form is entered by a service.  Fiscal then obligates
+for the entire estimated 1358 amount.  As the service receives charges
+from the vendor against the 1358, they are entered, then at the end of
+each month, an adjustment is made by Fiscal for the actual amount
+charged against the 1358.  No processing takes place in Supply.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjIw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUTM ERROR SCREEN LIST (220) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjIw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUTM ERROR SCREEN LIST</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>List Error Screens</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LIST ERROR SCREENS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the user to see the error screens that are currently
+in place.  An error screen is a string of characters.  Any error that
+Task Manager logs will be checked against the list of error screens.
+If an error occurs whose $ZE string contains a screen as a substring,
+then that error will not be logged.  Some error screens count the number
+of errors that they prevent from being logged.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>SCLIST^<a href="http://code.osehra.org/dox/Routine_XUTMKE1.html">XUTMKE1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

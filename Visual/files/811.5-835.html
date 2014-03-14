@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjUtODM1").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-MH APPT KEPT (835) &nbsp;&nbsp;  REMINDER TERM (811.5)</h1>
+<div id="demo"><table id="ODExLjUtODM1" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-MH APPT KEPT</td>
+</tr>
+<tr>
+<td>FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.4-15.html">VA-APPOINTMENTS FOR A PATIENT</a></dt>
+<dt>CONDITION:  &nbsp;&nbsp;I +V("OUTPATIENT ENCOUNTER IEN")>0!(+V("CHECK-OUT DATE/TIME")>0)</dt>
+<dt>INTERNAL CONDITION:  &nbsp;&nbsp;I +$G(V("OUTPATIENT ENCOUNTER IEN"))>0!(+$G(V("CHECK-OUT DATE/TIME"))>0)</dt>
+<dt>V SUBSCRIPT LIST:  &nbsp;&nbsp;"OUTPATIENT ENCOUNTER IEN";"CHECK-OUT DATE/TIME";</dt>
+<dt>COMPUTED FINDING PARAMETER:  &nbsp;&nbsp;FLDS:1,2,3,11,12^STATUS:R^LL:VA-MH NO SHOW APPT CLINICS LL</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>SPONSOR</td>
+<td><a href="811.6-11.html">Office of Mental Health Services</a></td>
+</tr>
+<tr>
+<td>EDIT HISTORY</td>
+<td>
+<ol>
+<li>
+<dt>EDIT DATE:  &nbsp;&nbsp;2013-05-16 12:56:09</dt>
+<dt>EDIT BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>EDIT COMMENTS:  &nbsp;&nbsp;<pre>
+Exchange Install
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

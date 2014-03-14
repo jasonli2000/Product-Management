@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTQyLjEtMjUw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>CLINICAL REMINDERS FINDINGS (250) &nbsp;&nbsp;  HEALTH SUMMARY COMPONENT (142.1)</h1>
+<div id="demo"><table id="MTQyLjEtMjUw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>CLINICAL REMINDERS FINDINGS</td>
+</tr>
+<tr>
+<td>PRINT ROUTINE</td>
+<td>MAIN;GMTSPXHR</td>
+</tr>
+<tr>
+<td>EXTERNAL/EXTRACT ROUTINE</td>
+<td>
+<ol>
+<li>
+<dt>EXTERNAL/EXTRACT ROUTINE:  &nbsp;&nbsp;MAIN;PXRM(DFN,SEG,FLG)</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>CF</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This component lists reminders findings for reminders that are due and not
+due as does the CRS component.
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>SELECTION FILE</td>
+<td>
+<ol>
+<li>
+<dt>SELECTION FILE:  &nbsp;&nbsp;<a href="1-811.9.html">REMINDER DEFINITION</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DEFAULT HEADER NAME</td>
+<td>Reminders Findings</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

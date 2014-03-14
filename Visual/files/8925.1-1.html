@@ -1,0 +1,183 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODkyNS4xLTE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DISCHARGE SUMMARY (1) &nbsp;&nbsp;  TIU DOCUMENT DEFINITION (8925.1)</h1>
+<div id="demo"><table id="ODkyNS4xLTE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DISCHARGE SUMMARY</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>DCS</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>Discharge Summary</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>TITLE</td>
+</tr>
+<tr>
+<td>CLASS OWNER</td>
+<td><a href="8930-55.html">CLINICAL COORDINATOR</a></td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td><a href="8925.6-11.html">ACTIVE</a></td>
+</tr>
+<tr>
+<td>NATIONAL STANDARD</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>UPLOAD TARGET FILE</td>
+<td><a href="1-8925.html">TIU DOCUMENT</a></td>
+</tr>
+<tr>
+<td>LAYGO ALLOWED</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>TARGET TEXT FIELD SUBSCRIPT</td>
+<td>2;TEXT</td>
+</tr>
+<tr>
+<td>UPLOAD CAPTIONED ASCII HEADER</td>
+<td>
+<ol>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;PATIENT SSN</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;SSN</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;.02</dt>
+<dt>LOOKUP LOCAL VARIABLE NAME:  &nbsp;&nbsp;TIUSSN</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;555-12-1234</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+<dt>TRANSFORM CODE:  &nbsp;&nbsp;S:X?3N1P2N1P4N.E X=$TR(X,"-/","")</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;DATE OF ADMISSION</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;ADMISSION DATE</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;.07</dt>
+<dt>LOOKUP LOCAL VARIABLE NAME:  &nbsp;&nbsp;TIUADT</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;03/30/93</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;DICTATED BY</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;DICTATING PROVIDER</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;1202</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;DOOGEY P. HOWSER, M.D.</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+<dt>TRANSFORM CODE:  &nbsp;&nbsp;S X=$$INAME^TIULS(X)</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;DICTATION DATE</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;DICTATION DATE</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;1307</dt>
+<dt>LOOKUP LOCAL VARIABLE NAME:  &nbsp;&nbsp;TIUDICDT</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;04/03/93</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;NO</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;ATTENDING PHYSICIAN</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;ATTENDING PHYSICIAN</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;1209</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;MARCUS C. WELBY, M.D.</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+<dt>TRANSFORM CODE:  &nbsp;&nbsp;S X=$$INAME^TIULS(X)</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;TRANSCRIPTIONIST</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;TRANSCRIPTIONIST ID</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;1302</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;T1212</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;URGENCY</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;STAT OR ROUTINE</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;.09</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;PRIORITY</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>BOILERPLATE TEXT</td>
+<td><pre>
+DIAGNOSIS: 
+ 
+ 
+ 
+ 
+ 
+OPERATIONS/PROCEDURES:
+</pre>
+</td>
+</tr>
+<tr>
+<td>OK TO DISTRIBUTE</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>UPLOAD LOOK-UP METHOD</td>
+<td>D LOOKUP^<a href="http://code.osehra.org/dox/Routine_TIUPUTU.html">TIUPUTU</a></td>
+</tr>
+<tr>
+<td>UPLOAD POST-FILING CODE</td>
+<td>D FOLLOWUP^<a href="http://code.osehra.org/dox/Routine_TIUPUTU.html">TIUPUTU</a>(TIUREC("#"))</td>
+</tr>
+<tr>
+<td>UPLOAD FILING ERROR CODE</td>
+<td>D GETPAT^<a href="http://code.osehra.org/dox/Routine_TIUCHLP.html">TIUCHLP</a></td>
+</tr>
+<tr>
+<td>EDIT TEMPLATE</td>
+<td>[TIU ENTER/EDIT DS]</td>
+</tr>
+<tr>
+<td>PRINT METHOD</td>
+<td>D ENTRY^<a href="http://code.osehra.org/dox/Routine_TIUPRDS.html">TIUPRDS</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1997-10-06 10:19:35</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

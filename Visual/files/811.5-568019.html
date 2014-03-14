@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjUtNTY4MDE5").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-ACTIVE DUTY (568019) &nbsp;&nbsp;  REMINDER TERM (811.5)</h1>
+<div id="demo"><table id="ODExLjUtNTY4MDE5" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-ACTIVE DUTY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This reminder term is included in the OEF/OIF Post-Deployment Reminder 
+and in the TBI Screening Reminder in order to allow sites to screen 
+active duty patients if a site so chooses.  The computed finding 
+VA-PATIENT TYPE can be included in this term if a site makes a decision 
+to screen active duty patients.  The CF should be added to this term with 
+a condition of I V="ACTIVE DUTY".
+ 
+If a patient is listed as active duty in the TYPE field in the patient 
+file (field 391), then this finding will be true and the reminder will be 
+due.
+ 
+If a site chooses not to screen active duty personnel, then this CF 
+should be left out of or removed from the reminder term.  In this 
+situation, the reminder term should be empty.
+ 
+This term was exported empty in patch PXRM*2*11 since a very limited 
+number of sites screen active duty patients.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>SPONSOR</td>
+<td><a href="811.6-20.html">Office of Public Health and Environmental Hazards</a></td>
+</tr>
+<tr>
+<td>EDIT HISTORY</td>
+<td>
+<ol>
+<li>
+<dt>EDIT DATE:  &nbsp;&nbsp;2009-11-18 09:57:07</dt>
+<dt>EDIT BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>EDIT COMMENTS:  &nbsp;&nbsp;<pre>
+Exchange Install
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

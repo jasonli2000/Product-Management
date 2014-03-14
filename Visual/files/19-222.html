@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjIy").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUTM ERROR SCREEN EDIT (222) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjIy" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUTM ERROR SCREEN EDIT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Edit Error Screens</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>EDIT ERROR SCREENS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Allows user to edit error screens.  This involves deciding whether or not
+each edited screen should count the errors that occur while the screen
+is in place, and whether to reset counters for screens that have already
+counted some screened errors.  The screens themselves are just strings
+of characters that Task Manager compares against the $ZE values of all
+errors it traps.  Those errors whose $ZE values do not contain any screens
+as substrings are logged, but those that do are not logged.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>SCRED^<a href="http://code.osehra.org/dox/Routine_XUTMKE2.html">XUTMKE2</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,436 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjktNDU3").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-MHV PNEUMOVAX (457) &nbsp;&nbsp;  REMINDER DEFINITION (811.9)</h1>
+<div id="demo"><table id="ODExLjktNDU3" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-MHV PNEUMOVAX</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>Pneumonia Vaccine</td>
+</tr>
+<tr>
+<td>INACTIVE CHANGE DATE</td>
+<td>2003-10-22 16:13:51</td>
+</tr>
+<tr>
+<td>TECHNICAL DESCRIPTION</td>
+<td><pre>
+  Reminder due for patients ages 19-64 with certain chronic medical 
+conditions or high risk diagnosis  and all patients age 65 and older.  
+ 
+  The reminder is resolved if neither of the 2 national reminder for 
+pneumococcal vaccination are due.  Since this MHV reminder is dependent 
+on those 2 reminders for evaluation, the 2 national reminders listed below
+SHOULD NOT BE INACTIVATED.
+ 
+ 
+VA-PNEUMOCOCCAL IMMUNIZATION PCV13 
+VA-PNEUMOCOCCAL IMMUNIZATION PPSV23
+</pre>
+</td>
+</tr>
+<tr>
+<td>BASELINE AGE FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;99Y</dt>
+<dt>MINIMUM AGE:  &nbsp;&nbsp;65</dt>
+<dt>NO. OF AGE MATCH LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF AGE NO MATCH LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;0Y</dt>
+<dt>MAXIMUM AGE:  &nbsp;&nbsp;64</dt>
+<dt>NO. OF AGE MATCH LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF AGE NO MATCH LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-1649.html">VA-PNEUMOC PPSV23 IMMUNIZATION</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+\\
+You received Pneumovax (pneumonia vaccine) in the past.  If you received
+the vaccine before age 65, you may need a second dose if it has been 5 or
+more years since your first dose.  Ask your primary care team (PACT) if
+you need a second dose of this vaccine.
+\\
+</pre>
+</dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+\\
+There is no report in your medical record that you received the Pneumovax 
+vaccine.
+If you already received this important vaccine, please tell your health
+care team at your next visit.  If you have not received this vaccine,
+please be sure to check with your primary care team (PACT) about getting
+it.\\
+</pre>
+</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;6</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;7</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-1650.html">VA-PNEUMOC PCV13 IMMUNIZATION</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+\\
+You received the Prevnar 13 vaccine in the past.  You should also receive 
+Pneumovax at least once and possibly more than once.  Ask your primary
+care team (PACT) about this.
+\\
+</pre>
+</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;5</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-1682.html">VA-PNEUMOC DZ RISK - HIGH</a></dt>
+<dt>MINIMUM AGE:  &nbsp;&nbsp;18</dt>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;99Y</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+\\
+Your medical record suggests that you have at least one health problem
+that puts you at higher risk of pneumonia. You should receive the
+Pneumovax vaccine.
+\\ 
+</pre>
+</dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-4Y</dt>
+<dt>OCCURRENCE COUNT:  &nbsp;&nbsp;2</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;5</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-1680.html">VA-PNEUMOC DZ RISK - IMMUNOCOMPROMISED</a></dt>
+<dt>MINIMUM AGE:  &nbsp;&nbsp;18</dt>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;99Y</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+\\
+Your medical record also suggests that you have at least one health
+problem that means should receive BOTH the Pneumovax and the Prevnar 13
+pneumonia vaccines.  Talk with your Primary Care (PACT) team about this.
+\\
+</pre>
+</dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-4Y</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;5</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-511.html">VA-MHV PREVNAR 13 NOT DUE</a></dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-512.html">VA-MHV PNEUMOVAX NOT DUE</a></dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-501.html">VA-PNEUMOC DZ RISK - CHEMO/IMMUNOSUPP DRUGS</a></dt>
+<dt>MINIMUM AGE:  &nbsp;&nbsp;18</dt>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;99Y</dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-1Y</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-1681.html">VA-PNEUMOC DZ RISK - HIGHEST/NOT IMMUNO COMP</a></dt>
+<dt>MINIMUM AGE:  &nbsp;&nbsp;18</dt>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;99Y</dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-541.html">VA-PNEUMOC DZ RISK - LONG TERM STEROIDS</a></dt>
+<dt>MINIMUM AGE:  &nbsp;&nbsp;18</dt>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;99Y</dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FUNCTION FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+\\
+There is no report in your medical record that you received the Prevnar 13
+vaccine.
+If you already received this important vaccine, please tell your health
+care team at your next visit.  If you have not received this vaccine,
+please be sure to check with your primary care team (PACT) about getting
+it.\\
+</pre>
+</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;FI(4)!FI(7)!FI(8)!FI(9)&'FI(2)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;4</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;7</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;8</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;4</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;9</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;5</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)!FN(2)!FN(3)!FN(4)&'FN(5)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;7</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERNAL PATIENT COHORT LOGIC</td>
+<td>(SEX)&(AGE)!FI(3)!FI(4)!FI(7)!FI(8)!FI(9)</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS COUNT</td>
+<td>7</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS LIST</td>
+<td>SEX;AGE;3;4;7;8;9</td>
+</tr>
+<tr>
+<td>CUSTOMIZED RESOLUTION LOGIC</td>
+<td>FI(5)&FI(6)</td>
+</tr>
+<tr>
+<td>INTERNAL RESOLUTION LOGIC</td>
+<td>FI(5)&FI(6)</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS COUNT</td>
+<td>2</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS LIST</td>
+<td>5;6</td>
+</tr>
+<tr>
+<td>AGE FINDINGS COUNT</td>
+<td>5</td>
+</tr>
+<tr>
+<td>AGE FINDINGS LIST</td>
+<td>3;4;7;8;9</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS COUNT</td>
+<td>3</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS LIST</td>
+<td>1;2;FF1</td>
+</tr>
+<tr>
+<td>WEB SITES</td>
+<td>
+<ol>
+<li>
+<dt>URL:  &nbsp;&nbsp;http://www.cdc.gov/vaccines/hcp/vis/vis-statements/pcv13.html</dt>
+<dt>WEB SITE TITLE:  &nbsp;&nbsp;CDC Website on Pneumococcal CONJUGATE Vaccine (Prevnar 13)</dt>
+</li>
+<li>
+<dt>URL:  &nbsp;&nbsp;http://www.cdc.gov/vaccines/hcp/vis/vis-statements/ppv.html</dt>
+<dt>WEB SITE TITLE:  &nbsp;&nbsp;CDC Website- Pneumococcal POLYSACCHARIDE Vaccine (Pneumovax)</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>GENERAL COHORT FOUND TEXT</td>
+<td><pre>
+\\
+    There are now two pneumococcal vaccines: Pneumovax and Prevnar 13.  
+Talk with your health care team to find out if you should receive one or
+both of these vaccines.
+ 
+    Many different types of bacteria and viruses can cause pneumonia.  
+Pneumococcal vaccines will help to protect you against one of the most 
+common types of bacteria.  These vaccines help prevent the pneumonia from
+becoming severe and help to keep the bacteria from going into the blood
+stream.
+ 
+    There are two different pneumonia vaccines: POLYSACCHARIDE
+(Pneumovax) and CONJUGATE (Prevnar 13).  Talk with your Primary care
+(PACT) team about whether you should receive one or both of these
+vaccines.    
+ 
+    You may need a second dose of the Pneumovax vaccine depending on your
+medical conditions and when you received the first pneumonia vaccine.  If
+you need a second dose, it is usually administered at least 5 years after
+the first dose.  
+ 
+    Please call your primary care team (PACT) to find out how you can get 
+your pneumonia Vaccine. If you already had a pneumonia vaccine, please
+tell your Primary care team (PACT) which vaccine you had at your next
+visit.  Please bring a written record from the place that gave you the 
+vaccine to your next visit.
+\\
+</pre>
+</td>
+</tr>
+<tr>
+<td># OF GEN. COHORT FOUND LINES</td>
+<td>27</td>
+</tr>
+<tr>
+<td># GEN. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>SPONSOR</td>
+<td><a href="811.6-3.html">VA National Center for Health Promotion and Disease Prevention (NCP)</a></td>
+</tr>
+<tr>
+<td>USAGE</td>
+<td>CPR</td>
+</tr>
+<tr>
+<td>EDIT HISTORY</td>
+<td>
+<ol>
+<li>
+<dt>EDIT DATE:  &nbsp;&nbsp;2014-03-06 10:05:08</dt>
+<dt>EDIT BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>EDIT COMMENTS:  &nbsp;&nbsp;<pre>
+Exchange Install
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

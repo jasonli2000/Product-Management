@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA0OTc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSO REJECTS WORKLIST (10497) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA0OTc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSO REJECTS WORKLIST</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Third Party Payer Rejects - Worklist</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>THIRD PARTY PAYER REJECTS - WO</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>PSORPH</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option gives user the ability to process Third Party Payer Rejects for
+one, multiple or all Outpatient Pharmacy Divisions. Only OPEN/UNRESOLVED 
+rejects that have clinical significance, such as DUR (Drug Utilization Review)
+and Fill Too Soon, are added to the Worklist. Once the reject is marked 
+CLOSED/RESOLVED it is automatically removed from the Worklist.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-60.html">OUTPATIENT PHARMACY</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PSOREJP0.html">PSOREJP0</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

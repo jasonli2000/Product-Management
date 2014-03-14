@@ -1,0 +1,90 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA5NjY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VBEC BB COMPONENTS ENABLE (10966) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA5NjY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VBEC BB COMPONENTS ENABLE</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Enable VistA Blood Bank components</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ENABLE VISTA BLOOD BANK COMPON</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will allow the user to re-enable specific VistA Blood Bank
+options, files, and fields that have been disabled by running the option 
+to Disable VistA Blood Bank components.  It should NOT be run on a 
+production system after the data conversion is started.  The VistA Blood 
+Bank options should remain disabled after the data conversion. 
+ 
+This option can be run when operating in test mode, after testing the 
+database conversion on a test system.  It will make the VistA Blood Bank 
+menus and options accessible once again to anyone testing the data 
+conversion.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K VBECECHO</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S VBECECHO=""</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^VBECDC19(0)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

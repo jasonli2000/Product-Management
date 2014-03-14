@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTE0MjM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCHJ TRANS REPORT (11423) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTE0MjM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCHJ TRANS REPORT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Transaction Report - eCMS/IFCAP</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>TRANSACTION REPORT - ECMS/IFCA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This report displays information about HL7 transactions that take place 
+between eCMS and IFCAP. Only users defined as PPM ACCOUNTABLE OFFICERS
+or MANAGER can use this option.
+This option is accessed from the Accountable Officer Menu.
+The report is generated from data stored in the IFCAP/ECMS TRANSACTION
+file [414.06].
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-52.html">IFCAP</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_PRCHJRP5.html">PRCHJRP5</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

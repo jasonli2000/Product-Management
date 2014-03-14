@@ -1,0 +1,87 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTEzNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQSRV-MAIL (136) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTEzNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQSRV-MAIL</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Local and Network Server Mail</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+   
+   Servers are heavily dependant upon the Mail System.  The server
+option is awakened by a mail message (called a "server request"),
+and once awakened it uses the mail to notify the local site of the
+request and it's disposition using [bulletins].  The server can also
+send a message in reply if requested to do so by the Site Manager.
+   When a server request is recieved the server software captures
+the name and return address of the sender.  It then checks a set of
+codes in the REPLY field of the Option File to see if a reply is to
+be sent for this request.  The possible codes in this field include:
+"N" for no, don't send any reply; "R" for reply in all cases; and 
+"E" for reply only in the case of an error.
+   If a reply is to be sent the software composes a mail message and
+calls MailMan to send it to the person who originated the server 
+request.  This may be a local message, or a network mail message.4
+   The programmer who writes a program to be run by a server-type
+option may include information in the bulletins or reply messages
+by loading that information into the local array XQSTXT.  This
+array will automatically be appended to the end of the reply message
+and/or bulletin after the program has been run.
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;BULLETINS</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-135.html">XQSRV-BULLETINS</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1990-05-23 13:42:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

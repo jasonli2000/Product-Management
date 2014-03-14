@@ -1,0 +1,121 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODAuMy0xNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>HEMATOPOIETIC,IMMUNITY (16) &nbsp;&nbsp;  MAJOR DIAGNOSTIC CATEGORY (80.3)</h1>
+<div id="demo"><table id="ODAuMy0xNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>HEMATOPOIETIC,IMMUNITY</td>
+</tr>
+<tr>
+<td>DISORDER/PROCEDURE</td>
+<td>
+<ol>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;SPLENECTOMY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;392</dt>
+<dt>DRGb:  &nbsp;&nbsp;393</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE<18:393,1:392),FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE<18:393,1:392),FIN=1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;OTHER OR PROCEDURE:BLOOD,IMMUNITY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;394</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;RED BLOOD CELL DISORDER</dt>
+<dt>DRGa:  &nbsp;&nbsp;395</dt>
+<dt>DRGb:  &nbsp;&nbsp;396</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE<18:396,1:395),FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE S DRG=$S(AGE<18:396,1:395),FIN=1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;COAGULATION DISORDER</dt>
+<dt>DRGa:  &nbsp;&nbsp;397</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;BLOOD/BLOOD-FORMING/IMMUNITY DISORDER</dt>
+<dt>DRGa:  &nbsp;&nbsp;398</dt>
+<dt>DRGb:  &nbsp;&nbsp;399</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE>69:398,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:398,1:399)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE>69:398,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:398,1:399)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;OTHER OR PROCEDURE:BLOOD,IMMUNITY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;394</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;BLOOD/BLOOD-FORMING/IMMUNITY DISORDER</dt>
+<dt>DRGa:  &nbsp;&nbsp;398</dt>
+<dt>DRGb:  &nbsp;&nbsp;399</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE>69:398,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:398,1:399)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

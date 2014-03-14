@@ -1,0 +1,153 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuNC0xOTY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ABL 500 UNI (196) &nbsp;&nbsp;  AUTO INSTRUMENT (62.4)</h1>
+<div id="demo"><table id="NjIuNC0xOTY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ABL 500 UNI</td>
+</tr>
+<tr>
+<td>PROGRAM</td>
+<td>LAABL500</td>
+</tr>
+<tr>
+<td>ENTRY for LAGEN ROUTINE</td>
+<td>Accession cross-reference</td>
+</tr>
+<tr>
+<td>CROSS LINKED BY</td>
+<td>ID</td>
+</tr>
+<tr>
+<td>METHOD</td>
+<td>ABL 500</td>
+</tr>
+<tr>
+<td>OVERLAY DATA</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>NEW DATA</td>
+<td>D NEW^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>RESTART</td>
+<td>D RESTART^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>INTERFACE NOTES</td>
+<td><pre>
+Released in patch LR*5.1*117, 1/5/94
+
+ Select TEST: FIO2 
+  ARE YOU ADDING 'FIO2' AS A NEW CHEM TESTS (THE 1ST FOR THIS AUTO 
+          INSTRUMENT)? Y   (YES) 
+    CHEM TESTS NUMBER: 1// 
+  PARAM 1: 
+  PARAM 2: 
+  PARAM 3: FIO2 
+  DOWNLOAD CODE: 
+ Select TEST: COHB% 
+  ARE YOU ADDING 'COHB%' AS A NEW CHEM TESTS (THE 2ND FOR THIS AUTO 
+         INSTRUMENT)? Y  (YES) 
+     CHEM TESTS NUMBER: 2// 
+  PARAM 1: 
+  PARAM 2: 
+  PARAM 3: COHb% 
+  DOWNLOAD CODE: 
+ Select TEST: (continue entering all tests that this instrument will run 
+              using PARAM 3 to hold the identifier as transmitted by the 
+              ABL500.) 
+
+ Sample LA datastream: 
+ ^LA(209,0) = ABL 500 DATASTREAM 
+ ^LA(209,"ENV") = VAH^ROU^5000V1 
+ ^LA(209,"I") = 50 
+ ^LA(209,"I",0) = 0 
+ ^LA(209,"I",1) = 5H|\^&amp;||ABL500^||||1|19930518135924| 
+ ^LA(209,"I",2) = P|1||16||^||U|||0^years|0^cm|0^kg||||
+ ^LA(209,"I",3) = O|1||Sample #^2766|||||||Blood^Arterial| 
+ ^LA(209,"I",4) = R|1|^^^FIO2^D|21.0|%||F|3952|19930518135825| 
+ ^LA(209,"I",5) = R|2|^^^RQ^D|0.86|||F 
+ ^LA(209,"I",6) = R|3|^^^T^D|37.0|Cel||F 
+ ^LA(209,"I",7) = R|4|^^^Qt^I|.....|L/min||X 
+ ^LA(209,"I",8) = R|5|^^^VO2^I|.....|mL/min||X 
+ ^LA(209,"I",9) = R|6|^^^AaDpO2^E|32.5|mmHg||F 
+ ^LA(209,"I",10) = R|7|^^^AaDpO2,T^E|32.5|mmHg||F 
+ ^LA(209,"I",11) = R|8|^^^ABE^C|-0.6|mmol/L||F 
+ ^LA(209,"I",12) = R|9|^^^a/ApO2^E|65.5|%||F 
+ ^LA(209,"I",13) = R|10|^^^a/ApO2,T^E|65.5|%||F 
+ ^LA(209,"I",14) = R|11|^^^COHb^M|1.9|%||F|||OSM| 
+ ^LA(209,"I",15) = R|12|^^^cx^C|2.6|Vol %||F 
+ ^LA(209,"I",16) = R|13|^^^DO2|.....|mL/min||X 
+ ^LA(209,"I",17) = R|14|^^^HbF|0.0|%||F|||OSM| 
+ ^LA(209,"I",18) = R|15|^^^HCO3-^C|24.3|mmol/L||F 
+ ^LA(209,"I",19) = R|16|^^^Hct^C|27.6|%||F 
+ ^LA(209,"I",20) = R|17|^^^MetHb^M|0.7|%||F|||OSM| 
+ ^LA(209,"I",21) = R|18|^^^O2CAP^C|12.1|Vol %||F 
+ ^LA(209,"I",22) = R|19|^^^O2Hb^M|87.9|%||F|||OSM| 
+ ^LA(209,"I",23) = R|20|^^^pCO2^M|44.5|mmHg||F 
+ ^LA(209,"I",24) = R|21|^^^pCO2(T)^M|44.5|mmHg||F 
+ ^LA(209,"I",25) = R|22|^^^pH^M|7.358|||F 
+ ^LA(209,"I",26) = R|23|^^^pH(st)^C|7.390|||F 
+ ^LA(209,"I",27) = R|24|^^^pH(T)^M|7.358|||F 
+ ^LA(209,"I",28) = R|25|^^^pO2^M|61.7|mmHg||F 
+ ^LA(209,"I",29) = R|26|^^^pO2(A)^E|94.2|mmHg||F 
+ ^LA(209,"I",30) = R|27|^^^pO2(A),T^E|94.2|mmHg||F 
+ ^LA(209,"I",31) = R|28|^^^pO2(T)^M|61.7|mmHg||F 
+ ^LA(209,"I",32) = R|29|^^^px^C|27.2|mmHg||F 
+ ^LA(209,"I",33) = R|30|^^^p50(act)^C|27.91|mmHg||F 
+ ^LA(209,"I",34) = R|31|^^^p50(act),T^C|27.91|mmHg||F 
+ ^LA(209,"I",35) = R|32|^^^p50(st)^C|27.40|mmHg||F 
+ ^LA(209,"I",36) = R|33|^^^Qx^C|2.0|||F 
+ ^LA(209,"I",37) = R|34|^^^RHb^C|9.5|%||F 
+ ^LA(209,"I",38) = R|35|^^^RI^E|53|%||F 
+ ^LA(209,"I",39) = R|36|^^^RI,T^E|53|%||F 
+ ^LA(209,"I",40) = R|37|^^^SBC^C|23.8|mmol/L||F 
+ ^LA(209,"I",41) = R|38|^^^SBE^C|-0.4|mmol/L||F 
+ ^LA(209,"I",42) = R|39|^^^Shunt^E|14.8|%||F 
+ ^LA(209,"I",43) = R|40|^^^Shunt,T^E|14.8|%||F 
+ ^LA(209,"I",44) = R|41|^^^sO2^M|90.2|%||F|||OSM| 
+ ^LA(209,"I",45) = R|42|^^^tCO2(B)^C|23.2|mmol/L||F 
+ ^LA(209,"I",46) = R|43|^^^tCO2(P)^C|25.7|mmol/L||F 
+ ^LA(209,"I",47) = R|44|^^^tHb^M|8.9|g/dL||F|||OSM| 
+ ^LA(209,"I",48) = R|45|^^^tO2^C|11.1|Vol %||F 
+ ^LA(209,"I",49) = L|1|N 
+ ^LA(209,"I",50) = ~CLA(309,"I",448) Global ^ 
+</pre>
+</td>
+</tr>
+<tr>
+<td>METH NAME</td>
+<td><a href="62.4-196.html">ABL 500 UNI</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,69 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zNTA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>INTEGRATED BILLING ACTION (350) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zNTA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>INTEGRATED BILLING ACTION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+DO NOT delete entries in this file.  DO NOT edit data in this file with
+VA File Manager.
+ 
+Entries in this file are created by other applications calling approved
+application specific routines.  This file is the link between Accounts
+Receivable and an application.  Integrated billing will attempt to
+aggregate charges where possible to reduce the number of account 
+entries necessary.  Resolution of charges from Accounts Receivable would
+then be accomplished through Integrated Billing.
+ 
+Entries in this file will not be deleted or edited (except for the
+status field, cancellation reasons filed, last updated field, and
+user last updating field).  Rather than deleting an entry, an entry
+is "reversed" by creating an additional entry with the IB ACTION TYPE
+entry that cancels the original entry.  An entry is edited by creating
+the cancellation entry and then adding an updated new entry.  All entries
+related to the original entry will be related by the PARENT LINK field.
+ 
+There is also an IB ACTION type that is an event, which may include
+Hospital admissions, NHCU admissions, and outpatient visits.  All of
+the charges associated with an event will be related to that event by
+the EVENT LINK field.
+ 
+ 
+Per VHA Directive 10-93-142, this file definition should not be modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

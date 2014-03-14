@@ -1,0 +1,83 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzM0Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LR WKLD ACC AREA LOCATION (7346) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzM0Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LR WKLD ACC AREA LOCATION</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Edit ACC Area OOS Locations</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>EDIT ACC AREA OOS LOCATIONS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Occasion Of Service (OOS)
+ 
+ This option is used to edit Accession Area's Laboratory OOS Location.
+If the Accession area is not defined, the system will prompt with the
+DEFAULT LAB OOS LOCATION.
+ If the Accession Area already has a LAB OOS LOCATION, the system will
+display the details about the location before you make a selection.
+ 
+Use this option when you want to assign a different Stop Code to a given
+Accession Area for NPCDB workload purposes. The DEFAULT LAB OOS LOCATION
+is used if the Accession Area has no LAB OOS LOCATION defined.
+ 
+The location you want to select must first exist it the HOSPITAL LOCATION
+file. You may create new LAB OOS LOCATIONS using the [LR WKLD LOCATION]
+option. You may use ?? at the Location prompt to view possible selection.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ACC^<a href="http://code.osehra.org/dox/Routine_LRCAPPH2.html">LRCAPPH2</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

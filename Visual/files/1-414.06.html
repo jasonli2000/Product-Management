@@ -1,0 +1,50 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS00MTQuMDY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IFCAP/ECMS TRANSACTION (414.06) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS00MTQuMDY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IFCAP/ECMS TRANSACTION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file is designed to hold the various types of transactions that support
+communication for the IFCAP and the Electronic Contract Management
+System (eCMS) interface.
+Reports from this file will be used by the IFCAP users to follow the
+interface activity to assure that communication with the eCMS vendor portal
+is timely and effective, and to provide contact information if needed.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

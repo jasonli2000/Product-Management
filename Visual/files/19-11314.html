@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTEzMTQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SD MH NO SHOW AD HOC REPORT (11314) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTEzMTQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SD MH NO SHOW AD HOC REPORT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>High Risk MH No-Show Adhoc Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>HIGH RISK MH NO-SHOW ADHOC REP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+    This report will list the patients who have the patient record flag for 
+High Risk for suicide and No Show an appointment in a mental health or non
+mental health clinic.
+    The report will list the patient, emergency contacts,next of kin,future 
+scheduled appointments. provider and results.
+    Mental Health clinics are face-to-face Mental Health appointments 
+defined in the "VA-MH NO SHOW APPT CLINICS LL" Reminder Location List.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-48.html">SCHEDULING</a></td>
+</tr>
+<tr>
+<td>XQUIT MESSAGE</td>
+<td><pre>
+ 
+</pre>
+</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_SDMHAD.html">SDMHAD</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

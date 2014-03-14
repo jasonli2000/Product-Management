@@ -1,0 +1,49 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0xLjUyMTY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SQLI_TABLE_ELEMENT (1.5216) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0xLjUyMTY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SQLI_TABLE_ELEMENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Names and domains of primary keys, columns and foreign keys.
+Each represents the relational concept of an attribute, whose essential
+charactaristics are a name (unique by relation) and a domain.
+ 
+See SQLI_PRIMARY_KEY, SQLI_COLUMN and SQLI_FOREIGN key for more.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

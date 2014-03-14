@@ -1,0 +1,112 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDY2").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XDR OPERATIONS MENU (466) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDY2" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XDR OPERATIONS MENU</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Operations</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>OPERATIONS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu contains options for operations.  These options are used by the
+primary reviewer along with the utilities menu.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-465.html">XDR VERIFY ALL</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;VPD</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-8387.html">XDR ANCILLARY REVIEW</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;ADR</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;6</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-8388.html">XDR APPROVE FOR MERGE</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;APP</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-5.html">TOOLKIT</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>W:$D(IOF) @IOF W !,"Duplicate Resolution System Menu",!</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>W:$D(IOF) @IOF W !,"Duplicate Resolution Operations Menu",!</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1998-10-16 14:53:21</td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>1987-04-03 12:11:21</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

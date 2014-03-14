@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA4Mzc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGHT PATIENT INACTIVATION (10837) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA4Mzc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGHT PATIENT INACTIVATION</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Patient Inactivation</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PATIENT INACTIVATION</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>Activation of option requires OCC approval.</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to deactivate patients from Home Telehealth care
+provided by a vendor.  Once okayed for transmission, A03 type HL7 message
+will be generated and sent to the appropriate Home Telehealth vendor server 
+via the Austin Interface Engine.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_DGHTINAC.html">DGHTINAC</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

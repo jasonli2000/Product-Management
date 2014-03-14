@@ -1,0 +1,83 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTE4Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LA7 UNITS/NORMALS CHANGED (183) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTE4Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LA7 UNITS/NORMALS CHANGED</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>REFERENCE LAB UNITS/NORMALS CHANGED</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Mail bulletin created by Laboratory package when processing a LEDI
+interface type HL7 result (ORU) message which contains laboratory
+test result units and/or normals different from values specified for
+test in LABORATORY TEST file (#60) and which are flagged to be used
+for reference testing purposes.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+Laboratory results on the following patient have been received via a HL7
+interface that indicate the results have units and/or normals different
+from those specified in the LABORATORY TEST file (#60). Please use the
+appropriate laboratory option to review these units/normals on this system.
+ 
+ 
+       Interface: |1|
+     File #62.49: |2|
+ 
+    Patient Name: |3|
+      Patient ID: |4|
+ 
+     Specimen ID: |5|
+  Collection D/T: |6|
+    Test/analyte: |7|
+        Producer: |8|
+   Producer's ID: |9|
+        File #60: |10|
+ 
+ 
+      Observation
+      -----------
+           Units: |11|
+       Ref range: |12|
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

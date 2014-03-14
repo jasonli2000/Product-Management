@@ -1,0 +1,66 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My4yLTMxMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>P-PROCOMHP.LASER (312) &nbsp;&nbsp;  TERMINAL TYPE (3.2)</h1>
+<div id="demo"><table id="My4yLTMxMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>P-PROCOMHP.LASER</td>
+</tr>
+<tr>
+<td>RIGHT MARGIN</td>
+<td>120</td>
+</tr>
+<tr>
+<td>FORM FEED</td>
+<td>#</td>
+</tr>
+<tr>
+<td>PAGE LENGTH</td>
+<td>60</td>
+</tr>
+<tr>
+<td>BACK SPACE</td>
+<td>$C(8)</td>
+</tr>
+<tr>
+<td>OPEN EXECUTE</td>
+<td>W *27,"E",*27,"[5i",*27,"(s16.7H",*27,"&l6D",*27,"&a12L",*27,"&a120M"</td>
+</tr>
+<tr>
+<td>CLOSE EXECUTE</td>
+<td>W *27,"E",*27,"[4i"</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td>Laser with 10 pitch, 6 lpi, upright, asking left margin</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

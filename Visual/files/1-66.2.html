@@ -1,0 +1,64 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02Ni4y").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>BLOOD BANK VALIDATION (66.2) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02Ni4y" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>BLOOD BANK VALIDATION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Provides mechanism for documenting the mandated validation of the Blood
+Bank software options.  Data entry in the file is NOT intended to 
+replace the mandated documentation of the validation testing, including:
+(1) observations from testing, e.g. screen prints, logging files, 
+printed reports, written transcriptions, data tapes, data disks, etc.,
+(2) a record/log of unusual occurrences, bugs, deviations from the
+BB User Manual &amp; resoltuion, or (3) final approval by other responsible
+individuals, including the BB Medical Director and the LIM.  It MAY
+be used to replace the documentation of the review, the acceptability/
+outcome of the review, the date/signature of approval and the date
+of implementation.  
+ 
+This file offers longitudinal tracking of validation of the software
+to include the release of new versions, the installation of patches and
+the installation of any local modifications.
+ 
+The content and the formatting of the file is consistent with the
+worksheets provided in the Blood Bank User Manual and the Technical
+Manual and complies with the requirements of the the American
+Association of Blood Bank and the Food and Drug Administration.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

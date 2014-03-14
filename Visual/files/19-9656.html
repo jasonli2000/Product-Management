@@ -1,0 +1,83 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTY1Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSD NM RX WITHOUT VA (9656) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTY1Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSD NM RX WITHOUT VA</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Patients Without VA Visit Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PATIENTS WITHOUT VA VISIT REPO</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option lists patients that receive prescriptions but have not had a
+VA clinic visit within one year of a RX release date for the date range
+entered.  Excluding RXs released on the same day as a discharge and within
+a user defined discharge date range.  Patients in Fee Basis and Aid and
+Attendance programs may be included on the list and should be reviewed.
+A message will display for RXs that meet the sort criteria and were
+released after the entered date of death for that patient. 
+This lists represents a potential diversion tactic that could be 
+employed to prevent detection and suspicion. 
+    
+This report should be queued to run during non-peak hours.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-83.html">CONTROLLED SUBSTANCES</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D ST^<a href="http://code.osehra.org/dox/Routine_PSDNMWE.html">PSDNMWE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

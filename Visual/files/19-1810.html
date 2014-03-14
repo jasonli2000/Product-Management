@@ -1,0 +1,126 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTgxMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORLP TEAM MENU (1810) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTgxMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORLP TEAM MENU</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Team List Mgmt Menu</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>TEAM LIST MGMT MENU</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Options on this menu allow you to create team patient lists.  You can
+create or add autolinks to a team list, review existing team lists, remove
+patients or users from team lists, delete autolinks from an existing team
+list or delete an entire team list.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-1800.html">ORLP EXAMINE/PRINT</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;EX</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-1798.html">ORLP TEAM ADD</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;CR</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-1801.html">ORLP TEAM DELETE USERS</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;PR</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-1843.html">ORLP TEAM DELETE AUTOLINKS</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;AL</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;6</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-1802.html">ORLP TEAM DELETE PATIENTS</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;PT</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-1844.html">ORLP TEAM DELETE</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;DE</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-8998.html">ORLP TEAM RENAME</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;RE</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;7</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-10893.html">ORLP TEAM LIST VISIBILITY</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;TV</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K LIST,^TMP("ORLP",$J,"TLIST"),^XUTL("OR",$J,"ORLP"),^("ORV"),^("ORU"),^("ORW") D END1^<a href="http://code.osehra.org/dox/Routine_ORLP.html">ORLP</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2009-04-21 15:51:19</td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>1993-12-10 13:58:41</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

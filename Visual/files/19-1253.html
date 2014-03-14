@@ -1,0 +1,91 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTI1Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LRUFCL (1253) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTI1Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LRUFCL</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Print future collection labels</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PRINT FUTURE COLLECTION LABELS</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>LRLAB</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+  This option is used to print labels/lists for Lab collect. This option
+has several possible usage. The routine will print any order which has
+the collection type of Lab Collect (LC) or Immediate Collection (IC).
+The type IC is what the ward uses to request specimen collection at a
+specific time outside of secheduled routine collection time (LC). Not
+all site will provide the IC service.
+  The option will prompt for dates to search for uncollected LC and
+IC collection types. The option will search those dates and print
+COLLECTION LABELS. A collection label differs from an Accession Label
+in two areas. 1) A collection label can printed only for uncollected
+specimens. 2) The collection label has no accession number, instead
+the requested collection time is printed. Except for these two areas
+the two labels have identical information.
+ A possible use for this option would be to print a list of patient
+collection labels in anticipation of computer down time or because
+computer down time. This option prints all orders having the type of
+LC or IC for the specified date(s). 
+  THE OPTION 'PRINT SINGLE FUTURE COLLECTION LABELS' should be used
+to obtain a single collection label.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_LRLABLD0.html">LRLABLD0</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

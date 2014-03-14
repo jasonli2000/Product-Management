@@ -1,0 +1,49 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OTAuNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>WV LETTER (790.6) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OTAuNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>WV LETTER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file holds a copy of the original generic notification letter which
+can be used to restore the sample letter in the Notification Purpose file
+(#790.404) if it is accidentally deleted. The actual restoration or
+placement of a copy of this letter in File 790.404 is performed by the
+case manager through the Add/Edit a Notification Purpose &amp; Letter option.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzE2OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCAT FMS OP REGEN (3168) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzE2OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCAT FMS OP REGEN</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Overpayment (OP) Document Regeneration</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>OVERPAYMENT (OP) DOCUMENT REGE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will allow a user to retransmit a "rejected" OP document.
+It will only allow the retransmission of an OP document that has actually
+been refunded in the AR package and has been rejected by FMS.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D TRANS^<a href="http://code.osehra.org/dox/Routine_PRCARFD2.html">PRCARFD2</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

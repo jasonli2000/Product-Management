@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTEyMDU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FSC U403 STATUS (1205) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTEyMDU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FSC U403 STATUS</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+                                 Status
+There are two fields that determine a status for a call.  There is a field
+for support status and a field for development status.  When making status
+changes, only a single status is entered (the two fields are filled in
+depending on the entry).  This allows for searches for calls that are
+specific for support or development.
+A support status can be open, refer to dev, vendor, closed, or canceled.
+A development status can be open, awaiting patch, next release, future
+release, refer to ep, closed, or canceled.
+Abbrev - status; sup status; dev status; available statuses to select
+O - open; O; null; C, R, V, X
+C - closed; C; null or C (if closed by dev); O
+R - refer to dev; R; O; O, C, E, P, N, F, X
+V - vendor; V; null; O, C, R, X
+E - refer to ep; R; E; O, C, R, P, N, F, X
+P - awaiting patch; R; P; O, C, R, E, N, F, X
+N - next release; R; N; O, C, R, E, P, F, X
+F - future release; R; F; O, C, R, E, P, N, X
+X - canceled; X; null or X (if canceled by dev); O
+A call that has been closed or canceled can be reopened by changing the
+status to open.  A status history is kept of all status changes.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1994-01-09 19:03:36</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

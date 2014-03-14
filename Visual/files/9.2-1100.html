@@ -1,0 +1,96 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExMDA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>EAS EZ STATUS SIGNED (1100) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExMDA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>EAS EZ STATUS SIGNED</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>SIGNED</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+After the enrollment clerk verifies that a 10-10EZ form has been received 
+with the Applicant's signature, its status is SIGNED.
+  
+It is not necessary to use Print 1010EZ before using Verify Signature.  If
+the enrollment clerk has not made any significant change to the original 
+10-10EZ data, and if the Applicant sent a signed 10-10EZ to the site, then 
+the enrollment clerk can issue the VZ command when the application is 
+IN REVIEW.
+  
+Actions that may be performed for SIGNED Applications are:
+  
+[PZ]  Print 1010EZ
+[UF]  Update Field
+[FZ]  File 1010EZ
+  
+It is possible to remove signature verification from a 10-10EZ
+by invoking the [Remove Signature Verification] menu option.
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;FZ</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-1108.html">EAS EZ ACTION FZ</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;PZ</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-1107.html">EAS EZ ACTION PZ</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;UF</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-1114.html">EAS EZ ACTION UF</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;REMOVE SIGNATURE VERIFICATION</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-1122.html">EAS EZ OPTION REMOVE SIG VERIF</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>2001-03-28 10:08:33</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

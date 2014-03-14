@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzg5OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSD MFG REPORT PRINT (3898) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzg5OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSD MFG REPORT PRINT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Manufacturer and Narcotic Information Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>MANUFACTURER AND NARCOTIC INFO</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This report prints an alphabetical listing of all ACTIVE drugs within an
+ACTIVE NAOU that have been defined in the DRUG ACCOUNTABILITY STATS file
+(#58.8). This report lists NAOU, drug name, manufacturer, lot #, expiration
+date, narcotic breakdown unit, and narcotic package size.  This report may
+be sorted alphabetically by NAOU, then drug name or drug name, then NAOU.
+The user may select one NAOU, several NAOUs, or all NAOUs to print.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-83.html">CONTROLLED SUBSTANCES</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PSDPMFG.html">PSDPMFG</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

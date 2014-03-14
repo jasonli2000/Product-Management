@@ -1,0 +1,90 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTM4Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OR PERSON (386) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTM4Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OR PERSON</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Personal Patient List Look-up</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+ 
+Entering all or part of a valid (non-provider) Person's name at the 
+prompt Select Patient(s) will cause the list to be rebuilt to include
+the patients in that person's PRIMARY patient list, and presented to
+you anew.  For example, if you wish to choose from all patient's
+in Mr. Bill Smallpotatoe's primary patient list, you may enter:
+ 
+                          METHUSELA,O.C. patient list
+ 
+1     DOE,WILLIAM C. (6572)             5     MUFFET,LITTELLA M (7689)
+2     ESSTEPON,GLORD (3234)             6     SPRAT,JACK (2342)
+3     KAPLON,DENNIS (3242)              7     TURNER,TOMMY (2342)
+4     MARLEY,JACOB (5678)
+ 
+Select Patient(s): SMALLPOTATOES,WILLIAM A.
+The current patient list will be cleared.
+ 
+                    
+ 
+ 
+ 
+ 
+ 
+                             BILL'S 1A patient list
+ 
+1     BLANDRU,AB (3333)                 5     NIVEK,BETA (3242)
+2     MARLEY,JACOB (5678)               6     NIVEK,GAMMA (4324)
+3     NEW,PATIENT (1234)                7     NIVEK,SIGMA (2379)
+4     NIVEK,ALPHA (8796)
+ 
+Select Patient(s): ALL,'BLANDRU     MARLEY,JACOB (5678)   
+                                    NEW,PATIENT (1234)    NIVEK,ALPHA (8796)
+                                    NIVEK,BETA (3242)    NIVEK,GAMMA (4324)   
+                                    NIVEK,SIGMA (2379)   
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1991-09-17 13:37:57</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

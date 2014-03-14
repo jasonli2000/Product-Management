@@ -1,0 +1,67 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzM1NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCHQ7 (7355) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzM1NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCHQ7</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Quote Vendor Inquiry</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>QUOTE VENDOR INQUIRY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option enables a user to view information about vendors on a
+selected RFQ.  The information includes what is on file for Ordering
+Address, Payment Address, and socioeconomic factors.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_PRCHQ11.html">PRCHQ11</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

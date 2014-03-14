@@ -1,0 +1,51 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS05MTIuNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ESP CRIME DATA (912.4) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS05MTIuNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ESP CRIME DATA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The ESP CRIME DATA file is used to capture data for the Police &amp;
+Security Monthly Crime Report.  This file allows for a specific
+date range selection so that the report can be run for alternate
+time periods.  The crime categories included are the only ones
+authorized by Police &amp; Security managmeent (VACO) for tracking
+criminal activity by the local sites.
+The file data is AUTO-GENERATED.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

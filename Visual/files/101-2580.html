@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI1ODA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSJU LM PLUP (2580) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI1ODA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSJU LM PLUP</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Update Pick List</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Allows the pharmacy personnel to update a pick list that has already been
+run but not yet started, picking up the new orders, renewed orders, and
+orders that were being edited when the pick list was first run.  This
+option allows the pharmacist to print only th updated orders, or the
+entire pick list, including the updated orders.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-77.html">INPATIENT MEDICATIONS</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>S VALMBCK="R"</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>N VAIN,VADM D FULL^<a href="http://code.osehra.org/dox/Routine_VALM1.html">VALM1</a>,^PSGPLUP</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-02-12 10:39:04</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

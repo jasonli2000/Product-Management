@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzE0").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XMSCRIPTPLAY (314) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzE0" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XMSCRIPTPLAY</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Play a script</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PLAY A SCRIPT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+If messages are queued in the Postmaster box for a given domain, you can
+start those messages transmitting immediately (in the foreground) by
+invoking this option.  (It will not create a task.  If you want to create
+a task, then use option XMSTARTQUE.)
+
+If you want to pull messages from another domain, this is the option to
+use, whether or not there are messages queued to transmit to that domain.
+(If you regularly pull messages from another domain, you may wish to
+consider polling that domain.  See option XMPOLL for more information.)
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-4.html">MAILMAN</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>PLAY^<a href="http://code.osehra.org/dox/Routine_XMCX.html">XMCX</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1990-12-11 11:01:27</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

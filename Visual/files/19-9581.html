@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTU4MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORCM QO ITEMS (9581) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTU4MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORCM QO ITEMS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Enter/edit QO restriction</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ENTER/EDIT QO RESTRICTION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows a site to mark orderable items for use within pre-
+defined quick orders only; these items will not be selectable when
+ordering via standard package order dialogs.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-35.html">ORDER ENTRY/RESULTS REPORTING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>QO^<a href="http://code.osehra.org/dox/Routine_ORCMEDT6.html">ORCMEDT6</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

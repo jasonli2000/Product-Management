@@ -1,0 +1,61 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03My4x").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RAD MODALITY DEFINED TERMS (73.1) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03My4x" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RAD MODALITY DEFINED TERMS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Rad Modality Defined Terms file is required by the VistA Imaging
+application; entries in this file are as defined in the DICOM Standards PS
+3.3 - 1998 under section General Series Attribute Descriptions
+(C.7.3.1.1).  The Radiology developers update entries in the file in
+accordance to changes in the DICOM Standards.  THIS FILE CAN NOT BE
+EDITED.
+ 
+This file is pointed to by the RAD/NUC MED PROCEDURE (#71), and for each
+active procedure a modality or modalities must be identified.  It is
+possible for a single procedure to be performed on multiple modalities.
+For example, a GASTROGRAPHIN UGI procedure can be done on a Radio
+Fluoroscopy and a Computed Radiography modality.
+ 
+VistA Imaging software will build a modality worklist using this file and
+the RAD/NUC MED PROCEDURE file entries.  The worklist identifies the
+scheduled radiology cases to be performed on the individual modality
+(equipment).
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,87 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTg1MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MCARECGCONV (5851) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTg1MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MCARECGCONV</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Convert Old Records to Released Not Verified</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CONVERT OLD RECORDS TO RELEASE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will convert old records or records that do not have a
+release status to Released Not Verified.  This option can only be used if
+Release Control/Electronic Signature is turned on.  It allows
+the non-key holders to view the old records but not edit them.  Before
+executing this option, turn on Release Control/Electronic Signature then
+go into Enter/Edit and select the records that you want to remain as
+Draft status.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D ^<a href="http://code.osehra.org/dox/Routine_MCDIEDIE.html">MCDIEDIE</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S MCPRO="ECG",MCICDSS="CAR"</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>CONV^<a href="http://code.osehra.org/dox/Routine_MCESCONV.html">MCESCONV</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

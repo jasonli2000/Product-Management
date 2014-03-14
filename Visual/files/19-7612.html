@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzYxMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LA7 ADL START/STOP (7612) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzYxMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LA7 ADL START/STOP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Start/Stop Auto Download Background Job</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>START/STOP AUTO DOWNLOAD BACKG</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Option to allow user to start/restart/stop the lab messaging pacakge's
+auto download background job. This option can be used to restart the auto
+download job after changes have been made to the auto instrument file and
+the auto download job needs to be updated to reflect the changes.
+ 
+It can also be used to temporarily suspend auto downloading while making
+changes. It will then keep a list of accessions to process and use this
+list when auto downloading is resumed.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-162.html">AUTHORIZATION/SUBSCRIPTION</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_LA7ADL2.html">LA7ADL2</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

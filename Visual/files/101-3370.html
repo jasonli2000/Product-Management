@@ -1,0 +1,148 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTMzNzA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DG FIELD MONITOR (3370) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTMzNzA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DG FIELD MONITOR</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>DG Field Monitor</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol is an event point which monitors the editing of fields in
+DG* application files.  At the time of this event point, the following
+variables will be present in the environment:
+ 
+        Variable        Description
+        --------        -----------------------------------------------
+        DGDA            DA array as exists during Fileman editing 
+        DGFILE          File or subfile number where changed field resides
+        DGFIELD         Number of changed field 
+        DGTYPE          Type of cross reference action (ADD, DELETE or UPDATE)
+        DGDTH           Date/time of change in $Horolog format 
+        DGUSER          DUZ of user that made the change 
+        DGOPT           Current menu option in "option_name^menu_text" format
+        DGX             X array as documented for Fileman new style x-refs 
+        DGX1            X1 array as documented for Fileman new style x-refs
+        DGX2            X2 array as documented for Fileman new style x-refs
+ 
+This protocol is triggered by "listener" cross references on selected
+fields.  By employing logic such as "If DGFILE=2, DGFIELD=.361,
+DGTYPE="ADD", then...", subscribers to this protocol may take action based
+on edit activity which involves those fields.
+ 
+This event point is designed to occur only once per field editing
+activity.  The DGTYPE variable can be interpreted as follows:
+ 
+       o  ADD transactions indicate that data has been added to a field
+          that was previously null.  The DGX, DGX1 and DGX2 arrays will
+          contain the Fileman X, X1 and X2 arrays (respectively) as
+          documented for the execution of 'SET' logic.
+ 
+       o  DELETE transactions indicate that previously existing data has
+          been deleted without being replaced.  The DGX, DGX1 and DGX2
+          arrays will contain the Fileman X, X1 and X2 arrays
+          (respectively) as documented for the execution of 'KILL' logic.
+ 
+       o  UPDATE transactions indicate that existing data has been deleted
+          and new data has been filed.  The DGX, DGX1 and DGX2 arrays will
+          contain the Fileman X, X1 and X2 arrays (respectively) as
+          documented for the execution of 'SET' logic.
+ 
+The naming convention used for these 'new style' cross-references for this
+Patch are as follows:
+ 
+  1. All names will begin with the letter "A" to denote a non-lookup MUMPS
+     cross-reference.
+ 
+  2. The next characters identify the name space (i.e. Registration ="DG").  
+ 
+  3. The next two characters identify the field monitor utility ("FM").
+ 
+  4. The next character will be "D" if the field contains a decimal. If 
+     there is no decimal, there will not be a "D" character.
+ 
+  5. The next characters identify the field number. 
+ 
+The establishment of this naming convention is intended to assist with 
+the easy identification of the field monitoring utility as implemented
+across multiple field definitions.  It should be followed as additional
+instances of this utility are distributed.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>extended action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3810.html">PSU PATIENT DEMOGRAPHIC CHANGE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3374.html">SCMC PCMM INACTIVATE ON DATE OF DEATH</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3386.html">SPN REG STATUS UPDATE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3387.html">SPN REG STATUS DELETE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3417.html">FB PATIENT DATA CHANGE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3629.html">VAFC MPIPD FIELD TRIGGER</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2005-04-26 09:52:39</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

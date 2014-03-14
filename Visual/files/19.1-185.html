@@ -1,0 +1,57 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTkuMS0xODU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA MGR (185) &nbsp;&nbsp;  SECURITY KEY (19.1)</h1>
+<div id="demo"><table id="MTkuMS0xODU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA MGR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This key gives user access to supervisor-type functions.
+Those functions are the following:
+         1) editing completed exams
+         2) adding an exam to a visit that is older than
+            yesterday
+         3) during execution of the 'status tracking'
+            function the user will be shown all non-completed
+            exams, not just those associated with the users
+            current division.
+         4) updating the exam status of an exam that is complete
+         5) deleting exams
+         6) deleting reports
+         7) unverifying reports
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

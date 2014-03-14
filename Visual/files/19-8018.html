@@ -1,0 +1,67 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODAxOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DMSQ PS TOTAL COLUMNS (8018) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODAxOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DMSQ PS TOTAL COLUMNS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Column Total (All Tables)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>COLUMN TOTAL (ALL TABLES)</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This report calculates one number, the total number of columns in the
+SQLI Column file.  This includes columns from tables based on indexes
+as well as columns automatically created internal record numbers.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN2^<a href="http://code.osehra.org/dox/Routine_DMSQP1.html">DMSQP1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

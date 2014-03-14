@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzY0Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGPRE PURGE CALL LOG (7642) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzY0Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGPRE PURGE CALL LOG</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Purge Call Log</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PURGE CALL LOG</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will purge all entries prior to a user specified date
+from the PRE-REGISTRATION CALL LOG File, #41.43.  This gives the 
+site some additional control over the log file in addition to the 
+automatic purging of the file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>PURGE43^<a href="http://code.osehra.org/dox/Routine_DGPREP4.html">DGPREP4</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

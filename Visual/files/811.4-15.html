@@ -1,0 +1,187 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjQtMTU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-APPOINTMENTS FOR A PATIENT (15) &nbsp;&nbsp;  REMINDER COMPUTED FINDINGS (811.4)</h1>
+<div id="demo"><table id="ODExLjQtMTU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-APPOINTMENTS FOR A PATIENT</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PXRMRDI.html">PXRMRDI</a></td>
+</tr>
+<tr>
+<td>ENTRY POINT</td>
+<td>PAPPL</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>VA-Appointments for a Patient</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This multiple occurrence computed finding returns a list of
+appointments for a patient in the specified date range from 
+the Scheduling Package. 
+
+The Computed Finding Parameter can be used to specify which 
+appointment data fields should be returned from the Scheduling 
+package and filter the results returned based on location 
+and status. The Computed Finding Parameter entry uses
+FLDS: to specify appointment data fields, STATUS: to filter 
+specific statuses, and LL: to specify a Reminder Location List 
+to filter locations.  
+
+FLDS, STATUS, and LL are all optional and can be defined in any 
+order in the computed finding parameter field.
+Some examples of how to use FLDS, STATUS and/or LL:
+  FLDS:1,2,16^STATUS:R^LL:DIABETIC LOCATIONS
+  STATUS:CP,CC^FLDS:25
+  LL:DIABETIC LOCATION
+
+FLDS parameter information:
+The appointment data fields are specified as follows:  
+FLDS:F1,F2,... where F1,F2,... are any of the possible ID values
+listed in the Available Appointment Data Fields table below.
+The F1,F2,... ID values specify what data associated with the 
+appointment will display in the clinical maintenance output. 
+If no FLDS is specified, the default display fields will be 1,2
+for APPOINTMENT DATE/TIME and CLINIC. 
+
+Additionally, each F1,F2,... specified will be returned as CSUB 
+data that can also be used in the computed finding's CONDITION
+field. The CONDITION can be used to further screen the filtered
+appointments, returned by Scheduling, by setting the USE STATUS/COND
+IN SEARCH field to YES. 
+
+For example, if you only want appointments that were checked out, 
+use FLDS: 1,2,11 to get the APPOINTMENT DATE/TIME, CLINIC, and 
+CHECK-OUT DATE/TIME for display purposes. The FLDS:1,2,11 will
+return the CSUB data "APPOINTMENT DATE/TIME", "CLINIC" and 
+"CHECK-OUT DATE/TIME".
+
+CSUB values are used in the CONDITION field to do a comparison to
+numeric or string values. Using +V causes the CSUB data to be
+interpreted as numeric. Strings that cannot be converted to a
+number are set to zero. For example, a CONDITION such as I
++V("CHECK-OUT DATE/TIME")&gt;0 would be true if the appointment had a
+check-out date/time.
+
+List of Available Appointment Data Fields table with assigned ID
+    ID      Field Name
+--------------------------------------------------------
+
+     1     APPOINTMENT DATE/TIME
+     2     CLINIC
+     3     APPOINTMENT STATUS     
+     4     PATIENT
+     5     LENGTH OF APPOINTMENT
+     6     COMMENTS
+     7     OVERBOOK
+     8     ELIGIBILITY OF VISIT
+     9     CHECK-IN DATE/TIME
+    10     APPOINTMENT TYPE
+    11     CHECK-OUT DATE/TIME
+    12     OUTPATIENT ENCOUNTER IEN
+    13     PRIMARY STOP CODE
+    14     CREDIT STOP CODE
+    15     WORKLOAD NON-COUNT
+    16     DATE APPOINTMENT MADE
+    17     DESIRED DATE OF APPOINTMENT
+    18     PURPOSE OF VISIT and SHORT DESCRIPTION
+    19     EKG DATE/TIME
+    20     X-RAY DATE/TIME
+    21     LAB DATE/TIME
+    22     STATUS
+    23     X-RAY FILMS
+    24     AUTO-REBOOKED APPOINTMENT DATE/TIME
+    25     NO-SHOW/CANCEL DATE/TIME
+    26     RSA APPOINTMENT ID
+    28     DATA ENTRY CLERK
+    29     NO-SHOW/CANCELED BY
+    30     CHECK-IN USER
+    31     CHECK-OUT USER
+    32     CANCELLATION REASON
+    33     CONSULT LINK
+
+STATUS information:
+STATUS: is used to set a filter on the appointment status; only
+those appointments with a status that matches the STATUS: values
+list will be returned. The possible values that the Scheduling
+API allows are:
+
+VALUE     Description 
+--------------------------------------------------------
+    R      SCHEDULED/KEPT
+    I      INPATIENT
+    NS     NO-SHOW
+    NSR    NO-SHOW, RESCHEDULED
+    CP     CANCELLED BY PATIENT
+    CPR    CANCELLED BY PATIENT, RESCHEDULED
+    CC     CANCELLED BY CLINIC
+    CCR    CANCELLED BY CLINIC, RESCHEDULED 
+    NT     NO ACTION TAKEN
+
+If STATUS is not specified, the default is R,I.
+
+The APPOINTMENT STATUS returned by the API is a summarized list
+which does not include detailed statuses such as Future, Checked-In,
+or Checked Out. These  statuses are summarized as SCHEDULED/KEPT. 
+As a result, a CONDITION may be required to make sure you are
+getting the correct results. For example, if you are looking for an
+appointment that was kept, you would set STATUS:R combined with a
+CONDITION of I (+V("OUTPATIENT ENCOUNTER IEN")&gt;0)!(+V("CHECK-OUT
+DATE/TIME")&gt;0) with USE STATUS/COND IN SEARCH set to YES.
+
+LL information:
+LL:Reminder Location List specifies a list of locations so that only
+appointments for those locations will be returned. If LL is not
+specified, then appointments for all locations will be returned.
+
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>MULTIPLE</td>
+</tr>
+<tr>
+<td>CF PARAMETER REQUIRED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

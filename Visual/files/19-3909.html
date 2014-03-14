@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzkwOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSD WORKSHEET PRINT (3909) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzkwOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSD WORKSHEET PRINT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Print CS Dispensing Worksheet</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PRINT CS DISPENSING WORKSHEET</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Pharmacy personnel use this option to print a dispensing worksheet.
+This worksheet MUST be printed prior to pharmacy dispensing
+Controlled Substances orders.  Pharmacy may sort this report within
+a dispensing site, by NAOU (one, some, or ALL), or by inventory group.
+Next, the orders are sorted by either (1) drug, then all NAOUs, or
+(2) NAOU, then all drugs.  The worksheet lists a worksheet number assigned
+to this order, drug, quantity ordered, dispense to location,
+ordered by, comments, and blanks for manufacturer, lot #, and
+expiration date.  When using the Fill/Dispense CS Orders from Worksheet
+option, pharmacy may process orders by individual request number
+(the assigned worksheet number) or by worksheet.  If the worksheet
+method of dispensing is selected, the software will display each
+order to the pharmacist in the sequence the order was printed.
+Each time this report is run, a new worksheet will be built and
+all new CS orders will be included.  The printed sequence of CS orders
+will change with each new worksheet.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-83.html">CONTROLLED SUBSTANCES</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PSDPWK.html">PSDPWK</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1992-10-27 06:39:03</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,91 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTE0NjM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SD MH PROACTIVE BGJ REPORT (11463) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTE0NjM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SD MH PROACTIVE BGJ REPORT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>High Risk MH Proactive Nightly Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>HIGH RISK MH PROACTIVE NIGHTLY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option should be used if you need to re-create
+the same report that is created by the scheduled
+SDAM BACKGROUND job after midnight each night. 
+The option lists the scheduled appointments for
+Mental Health Clinics for today.
+ 
+**This report should not be scheduled to run
+nightly as it is kicked off by the
+Scheduling nightly background Job (SDAM BACKGROUND JOB)
+that should already be scheduled to run nightly on your system. 
+ 
+This report is sent in a mail message to the members
+of the SD MH NO SHOW NOTIFICATION mail group.
+ 
+Future appointments will list on this report.
+The number of days worth of future appointments
+that will list is defaulted to 30 days in the future.
+Parameter SD MH PROACTIVE  DAYS has been added
+to store the number of days to list future
+appointments for.  This parameter can be edited
+by the user by using the option 
+[ XPAR EDIT PARAMETER] Edit Parameter Values,
+changing the System value.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-48.html">SCHEDULING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_SDMHPRO.html">SDMHPRO</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,618 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTcx").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ADVERSE REACTION TRACKING (71) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTcx" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ADVERSE REACTION TRACKING</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>GMRA</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>Adverse Reaction Tracking package</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This package permits clinical users to track and report patient allergies
+and adverse reactions. The intended users are physicians, nurses, other
+clinicians and clerks.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DEVELOPER (PERSON/SITE)</td>
+<td>RFM-WAA/HISC</td>
+</tr>
+<tr>
+<td>DEVELOPMENT ISC</td>
+<td>HISC</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>National</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>4.0</td>
+</tr>
+<tr>
+<td>ADDITIONAL PREFIXES</td>
+<td>
+<ol>
+<li>
+<dt>ADDITIONAL PREFIXES:  &nbsp;&nbsp;GMA</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;4.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2005-11-19 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;1996-07-15 00:00:00</dt>
+<dt>INSTALLED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION OF ENHANCEMENTS:  &nbsp;&nbsp;<pre>
+The Adverse Reaction Tracking package tracks patient allergies/adverse
+reactions.
+</pre>
+</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;2</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-08-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This Build:
+ 
+1) deletes the Soundex cross-reference from the NAME field (#.01) of the
+   GMR ALLERGIES file (#120.82).
+ 
+2) fixes a possible undefined variable error (GMRAREC) in the routine
+   GMRASIG1.
+ 
+3) fixes a FOR loop which uses the wrong variable to loop through an
+   array in the routine GMRAPTB.
+ 
+4) fixes the problem reported in NOIS NOP-0596-12146. A user presses
+   RETURN or enters an up-arrow at the Causative Agent prompt and is
+   prompted to enter another causative agent.
+ 
+5) fixes the problem reported in NOIS ISH-0596-42277. Under certain
+   instances the 'Sign-off' event point is not being executed.
+ 
+6) modifies the field description for the REQUIRE ORIGINATOR COMMENTS
+   field (#4) in the GMR ALLERGY SITE PARAMETERS file (#120.84).
+   NOIS CLA-0696-20854.
+ 
+7) fixes a problem where the REACTION ASSESSMENT field (#1) in the ADVERSE
+   REACTION ASSESSMENT file (#120.86) is marked 1 (yes), but the patient
+   does not have any active entries (i.e., entries that have not been
+   entered-in-error) in the PATIENT ALLERGIES file (#120.8).
+   NOIS: CMO-0696-40833.
+ 
+8) identifies the patient (e.g., T1234), suspect medication and event date
+   on the Attachment page of the MedWatch form. NOIS: BRX-0696-11081.
+ 
+9) modifies the GMRADPT utility to return "unsigned" reactions in the
+   GMRAL array.
+ 
+10) changes the ORCHK^GMRAOR utility call. If the calling routine is
+    checking for Contrast Media Reactions and the patient is not in the
+    ART database, then the utility will return a null value instead of a
+    0 (zero).
+ 
+11) fixes a bug in the GMRADPT utility which returns a GMRAL array node
+    stating the person has No Known Allergies if the person is not in the
+    ART database.
+ 
+12) fixes a bug in the GMRANKA routine which may enter the wrong value in
+    the ADVERSE REACTION ASSESSMENT file (#120.86), REACTION ASSESSMENT
+    field (#1). NOIS: MAR-0696-21799.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;5</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-10-09 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This Build addresses the following problems:
+ 
+1) Corrects a bug introduced by the GMRA*4.0*2 patch. Users are not being
+asked to sign-off on autoverified reactions in the enter/edit reaction
+process if they answer YES to the "Enter another Causative Agent?" prompt,
+but do not enter another causative agent. This results in the reaction not
+be considered as autoverified.
+ 
+2) When a user mistakenly answers YES to the "Does this patient have any
+known allergies or adverse reactions?" prompt and does not enter a
+causative agent the software assesses the patient as having a reaction on
+file in the database. It should not.
+ 
+3) The GMRA PRINT-COMPLETE LISTING option does not distinguish between
+patients who not in the ART database and those patients who are assessed
+as NKA (No Known Allergies).
+ 
+4) The ART package calls an Outpatient Pharmacy utility to get and display
+any outpatient medications for a patient. The SIG code value for the
+prescription return is changing in size from one line of text to one plus
+lines of text. The ART package will store the first 30 characters of the
+SIG code for its SUSPECT and CONCOMITANT drug entries in File 120.85.
+ 
+5) Changes the description for the GMRA PRINT-FDA EXCEPT BY PT option so
+that it accurately describes what that option does.
+ 
+6) Changes the description for the GMRA PRINT-EXCEPT BY DATe option so
+that it accurately describes what that option does.
+ 
+For more detailed information please see the GMRA*4*5 patch description on
+FORUM.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;7 SEQ #5</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-06-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+GMRA*4.0*7  See National patch module for a description of the changes
+incorporated in this patch.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;4</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-09-22 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This build fixes several problems in the ART portion of the ART-CPRS
+interface.
+ 
+Routine changes:
+ 
+ GMRAOR0
+   The DUPCHK entry point was quitting prematurely and therefore not
+   accurately checking for duplicate entries.
+ 
+ GMRAOR4
+   The ART EP asked the CPRS developers to include the OBSERVER field
+   value for all new reactions CPRS sends to the ART package. This routine
+   was changed to recognize this piece of data when it is passed to ART.
+ 
+ GMRAOR5
+   Fixes a syntax error.
+ 
+   Simplifies some code used to check for duplicate patient reactions.
+ 
+   Fixes a bug where the reaction was not completely filed if the reaction
+   value pointer and file was not recognized as one of the five pointed-to
+   files used by the ART package.
+ 
+   Modifies the code to call GMRAOR9 to store any drug ingredients or drug
+   classes if the reaction was of a drug type.
+ 
+   Modifies the code to add an entry to File 120.85 only if the patient
+   reaction was an observed drug reaction.
+   
+   Sends the reaction as unverified so it will appear on the
+   list of reactions to be verified.
+ 
+ GMRAOR7
+   The sign/symptom data was not being stored in File 120.85 because a
+   call to SIGN^GMRAOR6 was passing the variable GMRAL when it should send
+   the array GMRAL.
+ 
+ GMRAOR8
+   This routine was modified to correct subfile numbers being set
+   in fileman.
+ 
+ GMRAOR9 
+   This is a new routine which stores drug ingredients and/or drug classes
+   for a patient drug reaction.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;6 SEQ #7</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-10-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The Description of this build can be found in the Nation Patch Module
+under patch GMRA*4.0*6
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;8</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-01-09 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;9</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-05-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will update the mark chart/id band option to use
+the new ACRP APIs that become available with patch SD*5.3*131.
+Please see the national patch module for a full description of
+this patch as well as patch 131.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;10 SEQ #10</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-10-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+See Description in the National Patch Module for Patch GMRA*4*10.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;11</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-10-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module 
+within the patch description of GMRA*4*11.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;12</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-11-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Allergies entered via CPRS were being entered into the ART database as
+unverified even if they met the criteria to be auto-verified in the ART
+site parameters. This patch will auto-verify those allergies entered via
+CPRS that meet the criteria as defined at the site.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;13</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-11-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will make the ARTS software compatible with the National Drug
+File regardless of version.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;14</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-01-21 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The METHOD OF NOTIFICATION field in file 120.84 is used to determine the
+users that should receive the chart and ID band marking bulletin. If this
+field is set to OE/RR TEAMS, the code made reference to PCMM team lists.
+CPRS has ceased use of PCMM teams for list functionality.   The errant
+reference to PCMM caused an error when a patient with data in the ADVERSE
+REACTION TRACKING (ART) database was admitted. The same error can be
+generated when a new adverse reaction is entered and the charts and/or ID
+bands have not been marked. patch corrects this error by changing the
+reference to use the OE/RR LIST (#100.21) file.
+ 
+DBIA #1471 has been retired which allowed ART to call ALLERGY^RAUTL3 in
+This patch corrects this error by changing the reference to use file 12d
+RADIOLOGY/NUCLEAR MEDICINE v 4.5 to retrieve and store information
+relating to allergies to radiologic contrast media. This reference is
+being removed from the ART software.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;16</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-01-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;17 SEQ #16</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-12-31 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch includes a utility for updating free text entries.  Please see
+the FORUM patch description for a detailed explanation of this patch.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;19 SEQ #17</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-07-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Update to allergy tracking package consisting of changes to the free text 
+utility distributed in patch GMRA*4*17 as well as updates to send 
+bulletins from CPRS GUI upon new allergy entry.  Please see the FORUM 
+module for complete details.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;18 SEQ #18</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-01-18 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will install new cross-references on files 120.8, 120.85
+and 120.86 in support of the health data repository.  See the
+patch description on FORUM for complete details.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;22 SEQ #19</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-01-18 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+HDR related changes.  Please see FORUM patch description
+for details regarding this patch.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;21 SEQ #20</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-02-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Allergy updates required to support the removal of allergies
+as orders.  After installation of this patch and CPRS GUI v25,
+allergies will no longer be treated as orders.
+ 
+Please see the FORUM patch module for a complete description.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;23 SEQ #21</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-08-13 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch includes changes required for continued support
+of the Health Data Repository project.  Please see the national
+patch module for a full description of this patch.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;24 SEQ #22</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-08-13 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+See FORUM patch module for a full description.  Updates HDR related
+trigger code.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;25 SEQ #23</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-09-05 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Update to fix blank sign/symptom issue.  Please see FORUM for the
+complete description of this patch.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;27 SEQ #24</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-09-05 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will correct the reported problem of the allergy bulletin
+not being fired if the contrast media has a VA DRUG CLASS of DX109.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;30 SEQ #26</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-11-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Remedy ticket HD67463 was logged because the site noticed that deceased 
+patients were appearing on the [GMRA PRINT-PATIENT NOT ASKED] report.  
+This report lists patients who have not been given an allergy/adverse 
+reaction assessment.  The sites then use this list and contact the 
+patients in an attempt to get the assessment information from them.  It 
+is not desirable for the VA to inadvertently contact the family of a 
+deceased individual in an attempt to get the allergy/adverse reaction 
+information for that person.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;34 SEQ #29</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-04-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Updates to HL7 messaging for HDR.  See FORUM for a complete
+description.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;35 SEQ #30</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-08-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+POSSIBLE PROBLEM WITH LIST BY LOCATION UNASSESSED ALLERGIES.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;20 SEQ #31</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-09-23 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch updates the clean up utility to include ingredient based
+and drug class based allergies.  Please see FORUM for the complete
+description of this patch.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;36 SEQ #32</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-04 22:38:44</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Removes ability to delete existing allergy entries from the
+roll and scroll environment.
+Please see the FORUM patch module for a complete description.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;26 SEQ #33</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-04 23:07:28</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Remote Data Interoperability updates.  Please see FORUM for a full 
+description of the updates.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;37 SEQ #34</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-04 23:12:30</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Updates for RDI and contrast media
+Please see the FORUM patch description for full details.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;29</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-04 23:47:20</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Provides an auto-update for existing free text allergies
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;40 SEQ #36</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-12-12 22:04:07</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch reviews updates made in patch GMRA*4*29 related
+to terms that begin with the text ANGIOTEN and assures that
+they were correctly updated.  A few ANGIOTEN entries were
+incorrectly updated to the wrong drug class and need to be
+updated to the correct drug class.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;33 SEQ #37</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-07-22 08:06:57</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch addresses Remedy ticket, HD67403.  The site reported
+that test patients entered in production are appearing on the
+Adverse Reaction Tracking reports, and are also being included in
+report counts.
+   
+This patch will update the Adverse Reaction Tracking reports that 
+display the patient name and/or SSN, and reports that produce counts
+of reaction data so that they all exclude test patients.
+   
+This patch will also correct a problem with the bulletin generation during
+entry of Adverse Reactions described in Remedy ticket HD85125.
+   
+The problem occurs when the user answers "No" to verify an observed/drug 
+adverse reaction when it is first entered.  If the user skips the 
+verification step but then uses the GMRA PATIENT A/AR EDIT option and 
+edits the existing observed/drug allergy and then verifies it (with or 
+without making changes) an additional NOTIFICATION OF OBSERVED DRUG 
+REACTION bulletin is triggered.
+   
+This patch will modify the logic in the code so that, if the user 
+re-enters the adverse reaction and then verifies it, a second 
+NOTIFICATION OF OBSERVED DRUG REACTION bulletin will not be triggered.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;38</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-21 15:49:38</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;41 SEQ #39</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-22 12:22:54</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+See GMRA*4*41 in the National Patch Module
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;42 SEQ #40</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-06-24 14:41:02</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Fixes issue with historical allergy entries being associated with
+a progress note when the historical entry follows the entry of
+an observed drug reaction.
+Also, fixes issue with 0 node not being set correctly on XTMP node
+and provides failsafe for sending data to HDR.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;44 SEQ #41</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-03-03 11:30:43</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;45</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-03-08 13:52:03</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

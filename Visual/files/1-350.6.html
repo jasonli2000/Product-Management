@@ -1,0 +1,59 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zNTAuNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IB ARCHIVE/PURGE LOG (350.6) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zNTAuNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IB ARCHIVE/PURGE LOG</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file will be used to track the archiving and purging operations
+of the following three data files used in billing:
+ 
+  #350  INTEGRATED BILLING ACTION
+  #351  CATEGORY C BILLING CLOCK
+  #399  BILL/CLAIMS
+ 
+A log entry will be filed when an archival "search" is initiated for
+one of these files.  Once the search end date is logged, archiving
+will be permitted, and subsequently purging will be allowed when the
+archive end date is logged.  The log entry is thus used to assure that
+all the necessary steps for archiving and purging are performed in
+their entirety in the correct order.
+ 
+Per VHA Directive 10-93-142, this file definition should not be modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

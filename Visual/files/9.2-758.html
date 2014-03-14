@@ -1,0 +1,91 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTc1OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQ ENTRY ACTIONS (758) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTc1OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQ ENTRY ACTIONS</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Entry Actions</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+  
+     Each option in the Option File has several fields of executable M
+(a.k.a. MUMPS) code associated with it that are executed or run under
+specific conditions.  The ENTRY ACTION Field is one of these and it is
+executed each time a new option is pushed onto the user stack.  From the
+user's view this means each time an option is invoked -- whether by the
+selection from a menu, called "stepping into an option", or by jumping to
+the target option -- this field is executed.
+  
+     The Option File is tree-structured so if you think of a tree with a
+Primary Menu as its trunk, as you move up the branches the ENTRY ACTION
+fields will be executed at each new option; if you move back down the
+branch toward the Primary Menu trunk they will not.  See [EXIT ACTIONS]
+and [HEADERS], because they will.
+  
+     If, after an ENTRY ACTION has been executed, the variable XQUIT is
+found in the partition, then the Menu System passes control to the XQUIT
+Processing Software described elsewhere.  Only after the ENTRY ACTION is
+run does the Menu System check for XQUIT, and setting it elsewhere is not
+permitted or advised.
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;EXIT ACTIONS</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-759.html">XQ EXIT ACTIONS</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;HEADERS</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-760.html">XQ HEADERS</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1998-04-15 20:28:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

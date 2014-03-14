@@ -1,0 +1,579 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTQz").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LIST MANAGER (43) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTQz" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LIST MANAGER</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>VALM</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>List Manager Developer Tool</td>
+</tr>
+<tr>
+<td>FILE</td>
+<td>
+<ol>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-409.61.html">LIST TEMPLATE</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INPUT TEMPLATE</td>
+<td>
+<ol>
+<li>
+<dt>INPUT TEMPLATE:  &nbsp;&nbsp;VALM PROTOCOL EDIT</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-101.html">PROTOCOL</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DEVELOPER (PERSON/SITE)</td>
+<td>KILMADE/ALBANY ISC</td>
+</tr>
+<tr>
+<td>DEVELOPMENT ISC</td>
+<td>ALBANY</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>National</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;1.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2005-11-19 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;1996-06-13 00:00:00</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;2</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-08-08 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch is being released by Capacity Management (CM) in anticiptaion
+of the national release of the Resource Usage Monitor (RUM) Version 1.0
+software package.
+ 
+This patch will not affect the current versions of the RUM software that
+are running at the sites.  Therefore, all DSM, MSM and OpenM-NT sites are
+instructed to install this patch.  Test sites which had a pre-release of
+the RUM software should also install this patch.
+ 
+The Capacity Management (CM) development team is removing obsolete
+references to the Resource Usage Monitor (RUM) code.  CM has deemed that
+these references are no longer necessary in order to monitor system
+resource consumption.  The system workload data that was gleaned from the
+existing code in these routines will be located within Kernel's menu
+manager routines.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;3 SEQ #3</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ 
+                        List Manager Print Problems
+ 
+       This patch fixes a couple of problems reported by the CPRS Team.
+When printing the list or printing the screen an extra page feed would
+cause a blank page before printing began.  Also, when the list item is
+longer than the device's column width in characters, data could be lost or
+hard to read. The software now eliminates the page feed and warns the user
+that the list item may be too long to print properly.
+ 
+    This patch contains 2 routines.
+ 
+     Checksums were calculated by CHECK^XTSUMBLD
+ 
+Routine      Before       After           Patch List
+ 
+VALM         8568102      8970241         **1,3**
+VALM1        5659194      6964336         **3**
+ 
+============================================================
+ 
+Installation Instructions:
+ 
+1.  Users are allowed on the system, and this patch may be queued.
+    A "clobber" error may result if users are in these routines.
+ 
+2.  These routines are usually mapped, so you might have to
+    disable mapping on those machines that allow mapping.
+ 
+3.  Use the "Install/Check Message" option on the PackMan menu to 
+    load the package.
+ 
+4.  On the KIDS menu use the following options:
+ 
+     Veryify Checksums in Transport Global
+     Print Transport Global (Optional)
+     Compare Trasport Global to Current System
+     Backup Transport Global
+     Install VALM*1.0*3
+ 
+5.  Reload mapped set if appropriate. 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;4 SEQ #4</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-06-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch VALM*1.0*4
+
+NOIS: HUN-1198-20777
+Test Site:  Huntington, WV
+If the text contains control characters, it can mess up the printing and
+cause List Manager to fail to print some lines of text.  This patch
+checks text for control characters and strips any off before printing.
+
+NOTE: Users should not be on the system during installation of this patch.
+If they are using any application which uses List Manager (e.g. CPRS,
+Outpatient Pharmacy, Appointment Management), they may experience a Clobber
+Error.  This patch requires MailMan patch XM*7.1*50. 
+============================================================================ 
+
+ROUTINES:
+The second line of the routine now looks like:
+       ;;7.1;MailMan;**[patch list]**;Jun 02, 1994
+ 
+              Before          After
+Name          Checksum        Checksum        Patch List
+--------------------------------------------------------------
+VALM4          6209662         6275971        4
+
+* Checksums produced by CHECK^XTSUMBLD
+
+This patch introduces no new routines.
+===========================================================================
+ 
+INSTALLATION:
+NOTE: Users should not be on the system during installation of this patch.
+If they are using any application which uses List Manager (e.g. CPRS,
+Outpatient Pharmacy, Appointment Management), they may experience a Clobber
+Error.  This patch requires MailMan patch XM*7.1*50. 
+1.  Users should NOT be on the system during installation of this patch.
+2.  DSM Sites: If any of these routines is mapped, disable mapping for the 
+    affected routine(s).  
+3.  On the PackMan menu, use the 'INSTALL/CHECK MESSAGE' option.  This loads 
+    the patch into a Transport Global on your system.  
+4.  You do not need to stop TaskMan.
+    Users should NOT be on the system.
+5.  On the KIDS:Installation menu, use the following options to install the
+    Transport Global:
+       Verify Checksums in Transport Global
+       Print Transport Global
+       Compare Transport Global to Current System
+       Backup a Transport Global
+       Install Package(s)
+ Select INSTALL NAME:    VALM*1.0*4    Loaded from Distribution  &lt;date/time&gt;
+                         ==========
+ Install Questions:
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                       ==
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+                                                                       ==
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+
+ DEVICE: HOME// &lt;It's up to you.  You may queue it if you wish.&gt;
+                ------------------------------------------------
+6.  DSM Sites: After patch has installed, rebuild your map set, if necessary.
+===========================================================================
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;1 SEQ #1</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;5 SEQ #5</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-07-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch VALM*1.0*5
+
+NOIS: BAC-1299-40994, BIG-0100-70871, BUT-0200-20477, CHA-1299-30668,
+      CLL-0300-40521, CMO-1299-40623, FAV-0200-71768, HUN-1299-20803,
+      IOW-0200-40725, LOM-1299-61417, MAD-1299-40809, STL-1299-40640,
+      WIM-1299-20665
+Test Sites:  Columbia, MO; Butler, PA; Battle Creek, MI; Wilmington, DE
+
+Background: Patch VALM*1.0*3 introduced an error when printing directly (not
+queued) to a device.  Although patch VALM*1.0*3 was subsequently marked
+"entered in error", many sites did not back it out, because it also contained
+some desired new features.  Patch VALM*1.0*3 remains "entered in error".
+
+Patch VALM*1.0*5 replaces patch VALM*1.0*3.  It corrects the errors and
+retains the desired features introduced in patch VALM*1.0*3.
+When printing a list (PL) or printing a screen (PS):
+  - Do not eject an extra blank page before starting the print.
+  - If the list item width is greater than the device width, print a warning
+    message.
+
+NOTE: Users should not be on the system during installation of this patch.
+If they are using any application which uses List Manager (e.g. CPRS,
+Outpatient Pharmacy, Appointment Management), they may experience a Clobber
+Error.  This patch requires patch VALM*1.0*1. 
+============================================================================ 
+
+ROUTINES:
+The second line of the routine now looks like:
+       ;;7.1;MailMan;**[patch list]**;Jun 02, 1994
+ 
+              Before          After
+Name          Checksum        Checksum        Patch List
+--------------------------------------------------------------
+VALM           8568102         8596069        1,5
+VALM1          5659194         6138029        5
+
+* Checksums produced by CHECK^XTSUMBLD
+
+This patch introduces no new routines.
+===========================================================================
+ 
+INSTALLATION:
+NOTE: Users should not be on the system during installation of this patch.
+If they are using any application which uses List Manager (e.g. CPRS,
+Outpatient Pharmacy, Appointment Management), they may experience a Clobber
+Error.  This patch requires patch VALM*1.0*1. 
+1.  Users should NOT be on the system during installation of this patch.
+2.  DSM Sites: If any of these routines is mapped, disable mapping for the 
+    affected routine(s).  
+3.  On the PackMan menu, use the 'INSTALL/CHECK MESSAGE' option.  This loads 
+    the patch into a Transport Global on your system.
+    If it loads, go on to step 4.
+    If you get the following error message:
+**INSTALL ABORTED** Patch VALM*1.0*1 is Required to install this package!!
+VALM*1.0*5 Build will not be installed, Transport Global deleted! 
+    and you are sure that you have installed VALM*1.0*1, you probably need
+    to use FileMan to edit the package entry as follows.  (This problem was
+    caused because VALM*1.0*1 was released without a package file link.)
+D Q^DI
+Select OPTION: ENTER OR EDIT FILE ENTRIES
+               =====
+INPUT TO WHAT FILE: PACKAGE// &lt;press enter&gt;
+EDIT WHICH FIELD: ALL// 22  VERSION  (multiple)
+                        ==
+   EDIT WHICH VERSION SUB-FIELD: ALL// 1105  PATCH APPLICATION HISTORY
+(multiple)                             ====
+      EDIT WHICH PATCH APPLICATION HISTORY SUB-FIELD: ALL// .01  PATCH
+APPLICATION HISTORY                                         ===
+      THEN EDIT PATCH APPLICATION HISTORY SUB-FIELD: &lt;press enter&gt;
+   THEN EDIT VERSION SUB-FIELD: &lt;press enter&gt;
+THEN EDIT FIELD: &lt;press enter&gt;
+
+Select PACKAGE NAME: VALM  LIST MANAGER     VALM
+                     ====
+Select VERSION: 1.0// &lt;press enter&gt;
+  Select PATCH APPLICATION HISTORY: 1 SEQ #1
+                                    ========
+  Are you adding '1 SEQ #1' as 
+    a new PATCH APPLICATION HISTORY (the 3RD for this VERSION)? No// Y  (Yes)
+                                                                    ===
+  Select PATCH APPLICATION HISTORY: &lt;press enter&gt;
+    Now try loading it again.
+
+4.  You do not need to stop TaskMan.
+    Users should NOT be on the system.
+5.  On the KIDS:Installation menu, use the following options to install the
+    Transport Global:
+       Verify Checksums in Transport Global
+       Print Transport Global
+       Compare Transport Global to Current System
+       Backup a Transport Global
+       Install Package(s)
+ Select INSTALL NAME:    VALM*1.0*5    Loaded from Distribution  &lt;date/time&gt;
+                         ==========
+ Install Questions:
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                       ==
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+                                                                       ==
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+
+ DEVICE: HOME// &lt;It's up to you.  You may queue it if you wish.&gt;
+                ------------------------------------------------
+6.  DSM Sites: After patch has installed, rebuild your map set, if necessary.
+===========================================================================
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;6 SEQ #6</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-02-28 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch VALM*1.0*6
+
+NOIS: ZZZ-1200-N0512
+Test Site:  FORUM, CPRS
+
+Recognize up-arrow so that the user can exit help text smoothly.
+
+Also, List Manager no longer calls its Date/Time or string manipulation
+APIs.  Instead, it calls the equivalent Kernel APIs.  (The ListManager
+APIs have not been changed at all.)  Although these APIs will continue
+to be supported, applications which use them might consider switching
+to the standard Kernel APIs, too.
+
+The following are the ListManager APIs which are no longer called,
+along with their Kernel equivalents:
+
+ListManager           Kernel
+-----------           ------
+$$FDATE^VALM1(X)      $$FMTE^XLFDT(X,"2D")
+$$FTIME^VALM1(X)      $$FMTE^XLFDT(X)
+$$FDTTM^VALM1(X)      $$FMTE^XLFDT(X,2)
+$$NOW^VALM1()         $$FMTE^XLFDT($$NOW^XLFDT)
+$$UPPER^VALM1(X)      $$UP^XLFSTR(X)
+$$LOWER^VALM1(X)      no equivalent - too esoteric
+
+NOTE: Users should not be on the system during installation of this patch.
+If they are using any application which uses List Manager (e.g. CPRS,
+Outpatient Pharmacy, Appointment Management), they may experience a Clobber
+Error.  This patch requires patch VALM*1.0*4 and VALM*1.0*5.
+============================================================================ 
+
+ROUTINES:
+The second line of the routine now looks like:
+       ;;1.0;List Manager;**[patch list]**;Aug 13, 1993
+ 
+              Before          After
+Name          Checksum        Checksum        Patch List
+--------------------------------------------------------------
+VALM           8596069         8483757        1,5,6
+VALM1          6138029         6406024        5,6
+VALM11         1873339         1738235        6
+VALM2          5605143         4952899        6
+VALM4          6275971         6223503        4,6
+VALM40         6770263         6733503        6
+* Checksums produced by CHECK^XTSUMBLD
+
+This patch introduces no new routines.
+===========================================================================
+ 
+INSTALLATION:
+NOTE: Users should not be on the system during installation of this patch.
+If they are using any application which uses List Manager (e.g. CPRS,
+Outpatient Pharmacy, Appointment Management), they may experience a Clobber
+Error.  This patch requires patch VALM*1.0*4 and VALM*1.0*5.
+1.  Users should NOT be on the system during installation of this patch.
+2.  DSM Sites: If any of these routines is mapped, disable mapping for the 
+    affected routine(s).  
+3.  On the PackMan menu, use the 'INSTALL/CHECK MESSAGE' option.  This loads 
+    the patch into a Transport Global on your system.
+4.  You do not need to stop TaskMan.
+    Users should NOT be on the system.
+5.  On the KIDS:Installation menu, use the following options to install the
+    Transport Global:
+       Verify Checksums in Transport Global
+       Print Transport Global
+       Compare Transport Global to Current System
+       Backup a Transport Global
+       Install Package(s)
+ Select INSTALL NAME:    VALM*1.0*6    Loaded from Distribution  &lt;date/time&gt;
+                         ==========
+ Install Questions:
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                       ==
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+                                                                       ==
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+
+ DEVICE: HOME// &lt;It's up to you.  You may queue it if you wish.&gt;
+                ------------------------------------------------
+6.  DSM Sites: After patch has installed, rebuild your map set, if necessary.
+===========================================================================
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;7 SEQ #7</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-05-20 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch VALM*1.0*7
+
+NOIS: none
+Test Site: BCMA Contingency
+
+This patch changes one line of code so that List Manager will work
+under GT.M, too.  All sites should install this patch.
+
+NOTE: Users should not be on the system during installation of this patch.
+If they are using any application which uses List Manager (e.g. CPRS,
+Outpatient Pharmacy, Appointment Management), they may experience a Clobber
+Error.  This patch requires patch VALM*1.0*6.
+============================================================================ 
+
+ROUTINES:
+The second line of the routine now looks like:
+       ;;1.0;List Manager;**[patch list]**;Aug 13, 1993
+ 
+              Before          After
+Name          Checksum        Checksum        Patch List
+--------------------------------------------------------------
+VALM           8483757         8475059        1,5,6,7
+* Checksums produced by CHECK^XTSUMBLD
+
+This patch introduces no new routines.
+===========================================================================
+ 
+INSTALLATION:
+NOTE: Users should not be on the system during installation of this patch.
+If they are using any application which uses List Manager (e.g. CPRS,
+Outpatient Pharmacy, Appointment Management), they may experience a Clobber
+Error.  This patch requires patch VALM*1.0*6.
+1.  Users should NOT be on the system during installation of this patch.
+2.  DSM Sites: If any of these routines is mapped, disable mapping for the 
+    affected routine(s).  
+3.  On the PackMan menu, use the 'INSTALL/CHECK MESSAGE' option.  This loads 
+    the patch into a Transport Global on your system.
+4.  You do not need to stop TaskMan.
+    Users should NOT be on the system.
+5.  On the KIDS:Installation menu, use the following options to install the
+    Transport Global:
+       Verify Checksums in Transport Global
+       Print Transport Global
+       Compare Transport Global to Current System
+       Backup a Transport Global
+       Install Package(s)
+ Select INSTALL NAME:    VALM*1.0*7    Loaded from Distribution  &lt;date/time&gt;
+                         ==========
+ Install Questions:
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                       ==
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+                                                                       ==
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+
+ DEVICE: HOME// &lt;It's up to you.  You may queue it if you wish.&gt;
+                ------------------------------------------------
+6.  DSM Sites: After patch has installed, rebuild your map set, if necessary.
+===========================================================================
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;8 SEQ #8</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-09-23 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+See patch VALM*1*8 in the National Patch Module for complete
+information on this patch.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;9 SEQ #9</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-02-28 10:23:52</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Please see the patch description on FORUM, in the National Patch Module.
+
+
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>ENVIRONMENT CHECK ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_VALMPP.html">VALMPP</a></td>
+</tr>
+<tr>
+<td>ENVIRONMENT CHECK DONE DATE</td>
+<td>1996-06-13 14:17:38</td>
+</tr>
+<tr>
+<td>POST-INITIALIZATION ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_VALMPT.html">VALMPT</a></td>
+</tr>
+<tr>
+<td>POST-INIT COMPLETION DATE</td>
+<td>1996-06-13 14:18:11</td>
+</tr>
+<tr>
+<td>PRE-INIT AFTER USER COMMIT</td>
+<td>VALMPRE</td>
+</tr>
+<tr>
+<td>PRE-INIT COMPLETION DATE</td>
+<td>1996-06-13 14:17:42</td>
+</tr>
+<tr>
+<td>EXCLUDED NAME SPACE</td>
+<td>
+<ol>
+<li>
+<dt>EXCLUDED NAME SPACE:  &nbsp;&nbsp;VALMZ</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

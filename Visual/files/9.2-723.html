@@ -1,0 +1,87 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTcyMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ECBATCH PROC (723) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTcyMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ECBATCH PROC</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Data Entry (Batch) by Procedure</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+** You must have Event Capture locations, DSS Units, local categories, and
+local procedures, and defined before using this option. **
+ 
+** You must define Event Code Screens before entering Event Capture data.
+**
+ 
+** You will be prompted for exposure and service-connected indicators for
+OUTPATIENT PROCEDURES ONLY. **
+ 
+** If only one category is defined for the specified DSS Unit, you will
+not be prompted for category. **
+ 
+** If only one procedure is defined for the specified category, you will
+not be prompted for procedure. **
+ 
+** Procedures being passed to PCE must have an active Associated Clinic.
+**
+ 
+This option allows you to enter a single procedure for multiple patients
+as a batch entry.     
+ 
+After you verify that the procedure information is correct, the "Select
+Patient:" prompt appears.  When you finish entering data for the first
+patient, the "Select Next Patient:" prompt appears.  This prompt will
+repeat, allowing you to enter multiple patients, until you press the
+RETURN or ENTER key to indicate that patient selection is complete. 
+ 
+The software displays the procedure entered for the group of patients, and
+asks if you want to enter them in the file.  If you respond YES, they are
+processed in the background and added to the EVENT CAPTURE PATIENT file
+(#721).
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1997-03-26 09:29:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,80 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTE1MDA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XLFIPV FORCEIP6 (11500) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTE1MDA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XLFIPV FORCEIP6</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Convert any IP address to IPv6</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CONVERT ANY IP ADDRESS TO IPV6</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+XU*8*605 IPv4 and IPv6 Utilities
+ 
+Convert an IP address (either IPv4 or IPv6) into an IPv6 address in a 
+standardized format: "0000:0000:0000:FFFF:0127:0000:0000:0001".  
+Usage: S Y=$$FORCEIP6^XLFIPV(IP)
+   VARIABLES:  Input     IP 
+                           (string) IPv4 or IPv6 Address to be converted.
+   VARIABLES:  Output    returns:  An IPv6 address in 
+                           "hhhh:hhhh:hhhh:hhhh:hhhh:hhhh:hhhh:hhhh" 
+                           notation if the input address is valid, or the
+                           null address "::0" if the input address is 
+                           invalid.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-3.html">KERNEL</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>IP6^<a href="http://code.osehra.org/dox/Routine_XLFIPV.html">XLFIPV</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

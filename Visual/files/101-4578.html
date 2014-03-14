@@ -1,0 +1,110 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTQ1Nzg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBTRR  MENU (4578) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTQ1Nzg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBTRR  MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>ROI Consent Menu</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4574.html">IBTRR ROI ADD</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AR</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4577.html">IBTRR ROI DELETE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DR</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;12</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4575.html">IBTRR ROI EDIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;ER</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;21</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4576.html">IBTRR ROI REVOKE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RV</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;31</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-858.html">IBCNS EXIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;EX</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;22</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>I $G(IBFASTXT)=1 S VALMBCK="Q"</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a></td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-07-24 11:37:04</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

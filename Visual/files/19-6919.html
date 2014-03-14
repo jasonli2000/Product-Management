@@ -1,0 +1,69 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNjkxOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>QAOS RPT RELIABILITY ASSMT (6919) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNjkxOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>QAOS RPT RELIABILITY ASSMT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Reliability Assessment Worksheets</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RELIABILITY ASSESSMENT WORKSHE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option randomly selects occurrences, within user specified
+parameters, and prints worksheets for the assessment of inter-reviewer
+reliability.  The user may select a date range, the type of screens to
+include (National, Local, Inactive) and, the number of occurrences to
+capture.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_QAOSPRD0.html">QAOSPRD0</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

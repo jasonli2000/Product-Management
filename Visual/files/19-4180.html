@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDE4MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DVB HSUSP-ENTERREQ (4180) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDE4MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DVB HSUSP-ENTERREQ</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Enter a Request in the HINQ Suspense File</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ENTER A REQUEST IN THE HINQ SU</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows HINQ inquiry requests to be entered into the 
+HINQ suspense file for later transmission to the VBA computer.
+Entries may be made in the suspense file by users who do not
+have the required security to transmit requests to the VBA
+computer.  Requests should also be entered in the suspense file
+when the VBA computer is not available as during non-VBA 
+computer workday hours or when the network is disabled because
+of a communication problem.
+ 
+This option may be made available during the Registration options:
+Register Patient and Load/Edit Patient Data by turning the USE
+HINQ INQUIRY parameter on.  It can also be placed stand alone in
+the ADT menu.
+ 
+If the patient's eligibility status in the station's patient file
+is 'Verified', this will be indicated when an entry is made
+in the suspense file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_DVBHQZ4.html">DVBHQZ4</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

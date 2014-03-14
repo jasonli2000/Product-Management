@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjA2Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGBT BENE TRAVEL RATES (2066) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjA2Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGBT BENE TRAVEL RATES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Parameter Rates Enter/Edit</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PARAMETER RATES ENTER/EDIT</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>DGBT SUPERVISOR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is an enter/edit option for the parameters in Beneficiary Travel.
+The name of the BT CERTIFYING OFFICIAL is to be used if the site wants
+a specific name printed on every form 70-3542d, or if left blank, the
+name of the user who prints the form will be followed by DESIGNEE OF
+CERTIFYING OFFICIAL.  BT OTHER EXPENSES ASKED is used to determine whether
+the prompts MEALS &amp; LODGING and FERRY, BRIDGES, ETC. will be asked in the
+Beneficiary Travel Claim Enter/Edit Option.  Monetary rates
+DEDUCTIBLE/VISIT, DEDUCTIBLE/MONTH, MILEAGE RATE, C&amp;P REVISIT MILEAGE RATE
+are also set up in this option.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-184.html">BENEFICIARY TRAVEL</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>RATES^<a href="http://code.osehra.org/dox/Routine_DGBTEF1.html">DGBTEF1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

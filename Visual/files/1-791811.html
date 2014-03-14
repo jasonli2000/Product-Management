@@ -1,0 +1,55 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OTE4MTE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>REMOTE INVENTORY PRODUCT (791811) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OTE4MTE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>REMOTE INVENTORY PRODUCT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains all the products. that may be ordered from the
+Denver Distribution Center through the Remote Order/Entry System.
+The file contains information about each item that is needed in the order
+process. Components, batteries, etc. that may be used with each item are
+also stored in the file. This file is exported by the DDC. The file will
+be updated via patch as contracts are updated. Since the unit cost of some
+items varies with discounts that occur on individual purchase orders for
+that item, the cost field in this file may not exactly match the cost from
+the DDC at the time the order is filled, but should give the user a close
+approximation of the cost. The file should not be edited by the local
+facility
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

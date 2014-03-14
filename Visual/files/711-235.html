@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NzExLTIzNQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>APPLICANT CELLULAR PHONE AREA CODE (235) &nbsp;&nbsp;  1010EZ MAPPING (711)</h1>
+<div id="demo"><table id="NzExLTIzNQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ASSIGNED DATA NAME</td>
+<td>APPLICANT CELLULAR PHONE AREA CODE</td>
+</tr>
+<tr>
+<td>DATA KEY</td>
+<td>I;11A1.</td>
+</tr>
+<tr>
+<td>ACTIVE</td>
+<td>ACTIVE</td>
+</tr>
+<tr>
+<td>VERSION #</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>MAP-TO FILE</td>
+<td>2</td>
+</tr>
+<tr>
+<td>MAP-TO SUB-FILE</td>
+<td>2</td>
+</tr>
+<tr>
+<td>MAP-TO FIELD</td>
+<td>.134</td>
+</tr>
+<tr>
+<td>DISPLAY NAME</td>
+<td>Cell Phone</td>
+</tr>
+<tr>
+<td>DIR(0)</td>
+<td>D AC^<a href="http://code.osehra.org/dox/Routine_EASEZDD.html">EASEZDD</a></td>
+</tr>
+<tr>
+<td>TRANSFORM</td>
+<td>S EASRTR=$$CELLPH^EASEZT2(EASAPP,"APPLICANT")</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

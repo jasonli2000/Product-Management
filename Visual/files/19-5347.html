@@ -1,0 +1,104 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTM0Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA DELETEXAM (5347) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTM0Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA DELETEXAM</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Exam Deletion</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>EXAM DELETION</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>RA MGR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This function allows the coordinator to delete exams from
+the system. This function should only be used by the
+coordinator.
+ 
+When this function is executed, a bulletin is sent to members of the
+appropriate mail group to notify them of the exam deletion.
+ 
+Deletion of an exam is prohibited if the exam has an associated
+report.  The report must be deleted first before the exam can be
+deleted.
+ 
+Once the examination is 'DELETED', the user will be prompted to
+answer with a 'YES'or 'NO' to cancel the request associated with
+this exam. If 'YES', the request will also be cancelled and the request
+status updated to 'CANCELLED'. If 'NO', the request status will be
+updated to 'HOLD' and may be selected for registration at a future date.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K RANOSCRN,RAOPT("DELETEXAM")</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S RANOSCRN="",RAOPT("DELETEXAM")=""</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DEL^<a href="http://code.osehra.org/dox/Routine_RAEDCN1.html">RAEDCN1</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1995-05-17 09:26:19</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

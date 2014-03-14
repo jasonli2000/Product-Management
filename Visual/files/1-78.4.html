@@ -1,0 +1,87 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OC40").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FILM SIZES (78.4) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OC40" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FILM SIZES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains the allowable film sizes that the technologist can
+choose from when s/he enters film data for an exam.
+ 
+If possible, it is a good idea to assign film types names that have
+unique characters at the beginning.  If the first few characters are
+not unique, then the technologist will always have to respond to another
+'Select' prompt when entering only the first few characters.  To avoid
+this second prompt, the technologist will have to enter many characters.
+ 
+Entries in this file should not be deleted. Adding new entries is always
+allowed.
+ 
+ Data Storage
+ ------------
+The data for the FILM SIZES file is stored in the ^RA(78.4,
+global. At the present time this file is very static after day-one
+initialization is complete.  However, it still should be journaled.
+It should also be translated if the operating system supports this function.
+ 
+ Input Templates
+ ---------------
+The package does not use any input templates associated with this
+file.
+ 
+ Print Templates
+ ---------------
+The package does not use any print templates associated with this
+file.
+ 
+ Sort Templates
+ --------------
+The package does not use any sort templates associated with this
+file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;RA</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

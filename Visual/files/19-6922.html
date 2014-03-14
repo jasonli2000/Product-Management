@@ -1,0 +1,147 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNjkyMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RMPF O/E STATION ASPS (6922) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNjkyMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RMPF O/E STATION ASPS</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Remote Order/Entry System ASPS Menu</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>REMOTE ORDER/ENTRY SYSTEM ASPS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu contains all Remote Order/Entry options available
+to Audiology and Speech Pathology Service staff.  Access
+to some options on the menu is controlled by security keys.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-6924.html">RMPFET</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;EP</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-6927.html">RMPF ASPS STATION SUPER MENU</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;SU</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;90</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-6933.html">RMPFES</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;ES</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-6926.html">RMPFEA</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;AP</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;10</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-6929.html">RMPFEB</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;CB</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;15</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-6941.html">RMPFDM</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;SS</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;70</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-6944.html">RMPF PRINT/DISPLAY ASPS MENU</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;PD</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;80</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-6949.html">RMPFEI</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;IS</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;20</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-6953.html">RMPFET84</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;CT</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;17</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Short Menu Text</td>
+<td>ROES ASPS Menu</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-147.html">REMOTE ORDER/ENTRY SYSTEM</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K RMPFSTAN,RMPFDAT,RMPFSYS,RMPFSTAP,RMPFMENU</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S RMPFMENU=0 D ^<a href="http://code.osehra.org/dox/Routine_RMPFUTL.html">RMPFUTL</a>,^RMPFDS2</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-07-02 13:03:27</td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>1990-12-28 10:40:44</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

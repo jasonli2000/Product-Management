@@ -1,0 +1,92 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTM4OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OR TREATING SPECIALTY (389) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTM4OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OR TREATING SPECIALTY</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Treating Specialty Look-up</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+ 
+Entering all or part of a valid TREATING SPECIALTY name at the prompt
+to Select Patient(s) will cause the list to be rebuilt to include the
+patients assigned to that specialty, and presented to you anew. For
+example, if you wish to choose from all patient's in the MEDICINE
+treating specialty, you could enter:
+ 
+                               TEAM 7B patient list
+ 
+1     BLANDRU,AB (3333)                 9     NEW,PATIENT (1234)
+2     DOE,WILLIAM C. (6572)             10    NIVEK,ALPHA (8796)
+3     ESSTEPON,GLORD (3234)             11    NIVEK,BETA (3242)
+4     FUNOF,IT (9876)                   12    NIVEK,EPSILON (4723)
+5     KAPLON,DENNIS (3242)              13    NIVEK,SIGMA (2379)
+6     LATHAM,RASTY (1111)               14    SIMPSON,HOMER (9999)
+7     MARLEY,JACOB (5678)               15    SPRAT,JACK (2342)
+8     MUFFET,LITTELLA M (7689)          16    TURNER,TOMMY (2342)
+ 
+Select Patient(s): MEDICINE          MEDICAL ICU/CCU      
+The current patient list will be cleared.
+Loading Specialty Patient List...
+ 
+                             MEDICINE specialty list
+ 
+1     DOE,WILLIAM C. (6572)             8     NEW,PATIENT (1234)
+2     ESSTEPON,GLORD (3234)             9     NIVEK,ALPHA (8796)
+3     FUNOF,IT (9876)                   10    NIVEK,BETA (3242)
+4     KAPLON,DENNIS (3242)              11    NIVEK,EPSILON (4723)
+5     LATHAM,RASTY (1111)               12    NIVEK,SIGMA (2379)
+6     MARLEY,JACOB (5678)               13    SPRAT,JACK (2342)
+7     MUFFET,LITTELLA M (7689)          14    TURNER,TOMMY (2342)
+ 
+Select Patient(s): 1,2,8-11     DOE,WILLIAM C. (6572)   
+                                ESSTEPON,GLORD (3234)    NEW,PATIENT (1234)   
+                                NIVEK,ALPHA (8796)    NIVEK,BETA (3242)   
+                                NIVEK,EPSILON (4723)   
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1991-09-17 13:46:43</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

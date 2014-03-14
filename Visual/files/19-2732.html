@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjczMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCHPM CS DELETE FROM BATCH (2732) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjczMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCHPM CS DELETE FROM BATCH</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Delete Code Sheet from Printed Batch (LOG/GSA/DLA)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DELETE CODE SHEET FROM PRINTED</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>PRCHPM CS TRANSMIT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the user to remove a code sheet from a batch prior to
+transmission and it adjusts the Batch Header Code Sheet accordingly.  This
+option must be used first when moving a code sheet from one batch to
+another.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DELETE^<a href="http://code.osehra.org/dox/Routine_PRCFALOG.html">PRCFALOG</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

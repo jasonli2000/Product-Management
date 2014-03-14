@@ -1,0 +1,61 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODkzMC42LTk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PURGED (9) &nbsp;&nbsp;  USR RECORD STATUS (8930.6)</h1>
+<div id="demo"><table id="ODkzMC42LTk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PURGED</td>
+</tr>
+<tr>
+<td>SYMBOL</td>
+<td>p</td>
+</tr>
+<tr>
+<td>SEQUENCE</td>
+<td>50</td>
+</tr>
+<tr>
+<td>APPLIES TO</td>
+<td>document</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The grace period for purge has expired, and the report text has been
+removed from the on line record to recover disk space.
+ 
+NOTE:  only completed documents may be purged.  It is assumed that the
+chart copy of the document has been retained for archival purposes.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

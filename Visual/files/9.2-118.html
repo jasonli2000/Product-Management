@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUDOC DEVICE PROMPT SYNTAX (118) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUDOC DEVICE PROMPT SYNTAX</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>GENERAL SYNTAX FOR DEVICE REQUEST</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+ 
+The general syntax for responding to the device prompt is as follows:
+ 
+     DEVICE:  Device Name ; Subtype ; Right Margin ; Page Length
+ 
+If the subtype is not specified, characteristics are taken from the Device
+file.  If a subtype is specified without a device name, characteristics are
+taken from the Terminal Type file.  Note that the second piece is optional
+and may be omitted, semicolon and all.  The third and fourth pieces are also
+optional but semicolons are retained to distinguish margin from page length.
+ 
+     DEVICE: ;P-DEC       if the home device is a video terminal, output
+                          would scroll without waiting for the user to
+                          enter return after a screen display.
+ 
+     DEVICE: ;132         to use the home device, right margin of 132.
+ 
+     DEVICE: ;;66         to use the home device, page length of 66 lines.
+                          To scroll on the home device, use ;;9999.
+ 
+When sending output to the [SPOOLER], the spool document may also be named.
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;SPOOLER</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-119.html">XUDOC DEVICE PROMPT SPOOLING</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-04-18 22:27:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

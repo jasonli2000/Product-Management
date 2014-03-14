@@ -1,0 +1,91 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTcwNQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ECSECT (705) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTcwNQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ECSECT</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>DSS Units for Event Capture (Enter/Edit)</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+** You must create your Event Capture locations with the Current Locations 
+(Create/Remove) [ECLOC] option before using this option. ** 
+ 
+** You must define your DSS Units with this option for subsequent options 
+in the Event Capture Software to work. **
+ 
+This option allows you to ENTER and EDIT, but NOT DELETE, DSS Units for 
+use with Event Capture.  DSS Units typically represent the smallest 
+identifiable work unit in a clinical service at the medical center and 
+are defined by the VAMCs.  A DSS Unit can represent any of the following:
+ 
+ - An entire service
+ - A section of a service 
+ - A small section within a section 
+ - A medical equipment item used in patient procedures
+ 
+When creating or editing DSS Units, you can choose what (if any) data 
+is sent to PCE, and the method used to send it:  
+ 
+ A - Send All Records 
+ O - Send Outpatient Only 
+ N - Send No Records
+ 
+The advantage of using Event Capture to send data to PCE is that it 
+eliminates the duplicate effort of entering the same workload data in the 
+Scheduling software, then transmitting to PCE.    
+ 
+When creating DSS Units, your response to the "Category (Y/N):" prompt 
+determines whether or not procedures are grouped by categories during 
+data entry.  When editing DSS Units, the "Category (Y/N):" prompt will
+not appear if you have Event Code Screens defined.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1997-03-26 09:23:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>EXIT EXECUTE STATEMENT</td>
+<td>W @IOF</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

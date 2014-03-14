@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjk2Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCFA PO (MO/SO) REBUILD/TRANS (2963) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjk2Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCFA PO (MO/SO) REBUILD/TRANS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>MO/SO Rebuild/Transmit for P.O.</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>MO/SO REBUILD/TRANSMIT FOR P.O</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will allow the user to review the status of the rejected
+FMS Obligation Document for the Purchase Orders.  The user will have
+the option to review the source document and to rebuild/transmit 
+the MO or the SO documents.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-52.html">IFCAP</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>TPOR^<a href="http://code.osehra.org/dox/Routine_PRCFFER.html">PRCFFER</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

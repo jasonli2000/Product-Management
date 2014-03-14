@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MzUzLTEz").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LEGACY UB-92 (13) &nbsp;&nbsp;  BILL FORM TYPE (353)</h1>
+<div id="demo"><table id="MzUzLTEz" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LEGACY UB-92</td>
+</tr>
+<tr>
+<td>BASE FILE</td>
+<td><a href="1-399.html">BILL/CLAIMS</a></td>
+</tr>
+<tr>
+<td>FORMAT TYPE</td>
+<td>PRINTED FORM</td>
+</tr>
+<tr>
+<td>FORM LENGTH</td>
+<td>66</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>*LEGACY NATIONAL UB-92</td>
+</tr>
+<tr>
+<td>ENTRY PRE-PROCESSOR</td>
+<td>D ENTPRE^<a href="http://code.osehra.org/dox/Routine_IBCFP1.html">IBCFP1</a></td>
+</tr>
+<tr>
+<td>ENTRY POST-PROCESSOR</td>
+<td>D ENTPOST^<a href="http://code.osehra.org/dox/Routine_IBCFP1.html">IBCFP1</a></td>
+</tr>
+<tr>
+<td>EXTRACT CODE</td>
+<td>D QB1^<a href="http://code.osehra.org/dox/Routine_IBCFP1.html">IBCFP1</a></td>
+</tr>
+<tr>
+<td>FORM PRE-PROCESSOR</td>
+<td>D FORMPRE^<a href="http://code.osehra.org/dox/Routine_IBCFP1.html">IBCFP1</a></td>
+</tr>
+<tr>
+<td>FORM POST-PROCESSOR</td>
+<td>D FORMPOST^<a href="http://code.osehra.org/dox/Routine_IBCFP1.html">IBCFP1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

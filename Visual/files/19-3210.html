@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzIxMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBT SEND TEST UNBILLED MESS (3210) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzIxMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBT SEND TEST UNBILLED MESS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Send Test Unbilled Amounts Bulletin</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SEND TEST UNBILLED AMOUNTS BUL</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows for sending of a test mail message to the mail group to
+receive the Unbilled Amounts messages.  Using this prior to reporting
+problems can assist sites in determining whether the mail groups are set
+up correctly. The mail group to get the message should be specified in
+field UNBILLED MAIL GROUP (6.25) in the IB SITE PARAMETERS file (350.9).
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>TEST^<a href="http://code.osehra.org/dox/Routine_IBTUBUL.html">IBTUBUL</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS04OTI2LjE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU VHA ENTERPRISE STANDARD TITLE (8926.1) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS04OTI2LjE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU VHA ENTERPRISE STANDARD TITLE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Per VHA Directive 2005-044, this file has been "locked down" by Data 
+Standardization (DS).  The file definition (i.e. data dictionary) shall 
+not be modified.  All additions, changes and deletions to entries in the 
+file shall be done by Enterprise Reference Terminology (ERT) using the 
+Master File Server (MFS), provided by Common Services (CS).  Creating 
+and/or editing locally defined fields in the file are not permitted.  Use 
+of locally defined fields that were created prior to the VHA Directive's 
+2005-044 effective date shall not be supported.
+
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,65 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS00MDkuNjU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>APPOINTMENT STATUS UPDATE LOG (409.65) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS00MDkuNjU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>APPOINTMENT STATUS UPDATE LOG</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This log file contains entries that track the execution of the
+appointment status update process.  An entry is added/modified
+for each date that has been processed.  The SDAM BACKGROUND JOB and
+the SDAM APPT UPDATE options create the entries.
+ 
+The following fields are entered at the beginning of the update process:
+                o  APPOINTMENT DATE
+                o  UPDATE METHOD (background or manual)
+                o  DATE LAST UPDATE STARTED
+                o  USER
+ 
+The date and time the update process completed is logged at the finish
+of the update process in the DATE LAST UPDATE COMPLETED field.  If
+this field is missing at the time of OPC generation, the user will be
+warned that the update process has not completed. OPC generation can
+continue, however.
+ 
+At the end of the OPC generation process, the OPC GENERATED DATE field
+will be logged only if the DATE LAST UPDATE COMPLETED is present.
+If the OPC GENERATED DATE field is not present then OPC
+transmission will not be allowed for the appointment date.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

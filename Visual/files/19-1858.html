@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTg1OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMTS HS BY LOC (1858) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTg1OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMTS HS BY LOC</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Hospital Location Health Summary</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>HOSPITAL LOCATION HEALTH SUMMA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Allows user to print health summaries interactively for all patients on a
+specified ward(s), for all patients with appointments at a specified
+outpatient clinic(s), or for all patients scheduled for a specified
+operating room(s) on a selected day or range of days.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>RESTRICT DEVICES?</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-42.html">HEALTH SUMMARY</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>MAIN^<a href="http://code.osehra.org/dox/Routine_GMTSPD.html">GMTSPD</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1992-09-30 15:00:53</td>
+</tr>
+<tr>
+<td>INDEPENDENTLY INVOCABLE</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

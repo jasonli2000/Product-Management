@@ -1,0 +1,98 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03NC4y").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>REPORT BATCHES (74.2) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03NC4y" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>REPORT BATCHES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file provides the mechanism to group draft reports into logical
+categories to help in the efficent processing of these reports.
+ 
+Usually, an interpreting physician dictates a series of reports onto one
+tape. The transcriptionist receives the tape and the patient folders
+associated with the reports dictated on the tape. By placing the reports
+for that tape in a single batch, usually by interpreting physician name,
+the following processes will be improved:
+ 
+         o re-printing the reports if the printer malfunctions.
+         o verifying the report can be done by batch with the
+           user only answering the 'report status' prompt for
+           each report. The system automatically proceeds through
+           the reports in the batch.
+         o if more than one transcriptionist has to print his/her reports
+           on the same printer then batch printing prevents
+           interweaving of each transcriptionist's reports.
+ 
+Naming of batches is controlled by the user and most often the name is the
+name of the interpreting physician whose dictation the user is
+transcribing. A user can only enter reports into a batch that he/she
+created.
+ 
+ 
+ Data Storage
+ ------------
+The data for the 'REPORT BATCHES' file is stored in the ^RABTCH(74.2,
+global.  This file is volatile and should be journaled. It should also
+be translated if the operating system supports this function.
+ 
+ Input Templates
+ ---------------
+The package does not use any input templates associated with this
+file.
+ 
+ Print Templates
+ ---------------
+The package does not use any print templates associated with this
+file.
+ 
+ Sort Templates
+ --------------
+The package does not use any sort templates associated with this
+file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;RA</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

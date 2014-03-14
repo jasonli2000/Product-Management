@@ -1,0 +1,67 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjg3NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCEF PRINT FROM LIST (2875) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjg3NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCEF PRINT FROM LIST</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Print/Reprint 1358s from List</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PRINT/REPRINT 1358S FROM LIST</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the operator to reprint in Fiscal, some or all
+of the 1358s from a list created using the option 'Build List
+of 1358s Printed in Fiscal by Date'.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN2^<a href="http://code.osehra.org/dox/Routine_PRCHRPT6.html">PRCHRPT6</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

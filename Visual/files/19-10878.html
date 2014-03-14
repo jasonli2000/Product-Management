@@ -1,0 +1,122 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA4Nzg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RCDMCR2 DEBT VALIDITY MGMT RPT (10878) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA4Nzg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RCDMCR2 DEBT VALIDITY MGMT RPT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>DMC Debt Validity Management Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DMC DEBT VALIDITY MANAGEMENT R</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This Accounts Receivable option is to assist management/supervisors to
+review processing of the bills listed in the "Debt Validity report" for
+veterans who are SC 50% to 100% or in receipt of VA Pension benefits and
+have bills for episodes of care within the previous 365 days (or older 
+selected date) with the current bill Status of Open, Active, Suspended,
+Cancellation, Refund Review or Refunded. 
+ 
+The report allows for the user to select the date from which to
+include bills for episodes of care on the report; to select if they want
+the report printed in a Detailed Format, a Summary Format, or in an Excel
+Delimited Format; and to select based on the "DMC Debt Valid" status to
+facilitate Supervisors to identify the bills that are either processed or
+yet to be processed.
+ 
+It is recommended that the user Queues this report to a device that is 132
+characters wide.
+ 
+The report will include the following data elements:
+   Data Elements                      From File #
+   -------------------------------    ---------------------------------
+   Veteran's Name                     #2 (Patient File) 
+   SSN (Last 4 digits)                #2
+   Claim Number(CXXXXXXXX)            #2
+   Claim Location(Station Number)     #2
+   Principal Balance                  #430 (Account Receivable)
+   AR Status(Open/Active/Suspended/
+      Cancellation/Refund Review/
+      Refunded)                       #430
+   DMC Debt Valid Edited By           #430
+   DMC Debt Valid Edited Date         #430
+ 
+   Summary at bottom of report        
+     Total Number of Bills
+     Total Number of unique Veterans
+     Total AR Receivable Amount (Principle Balance)         
+     Total Number of unique Active AR Status 
+     Total Number of unique Open AR Status   
+     Total Number of unique Suspended AR Status      
+     Total Number of unique Cancellation AR Status   
+     Total Number of unique Refund Review AR Status  
+     Total Number of unique Refunded AR Status
+ 
+If the user chooses to print report for all DMC Debt Valid field values
+then the will be a summary for each Value as well as a summary total for
+all values combined.
+ 
+Note: When the veteran is not Service Connected 50% to 100% and is not
+Receiving a VA Pension the new software will also include the
+functionality to consider a veteran as Receiving a VA Pension if he/she is
+receiving A&amp;A or Housebound Benefits.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-53.html">ACCOUNTS RECEIVABLE</a></td>
+</tr>
+<tr>
+<td>DELEGABLE</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>MAIN^<a href="http://code.osehra.org/dox/Routine_RCDMCR2A.html">RCDMCR2A</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

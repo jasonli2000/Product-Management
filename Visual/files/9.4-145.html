@@ -1,0 +1,200 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTE0NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>CLINICAL MONITORING SYSTEM (145) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTE0NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>CLINICAL MONITORING SYSTEM</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>QAM</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>Allows users to build their own monitors.</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Clinical Monitoring System allows the users to create their own
+monitors from a list of pre-defined conditions.  The monitors then run
+nightly, scanning DHCP data for patients who meet the conditions of the
+monitor.  The user may select data elements from a pre-defined list to be
+captured when a patient falls out for a given monitor.  Programmers may
+add new data elements and conditions to the system.  Users can design and
+print ad hoc reports from the fall out data.
+</pre>
+</td>
+</tr>
+<tr>
+<td>FILE</td>
+<td>
+<ol>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-743.html">QA MONITOR</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+<dt>MERGE OR OVERWRITE SITE'S DATA:  &nbsp;&nbsp;OVERWRITE</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-743.1.html">FALL OUT</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-743.2.html">MONITOR HISTORY</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-743.3.html">CONDITION</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+<dt>MERGE OR OVERWRITE SITE'S DATA:  &nbsp;&nbsp;OVERWRITE</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-743.4.html">DATA ELEMENT</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+<dt>MERGE OR OVERWRITE SITE'S DATA:  &nbsp;&nbsp;OVERWRITE</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-743.5.html">GROUP</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-743.91.html">RATIONALE</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+<dt>MERGE OR OVERWRITE SITE'S DATA:  &nbsp;&nbsp;OVERWRITE</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-743.92.html">TIME FRAME</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+<dt>MERGE OR OVERWRITE SITE'S DATA:  &nbsp;&nbsp;OVERWRITE</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-743.6.html">AUTO ENROLL RUN DATE</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DEVELOPER (PERSON/SITE)</td>
+<td>HINES ISC</td>
+</tr>
+<tr>
+<td>*LOWEST FILE NUMBER</td>
+<td>743</td>
+</tr>
+<tr>
+<td>*HIGHEST FILE NUMBER</td>
+<td>743.99</td>
+</tr>
+<tr>
+<td>DEVELOPMENT ISC</td>
+<td>HINES ISC</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>National</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;1.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2005-11-19 00:00:00</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>ENVIRONMENT CHECK ROUTINE</td>
+<td>QAMIPRE0</td>
+</tr>
+<tr>
+<td>ENVIRONMENT CHECK DONE DATE</td>
+<td>1996-09-25 10:56:26</td>
+</tr>
+<tr>
+<td>POST-INITIALIZATION ROUTINE</td>
+<td>QAMIPOST</td>
+</tr>
+<tr>
+<td>POST-INIT COMPLETION DATE</td>
+<td>1996-09-25 10:57:33</td>
+</tr>
+<tr>
+<td>EXCLUDED NAME SPACE</td>
+<td>
+<ol>
+<li>
+<dt>EXCLUDED NAME SPACE:  &nbsp;&nbsp;QAMZ</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

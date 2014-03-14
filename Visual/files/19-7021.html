@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzAyMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ABSV DELETE SUSPENDED T.C. (7021) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzAyMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ABSV DELETE SUSPENDED T.C.</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Delete Suspended Time Card</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DELETE SUSPENDED TIME CARD</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>ABSV MGR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the user to delete from the system a time card which
+had previously been marked as suspended.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-149.html">VOLUNTARY TIMEKEEPING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DELSUS^<a href="http://code.osehra.org/dox/Routine_ABSVTED.html">ABSVTED</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

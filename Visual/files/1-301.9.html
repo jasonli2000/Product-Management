@@ -1,0 +1,58 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zMDEuOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IVM SITE PARAMETER (301.9) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zMDEuOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IVM SITE PARAMETER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This site parameter file contains a QUERY INCOME YEAR multiple which
+contains information for Queries received from the IVM center.
+The IVM PARAMETER file will be used in IVM v2 to hold several parameters
+which shall be used to control the uploading of verified demographic
+and Means Test data from the IVM Center.  This file is being introduced
+with patch IVM*1*2, with the single parameter entry only containing
+the Station number.  The parameter file is needed for this patch
+to capture the query information sent to the site by the IVM Center
+when a request for a full data transmission for all patients is
+submitted.  The query information is stored so that the request
+may be processed outside of peak hours when the nightly background
+job is run.
+ 
+Per VHA Directive 10-93-142, this file definition should not be modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

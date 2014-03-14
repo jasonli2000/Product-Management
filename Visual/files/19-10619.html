@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA2MTk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SCMC FLAGGED (10619) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA2MTk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SCMC FLAGGED</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Patients Scheduled for Inactivation from PC Panels</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PATIENTS SCHEDULED FOR INACTIV</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Patients flagged in last 30 day for inactivation
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>FLRPT^<a href="http://code.osehra.org/dox/Routine_SCMCTSK2.html">SCMCTSK2</a></td>
+</tr>
+<tr>
+<td>DIC {DIP}</td>
+<td>SCPT(404.43,</td>
+</tr>
+<tr>
+<td>FLDS</td>
+<td>[SCMC PENDING UNASSIGN]</td>
+</tr>
+<tr>
+<td>FR</td>
+<td>T-30,T-30</td>
+</tr>
+<tr>
+<td>TO</td>
+<td>TODAY,T+30</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

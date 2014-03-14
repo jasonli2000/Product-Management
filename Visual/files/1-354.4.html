@@ -1,0 +1,61 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zNTQuNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>BILLING ALERTS (354.4) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zNTQuNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>BILLING ALERTS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file will only be populated if a site chooses to use the
+Alert functionality available in Kernel v7 instead of receiving 
+mail messages  This is determined by the field USE ALERTS in the
+IB SITE PARAMETERS file.
+ 
+The entries will contain the name of the alert and after it has been
+resolved, who resolved the alert.  The entries in this file will
+automatically be deleted by the nightly background job, IB MT NIGHT COMP.
+Resolved alerts will be deleted after 30 days, unresolved alerts will be
+deleted after 60 days.
+ 
+The data in the file is automatically entered by the system when
+either a detectable error occurs or when an action occurs that
+requires automatic notification for fiscal integrity (such as
+giving a hardship notification).
+ 
+Per VHA Directive 10-93-142, this file definition should not be modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

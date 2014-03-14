@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODAzMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DMSQ TS PTR STATS SUMMARY (8033) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODAzMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DMSQ TS PTR STATS SUMMARY</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Pointer Statistics (Summary)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>POINTER STATISTICS (SUMMARY)</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This report is about all tables and can take a little while to run.  If
+you are interested in finding out how many table links there are among
+all tables on your system, this option will tell you.  It divides up
+the different types of links with a separate report for each.  
+ 
+The five reports that are joined with this option show the number of
+tables with self-referential pointers, upward links from subfiles,
+links coming in from subfiles below, pointers going outward, and
+pointers coming inward.
+ 
+You have a choice of seeing just the total counts or details.  Details
+include table names, so you can find out which ones have the most
+pointers of a certain type, etc.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN1^<a href="http://code.osehra.org/dox/Routine_DMSQP3.html">DMSQP3</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

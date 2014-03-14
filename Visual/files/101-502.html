@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTUwMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRCPLACE - ON CALL (502) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTUwMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRCPLACE - ON CALL</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Consultant's choice</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is one of the selections for the "Place of Consultation" prompt when
+ordering a Consult/Request.  It gives the assigned Consultant the choice
+of where the consult/request should be performed with the patient.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>protocol</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1999-04-16 15:24:16</td>
+</tr>
+<tr>
+<td>DEFAULT WORD PROCESSING ANSWER</td>
+<td><pre>
+On Call
+</pre>
+</td>
+</tr>
+<tr>
+<td>DEFAULT HELP</td>
+<td>Select: Bedside, On Call, EKG Lab, Emergency Room, Consultant's Choice.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

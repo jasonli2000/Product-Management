@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDM3").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XTVR UPDATE (437) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDM3" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XTVR UPDATE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Update with current routines</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>UPDATE WITH CURRENT ROUTINES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option records the text of the routines indicated in the file used
+to maintain changes in routines.  Only the last version entered is kept
+completely, previous entries reflect only the changes in lines added
+and/or deleted to make the next version.  This option is used to record
+the current routine structure so that it can be compared with future
+versions of the routined using the 'Routine Compare - Current with
+Previous' option.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_XTVRC1.html">XTVRC1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

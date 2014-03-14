@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTI1OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FBUC ADD NEW PERSON (5258) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTI1OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FBUC ADD NEW PERSON</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Add New Person for Unauthorized Claim</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ADD NEW PERSON FOR UNAUTHORIZE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows entry to the New Person file.
+  
+If an Unauthorized Claim is submitted by an other party (ie not veteran or
+not vendor), name and address of submitter needs to be entered into the
+New Person file if it does not already exist.  This will allow correspondence
+ and/or payments to efficiently reach the appropriate party.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ADD^<a href="http://code.osehra.org/dox/Routine_FBUCUTL3.html">FBUCUTL3</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-04-27 11:05:55</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

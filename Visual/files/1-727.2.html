@@ -1,0 +1,54 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03MjcuMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DSS LAB TESTS (727.2) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03MjcuMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DSS LAB TESTS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains the set of laboratory tests tracked by the Decision
+Support System along with the corresponding local data names in the
+LABORATORY TEST file (#60) pointed to by these tests.  This file also
+contains the local names for BLOOD and URINE specimens.  Each DSS Lab Test
+is assigned a predefined indicator (SOURCE field) of the type of specimen
+(blood or urine) that will be used as search criteria in conjunction with 
+the local names for blood and urine specimens.
+ 
+Entries in this file are determined by the DSS Program Office and should
+not be changed or deleted.  New entries in this file should not be made.  
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

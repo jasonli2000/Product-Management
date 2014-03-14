@@ -1,0 +1,103 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODM3Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SC PCMM POSITION ASSIGN REVIEW (8373) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODM3Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SC PCMM POSITION ASSIGN REVIEW</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Patient Team Position Assignment Review</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PATIENT TEAM POSITION ASSIGNME</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option compares all PATIENT TEAM POSITION ASSIGNMENT (#404.43) file
+entries with the corresponding PATIENT TEAM ASSIGNMENT (#404.42) file entries.
+The comparison checks to make sure that the position assignment active 
+timeframe is within the team assignment active timeframe.
+ 
+This report lists those position assignments that fall outside the team
+assignment active timeframe.
+ 
+For example, the following situation would be listed on the report since
+the team assignment is inactive but the position assignment is still
+active.
+ 
+                         Assigned              Unassigned
+                           Date                   Date
+                         --------              ----------
+   Team Assignment      01/01/1997             10/31/1997
+   Position Assignment  02/15/1997               &lt;none&gt;
+ 
+ 
+ 
+Note: The PCMM software has been changed to prevent this and similar
+      situations from occurring. However, older versions of PCMM did
+      allow these assignment timeframe problems to occur. This report
+      should help the site correct these problem assignments.
+ 
+ 
+Note: Currently, this report can only be run in a 'diagnostic' mode.
+      In the future, the report maybe enhanced to run in a 'fix' mode.
+      The 'fix' mode option would also correct the problem assignments
+      based on criteria the user specifies.
+      
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-48.html">SCHEDULING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_SCMCTPU3.html">SCMCTPU3</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>1999-09-13 23:01:57</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

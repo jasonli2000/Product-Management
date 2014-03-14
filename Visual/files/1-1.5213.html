@@ -1,0 +1,49 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0xLjUyMTM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SQLI_KEY_FORMAT (1.5213) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0xLjUyMTM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SQLI_KEY_FORMAT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Strategies for converting base values into key values.
+Soundex and upper case conversion are common examples. This implies that
+comparisons of key values with base values must be preceded by conversion
+of the base value to key value. Key formats are frequently lossy; they
+can't be converted uniquely back to base format.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

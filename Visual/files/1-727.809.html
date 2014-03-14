@@ -1,0 +1,61 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03MjcuODA5").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>UNIT DOSE LOCAL EXTRACT (727.809) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03MjcuODA5" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>UNIT DOSE LOCAL EXTRACT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains data elements as specified by the Decision Support 
+System (DSS) Program Office for the Pharmacy Unit Dose extract from 
+existing DHCP files. Entries into this file are made by extracting data 
+from several files. Once approved by the DSS site manager, entries in 
+this file are loaded into an electronic mail message and sent to the 
+commercial vendor. This file is intended to be used for validation 
+purposes only. Entries should be made only by the extract load routine.
+  
+Since validation techniques will be determined by the local site, it is
+intended that the site add whatever cross references deemed necessary.
+However, this file contains one nationally determined cross reference,
+the "AC" cross reference on the EXTRACT NUMBER field (#2).  This cross
+reference is used by the DSS Extracts software package as an essential
+feature for managing and purging data in this file and should not be
+modified.
+  
+This file should NOT be modified directly using VA FileMan.  
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

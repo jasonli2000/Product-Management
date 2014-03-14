@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTM4MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LR LOINC HISTORICAL RESTART 63 (9380) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTM4MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LR LOINC HISTORICAL RESTART 63</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Restart LOINC Historical Mapping</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RESTART LOINC HISTORICAL MAPPI</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>XUPROGMODE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will restart the mapping process from the beginning. This 
+option will reset all counters and reinitiate the ^XTMP("LRLNC63") 
+global. Rerunning this option is not harmful but the same considerations 
+used for the option.
+LAB DATA LOINC mapping [LR LOINC HISTORICAL MAPPER 63]. This option 
+should only be run during a 24 hour period when the systems is of low 
+activity.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>RERUN^<a href="http://code.osehra.org/dox/Routine_LRLNC63A.html">LRLNC63A</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

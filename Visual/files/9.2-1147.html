@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExNDc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XM-I-C-TALKMAN CAPTURE (1147) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExNDc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XM-I-C-TALKMAN CAPTURE</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>CAPTURING A TALKMAN SESSION</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+
+To capture the TalkMan session in a MailMan message, do the following:
+
+Press &lt;CTRL&gt;A to get TalkMan's attention.  You will be at a command line.
+
+Then enter 'C' (for Capture).  Your session will be captured from that
+point on, and you will be returned to your session.
+
+All interaction is captured, minus any control characters.  Any line longer
+than 75 characters will be broken up into 75-character lines.  The captured
+session may look strange if it includes any screen mode interaction.
+
+When you're ready to end the capture, press &lt;CTRL&gt;A to get TalkMan's
+attention, and then enter 'S' (for Stop capture) or 'E' (for End session).
+
+The MailMan message will be sent to you.  Its subject will be made up
+of your name and the current date/time, as follows:
+   &lt;last,first&gt; CAPTURE &lt;date@time&gt;
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>2002-05-02 09:28:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

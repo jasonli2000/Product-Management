@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzc5MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU PRINT PN BATCH INTERACTIVE (7791) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzc5MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU PRINT PN BATCH INTERACTIVE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Batch Print Outpt PNs by Division</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>BATCH PRINT OUTPT PNS BY DIVIS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will batch print outpatient progress notes in terminal digit
+order by division.  Locations that the site would like excluded from this
+job may edit field #3 in file #8925.93.  If the location is not entered in
+file #8925.93, it WILL be included.
+ 
+For sites that would like to schedule this job to run non-interactively,
+in file #19.2 (OPTION SCHEDULING) please see option [TIU PRINT PN BATCH
+SCHEDULED].  If this option is scheduled in file #19.2 it should not be
+run from the menu, unless, the file room clerks run out of work.  In this
+case, a fresh batch of PNs would keep them busy.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>BATCH^<a href="http://code.osehra.org/dox/Routine_TIUPRPN7.html">TIUPRPN7</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

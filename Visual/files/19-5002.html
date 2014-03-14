@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTAwMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PXTT LIST EXAMS (5002) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTAwMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PXTT LIST EXAMS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Exam List</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>EXAM LIST</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option lists all of the exam names, with their Active Status, that
+are defined in the Exam file for use with PCE.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>print</td>
+</tr>
+<tr>
+<td>DISPLAY OPTION?</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>DIC {DIP}</td>
+<td>AUTTEXAM(</td>
+</tr>
+<tr>
+<td>FLDS</td>
+<td>[PXTT LIST EXAMS]</td>
+</tr>
+<tr>
+<td>BY</td>
+<td>NAME</td>
+</tr>
+<tr>
+<td>FR</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

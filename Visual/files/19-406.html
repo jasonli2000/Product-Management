@@ -1,0 +1,100 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDA2").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XMR-BROADCAST-VA-WIDE (406) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDA2" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XMR-BROADCAST-VA-WIDE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Server / not for a menu</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SERVER / NOT FOR A MENU</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is set up as a server.  When a message is addressed to
+this server (S.XMR-BROADCAST-VA-WIDE), It runs routine ENT^XMGAPI3
+to send the message to SHARED,MAIL.
+
+The message is marked 'closed' (may not forward) and
+'information only' (may not reply).
+
+The message is marked with a vaporization date of 30 days from
+date of receipt.
+
+Note that server XMYB-BROADCAST-VA-WIDE is similar to this one, except
+that it sends the message to all users.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>server</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-4.html">MAILMAN</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ENT^XMGAPI3(.6)</td>
+</tr>
+<tr>
+<td>SERVER BULLETIN</td>
+<td><a href="3.6-8.html">XQSERVER</a></td>
+</tr>
+<tr>
+<td>SERVER ACTION</td>
+<td>RUN IMMEDIATELY</td>
+</tr>
+<tr>
+<td>SERVER AUDIT</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>SUPRESS BULLETIN</td>
+<td>YES, SUPRESS IT</td>
+</tr>
+<tr>
+<td>SERVER REPLY</td>
+<td>NO REPLY (DEFAULT)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjg3Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCEF RETURN TO SERVICE (2876) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjg3Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCEF RETURN TO SERVICE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Send 1358 back to Service without action</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SEND 1358 BACK TO SERVICE WITH</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option enables the accounting tech to return a 1358 to a service
+without action.  It removes the electronic signature code from the
+transaction, adjusts the control point records and sends a bulletin to
+both the approving official and the requestor indicating that the transaction
+has not been processed in fiscal.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PRCEFIS1.html">PRCEFIS1</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>1989-07-17 13:24:15</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

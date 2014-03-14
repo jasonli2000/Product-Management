@@ -1,0 +1,83 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjUwOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCP DUEIN CALCULATE/UPDATE (2509) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjUwOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCP DUEIN CALCULATE/UPDATE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Update Calculated Due-Ins/Outstanding Transaction</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>UPDATE CALCULATED DUE-INS/OUTS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will print a report showing the calculated due-ins or
+will update the inventory point with the calculated due-ins.
+ 
+The calculated due-ins are based on transactions (2237's) and
+purchase orders which have not been received in after a specified
+date.  The date entered should represent the date the last
+transaction or purchase order was received in (probably no later
+than 6 to 9 months in the past).
+ 
+The report should be run before doing the update so the results
+can be verified first.  The report will show a listing of the
+calculated due-ins compared to the total due-in quantity stored
+in the inventory point.  If the due-ins disagree, the update
+should be performed.  The report may not agree with the 'Due-In
+Item Report' since the 'Due-In Item Report' uses the stored values
+and not the calculated values.
+ 
+The update will remove all due-ins stored in the inventory point
+and reset the due-ins to the newly calculated values.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PRCPRDI0.html">PRCPRDI0</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

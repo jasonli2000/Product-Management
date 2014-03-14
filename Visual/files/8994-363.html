@@ -1,0 +1,200 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC0zNjM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSB USERSAVE (363) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC0zNjM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSB USERSAVE</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>USRSAVE</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PSBRPC.html">PSBRPC</a></td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>ARRAY</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>2</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Save the users current window settings for the next session.
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;PSBWIN</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;30</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Contains the current window settings so that the next time the user 
+activates the application the window will reappear in the same format.
+ 
+Data is in the following format:
+ 
+   Window Top;Window Left;Window Height;Window Width;Window State
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;PSBVDL</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+VDL settings
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;PSBUDCW</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+UD tab column settings
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;PSBPBCW</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;4</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+PB tab column settings 
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;PSBIVCW</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;5</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+IV tab column settings   
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;PSBDEV</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;6</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Last print device used.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;PSBCSRT</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;7</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;PSBCV1</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;8</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;PSBCV2</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;9</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;PSBCV3</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;10</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;PSBCV4</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;PSBORMODE</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;12</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Last Order mode per user upon exit of BCMA.
+ 
+This parameter is for the last Order Mode the user was using upon exiting 
+BCMA.  
+ 
+Value
+  0    Inpatient order mode
+  1    Clinic order mdoe
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;PSBCLSRCH</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;13</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Last Clinic Search text criteria entered per user.  
+This parameter contains two pieces of data delimited by a "/".  First 
+piece of data is the Clinic name search Prefix text and the second is the 
+Clinic name contains search text.
+ 
+Example:
+ AL-BLUE TEAM/CARDIAC
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>RETURN PARAMETER DESCRIPTION</td>
+<td><pre>
+Returns
+ 
+  Results[0]='1^Saved'
+  Results[0]='-1^Unable to save settings' if an error occurs in filing.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

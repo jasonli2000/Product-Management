@@ -1,0 +1,205 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuNC0xOTc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ABBOTT IMX UNI (197) &nbsp;&nbsp;  AUTO INSTRUMENT (62.4)</h1>
+<div id="demo"><table id="NjIuNC0xOTc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ABBOTT IMX UNI</td>
+</tr>
+<tr>
+<td>PROGRAM</td>
+<td>LAIMX</td>
+</tr>
+<tr>
+<td>ENTRY for LAGEN ROUTINE</td>
+<td>Accession cross-reference</td>
+</tr>
+<tr>
+<td>CROSS LINKED BY</td>
+<td>IDE</td>
+</tr>
+<tr>
+<td>METHOD</td>
+<td>ABBOTT IMX</td>
+</tr>
+<tr>
+<td>OVERLAY DATA</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>NEW DATA</td>
+<td>D NEW^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>RESTART</td>
+<td>D RESTART^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>INTERFACE NOTES</td>
+<td><pre>
+ To enable the interface, press SYSTEM, then FILES, enter 1.18, then press
+ DISPLAY. Enter the password 2215 and press STORE. Set the
+ communication defaults for the COM2 port, turn the IMX system
+ off, wait 10 seconds, then turn it back on. This initializes the
+ parameters in memory.
+
+ The interface may be tested by reprinting the results from the last run.
+ 
+ ***The instrument uses a DCE configuration. Lines 2 and 3 must be
+ crossed so that it will transmit as a DTE interface.
+ 
+ The LAIMX routine is written to process data that is transmitted in
+ the MEIA Quantitative layout as defined in the IMX unidirectional RS232
+ Interface Guide, pages 7-10.
+ 
+ Param 2 holds the number of decimal places for the result.
+ Param 3 holds the number of the test as identified by the instrument.
+
+ This interface will transmit in a multiple of different formats depending
+ on the tests being run. This version as of 8/13/93 will handle the data
+ streams for the ASSAY NUMBER, %GHb and %A1C tests, as well as linearity
+ checking.
+ **The %A1C test will require the following code to be placed into Param
+ 1: S LATFLG=1. All other tests should not have this variable set. The
+ linearity functionality can be controlled by entering the following code
+ in Param 1: S LRLN(III)="X.X" where the X.X represents the linearity value
+ for this test. If no linearity checking is to be enabled, Param 1 should
+ be set LRLN(III)="0.0".
+
+ Select TEST: PSA 
+  ARE YOU ADDING 'PSA' AS A NEW CHEM TESTS (THE 1ST FOR THIS AUTO 
+          INSTRUMENT)? Y   (YES) 
+    CHEM TESTS NUMBER: 1// 
+  PARAM 1: S LRLN(III)="0.1" 
+  PARAM 2: 1 
+  PARAM 3: 53 
+  DOWNLOAD CODE: 
+ Select TEST: CEA 
+  ARE YOU ADDING 'CEA' AS A NEW CHEM TESTS (THE 2ND FOR THIS AUTO 
+         INSTRUMENT)? Y  (YES) 
+     CHEM TESTS NUMBER: 2// 
+  PARAM 1: S LRLN(III)="1.0" 
+  PARAM 2: 1 
+  PARAM 3: 76 
+  DOWNLOAD CODE: 
+ Select TEST: FERRITIN 
+   ARE YOU ADDING 'FERRITIN' AS A NEW CHEM TESTS (THE 3RD FOR THIS AUTO 
+         INSTRUMENT)? Y  (YES) 
+     CHEM TESTS NUMBER: 3// 
+  PARAM 1: S LRLN(III)="1.0" 
+  PARAM 2: 0 
+  PARAM 3: 27 
+  DOWNLOAD CODE: 
+ Select TEST: HEMOGLOBIN A1C 
+   ARE YOU ADDING '"HEMOGLOBIN A1C' AS A NEW CHEM TESTS (THE 4TH FOR THIS 
+          AUTO INSTRUMENT)? Y  (YES) 
+     CHEM TESTS NUMBER: 4// 
+  PARAM 1: S LRLN(III)="0.0" 
+  PARAM 2: 1 
+  PARAM 3: 79 
+  DOWNLOAD CODE: 
+ Select TEST: (continue entering all tests that this instrument will run 
+              using PARAM 3 to hold the ASSAY # assigned by Abbott.) 
+
+ 
+ ******************************************************************
+                SAMPLE DATASTREAM
+ FYI: This instrument produces several different data streams not all of
+ which are currently supported.
+ ******************************************************************
+ 
+ ^LA(19,"ENV") = VAH^ROU^583VA0^ROU583VA0
+ ^LA(19,"I") = 55
+ ^LA(19,"I",0) = 55
+ ^LA(19,"I",1) = [
+ ^LA(19,"I",2) =
+ ^LA(19,"I",3) =
+ ^LA(19,"I",4) = DATE:  4/27/93
+ ^LA(19,"I",5) = TIME: 13:45:30
+ ^LA(19,"I",6) =
+ ^LA(19,"I",7) = TECH ID : _________
+ ^LA(19,"I",8) = RGNT LOT: _________
+ ^LA(19,"I",9) = SERIAL #: 22642
+ ^LA(19,"I",10) = CRSL ID :   2
+ ^LA(19,"I",11) = CURVE   : 1
+ ^LA(19,"I",12) = CAL DATE:  4/02/93
+ ^LA(19,"I",13) = CAL TIME: 10:37:52
+ ^LA(19,"I",14) =
+ ^LA(19,"I",15) = ASSAY  53 PSA         2245 Revision 1
+ ^LA(19,"I",16) =
+ ^LA(19,"I",17) = MODE 1 CALIBRATOR
+ ^LA(19,"I",18) =
+ ^LA(19,"I",19) = LOC     ng/mL    RATE FACTOR
+ ^LA(19,"I",20) = ----------------------------
+ ^LA(19,"I",21) =  1        10.   294.6  0.926
+ ^LA(19,"I",22) =
+ ^LA(19,"I",23) = MODE 1 CALIBRATION CURVE
+ ^LA(19,"I",24) =
+ ^LA(19,"I",25) = CALIB      ng/mL    AVGR
+ ^LA(19,"I",26) = --------------------------------
+ ^LA(19,"I",27) =   A           0.     6.2
+ ^LA(19,"I",28) =   B           2.    71.4
+ ^LA(19,"I",29) =   C          10.   294.6
+ ^LA(19,"I",30) =   D          30.   720.2
+ ^LA(19,"I",31) =   E          60.  1157.2
+ ^LA(19,"I",32) =   F         100.  1539.7
+ ^LA(19,"I",33) =
+ ^LA(19,"I",34) = LOC    ID            ng/mL     RATE NOTE
+ ^LA(19,"I",35) = ----------------------------------------
+ ^LA(19,"I",36) =  2  CONTROL L         3.88    128.0
+ ^LA(19,"I",37) =  3  CONTROL M        14.17    396.3
+ ^LA(19,"I",38) =  4  CONTROL H        42.42    923.2
+ ^LA(19,"I",39) =  5  000000400         0.68     29.5  LOW
+ ^LA(19,"I",40) =  6  000000191         1.24     47.5  LOW
+ ^LA(19,"I",41) =  7  000000301         2.54     88.0
+ ^LA(19,"I",42) =
+ ^LA(19,"I",43) =
+ ^LA(19,"I",44) = HIGH &gt;   100.000   ng/mL
+ ^LA(19,"I",45) =  LOW &lt;     2.000   ng/mL
+ ^LA(19,"I",46) =
+ ^LA(19,"I",47) =
+ ^LA(19,"I",48) = TESTS USED TO DATE :  61
+ ^LA(19,"I",49) =
+ ^LA(19,"I",50) =
+ ^LA(19,"I",51) =
+ ^LA(19,"I",52) =
+ ^LA(19,"I",53) = ]
+ ^LA(19,"I",54) = C
+ ^LA(19,"I",55) = !!
+</pre>
+</td>
+</tr>
+<tr>
+<td>METH NAME</td>
+<td><a href="62.4-197.html">ABBOTT IMX UNI</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

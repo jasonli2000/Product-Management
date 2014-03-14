@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0xNC42").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>UCI ASSOCIATION (14.6) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0xNC42" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>UCI ASSOCIATION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Most TaskMan tasks run in the same uci and volume set in which they were
+created.  However, tasks that need a device that is only available from
+a different volume set can not.  Such tasks must run on the volume set
+from which the device is available, in a uci equivalent to their
+current one.  Equivalent ucis on different volume sets can have different
+names, so this file indicates which ucis on different volume sets are
+equivalent.
+ 
+TaskMan only directly uses the "AT" and "AV" indices.  The "AT" index
+has this structure:  ^%ZIS("AT",.01,1.5,2.5,3)="", and is used to find
+equivalent ucis on different volume sets.  The "AV" index has this
+structure: ^%ZIS("AV",1.5,.01)="", and is used to determine whether a
+certain uci is part of a certain volume set.
+ 
+Whenever the VOLUME SET field of the VOLUME SET file is changed, a
+MUMPS cross-reference searches through this file and re-cross-references
+all pointers to that entry, thereby keeping the two files in synch.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;ZT</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODAzMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DMSQ TS FIELDS BRIEF (8030) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODAzMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DMSQ TS FIELDS BRIEF</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Field Listing by File (Brief)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>FIELD LISTING BY FILE (BRIEF)</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is like a brief data dictionary listing.  Along with the
+file and field names are the corresponding table and column names.  It
+also shows the field's type, like word-processing or set-of-codes.  If
+the field is a pointer, the pointed-to file/subfile number is shown.  If
+the field is within a subfile, the number of the parent file is shown.
+ 
+In this way, all files and fields can be displayed at one level, without
+the indentation needed with the usual hierarchical display format.  But
+to find out how files are linked, you may need to follow a long chain
+from one link to the next.
+ 
+The fields global location is also listed.  The $PIECE syntax is used
+when the field is from a particular piece of a global node.  The $EXTRACT
+format is used when, like for MUMPS-type fields, the location is an
+extracted portion of the entire node, say from character 1 to 245.  For
+computed fields, of course, there isn't a global location since these are
+virtual fields that only perform calculations.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_DMSQP5.html">DMSQP5</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

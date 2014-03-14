@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTQ1NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>NURS-PATIENT FLAG (455) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTQ1NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>NURS-PATIENT FLAG</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Explanation of the Patient Care Flag/Status</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+Does Nursing provide patient care on this ward?
+ 
+A Patient Care Status flag of "A" (ACTIVE) indicates that direct patient care
+is being provided on the Nursing location.  This field will contain an "I"
+(Inactive) if no patient care activity is present or if the location is used
+for other Nursing education and administrative functions.
+ 
+The Ward Activation (NURSPT-WRDACT) and Ward Deactivation (NURSPT-WRDINA)
+Options should be used to update this field.  Editing of this field via any
+other means may cause the NURS Patient File to contain incorrect data.
+ 
+For additional help on how this field should be set please type [MORE].
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;MORE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-457.html">NURS-ADDITIONAL STATUS HELP</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1992-03-02 08:43:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

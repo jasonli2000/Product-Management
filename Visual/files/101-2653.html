@@ -1,0 +1,114 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI2NTM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VAFC MFU-TFL CLIENT (2653) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI2NTM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VAFC MFU-TFL CLIENT</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>The receiver of the Master File Update</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This client is used to process the Treating Facility Master File update
+message.  No acknowledgements will be generated from these actions.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>subscriber</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1999-05-10 12:13:12</td>
+</tr>
+<tr>
+<td>RESPONSE MESSAGE TYPE</td>
+<td><a href="771.2-33.html">MFN</a></td>
+</tr>
+<tr>
+<td>RECEIVING APPLICATION</td>
+<td><a href="771-14.html">VAFC PIMS</a></td>
+</tr>
+<tr>
+<td>TRANSACTION MESSAGE TYPE</td>
+<td><a href="771.2-33.html">MFN</a></td>
+</tr>
+<tr>
+<td>EVENT TYPE</td>
+<td><a href="779.001-99.html">M05</a></td>
+</tr>
+<tr>
+<td>MESSAGE STRUCTURE</td>
+<td>File: 779.005, IEN: i</td>
+</tr>
+<tr>
+<td>PROCESSING ID</td>
+<td>P</td>
+</tr>
+<tr>
+<td>VERSION ID</td>
+<td><a href="771.5-3.html">2.3</a></td>
+</tr>
+<tr>
+<td>PROCESSING ROUTINE</td>
+<td>D EN^<a href="http://code.osehra.org/dox/Routine_VAFCTFPR.html">VAFCTFPR</a></td>
+</tr>
+<tr>
+<td>SENDING FACILITY REQUIRED?</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>RECEIVING FACILITY REQUIRED?</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DATE/TIME OF MESSAGE REQUIRED?</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>ROUTING LOGIC</td>
+<td>N X S X="RGRSDYN1" X ^%ZOSF("TEST") Q:'$T  D EN^<a href="http://code.osehra.org/dox/Routine_RGRSDYN1.html">RGRSDYN1</a>("VAFC MFU-TFL CLIENT",0)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

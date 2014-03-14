@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTM2MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA DEVICE (5361) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTM2MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA DEVICE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Device Specifications for Imaging Locations</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DEVICE SPECIFICATIONS FOR IMAG</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This function allows IRM to assign device names
+to represent divisions and locations.
+ 
+When a user signs on the system and tries to access the module,
+the first action by the module will be to determine which
+division and location the user is associated with.
+ 
+The module uses the device name to do this.  If the current device name
+is the same as one of the names you are about to associate with a
+particular division and location, then during the entire session the system
+will automatically use the parameters that the coordinator has
+specified for that division and location.
+ 
+For example, the user will never be asked how many flash cards to print
+or what flash card format to use. The parameters have that information.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>2^<a href="http://code.osehra.org/dox/Routine_RASITE.html">RASITE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

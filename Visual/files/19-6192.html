@@ -1,0 +1,92 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNjE5Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SROA DEMOGRAPHICS (6192) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNjE5Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SROA DEMOGRAPHICS</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Patient Demographics (Enter/Edit)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PATIENT DEMOGRAPHICS (ENTER/ED</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to enter, edit or review risk assessment patient
+demographic information such as patient movement dates, length of
+postoperative hospital stay, race, in/out-patient status and other
+information related to this surgical episode.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-127.html">SURGERY</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D EXIT^<a href="http://code.osehra.org/dox/Routine_SROES.html">SROES</a>,EXIT^SROVAR</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D ^<a href="http://code.osehra.org/dox/Routine_SROVAR.html">SROVAR</a> Q:$D(XQUIT)  D SRA^<a href="http://code.osehra.org/dox/Routine_SROES.html">SROES</a></td>
+</tr>
+<tr>
+<td>XQUIT EXECUTABLE</td>
+<td>Q</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_SROAPM.html">SROAPM</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

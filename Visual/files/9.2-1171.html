@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExNzE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XM-I-N-BULLETINS (1171) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExNzE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XM-I-N-BULLETINS</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>BULLETINS SIGNALING TROUBLE IN NETWORK TRANSMISSION</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+
+There are two bulletins which are sent to the Postmaster in the event that
+MailMan has any problems when communicating with a remote site.  It is
+recommended that mail groups be added to these bulletins so that programmers
+at your site who are responsible for MailMan will be notified, too.
+
+  XMVALBAD - Sent because the [VALIDATION NUMBERS] at both sites don't
+  match.  The numbers must match in order for the transmission to be
+  accepted.
+
+  XM SEND ERR TRANSMISSION - Sent because there were problems connecting
+  with the site or while transmitting to the site.  This bulletin will
+  include the number of times the transmission has failed, the reason
+  (if known) for the problem, as well as a transcript of the latest
+  attempt.
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;VALIDATION NUMBERS</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-1167.html">XM-I-N-DOMAIN FILE-VALIDATE</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>2002-05-08 14:14:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

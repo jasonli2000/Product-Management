@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA5NDk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VBEC DATA VALIDATION (10949) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA5NDk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VBEC DATA VALIDATION</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Run Legacy VistA Blood Bank Data Validation</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RUN LEGACY VISTA BLOOD BANK DA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option performs a data validation check on legacy VistA Blood Bank
+data based on pre-defined business rules.  If there are issues with
+invalid data, they'll need to be resolved before data can be converted to
+VBECS table attributes.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^VBECDC01(0)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

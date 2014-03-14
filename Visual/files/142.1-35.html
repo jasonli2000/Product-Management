@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTQyLjEtMzU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IMAGING PROFILE (35) &nbsp;&nbsp;  HEALTH SUMMARY COMPONENT (142.1)</h1>
+<div id="demo"><table id="MTQyLjEtMzU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IMAGING PROFILE</td>
+</tr>
+<tr>
+<td>PRINT ROUTINE</td>
+<td>ENSRA;GMTSRAS</td>
+</tr>
+<tr>
+<td>TIME LIMITS APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>IP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This component contains information from the Radiology/Nuclear Medicine
+package.  Time and maximum occurrence limits apply.  Data presented
+include:  study date, procedure(s) with status(es), report status, staff
+and resident interpreting physicians, and the narrative fields modifier,
+history, report, diagnostic text and impression.
+ 
+Only imaging profiles which have been verified are reported.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MAXIMUM OCCURRENCES APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>Requires Radiology version 3 or later</td>
+</tr>
+<tr>
+<td>DEFAULT HEADER NAME</td>
+<td>Imaging Profile</td>
+</tr>
+<tr>
+<td>CPT MODIFIER APPLICABLE</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

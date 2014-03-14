@@ -1,0 +1,50 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS05MTU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ESP OFFENSE CODES (915) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS05MTU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ESP OFFENSE CODES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The ESP OFFENSE CODES file contains appropriate offenses contained
+within VA Regulations 1.218, United State Codes, Titles 18 and 21.
+The entries contained within the released version of the program
+are those offenses considered to be standard at all VA facilities.
+The Chief of VA Police can add any local codes (e.g., VA facility,
+city, county or state) that might be enforced at the local site.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

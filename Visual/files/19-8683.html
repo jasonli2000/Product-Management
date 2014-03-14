@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODY4Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LR LOINC LOOKUP (8683) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODY4Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LR LOINC LOOKUP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Find LOINC for Vista Lab Test</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>FIND LOINC FOR VISTA LAB TEST</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows you to lookup a LOINC code for a lab test and
+specimen.  You can use it to match a VistA lab test to a LOINC
+code.  You will be prompted to enter a lab test name and specimen.
+This will be used as a default lookup value.  If there are no
+matches, then you will see two question marks, "??", and you will
+return to the "LOINC Name..Specimen" prompt.  Now you can enter
+the first few characters of the test name or some value to 
+find the LOINC code.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_LRLNC1.html">LRLNC1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

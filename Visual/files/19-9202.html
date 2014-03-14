@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTIwMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORK EDITABLE BY USER (9202) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTIwMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORK EDITABLE BY USER</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Set Order Checks to be Uneditable By Users</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SET ORDER CHECKS TO BE UNEDITA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+   This option enters values for the parameter ORK EDITABLE BY USER.  
+IRM and Clinical Coordinators can use this option to set one or more order
+checks to be uneditable by end users.  An order check with an Editable By
+User value of "No" prevents end users from changing or setting that order
+check's enabled/disabled parameter value. If the order check's
+enabled/disabled value is "enabled", in combination with an Editable By
+User value of "No", that order check is effectively "mandatory". (In the
+GUI option to enable/disable order checks, the order check will appear
+with a "Mandatory" flag.)
+   Editable By User values only apply to end users.  An order check with
+a "No" value does not prevent IRM and Clinical Coordinators from setting
+or changing the order check's enabled/disabled values.  The order check
+can still be edited by users (presumably IRM and Clinical Coordinators)
+with access to the Order Checking Mgmt menu option "Enable/Disable an
+Order Check".  An order check with no entry for this option/parameter will
+be treated as "editable by user" (as if it had a "Yes" value.) In other
+words, the default for this option/parameter is "Yes".
+   This option is used by the List Manager option "Enable/Disable My Order
+Checks" [ORK REC PROCESSING FLAG].  In the GUI, these settings can be
+accessed from the Tools|Options menu then selecting the Order Checks tab.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-35.html">ORDER ENTRY/RESULTS REPORTING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EDITUSER^<a href="http://code.osehra.org/dox/Routine_ORKMGR.html">ORKMGR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

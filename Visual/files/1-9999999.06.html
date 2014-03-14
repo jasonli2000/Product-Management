@@ -1,0 +1,55 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS05OTk5OTk5LjA2").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LOCATION (9999999.06) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS05OTk5OTk5LjA2" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LOCATION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains the IHS Standard Facilities and their Associated codes,
+CHS Vendors, pointers to their respective service units and areas, a 2-4
+character abbreviation, and the highest medical record number assigned by
+that facility.
+ 
+Changes to this data dictionary should be coordinated thru the IHS DBA.
+ 
+This file reflects entries in the IHS Standard Code Book, section VIII-C
+Area - Service Unit - Facility.  Local additions or modifications should
+not be made.  Monthly updates (if required) are provided by the IHS DBA
+thru the patch module.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

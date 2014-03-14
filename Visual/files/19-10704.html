@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA3MDQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>QACI REPORT ROC CHANGES (10704) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA3MDQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>QACI REPORT ROC CHANGES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>System Generated Changes to ROCs for Migration</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SYSTEM GENERATED CHANGES TO RO</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Report of changes that will be made by the Migration System to ROCs when
+they are migrated to PATs. These changes are made when missing data can be
+provided either from data available in other places on the ROC, or that
+can be filled in with a default value.
+ 
+This report can be quite large. The type of changes reported are: Issue
+Text or Resolution Text were missing and will be replaced by canned text,
+Division was missing and will be filled in from station number that is the
+first part of the ROC number, either Info Taken By or Edited By were
+missing and both set to the same value.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ENRPT2^<a href="http://code.osehra.org/dox/Routine_QACI2E.html">QACI2E</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

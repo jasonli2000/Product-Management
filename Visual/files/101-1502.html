@@ -1,0 +1,128 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE1MDI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMPL USER PREFS (1502) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE1MDI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMPL USER PREFS</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Preferred View of Problem List</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu contains actions allowing a user to change his/her preferred
+view of patient problem lists.  A set of services may be defined here
+that will be used as a default screen when displaying patient problem
+lists for this user; the view may be changed dynamically within the
+Problem List application through the "Change View" action, but
+it will not be stored as a new default unless updated here.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1563.html">GMPL UP ADD ITEM</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AD</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1564.html">GMPL UP REMOVE ITEM</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RM</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1565.html">GMPL UP SAVE VIEW</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SV</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;13</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1514.html">GMPLX BLANK1</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1572.html">GMPL UP SWITCH</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;VW</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1574.html">GMPL UP DELETE VIEW</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DV</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-450.html">VALM QUIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;Q</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;15</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Quit w/o Saving Changes</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-135.html">PROBLEM LIST</a></td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D KEY^<a href="http://code.osehra.org/dox/Routine_GMPLMGR1.html">GMPLMGR1</a>,SHOW^VALM</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>40</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-02-12 10:39:03</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

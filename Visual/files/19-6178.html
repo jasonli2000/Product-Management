@@ -1,0 +1,86 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNjE3OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SCDX AMBCAR RETRANS BY DATE (6178) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNjE3OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SCDX AMBCAR RETRANS BY DATE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Retransmit Ambulatory Care Data by Date Range</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RETRANSMIT AMBULATORY CARE DAT</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>SD SUPERVISOR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Retransmission option which will gather data from the Outpatient Encounter
+(#409.68) and Deleted Outpatient Encounter (#409.74) files within a
+specified date range and mark the corresponding entry in the Transmitted
+Outpatient Encounter file (#409.73) for retransmission.  The nightly
+background job 'SCDX AMBCAR NIGHTLY XMIT' will then transmit this data to
+the National Patient Care Database.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>Short Menu Text</td>
+<td>Amb Care Retrans by Date</td>
+</tr>
+<tr>
+<td>DISPLAY OPTION?</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-48.html">SCHEDULING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>RTRNRNG^<a href="http://code.osehra.org/dox/Routine_SCDXRT01.html">SCDXRT01</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

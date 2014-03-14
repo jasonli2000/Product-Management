@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzc5MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU PRINT PN BATCH SCHEDULED (7790) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzc5MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU PRINT PN BATCH SCHEDULED</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Scheduled Print Outpt PNs by Division</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SCHEDULED PRINT OUTPT PNS BY D</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will batch print outpatient progress notes in terminal digit
+order by division.  This option is designed to print as a scheduled tasked
+job at an interval selected by the sight.  Some sites may want to print
+these notes weekly, other sites may opt for a monthly print.  Each
+division will need to set up a separate job in the OPTION SCHEDULED
+(#19.2) file.  The DIVISION is the required variable.  The starting point
+will be extracted from file #8925.94.  If the date in field #1.01 is not
+filled in, the job will terminate.
+ 
+When setting up the task in file #19.2, SET the variable TIUDIV equal to
+the IEN of the division in file #8925.94 (TIU DIVISION PRINT PARAMETERS
+FILE).
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>PRINT^<a href="http://code.osehra.org/dox/Routine_TIUPRPN7.html">TIUPRPN7</a></td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

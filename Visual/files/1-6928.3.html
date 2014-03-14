@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02OTI4LjM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENG BUILDING (6928.3) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02OTI4LjM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENG BUILDING</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+A simple file of physical buildings. A 'division designation' may
+be included if needed to distinguish between two buildings having
+the same number. Suppose, for example, there were two buildings
+numbered 100 at VAMC St. Louis, one at the John Cochran Division
+and one at Jefferson Barracks. These two buildings could be entered
+separately as 100-JC and 100-JB; where 'JB' and 'JC' are division
+designators. The same strategy may be useful at facilities that
+support outpatient clinics, Regional Offices, national cemeteries,
+etc.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

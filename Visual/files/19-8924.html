@@ -1,0 +1,89 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODkyNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENFA CT EXP LIST (8924) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODkyNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENFA CT EXP LIST</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>List Equipment to be Expensed by Task</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LIST EQUIPMENT TO BE EXPENSED</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The option generates a report of equipment that currently meets the
+criteria to be expensed by the one-time task. The output is sorted by
+station and then by value.  Equipment that is currently capitalized and
+reported to Fixed Assets/FMS would be expensed unless it meets one or more
+of the following criteria:
+  SGL = 1524 (EXCESS)
+  FUND = 4539 (FRANCHISE)
+  ASSET VALUE greater than $99,999.99
+  SYSTEM ASSET VALUE greater than $99,999.99 
+  Item edited by user to Remain Capitalized
+The system asset value is determined by adding the asset values of all
+equipment which is part of a system and also reported to Fixed Assets/FMS.
+Equipment can be placed in a system using the PARENT field.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-18.html">ENGINEERING</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>I $G(DT)>3020725 W $C(7),!," *** This option is obsolete and it should not be used.***"</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_ENFACTL.html">ENFACTL</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

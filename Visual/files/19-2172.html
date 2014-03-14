@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjE3Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DG CO-PAY TEST DELETE (2172) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjE3Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DG CO-PAY TEST DELETE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Delete a Copay Exemption Test</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DELETE A COPAY EXEMPTION TEST</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>DG MTDELETE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to delete co-pay test data which may have been 
+inadvertantly entered.  Under normal circumstances only individual dates of
+test may be deleted using this option.  The exception is non-veterans.  All
+co-pay tests found for a non-veteran may be deleted.  
+  
+This option invokes the means test event driver.  
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D ON^<a href="http://code.osehra.org/dox/Routine_DGMTCOU.html">DGMTCOU</a> I Y S DGMTYPT=2 D EN^<a href="http://code.osehra.org/dox/Routine_DGMTDEL.html">DGMTDEL</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

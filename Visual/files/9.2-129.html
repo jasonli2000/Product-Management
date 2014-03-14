@@ -1,0 +1,91 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTEyOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQSRV HELP (129) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTEyOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQSRV HELP</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>General Help For 'Server'-type Options</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+  A 'server'-type option is an option in the Option File that can
+receive Mailman messages that can trigger background jobs.  Each
+server option can be individually tailored and monitored by the
+local IRM staff to insure security and efficiency.  There are
+several fields in the Option File which help accomplish these
+local goals.  No background jobs will be started by the menu
+system unless the local Option File has been specifically set
+up to allow a specific server to do so.
+  Servers are analogous to two types of existing option types:
+1. Run routine, and 2. Action options.  In the first case, the
+server can be allowed to run the routine whose name is found
+in the 'Routine' field of that option.  In the second case, 
+when no routine is entered in that field, the menu system will
+execute the MUMPS code found in the Action and Exit Action
+fields of the Option File for that server option.
+  Typically, an application programmer will write a program
+and create a server type option to run that program which will
+be shipped with an application package.  The local IRM staff,
+should they wish to put a server 'on-line' will fill in the
+necessary fields in the Option file for that server.  If a
+server is on-line a mail message arriving at the site addressed
+to S.(option name) will cause the server to do whatever is
+specified invarious [fields of the Option File]. Option File.
+  
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;FIELDS OF THE OPTION FILE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-130.html">XQSRV-FIELDS</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-07-11 10:30:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

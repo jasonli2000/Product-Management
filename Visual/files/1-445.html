@@ -1,0 +1,54 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS00NDU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GENERIC INVENTORY (445) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS00NDU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GENERIC INVENTORY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains descriptive and inventory information for any entity
+that wants to maintain a perpetual inventory, automate their item 
+distribution function, and automatically generate stock replenishment 
+orders based on inventory needs.
+ 
+There are three types of inventory points that can be on this file:
+Warehouses, Primary Distribution Points (locations that are allowed to
+order directly from supply), or Secondary Distribution Points (locations
+that must order through a Primary Distribution Point).
+
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

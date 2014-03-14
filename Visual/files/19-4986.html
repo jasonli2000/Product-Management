@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDk4Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBD MANUAL DATA ENTRY GROUP (4986) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDk4Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBD MANUAL DATA ENTRY GROUP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Group Clinic Data entry</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>GROUP CLINIC DATA ENTRY</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>** This option is OUT OF ORDER **</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows manual data entry of encounter data for the Ambulatory
+Data Capture project.  The user selects a clinic and appointment date/time,
+and may de-select specific patient, otherwise after completing data entry
+for a single patient, the data will then be entered for all patients with
+the same appointment date/time.  All forms for the
+encounter will be asked.  If no forms were printed for the encounter the
+user can select the form to for data entry without having to print the form.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-76.html">AUTOMATED INFO COLLECTION SYS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_IBDFDE7.html">IBDFDE7</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

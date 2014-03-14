@@ -1,0 +1,83 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTQ1OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA ORDERPENDING (5458) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTQ1OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA ORDERPENDING</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Pending/Hold Rad/Nuc Med Request Log</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PENDING/HOLD RAD/NUC MED REQUE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will print a list of requests in the 'pending' or 'hold'
+status for the imaging location(s) chosen. The user is prompted for the
+request status (pending or hold) and for the imaging location(s).
+ 
+The output will give patient name, last 4 digits of patient ID number,
+procedure, patient location and date ordered sorted by request date. The
+report contains an updated patient location with the requesting location
+printing below the patient location if the requesting location is
+different from the patient location.
+ 
+If a request exists in the date range selected by the user that does not
+have a value for imaging location, then a separate page is printed listing
+that request. The imaging location will be labelled as "Unknown" in the
+header of the page. This will identify orders that have not been submitted
+to an imaging location.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>DISPLAY OPTION?</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_RAORDP.html">RAORDP</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

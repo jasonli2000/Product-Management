@@ -1,0 +1,112 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE4MzA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU ACTION MENU SIGN ON CHART (1830) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE4MzA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU ACTION MENU SIGN ON CHART</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Sign On Chart Menu</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Menu of actions which may be executed by MIS Personnel.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1780.html">TIU BROWSE ACTION PRINT</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1761.html">TIU ACTION QUIT</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;6</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1782.html">TIU BROWSE ACTION SEARCH</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1784.html">TIU BROWSE ACTION SIGN ON CHART</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>S:$D(DIROUT) TIUQUIT=1</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S VALMSG="+ Next Screen  - Prev Screen  ?? More Actions"</td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I 1 X:$D(^ORD(101,+$P(^ORD(101,DA(1),10,DA,0),"^"),24)) ^(24)</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D RESIZE^<a href="http://code.osehra.org/dox/Routine_TIULM.html">TIULM</a>(21,18),SHOW^VALM S XQORM("B")=$S(VALMLST<VALMCNT:"Next Screen",1:"On Chart")</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2005-03-11 13:01:22</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

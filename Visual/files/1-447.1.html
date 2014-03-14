@@ -1,0 +1,60 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS00NDcuMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>AUTOMATED SUPPLY STATION PROCESSING QUEUE (447.1) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS00NDcuMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>AUTOMATED SUPPLY STATION PROCESSING QUEUE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file is populated with information originating from the automated
+supply station HL7 transactions. Once the data stored here has been
+processed by GIP and the GIP files have been updated appropriately, the
+record will be deleted.  This file allows information from the supply
+stations to flow to GIP even if the file 445 entry for a particular
+secondary inventory point is in use.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;PRCP</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

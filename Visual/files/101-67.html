@@ -1,0 +1,80 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTY3").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORS LAB INTERIM (67) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTY3" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORS LAB INTERIM</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Lab Results (Interim)</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol prints interim labs for a user-specified time interval
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-35.html">ORDER ENTRY/RESULTS REPORTING</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D RANGE^<a href="http://code.osehra.org/dox/Routine_ORPRS01.html">ORPRS01</a>() Q:$G(OREND)  S ORSSTRT(+XQORNOD)=+ORSSTRT,ORSSTOP(+XQORNOD)=+ORSSTOP</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1999-04-16 15:22:35</td>
+</tr>
+<tr>
+<td>METHOD</td>
+<td>
+<ol>
+<li>
+<dt>METHOD:  &nbsp;&nbsp;20</dt>
+<dt>METHOD ACTION:  &nbsp;&nbsp;D SET^<a href="http://code.osehra.org/dox/Routine_LRRP4.html">LRRP4</a> S:$D(ORSSTRT(+XQORNOD)) LREDT=9999999-ORSSTRT(+XQORNOD) S:$D(ORSSTOP(+XQORNOD)) LRIDT=9999999-ORSSTOP(+XQORNOD) S DFN=+ORVP,OORVP=ORVP D OERR^<a href="http://code.osehra.org/dox/Routine_LRRP4.html">LRRP4</a>,CLEAN^LRRP4 S ORVP=OORVP K OORVP,LRACC,LRAD,LRAN,LRLLT,LRPG,LRSB</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

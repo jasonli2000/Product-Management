@@ -1,0 +1,4350 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTk2").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DENTAL (96) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTk2" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DENTAL</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>DENT</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>NATIONAL DENTAL PACKAGE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Dental package captures data on all sittings (Dental treatments)
+performed in the Dental Service.  It also captures data on Dental fee
+basis patients, applications for care and on days worked by Dental
+Service personnel and the amount of time spent in clinical and non
+clinical activities.
+ 
+The package generates all required Dental AMIS reports and is capable of
+transmitting the data to Austin, Texas through the VADATS electronic
+network using Network Mailman or by magnetic tape.
+ 
+The package also provides support for developing a treatment plan for
+individual patients by determining the number of appointments needed
+for each type of care to be provided and which appointments can be
+scheduled concurrently or must be scheduled consecutively.
+ 
+In addition to the AMIS reports, there is also a report to determine
+which inpatients need a dental exam and one to print out sittings/visits
+for one or all providers.
+ 
+There is a separate menu for the managers of the Dental package which
+allows them to set up basic files, delete erroneous entries and re-release
+data to Austin that was rejected due to an error.
+</pre>
+</td>
+</tr>
+<tr>
+<td>FILE</td>
+<td>
+<ol>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-220.html">DENTAL PATIENT</a></dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;File: 1, IEN: 220.2</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;File: 1, IEN: 220.3</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-221.html">DENTAL TREATMENT (AMIS)</a></dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-222.html">DENTAL FEE BASIS (AMIS)</a></dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-223.html">DENTAL CLASS I-VI (AMIS)</a></dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-224.html">DENTAL PERSONNEL (AMIS)</a></dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;File: 1, IEN: 220.4</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-220.5.html">DENTAL PROVIDER</a></dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-225.html">DENTAL SITE PARAMETERS</a></dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-226.html">DENTAL NON CLINICAL TIME</a></dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-220.6.html">DENTAL SCREEN (USER)</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DEVELOPER (PERSON/SITE)</td>
+<td>STEVE WAGNER</td>
+</tr>
+<tr>
+<td>*LOWEST FILE NUMBER</td>
+<td>220</td>
+</tr>
+<tr>
+<td>*HIGHEST FILE NUMBER</td>
+<td>229</td>
+</tr>
+<tr>
+<td>DEVELOPMENT ISC</td>
+<td>WASHINGTON</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>National</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;1.2</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2005-11-19 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;2003-11-07 00:00:00</dt>
+<dt>INSTALLED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION OF ENHANCEMENTS:  &nbsp;&nbsp;<pre>
+This  build contains two KIDS builds:
+  DENT*1.2*31 and DSIC 1.2
+</pre>
+</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;20 SEQ #19</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-08-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Dental Version 1.2 Patch 20.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;21 SEQ #20</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-10-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is Dental Patch 21.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;22 SEQ #21</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-03-21 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is patch 22 of Dental Version 1.2.  This patch is the final clean up of
+file 3, 6, and 16.  It'll delete any old routines that reference these files.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;23 SEQ #22</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-11-18 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch 15 should be installed before patch 23.                             
+                                                                          
+This patch will fix the following: 
+ 
+ 1) NOIS BRX-0897-11424  DENTEC+2 DENTEC UNDEF ERROR 
+                                                                        
+    ROUTINE MODIFIED: DENTEC                                              
+ 
+    OPTION: Treatment Data Enter/Edit (Line By Line) [DENTTREAT LINE EDIT]
+    An undefined error of the variable DA occurs when the user tries to 
+    delete the whole treatment data entry during the re-edit process in
+    the option Treatment Data Enter/Edit (Line By Line) [DENTTREAT LINE
+    EDIT].  The following is a sample screen capture reproducing the  
+    error: 
+                                                                          
+    Select Dental Activity Option: 3  Treatment Data Enter/Edit (Line By 
+Line) 
+You may select a treatment date by entering the patient's name or SSN, the
+provider's number or the treatment date (without time).  
+Select DENTAL TREATMENT (AMIS) DATE: N   OCT 17, 1997@11:14:06
+  Are you adding 'OCT 17, 1997@11:14:06' as
+    a new DENTAL TREATMENT (AMIS) (the 123RD)? Y  (Yes)
+   DENTAL TREATMENT (AMIS) STATION.DIVISION: 578                       
+   DENTAL TREATMENT (AMIS) DENTAL PROVIDER: DUCK,DONALD        2345
+ 
+DATE: OCT 17,1997@11:14:06//                                              
+STATION.DIVISION: 578//
+DENTAL PROVIDER: DUCK,DONALD//                                          
+DENTAL PATIENT: TEST                                                      
+   1   TEST,ADMITC       01-23-34     324567890     SC VETERAN
+   2   TEST,ADMITF       12-01-40     224345697     SC VETERAN
+   3   TEST,AGAIN       12-01-55     223128901     SC VETERAN
+ 
+CHOOSE 1-3: 1  TEST,ADMITC       01-23-34     324567890     SC VETERAN
+         ...OK? Yes//   (Yes)                                        
+PATIENT CATEGORY: 22  PRIORITY 3 (OPT)
+BED SECTION: 1  MEDICAL
+SCREENING/COMPLETE EXAM: S  SCREENING
+EVALUATION: 1  EVALUATION
+COMPLETIONS/TERMINATIONS: C  COMPLETION
+X-RAYS EXTRAORAL #:
+EXTRACTIONS #:
+SURGICAL EXTRACTIONS #:
+OTHER SIGNIFICANT TREAT (CTV):
+BIOPSY/SMEAR #:
+FRACTURE #:
+OTHER SIGNIF. SURG. (CTV) :
+X-RAYS INTRAORAL #:
+INTERDISCIPLINARY CONSULT:
+OPERATING ROOM:
+NEOPLASM CONFIRMED MALIGNANT #:
+NEOPLASM REMOVED #:
+SPLINTS &amp; SPEC. PROCS. (CTV) :
+ADMIN PROCEDURE:
+PATIENT ED. (CTV): 3  INDIVIDUAL
+PROSTHETIC REPAIR #:
+PERIODONTAL QUADS (SURGICAL) #:
+PROPHY NATURAL DENTITION: 1  YES
+PROPHY DENTURE: 1  YES
+SURFACES RESTORED #:
+INDIVIDUAL CROWNS #:
+COMPLETE DENTURES #:
+PERIO QUADS (ROOT PLANE) #:
+POST &amp; CORES #:
+FIXED PARTIALS (ABUT) #:
+FIXED PARTIALS (PONT ONLY) # :
+REMOVABLE PARTIALS #:
+ROOT CANAL THERAPY #:
+PRE AUTH/2ND OPINION EXAM:
+SPOT CHECK EXAM: 1  STAFF
+SPOT CHECK DISCREPANCY #: 1
+ 
+ERROR-- Bed section must be blank if patient category is OPT, NHC or DOM.
+ERROR-- Patient category must be Class I-VI (9-17) for spot check/pre-auth
+exam.
+ERROR-- Patient category and type of service code are incompatible.
+ERROR-- You are not allowed to mark both the screening/complete and
+evaluation fields.
+ERROR-- Patient education must be blank if prophy is marked.
+ 
+You must correct the above error(s) before continuing.
+ 
+Press return when you are ready to re-edit this treatment data entry.
+ 
+DATE: OCT 17,1997@11:14:06// @
+ 
+   SURE YOU WANT TO DELETE THE ENTIRE DENTAL TREATMENT (AMIS)? Y  (Yes)
+  
+%DSM-E-UNDEF, undefined variable DA
+-DSM-I-ECODE, MUMPS error code: M6
+%DSM-I-ATLABEL, DENTEC+2^DENTEC:1       G:'$D(^DENT(221,DA,0)) EXIT1 S
+ 
+G=^DENT(221,DA,0),X=$P(G,"^",19),E="",M="ERROR-- "
+ 
+&gt;
+                                                                         
+    Routine DENTEC is modified to fix this error.                       
+ 
+ 2) NOIS TOG-0897-11099  DATA ENTRY SCREEN NOT REPAINTING 
+ 
+    ROUTINE MODIFIED: DENTDML, DENTDNJ, DENTDNJ1, DENTDNJ2, DENTDNK, and 
+                      DENTDNQ                                            
+                                                                          
+    OPTIONS: Treatment Data Enter/Edit (Full Screen)         [DENTTREAT
+                                                                   EDIT] 
+             Class I-VI (type 3) Admin Info Enter/Edit       [DENTADM
+                                                                   EDIT] 
+             Personnel Info (type 4) Enter/Edit              [DENTPERS
+                                                                   EDIT]
+             Applications and Dental Fee (type 5) Enter/Edit [DENTFEE
+                                                                   EDIT] 
+ 
+    FILES:   DENTAL TREATMENT (AMIS) (#221)  FIELD: STATION.DIVISION (#.3)
+             DENTAL FEE BASIS (AMIS) (#222)  FIELD: STATION.DIVISION (#.3)
+             DENTAL CLASS I-VI (AMIS) (#223) FIELD: STATION.DIVISION (#.3)
+             DENTAL PERSONNEL (AMIS) (#224)  FIELD: STATION.DIVISION (#.3)
+ 
+    The COMMANDS, displayed at the bottom of the screen, does not get 
+    re-displayed after the user enters in a "?", "@", or data in any field
+    while using any one of the options mentioned above.                   
+ 
+    The routines listed above was modified to fix this.
+    Fields #.3, STATION.DIVISION, in files #221, 222, 223, and 224 was
+    modified to fix this.
+ 
+TEST SITES
+==========
+Bronx, NY
+Togus, ME 
+                                                                         
+ROUTINE SUMMARY                                                          
+===============
+The following is a list of the routines included in this patch.  The
+second line of each of these routines now looks like:                  
+ 
+&lt;tab&gt;;;1.2;DENTAL;**[PATCH LIST]**;Oct 08, 1992                          
+                                                                    
+              CHECK^XTSUMBLD results
+ 
+Routine Name     Before Patch     After Patch     Patch List
+------------     ------------     -----------     ----------
+DENTDML           8337833          8642179        **15,23**
+DENTDNJ          12975627         13031174        **15,23**
+DENTDNJ1         11752108         11992713        **15,23**
+DENTDNJ2          8570663          8654282        **15,23**
+DENTDNK           4344731          4698084        **15,23**
+DENTDNQ           9982353          9333763        **15,23**
+DENTEC           11806503         11894141         **23**
+ 
+ 
+ GENERAL INFORMATION
+ ===================                                                     
+ This patch should be installed into your production UCI.  It can be
+ installed at anytime.  Install time is less than 10 minutes.          
+ This patch has 1 other patch dependency, patch 15.  No options need to be
+ disabled.  Users do not need to be logged off the system. If there are
+ any questions, your supporting CIOFO Customer Service Clinical 1
+ team will address them.
+ 
+ This Patch is created with Kernel V8 KIDS.  Follow these instructions:
+ 
+ 1) Use Packman option 'INSTALL/CHECK MESSAGE' to load the KIDS build 
+     onto your system.
+ 2) On the KIDS menu, under the 'Installation' menu, use the
+    option 'Verify Checksum in Transport Global' and verify that all
+    routines have the correct checksums.
+ 3) From the 'Installation' Menu of KIDS, use the option
+    'Install Package(s)'.  Select the package 'DENT*1.2*23' and proceed 
+    with install.
+ 4) If you are a MSM site move the routines to the other servers.       
+ 5) On a mapped system, rebuild your map set.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;24 SEQ #23</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-03-18 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Refer to the patch for the patch description.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;25 SEQ #24</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-02-23 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is patch 25 of Dental.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;26 SEQ #25</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-03-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;27 SEQ #26</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-06-28 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Refer to patch description.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;28 SEQ #27</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-10-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is patch 28 of Dental version 1.2.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;29 SEQ #28</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-10-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is patch 29 of Dental version 1.2.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;30</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-09-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+DENT*1.2*30 provides the integration of the vendor Document Storage
+Systems' (DSS) Dental Record Manager (DRM) product into the VistA Dental
+package.  One of the conditions of the national purchase of DRM was that
+the existing VEJDWPD module from DSS would be converted to the DENTV
+namespace and the files ^VEJD(19600.x) would be moved to ^DENT(228.x).
+The  original VEJDWPD package stored some data elements in the Dental
+History  file (#19600.1) that the Database Administrator considered
+duplicate data  (i.e., PCE data elements).  A post-init will move the
+Dental History file to file# 228.1 and will remove those data elements in
+the process (required as a  condition for the national purchase).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;33 SEQ #30</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch ICD*18.0*2 was released 11/2/2001.  That patch inactivated several ICD9
+codes used in the dental DENTAL CPT CODE MAPPING file (#228).  That file has a
+list of CPT procedures used in the dental DSS DRM application.  Those
+procedures have a default diagnosis associated with each procedure.
+ 
+This patch consists of file 228 and a post-init routine.
+ 
+It exports the file DENTAL CPT CODE MAPPING (#228) with updated diagnosis
+codes.  Specifically, there were 244 CDT3 codes mapped to diagnosis codes
+521.0 or 525.1 which were inactivated by the ICD*18*2 patch as of Oct 1, 2001
+    ICD9 code 521.0 will be remapped to 521.00
+    ICD9 code 525.1 will be remapped to 525.10
+ 
+The post-init will check three things:
+ 
+1. It checks to see if all nationally export ADA codes are indeed in file
+   228.  A few sites have reported that one or two codes were not in their
+   file 228 even though it was exported.
+ 
+2. The GUI option context, DENTV DSS DRM GUI, has the list of all the RPCs
+   that the DRM GUI may execute.  A few sites have reported that one or two
+   RPCs are not in the option even though they were exported.  The post-init
+   will ensure that all required RPCs are part of the option.
+ 
+3. Because of the problem caused by ICD*18.0*2, the post-init will check
+   every CPT and ICD9 code in file 228 (both national codes and locally added
+   codes) for any problems.  A report will be displayed detailing any
+   problems found.
+ 
+4. You will find any of these pertinent messages in the installation after
+   the line:   Running Post-Install Routine: POST^DENTVIP1.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;32</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ I.   v3.0 of the dentalmrm.exe switched two service conditions:
+      environmental contaminants (or Persian Gulf) and ionizing radiation.
+      Thus patients with these conditions ended up having action required
+      in PCE.
+ 
+ II.  There was a problem with filing administrative times.  Some sites
+      would get the message unable to create record.  When the call to
+      UPDATE^DIE was made to create a record in file 226, the Fileman call
+      failed if there were any required identifiers on fields .3,.4,.6,.9
+ 
+ III. If DENT*1.2*30 was installed in an account which did not have a
+      previous version of DRM (VEJDWPD versions), then the multiple field
+      19600 on file 220.5 was not installed and an error message was
+      recorded in the KIDS installation record.  That multiple will now
+      install properly in a new account.
+ 
+ IV.  The Excel extract option would fail occasionally.  This happened
+      because the Fileman API used to retrieve data from file 228.1 would
+      not always return data for all the requested fields.  This was
+      especially true for a pointer field that pointed to a non-existent
+      entry.  This call was modified to protect against that contingency.
+      The extract will also return any pce secondary providers.
+ 
+ V.   The retrieve dental history tab would not always return data.  The
+      call would quit and return no data if Fileman indicated any error
+      while retrieving data.  For example, the Dental History file has a
+      pointer to the old DAS file linked to that history record.  If that
+      DAS record had been deleted (i.e., a broken pointer) Fileman would
+      return an error.  Even though the other 11 fields requested for that
+      Dental History record had data, the call would return no data for
+      that record.  Now the data for that record will be returned.  Those
+      fields which encountered an error by the Fileman retrieve call will
+      be shown as a null value. 
+ 
+ VI.  All calls to retrieve data from the CPT file (#80) are required to
+      use the APIs in ICPTCOD routine.  Most places we were doing that.
+      But there were two times when we did a direct Fileman call to file
+      81.  Those places have been replaced by using the appropriate API in
+      ICPTCOD.
+ 
+ VII. In patch DENT*1.2*30 the installer was prompted as to whether or not
+      to delete the ^VEJD(19600) global.  The documentation was not accurate
+      in displaying this.  This file and data global should have been deleted
+      since the file was moved to file 228 [^DENT(228)].  The post-init will
+      check the status of ^DIC(19600), ^DD(19600), and ^VEJD(19600) and do
+      any appropriate cleanup to remove these entries.
+ 
+ VIII. Dentalmrm.exe (v3.03) is exported as part of this patch.
+       You can verify the version of the dentalmrm.exe from the Help/About
+       option on the menu bar in the DRM GUI.
+ 
+ IX.  This patch will work with CPRS v16 or greater
+ 
+ INSTALLATION FILES:
+ ==================
+ 
+ File Name              Description                  Retrieval Format
+ -----------------     ---------------------------   ----------------
+ DENT_1_2p32.KID       Dental KIDS build             ASCII
+ dentalmrm.exe         DRM Version 3.03 Executable   Binary
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;34</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-01-23 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ I.   This is released to support the Millennium Healthcare and Benefit
+      Act, Public Law 106-117 Section 20.
+ 
+ II.  This patch, DENT*1.2*34, along with VEJDCERT RPCS 2.11 are being
+      released in a single KIDS software distribution.  This patch
+      contains the informational portion of DENT*1.2*34 and provides
+      field personnel with instructions on how to acquire, install, and
+      implement the software.
+ 
+ III. This patch supports the entry of Head &amp; Neck Cancer for PCE
+      entry when appropriate.
+ 
+ IV.  For the Dx999 procedure codes, the mapping values to VistA DAS
+      (Dental Activity System) have changed.
+      A. For each code, one CTV will be mapped to DAS category
+         '37-OTHER SIGNIFICANT TREATMENT'.
+ 
+      B. These codes will now appear under the MISC tab in the DRM GUI.
+ 
+      C. These codes will not be used for billable procedures, but,
+         rather, will be used to indicate a non-billable visit. These
+         codes will generate one CTV into the DAS category "Other
+         Significant Procedures." The codes may be used for intermediate
+         steps and all similar non-billable patient visits. 
+ 
+      D. These mapping changes will require that practitioners select any
+         code(s) NOT in the "99 Series" (D0999, D2999, D3999, D4999,
+         D5899, D5999, D6199, D6999, D7999, D8999, and D9999) for
+         "billable" procedures. Practitioners are advised to select the
+         closest CDT code(s) outside the "99 Series" for any procedure
+         that is considered "billable," and, therefore, results in
+         clinical productivity related to procedures identified by the 
+         CDT codes not in the "unspecified" category (the "99 Series").
+ 
+ V.  There are two new RPCs
+      DENTV DENTAL PROVIDER - returns active providers only
+      DENTV USER DEFAULT DIV - returns a user's default division as
+      defined in the NEW PERSON DIVISION multiple.
+ 
+ VI. XINDEX will show the following error.  This is not a problem.  It is
+      problem with the XINDEX program.  There is an outstanding NOIS
+      concerning this error message.
+        DENTVRP8
+              .S XN=+PROV_U_$$NAMEFMT^XLFNAME(XN,,"MD")
+           VST+37       F - General Syntax Error.
+           VST+37       F - General Syntax Error.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;35</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-03-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ Note: several places in this patch description have items highlighted.
+ The purpose of these highlights is to emphasize areas to pay particular
+ attention.  These should answer possible questions or concerns that IRM
+ or the installer may have.
+ 
+ 1. *****************    ATTENTION      ATTENTION     ******************
+    This patch should be installed immediately after installing
+    ICPT*6.0*13  If it is not, then when the user clicks on the FINISH
+    button in Dental Record Manager (DRM) they may generate PCE exception
+    errors.
+ 
+    Note: the ICPT*6.0*13 patch inactivated quite a few ADA codes with an
+    inactivation date of 1/1/2003.  As such, these codes will no longer
+    show up in any tab within DRM.  Please see the documentation
+    accompanying patch ICPT*6.0*13 for details in changes to specific
+    codes.
+    *********************************************************************
+ 
+ 2. This patch provides compatibility with the 2003 CPT and CDT4 codes
+    A new ADA Mapping table (file 228) will be installed
+    NOIS: ALB-0502-51618, FGH-0602-32626
+ 
+ 3. A pre-installation routine will perform several steps
+    a. Save local CPT codes the site has added to the ADA table
+    b. Delete the existing ADA table
+ 
+ 4. A post-installation routine will perform several steps
+    a. Verify that all CPT codes in the dental provider's quick list are
+       still active.  If not, delete that code from the quick list
+ 
+    b. Restore any locally added CPT codes to the ADA table unless that
+       code is exported nationally with this patch or that code is
+       inactive.
+ 
+    c. The dental coding committee spent considerable time assigning
+       default diagnosis codes to each ADA code.  As such, any changes
+       the site had made to the associated default diagnosis codes will
+       not be preserved.
+ 
+ 5. If the old data global, ^VEJD(19600.1), still exists, then delete it.
+    A previous DENT patch had moved that data to ^DENT(228.1).
+ 
+ 6. The DENTVDD routine was modified to remove direct references to the
+    ^DD global.  Supported Fileman APIs are used instead.
+ 
+ 7. A new routine is exported, DSICCPT.  This routine provides an
+    interface to the CPT and ICD9 files using nationally supported APIs.
+ 
+    **************************  PLEASE NOTE  *************************
+    The Release of Information application had DSIC 1.0 (or DSIC 1.01)
+    as part of that package.  This DSICCPT routine was not exported in
+    those builds.  So there is no conflict between this patch and the
+    Release of Information 5.0 application.  DENT*1.2*31 is to be
+    released in the next couple of months and will include DSIC 1.1 which
+    will include this DSICCPT routine as well as other changes.
+    ******************************************************************
+ 
+ 8. A new DRM GUI executable is exported with this patch.  Changes
+    include:
+    a. Inactive Diagnosis codes (ICD9) will no longer be selectable in
+       the search engine window.  NOIS: ASH-1201-31869, BRX-0602-12946,
+       MIN-1102-40433, NHM-0202-11852, PUG-0502-52312, WIM-0902-22158
+ 
+    b. In the Help Menu bar we have added a last broker call
+       debugging tools similar to the CPRS one.
+ 
+    c. Fixed List out of Bounds errors. This could have happened when
+       typing the progress note title in the search window.  It could
+       also occur occasionally when the FINISH button was clicked and
+       the program was trying to file data to the Problem List.
+       NOIS: BIG-0103-70399, MOU-0103-30859, MWV-0103-22436,
+             PHI-0103-22339, SFC-0103-62181, UNY-0103-11934
+ 
+    d. Fixed an Access Violation error when DRM closes out
+       NOIS: ALT-0102-21002
+ 
+    e. Printing of signed addendum notes when prompted for additional
+       signers now works if the check box is selected.
+ 
+    f. Completing a consult will now link to the proper Visit instead of
+       creating a new historical Visit.
+ 
+    g. Previous there were occasional problems if the FINISH button was
+       clicked multiple times.  Now the FINISH button will ignore the
+       second and subsequent clicks until the all the DRM data including
+       filing of progress note has completed which may take several
+       seconds.
+ 
+    h. There is now a Excel Extract option under the Tools option on the
+       Menu Bar
+ 
+    i. Whenever a TIU note is printed within DRM, the header will have
+       the words "(WORKING COPY)"
+ 
+    j. If the DRM window is open and you change patients within CPRS,
+       then the DRM window will now show itself in front of CPRS instead
+       of behind it.
+ 
+    k. Previously, in the Visit selection window pull down list, any
+       entry which was longer than the width of that window would not be
+       completely displayed.  Now if you hover over an entry, a hint
+       will be displayed showing the entire contents.
+      
+ 8. The following routines which supported previous patch pre- and
+    post-install processes will be deleted:
+    DENTVCNV, DENTVI01, DENTVI02, DENTVI03, DENTVI04, DENTVI05
+ 
+ 9. The DENTVRP3 routine was updated to bring it into complete SACC
+    compliance by not doing direct reads of the ^DD global.  When
+    filing ICD9 codes to the ADA table (#228) it was possible that the
+    name of the ICD9 code was entered into field 1 instead of the
+    pointer value to file 80.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;36</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-06-28 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ 1. Patch 35 exported a new ADA Table, file 228, which supported CDT4
+    codes and ICPT*6.0*16 compatibility.  Each CPT mapping has 19
+    associated fields.  A few of those CPT codes had incorrect values for
+    some of their fields.  While reviewing that table, Dental VAHQ and
+    its coding task group decided to change many other individual field
+    values for quite a few CPT codes.
+ 
+ 2. The post-installation program in DENT*1.2*35 did not work as
+    intended.  DRM allows the sites to add local medical codes to the
+    ADA table.  DRM also allows for the sites to change the default ICD9
+    mapping for a CDT code.  The post-install program was suppose to
+    restore those local changes to the ADA table.  But it did not due to
+    a programming bug.  This is fixed in this version.  However, this
+    patch cannot put back those locally mapped CPT codes that were
+    deleted with patch 35.
+ 
+ 3. Some of the CDT4 codes exported in the patch 35 ADA Mapping Table
+    did not have NUM SURFACES indicated when they should have.  Thus
+    user was not prompted for surfaces within the DRM GUI.
+    NOIS: CHS-0403-41619
+ 
+ 4. When using Fileman on file 228.1 and entering '??' at the Select
+    Dental History prompt, you may get an &lt;UNDEF&gt; error.  This was due
+    to a bad Identifier on this file.
+    NOIS: IND-0403-41306
+ 
+ Technical Description
+ ---------------------
+ 5. Changes to Data Dictionary for file 228
+    A. B index changed from a traditional to a Key uniqueness index
+    B. DATA TO PUT IN DENT(221) field
+       1) Input transform changed to allow for CHK^DIE to be used as
+          that Fileman API does not use the internal record number.
+       2) Executable Help changed to allow to be invoked by Fileman
+          APIs that do not require internal record number.
+       3) Changed the field name from DATA TO PUT IN DENT(221) to
+          DATA FOR FILE 221.
+    C. PRIMARY field - a new set of codes value was entered, Either.
+       This code will be used in the future
+    D. FIELD FROM FILE 221 field
+       1) Field type was changed from numeric to free text
+       2) Input transform redone to make it more clear
+       3) Output transform redone to make it more clear
+    E. #SURFACES field was renamed to NUM SURFACES
+    F. New field added, PREV PRIMARY DIAGNOSIS (#25).  This contains
+       the default diagnosis for that CPT code in the previous version
+    G. Field 1, DX ICD9, was changed to make it required
+ 
+ 6. Changes to routines (tag^routine)
+    A. DENTVDD
+       1) FLD4 - changed from being called by DO to being called by DO
+                 with parameter passing.  For fields 19 and 34 in file
+                 221, FLD4 will no longer write to the screen
+       2) FLD4E - changed from being called by DO to being called by DO
+                  with parameter passing.
+       3) NUM - logic redone to make it more clear
+       4) ID - fixed an &lt;UNDEFINED&gt; error at ID+6
+               NOIS: IND-0403-41306
+    B. DENTVUTL
+       1) CPT - changed to call CPT^DSICCPT.  Removed the appending of
+                the text '[PRIMARY]' to the CPT short description when
+                the ADA table (#228) has the PRIMARY flag set for this
+                CPT.
+       2) CPTIEN - changed to call CPT^DSICCPT
+       3) ICD - changed direct global access of data in file 81 to
+                calling ICD^DSICCPT
+    C. DENTVIP2 - new routine
+ 
+ REQUIRED BUILDS:  DENT*1.2*35
+ ===============
+ 
+ Test Sites:
+ ==========
+ Manhattan
+ Minneapolis
+ 
+ NOIS ADDRESSED BY PATCH
+ =======================
+ CHS-0403-41619
+ IND-0403-41306
+ 
+ ROUTINE SUMMARY:
+ ===============
+  
+ The second line of each DENT routine will look like:
+     &lt;tab&gt;;;1.2;DENTAL;**[patch list]**;Aug 10, 2001
+ 
+ Routine    Before Patch  After Patch   Patch List
+ --------   ------------  -----------   --------------
+ DENTVDD         2851120      2804408   30,35,36
+ DENTVIP         1402389       704530   30,32,34,35,36
+ DENTVIP1        8913694      8645242   33,34,35,36
+ DENTVIP2        -n/a-       14330152   36
+ DENTVRP1        4976236      5016139   30,34,36
+ DENTVUTL        4283389      3529137   30,33,34,36
+ 
+ INSTALLATION INSTRUCTIONS FOR DENT_1_2P36.KID 
+ =============================================
+  
+ This patch should be installed when there are no dental DRM processes
+ running.  The installation time should take less than 5 minute.
+  
+ 1. For DSM sites review your mapped set.  Disable any of the above
+    routines if necessary.
+  
+ 2. From the Kernel Installation and Distribution System Menu, select 
+    the Installation menu.
+  
+ 3. You may elect to use the following options (when prompted
+    for INSTALL NAME, enter DENT*1.2*36): 
+      a.  Backup a Transport Global 
+      b.  Compare Transport Global to Current System 
+      c.  Verify Checksums in Transport Global 
+  
+ 4. Use the Install Package(s) option and select the package
+    DENT*1.2*36.
+  
+ 5. When asked "Want KIDS to INHIBIT LOGONS during the install? Yes//",
+    respond "NO".
+  
+ 6. When prompted "Want to DISABLE Scheduled Options, Menu Options, and
+    Protocols? YES//", respond "NO".
+ 
+ 7. AXP/DSM Sites - After the patch has been installed, rebuild your 
+    map set, if necessary.
+ 
+ 8. *********************  NOTE   NOTE   NOTE  ***********************
+    Please review the Install log to see if there were any problems
+    reported in the post-installation process.  If so you will see
+    text not displayed in the installation example.  Following are
+    some of the text you may or may not see.
+    ******************************************************************
+ 
+    A. WARNING MESSAGES
+       These are just warning messages.  Nothing is wrong.
+       Read all the associated text for more detailed explanations.
+ 
+        &gt;&gt;&gt;&gt;&gt; Local CPT codes not added to the new ADA table &lt;&lt;&lt;&lt;&lt;
+  &gt;&gt;&gt;&gt;&gt; CPT codes who had inactive Diagnosis codes mapped to them &lt;&lt;&lt;&lt;&lt;
+ 
+ 
+    B. This should never happen.
+       If you see this message, just follow the instructions displayed
+ 
+    Unable to lock the ^DENT(228) global.  Any local changes not restored
+    You can rerun this restore post-install option after the KIDS install
+    has completed.
+       1. Get to programmer's mode through Kernel sign-on
+          This ensures that the Kernel environment variables are set
+       2. Be sure your DUZ(0)="@" - this can be done from programmer's
+          mode by VAH&gt;S DUZ(0)="@"
+       3. From programmer's prompt, VAH&gt;D RESTORE^DENTVIP1
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;31</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-11-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;37</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-05-21 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1.General Information
+  ========================================================================
+  This patch contains fixes and enhancements to the Dental Record Manager
+  (DRM) application.  This patch also contains a new M Global for DRM in
+  the DENT namespace - ^DENT(228.5 for the Fee Basis enhancement.
+  
+  A database conversion will be run as part of the post installation.  The
+  conversion fixes the dental provider number when the number starts with
+  one or more zeros (as in 0494).  Because of an old cross reference on 
+  the DENTAL TREATMENT file (#221), the leading zeros were dropped from 
+  the provider ID number.  Only those 4 digit provider IDs whose value was
+  less than 1000 were affected. The leading zeros will be replaced and any
+  affected cross-references will be re-built.
+  
+  The patch installation process should take be less than 5 minutes.
+  The post-installation conversion process may take several hours 
+  depending upon the number of records in file 221 - this process will be
+  tasked off.
+ 
+ 
+2.SYSTEM ACCESS DURING INSTALLATION
+  ========================================================================
+  Installation of this patch does not require users to be off of the 
+  system. However, all Dental users should not use the DRM GUI option 
+  while the patch is being installed.  All Dental users MUST close any 
+  open DRM GUI application prior to the patch being installed.  Once the 
+  patch has completed then the users can use the DRM application.
+  ********************************************************************
+  *  There is a new DRM executable exported with this patch.  This   *
+  *  executable MUST be deployed PRIOR to Dental users accessing the *
+  *  DRM application after the patch has been installed.             *
+  ********************************************************************
+ 
+ 
+3.PRE-INSTALLATION PROCESS
+  ========================================================================
+A.A pre-install process will delete the Data Dictionaries for the 
+  following file and any associated templates (INPUT, PRINT, SORT) and any
+  FORMS.  No data will be deleted.  The file affected is: 228.1
+B.The pre-install process will also delete field .5 from file 221.  This
+  field will be reinstalled as part of the patch.  The old AF x-ref has
+  been replaced with a new Trigger cross-reference to set the .4 field.
+C.The temporary "ACNVT31" cross-reference on file 228.1 will be deleted. 
+  This cross-reference was used in Patch 31 to keep track of which records
+  needed to be converted.  
+ 
+ 
+4.POST-INSTALLATION PROCESS
+  ========================================================================
+  The post-install routine will queue up a Taskman job to convert file 
+  221.  The Provider Number field (.4) in file 221 will be converted if it
+  is less than 4 characters long.  Leading zeros will be added to the 
+  number (e.g. 494 will become 0494), and the affected cross-references 
+  for field .4 will be re-built.
+  
+  ************************************************************************
+  *                                                                      *
+  *   THE FOLLOWING STEP BE COMPLETED FOR THIS PATCH TO WORK PROPERLY    *
+  *                                                                      *
+  ************************************************************************
+ 
+  At this point, the KIDS install will have completed.  IRM needs to place
+  the DRM GUI executable in the appropriate directory.  The placement of
+  this DRM executable can be done at the same time the KIDS build is being
+  installed.  The executable must be placed as follows where ...\ 
+  indicates your UNC/path for where the current DRM v3.1.0.23
+  dentalmrm.exe is located:        Move dentalmrm.exe to ...\DOCSTORE
+ 
+ 
+5.FIXES TO THE DRM APPLICATION
+  ========================================================================
+A.Remove screening of dental patient category based on inpatient status.
+  NOIS: NYH-1203-11181, TOM-1203-41027, UNY-1203-10667
+ 
+B.Delete any inactive CPT codes on an users quick list.
+  NOIS: MAN-0803-11685
+ 
+C.Under certain circumstances, DRM did not honor the choice of filing 
+  flags on a per CPT code basis.  Now, it will only file to PCE or DAS
+  or DES if explicitly indicated.  The default is to file to all three.
+  Filing to Dental History only will now display the correct date on
+  the Dental History tab.
+  NOIS: HOU-1203-70105
+   
+D.Fixed misspelling of word "immumization" to " immunization" which 
+  caused a "List Index out of bounds" error when clicking on the 
+  Immunization button in Clinical Record tab.  When immunizations are
+  imported into a note, there will be a space and a header before the
+  data.
+ 
+E.Utilize new rpc call - ORWPS ACTIVE to import meds list into 
+  the TIU Note and TIU Note Addendum.
+  
+F.The default date range in Import Lab Results was always using a date
+  range of 180 days back, but now this button uses the user parameter
+  for lab days range.
+  
+G.Change logic to get default division only if user has more than one
+  station.  The default division will be pre-selected wherever the
+  station radio button(s) are shown.  If there is only one station,
+  then that station is pre-selected on the screen.
+  
+H.Display all messages when the "DAS record not created" error (or other
+  error) is encountered.  NOIS: HVH-1203-11045, BRX-1203-11654, 
+  MIA-1203-31153, NCH-1203-41248, LAH-1203-62134, UNY-0104-10313,
+  HWH-0204-40857, MON-0204-50811
+ 
+I.If the user clicks on the "Add to Quick List" button on the Search form
+  and clicks cancel, any new entries will be refreshed on the screen.
+ 
+J.Due to changes in the law, there is no longer any differentiation of 
+  the types of POWs.  Therefore, CLASS IIB is no longer to be used.
+ 
+K.Edited unsigned notes will now file correctly in DRM.
+ 
+L.Notes and Addendums created from the Clinical Record tab will now
+  word wrap correctly.  Notes will not be allowed to have a future date.
+  
+M.A message will be displayed after spell checking has completed.
+ 
+6.ENHANCEMENTS TO THE DRM APPLICATION
+  ========================================================================
+A.Dental Fee Basis is part of this patch.  A new menu option on the DRM
+  File Menu displays a screen to enter/edit/delete Fee Basis information
+  for the selected dental patient.  The Fee Basis information will not be
+  transmitted to Austin until the DRM HL7 enhancement has been completed,
+  but reports will be available on-line in Patch 38.  The new Fee Basis
+  option should not be used exclusively at this time.  Users should
+  continue to use their existing Fee Basis option through VistA which
+  updates file 222 - DENTAL FEE BASIS (AMIS) since that information is
+  being transmitted to Austin.
+B.This patch enables Dental to be billing aware for patches to be released
+  in FY2004.  PCE changes supporting the billing awareness project is 
+  PX*1.0*124.  The changes to these dental routines will work whether or
+  not that PCE patch is installed.  The PCE patch preserves the linkage of
+  diagnosis codes to a CPT code when a program invokes DATA2PCE^PXAPI such
+  as the dental program.  The PCE APIs to retrieve the CPT data for a 
+  VISIT were also modified to return the current diagnosis linkage for
+  each CPT code.  If that PCE patch is not installed, the dental program
+  will work as it always has.  The two functions affected are the filing
+  of data when the FINISH button is clicked and when DRM retrieves 
+  historical data.  The extract (Excel) function will be made billing
+  aware in another dental patch.
+ 
+ 
+7.NOIS ADDRESSED BY THIS PATCH
+  
+=========================================================================
+  NYH-1203-11181   TOM-1203-41027   UNY-1203-10667  MAN-0803-11685
+  HOU-1203-70105   HVH-1203-11045   BRX-1203-11654  MIA-1203-31153
+  NCH-1203-41248   LAH-1203-62134   UNY-0104-10313  HWH-0204-40857
+  MON-0204-50811
+ 
+ 
+8.INSTALLATION FILES
+  ========================================================================
+  How to Obtain KIDS File
+ 
+  File Name: DENT_1_2P37.zip         FTP format: binary
+ 
+  DENT_1_2P37.zip file will contain the following files:
+                                                                  FTP 
+  File Name          Description                                 Format
+  ------------------ ------------------------------------------  ------
+  Dent_1_2p37.kid    KIDS file which will install 1 KIDS Builds  ASCII
+                         DENT*1.2*37
+  Dentalmrm.exe      DRM Version 3.11 executable                 Binary
+  Dent_1_2_p37ug.doc Dental Record Manager's user guide          Binary
+                         The guide was updated for Fee Basis
+  Dent_1_2p37_rn_ig.doc DENT*1.2*37 Release Notes and            Binary
+                         Installation Guide
+  P37_patch_description.txt    This file                         ASCII
+ 
+  The zip file listed above may be obtained via FTP.  The preferred 
+  method is to FTP the files from download.vista.domain.ext
+ 
+  This transmits the files from the first available FTP server.  Sites
+  may also elect to retrieve software directly from a specific server 
+  as follows:
+  CIO FIELD OFFICE   FTP ADDRESS                 DIRECTORY
+  ----------------   -------------------------   --------------------
+  Albany             ftp.fo-albany.domain.ext    [anonymous.software]
+  Hines              ftp.fo-hines.domain.ext     [anonymous.software]
+  Salt Lake City     ftp.fo-slc.domain.ext       [anonymous.software]
+ 
+ 
+9.REQUIRED BUILDS:  DENT*1.2*31
+                    DSIC*1.2*1
+                    XU*8.0*229
+ 
+10.TEST SITES             SYSTEM                        ALPHA/BETA
+   
+========================================================================
+   Manhattan, NY         (VMS DSM)                      ALPHA
+   Bath, NY              (VMS DSM)                      BETA
+   Fargo, ND             (W2K Cache/Thin Client)        BETA
+   Tomah, WI             (VMS Cache)                    BETA
+   Hines, IL             (NT Cache)                     BETA
+ 
+ 
+11.ROUTINE SUMMARY
+   =======================================================================
+   Second line of routines will look like:
+   ;;1.2;DENTAL;&lt;patch list&gt;;AUG 10, 2001
+ 
+   Routine   Before Patch  After Patch  Patch List
+   --------  ------------  -----------  ------------------------
+   DENTV031      [*** to be deleted***]
+   DENTV03A      [*** to be deleted***]
+   DENTV03B      [*** to be deleted***]
+   DENTV037        n/a         2646025     37
+   DENTVFB         n/a         2775003     37
+   DENTVRF       1357987       1331212     31,37
+   DENTVRF0      3183908       3455104     31,37
+   DENTVRF1      5110544       5236302     31,37
+   DENTVRF2      3458244       4641313     31,37
+   DENTVRF3      7764989       7876724     31,37
+   DENTVRF4      6882060       7883662     31,37
+   DENTVRH       5515191       6429972     31,37
+   DENTVRP1      5053952       5080599     30,34,36,31,37 
+   DENTVRP2      1100213       1429573     30,31,37
+ 
+ 
+12.INSTALLATION INSTRUCTIONS FOR DENT*1.2*37
+   =======================================================================
+   This patch must be installed when there are no dental DRM processes
+   running.  All open DRM GUI applications must be closed.
+   The installation time should take less than 5 minutes.
+   
+   1. Obtain the Dent_1_2p37.kid file
+ 
+   2. For DSM sites review your mapped set.  Disable any of the above
+      routines if necessary
+ 
+   3. From the Kernel Installation and Distribution System Menu, select
+      the Installation menu
+ 
+   4. Use Load a Distribution and enter Dent_1_2p37.kid when prompted
+      for a Host file.  You may need to attach a directory name
+ 
+   5. You may elect to use the following options (when prompted for 
+      INSTALL NAME, enter DENT*1.2*37)
+      a. Backup a Transport Global
+      b. Compare Transport Global to Current System
+      c. Verify Checksums in Transport Global
+ 
+   6. Use the Install Package(s) option and select package DENT*1.2*37
+ 
+   7. For the install prompts, enter either Yes or No depending upon the
+      normal practice at your facility.  This example shows answering NO:
+ 
+ Want KIDS to Rebuild Menu Trees Upon Completion of Install? YES// NO
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+ 
+   8. AXP/DSM Sites - After the patch has been installed, rebuild your map
+      set, if necessary
+ 
+   9. This step must be completed for this patch to work properly
+      a. ...\   will indicate your UNC/path for where the current DRM
+         v3.1.0.23 dentalmrm.exe is located
+      b. Move dentalmrm.exe to ...\DOCSTORE
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;38</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-08-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ General Information
+ ========================================================================
+ This patch contains fixes and enhancements to the Dental Record Manager
+ (DRM) application.  This patch also contains new M Globals for DRM in
+ the DENT namespace - ^DENT(220.51 and ^DENT(220.52 to support the new 
+ eight character Dental Provider Id.
+ 
+ Three database conversions will be run as part of the post installation.
+ The first conversion seeds the new fields in 228.2 for the DES Reports
+ (DAS FIELD, DAS DATA) based on the ADA table.  The second conversion
+ changes the DIVISION pointer in file 228.1 from a pointer to file 40.8
+ to a pointer to file 4.  The DD is being sent for this field to change
+ the pointers.  The final conversion removes the TIU Note pointer data
+ from file 228.1.
+ 
+ The patch installation process should take be less than 5 minutes.
+ The post-installation conversion process may take several hours 
+ depending upon the number of records in file 228.1 and 228.2.
+ This conversion process will be tasked off in the background.
+ 
+ 
+ SYSTEM ACCESS DURING INSTALLATION
+ ========================================================================
+ Installation of this patch does not require users to be off of the 
+ system. However, all Dental users should not use the DRM GUI option 
+ while the patch is being installed.  All Dental users MUST close any 
+ open DRM GUI application prior to the patch being installed.  Once the 
+ patch has completed the users can use the DRM application.  Until
+ the conversions are complete, the new DRM reports may not give accurate
+ results since they need the new DAS FIELD and DAS DATA data in file
+ 228.2, and they search for data based on the DIVISION field which is
+ also being changed.
+ 
+  ********************************************************************
+  *  There is a new DRM executable exported with this patch.  This   *
+  *  executable MUST be deployed PRIOR to Dental users accessing the *
+  *  DRM application after the patch has been installed.             *
+  ********************************************************************
+ 
+ 
+ PRE-INSTALLATION PROCESS
+ ========================================================================
+ The pre-install process will delete field .18(DIVISION) from file 228.1.
+ This field will be reinstalled as part of the patch.
+ 
+ The pre-install process will delete the TIU Note pointer from file 228.1.
+ This field is no longer used.
+ 
+ The pre-install process will also delete field .16(SURFACE) and 1.18
+ (TEMP TRANS ID) from file 228.2.  These fields will be reinstalled as
+ SURFACES/ROOTS and HL7 STATUS, respectively.
+ 
+ 
+ POST-INSTALLATION PROCESS
+ ========================================================================
+ The post-install routine will queue up a Taskman job to convert files 
+ 228.1, (division pointer and removing any TIU Note pointer data) and 
+ 228.2, (setting DES reporting fields).  It will also create a new index
+ on file 228.1 for DES reporting ("AG") and re-index the "AF" cross-ref
+ on file 228.1.
+  
+  ***********************************************************************
+  *                                                                     *
+  *   THE FOLLOWING STEP BE COMPLETED FOR THIS PATCH TO WORK PROPERLY   *
+  *                                                                     *
+  ***********************************************************************
+ 
+ At this point, the KIDS install will have completed.  IRM needs to place
+ the DRM GUI executable in the appropriate directory.  The placement of
+ this DRM executable can be done at the same time the KIDS build is being
+ installed.  The executable must be placed as follows where ...\ 
+ indicates your UNC/path for where the current DRM v3.11
+ dentalmrm.exe is located:        
+        Move dentalmrm.exe to ...\DOCSTORE
+ Also... the new extract executable needs to be placed in the
+ same directory where dentalmrm.exe resides.
+        Move DRMEXTSRV.ext to ...\DOCSTORE
+ 
+ 
+ FIXES TO THE DRM APPLICATION
+ ========================================================================
+ A. The list of Visits that display when the user wants to Delete a 
+    Dental Encounter will now display in reverse chronological order with
+    no duplicates.
+     
+ B. The information on the Dental History tab will display in reverse
+    chronological order by date/time, not just date.
+     
+ C. If there are no Vital signs to be imported, an extra linefeed was
+    appearing in the note - the extra linefeed has been removed.
+  
+ D. Change the .18 field (DIVISION) in the DENTAL HISTORY file (#228.1)
+    From a pointer to file 40.8 (MEDICAL CENTER DIVISION) to a pointer to
+    file 4 (INSTITUTION).  
+ 
+ F. Add fields DAS FIELD, DAS DATA to the TREATMENT PLAN TRANSACTION/EXAM
+    file (#228.2).  These fields will be seeded with data during the post
+    install conversion.  These fields, along with the CTV, VA-DSS GROUP
+    fields will be set appropriately when transactions are filed.
+    Most of these fields are used in DES Reports.
+     
+ G. A Fileman error was occurring when entering single letter look-ups
+    (e.g., "B") in the Provider lookup screen.  This screen is displayed
+    when clicking the New button on the Provider Edit screen, or
+    when selecting the optional Provider checkbox on the Extract screen,
+    or when selecting to file an encounter under another provider's
+    name.  The error has been fixed.  This type of error was also
+    occurring on the User lookup screens (User Inquiry and user selection
+    within the Administrator Toolbox), and was also fixed.
+     
+ H. CPT code search was returning D2950 when the code D2951 was entered.
+    This has been fixed.
+     
+ I. The word 'Extract' was spelled incorrectly on the old Extract History
+    Data screen.  It's now correct.
+     
+ J. Consults were not being completed when the user Double-Clicked them,
+    only when the consult was single-clicked.  Now they will complete
+    either way.  NOIS: MIA-0304-30860
+ 
+ K. Change the field definition for field 1.18 in the TREATMENT PLAN 
+    TRANSACTION/EXAM file (#228.2).  This field was not used, and will
+    now store the HL7 transmission status.
+ 
+ L. A new field called TP RECORD (.06) was added to the TREATMENT PLAN
+    TRANSACTION/EXAM file (#228.2).  The field will be set to 1 for
+    Treatment Plan (DRM+) transactions to differentiate them from DRM.
+    
+ M. A new field called TREATMENT FLAGS (1.202) was added to the TREATMENT
+    PLAN TRANSACTION/EXAM file (#228.2).  The field will be contain the
+    tooth-related flag.
+ 
+ N. The SURFACES (.16) field in the TREATMENT PLAN TRANSACTION/EXAM file
+    (#228.2) was renamed to SURFACES/ROOTS and the field definition now
+    allows 1-7 characters (upper/lower) vs only uppercase characters.
+ 
+ 
+ ENHANCEMENTS TO THE DRM APPLICATION
+ ========================================================================
+ A. DES Reports are part of this patch.  This enhancement provides six 
+    dental reports for the local VistA system.  The reports are:
+    Provider Summary, Clinic Summary, Sittings by Provider, Individual
+    Sittings, Non-Clinical Time Report, Dental Fee Basis Report.  These
+    reports are similar to DAS reports of the same name.  Reports are 
+    available on the Tools menu for all users.
+    
+ B. Provider Add/Edit is part of this patch.  This enhancement allows the
+    dental administrator to add or edit the dental staff in the DENTAL
+    PROVIDER (#220.5) file.  A new eight character Dental Provider Id has
+    been created and will be used in the DES Reports.  The old four
+    character Dental Provider Id is still required for DAS, but will be
+    deprecated when DAS is replaced.  Provider Add/Edit is available on
+    the Tools menu for administrative users.
+    
+ C. A new Extract History data option is available on the Tools menu.
+    This option does not use RPC calls to get history data, but uses
+    instead, a TCP/IP process running on the local machine.  When the
+    user wants to run the new extract, a process will start in the
+    user's system tray and will wait for data from Vista.  When the data
+    has been sent, the Vista M code will send a Shutdown message to stop
+    the TCP/IP server.  During the patch testing phase for Patch 38, the
+    old Extract option will remain enabled along with the new Extract
+    option.  NOTE!  Users will have to contact IRM to get a valid Port#
+    to be used with the extract!  The user must also know the IP address
+    of their workstation in order for the Vista M code to correctly
+    connect to the TCP/IP process running on their machine!  These
+    parameters will be stored on Vista and can be edited/viewed via the
+    Parameters button on the new Extract History Data screen.
+ 
+ D. Fee Basis and Dental Transaction records will start setting the
+    "AXMIT" cross-reference correctly ("P" for pending, "C" for canceled)
+    in preparation for transmitting HL7 records to AAC.
+  
+ 
+ NOIS ADDRESSED BY THIS PATCH
+ ========================================================================
+ MIA-0304-30860 
+ 
+ 
+ INSTALLATION FILES
+ ========================================================================
+ How to Obtain KIDS File
+ File Name: DENT_1_2P38.zip         FTP format: binary
+ 
+ DENT_1_2P38.zip file will contain the following files:
+                                                                   FTP 
+ File Name                  Description                            Format
+ ------------------------   -------------------------------------- ------
+ Dent_1_2p38.kid            Installable KIDS file                  ASCII
+ Dentalmrm.exe              DRM Version 3.12 executable            Binary
+ DRMEXTSRV.exe              DRM TCP/IP executable                  Binary
+ Dent_1_2p38_ug.doc         Dental Record Manager's user guide     Binary
+                            Updated w/ Reports/Prov Edit/Extract
+ Dent_1_2p38_rn_ig.doc      DENT*1.2*38 Release Notes and          Binary
+                            Installation Guide
+ P38_patch_description.txt  A copy of the patch description        ASCII
+ Patch 38 Enhancements.doc  Describing just the enhancements       Binary
+ 
+ The zip file listed above may be obtained via FTP.  The preferred method
+ is to FTP the files from download.vista.domain.ext
+ 
+ This transmits the files from the first available FTP server.  Sites may
+ also elect to retrieve software directly from a specific server as
+ follows:
+ 
+ CIO FIELD OFFICE   FTP ADDRESS                 DIRECTORY
+ ----------------   -------------------------   --------------------
+ Albany             ftp.fo-albany.domain.ext    [anonymous.software]
+ Hines              ftp.fo-hines.domain.ext     [anonymous.software]
+ Salt Lake City     ftp.fo-slc.domain.ext       [anonymous.software]
+ 
+ 
+ REQUIRED BUILDS:  DENT*1.2*37
+ 
+ 
+ TEST SITES             SYSTEM                         ALPHA/BETA
+ ========================================================================
+ Fargo, ND             (W2K Cache/Thin Client)         ALPHA
+ Manhattan, NY         (VMS DSM)                       BETA
+ 
+ 
+ ROUTINE SUMMARY
+ =======================================================================
+ Second line of routines will look like:
+ ;;1.2;DENTAL;&lt;patch list&gt;;AUG 10, 2001
+ 
+   Routine   Before Patch  After Patch  Patch List
+   --------  ------------  -----------  ------------------------
+   DENTV037    [*** to be deleted***]
+   DENTV038      n/a        4808142        38
+   DENTV03C      n/a        21799174       38
+   DENTV03D      n/a        21047556       38
+   DENTV03E      n/a        21447147       38
+   DENTV03F      n/a        19998119       38
+   DENTV03G      n/a        1622718        38
+   DENTVA1       n/a        10886320       38
+   DENTVA2       n/a        12235826       38
+   DENTVAU       n/a        2285628        38
+   DENTVDD1    4809284      5137431        31,38
+   DENTVFB     2775003      2787426        37,38
+   DENTVIP3    3716294      3714758        31,38
+   DENTVRF4    7883662      8576541        31,37,38
+   DENTVRH     6429972      6800370        31,37,38
+   DENTVRP5      n/a        3121694        38
+   DENTVRP8      n/a        3913187        38
+   DENTVRP9    6021923      6021572        30,32,34,31,38
+   DENTVTP2      n/a        3443632        38
+   DENTVUT1    3413708      3440255        31,38
+ 
+ 
+ INSTALLATION INSTRUCTIONS FOR DENT*1.2*38
+ =======================================================================
+ This patch must be installed when there are no dental DRM processes
+ running.  All open DRM GUI applications must be closed.
+ The installation time should take less than 5 minutes.
+ 
+ 1. Obtain the Dent_1_2p38.kid file
+ 
+ 2. For DSM sites review your mapped set.  Disable any of the above
+    routines if necessary
+ 
+ 3. From the Kernel Installation and Distribution System Menu, select
+    the Installation menu
+ 
+ 4. Use Load a Distribution and enter Dent_1_2p38.kid when prompted
+    for a Host file.  You may need to attach a directory name
+ 
+ 5. You may elect to use the following options (when prompted for 
+    INSTALL NAME, enter DENT*1.2*38)
+    a. Backup a Transport Global
+    b. Compare Transport Global to Current System
+    c. Verify Checksums in Transport Global
+ 
+ 6. Use the Install Package(s) option and select package DENT*1.2*38
+ 
+ 7. For the install prompts, enter either Yes or No depending upon the
+    normal practice at your facility.  This example shows answering NO:
+ 
+     Want KIDS to Rebuild Menu Trees Upon Completion of Install? YES// NO
+                 Want KIDS to INHIBIT LOGONs during the install? YES// NO
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+ 
+ 8. AXP/DSM Sites - After the patch has been installed, rebuild your map
+    set, if necessary
+ 
+ 9. This step must be completed for this patch to work properly
+    a. ...\   will indicate your UNC/path for where the current DRM
+       v3.11 dentalmrm.exe is located
+    b. Move dentalmrm.exe to ...\DOCSTORE
+    c. Move DRMEXTSRV.exe to ...\DOCSTORE
+       (Do not add CPRS menu for this new executable!  It is called
+        within the DRM application.)
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;40</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-10-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+General Information
+========================================================================
+This patch contains the enhancement to send the Dental Encounter and 
+Dental Fee Basis data to the Austin Automation Center (AAC) via an HL7 
+interface.  It also contains enhancements to the  Dental Record Manager 
+(DRM) application.
+ 
+The patch installation process should take be less than 5 minutes.
+ 
+SYSTEM ACCESS DURING INSTALLATION
+=========================================================================
+Installation of this patch does not require users to be off of the system.
+However, if your site is not a DRM Plus (patch 39) site, then the 
+following instructions apply: Dental users should not use the DRM GUI 
+application while the patch is being installed: all Dental users MUST 
+close any open DRM GUI application prior to the patch being installed: 
+Once the patch has completed the users can use
+the DRM application.
+ 
+  ********************************************************************
+  *  There is a new DRM executable exported with this patch.  This   *
+  *  executable is only for DRM sites (not DRM Plus sites!) and MUST *
+  * be deployed PRIOR to Dental users accessing the DRM application  *
+  * after the patch has been installed.                              *
+  ********************************************************************
+ 
+FIXES TO THE DRM APPLICATION
+========================================================================
+A.  When transactions are filed only to the History file and not to  DAS,
+    the system will now file the DAS Disposition in the Dental History 
+    (#228.1) file correctly.  This field contains the 'in progress', 
+    'completed' or 'terminated' flag.  The system will also correctly
+    file the Create Date in this case.
+B.  Billing awareness changes were made for the procedure/diagnosis 
+   data being sent to PCE.
+ 
+ENHANCEMENTS TO THE DRM APPLICATION
+========================================================================
+ 
+ A. Dental Encounter (DES) and Dental Fee Basis data will be transmitted 
+    to the Austin Automation Center (AAC) via HL7 compliant messages. HL7
+    messages will be combined into batches that are compiled weekly and 
+    sent to the AAC using the Vista interface engine.  Batches are 
+    limited to 1000 HL7 msgs. There are at least two batches being sent
+    from the local sites, one containing Dental Encounter data and one 
+    for Dental Fee Basis data. The data transfer will be initialized 
+    through a weekly queued option. The site no longer has to manually 
+    start the transmission to the AAC as they did for the Dental Activity 
+    System (DAS) data.  DAS transmissions will be disabled in another
+    DRM patch.
+ 
+ B. Historical Dental Encounter data (transactions filed before DRM patch
+    38 was installed) will be sent to the AAC via a CD.  An option is 
+    available to create these HL7 messages and put them into a file on 
+    a server. The file needs to be copied onto a CD and mailed to the 
+    AAC.
+ 
+ C. A new parameter DENTV DRM DAS TURNOFF contains a date which controls
+    the filing of data to DAS (file 221).  When the date is reached, DRM
+    will no longer offer the File DAS Only option and will not file any
+    data to file 221 even when filing to All (DES, PCE are now the only
+    filing choices).  Also, the old 4 digit Provider ID will no longer
+    be required when adding/editing dental providers. The turnoff date 
+    is defaulted to 10/31/2004.
+ 
+ D. When the user looks up providers (in the Extract, Provider Add/Edit
+    options, the provider list will now contain their initials and title
+    to help differentiate users with the same name.
+ 
+ E. Combat Veteran status has been added to the Service Connected
+    selection page.
+ 
+ F. The text of the filing options was changed from "File DAS/PCE..." to
+    "File Data...".
+ 
+ 
+NOIS ADDRESSED BY THIS PATCH
+========================================================================
+BRX-0804-10469   NOL-0804-70250   CLL-0804-40357   MON-0804-51726
+ 
+ 
+INSTALLATION FILES
+========================================================================
+ How to Obtain KIDS File
+ File Name: DENT_1_2P40.zip         FTP format: binary
+ 
+ DENT_1_2P40.zip file will contain the following files:
+                                                                   FTP 
+ File Name                 Description                            Format
+ -----------------------   -------------------------------------  ------
+ Dent_1_2p40.kid           Installable KIDS file                  ASCII
+ Dentalmrm.exe             DRM Version 3.13 executable            Binary 
+ Dent_1_2p40_ug.doc        Dental Record Manager's user guide     Binary
+                           The guide was updated for HL7/DAS turnoff
+                           and Combat Veteran status flag
+ Dent_1_2p40_rn_ig.pdf     DENT*1.2*40 Release Notes and          Binary
+                           Installation Guide
+ P40_patch_description.doc A copy of the patch description        Binary
+ 
+ The zip file listed above may be obtained via FTP.  The preferred method
+ is to FTP the files from download.vista.domain.ext
+ 
+ This transmits the files from the first available FTP server.  Sites may
+ also elect to retrieve software directly from a specific server as
+ follows:
+ 
+ CIO FIELD OFFICE   FTP ADDRESS                 DIRECTORY
+ ----------------   -------------------------   --------------------
+ Albany             ftp.fo-albany.domain.ext    [anonymous.software]
+ Hines              ftp.fo-hines.domain.ext     [anonymous.software]
+ Salt Lake City     ftp.fo-slc.domain.ext       [anonymous.software]
+ 
+ 
+REQUIRED BUILDS:  DENT*1.2*38
+                  DSIC 1.3
+ 
+ 
+TEST SITES             SYSTEM                        ALPHA/BETA
+======================================================================
+Black Hills, SD       (W2K Cache/Thin Client)        ALPHA
+Westhaven, CT          VMS/Cache                     BETA
+ 
+ROUTINE SUMMARY
+======================================================================
+ Second line of routines will look like:
+ ;;1.2;DENTAL;&lt;patch list&gt;;AUG 10, 2001
+ 
+   Routine   Before Patch  After Patch  Patch List
+   --------  ------------  -----------  ------------------------
+   DENTV040      n/a        3046754        40
+   DENTVHL       n/a        13088143       40
+   DENTVHL1      n/a        8156724        40
+   DENTVHL2      n/a        5154609        40
+   DENTVHL3      n/a        4139460        40
+   DENTVHLB      n/a        16225605       40
+   DENTVHLF      n/a        7363704        40
+   DENTVHLU      n/a        3937615        40
+   DENTVRF1    5236302      5245545        31,37,40
+   DENTVRF2    4641313      4658656        31,37,40
+   DENTVRF4    8576541      8692191        31,37,38,40
+   DENTVUT1    [*** to be deleted***]
+   
+ 
+=========================================================================
+                 INSTALLATION INSTRUCTIONS FOR DENT*1.2*40
+=========================================================================
+ 
+ 1. Obtain the Dent_1_2p40.kid file
+ 
+ 2. For DSM sites review your mapped set.  Disable any of the above
+    routines if necessary
+ 
+ 3. From the Kernel Installation and Distribution System Menu, select
+    the Installation menu
+ 
+ 4. Use Load a Distribution and enter Dent_1_2p40.kid when prompted
+    for a Host file.  You may need to attach a directory name
+ 
+ 5. You may elect to use the following options (when prompted for 
+    INSTALL NAME, enter DENT*1.2*40)
+    a. Backup a Transport Global
+    b. Compare Transport Global to Current System
+    c. Verify Checksums in Transport Global
+ 
+ 6. Use the Install Package(s) option and select package DENT*1.2*40
+ 
+ 7. For the install prompts, enter either Yes or No depending upon the
+    normal practice at your facility.  This example shows answering NO:
+    Install Questions for DENT*1.2*40
+    Incoming Mail Groups:
+ 
+    Enter the Coordinator for Mail Group 'DENTV HL7 MESSAGES':[Name here]
+ 
+     Want KIDS to Rebuild Menu Trees Upon Completion of Install? YES// NO
+                 Want KIDS to INHIBIT LOGONs during the install? YES// NO
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+ 
+ 8. AXP/DSM Sites - After the patch has been installed, rebuild your map
+    set, if necessary
+ 
+=========================================================================
+                        POST-INSTALLATION PROCESS
+=========================================================================
+The post-install routine will stuff the facility ID of the installing 
+site into the HL7 APPPLICATION PARAMTER file for the two parameters being 
+sent with the package.  It will also set the DAS turnoff date in the
+new parameter DENTV DRM DAS TURNOFF to 10/31.2004.
+ 
+The post-install will also re-index some entries for the "AXMIT" 
+cross-reference in file 228.2 (used by the HL7 interface) due to 
+potential issues with the Create Date being set as a string.
+  
+ ************************************************************************
+ *                                                                      *
+ * THE FOLLOWING STEPS MUST BE COMPLETED FOR THIS PATCH TO WORK PROPERLY*
+ *                                                                      *
+ ************************************************************************
+ 
+Step 1 is only applicable for sites which have not installed DENT*1.2*39.
+All sites must perform steps 2-x.
+ 
+-------------------------------------------------------------------------
+1                         Move dentalmrm.exe
+-------------------------------------------------------------------------
+This step is only applicable for sites which have not installed 
+DENT*1.2*39.  '...\' indicates your UNC/path for where the current DRM 
+v3.12 dentalmrm.exe is located.
+       Move dentalmrm.exe to   ..\DOCSTORE
+ 
+-------------------------------------------------------------------------
+2          Set up HL7 link for transmitting DES data to the AAC
+-------------------------------------------------------------------------
+ 
+This will demonstrate one way of editing the HL7 link.
+Note: VIE stands for Vitria Interface Engine
+ 
+VAH&gt;D ^XUP
+ Select OPTION NAME: HL MAIN MENU       HL7 Main Menu
+                     ------------
+ Select HL7 Main Menu Option: FILER and Link Management Options
+                              -----
+ Select Filer and Link Management Options Option: Link Edit
+                                                  ----
+ Select HL LOGICAL LINK NODE: DENTVHLAAC
+                              ----------
+ 
+You will now be in a Screenman display.  These instructions will direct 
+you to the field that needs editing without actually displaying that 
+Screenman display.  You will see the field:
+         LLP TYPE: TCP
+ 
+Move to the LLP TYPE field.  With TCP highlighted, press &lt;ENTER&gt;
+You should now be in another Screenman display entitled:
+         TCP LOWER LEVEL PARAMETERS
+ 
+You will see these three fields on this display:
+         TCP/IP SERVICE TYPE: CLIENT (SENDER)
+              TCP/IP ADDRESS: [ip address]      
+                 TCP/IP PORT: [port]          
+ 
+A. The TCP/IP SERVICE TYPE should be 'CLIENT {SENDER}'
+B. Change the TCP/IP ADDRESS to your VIE IP address
+   1) If you don't know the VIE IP address, please go to
+      http://vista.domain.ext/messaging/vie/vie_projectdocs.asp
+   2) Open the document named VIE Cluster IPs.
+   3) Find your site and use the IP address listed there.
+C. The TCP/IP PORT should be 8090
+   This port number is assigned by the VIE team for Dental
+ 
+ 
+Move the cursor to the line:  COMMAND:
+Enter CLOSE  to close the TCP LOWER LEVEL PARAMETERS screen
+ 
+At the COMMAND: prompt on the HL7 LOGICAL LINK screen
+Enter EXIT to save your changes
+ 
+NOTE: the other logical link, DENTVHLHDR, sent in this patch will be used 
+in the future to send messages to the Health Data Repository. Do not set 
+this up yet.
+ 
+ 
+-------------------------------------------------------------------------
+3          Turn on the HL7 link DENTVHLAAC
+-------------------------------------------------------------------------
+This step will turn the link on to enable the messages to be sent.
+ 
+Within the same Filer and Link Management Options menu in the previous 
+step:
+ 
+Select Filer and Link Management Options Option: Start/Stop Links
+                                                 -----
+Select HL LOGICAL LINK NODE: DENTVHLAAC
+                             ----------
+The link will be enabled.  To stop the link, follow the same steps and 
+you will be prompted if it is Okay to shut down the job.  Answer Yes if 
+you want to stop the link.
+ 
+--------------------------------------------------------------------------
+4                        Set up Weekly Scheduled Task
+--------------------------------------------------------------------------
+You need to schedule the Dental HL7 Batch option to run once a week.  The 
+VIE team is responsible for scheduling communication jobs that use the 
+VIE.  As such, they have assigned SUNDAY as the day that all VAMCs should 
+schedule this job to run.  The time that the job runs on Sunday is left 
+up to the individual sites.  On Monday evening, the VIE team will batch 
+all the dental HL7 messages received from all VAMCs into a single file 
+which will be sent to the AAC for processing.
+ 
+VAH&gt;D ^XUP
+ 
+ Select OPTION NAME: XUTM MGR       Taskman Management
+                     --------
+Select Taskman Management Option: SCHedule/Unschedule Options
+                                  ---
+Select OPTION to schedule or reschedule: DENTVHLB BATCH  Dental HL7 Batch
+                                         --------------
+ 
+These two fields need to be properly set:
+      QUEUED TO RUN AT WHAT TIME: select a Sunday date/time
+          RESCHEDULING FREQUENCY: U@2200
+ 
+Here is an example of setting up the weekly scheduled option:
+ 
+                          Edit Option Schedule
+    Option Name: DENTVHLB BATCH                
+    Menu Text: Dental HL7 Batch                          TASK ID:
+ ________________________________________________________________________
+ 
+  QUEUED TO RUN AT WHAT TIME: NOV 7,2004@22:00
+ 
+DEVICE FOR QUEUED JOB OUTPUT:
+ 
+ QUEUED TO RUN ON VOLUME SET:
+ 
+      RESCHEDULING FREQUENCY: U@2200
+ 
+             TASK PARAMETERS:
+ 
+            SPECIAL QUEUEING:
+ 
+__________________________________________________________________________
+Exit     Save     Next Page     Refresh
+ 
+Enter a command or '^' followed by a caption to jump to a specific field.
+ 
+ 
+COMMAND: EXIT                                  Press &lt;PF1&gt;H for help    
+Insert
+ 
+--------------------------------------------------------------------------
+5                 Set up a Historical One-Time Scheduled Task
+--------------------------------------------------------------------------
+The Dental Encounter System (DES) has been gathering data since Oct 2000 
+in file 228.  Dental VAHQ would like all that data downloaded to the new 
+DES database at the AAC.  The amount of data at some sites might be 
+extensive.  The VIE team and Capacity Management prefer that an option be 
+made available to the sites to move that data to
+a CD instead of using bandwidth on the VA WAN for moving those HL7 
+historical messages to the AAC.  Thus we have provided an option for the 
+site to schedule at a time that is convenient for the site.
+ 
+To estimate the size of the file that will be generated, perform a 
+Fileman Inquire on file 228.2.  The number of records will give you a 
+ballpark estimate as to the size of the Historical file - each  
+transaction will take just under 1K when formatted as an HL7 message.  
+So, a record count of 55,024 will produce a file of &lt; 55,000K or just 
+under 55meg.  Not all records will be sent via the Historical batch of 
+course, since all records created since the installation of DENT*1.2*38 
+will be sent via the Vista Interface Engine and the weekly process.
+ 
+NOTE: The historical CD is expected at the AAC within one month of the 
+release of patch 40.
+ 
+Here are the instructions for setting up a one-time Scheduled Task for 
+the DENTVHL PROCESS HISTORIC option [menu text: Process one-time 
+historical extract (Dental)].  Please note that this option will generate 
+a HFS file with a name like DENTV_HISTORICAL_&lt;site#&gt;.TXT.  The file will 
+be located in the directory as defined 
+in your Kernel Site Parameters.  You can easily see what this value is 
+from the programmer's prompt as shown in this example:
+ 
+VAH&gt;W $$PWD^%ZISH
+c:\hfs\_TO CD\
+ 
+Once the historical option has completed, you will need to copy that file 
+to a CD.  You will then mail that CD to the AAC.  If you choose to FTP 
+the file from your VMS system to another network server, then please 
+remember to FTP the file in ASCII (or text) mode.  Here is the mailing 
+address for that CD:
+      George Dankworth
+       Records Management (396B)
+       Dental Encounter System
+       1615 Woodward Street
+       Austin, TX  78772
+ 
+Example of setting up the one-time queue option:
+ 
+VAH&gt;D ^XUP
+ 
+Select OPTION NAME: XUTM MGR       Taskman Management
+                    --------
+Select Taskman Management Option: SCHedule/Unschedule Options
+                                  ---
+Select OPTION to schedule or reschedule: DENTVHL PROCESS HISTORIC
+                                         ------------------------
+ 
+Here is a screen capture of the Taskman Screenman screen showing the 
+scheduling of this job:
+ 
+                          Edit Option Schedule
+    Option Name: DENTVHLB BATCH                
+    Menu Text: Dental HL7 Batch                          TASK ID:
+ ________________________________________________________________________
+ 
+  QUEUED TO RUN AT WHAT TIME: AUG 31,2004@22:00
+ 
+DEVICE FOR QUEUED JOB OUTPUT:
+ 
+ QUEUED TO RUN ON VOLUME SET:
+ 
+      RESCHEDULING FREQUENCY:
+ 
+             TASK PARAMETERS:
+ 
+            SPECIAL QUEUEING:
+ 
+__________________________________________________________________________
+Exit     Save     Next Page     Refresh
+ 
+Enter a command or '^' followed by a caption to jump to a specific field.
+ 
+ 
+COMMAND: EXIT                                  Press &lt;PF1&gt;H for help    
+Insert
+ 
+ 
+--------------------------------------------------------------------------
+6                          Add Members to Mail Group
+--------------------------------------------------------------------------
+ 
+An new mail group has been added called DENTV HL7 MESSAGES.  Please add 
+members to this mail group.  These should be individuals who will be 
+responsible for taking action if the acknowledgement messages that come 
+back from the AAC which contain error codes.  These problems need to be 
+addressed in the VistA DES database.  Those transactions, once fixed, 
+will need to be flagged for retransmission.  A good candidate for a 
+member would be the dental administrator for DRM in the Dental Service.
+ 
+This is an example of adding a member to this mail group.  There are 
+several Kernel options that allow the adding of members to a mail group 
+including using Fileman.  This example just shows one of those options' 
+display:
+ 
+Select MAIL GROUP NAME: DENTV HL7 MESSAGES
+                        ------------------
+Select MEMBER: [add the name of the person to become a member]
+  TYPE:
+ 
+==========================================================================
+                        SAMPLE INSTALLATION EXAMPLE
+==========================================================================
+Select Installation Option: INstall Package(s)
+Select INSTALL NAME:    DENT*1.2*40     Loaded from Distribution  
+8/31/04@10:09:43
+     =&gt; DENT*1.2*40  ;Created on Aug 25, 2004@14:15:23
+ 
+This Distribution was loaded on Aug 31, 2004@10:09:43 with header of 
+   DENT*1.2*40  ;Created on Aug 25, 2004@14:15:23
+   It consisted of the following Install(s):
+    DENT*1.2*40
+Checking Install for Package DENT*1.2*40
+ 
+Install Questions for DENT*1.2*40
+ 
+Incoming Files:
+ 
+   228.2     TREATMENT PLAN TRANSACTION/EXAM  (Partial Definition)
+Note:  You already have the 'TREATMENT PLAN TRANSACTION/EXAM' File.
+ 
+   228.25    DES/HL7 TRANSMISSION
+Note:  You already have the 'DES/HL7 TRANSMISSION' File.
+ 
+   228.5     DENTAL FEE BASIS EXTRACT  (Partial Definition)
+Note:  You already have the 'DENTAL FEE BASIS EXTRACT' File.
+ 
+Incoming Mail Groups:
+ 
+Enter the Coordinator for Mail Group 'DENTV HL7 MESSAGES': [enter name] 
+ 
+    Want KIDS to Rebuild Menu Trees Upon Completion of Install? YES// NO
+                Want KIDS to INHIBIT LOGONs during the install? YES// NO
+Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+ 
+DEVICE: HOME// ;P-DEC;80;999  TELNET PORT
+ 
+Install Started for DENT*1.2*40 :                Aug 31, 2004@10:10:17
+Build Distribution Date:                         Aug 25, 2004
+Installing Routines:...........                  Aug 31, 2004@10:10:17
+Installing Data Dictionaries: ....               Aug 31, 2004@10:10:18
+Installing PACKAGE COMPONENTS: 
+Installing MAIL GROUP..
+Installing HL LOGICAL LINK...
+Installing HL7 APPLICATION PARAMETER......
+Installing PROTOCOL....
+  Located in the DENT (DENTAL) namespace..
+  Located in the DENT (DENTAL) namespace..
+Installing OPTION...
+Installing PARAMETER DEFINITION..               Aug 31, 2004@10:10:19
+Running Post-Install Routine:                   POST^DENTV040.
+  &gt;&gt;&gt;&gt;&gt; Updating the DENTV-C, DENTV-F HL7 params with your Facility Name 
+&lt;&lt;&lt;&lt;&lt;
+ 
+   &gt;&gt;&gt;&gt;&gt; Updating the DENTV DRM DAS TURNOFF param with date 10/31/2004 
+&lt;&lt;&lt;&lt;&lt;
+ 
+Update of file 228.2 CREATE DATE field successfully queued, task# 361543
+Updating Routine file
+Updating KIDS files.......
+DENT*1.2*40 Installed.                         Aug 31, 2004@10:10:20
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;39</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-10-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ General Information
+ ========================================================================
+ This patch contains fixes and enhancements to the Dental Record Manager
+ (DRM) application.  This patch also contains new files for DRM in the
+ DENT namespace - ^DENT(228.6) which contains tooth notes and
+ ^DENT(228.7) which contains reserved transactions.  The ^DENT global
+ should already exist on your system so no global placement is required.
+ 
+ A database conversion will be run as part of the post installation.
+ RVU and DSS Product line data will be set into existing transactions 
+ from file 228 DENTAL CPT CODE MAPPING.  New System parameters required
+ for DRM Plus will be seeded with default data.
+ 
+ **NOTE** Dental administrators are responsible for entering RVU and
+ VA-DSS Product Line information into the system for *ALL* locally mapped
+ medical (CPT) codes!  This information will be required for processing
+ transactions that are sent to Austin after patch 40 is installed.  See
+ the post-installation instructions for details on entering this
+ information.
+ 
+ The patch installation process should take be less than 5 minutes.
+ The post-installation conversion process may take several hours 
+ depending upon the number of records in file 228.2.  This conversion 
+ process will be tasked off in the background.
+ 
+ 
+ENHANCEMENTS TO THE DRM APPLICATION
+ ========================================================================
+ A. DRM Plus - an entirely new visually enhanced GUI is part of this 
+    patch.  DRM Plus contains screens to edit Perio, PSR and Head/Neck 
+    lesion data as well as the enhanced visual screens for general 
+    dentistry.
+ 
+ B. RVU data will be stored with the ADA codes and will be shipped with
+    with the DENTAL CPT MAPPING table (#228).  For locally added codes, 
+    users will be able to edit RVU and VA-DSS Product Line information.
+   
+ C. DES Reports that were created in DRM Patch 38 have been enhanced to
+    allow screening of transaction status (complete, pending, deleted) 
+    and patient type (active, inactive).  The Summary Reports 
+    provider/clinic) now allow the user the option to print only the 
+    third page totals.
+    
+ D. The New Extract option that was created in DRM Patch 38 has been
+    enhanced to allow screening of transaction status (complete, pending,
+    findings and observe).  Both Extract options have been changed to
+    output RVU and transaction status data to the text file.
+    
+ E. Selection of patient visits now offers a new radio button to view
+    only Dental Visits (and Scheduled appointments for Dental).  Dental
+    Visits are those where the location has a stop code of 180 or 181.
+    The Dental Visits radio button is now the default selection,
+    instead of the All button.
+    
+ F. Combat Veteran status has been added to the Service Connected
+    selection page.
+    
+ G. The DRM Plus application will no longer ask the user if they want to
+    close the application after they have hit the close button.
+ 
+ H. Users will no longer be prompted for # of Canals.  If the ADA code
+    in the ADA Mapping table (#228) is marked for Canals, then DRM Plus
+    will use that value for the transaction.
+ 
+ I. Users have the option of saving dental information in a temporary
+    workspace at any time in the DRM Plus workflow.  The user may close 
+    DRM Plus or change patients and the system will prompt to save the 
+    currently entered information without having to click the Finish 
+    button.  When the user re-opens DRM Plus for the patient with saved
+    data, the system will prompt to re-load the information and the
+    user can continue through the screens.
+ 
+ J. The user will only see active providers when selecting co-signers.
+  
+ SYSTEM ACCESS DURING INSTALLATION
+ ========================================================================
+ Installation of this patch does not require users to be off of the 
+ system. However, all Dental users should not use the DRM GUI option 
+ while the patch is being installed.  All Dental users MUST close any 
+ open DRM GUI application prior to the patch being installed.  Once the 
+ patch has completed the users can use the DRM application.
+ 
+  ********************************************************************
+  *  There is a new DRM executable exported with this patch, called  *
+  *  dentalmrmtx.exe.  This executable will NOT be used until the    *
+  *  site has scheduled training for DRM Plus.  The site should      *
+  *  continue to use the old executable (dentalmrm.exe) against the  *
+  *  the DENT*12.*39 KIDS build until that time.                     *
+  *                                                                  *
+  *  ** There are also new Client-side components that must be **    *
+  *     installed for the new executable to work properly!!          *
+  * ** Please read the post-installation instructions thoroughly! ** *
+  *                                                                  *
+  ********************************************************************
+ 
+ PRE-INSTALLATION PROCESS
+ ========================================================================
+ The pre-install process will save off the current ADA table (file 228)
+ in preparation for re-loading new ADA data. 
+ 
+ The pre-install process will delete field 4.06 in file 228.2 because
+ the DESCRIPTION field was changed to a word processing field 4.1.  If
+ field .04 (PLAN NUMBER) in file 228.6 exits, it will be deleted as it
+ is no longer used.
+ 
+ 
+ POST-INSTALLATION PROCESS
+ ========================================================================
+ 
+ Please read the post-installation instructions which follow the
+ installation instructions.  All the steps in the post-install must be
+ completed for DRM Plus to function properly.
+ 
+ 
+ NOIS ADDRESSED BY THIS PATCH
+ ========================================================================
+ BRX-0804-10469   NOL-0804-70250   CLL-0804-40357   MON-0804-51726
+ BRX-0804-11357
+ 
+ 
+ INSTALLATION FILES
+ ========================================================================
+ How to Obtain KIDS File
+ File Name: DENT_1_2P39.zip         FTP format: binary
+ 
+ DENT_1_2P39.zip file will contain the following files:
+                                                                    FTP 
+ File Name                 Description                             Format
+ -----------------------   -------------------------------------   ------
+ Dent_1_2p39.kid           Installable KIDS file                   ASCII
+ Dentalmrmtx.exe           DRM Version 4.01 executable             Binary
+ SETUP.EXE                 Initial CVision install file            Binary
+ VBRUN60SP6.EXE            Microsoft VB 6.0 SP6 runtime files      Binary
+ MDAC_TYP.EXE              Microsoft Data Access Components v2.8   Binary
+ UPDATE.EXE                Subsequent CVision updates as necessary Binary
+ Dent_1_2p39_ug.doc        Dental Record Manager's user guide      Binary
+                           The guide was updated for DRM Plus
+ Dent_1_2p39_rn_ig.pdf     DENT*1.2*39 Release Notes and           Binary
+                           Installation Guide 
+ P39_patch_description.doc A copy of the patch description         Binary
+ 
+ The zip file listed above may be obtained via FTP.  The preferred method
+ is to FTP the files from download.vista.domain.ext
+ 
+ This transmits the files from the first available FTP server.  Sites may
+ also elect to retrieve software directly from a specific server as
+ follows:
+ 
+ CIO FIELD OFFICE   FTP ADDRESS                 DIRECTORY
+ ----------------   -------------------------   --------------------
+ Albany             ftp.fo-albany.domain.ext    [anonymous.software]
+ Hines              ftp.fo-hines.domain.ext     [anonymous.software]
+ Salt Lake City     ftp.fo-slc.domain.ext       [anonymous.software]
+ 
+ 
+ REQUIRED BUILDS:  DENT*1.2*38
+                   DSIC 1.3
+ 
+10.TEST SITES             SYSTEM                        ALPHA/BETA
+   ====================================================================
+   San Diego, CA         (VMS Cache)                    ALPHA
+   Black Hills, SD       (W2K Cache/Thin Client)        ALPHA
+   Manhattan, NY         (VMS Cache)                    BETA
+   Daytona (Gainesville) (VMS, DSM)                     BETA 
+   Manchester            (VMS Cache)                    BETA
+   Bath, NY              (VMS DSM)                      BETA
+   Fargo, ND             (W2K Cache/Thin Client)        BETA
+   Boston, MA            (VMS Cache)                    BETA
+   Miami, FL             (VMS, DSM)                     BETA
+   Houston, TX           (VMS DSM)                      BETA
+ 
+ ROUTINE SUMMARY
+ ======================================================================
+ Second line of routines will look like:
+ ;;1.2;DENTAL;&lt;patch list&gt;;AUG 10, 2001
+ 
+   Routine   Before Patch  After Patch  Patch List
+   --------  ------------  -----------  ------------------------
+   DENTV038    [*** to be deleted***]      
+   DENTV03C    [*** to be deleted***]      
+   DENTV03D    [*** to be deleted***]      
+   DENTV03E    [*** to be deleted***]      
+   DENTV03F    [*** to be deleted***]      
+   DENTV03G    [*** to be deleted***]      
+   DENTV039      n/a        10652042       39
+   DENTV39A      n/a        1146103        39
+   DENTVA1     10886320     12453282       38,39
+   DENTVA2     12235826     14211342       38,39
+   DENTVAU     2285628      2840803        38,39
+   DENTVDD1    5137431      5150464        31,38,39
+   DENTVIP1    8645242      7061918        33,34,35,36,39
+   DENTVIP2    14330152     14335172       36,39
+   DENTVIP3    3714758      5003597        31,39
+   DENTVRH     6800370      7889749        31,37,38,39
+   DENTVRHD    1034441      1569611        31,39
+   DENTVRP1    5080599      5103649        30,34,36,31,37,39
+   DENTVRP3    6062351      6412654        30,32,35,31,39
+   DENTVRP8    3913187      4052725        38,39
+   DENTVRP9    6021572      6935679        30,32,34,31,38,39
+   DENTVTP0      n/a        830603         39
+   DENTVTP1      n/a        5103282        39
+   DENTVTP2    3443632      2998057        38,39
+   DENTVTP3      n/a        5419608        39
+   DENTVTP4      n/a        10224521       39
+   DENTVTP5      n/a        4674885        39
+   DENTVTP6      n/a        5267534        39
+   DENTVTP7      n/a        3312894        39
+   DENTVTPA      n/a        4823862        39
+   DENTVTPB      n/a        8540067        39
+   DENTVTPC      n/a        10530540       39
+   DENTVTPD      n/a        6502580        39
+   
+ 
+ INSTALLATION INSTRUCTIONS FOR DENT*1.2*39
+ =======================================================================
+ This patch must be installed when there are no dental DRM processes
+ running.  All open DRM GUI applications must be closed.
+ The installation time should take less than 5 minutes.
+ 
+ 1. Obtain the Dent_1_2p39.kid file
+ 
+ 2. For DSM sites review your mapped set.  Disable any of the above
+    routines if necessary
+ 
+ 3. From the Kernel Installation and Distribution System Menu, select
+    the Installation menu
+ 
+ 4. Use Load a Distribution and enter Dent_1_2p39.kid when prompted
+    for a Host file.  You may need to attach a directory name
+ 
+ 5. You may elect to use the following options (when prompted for 
+    INSTALL NAME, enter DENT*1.2*39)
+    a. Backup a Transport Global
+    b. Compare Transport Global to Current System
+    c. Verify Checksums in Transport Global
+ 
+ 6. Use the Install Package(s) option and select package DENT*1.2*39
+ 
+ 7. For the install prompts, enter either Yes or No depending upon the
+    normal practice at your facility.  This example shows answering NO:
+ 
+     Want KIDS to Rebuild Menu Trees Upon Completion of Install? YES// NO
+                 Want KIDS to INHIBIT LOGONs during the install? YES// NO
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+ 
+ 8. AXP/DSM Sites - After the patch has been installed, rebuild your map
+    set, if necessary
+ 
+ 9. The post-install routine queues up a Taskman job to add RVU and 
+    Product Line information into existing transactions in file 228.2.
+    The post install will also add, edit or delete certain parameter 
+    instances for DRM Plus and will add the locally added CPT codes back
+    into file 228.
+ 
+ POST INSTALLATION INSTRUCTIONS
+ ========================================================================
+  ***********************************************************************
+  *  THESE STEPS SHOULD NOT BE COMPLETED UNTIL YOUR SITE IS SCHEDULED   *
+  *  FOR DRM PLUS TRAINING!                                             *
+  ***********************************************************************
+ 
+ 1. At this point, the KIDS install will have completed.  IRM must place
+    the DRM GUI executable in the appropriate directory.  The placement
+    of this DRM executable can be done at the same time the KIDS build is
+    being installed.  The executable must be placed as follows where ...\ 
+    indicates your UNC/path for where the current DRM v3.12 dentalmrm.exe
+    is located:      Move dentalmrmtx.exe to ...\DOCSTORE
+ 
+ 2. Create a CPRS Tools menu option for this new executable
+    Add the DRM Plus option to the CPRS Tools Menu with these params:
+       ...\DOCSTORE\DENTALMRMTX.EXE S=%SRV P=%PORT D=%DFN TX=1
+    Note that the executable name is different than the current DRM
+    executable and the parameters contain a new string TX=1 which stands
+    for Treatment Plan - the new GUI display.  If you do not include this
+    new parameter, the Dental program will look like the existing DRM
+    application and none of the new features will be available to the
+    dental user.
+ 
+ 3. Client PC setup
+    There are DRM Plus support files that MUST be installed on each  
+    Windows client PC that will be running the DRM GUI application.
+    You must have local Administrative privileges on the client PC to
+    properly install these files.  See the installation steps below for
+    details.
+ 
+    a. Update the client machines (need Administrator privileges) by
+       running the SETUP.EXE, VBRUN60SP6.EXE, and MDAC_TYP.EXE programs
+       in that order.
+ 
+    b. Reboot the machine and log in again as the administrator to
+       complete the installation process!
+ 
+    c. Once you have installed the three programs in step 4.a. and you
+       need to reinstall this patch (or if test sites are upgrading to a
+       newer version of the patch), then you only have to run the
+       UPDATE.EXE file to upgrade the DRM Plus client files.
+       UPDATE.EXE does not require administrator privileges.
+       Keep these three client installation files for future use
+       e.g. when new pcs are added to the dental clinic, etc.
+ 
+ 4. Adding or Editing Local CPT Codes
+  a. This step needs to be done by the dental administrator.  This is
+     not an IRM function at most sites.  This step can be completed any
+     time after the patch has been installed.  This step should be
+     completed before the dental users are given access to the DRM Plus
+     application.  If not, then it is possible that those users will
+     select these locally added CPT codes.  Since no RVUs nor VA-DSS
+     Product Line values are mapped, then no dental workload will be
+     transmitted to the new Dental Encounter System database in Austin
+     once patch DENT*1.2*40 is released.
+ 
+  b. The dental administrator needs to update RVU and VA-DSS Product Line
+     values for any CPT codes which the site might have added to the ADA
+     Mapping Table (#228).  If the site has not added any CPT codes to
+     this table, then this step can be skipped.  The dental administrator
+     will edit this information using the DRM Plus GUI program.
+     1) In DRM Plus, select the 'Treatment &amp; Exam' menu
+     2) Within this menu, select the option 'Edit CPT/DCode Field
+        Values'
+     3) Search for the locally added CPT codes and enter the appropriate
+        values.  Click OK to file the information.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;42 SEQ #41  ;Created on Jan 31, 2005@10:28:16</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-03-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ General Information
+ =======================================================================
+ This patch sets the Out Of Order message on various Dental Activity 
+ System (DAS) options within VistA so that these options may no longer 
+ be used.  Many enhancements/fixes were made in DRM Plus and some fixes
+ were made in DRM as well. See the detailed description of changes below.
+ 
+ The patch installation process should take be less than 5 minutes.
+ 
+ 
+ ENHANCEMENTS TO THE DRM/DRM Plus APPLICATION
+ =======================================================================
+ The following enhancements apply to DRM and DRM Plus:
+ A. The following VistA DAS options will be disabled:
+  
+ Menu/Option Name                Description  
+ ------------------------------  ----------------------------------------
+ DENT GECS BATCH                 Batch Code Sheets 
+ DENT GECS BATCH EDIT            Batch Edit 
+ DENT GECS BATCHES STATUS        Status of all Batches 
+ DENT GECS BATCHES WAITING TRAN  Batches Waiting to be Transmitted 
+ DENT GECS CODE EDIT             Code Sheet Edit 
+ DENT GECS CREATE                Create a Code Sheet 
+ DENT GECS DELETE                Delete a Code Sheet 
+ DENT GECS KEYPUNCH              Keypunch a Code Sheet 
+ DENT GECS PURGE                 Purge Transmission Records/Code Sheets
+ DENT GECS READY FOR BATCHING L  Code Sheets Ready for Batching 
+ DENT GECS REBATCH               Mark Code Sheets for Rebatching 
+ DENT GECS RETRANSMIT            Mark Batch for Retransmission 
+ DENT GECS REVIEW CODE SHEET     Review a Code Sheet 
+ DENT GECS TRANSMIT              Transmit Code Sheets 
+ DENT GECS MAIN MENU DENTAL      Code Sheet Manager Menu 
+ DENT GECS MAINTENANCE USER MEN  Maintenance Menu 
+ DENT GECS REPORTS MENU          Reports Menu 
+ DENT GECS TRANSMIT USER DENTAL  Code Sheet Transmission Menu 
+ DENT GECS USER MENU DENTAL      Code Sheet User Menu 
+ DENTAPP                  Appointments 
+ DENTCPA1                 Control Point Activity Enter/Edit
+ DENTCPA2                 Print/Display Control Point Activity 
+ DENTOUT                  Outputs 
+ DENTRELEASE              Review/Release Service Reports 
+ DENTSCHED                Scheduling 
+ DENTSUP                  Supervisor 
+ DENTTREAT RELEASE        Treatment Data Review/Release Menu 
+ DENT AMIS DELETE         Delete Dental AMIS (Temporary) Global 
+ DENT AMIS TAPE           Generate Monthly Dental AMIS Tape 
+ DENT SERVICE DELETE      Delete Dental Service (Temporary) Global 
+ DENT SERVICE TAPE        Generate Monthly Dental Service Tape 
+ DENTADM EDIT             Class I-VI (type 3) Admin Info Enter/Edit 
+ DENTADM RELEASE          Class I-VI (type 3) Admin Info 
+ DENTADM RE-RELEASE       Class I-VI Admin Entry (type 3) Edit/Re-Release
+ DENTBATCH                Enter Batch Screening/Complete Exam 
+ DENTCARD                 Enter Data Thru Card Reader 
+ DENTCDR                  Cost Distribution Report 
+ DENTFEE EDIT             Applications and Dental Fee (type 5) Enter/Edit
+ DENTFEE RELEASE          Applications and Dental Fee (type 5) 
+ DENTFEE RE-RELEASE       Applications and Fee (type 5) Edit/Re-Release
+ DENTINI                  Initialize Card Reader 
+ DENTNCLINTIME            Non Clinical Time 
+ DENTNCLINTIME DELETE     Delete Non Clinical Time Entry 
+ DENTNCLINTIME EDIT       Non Clinical Time Enter/Edit 
+ DENTNCLINTIME PROV       Non Clinical Time by Provider 
+ DENTPERS EDIT            Personnel Info (type 4) Enter/Edit 
+ DENTPERS RELEASE         Personnel Info (type 4) 
+ DENTPERS RE-RELEASE      Personnel Entry (type 4) Edit/Re-Release 
+ DENTPERS RPT             Personnel Info (type 4) 
+ DENTPURGE                Purge Dental AMIS 
+ DENTRELEASE ALL          Release All Service Reports 
+ DENTTOOTH EDIT           Tooth Chart Enter/Edit 
+ DENTTREAT DELETE         Treatment Data Entry Delete 
+ DENTTREAT EDIT           Treatment Data Enter/Edit (Full Screen) 
+ DENTTREAT LINE EDIT      Treatment Data Enter/Edit (Line By Line) 
+ DENTTREAT RE-RELEASE     Enable Edit/Re-Release of Treatment Data (Full)
+ DENTTREAT1 EDIT          Treatment Data (AMIS) Enter/Edit (Screen Handl)
+ DENTTREATCLINIC RELEASE  Clinic Summary 
+ DENTTREATM RE-RELEASE    Enable Edit/Re-Release of Treatment Data (Line)
+ DENTTREATNOREV RELEASE   Release Report Without Reviewing Data 
+ DENTTREATPROV RELEASE    Provider Summary 
+ DENTTREATSITPROV RELEASE Sittings By Provider 
+ 
+ -----DRM ONLY-----
+ B. The Summary Reports (Provider and Clinic) now offer the choice to
+    print only the totals columns. (this is already in DRM Plus)
+    
+ -----DRM Plus ONLY-----
+ C. Added CPRS templates to Treatment Chart progress note and Addendum
+    screens.  CPRS templates are automatically displayed if linked to
+    a TIU note title or embedded in the title boilerplate (applies to
+    Treatment Chart and Clinical Record progress note title selection 
+    screens).  NOIS:DUR-1004-31962
+    
+ D. There is a new "Save unfiled data" dialog prompt and functionality
+    to allow changing of providers (occurs when DRM Plus is closed, a 
+    patient change in CPRS occurs, and the option "Save unfiled data" 
+    under the File menu is clicked).  The "Save unfiled data to another
+    provider" option under the File menu was removed. 
+ 
+ 
+ FIXES TO THE DRM/DRM Plus APPLICATION
+ =======================================================================
+ The following fixes apply to DRM and DRM Plus:
+ 1. One of the routines in DENT*1.2*40 was not compatible with DSM and
+    caused an error trying to run.  This routine was modified to be able
+    to be run on either Cache or DSM and is included in this patch so
+    that all sites are running the same version of the routine.
+ 
+ 2. The Fee Basis report will display data for facilities with alpha
+    characters in their id (e.g. 674A4).  NOIS: CTX-1004-72255
+ 
+ 3. The Summary Reports (Provider and Clinic) will now print the correct
+    Totals number.  NOIS: LEX-1104-41679
+    
+ 4. Fixed a bug when loading the boilerplate of a TIU title in the 
+     progress note screen of the Clinical Record tab if a Consult-type 
+     was selected.  The IEN of the previous note title was passed to the 
+     broker call instead of the currently selected title which could 
+     result in the wrong boilerplate. 
+    
+ -----DRM ONLY-----
+ 5. Leaving the 4 digit Provider Id blank for more than one provider
+    will no longer give the user a 'duplicate id' error message.  (Note:
+    the 4 digit Provider Id is still required to file Admin time in DRM,
+    if you are using that feature.) NOIS:PUG-1104-50509
+ 
+ -----DRM Plus ONLY-----
+ 6. D6999 will no longer change the graphical display in DRM Plus and
+    D4211 will prompt for tooth and not quadrant.  D2940 will now paint
+    the correct graphic for restoration.  D2999 and D3999 will not
+    paint graphics.
+ 
+ 7. The system will now automatically display signed notes for user 
+    selection in the Addendum screen. 
+    
+ 8. Changed display of FGM values in the progress note output of Perio 
+    Exams ("+" for positive values, actual value for numbers between 
+    1 - 9, and "*" for values greater than 9). 
+    
+ 9. The HL7 message generator will no longer generate invalid transaction
+    messages for DRM Plus connecting bar type transactions.
+ 
+ 10. Changed the legend/symbol definition for FGM at the bottom of the 
+     Perio Exam progress note output ("FGM coronal to CEJ"). 
+ 
+ 11. Allow DRM Plus to minimize if filing Problem List results in a 
+     "duplicate filing" error message. 
+     
+ 12. Duplicate Problems will no longer be filed.
+ 
+ 13. Changed the message (disclaimer) on top of the Perio Exam progress 
+     note text to "This is textual display of periodontal findings, 
+     please see DRM Plus for perio charting graphic."
+     
+ 14. Automatically display the Visit selection form without having to 
+     click the "..." button on the second page of the Treatment Chart 
+     tab after the Next button is clicked.
+     
+ 15. When PCE filing errors occur, the system will not try to back out
+     DAS transactions since they are no longer filed.
+     
+ 16. Correctly assign the provider initials in the transaction list
+     when the user enters a bridge, connecting bar or partial.
+     NOIS:MIA-1104-31314, PUG-1204-51038
+     
+ 17. Fixed an intermittent issue with completed procedures not 
+     generating a code description in the progress note.
+     
+ 18. Corrected the translation of "Miscellaneous" material in 
+     Diagnostic Findings transactions to display the text "Misc"
+     in the progress note.  Because Miscellaneous is internally 
+     mapped as Unknown, no material is displayed with the tooth 
+     in the progress note for transactions such as existing 
+     Restorations.
+ 
+ 19. The Multi Add button will now be enabled/disabled for the
+     appropriate DCodes.
+     
+ 20. Fixed a bug where 'Observe' type transactions were trying to be sent
+     through the HL7 interface and generating an error.  Only Completed,
+     non-observe transactions should be transmitted. NOIS: MIN-1204-40802
+     
+ 21. Changed the order of the lower PSR values based on a request by
+     the dental development group.
+     
+ 22. Changed the link to the VA Intranet Website under Help menu to 
+     http://vaww1.domain.ext/drmplus1/.  (Note: this link is outside the VA
+     network firewall). 
+     
+ 23. The progress note text width component code was updated.  The
+     progress note screens: regular note, addendum, and Clinical 
+     Record tab note, will wordwrap the text properly at the designated
+     width (usually 74 characters wide). 
+ 
+ 24. Copyright information updated to show "1998 - 2005" in the 
+     Help/About menu option. 
+     
+ 25. Fixed the "List index out of bounds" error message when clicking 
+     the Back button and changes in the text were detected with/without
+     the text marker. 
+ 
+ 26. Disabled the "No" button on the save data prompt when selecting the
+     "Save unfiled data" menu option. Disabled the "Cancel" button on the
+     save data prompt when switching patient. 
+     
+ 27. Replaced the "Additional Notes" section label with a dashed line 
+     (60 characters wide) in the progress note. Changed the "Additional
+     Notes" treeview item to "Insert Text Marker" so the user can 
+     manually insert the marker in the progress note. 
+     
+ 28. The Text Marker section marker is automatically inserted 
+     when a CPRS template or TIU boilerplate is imported when the note
+     title selection is presented for the first time. 
+ 
+ 29.  A warning message will be presented to the user if changes were 
+      made to the progress note text and the Text Marker is not found.
+      or, if changes occur above the original placement of the 
+      Text Marker.
+     
+ 30. Added a new checkbox "Default treeview display to DRM objects" in
+     the User Options under the Treatment System tab.  This allows the 
+     user to select which treeview display the user prefers in the 
+     progress note. (DRM Objects is the default.)
+ 
+ 31. The following changes were made to the DRM Plus client component:
+     a. The message "There are no appointments" which could show up in 
+        some situations has been removed.
+     b. Clicking on "Perio Buttons" and then clicking on a tooth will no
+        longer show the ADA Codes list. 
+     c. The periodontal statistics will now accurately reflect the total 
+        number of sites and teeth for furcation and MGJ.  Teeth without 
+        periodontal readings such as missing or denture will also be 
+        accounted for correctly.
+     d. Fix drawing error when adding a partial on a tooth with an 
+        implant and a coping.
+     e. When adding a connecting bar over missing teeth, the missing
+        teeth will no longer display a hollow crown image.
+     f. Bridge and partial transactions will now be added with the 
+        correct provider.
+     g. Problem where patient notes were being duplicated when changing
+        dates and clicking "Show All" has been resolved.
+     h. When adding a pontic to an implant which has a coping on it; 
+        implant will be removed appropriately.
+     i. Clicking Add in Multi-Add without selecting a tooth or 
+        quadrant will not generate a run-time error.
+     j. The default code for an extracted implant is now D6100.
+     k. Probing will now be allowed on all retained roots. 
+     l. Extracted roots will now display in the transaction list as 
+        "Extract" when completed or planned.
+     m. The ability to "Cancel" the Extract bridge dialog has been added.
+     n. Notes cannot be added without first adding a transaction.
+     o. Apostrophes will be stripped from the SpeedCode name in order to
+        prevent a run-time error.
+     p. The dentition message which tells the user to use the individual
+        dentition button has been modified to be more accurate.
+     q. The H&amp;N date filter now works appropriately.
+     r. Sealant markers will now draw on top of cracked occlusal 
+        surfaces appropriately.
+     s. Defective materials will never display in treatment plan or 
+        completed care.
+     t. The default code for a coping on an implant has been changed 
+        from D6020 to D6056.
+      
+ 
+ SYSTEM ACCESS DURING INSTALLATION
+ =======================================================================
+ Installation of this patch does not require users to be off of the 
+ system. However, all Dental users should not use the DRM or DRM Plus 
+ GUI option while the patch is being installed.  All Dental users MUST
+ close any open DRM or DRM Plus GUI application prior to the patch being
+ installed.  Once the patch has completed, DRM users can use the 
+ application.  DRM Plus users must have a client update performed on
+ their machine.
+ 
+ POST-INSTALLATION PROCESS
+ ========================================================================
+ The KIDS post-install routine will do the following:
+ 1. Disable the DAS options listed in the Enhancements section of this
+    document.  The options will be turned off by setting the Out Of Order
+    Message to 'DAS turned off'.
+ 2. Change the Condition/Area/Material for some DCodes so that the DRM 
+    Plus graphics will paint correctly.
+ 3. Set a new multi-add flag to DCodes to better enable/disable this DRM
+    Plus feature for the appropriate DCodes.  
+ 4. Remove the HL7 'pending' x-ref for all Observe DRM Plus transactions.
+ 5. Set the new DRM Plus Treeview parameter (DENTV TP TREEVIEW DEFAULT)
+    to Yes.
+ 
+  ***********************************************************************
+  *                                                                     *
+  *   THE FOLLOWING STEP BE COMPLETED FOR THIS PATCH TO WORK PROPERLY   *
+  *                                                                     *
+  ***********************************************************************
+ 
+ After the KIDS install has completed, IRM needs to place the DRM
+ executable (dentalmrm.exe) or the DRM Plus executable (dentalmrtx.exe)
+ in the appropriate directory.  If you are a DRM Plus site, then you also
+ must complete some additional client setup on client pcs or thin client 
+ servers.  See the installation steps below for details. 
+ 
+ NOIS ADDRESSED BY THIS PATCH
+ =======================================================================
+ CTX-1004-72255     PUG-1104-50509     MIA-1104-31314     DUR-1004-31962
+ LEX-1104-41679     MIN-1204-40802     PUG-1204-51038
+ 
+ REQUIRED BUILDS:  DENT*1.2*40
+                   DENT*1.2*39
+ 
+ INSTALLATION FILES
+ =======================================================================
+  How to Obtain KIDS File and client applications:
+  File Name: DENT_1_2P42.zip         FTP format: binary
+  
+  DENT_1_2P42.zip file will contain the following files:
+                                                                    FTP
+  File Name          Description                                   Format
+  -----------------  -------------------------------------         ------
+  Dent_1_2p42.kid    Installable KIDS file                         ASCII
+  Dentalmrm.exe      DRM V3.1.4.0 executable                       Binary
+  Dentalmrmtx.exe    DRM Plus V4.0.0.49 executable                 Binary
+  setup.EXE          Initial CVision (client) install file         Binary
+  update.EXE         Subsequent CVision updates (client)           Binary
+  vbrun60sp6.exe     Microsoft VB 6.0 SP6 runtime files (client)   Binary
+  Mdac_typ.exe       Microsoft Data Access Components v2.8 (client)Binary
+  Dent_1_2p42_rn_ig.pdf  DENT*1.2*42 Release Notes and             Binary
+                         Installation Guide 
+  P42_patch_description.txt  A copy of the patch description       ASCII
+  DRM Plus Manual.pdf    User guide for DRM Plus                   Binary
+ 
+  The zip files listed above may be obtained via FTP.  The preferred 
+  method is to FTP the files from download.vista.domain.ext
+ 
+  This transmits the files from the first available FTP server.  Sites 
+  may also elect to retrieve software directly from a specific server 
+  as follows:
+ 
+  CIO FIELD OFFICE   FTP ADDRESS                 DIRECTORY
+  ----------------   -------------------------   --------------------
+  Albany             ftp.fo-albany.domain.ext    [anonymous.software]
+  Hines              ftp.fo-hines.domain.ext     [anonymous.software]
+  Salt Lake City     ftp.fo-slc.domain.ext       [anonymous.software]
+ 
+ 
+ TEST SITES       DRM Plus?    SYSTEM                 ALPHA/BETA
+ =====================================================================
+ SAN DIEGO          yes        VMS Cache              ALPHA
+ BOSTON             yes        VMS Cache/Thin Client  BETA
+ FARGO              yes        W2K Cache/Thin Client  BETA
+ WESTERN NY         no         VMS Cache              BETA
+ 
+ 
+ ROUTINE SUMMARY
+ =====================================================================
+ Second line of routines will look like:
+ ;;1.2;DENTAL;&lt;patch list&gt;;AUG 10, 2001
+ 
+   Routine   Before Patch  After Patch  Patch List
+   --------  ------------  -----------  ------------------------
+   DENTV039    [*** to be deleted***] 
+   DENTV39A    [*** to be deleted***] 
+   DENTV040    [*** to be deleted***] 
+   DENTV041    [*** to be deleted***] 
+   DENTV042      n/a         8320931      42
+   DENTVA2     14211342      14282966     38,39,42
+   DENTVHL     13088143      13364754     40,42
+   DENTVHL2    5154609       5154663      40,42
+   DENTVRP4    9233470       9298307      30,32,31,42
+   DENTVTIX     n/a          314768       42
+   DENTVTPA    4823862       4902746      39,42
+   DENTVTPC    10530540      10565254     39,42
+ 
+ INSTALLATION INSTRUCTIONS FOR DENT*1.2*42
+ ======================================================================
+ This patch can be installed while users are on the system.
+ The installation time should take less than 1 minute.
+   
+ 1. Obtain the Dent_1_2p42.kid file
+ 
+ 2. For DSM sites review your mapped set.  Disable any of the above
+      routines if necessary.
+ 
+ 3. From the Kernel Installation and Distribution System Menu, select
+    the Installation menu.
+ 
+ 4. Use Load a Distribution and enter Dent_1_2P42.kid when prompted
+    for a Host file.  You may need to attach a directory name.
+ 
+ 5. You may elect to use the following options (when prompted for 
+    INSTALL NAME, enter DENT*1.2*42)
+    a. Backup a Transport Global
+    b. Compare Transport Global to Current System
+    c. Verify Checksums in Transport Global
+ 
+ 6. Use the Install Package(s) option and select package DENT*1.2*42
+ 
+ 7. For the install prompts, enter either Yes or No depending upon the
+    normal practice at your facility.  This example shows answering NO:
+ 
+     Want KIDS to Rebuild Menu Trees Upon Completion of Install? YES// NO
+                 Want KIDS to INHIBIT LOGONs during the install? YES// NO
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+ 
+ 8. AXP/DSM Sites - After the patch has been installed, rebuild your 
+    map set, if necessary
+ 
+ =======================================================================
+                        POST-INSTALLATION PROCESS
+ =======================================================================
+ 
+ 1. If your site is running dentalmrm.exe (DRM), then
+       Move dentalmrm.exe to   ...\DOCSTORE  and you are done!
+      '...\' indicates your UNC/path for where DRM is located.
+ 
+ 2. If your site is running dentalmrmtx.exe (DRM Plus)
+       Move dentalmrmtx.exe to   ...\DOCSTORE
+      '...\' indicates your UNC/path for where DRM Plus is located.
+    Run update.exe on all client machines that will launch DRM Plus (or
+    all thin client servers if you are a thin client site).  Update.exe
+    does not require the installed to be an administrator.
+    *********************************************************************
+    Please be careful to coordinate the server/client updates with each 
+    other so that the dental application works properly.  You will know 
+    if the server/client files are not compatible because launching DRM 
+    Plus will cause approximately 30 client errors.  This also means that
+    you must carefully coordinate testing the new application in the TEST
+    account since you must run update.exe on a rarely used machine for 
+    the dental staff to test against, as they will not be able to run the
+    production side application after running the new update.exe.
+    *********************************************************************
+ 
+    These are the DRM Plus files you are currently running from patch 39:
+    dentalmrmtx.exe version 4.0.0.481    dated 10/1/2004 5:44pm (server)
+    update.EXE      contains CVision.ocx dated 10/1/2005 3:09pm (client)
+    *setup.EXE      new client install   dated 10/1/2005 3:10pm (client)
+ 
+    These are the new DRM Plus files from patch 42:
+    dentalmrmtx.exe version 4.0.0.49     dated 1/5/2004 10:33am (server)
+    update.EXE      contains CVision.ocx dated 1/4/2005 10:50am (client)
+    *setup.EXE      new client install   dated 1/6/2005  9:20am (client)
+ 
+    *you only need setup.EXE to set up a new client machine, see step 3.
+ 
+ 3. If your site is a DRM Plus site and has any new PCs, or new thin 
+    client SERVERS that need to be able to run DRM Plus, then you must be
+    on the VHA domain and install the following files as an administrator
+    of the machine: setup.EXE, vbrun60sp6.exe, Mdac_typ.exe and REBOOT  
+    the machine. 
+ 
+    If your site is about to be trained on DRM Plus and you need to set 
+    up the training room and/or dental PCs/thin client SERVERS, then the
+    files in the Dent_1_2p42.zip file supercede any files you may have 
+    saved from the patch 39 installation.  Check the dates above to 
+    insure you are installing the correct/latest files.
+ 
+ ========================================================================
+                           SAMPLE INSTALLATION
+ ========================================================================
+Select Installation Option: INStall Package(s)
+Select INSTALL NAME:  DENT*1.2*42  Loaded from Distribution  
+1/5/05@09:13:44
+     =&gt; DENT*1.2*42T6  ;Created on Jan 05, 2005@09:13:13
+ 
+This Distribution was loaded on Jan 05, 2005@09:13:44 with header of
+   DENT*1.2*42T6  ;Created on Jan 05, 2005@09:13:13
+   It consisted of the following Install(s):
+    DENT*1.2*42
+Checking Install for Package DENT*1.2*42
+Install Questions for DENT*1.2*42
+Incoming Files:
+ 
+   228.2     TREATMENT PLAN TRANSACTION/EXAM  (Partial Definition)
+Note:  You already have the 'TREATMENT PLAN TRANSACTION/EXAM' File.
+ 
+Want KIDS to Rebuild Menu Trees Upon Completion of Install? YES// NO
+Want KIDS to INHIBIT LOGONs during the install? YES// NO
+Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+ 
+Enter the Device you want to print the Install messages.
+You can queue the install by enter a 'Q' at the device prompt.
+Enter a '^' to abort the install.
+ 
+DEVICE: HOME//
+                                 DENT*1.2*42
+ -----------------------------------------------------------------------
+ Install Started for DENT*1.2*42 :
+               Jan 05, 2005@09:15:28
+ Build Distribution Date: Jan 05, 2005
+ Installing Routines:
+               Jan 05, 2005@09:15:28
+ Installing Data Dictionaries:
+               Jan 05, 2005@09:15:29
+ Installing PACKAGE COMPONENTS:
+ Installing OPTION
+ Installing PARAMETER DEFINITION
+               Jan 05, 2005@09:15:29
+  Running Post-Install Routine: POST^DENTV042
+ 
+   &gt;&gt;&gt;&gt;&gt; Inactivating DAS options in VistA &lt;&lt;&lt;&lt;&lt;
+   &gt;&gt;&gt;&gt;&gt; Fixing D6999,D4211,D2940,D2999,D3999 for DRM Plus graphics &lt;&lt;&lt;&lt;&lt;
+   &gt;&gt;&gt;&gt;&gt; Setting the Multi-Add flag for DRM Plus DCodes &lt;&lt;&lt;&lt;&lt;
+   &gt;&gt;&gt;&gt;&gt; Remove HL7 Pending flag from Observe transactions &lt;&lt;&lt;&lt;&lt;
+   &gt;&gt;&gt;&gt;&gt; Setting the Treeview system parameter = yes &lt;&lt;&lt;&lt;&lt;
+ 
+ Updating Routine file...
+ Updating KIDS files...
+ 
+ DENT*1.2*42 Installed.
+               Jan 05, 2005@09:15:29
+ 
+ Install Message sent #147809
+  -----------------------------------------------------------------------
+  100% 
+ Complete
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;41 SEQ #40</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-04-01 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ General Information
+ =======================================================================
+ The purpose of this patch is for Dental Record Manager to comply with 
+ the ICD-9 changes in the LEX*2.0*31 patch.  The following Dental ICD-9
+ codes are being inactivated and must be removed from the Dental CPT
+ Code Mapping table:
+ 
+ 521.1     Excessive attrition
+ 521.2     Abrasion
+ 521.3     Erosion
+ 521.4     Pathological resorption
+ 523.2     Gingival recession
+ 524.2     Anomalies of dental arch relationship
+ 524.3     Anomalies of tooth position
+ 524.5     Dentofacial functional abnormalities
+ 524.8     Other specified dentofacial anomalies
+ 525.2     Atrophy of edentulous alveolar ridge
+ 528.7     Other disturbances of oral epithelium, including tongue
+   
+ The patch installation process should take be less than 5 minutes.
+ The post installation process may take a few minutes to process the
+ changes to the DENTAL CPT CODE MAPPING (#228) data.  
+ 
+ 
+ ENHANCEMENTS TO THE DRM APPLICATION
+ =======================================================================
+ A. A new mail group DENTV ADA CODE MAPPING will be sent with this patch.
+     This mail group will be used in future patches that modify the ADA
+     Master table to notify users of the changes.
+ 
+ B. The DENTAL CPT CODE MAPPING table has been changed so that any
+    references to inactivated ICD-9 codes have been replaced or removed.
+    Changes to the national mapping table were made by the Dental Coding
+    Group members.  The following changes may occur:
+    
+    CODE     REMOVE ICD-9     REPLACE and/or ADD ICD-9
+    -----    -------------    -----------------------------------
+    D0340    524.5            524.21 524.22 524.23 524.24 524.25
+    D4270    523.2            523.23
+    D4271    523.2            523.24
+    D7111    521.4            521.42
+    D7286    528.7            528.79
+    D7287    528.7            528.79
+    D7290    524.3            524.31 524.32 524.33 524.34 524.35
+    D7340    525.2            525.22
+    D7350    525.2            525.25 528.71
+    D7291    524.3            524.31 524.32 524.33 524.34 524.35
+    D7465    528.7            528.79
+    D7940    524.2            524.59
+    D7941    524.2            524.22 524.23
+    D7943    524.2            524.26
+    D7944    524.3            524.31 524.32 524.33 524.34 524.35
+    D7945    524.2            524.24 524.25
+    D7946    524.2            524.24 524.25 524.23
+    D7947    524.2            524.27 524.33
+    D7948    524.2            524.59 524.89
+    D7949    524.2            524.59 524.89
+    D7950    524.8            525.23 525.26
+    D7955    524.8            525.23 525.26
+    D7995    524.8            525.23 525.26
+    D8010    524.3            524.31 524.32 524.33 524.34 524.35
+    D8020    524.3            524.31 524.32 524.33 524.34 524.35
+    D8030    524.3            524.31 524.32 524.33 524.34 524.35
+    D8040    524.3            524.31 524.32 524.33 524.34 524.35
+    D8050    524.3            524.31 524.32 524.33 524.34 524.35
+    D8060    524.3            524.31 524.32 524.33 524.34 524.35
+    D8070    524.3            524.31 524.32 524.33 524.34 524.35
+    D8080    524.3            524.31 524.32 524.33 524.34 524.35
+    D8090    524.3            524.31 524.32 524.33 524.34 524.35
+    D8660    524.3            524.31 524.32 524.33 524.34 524.35
+    D8670    524.3            524.31 524.32 524.33 524.34 524.35
+    D8680    524.3            524.31 524.32 524.33 524.34 524.35
+    D8690    524.3            524.31 524.32 524.33 524.34 524.35
+    D8691    524.3            524.31 524.32 524.33 524.34 524.35
+    D8692    524.3            524.31 524.32 524.33 524.34 524.35
+    D8999    524.3            524.31 524.32 524.33 524.34 524.35
+    D9910    523.2            523.25
+    D9911    523.2            523.24
+    D9940    521.2            521.12
+    **the following are nationally mapped CPT's, your site
+    **may not have DENT*1.2*39 with these codes
+    15120    525.2            528.71
+    15350    525.2 524.8      528.71 525.23 525.26
+    20902    524.00           525.23 525.26
+    21125    525.2            525.23^525.26
+    21210    525.2            525.23^525.26
+    40818    525.2 524.8,     528.71^525.23^525.26
+    40840    525.2 524.8,     528.71^525.23^525.26
+    40845    525.2 524.8,     528.71^525.23^525.26
+    64716    525.2            525.23^525.26
+ 
+    524.3 will be removed from all of the following nationally mapped
+    CPT codes:
+    99201   99202   99203   99204   99205   99211   99212   99213   99214
+    99215   99241   99242   99243   99244   99245   99251   99252   99253
+    99254   99255   99281   99282   99283   99284   99285   99371   99372
+    99373
+    
+ 
+ SYSTEM ACCESS DURING INSTALLATION
+ =======================================================================
+ Installation of this patch does not require users to be off of the 
+ system.  However, all Dental users should not use the DRM GUI option 
+ while the patch is being installed.  All Dental users MUST close any 
+ open DRM GUI application prior to the patch being installed.  Once the 
+ patch has completed the users can use the DRM application.
+  
+ 
+ POST-INSTALLATION PROCESS
+ =======================================================================
+ The post-install routine will remove inactivated ICD-9's and add new
+ ICD-9 codes to the DENTAL CPT CODE MAPPING (#228) table.  
+ 
+ It will also verify that the Condition field in file 228.2 matches the
+ TP Condition field in file 228, and if not, then change the data for 
+ file 228.2.  This part of the post-installation will be queued off in
+ the background.
+ 
+ 
+ NOIS ADDRESSED BY THIS PATCH
+ =======================================================================
+ n/a
+ 
+ 
+ REQUIRED BUILDS:  LEX*2.0*31
+ 
+ 
+ TEST SITES             SYSTEM                        ALPHA/BETA
+ ======================================================================
+ El Paso                                              ALPHA
+ White River Junction                                 BETA
+ Louisville                                           BETA
+ Milwaukee                                            BETA
+ Minneapolis                                          BETA
+ 
+ 
+ ROUTINE SUMMARY
+ ======================================================================
+ Second line of routines will look like:
+ ;;1.2;DENTAL;&lt;patch list&gt;;AUG 10, 2001
+ 
+   Routine   Before Patch  After Patch  Patch List
+   --------  ------------  -----------  ------------------------
+   DENTV041      n/a        12568280     41
+ 
+ 
+ ======================================================================
+ INSTALLATION INSTRUCTIONS FOR DENT*1.2*41
+ ======================================================================
+ This patch can be installed while users are on the system.
+ The installation time should take less than 5 minutes.
+   
+ 1. Load the KIDS build from the mail message.
+ 
+ 2. For DSM sites review your mapped set.  Disable any of the above
+    routines if necessary.
+ 
+ 3. From the Kernel Installation and Distribution System Menu, select
+    the Installation menu.
+ 
+ 4. Use Load a Distribution and enter Dent_1_2P41.kid when prompted
+    for a Host file.  You may need to attach a directory name
+ 
+ 5. You may elect to use the following options (when prompted for 
+    INSTALL NAME, enter DENT*1.2*41)
+    a. Backup a Transport Global
+    b. Compare Transport Global to Current System
+    c. Verify Checksums in Transport Global
+ 
+ 6. Use the Install Package(s) option and select package DENT*1.2*41
+ 
+ 7. For the install prompts, enter either Yes or No depending upon the
+    normal practice at your facility.  
+ 
+ Enter the Coordinator for Mail Group 'DENTV ADA CODE MAPPING':[Name]
+ 
+ Want KIDS to Rebuild Menu Trees Upon Completion of Install? YES// NO
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+ 
+ 8. AXP/DSM Sites - After the patch has been installed, rebuild your 
+    map set, if necessary
+ 
+========================================================================
+                        POST-INSTALLATION PROCESS
+========================================================================
+1. Forward any Mailman messages generated during the post-installation.
+   The post-install may generate a Mailman message if changes were made
+   to the ADA Master table that were not part of the Dental Coding 
+   Group's recommended changes.  These would include removing inactive
+   ICD-9 codes that were added by the site and not known to the group.
+   The Mailman message will be sent to the user loading the patch and 
+   must be forwarded to a Dental Administrator for evaluation.
+ 
+ 
+2. Add Members to the new Mail Group.
+   A new mail group has been added called DENTV ADA CODE MAPPING.  
+   Please add members to this mail group.  These should be individuals
+   who will be responsible for evaluating changes to the ADA Master table
+   within Dental Record Manager.  A good candidate for a member would be
+   the dental administrator for DRM in the Dental Service.
+ 
+   This is an example of adding a member to this mail group.  
+   There are several Kernel options that allow the adding of members to a 
+   mail group including using Fileman.  This example just shows one of 
+   those options display:
+ 
+   Select MAIL GROUP NAME: DENTV ADA CODE MAPPING
+                           ------------------
+   Select MEMBER: [add the name of the person to become a member]
+     TYPE:
+ 
+ 
+ ========================================================================
+                           SAMPLE INSTALLATION
+ ========================================================================
+ Select Installation Option: INstall Package(s)
+ Select INSTALL NAME: DENT*1.2*41 Loaded from Distribution 10/13/04@13:32
+     =&gt; DENT*1.2*41T1  ;Created on Oct 13, 2004@13:31:32
+  
+ This Distribution was loaded on Oct 13, 2004@13:32:31 with header of
+   DENT*1.2*41T1  ;Created on Oct 13, 2004@13:31:32
+   It consisted of the following Install(s):
+    DENT*1.2*41
+ Checking Install for Package DENT*1.2*41
+  
+ Install Questions for DENT*1.2*41
+ 
+ 
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+ 
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+  
+ DEVICE: HOME//   CONSOLE
+ 
+ Install Started for DENT*1.2*41 :
+               Oct 13, 2004@13:32:45
+ 
+ Build Distribution Date: Oct 13, 2004
+ 
+ Installing Routines:
+               Oct 13, 2004@13:32:45 
+  Running Post-Install Routine: POST^DENTV041
+  
+    &gt;&gt;&gt;&gt;&gt; Updating ADA table for known ICD-9 changes &lt;&lt;&lt;&lt;&lt;
+  
+    &gt;&gt;&gt;&gt;&gt; Finding inactive ICD-9s in the ADA table &lt;&lt;&lt;&lt;&lt;
+  
+ Update of file 228.2 data successfully queued, task# 346516
+  
+  Updating Routine file...
+  
+  Updating KIDS files...
+  
+  DENT*1.2*41 Installed.
+                Oct 13, 2004@13:32:46
+  
+ Install Message sent #147427
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;44 SEQ #42</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-04-01 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;43</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-06-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ General Information
+ ========================================================================
+ This patch contains fixes and enhancements to the reporting features
+ within Dental Record Manager.  Many new reports will now available 
+ within DRM and DRM Plus, as well as enhancements to existing reports.
+ 
+ Where appropriate, workload reports will allow sorting by the
+ following categories:
+     * 30 DAS Categories (Cases Complete, Cases Terminated, etc)
+     * 13 ADA Categories (Diagnostic, Preventative, etc)
+     * 131 DES Product Lines (Brief Exams, Extensive Exams, etc)
+     * ADA/CPT Code.
+     
+ When the DAS Category is selected, reports display workload credit
+ using CTVs.  When any of the DES categories are selected, reports
+ display workload credit using RVUs.  CPT codes (non-DCodes) are now
+ included in the DES category totals.
+     
+ The patch installation process should take be less than 5 minutes.
+ 
+ ENHANCEMENTS TO THE DRM AND DRM PLUS APPLICATION
+ ========================================================================
+ A. The following new KLF-style reports are available within DRM/DRM Plus.
+    These reports can retrieve data using DAS or DES type categories and
+    will display the appropriate workload value (CTV or RVU).
+    1: Observations per Month
+    2: Service Profile
+    3: Service by Product Group
+    4: Provider Profile
+    5: Patient Category Profile
+    6: Patients by Eligibility Setting
+    7: Patients by Eligibility Group
+    8: Patients by Dental Patient Category
+    9: Outpatient Service by Product Group
+    10: Inpatient Service by Product Group
+    11: Distribution of Dental Services
+   
+ B. The Fee Basis Report provides the capability to view detail data. 
+    Detailed data contains subtotals and can be sorted by clicking on
+    the header row.
+    
+ C. Total Sittings/Visits by Patient Type is available.  This report
+    is similar to the Sittings/Visits Report within VistA/DAS reporting.
+    
+ D. The current Summray and Sittings reports were enhanced to use RVU vs.
+     CTV, and multiple DES sort categories (ADA Category, VA-DSS 
+     Products, ADA/CPT Codes) as well as the existing DAS category.  
+     These reports currently retrieve data for providers with the
+     new 8 digit Provider Id.  Now they will also get historical data
+     for any dental provider in the system.
+     
+ E. The Sittings Reports (Provider/Clinic) now allow sorting by column
+    heading once the report has been run.  Simply click on the column
+    that you want sorted and the data will re-arrange into the correct
+    sequence.  The Totals row will always remain at the end and the
+    subtotals will be based on the column being sorted.
+    
+ F. The Extract options allow the user to select an individual site, or
+    all sites.  If a single site is selected, then the providers
+    displayed on the New Extract screen will be valid for the selected
+    site only.
+    
+ G. Headers in the extract text that started with "DAS " (for example,
+    DAS DIVISION) have been changed to remove the DAS designation.
+    
+ H. The informational text on the Delete Encounter screen within the
+    Dental History tab was changed to remove all references to DAS.
+ 
+ I. A legend box can be displayed detailing the provider type and 
+    specialty codes that make up the 8 digit Provider Id on any report
+    screen that contains the 8 digit provider Id.
+    
+ J. Provider lists on reports and the New Extract now display the
+    provider type and provider specialty information next to the name.
+    
+ K. A new Version Information screen will pop-up for the user when a new
+    version is run for the first time.  The user may select to show
+    this screen the next time they launch DRM/DRM Plus.
+    
+ L. $Values, VA Cost to Perform and Equivalent Private Cost can be 
+    entered for ADA/CPT codes by admin users.  The fields are available
+    on the Edit CPT Field Values option or can be quickly edited using
+    a new option called Edit Procedure Costs.  These values display on 
+    various DES reports.
+    
+ M. Patient SSNs on the reports (Sittings, Detailed Fee Basis and the
+    DRM Plus Provider Planning report) have been replaced with the
+    patient name and last 4 of the SSN.
+ 
+ DRM Plus only
+ -------------
+ N. Primary and Secondary Provider designations can be defined and will
+    display on the header of the application next to the patient name.
+    A new report Provider Planning is available to display planned 
+    treatment items for the primary and secondary providers.  Admin users
+    can define who can edit Primary/Secondary providers using a new
+    parameter on the Security tab of the Admin Toolbox for users.
+ 
+ 
+ FIXES TO THE DRM/DRM Plus APPLICATIONS
+ =======================================================================
+ A. Provider selection on the report screen will be based on the selected
+    division.  If there is no DIVISION assigned to a Provider, then that
+    provider will display under any site, otherwise the Provider will 
+    only display for sites that he/she has been assigned to.  
+    NOIS:PUG-1104-50338 
+    
+ B. The user can no longer modify (remove) the Report Date on the File
+    Fee Basis screen.  This was causing a 'List Index Out Of Bounds' 
+    error.  NOIS:MAD-0205-40840
+ 
+ C. Non-Clinical Time no longer requires the 4 digit Provider Id to file
+    time.  The report will still show data for those providers with only
+    a 4 digit Id (historical data), but it will use the 8 digit Id if
+    there is one.  Non-Clinical time can be entered by non-dentist users
+    in the Education and Research categories.
+  
+ D. Transactions for partials will send Tooth# in the HL7 message to the
+    AAC for research purposes.
+  
+ DRM Plus only:
+ --------------
+ E. Head and Neck, PSR and Perio data can be filed for providers without
+    a 4 digit Provider Id.  Only the 8 digit Id is now required.
+    
+ F. If all transactions for an encounter are deleted through the 
+    transaction table, then the associated encounter will also be
+    deleted.
+    
+ G. If a speed code becomes corrupted, the site (IRM) can now delete it 
+    using the DENTV XPAR EDIT PARAMS option in VistA. NOIS:PUG-0105-51270
+    
+ H. Existing Tooth Notes and Head and Neck data will be inserted into the
+    progress note when the corresponding tree item is dbl-clicked.
+ 
+ I. Three consecutive dashes in the progress note for PSR and Perio have
+    been replaced with '- -' or '-~-' so that the note no longer has
+    conflicts with TIU transcription placeholders. NOIS:WWW-0205-50264
+    
+ J. Teeth will be displayed in tooth# order for Findings in the progress
+    note (example: Missing Teeth: 4, 7, 10, 12.) rather than in the order
+    the user enters them.
+ 
+ K. Exiting or changing patients in DRM Plus while on the perio screen
+    correctly prompts to save unfiled data.
+    
+ 
+ SYSTEM ACCESS DURING INSTALLATION
+ ========================================================================
+  Installation of this patch does not require users to be off of the 
+  system.  However, all Dental users should not use the DRM GUI option 
+  while the patch is being installed.  All Dental users MUST close any 
+  open DRM GUI application prior to the patch being installed.  Once the 
+  patch has completed the users can use the DRM application.
+ 
+ POST-INSTALLATION PROCESS
+ =======================================================================
+ ***********************************************************************
+ *                                                                     *
+ *   THE FOLLOWING STEP BE COMPLETED FOR THIS PATCH TO WORK PROPERLY   *
+ *                                                                     *
+ ***********************************************************************
+ 
+ After the KIDS install has completed, IRM needs to place the DRM
+ executable (dentalmrm.exe) or the DRM Plus executable (dentalmrmtx.exe)
+ in the appropriate directory.  There are *NO* additional client side
+ installations for DRM Plus with this patch!
+ 
+ See the installation steps below for details. 
+  
+     
+ NOIS ADDRESSED BY THIS PATCH
+ =======================================================================
+ PUG-1104-50338     MAD-0205-40840     PUG-0105-51270     WWW-0205-50264
+ 
+ 
+ REQUIRED BUILDS:  DENT*1.2*42
+                   
+                   
+ INSTALLATION FILES
+ =======================================================================
+ How to Obtain KIDS File
+ 
+ File Name: DENT_1_2P43.zip         FTP format: binary
+ 
+ DENT_1_2P43.zip file will contain the following files:
+                                                                 FTP 
+ File Name          Description                                 Format
+ ------------------ ------------------------------------------  ------
+ Dent_1_2P43.kid    KIDS file which will install 1 KIDS Builds  ASCII
+                        DENT*1.2*43
+ Dentalmrm.exe      DRM V3.1.5.0 executable                     Binary
+ Dentalmrmtx.exe    DRM Plus V4.1.0.0 executable                Binary
+ Dent_1_2p43_rn_ig.pdf  DENT*1.2*42 Release Notes and           Binary
+                         Installation Guide 
+ 
+ The zip file listed above may be obtained via FTP.  The preferred 
+ method is to FTP the files from download.vista.domain.ext
+ 
+ This transmits the files from the first available FTP server.  Sites
+ may also elect to retrieve software directly from a specific server 
+ as follows:
+ CIO FIELD OFFICE   FTP ADDRESS                 DIRECTORY
+ ----------------   -------------------------   --------------------
+ Albany             ftp.fo-albany.domain.ext    [anonymous.software]
+ Hines              ftp.fo-hines.domain.ext     [anonymous.software]
+ Salt Lake City     ftp.fo-slc.domain.ext       [anonymous.software]
+ 
+ 
+ TEST SITES          DRM/DRM Plus   SYSTEM                 ALPHA/BETA
+ ====================================================================
+ Manhattan            DRM Plus      VMS/Cache                   ALPHA
+ Miami                DRM Plus      VMS/Cache                   BETA
+ Gainesville/Daytona    both        VMS/Cache, multi-facility   BETA
+ 
+ 
+ ROUTINE SUMMARY
+ ======================================================================
+ Second line of routines will look like:
+ ;;1.2;DENTAL;&lt;patch list&gt;;AUG 10, 2001
+ 
+   Routine   Before Patch  After Patch  Patch List
+   --------  ------------  -----------  ------------------------
+   DENTV042    [***to be deleted***]
+   DENTV044    [***to be deleted***]
+   DENTV043      n/a         2686585    43
+   DENTVA1     12453282      11487204   38,39,43
+   DENTVA11      n/a         7229654    43
+   DENTVA2     14211342      10927360   38,39,42,43
+   DENTVA21      n/a         12953028   43
+   DENTVA3       n/a         5789815    43
+   DENTVA4       n/a         7664444    43
+   DENTVA5       n/a         11555857   43
+   DENTVA51      n/a         5708255    43
+   DENTVA6       n/a         9217535    43
+   DENTVAU     2840803       10125515   38,39,43
+   DENTVDD1    5150464       5655102    31,38,39,43
+   DENTVHL1                             40,43
+   DENTVRP1    5103649       5124725    30,34,36,31,37,39,43
+   DENTVRP3    6517626       7496015    30,32,35,31,39,43
+   DENTVRP4    9233470       9582106    30,32,31,42,43
+   DENTVRP8    4052725       5141483    38,39,43
+   DENTVRP9    6935679       7411021    30,32,34,31,38,39,43
+   DENTVTP4    10224521      10032432   39,43
+   DENTVTPA    4902746       5358178    39,42,43
+   DENTVTPC    10565254      11625812   39,42,43
+   DENTVUTL    191547        1750114    30,33,34,36,31,43
+   DENTVXPR    913261        1047935    31,43
+   
+ 
+ INSTALLATION INSTRUCTIONS FOR DENT*1.2*43
+ ======================================================================
+ This patch must be installed when there are no dental DRM processes
+ running.  All open DRM and DRM Plus GUI applications must be closed.
+ The installation time should take less than 5 minutes.
+   
+ 1. Obtain the Dent_1_2P43.kid file
+ 
+ 2. For DSM sites review your mapped set.  Disable any of the above
+    routines if necessary
+ 
+ 3. From the Kernel Installation and Distribution System Menu, select
+    the Installation menu
+ 
+ 4. Use Load a Distribution and enter Dent_1_2P43.kid when prompted
+    for a Host file.  You may need to attach a directory name
+ 
+ 5. You may elect to use the following options (when prompted for 
+    INSTALL NAME, enter DENT*1.2*43)
+    a. Backup a Transport Global
+    b. Compare Transport Global to Current System
+    c. Verify Checksums in Transport Global
+ 
+ 6. Use the Install Package(s) option and select package DENT*1.2*43
+ 
+ 7. For the install prompts, enter either Yes or No depending upon the
+    normal practice at your facility.  This example shows answering NO:
+ 
+ Want KIDS to Rebuild Menu Trees Upon Completion of Install? YES// NO
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+ 
+ 8. AXP/DSM Sites - After the patch has been installed, rebuild your 
+    map set, if necessary
+ 
+ =======================================================================
+                        POST-INSTALLATION PROCESS
+ =======================================================================
+ 
+ 1. If your site is running dentalmrm.exe (DRM), then
+       Move dentalmrm.exe to   ...\DOCSTORE  
+      '...\' indicates your path for where DRM is located.
+ 
+ 2. If your site is running dentalmrmtx.exe (DRM Plus)
+       Move dentalmrmtx.exe to   ...\DOCSTORE
+      '...\' indicates your path for where DRM Plus is located.
+ 
+ 3. Some sites are having a problem viewing the Version Notes from the
+    DRM/DRM Plus Help menu. The .ini parameters may not have been changed
+    based on the installation instructions in a previous patch.  In order
+    to view Version Notes, the correct FTP parameters must exist in the 
+    dentalmrm.ini file found on the ...\DOCSTORE directory where the 
+    executable exists:
+ 
+    FTPHOST=ftp.docstorsys.com
+    FTPPASSWORD=dss376
+    FTPUSERID=DRM
+ 
+ ========================================================================
+                           SAMPLE INSTALLATION
+ ========================================================================
+ Select Installation Option: INstall Package(s)
+ Select INSTALL NAME: DENT*1.2*43  Loaded from Distribution 
+3/7/05@15:43:24
+     =&gt; DENT*1.2*43T3  ;Created on Mar 07, 2005@15:21:06
+ 
+ This Distribution was loaded on Mar 07, 2005@15:43:24 with header of
+   DENT*1.2*43T3  ;Created on Mar 07, 2005@15:21:06
+ It consisted of the following Install(s):
+    DENT*1.2*43
+ Checking Install for Package DENT*1.2*43
+ 
+ Install Questions for DENT*1.2*43
+ 
+ Incoming Files:
+ 
+ 
+   220       DENTAL PATIENT  (Partial Definition)
+ Note:  You already have the 'DENTAL PATIENT' File.
+ 
+   226       DENTAL NON CLINICAL TIME  (Partial Definition)
+ Note:  You already have the 'DENTAL NON CLINICAL TIME' File.
+ 
+   228       DENTAL CPT CODE MAPPING  (Partial Definition)
+ Note:  You already have the 'DENTAL CPT CODE MAPPING' File.
+ 
+   228.1     DENTAL HISTORY  (Partial Definition)
+ Note:  You already have the 'DENTAL HISTORY' File.
+ 
+   228.2     TREATMENT PLAN TRANSACTION/EXAM  (Partial Definition)
+ Note:  You already have the 'TREATMENT PLAN TRANSACTION/EXAM' File.
+ 
+ Want KIDS to Rebuild Menu Trees Upon Completion of Install? YES// NO
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES//NO
+ 
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+ 
+ DEVICE: HOME//
+ 
+ Install Started for DENT*1.2*43 :
+               Mar 07, 2005@15:47:44
+ 
+ Build Distribution Date: Mar 07, 2005
+ 
+ Installing Routines:
+               Mar 07, 2005@15:47:44
+ 
+ Running Pre-Install Routine: PRE^DENTV043
+ 
+   &gt;&gt;&gt;&gt;&gt; Deleting field .4 from file 226 &lt;&lt;&lt;&lt;&lt;
+ 
+ Installing Data Dictionaries:
+               Mar 07, 2005@15:47:45
+ 
+ Installing PACKAGE COMPONENTS:
+ Installing REMOTE PROCEDURE
+ Installing OPTION
+ Installing PARAMETER DEFINITION
+                Mar 07, 2005@15:47:45
+  
+ Running Post-Install Routine: POST^DENTV043
+  
+ Patch 43 post-install successfully queued, task# 349141
+  
+ Updating Routine file...
+ Updating KIDS files...
+  DENT*1.2*43 Installed.
+                Mar 07, 2005@15:47:46
+  
+  Install Message sent #151830
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;45</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-12-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;46</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-03-08 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Set the TP AREA field of file 228 to areWholeTooth for codes D2910, 
+D2915, and D2920.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;49 SEQ #46</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-11-22 23:35:27</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ General Information
+ =======================================================================
+ The purpose of this patch is for Dental Record Manager to comply with 
+ the ICD-9 changes in the LEX*2.0*45 patch.  The following Dental ICD-9
+ codes are being inactivated and must be removed from the Dental CPT
+ Code Mapping table:
+ 
+ 478.1  Other diseases of nasal cavity and sinuses
+ 521.8  Other specific diseases of hard tissues of teeth
+ 523.0  Acute gingivitis
+ 523.1  Chronic gingivitis
+ 523.3  Acute periodontitis
+ 523.4  Chronic periodontitis
+   
+ The patch installation process should take be less than 5 minutes.
+ The post installation process may take a few minutes to process the
+ changes to the DENTAL CPT CODE MAPPING (#228) data.  
+ 
+ 
+ ENHANCEMENTS TO THE DRM APPLICATION
+ =======================================================================
+ The DENTAL CPT CODE MAPPING table has been changed so that any
+ references to inactivated ICD-9 codes have been replaced or removed.
+ Changes to the national mapping table were made by the Dental Coding
+ Group members.  The following changes may occur:
+    
+    CODE     REMOVE ICD-9    REPLACE with ICD-9
+    -----    -------------   --------------------------
+    D4210    523.4           523.40
+    D4211    523.4           523.40
+    D4240    523.4           523.40
+    D4241    523.4           523.40
+    D4245    523.4           523.40
+    D4260    523.4           523.40
+    D4261    523.4           523.40
+    D4263    523.4           523.40
+    D4264    523.4           523.40
+    D4265    523.4           523.40
+    D4266    523.4           523.40
+    D4267    523.4           523.40
+    D4268    523.4           523.40
+    D4273    523.4           523.40
+    D4274    523.4           523.40
+    D4275    523.4           523.40
+    D4276    523.4           523.40
+    D4320    523.4           523.40
+    D4321    523.4           523.40
+    D4341    523.4           523.40
+    D4342    523.4           523.40
+    D4381    523.4           523.40
+    D4910    523.4           523.40
+    D4920    523.4           523.40
+    D7261    478.1           478.19
+    30420    478.1           478.19
+    30465    478.1           478.19
+    31020    478.1           478.19
+    31030    478.1           478.19
+    30630    478.1           478.19
+    99201    523.4           523.40
+    99202    523.4           523.40
+    99203    523.4           523.40
+    99204    523.4           523.40
+    99205    523.4           523.40
+    99211    523.4           523.40
+    99212    523.4           523.40
+    99213    523.4           523.40
+    99214    523.4           523.40
+    99215    523.4           523.40
+    99241    523.4           523.40
+    99242    523.4           523.40
+    99243    523.4           523.40
+    99244    523.4           523.40
+    99245    523.4           523.40
+    99251    523.4           523.40
+    99252    523.4           523.40
+    99253    523.4           523.40
+    99254    523.4           523.40
+    99255    523.4           523.40
+    99281    523.4           523.40
+    99282    523.4           523.40
+    99283    523.4           523.40
+    99284    523.4           523.40
+    99285    523.4           523.40
+    99371    523.4           523.40
+    99372    523.4           523.40
+    99373    523.4           523.40
+ 
+   If the site manually changed other ICD-9's that are now inactive,
+   the patch will replace them as follows:
+   
+     478.1 with 478.19
+     521.8 with 521.81
+     523.0 with 523.00
+     523.1 with 523.10
+     523.3 with 523.30
+     523.4 with 523.40
+   
+ 
+ SYSTEM ACCESS DURING INSTALLATION
+ =======================================================================
+ Installation of this patch does not require users to be off of the 
+ system.  However, all Dental users should not use the DRM GUI option 
+ while the patch is being installed.  All Dental users MUST close any 
+ open DRM GUI application prior to the patch being installed.  Once the 
+ patch has completed the users can use the DRM application.
+  
+ 
+ POST-INSTALLATION PROCESS
+ =======================================================================
+ The post-install routine will remove inactivated ICD-9's and add new
+ ICD-9 codes to the DENTAL CPT CODE MAPPING (#228) table.  If the site 
+ manually changed other ICD-9's that are now inactive and the patch made
+ changes to those codes, then a mailman message will be sent to the users
+ in the DENTV ADA CODE MAPPING mail group to verify those changes.   
+ 
+ 
+ REQUIRED BUILDS:  LEX*2.0*45
+ 
+ 
+ TEST SITES                                ALPHA/BETA
+ ======================================================================
+ Bay Pines                                 ALPHA
+ 
+ 
+ ROUTINE SUMMARY
+ ======================================================================
+ Second line of routines will look like:
+ ;;1.2;DENTAL;&lt;patch list&gt;;AUG 10, 2001
+ 
+   Routine   Before Patch  After Patch  Patch List
+   --------  ------------  -----------  ------------------------
+   DENTV049      n/a         30259209    49
+ 
+ 
+ ======================================================================
+ INSTALLATION INSTRUCTIONS FOR DENT*1.2*49
+ ======================================================================
+ This patch can be installed while users are on the system.
+ The installation time should take less than 5 minutes.
+   
+ 1. Load the KIDS Distribution from the Packman Message using the 
+    Packman function "Install/Check Message."  (Note: test sites will
+    receive the kids build in a .zip file with the patch description.)
+    
+ 2. Use the Install Package(s) option and select package DENT*1.2*49
+ 
+ 3. For the install prompts, enter either Yes or No depending upon the
+    normal practice at your facility.  
+ 
+ Want KIDS to Rebuild Menu Trees Upon Completion of Install? YES// NO
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+ 
+ ========================================================================
+                        POST-INSTALLATION PROCESS
+ ========================================================================
+ Forward any Mailman messages generated during the post-installation.
+ The post-install *may* generate a Mailman message if changes were made
+ to the ADA Master table that were not part of the Dental Coding 
+ Group's recommended changes.  These would include removing inactive
+ ICD-9 codes that were added by the site and not known to the group.
+ The Mailman message will be sent to the user loading the patch and 
+ must be forwarded to a Dental Administrator for evaluation.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;51 SEQ #48</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-01-08 16:04:16</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ General Information
+ =======================================================================
+ The purpose of this patch is to resend dental HL7 transactions for
+ encounter and fee basis that were dropped by the VIE.  This data is
+ required for national reporting of dental workload.
+   
+ The patch installation process should take be less than 1 minute.
+ 
+  
+ SYSTEM ACCESS DURING INSTALLATION
+ =======================================================================
+ Installation of this patch does not require users to be off of the 
+ system.  
+  
+ 
+ POST-INSTALLATION PROCESS
+ =======================================================================
+ The post installation will queue a job to reset affected transactions
+ back to a 'pending' HL7 transmission status.  These transactions are in
+ file 228.2 for encounter and file 228.5 for fee.
+ 
+ REQUIRED BUILDS:  none
+ 
+ TEST SITES                                ALPHA/BETA
+ ======================================================================
+ 
+ 
+ 
+ ROUTINE SUMMARY
+ ======================================================================
+ Second line of routines will look like:
+ ;;1.2;DENTAL;&lt;patch list&gt;;AUG 10, 2001
+ 
+   Routine   Before Patch  After Patch  Patch List
+   --------  ------------  -----------  ------------------------
+   DENTV051      n/a         11269194    51
+ 
+ 
+ ======================================================================
+ INSTALLATION INSTRUCTIONS FOR DENT*1.2*51
+ ======================================================================
+ This patch can be installed while users are on the system.
+ The installation time should take less than 1 minute.
+   
+ 1. Load the KIDS Distribution from the Packman Message using the 
+    Packman function "Install/Check Message."  (Note: test sites will
+    receive the kids build in a .zip file with the patch description.)
+    
+ 2. Use the Install Package(s) option and select package DENT*1.2*51
+ 
+ 3. For the install prompts, enter either Yes or No depending upon the
+    normal practice at your facility.  
+ 
+ Want KIDS to Rebuild Menu Trees Upon Completion of Install? YES// NO
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;47</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-01-08 17:06:53</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ General Information
+ ========================================================================
+ This patch contains fixes and enhancements to Dental Record Manager
+ Plus including capturing the Distributed (Attending) Provider when
+ residents file data to PCE, processing for potential duplicates between
+ planned and completed care and a new cover page with demographic and 
+ recent dental activity data.
+ 
+ The patch installation process should take be less than 2 minutes.
+  
+ ENHANCEMENTS TO THE DRM PLUS APPLICATION
+ ========================================================================
+ A. Residents are required to enter a "Distributed" (Attending) Provider 
+    when filing data to PCE. The Distributed Provider will become the 
+    PCE Primary Provider for the encounter and will be sent to the 
+    national database for reporting.  All local DRM Plus reports will
+    continue to count workload toward the resident.  The Distributed
+    Provider will show up on the DRM Plus Extract.
+ 
+ B. A new Cover Page is available with patient demographic and recent 
+    dental activity information. Access to edit eligibility information 
+    on this screen will be assigned by the dental administrator.
+ 
+ C. DRM Plus will synchronize planned and completed care.  If exact
+    duplicates are found between planned items and newly entered 
+    completed items (if, for example, the user enters new items rather 
+    than completing the existing planned item) then the planned items 
+    will be automatically deleted.  Potential duplicates matching a 
+    tooth# will be presented to the user so that the user may decide 
+    which item(s) to keep or delete.
+ 
+ D. Added a "Save &amp; Exit" button to the sequencing screen.  Users may 
+    add or modify the treatment plan and file the changes without having
+    to click "Next" through the other screens.  There must be no 
+    Completed transactions, Perio, PSR, or Head and Neck data and the 
+    most recent dental encounter must be Active for this feature to work.
+ 
+ E. Added an "Edentulous" button to diagnostic findings.  Clicking 
+    Edentulous and then clicking a tooth will mark all teeth in that 
+    arch as missing and create the associated transactions.
+ 
+ F. Ancillary applications or websites may be defined by the dental 
+    administrator to launch via the DRM Plus Tools menu.  This is similar
+    to how DRM Plus and other applications are launched from the CPRS 
+    Tools menu.
+ 
+ G. There are 4 new reports in DRM Plus.  The Patient Visit List shows a 
+    list of visits for a selected patient (does not have to be the 
+    current patient).  The Planned Items List contains the same data as
+    the Provider Planning report, but the columns are sortable and can be
+    subtotaled.  The Active Patients by Provider report shows a list of 
+    all dental patients, by provider whose last encounter was active.  
+    The Unfiled Data by Provider report shows a list of all patient's for
+    which the provider has saved temporary "unfiled" data.
+ 
+ H. Users may be prompted to complete the episode of care if they are 
+    filing data and there are no remaining planned items for the patient
+    and the status is Active.
+ 
+ I. Dental Administrators may set a new parameter to not allow creation
+    of PCE visits "on the fly".  This means that the user must select 
+    an existing visit or scheduled appointment from the list before
+    filing dental data.
+ 
+ J. Small buttons were added to ADA Codes box and Multi-add box which 
+    allows it to be moved to the other side of the mouth to view the 
+    graphics beneath.
+      
+ K. Missing teeth will be visually indicated in the multi-tooth selection
+    box by changing the buttons for missing teeth to white text on blue 
+    background.  The missing teeth may still be selected if needed for
+    the procedure code (e.g. implants, etc).
+ 
+ L. Allow edit of unfiled H&amp;N items.  Do not add new items if the current
+    item is unfiled.  This allows a user to modify the H&amp;N text in the 
+    same session, rather than creating additional detail records.
+ 
+ M. Display H&amp;N progress records on primary grid.  Add column containing 
+    "Initial" or "Progress". This allows the user to view all H&amp;N entries
+    on the primary screen.
+   
+      
+ FIXES TO THE DRM Plus APPLICATION
+ =======================================================================
+ 1. Head and Neck data will be filed to the correct provider when the 
+    user files all data to another provider.
+ 
+ 2. The warning message that a Location must be entered has been removed
+    for most cases.  Location is required on the second page of DRM Plus
+    anyway, it did not need to be forced at application runtime.
+ 
+ 3. The VA Intranet Website location has been updated.  This site 
+    contains information for VA dental users, including updates to DRM 
+    Plus user manuals.
+ 
+ 4. Test patients and "extra" partial transactions will not appear in 
+    the DRM Plus extract.
+ 
+ 5. If an Additional Signer is entered for one patient, and a note is 
+    entered and signed from the Clinical Record tab for the next 
+    patient, the additional signer will not carry over to the next 
+    patient.
+ 
+ 6. If a previous Head &amp; Neck entry is deleted and a new entry is created 
+    in the same session, the new entry will be created correctly, rather 
+    than being created as a deleted record.
+ 
+ 7. The code boilerplate from TIU was putting an additional text marker 
+    into the DRM Plus note.  When two text markers are present and the 
+    user clicks 'Back' and 'Next' the note was being duplicated
+    exponentially.  The second text marker has been removed and this 
+    will no longer occur.
+ 
+ 8. Users without an 8 digit provider Id may run reports without seeing 
+    a list-out-of-bounds error message.
+ 
+ 9. If the user had selected a tab, other than the Chart/Treatment tab 
+    as the initial tab, a run time error was generated when changing 
+    patients from CPRS.  Any tab can be selected as the initial tab
+    (including the new Cover Page) without generating a runtime error 
+    when changing patients.
+ 
+ 10. "Observe" type transactions will appear in the progress note when
+     entered from the Completed tab. This type of transaction will 
+     always appear under the Other Dental Findings heading.
+ 
+ 11. Markers on a surface "m" will now be removed when adding a retained
+     root to the tooth.
+ 
+ 12. When adding a retained root to a crown, the crown will be removed.
+     Prevent whole tooth extraction on a tooth with retained roots.
+ 
+ 13. Corrected the tooltip text (hover help) for the "Add Sub-Phase" 
+     button on the sequencing screen.
+ 
+ 14. The tooth selection box will be cleared for multi-add when using 
+     quick list or local codes.
+ 
+ 15. Corrected advance of MGJ on the perio screen.
+ 
+ 16. PSR data will be cleared when changing patients.  This will prevent
+     PSR data from the previous patient displaying incorrectly.
+     
+ 17. Corrected problem with the asterisks on the notes button not 
+     appearing in certain scenarios.
+ 
+ 18. If the perio "clear" function results in an impacted tooth showing 
+     at tooth #1, then the auto-advance did not work properly.  This has 
+     been fixed.
+ 
+ 19. Changed planned extraction to remove M/D lesions.
+ 
+ 20. Corrected the jumbled view of multi-tooth when selecting a non-
+     multi-tooth code.
+ 
+ 21. When adding a coping or crown on top of an existing implant by using
+     the ADA Codes or Add text box, the graphics did not draw 
+     appropriately.  The graphic will now display correctly.
+ 
+ 22. When DRM changes patients, return to the default view.
+ 
+ 23. The perio "Compare" button will now be enabled when there are two
+     exams to compare.
+ 
+ 24. Removed accelerator keys from H&amp;N, Sequencing, PSR and Plaque 
+     Index screens.
+ 
+ 25. Changed display of planned graphics to always apply planned items 
+     after any diagnostic findings or completed items regardless of date.
+     This may result in planned items not showing correctly in some cases.
+ 
+ 26. If you mark as missing a root on a bridge abutment and then try to
+     remove the bridge by clicking missing and then the pontic, the 
+     extract bridge popup does not show and only the pontic is removed,
+     leaving the bar in place.  This has been fixed.
+ 
+ 27. Add retained root, then planned extract root, implant, coping, 
+     crown.  After that, the already pressed restore button does not 
+     work on any teeth.  This has been fixed.
+ 
+ 28. Don't save the sequencing note if it has not changed.
+ 
+ 29. CCOW will be defaulted OFF, or disabled.  In order to enable it, IRM
+     must add a CCOW=ON parameter to the CPRS Tools menu string for DRM 
+     Plus.  (CCOW=1 will also enable CCOW.)
+      
+ 30. Admin users may no longer "re-add" nationally mapped CPT codes to 
+     the ADA Mapping table which allowed them to modify the RVU and 
+     VA-DSS product line information.
+ 
+ 31. Quick codes that are DRM Plus "ranged" codes (used in bridges for
+     example) can now be removed from the user's Quick List.  This
+     affected sites as they were migrating to DRM Plus from DRM.
+ 
+ 32. A single diagnosis is pre-selected as the Primary PCE Diagnosis.
+     This will work when there is a single diagnosis entry on the filing
+     options page, or when there are multiple entries as long as they are
+     all the same diagnosis code.
+     
+ 33. A list-out-of-bounds error will no longer occur trying to create the
+     progress note under certain (infrequent) circumstances when the user
+     clicks back and next, deleting and adding transactions many times.
+    
+ 34. The Print button on the File menu will only work for 'Notes' on the 
+     Clinical Record tab.  The other types of entries (Meds, Consults, 
+     Vitals, etc) cannot be printed from DRM Plus.
+ 
+ 35. Diagnostic Findings older than the 1 day that are deleted by an 
+     admin user will be removed from the graphic and the transaction 
+     list.  These were previously shown in the transaction list with a 
+     strike-through as if a non-admin user had deleted them.     
+     
+ 36. Partials that were modified or deleted in the sequencing screen
+     displayed incorrectly in the progress note.  They were showing 
+     entries for each tooth in the partial rather than a single entry.
+ 
+ 37. The Visit Date will be used in the transaction list rather than the
+     date the item was created.  This is a more relevant date to the user.
+     
+      
+ SYSTEM ACCESS DURING INSTALLATION
+ ========================================================================
+ Installation of this patch does not require users to be off of the 
+ system. However,  all Dental users should not use the DRM Plus GUI
+ while the patch is being installed.  All Dental users MUST close any 
+ open DRM Plus GUI application prior to the patch being installed.  Once 
+ the patch has completed the users can use the DRM Plus application.
+ 
+ 
+ POST-INSTALLATION PROCESS
+ =======================================================================
+ The post-installation will change the D6056 ada code to 'Coping' for
+ the correct DRM Plus graphics, will set a default for the new 
+ DENTV DRM NO VISIT CREATE and DENTV DRM DUPCHECK OFF parameters and 
+ will add 1 to each entry defined in the DENTV DRM DEF STARTUP TAB 
+ parameter because there's a new tab zero (0) for the Cover Page. 
+ 
+ The post-installation will also start a TaskMan job to loop through 
+ all the Dental History entries (228.1) for each Dental Patient (220)
+ and inactivate (set DAS DISPOSITION=Completed) the last encounter if 
+ the status is 'In Progress' and date is &gt; 2 years (730 days).
+  
+ ***********************************************************************
+ *                                                                     *
+ *   THE FOLLOWING STEP BE COMPLETED FOR THIS PATCH TO WORK PROPERLY   *
+ *                                                                     *
+ ***********************************************************************
+ 
+ After the KIDS install has completed, IRM needs to place the DRM Plus
+ executable (dentalmrmtx.exe) in the appropriate directory.  IRM must 
+ also complete some additional client setup on client pcs or thin client 
+ servers.  See the installation steps below for details. 
+ 
+     
+ REMEDY CALLS ADDRESSED BY THIS PATCH
+ =======================================================================
+ Sheridan    HD141287 iMed Consent button
+ Gainesville HD140425 Additional signer error
+ Gainesville HD139916 default tooth number for D9971 Multiadd
+ Gainesville HD136629 List index out of Bounds Error when no appts/cancel
+ Gainesville HD135195 Teeth graphic will not provide proper display
+ Gainesville HD135014 List index out of bounds error generating note
+ Puget Sound HD134425 TIU notes repeat when dbl hyphen line is present
+ 
+ 
+ REQUIRED BUILDS:  DENT*1.2*46
+                   
+                   
+ INSTALLATION FILES
+ ====================================================================
+ How to Obtain KIDS File
+ 
+ File Name: Dent_1_2P47.zip                FTP format: binary
+ Dent_1_2p47.zip file will contain the following files:
+                                                         FTP 
+ File Name              Description                     Format
+ ------------------     ----------------------------    ------
+ Dent_1_2p47.kid        KIDS file which will install    ASCII
+                         one KIDS Builds: DENT*1.2*47
+ dentalmrmtx.exe        DRM Plus V4.7.0.7 executable    Binary
+ setupP47.EXE           CVision (client) install file   Binary
+ Dent_1_2p47_rn_ig.pdf  DENT*1.2*47 Release Notes and   Binary
+                         Installation Guide 
+ P47_QUICKstart.pdf     Description (w/ screen shots)   Binary
+                         of the enhancements/fixes 
+ 
+ The zip files listed above may be obtained via FTP.  The preferred 
+ method is to FTP the files from download.vista.domain.ext
+ 
+ This transmits the files from the first available FTP server.  Sites
+ may also elect to retrieve software directly from a specific server 
+ as follows:
+ CIO FIELD OFFICE   FTP ADDRESS                 DIRECTORY
+ ----------------   -------------------------   --------------------
+ Albany             ftp.fo-albany.domain.ext    [anonymous.software]
+ Hines              ftp.fo-hines.domain.ext     [anonymous.software]
+ Salt Lake City     ftp.fo-slc.domain.ext       [anonymous.software]
+ 
+ 
+ TEST SITES             SIZE/TYPE               ALPHA/BETA
+ ====================================================================
+ Tuscon, AZ             Large                   ALPHA
+ Houston, TX            Large                   BETA
+ Manhattan, NY          Large                   BETA
+   
+ 
+ ROUTINE SUMMARY (checksums using CHECK1^XTSUMBLD)
+ ====================================================================
+  Second line of routines will look like:
+   ;;1.2;DENTAL;&lt;patch list&gt;;Aug 10, 2001
+  
+   Routine   Before Patch  After Patch  Patch List
+   --------  ------------  -----------  ----------
+   DENTV046      &lt;to be deleted&gt;
+   DENTV047     n/a          12486220   47
+   DENTVA2   34594801        35380230   38,39,42,43,45,47
+   DENTVA3   13852254        21845633   43,45,47
+   DENTVA7      n/a          26216617   47
+   DENTVAU   35278064        39428093   38,39,43,47
+   DENTVHL   55257232        58018478   40,42,45,47
+   DENTVHLF  23062617        23062236   40,47
+   DENTVIP3  36064821        37084460   31,39,47
+   DENTVRF        &lt;to be deleted&gt;
+   DENTVRF0  12958911        18554933   31,37,47
+   DENTVRF1       &lt;to be deleted&gt;
+   DENTVRF2       &lt;to be deleted&gt;
+   DENTVRF3       &lt;to be deleted&gt;
+   DENTVRF4       &lt;to be deleted&gt;
+   DENTVRH   41461464        41991101   31,37,38,39,45,47
+   DENTVRP9  53259130        56135358   30,32,34,31,38,39,43,45,47
+   DENTVTP0  2411836         65772564   39,47
+   DENTVTP2  13504864        16293307   38,39,45,47
+   DENTVTP4  48820982        51740077   39,43,45,47
+   DENTVTP5  12210838        15906903   39,45,47
+   DENTVTP6  23334296        26292035   39,45,47
+   DENTVTP7  11644010        14505318   39,47
+   DENTVTPA  29373949        28123580   39,42,43,45,47
+   DENTVTPB       &lt;to be deleted&gt;
+   DENTVTPC  73761113        76438192   39,42,43,45,47
+   DENTVTPD  29778472        31135124   39,47
+   DENTVUTL  19086877        22593588   30,33,34,36,31,43,45,47
+   
+ 
+ INSTALLATION INSTRUCTIONS FOR DENT*1.2*47
+ ======================================================================
+ This patch must be installed when there are no dental DRM processes
+ running.  All open DRM Plus GUI applications must be closed.
+ 
+ The installation time should take less than 2 minutes.
+   
+ 1. Obtain the Dent_1_2P47.kid file
+ 
+ 2. From the Kernel Installation and Distribution System Menu, select
+    the Installation menu
+ 
+ 3. Use Load a Distribution and enter Dent_1_2P47.kid when prompted
+    for a Host file.  You may need to attach a directory name
+ 
+ 4. You may elect to use the following options (when prompted for 
+    INSTALL NAME, enter DENT*1.2*47)
+    a. Backup a Transport Global
+    b. Compare Transport Global to Current System
+    c. Verify Checksums in Transport Global
+ 
+ 5. Use the Install Package(s) option and select package DENT*1.2*47
+ 
+ 6. For the install prompts, enter either Yes or No depending upon the
+    normal practice at your facility.  This example shows answering NO:
+ 
+ Want KIDS to Rebuild Menu Trees Upon Completion of Install? YES// NO
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+ 
+ =======================================================================
+                        POST-INSTALLATION PROCESS
+ =======================================================================
+ 1. Move dentalmrmtx.exe to   ...\DOCSTORE
+      '...\' indicates your path for where DRM Plus is located.
+ 
+    Run setupP47.EXE on all Windows Workstations, Thin Client Servers, 
+    Windows Terminal Services Servers and Citrix Servers that need to 
+    launch the dentalmrmtx.exe you moved to \DOCSTORE.  SetupP47.exe does
+    NOT need to be run on the machine that hosts the \DOCSTORE folder.
+    
+    We recommend that setupP47.EXE be run by an administrator. 
+    SetupP47.EXE replaces the CVision.ocx file (and other files) in
+    C:\WINNT\SYSTEM32 and registers it on the machine.  The version
+    of CVision.ocx (found by right-clicking the .ocx and selecting 
+    Properties option, Version tab) is 2.2.0.14.
+    
+    Note: On some Windows Server machines the setupP47.EXE file 
+    will not update the CVision.ocx file in WINNT\SYSTEM32.
+    If the version is not 2.2.0.14 then Micorsoft's Data Execution
+    Prevention (DEP) may be the issue.  Turn DEP off (call DSS tech
+    support if you need help with this), reboot the machine and install
+    the client side files by running setupP47.EXE. Additional information
+    on Microsoft's DEP can be found at: 
+    http://support.microsoft.com/kb/875352
+        
+    *********************************************************************
+    Please be careful to coordinate the server/client updates with each 
+    other so that the dental application works properly.  You will know 
+    if the server/client files are *NOT* compatible because launching DRM 
+    Plus will cause approximately 30 client errors!  This also means that
+    you must carefully coordinate testing the new application in the TEST
+    account since you must run setupP47.exe on a rarely used machine for 
+    the dental staff to test against, as they will not be able to run the
+    production side application after updating the client.
+    *********************************************************************
+    
+ 2. Once the patch is released, the Patch 47 User Manual and 
+    Administrative Manual will be available are available on the DRM Plus
+    intranet site: http://vaww1.domain.ext/dental/ under the DRM Plus
+    link found on the left side of the main page, then DRM Plus Resources
+    found at the bottom of the page.  
+    The documents are titled:
+      DRM Plus Administrators Manual
+      DRM Plus Users Manual
+ 
+ ========================================================================
+                           SAMPLE INSTALLATION
+ ========================================================================
+ Select Installation Option: INstall Package(s)
+ Select INSTALL NAME: DENT*1.2*47 Loaded from Distribution 
+ 8/2/06@14:22:44
+      =&gt; DENT*1.2*47T4  ;Created on Aug 02, 2006@14:03:52
+  
+ This Distribution was loaded on Aug 02, 2006@14:22:44 with header of
+    DENT*1.2*47T4  ;Created on Aug 02, 2006@14:03:52
+    It consisted of the following Install(s):
+     DENT*1.2*47
+ Checking Install for Package DENT*1.2*47
+ 
+ Install Questions for DENT*1.2*47
+ 
+ Incoming Files:
+ 
+    228.1     DENTAL HISTORY  (Partial Definition)
+ Note:  You already have the 'DENTAL HISTORY' File.
+  
+  
+    228.6     DENTAL TP NOTES  (Partial Definition)
+ Note:  You already have the 'DENTAL TP NOTES' File.
+  
+ Want KIDS to Rebuild Menu Trees Upon Completion of Install? YES// NO
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+  
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+  
+ DEVICE: HOME//
+ 
+ Install Started for DENT*1.2*47 :
+                Aug 02, 2006@14:22:53
+  
+ Build Distribution Date: Aug 02, 2006
+  
+ Installing Routines:
+                Aug 02, 2006@14:22:54 
+                                   
+  
+ Running Post-Install Routine: POST^DENTV047
+  
+    &gt;&gt;&gt;&gt;&gt; Patch 47 post-install successfully queued, task# 1415758 &lt;&lt;&lt;&lt;&lt;
+  
+    &gt;&gt;&gt;&gt;&gt; Changed D6056 to Coping for DRM Plus graphics &lt;&lt;&lt;&lt;&lt;
+  
+    &gt;&gt;&gt;&gt;&gt; DENTV DRM NO VISIT CREATE param updated &lt;&lt;&lt;&lt;&lt;
+  
+    &gt;&gt;&gt;&gt;&gt; DENTV DRM DUPCHECK OFF param updated &lt;&lt;&lt;&lt;&lt;    
+    
+    &gt;&gt;&gt;&gt;&gt; DENTV DRM DEF STARTUP TAB params updated &lt;&lt;&lt;&lt;&lt;    
+  
+  Updating Routine file...
+  
+  Updating KIDS files...
+  
+  DENT*1.2*47 Installed.
+                Aug 02, 2006@14:22:56
+  
+  Install Message sent #161030
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;52 SEQ #49</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-06-27 22:11:03</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;50 SEQ #50  ;Created on Mar 21, 2007@13:58:45</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-21 10:17:15</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;53 SEQ #51  ;Created on Oct 23, 2007@11:48:24</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-21 10:32:22</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;54 SEQ #52</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-01-27 09:12:58</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;56 SEQ #53</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-23 12:37:08</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;55 SEQ #54  ;Created on Oct 30, 2008@11:01:03</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-23 12:38:06</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ General Information
+ =======================================================================
+ This patch contains fixes and enhancements to Dental Record Manager 
+ Plus primarily in the area of note generation and the Cover page plus
+ an easy to recognize flag when a patient has a pending consult.  VA 
+ requirements to default Combat Veteran status if appropriate and to 
+ change the service connected EC flag to SWAC have been included.
+ 
+(T-4 build revisions)
+ An undefined error was discovered in Clarksberg where the variable DFN
+(Patient IEN was undefined),and the variable VAIP("D") was not set to a
+date (FM format) from the .01 field of file #9000010. Routine DENTVTP2 was
+revised appropriately.
+ 
+(T-5 build revisions)
+Recent Dental Activity on GUI Cover Page not filing last known dates 
+correctly.  Pointer set to a date instead of an ien.  Now points to 
+the ien.age
+ 
+ There is no NSR associated with this patch.
+ 
+ This patch addresses the following Remedy Ticket(s):
+ ----------------------------------------------------
+ Oklahoma City  HD242867 - The current perio chart is not being brought 
+ into the signature page.
+ 
+ 
+ The following is a list of files included in this patch:
+ 
+                                      UP    SEND  DATA                
+                                      DATE  SEC.  COMES  SITE   RSLV  
+ FILE #  NAME                         DD    CODE  W/FILE DATA   PTS 
+ --------------------------------------------------------------------
+ 228.8       DENTAL CODING CHECKS     YES   YES   YES    OVER   NO  
+ 
+ 
+ The following is a list of fields included in this patch:
+ 
+ Field Name (Number)            File Name (Number)
+ -------------------            ------------------
+ PRIMARY FEE PROVIDER (.11)     DENTAL PATIENT (220)
+ SECONDARY FEE PROVIDER (.12)   DENTAL PATIENT (220)
+ 
+ Below is a list of the files related to this patch that will be needed 
+ and available via the FTP sites listed above.
+ 
+ File Description                        File Name              FTP Mode
+-----------------------------------------------------------------------
+ Dental ZIP file w/ patch                Dent_1_2p55.zip       (binary)
+ 
+ The Dent_1_2p55.zip file contains the following files:
+ 
+ File Name             Description                     
+ ------------------    -------------------------------------------------
+ Dent_1_2p55.kid       KIDS file to install one KIDS Builds: DENT*1.2*55
+ Dent_1_2p55_ig.pdf    Dent*1.2*55 installation guide
+ Dent_1_2p55_rn.pdf    Dent*1.2*55 release notes
+ dentalmrmtx.exe       DRM Plus V5.5.0.2 executable
+ P55 QuickStart Guide.pdf  Guide for dental users with patch changes
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;57 SEQ #55</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-10-13 16:36:18</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;58 SEQ #56</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-02-04 11:16:50</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;60 SEQ #57</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-11-03 15:47:33</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;61 SEQ #58</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-06-01 16:12:36</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;62 SEQ #59</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-02-27 11:03:28</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;59 SEQ #60</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-08-29 12:01:38</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;64 SEQ #61</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-03-18 14:09:56</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;63 SEQ #62</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-07-23 17:21:18</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;65 SEQ #63</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2014-02-10 14:31:13</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

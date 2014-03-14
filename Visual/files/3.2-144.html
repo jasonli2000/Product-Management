@@ -1,0 +1,122 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My4yLTE0NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>P-ANADEX (144) &nbsp;&nbsp;  TERMINAL TYPE (3.2)</h1>
+<div id="demo"><table id="My4yLTE0NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>P-ANADEX</td>
+</tr>
+<tr>
+<td>SELECTABLE AT SIGN-ON</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>RIGHT MARGIN</td>
+<td>132</td>
+</tr>
+<tr>
+<td>FORM FEED</td>
+<td>#,$C(12)</td>
+</tr>
+<tr>
+<td>PAGE LENGTH</td>
+<td>64</td>
+</tr>
+<tr>
+<td>BACK SPACE</td>
+<td>$C(8)</td>
+</tr>
+<tr>
+<td>OPEN EXECUTE</td>
+<td>W $C(18)</td>
+</tr>
+<tr>
+<td>CLOSE EXECUTE</td>
+<td>W $C(23),$C(18)</td>
+</tr>
+<tr>
+<td>10 PITCH</td>
+<td>$C(18)</td>
+</tr>
+<tr>
+<td>12 PITCH</td>
+<td>$C(20)</td>
+</tr>
+<tr>
+<td>DEFAULT PITCH</td>
+<td>$C(18)</td>
+</tr>
+<tr>
+<td>X PITCH</td>
+<td>$S(X=12:$C(20)_X=13.3:$C(26)_1:$C(18))</td>
+</tr>
+<tr>
+<td>6 LINES PER INCH</td>
+<td>$C(27)_"H"_$C(27)_4_66</td>
+</tr>
+<tr>
+<td>8 LINES PER INCH</td>
+<td>$C(27)_"I"_$C(27)_4_88</td>
+</tr>
+<tr>
+<td>DEFAULT LINES PER INCH</td>
+<td>$C(27)_"H"_$C(27)_4_66</td>
+</tr>
+<tr>
+<td>X LINES PER INCH</td>
+<td>$S(X=8:$C(27)_"I"_$C(27)_4_88_1:$C(27)_"H"_$C(27)_4_66)</td>
+</tr>
+<tr>
+<td>SGR ATTRIBUTES OFF</td>
+<td>$C(15,31,13)</td>
+</tr>
+<tr>
+<td>UNDERLINE ON</td>
+<td>$C(30)</td>
+</tr>
+<tr>
+<td>UNDERLINE OFF</td>
+<td>$C(31)</td>
+</tr>
+<tr>
+<td>SINGLE HIGH DOUBLE WIDE</td>
+<td>$C(14)</td>
+</tr>
+<tr>
+<td>SINGLE HIGH SINGLE WIDE</td>
+<td>$C(15)</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td>ANADEX PRINTER 10P</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

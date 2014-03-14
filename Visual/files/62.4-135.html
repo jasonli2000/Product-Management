@@ -1,0 +1,141 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuNC0xMzU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SMA II/C (135) &nbsp;&nbsp;  AUTO INSTRUMENT (62.4)</h1>
+<div id="demo"><table id="NjIuNC0xMzU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SMA II/C</td>
+</tr>
+<tr>
+<td>PROGRAM</td>
+<td>LASMA2C</td>
+</tr>
+<tr>
+<td>ENTRY for LAGEN ROUTINE</td>
+<td>Accession cross-reference</td>
+</tr>
+<tr>
+<td>CROSS LINKED BY</td>
+<td>ID</td>
+</tr>
+<tr>
+<td>*ECHO ALL INPUT</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>OVERLAY DATA</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>NEW DATA</td>
+<td>D NEW^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>RESTART</td>
+<td>D RESTART^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>CHEM TESTS</td>
+<td>
+<ol>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-184.html">PROTEIN,TOTAL</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(13,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-185.html">ALBUMIN</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(14,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-180.html">CALCIUM</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(9,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-181.html">PO4</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(10,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-182.html">URIC ACID</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(11,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-173.html">CREATININE</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(4,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-186.html">TOT. BILIRUBIN</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(15,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-188.html">ALKALINE PHOSPHATASE</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(17,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-176.html">SODIUM</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(5,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-177.html">POTASSIUM</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(6,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-178.html">CHLORIDE</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(7,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-179.html">CO2</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(8,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-174.html">UREA NITROGEN</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(3,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-175.html">GLUCOSE1</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(2,1)</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERFACE NOTES</td>
+<td><pre>
+Must use the 4B format.
+Param 3 must contain the test # transmitted by the instrument (exp.
+BUN transmits  04=17  where 04 is the test #, 17 is the result.  In this
+case 04 would be entered in Param 3 for the test BUN.).
+This instrument may need to be transmitted as 7 data bits, regardless of
+what the instrument says it is set at.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODc3NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DG MEANS TEST SPEC INCOME RPT (8774) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODc3NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DG MEANS TEST SPEC INCOME RPT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Means Test Specific Income Amount Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>MEANS TEST SPECIFIC INCOME AMO</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This report wil print veteran information for those who reported a specific
+dollar amount.  The user will be asked for a date range and income range.
+Those veterans who fall within the entered criteria will have their Name,
+SSN, Income Amount, and the Date MT was Completed, printed.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ENSDA^<a href="http://code.osehra.org/dox/Routine_DGMTARR.html">DGMTARR</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>1999-02-18 11:15:50</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

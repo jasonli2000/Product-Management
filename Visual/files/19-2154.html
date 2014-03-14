@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjE1NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGJ IRT UNDICTATED (2154) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjE1NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGJ IRT UNDICTATED</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Undictated Reports Print</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>UNDICTATED REPORTS PRINT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows you to print undictated reports sorting by
+Division if multi-divisional, (Patient, Event Date, Doctor, Service/
+Specialty). The outputs display data for Patient name, PT ID, 
+event date, discharge type, physician, ward and type of report
+(OP report, Discharge Summary, Interim Summary).
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-185.html">INCOMPLETE RECORDS TRACKING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_DGJOPRT.html">DGJOPRT</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

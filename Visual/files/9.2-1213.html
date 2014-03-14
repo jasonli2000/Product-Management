@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTEyMTM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FSC U801 TYPES OF LISTS (1213) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTEyMTM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FSC U801 TYPES OF LISTS</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+                              Types of Lists
+ 
+There four types of lists.
+ 
+Temporary
+When you browse calls or receive notifications, notice that the title of
+the list is Temporary List.  This list is not defined, nor are calls
+stored on this list.  When you leave this list the calls are not saved.
+ 
+Storage Only
+These lists simply hold calls.  Calls must be added manually to these
+lists, and manually deleted.  They are like mail baskets - you have to
+maintain them.  These lists can be owned or be public.  Any specialist can
+create storage only lists.
+ 
+Indexed
+Indexed lists are part of the NOIS software.  You cant create them or
+delete them.  Calls are not stored with these lists.  The list simply uses
+a cross reference in the call file to access these calls.  They are fast
+to access and automatically maintained.  Compound cross references require
+that you enter a value.  For example, Open Calls by Site would require
+entering the site.
+ 
+Active Update
+Specialists can define a list for a specific criteria.  An active update
+list uses a query as the definition of what calls should be on the list.
+The query is the same syntax as when searching for calls.  These lists are
+maintained whenever someone edits a call.  When a call is edited, it is
+reviewed by every active update criteria as to whether the call will be
+included or removed from the list (fortunately all this updating is going
+on in the background).  Notification can also be used with these lists.
+Notification using lists requires that the lists be owned.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1994-01-09 19:05:47</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

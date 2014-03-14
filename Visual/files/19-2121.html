@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjEyMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGPT SET XMIT FLAG (2121) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjEyMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGPT SET XMIT FLAG</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Set Transmit Flag on Movements</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SET TRANSMIT FLAG ON MOVEMENTS</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>DG PTFSUP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the supervisor to flag(or unflag) a 501
+or a 535 movement so it will not be transmitted to Austin.
+ 
+Only PTF records that have more than twenty-five 501 movements or
+more than twenty-five 535 movements can be selected.
+ 
+PTF records with more than 25 of either type of movement can not
+be closed or transmitted.  Some of the movements must be flagged
+not to be transmitted.  This is an Austin DPC limitation.
+ 
+The situation, where more than twenty-five 501's or 535's
+are present in a PTF record, is very rare.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>FLAG^<a href="http://code.osehra.org/dox/Routine_DGPTUTL1.html">DGPTUTL1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

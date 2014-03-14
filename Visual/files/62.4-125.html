@@ -1,0 +1,124 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuNC0xMjU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TDX (with specimen ID) (125) &nbsp;&nbsp;  AUTO INSTRUMENT (62.4)</h1>
+<div id="demo"><table id="NjIuNC0xMjU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TDX (with specimen ID)</td>
+</tr>
+<tr>
+<td>PROGRAM</td>
+<td>LATDX1</td>
+</tr>
+<tr>
+<td>ENTRY for LAGEN ROUTINE</td>
+<td>Accession cross-reference</td>
+</tr>
+<tr>
+<td>CROSS LINKED BY</td>
+<td>IDE</td>
+</tr>
+<tr>
+<td>METHOD</td>
+<td>TDX1</td>
+</tr>
+<tr>
+<td>OVERLAY DATA</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>NEW DATA</td>
+<td>D NEW^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>RESTART</td>
+<td>D RESTART^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>CHEM TESTS</td>
+<td>
+<ol>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-211.html">THEOPHYLLINE</a></dt>
+<dt>PARAM 2:  &nbsp;&nbsp;1</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;THEOPHYLLINE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(24,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-247.html">PROCAINAMIDE</a></dt>
+<dt>PARAM 2:  &nbsp;&nbsp;1</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;PROCAINAMIDE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(83,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-207.html">PHENOBARBITAL</a></dt>
+<dt>PARAM 2:  &nbsp;&nbsp;1</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;PHENOBARBITAL</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(27,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-373.html">CARBAMAZEPINE</a></dt>
+<dt>PARAM 2:  &nbsp;&nbsp;1</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;CARBAMAZEPINE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(92,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-210.html">DILANTIN</a></dt>
+<dt>PARAM 2:  &nbsp;&nbsp;1</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;PHENYTOIN</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(23,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-665.html">VALPROIC ACID</a></dt>
+<dt>PARAM 2:  &nbsp;&nbsp;1</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;VALPROICACID</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(377,1)</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERFACE NOTES</td>
+<td><pre>
+The program LATDX1 is used with TDX instruments that have V10.1 of
+Abbott's software which allows the input of a specimen identifier.
+This allows running the instrument to be run by accession or by
+a load list.  Param 3 should include the name of the test with no
+spaces.  Example: VALPOIC ACID should be VALPOICACID.
+Param 2 is used to determine the number of decimal places the result
+will be reported as.  If Param 2 is not entered or is 0 the result
+will be reported as a whole number, if 1 is entered the result will
+have 1 decimal place, etc.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

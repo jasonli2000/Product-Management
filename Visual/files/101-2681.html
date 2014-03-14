@@ -1,0 +1,66 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI2ODE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORU REVIEW DELAYED ORDERS (2681) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI2ODE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORU REVIEW DELAYED ORDERS</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Review Delayed Orders on Patient Movement</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option may be used to review delayed orders at the time a patient is
+being admitted, discharged, or transferred.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D:$G(DFN) EN1^ORCACT3(DFN)</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1999-06-02 12:30:21</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

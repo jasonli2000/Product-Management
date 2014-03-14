@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03NC40").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>REPORT DISTRIBUTION (74.4) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03NC40" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>REPORT DISTRIBUTION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file points to the Rad/Nuc Med Reports file (#74). It contains only
+verified reports associated with the various active distribution queues.
+ 
+Input Templates
+---------------
+The package does not use any input templates associated with this file.
+ 
+ 
+Print Templates
+---------------
+The following is a list of print templates used by the package:
+ 
+Name                        Description; Option(s)
+----                       ----------------------
+RA ALL UNPRINTED REPORTS    Prints all unprinted reports for a distribution
+                            queue.
+ 
+RA PRINTED REPORTS          Prints a list of previously printed reports for
+                            a distribution queue.
+ 
+RA UNPRINTED REPORTS        Prints a list of unprinted reports in alpha-
+                            betical order by patient name.
+ 
+ 
+Sort Templates
+--------------
+The following is a list of sort templates associated with this file:
+ 
+Name                        Related Print Template
+----                        ----------------------
+RA ALL UNPRINTED            RA ALL UNPRINTED REPORTS
+ 
+RA CLINIC BY PRINT DATE     RA PRINTED REPORTS
+ 
+RA WARD BY PRINT DATE       RA PRINTED REPORTS
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

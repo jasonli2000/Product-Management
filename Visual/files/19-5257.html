@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTI1Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FBCNH RATE CHANGE (5257) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTI1Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FBCNH RATE CHANGE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Change Existing Contract Rate for a Patient</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CHANGE EXISTING CONTRACT RATE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Selection of a patient and an authorization will allow the user to
+see all rates associated with that authorization.  If they wish to change
+the rate for this patient, they are prompted to enter an effective date
+of the change and to choose a new rate.  If the rates are the same, the
+change will not take effect.  The user will see the new rates for this
+authorization upon completion of the change.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_FBNHRC.html">FBNHRC</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-10-07 10:06:16</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

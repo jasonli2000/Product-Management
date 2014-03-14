@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA2NzE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRSP SUP UNLOCK (10671) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA2NzE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRSP SUP UNLOCK</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Unlock Daily ESR</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>UNLOCK DAILY ESR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows supervisors to unlock prior pay period ESRs, so the
+part-time physician can change or complete any incomplete daily ESRs.
+If a timecard has a status of payroll or transmitted, the unlock option
+will only return the ESR to the physician, by way of setting the status to
+resubmit.  The timecard will not be modified.  If the re-approval of the
+ESR will impact the timecard (i.e. change to leave on a scheduled day)
+then either a corrected timecard will be required prior to approval or the
+timecard may be returned to timekeeper.  If a timecard has a status of
+timekeeper, then the option, Unlock Daily ESR, will clear any timecard
+postings and reset the status to not posted.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-101.html">PAID</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>SUP^<a href="http://code.osehra.org/dox/Routine_PRSPUE.html">PRSPUE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

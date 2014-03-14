@@ -1,0 +1,99 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODAxNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DMSQ PURGE (8014) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODAxNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DMSQ PURGE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Purge SQLI Data</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PURGE SQLI DATA</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>XUPROGMODE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option purges the SQLI projection of VA FileMan data dictionaries.
+Use this option if you have previously projected your VA FileMan data
+dictionaries for use by an M-to-SQL product, but no longer wish to. All
+data in the following files are purged:
+ 
+  SQLI_COLUMN
+  SQLI_DATA_TYPE
+  SQLI_DOMAIN
+  SQLI_ERROR_LOG
+  SQLI_ERROR_TEXT
+  SQLI_FOREIGN_KEY
+  SQLI_KEY_FORMAT
+  SQLI_OUTPUT_FORMAT
+  SQLI_PRIMARY_KEY
+  SQLI_SCHEMA
+  SQLI_TABLE
+  SQLI_TABLE_ELEMENT
+ 
+Data is not purged from the following SQLI file, however:
+ 
+  SQLI_KEY_WORD
+ 
+This option requires programmer mode as well as the progmode key.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-13.html">VA FILEMAN</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>PURGE^<a href="http://code.osehra.org/dox/Routine_DMSQ.html">DMSQ</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1997-07-08 08:36:03</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

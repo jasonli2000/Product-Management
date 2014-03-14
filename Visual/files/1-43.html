@@ -1,0 +1,52 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS00Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MAS PARAMETERS (43) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS00Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MAS PARAMETERS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains the site specific parameters which are used by
+the Admission, Discharge and Transfer (ADT) modules.  The parameters
+are set by using the 'DGPAR' routine or the 'ADT Parameters' menu
+option.  The parameters are used to identify such things as your
+facility hemodialysis unit, your admission/discharge/transfer types,
+your divisions (if multi-division facility) and the devices to which
+you desire your 10-10's, routing slips, etc., printed to.  The ADT
+parameters must be set prior to running ADT.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

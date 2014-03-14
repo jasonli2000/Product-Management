@@ -1,0 +1,94 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTcz").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XU USER SIGN-ON (173) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTcz" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XU USER SIGN-ON</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>User sign-on event</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>USER SIGN-ON EVENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is a protocol option to link other packages that want to know about
+a user sign-on  event.
+The protocols must not read/write to the screen because we may be doing a
+GUI sign-on.  They can set Text that will be displayed to the user by
+calling SET^XUS1A(string)  The first character should be a "!" to cause the
+text to be placed on a new line. DUZ will be defined but other variables
+may not be.
+It is called from XUS1A.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>extended action</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-4666.html">PRSA SUP ALERTS</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-5465.html">RA SIGN-ON MSG</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-8727.html">VAFC EXCEPTION NOTIFIER</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-8884.html">RG EXCEPTION NOTIFIER</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-10822.html">ENIT RESP NOTIFY</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2008-05-26 19:16:01</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

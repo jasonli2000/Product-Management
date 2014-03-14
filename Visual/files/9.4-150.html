@@ -1,0 +1,863 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTE1MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>QUASAR (150) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTE1MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>QUASAR</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>ACKQ</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>Quality: Audiology and Speech Pathology Audit and Review</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Quality: Audiology and Speech Pathology Audit and Review (QUASAR)
+is designed to capture patient treatment and workload information
+for Audiology and Speech Pathology clinic visits.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DEVELOPER (PERSON/SITE)</td>
+<td>PICKUP,JERRY L T/AUGUSTA VAMC</td>
+</tr>
+<tr>
+<td>DEVELOPMENT ISC</td>
+<td>Birmingham IRMFO</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>National</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;2.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2002-11-12 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;1996-09-26 00:00:00</dt>
+<dt>INSTALLED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION OF ENHANCEMENTS:  &nbsp;&nbsp;<pre>
+Quality: Audiology and Speech Pathology Audit and Review (QUASAR) is
+designed to capture patient treatment and workload information for
+Audiology and Speech Pathology clinic visits.
+</pre>
+</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;3</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-04-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ During the New Clinic Visits option, some QUASAR users may see an 
+ additional prompt while entering the DIAGNOSTIC CODE(s). This 
+ additional prompt is Select DIAGNOSTIC CONDITION. The prompt 
+ occurs after the diagnostic code has been entered into the A&amp;SP 
+ CLINIC VISIT file (#509850.6) and while the A&amp;SP PATIENT file's 
+ (#509850.2) diagnostic condition multiple (patient diagnostic 
+ history) is being updated.
+ 
+ Why do some QUASAR users see this additional prompt, while 
+ others do not? Recent FileMan patches clean up the utilities 
+ for creating and entering data in sub-files (FILE^DICN  and DIE).
+ We believe the QUASAR problem shows up after the FM patches are 
+ installed.
+  
+ The legacy QUASAR code used old methodology for this call and 
+ needed to be updated. Patch ACKQ*2*3 corrects this problem.
+  
+ What is the impact of this bug on QUASAR data? Depending on how 
+ the Select DIAGNOSTIC CONDITION prompt is answered, the patient 
+ diagnostic history in the A&amp;SP PATIENT file (#509850.2) may not 
+ be complete. It is advisable to use the Inquire - A&amp;SP Patient 
+ option to update the diagnostic history.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;4</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-07-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ The AMIE C&amp;P AUDIO worksheet (#1305) format has been 
+ reconfigured. The worksheet headings and organization have 
+ changed. Patch ACKQ*2*4 corrects this for QUASAR.
+  
+ Additionally, this patch replaces all "W *7" code with "W $C(7)"
+ in nine (9) QUASAR routines and in the ACKQAS VISIT ENTRY input
+ template on the A&amp;SP CLINIC VISIT file (#509850.6). 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;5</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-08-08 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ When a C&amp;P exam is adequated in QUASAR, the results are 
+ transmitted to the AMIE C&amp;P software. If the transmission 
+ attempt to AMIE fails and the data is not successfully sent, 
+ QUASAR currently does not leave the visit in a "signed off on, 
+ but not adequated" state. This patch corrects this problem by 
+ leaving the visit in a "signed off on, but not adequated" state 
+ so that re-transmission can take place.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;6</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-09-22 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ This patch corrects a problem reported in NOIS CTX-0997-70706.
+ After installing ACKQ*2*5, sites reported that the adequator 
+ signature block does not print on the AMIE report.  Patch 
+ ACKQ*2*6 corrects this problem.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;7</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-04-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Y2K COMPLIANCE PATCH
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;8</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-12-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+See description of patch on FORUM.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;9 SEQ #9</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-07-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;3.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2005-11-19 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;2000-06-26 00:00:00</dt>
+<dt>INSTALLED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION OF ENHANCEMENTS:  &nbsp;&nbsp;<pre>
+ 
+TEST INSTALL VERSION 3
+</pre>
+</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;1 SEQ #1</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-01-22 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;2 SEQ #2</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-04-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;4 SEQ #3</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-11-08 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Fix event capture error's.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;5 SEQ #4</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-03-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch fixes the problem with updating diagnosis histories in the 
+A&amp;SP Patient file (#509850.2).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;7 SEQ #5</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-07-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch fixes problems with the updating of the Problem List via the 
+PCE interface.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;6 SEQ #6</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-09-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Please see the National Patch Module for details of the enhancements
+included in this patch.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;3 SEQ #7</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-11-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The Audiometric module was developed in conjunction
+with the Remote Order Entry System (ROES 3.0) at the VA Denver
+Distribution Center. [Prior ROES 2 VistA applications may be run
+concurrently with the new system during the switchover]
+This patch includes two new options. These two options are only
+ available in the Windows environment. Please refer to the 
+Installation Guide for instructions on setting these options up.
+ 
+The 2 new GUI options are:
+ 
+(1) [ACKQROES3E] Enter or edit the data into file 509850.9. When
+     signed, this transmits the data to the DDC for use with ROES 3
+     Custom Hearing Aid orders.
+ 
+(2) [ACKQROES3] View the audiogram generated from that data and
+    print VA form 10-2364.
+ 
+NOIS references addressed in this patch
+=======================================
+There are no NOIS or E3R references.
+ 
+Test Sites
+==========
+Denver
+New York
+Columbia
+Mountain Home
+Atlanta
+Nashville
+ 
+FTP Software and Documentation
+==============================
+This patch will be distributed in a PackMan message through the
+National Patch Module and should be obtained from there.
+The KIDS build for this patch is ACKQ*3.0*3.
+KIDS File (ACKQ*3.0*3): ACKQ_3_P3.KID
+ZIP file of executables: AUDIOGRAM.ZIP
+ 
+Documentation:
+     ACKQ_3_P3_IG.PDF     Installation guide
+     ACKQ_3_P3_SG.PDF     Security guide
+     ACKQ_3_P3_TM.PDF     Technical manual
+     ACKQ_3_P3_UM.PDF     User manual
+ 
+Note: The .PDF and .ZIP files are binary files and must be 
+transferred in binary, not ASCII mode. These files can be read
+using the Adobe Acrobat Reader program.
+ 
+This patch contains the following enhancements:
+==============================================
+ 
+The Audiometric Exam Module (ACKQ*3.0*3) provides new
+functionality for ASPS, to simplify and enhance the entry, display
+and use of information obtained during the Audiometric exam of
+a patient.  This module is comprised of two distinct application
+functions: Audiogram Edit function and the Audiogram Display
+function.
+  
+Records are stored in a local QUASAR global (#509850.9).
+When signed they are also transmitted from this application to the
+Denver Distribution Center (DDC) through the VistA MailMan system
+for inclusion with orders for hearing aids and repairs when
+ordered through the VistA Remote Order Entry System (ROES)
+package.
+  
+The 'Audiogram Edit' function is a Windows based software
+application that allows clinicians to enter, edit or view the
+audiometric exam information from the Computerized Patient
+Record System (CPRS) Tools menu.  Using this function, a new
+audiogram record can be entered, or an existing one can be edited.
+ Once signed, the edited data can only be viewed.
+  
+The 'Audiogram Display' function is a Windows based software
+application that allows clinicians to view a patient's audiogram
+from the CPRS Tools menu.  It can also be called from the 
+Audiogram Edit application, if they exist in the same directory
+and folder. This function presents the clinical information in a
+standard format recognized within the hearing industry. The user
+has a choice of viewing just the last audiogram, or the last two
+in the file.
+ 
+ROUTINE SUMMARY
+===============
+The second line of all listed routines will look like:
+  &lt;tab&gt; ;;3.0;QUASAR AUDIOMETRIC MODULE;**3**;11/01/02
+  
+CHECK^XTSUMBLD results:
+ 
+ACKQAG01&lt;tab&gt;N/A&lt;tab&gt;9433779&lt;tab&gt;3
+ACKQAG02&lt;tab&gt;N/A&lt;tab&gt;14506291&lt;tab&gt;3
+ACKQAG03&lt;tab&gt;N/A&lt;tab&gt;4940176&lt;tab&gt;3
+ACKQAG04&lt;tab&gt;N/A&lt;tab&gt;133577359&lt;tab&gt;3
+ACKQAG05&lt;tab&gt;N/A&lt;tab&gt;1171193&lt;tab&gt;3
+ACKQAG06&lt;tab&gt;N/A&lt;tab&gt;12622668&lt;tab&gt;3
+  
+Technical Description
+=====================
+  
+1. New file introduced with this patch:
+  
+  509850.9&lt;tab&gt;AUDIOMETRIC EXAM&lt;tab&gt;^ACK(509850.9
+  
+2. New options introduced with this patch:
+  
+   ACKQROES3&lt;tab&gt;Audiogram Display
+      Uses new remote procedure call: ACKQAUD1. See Option file
+      entries to see other existing XWB, XUS, and DDR RPCs
+      accessed.
+  
+   ACKQROES3E&lt;tab&gt;Audiogram Data Edit
+      Uses new remote procedure calls: ACKQROES and ACKQAUD2.
+      See Option file entries to see other existing XWB, XUS,
+      and DDR RPCs accessed.
+  
+3. New remote procedure introduced with this patch:
+  
+   ACKQAUD1: returns array of data for last 2 exams
+      Uses routines: ACKQAG01 and ACKQAG06
+  
+   ACKQAUD2: returns array of data for a specific exam
+      Uses routine: ACKQAG02
+  
+   ACKQROES: transmits data to DDC &amp; returns msg#, DDC msg#,
+      error# and error msg.
+      Uses routines: ACKQAG03, ACKQAG04 and ACKQAG05
+  
+Installation Instructions:
+=========================
+  
+This patch was created with Kernel V8 KIDS.
+  
+1. This is a completely new installation, so it will not affect
+   any current ROES 3 users or others on the system. You do not
+   need to restrict users from signing on or lock any options.
+  
+2. Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu.
+   This option will load the KIDS package onto your system.
+  
+3. You DO NOT need to stop Taskman or the background filers. None
+   of the routines require mapping, so mapping does not need to be
+   disabled.
+ 
+4. Using the Kernel Installation and Distribution System menu
+   (KIDS), you may choose the following options prior to 
+   installing this patch:
+  
+   a) All routines are new, so there should be no need to Backup
+      the Transport Global.
+  
+   b) Again, this is an all new module, so there should be no
+      need to Compare Transport Global to the Current System.
+  
+   c) Verify Checksums in the Transport Global. This option will
+      allow you to ensure the integrity of the routines that are
+      in the transport global.
+  
+5. Use the 'Install Package(s)' option under the 'Installation'
+   menu. Installation should only take a few minutes.
+  
+   a) Select INSTALL NAME: ACKQ*3.0*3
+ 
+   b) When prompted 'Want KIDS to Rebuild Menu Trees Upon
+      Completion of Install?' YES// respond "NO"
+  
+   c) When prompted 'Want KIDS to INHIBIT LOGONs during the 
+      install?' YES// respond "NO".
+ 
+   d) When prompted 'Want to DISABLE Scheduled Options, Menu
+      Option and Protocols?' NO// respond "NO".
+ 
+   e) When prompted 'Want to MOVE routines to other CPUs?' YES//
+      respond "NO".
+  
+6. Unzip the Audiogram.zip file containing the executables
+   ACKQROES3.EXE and ACKQROES3E.EXE onto the network. They must
+   reside in the same directory in order for the practitioner to
+   view the audiogram display(ACKQROES3) from the audiogram edit
+   program (ACKQROES3E). [An alternative is to place the
+   executables on each client computer, referencing it in the
+   application path of the CPRS Tools menu.]
+  
+7. Assign Broker options ACKQROES3 and ACKQROES3E to selected ASPS
+   staff members. This will provide access to the options and
+   allow them to startup successfully when the user logs in.
+  
+8. Add the ACKQROES3 and ACKQROES3E applications to the CPRS Tools
+   menu. [See the separate installation guide for further
+   instructions.]
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;8 SEQ #8</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-10-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Updates for Code Text Versioning. 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;12 SEQ #9</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-01-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ 
+This patch addresses several issues that came up at the VAMC stations as
+a result of the initial release of the Audiometric Exam Module (patch
+ACKQ*3.0*3). These changes have been made to the GUI(Windows based)
+Enter/Edit(ACKQROES3E.EXE) and Display(ACKQROES3.EXE) applications in the
+package for both the CPRS Toolbar and Desktop versions, as well as to the
+VistA part of the application. The VistA part includes the file data
+dictionary, Remote Procedure Calls and routines.
+ 
+The Audiometric Exam Module was developed in conjunction with the Remote
+Order Entry System (ROES 3.0) at the VA Denver Distribution Center(DDC)
+and is only available to run in the Windows environment. The application
+can be installed completely from this patch, if ACKQ*3.0*3 was not
+installed. Users are encouraged to consult the full Installation Guide
+referenced below if AKCQ*3.0*3 was not installed. If ACKQ*3.0*3 was 
+ 
+installed, then installing the KIDS build and copying the new executables 
+ 
+over the original executables of the same name will complete
+the install.
+ 
+REMEDY ticket(s) addressed in this patch
+ ========================================
+ HD000000063808
+ HD000000063675
+ HD000000063875
+ HD000000063682
+ 
+ Overview of Remedy ticket(s):
+ ----------------------------
+ Problem: When a user without context accessed the Edit Module, they were
+ allowed to enter the application and view the screens. They were not able
+ to actually edit the data.
+ 
+ Solution: The application [ACKQROES3E.EXE] was modified to exit and halt
+ the application if the user did not have the appropriate VistA
+ application assigned to create context.
+ 
+ Associated Remedy Ticket: HD000000063808
+ 
+ 
+ 
+ -----
+ Problem: Sites encountered a Null Subscript at EN2+4^ACKQAG02 when
+ entering a new record and cancels out of entering the date and time of
+ the exam.
+ 
+ Solution: A fix is applied in routine ACKQAG02 and in the record setup
+ to give the appropriate error message and exit the application if a valid
+ date and time are not entered.
+ 
+ Associated Remedy Tickets: HD000000063675 and HD000000063875
+ 
+ -----
+ Problem: Some error messages or message prompts were coming up behind
+ other screens. The only way for them to show up was to select the
+ application from the bottom task bar.
+ 
+ Solution: Most of the messages in the Audiogram Edit application are now
+ enclosed in code to send them to topmost position and after the message
+ ends, to restore the previous topmost setup.  This may not be a complete
+ solution, but available documentation indicates it should help, if not
+ eliminate the problem from this application.
+ 
+ Associated Remedy Ticket: HD000000063682
+ 
+ -----
+ 
+ 
+This patch contains the following enhancements:
+===============================================
+ 
+The Audiometric Exam Module provided new functionality for Audiology and
+Speech Pathology Services(ASPS), to simplify and enhance the entry,
+display and use of information obtained during the Audiometric exam of a
+patient. This module is comprised of two distinct application functions:
+        Audiogram Edit function [ACKQROES3E.EXE]
+        Audiogram Display function [ACKQROES3.EXE]
+ 
+Records are stored in the local AUDIOMETRIC EXAM file (^ACK(509850.9).
+When signed, the records are also transmitted from this global to the DDC
+through the VistA Mailman system. At the DDC, data from these records is
+included with orders for hearing aids and repairs when the orders are
+placed through the VistA Remote Order Entry System (ROES) package.
+They may also be viewed remotely from the ROES Patient Information screen
+of the ROES web application.
+ 
+ACKQ*3.0*12 implements the following changes:
+ 
+ 1. Removal of Buttons
+ In both audiogram GUI applications, the buttons previously on the screens
+ have been replaced by menu options at the top of the form.
+ 
+ 2. Loop to Another Patient or Record
+ In both applications, a menu option (Get New Record) has been added to
+ allow the user to go to another record without exiting the application.
+ If accessing through CPRS, record selection is limited to the current
+ patient. From the Desktop application, users may select another patient
+ or go to another record for the same patient.
+ 
+ 3. Comments
+ A comment box has been added to the Edit application where the clinician
+ can enter up to 300 characters of text. A checkbox has been inserted
+ directly above the comment area for use if the clinician would like to
+ automatically insert the words "NOT ADEQUATE FOR RATING PURPOSES". This
+ text will be saved to the file and will be imported into VA form 10-2364.
+ 
+ 4. Update VA form 10-2364
+ VA form 10 2364 has been modified to reflect the changes made to the form
+ since the release of patch ACKQ*3.0*3. The comment section of the form is
+ no longer editable.
+ 
+ 5. Color Changes
+ Color has been removed from the data entry boxes. This allows for a
+ cleaner presentation and makes more of the screen available for the edit
+ boxes.
+ 
+ 6. Retransmit Audiogram
+ In the Edit application, a menu option has been added to allow
+ retransmission of a signed audiogram.  This is necessary to transfer the
+ speech, word and other readings that were not a part of the original
+ transmission.
+ 
+ 7. Removing Audiogram
+ In the Edit application, a menu option has been added to allow deletion
+ of a signed audiogram. This became necessary because, in their haste to
+ enter audiograms under heavy workload pressures, users sometimes entered
+ audiograms under the wrong patient and the error was not discovered until
+ after transmission. This would then become a problem when data would be
+ on duplicate systems for the wrong patient. After installing this patch,
+ when a local signed audiogram is deleted, a message with identifying
+ information is sent to the DDC to delete the record there also.
+ Clinicians should use utmost caution in both entering and removing
+ audiograms.
+ 
+ 8. File Changes
+ Numerous fields were added to the AUDIOMETRIC EXAM file to provide the
+ additional data needed for diagnostic and reporting purposes. The data
+ type of many fields was changed at the request of the national program
+ office to more efficiently handle the text and tags required in the
+ fields. Many that were numeric are now free text. Refer to the
+ CHANGES/ADDITIONS TO FILE section for more detailed information.
+ 
+ 9. New Fields on Edit Pages
+ The new editable fields (bullet 8) and data type screening were added to
+ the Edit program.
+ 
+ 10. Masking Change
+ Masking is no longer referenced in the fields with an '*', but will
+ instead be indicated by a non-zero numeric value in the 'Masking Level'
+ field. Prior instances of the data without a masking level will continue
+ to display the '*' sign.
+ 
+ 11. No Response Change
+ The symbol for 'No Response'(+) will now be stored in the text field with
+ the numeric value.
+ 
+ 12. No Testing, No Masking
+ 'CNM', 'CNT', 'DNT' and 'FLAT; are now accommodated in the appropriate
+ text fields in the file as well as in the Edit program.
+ 
+ 13. Transducer Type
+ Users can now indicate if testing was done via inserts or headphones.
+ This is also displayed on the 10-2364.
+ 
+ 14. Eliminate Duplicate Presentation and Material
+ One selection of the Presentation Method and Material are now applicable
+ to all of the Word Recognition tests, via a single drop down list.
+ 
+ 15. Tympanogram Type and Other Test
+ Tympanogram Type and 'Other Test' types have been added to the Acoustic
+ Immittance page.
+ 
+ 16. Claim Number
+ The Claim Number has been added to the Edit form so that it can be
+ included on VA form 10-2364.
+ 
+ 17. Maximum Value Change
+ Maximum values allowed have been updated and associated 'Hints' have been
+ adjusted.
+ 
+ 18. Hints
+ It is now possible for the user to inactivate or reactivate the hint
+ feature.
+ 
+ 19. Clinician Title
+ The title of the clinician and location will now show on the display.
+ 
+ 20. Presentation Method
+ CD and Tape have been consolidated into a single Recorded type.
+ 
+ 21. About Box
+ An 'About' box was added to the main forms to comply with VistA
+ convention.
+ 
+ 
+ 
+Software and Documentation Retrieval
+====================================
+ 
+ The software and documentation for this patch can be found in the
+ following [ANONYMOUS.SOFTWARE] directories:
+ 
+                                        Preferred Address
+                                        ----------------------
+        First available FTP server      download.vista.domain.ext
+ 
+        Specific Field Office           FTP address
+        ---------------------           -----------
+        Albany                          ftp.fo-albany.domain.ext
+        Hines                           ftp.fo-hines.domain.ext
+        Salt Lake City                  ftp.fo-slc.domain.ext
+ 
+        File Name               Description         Format   FTP Protocol
+        -----------------       -------------       ------   ------------
+ 
+        ACKQ_3_P12_RN.PDF       Release notes       PDF      Binary
+        ACKQ_3_P12_IG.PDF       Installation Guide  PDF      Binary
+        ACKQ_3_P12_UM.PDF       User Manual         PDF      Binary
+        ACKQ_3_P12_TM.PDF       Technical manual    PDF      Binary
+        ACKQ_3_P3_SG.PDF        Security guide      PDF      Binary
+        ACKQ_3_P12.KID          KIDS build          KIDS     ASCII
+        AUDIOGRAM_P12.ZIP       Executables         ZIP      Binary
+ 
+ 
+  
+ Test Sites
+ ==========
+ Columbia(SC)
+ Las Vegas
+ Miami
+ Tennessee Valley
+ New York
+ Salisbury
+ Fayetteville AR
+ 
+ 
+ROUTINE SUMMARY:
+================
+ 
+The following is a list of the routines included in this patch.
+The second line of each of these routines now looks like:
+ 
+&lt;tab&gt;;;v 3.0;QUASAR AUDIOMETRIC EXAM MODULE;**[patch list]**;11/01/02
+ 
+ 
+        CHECK1^XTSUMBLD results
+ 
+Routine Name    Before Patch    After Patch     Patch List
+============    ============    ===========     ==========
+ACKQAG01        49470887         69211169       ** 3,12 **
+ACKQAG02        61779051         62617084       ** 3,12 **
+ACKQAG03        11574717         11560534       ** 3,12 **
+ACKQAG04        65019411         68097423       ** 3,12 **
+ACKQAG05         1840641         19012760       ** 3,12 **
+ACKQAG06        47277438         63053336       ** 3,12 **
+ACKQAG08          n/a            38815781       ** 12 **
+ 
+ 
+ 
+ INSTALLATION INSTRUCTIONS:
+ ==========================
+ 
+ Installation of this patch will take about 5 minutes. Additional
+ time will be needed if the GUI applications have been installed on
+ individual client machines or the location of the applications on the
+ network has changed. Users need not be off the system when applying this
+ patch, but it should be installed during non-peak hours to minimize
+ disruption to users.
+ 
+  1. On the KIDS menu under the 'INSTALLATION' menu, use the following
+     options as desired:
+        Print Transport Global
+        Compare Transport Global to Current System
+        Verify Checksums in Transport Global
+        Backup a Transport Global
+ 
+  2. On the KIDS menu under the 'INSTALLATION' menu, use the following
+     option to install the patch:
+        Install Package(s) (ACKQ*3.0*12)
+ 
+  3. When prompted "Want KIDS to Rebuild Menu Trees Upon Completion of
+     Install? YES//", respond 'NO'.
+ 
+  4. When prompted "Want KIDS to INHIBIT LOGONs during the install? YES//"
+     respond 'NO'.
+ 
+  5. When prompted 'Want to DISABLE Scheduled Options, Menu Options, and
+     Protocols? YES//', respond 'YES'.
+     Options to disable:
+        ACKQROES3
+        ACKQROES3E
+ 
+  6. When prompted 'Delay Install (Minutes):  (0-60): 0//; respond '0'.
+ 
+  7. Following the installation of the KIDS build, the system will
+     immediately run routine ACKQAG08. This will move any existing
+     'No Response' or 'Masked' tags into the appropriate threshold fields.
+ 
+  8. At this point the two revised executables (ACKQROES3.EXE and
+     ACKQROES3E.EXE) should be copied over all existing copies on the
+     network or client machine. Add the VistA menu options for any new
+     application users and setup on their CPRS Toolbar as necessary, as
+     detailed in the INSTALLATION GUIDE.
+ 
+  9. We do not anticipate any need to reinstall this patch. However, it
+     may be reinstalled if necessary.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;10 SEQ #10</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-02-13 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will correct to problem with in QUASAR
+that allows the user to create a new visit for
+deceased patients.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;15 SEQ #11</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-04 22:38:13</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+INCORRECT DIAGNOSTIC CODE DISPLAY
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;13 SEQ #12</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-05 00:58:38</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Interface of Medical Devices with QUASAR and the DALC.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;14 SEQ #13</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-12-12 20:43:46</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;17</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-10-27 11:29:05</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will correct a problem with broken pointers.
+Associated Remedy
+HD147036 - Quasar Patch ACKQ*3*9 - Amendments for Scheduling 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;16 SEQ #15</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-11-10 12:24:51</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch addresses the following issues:
+ 
+   1.  From the New Clinic Visits [NEW CLINIC VISITS  ACKQAS VISIT ENTRY] 
+       menu option, when checking out a patient that has the Combat 
+       Classification, the prompt does not display allowing the user to 
+       answer the Combat questions for the visit.
+  
+   2. At each episode of care, the prompt to determine if the care
+      provided is related to the combat experience of the OEF/OIF veteran
+      needs to have the default changed from "NULL" to "YES".
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;18 SEQ #16</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-04-04 14:23:39</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+As a follow up to patch LEX*2.0*64 modifications are necessary to 
+all references of the newly deleted fields and use of the 
+corresponding API's is required to acquire the necessary 
+information.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;22 SEQ #17</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-12-12 14:13:10</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch addresses one issue:
+ 
+This patch will update all direct file reads to the ICD DIAGNOSIS (#80) 
+file,CPT MODIFIER (#81.3) file, and the CPT FILE (#81) file in the Quasar 
+application to the new associated API's.
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

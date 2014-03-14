@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTE0NDI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSS LOCAL DOSAGES EDIT ALL (11442) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTE0NDI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSS LOCAL DOSAGES EDIT ALL</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Find Unmapped Local Possible Dosages</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>FIND UNMAPPED LOCAL POSSIBLE D</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option loops through and finds entries in the LOCAL POSSIBLE DOSAGE
+(#50.0904) Subfile of the DRUG (#50) File without data populated in the
+DOSE UNIT (#4) Field and the NUMERIC DOSE (#5) Field, and will prompt for
+data entry into these fields. This data needs to be populated if Dosage
+checks are to be performed, when that Local Possible Dosage is selected
+for an order.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-164.html">PHARMACY DATA MANAGEMENT</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_PSSLDALL.html">PSSLDALL</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

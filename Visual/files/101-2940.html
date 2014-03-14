@@ -1,0 +1,104 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI5NDA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RG ADT-A01 SERVER (2940) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI5NDA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RG ADT-A01 SERVER</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>CIRN's ADT-A01 Server Protocol</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol is triggered whenever a patient is admitted through the
+Registration (PIMS) module. It executes code that creates an HL7 ADT
+message consisting of PID, EVN, PD1, and PV1 segments.  The message
+contains all relevant information about the event, including patient
+name, event date/time, patient primary facility and patient class
+(inpatient or outpatient).
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>event driver</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-170.html">CLINICAL INFO RESOURCE NETWORK</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2000-07-24 13:57:06</td>
+</tr>
+<tr>
+<td>SENDING APPLICATION</td>
+<td><a href="771-45.html">RG CIRN ADT</a></td>
+</tr>
+<tr>
+<td>TRANSACTION MESSAGE TYPE</td>
+<td><a href="771.2-6.html">ADT</a></td>
+</tr>
+<tr>
+<td>EVENT TYPE</td>
+<td><a href="779.001-1.html">A01</a></td>
+</tr>
+<tr>
+<td>ACCEPT ACK CODE</td>
+<td><a href="779.003-1.html">AL</a></td>
+</tr>
+<tr>
+<td>APPLICATION ACK TYPE</td>
+<td><a href="779.003-1.html">AL</a></td>
+</tr>
+<tr>
+<td>VERSION ID</td>
+<td><a href="771.5-3.html">2.3</a></td>
+</tr>
+<tr>
+<td>SUBSCRIBERS</td>
+<td>
+<ol>
+<li>
+<dt>SUBSCRIBERS:  &nbsp;&nbsp;<a href="101-2937.html">RG ADT-A01 CLIENT</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

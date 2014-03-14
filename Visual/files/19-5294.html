@@ -1,0 +1,90 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTI5NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA VALID STOP CODES (5294) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTI5NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA VALID STOP CODES</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Valid Imaging Stop Codes Edit</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>VALID IMAGING STOP CODES EDIT</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>RA MGR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the Radiology/Nuclear Medicine ADPAC to select a set
+of clinic stop codes that are currently valid for Imaging procedures.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>edit</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K %,%W,%Y,C,DDC,DI,DQ,I,POP,DG,DISYS</td>
+</tr>
+<tr>
+<td>DIC {DIC}</td>
+<td>RAMIS(71.5,</td>
+</tr>
+<tr>
+<td>DIC(0)</td>
+<td>AELMQ</td>
+</tr>
+<tr>
+<td>DIE</td>
+<td>RAMIS(71.5,</td>
+</tr>
+<tr>
+<td>DR {DIE}</td>
+<td>.01</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

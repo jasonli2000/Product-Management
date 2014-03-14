@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTQ4Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENPM10 (1486) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTQ4Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENPM10</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Delete PM Work Orders</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DELETE PM WORK ORDERS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Intended to enable you to delete PM work orders in order to conserve
+disk space. Deletion of PM work orders via this option will not remove
+an existing record of the PMI from the equipment history. Deletion
+of any work order via the EDIT WORK ORDER option WILL remove the
+corresponding entry from the equipment history.
+If you intend to record PMI's in the equipment history, you should
+not delete PM work orders until after they have been recorded.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DEL^<a href="http://code.osehra.org/dox/Routine_ENEQPMS4.html">ENEQPMS4</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

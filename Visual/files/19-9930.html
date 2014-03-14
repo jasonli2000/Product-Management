@@ -1,0 +1,86 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTkzMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SPN REG INQ (9930) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTkzMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SPN REG INQ</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Inquire to a Registry Patient</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>INQUIRE TO A REGISTRY PATIENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is a read-only (inquire) option providing a view of completed fields
+in the SCD Registry for a particular patient.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>inquire</td>
+</tr>
+<tr>
+<td>DISPLAY OPTION?</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-148.html">SPINAL CORD DYSFUNCTION</a></td>
+</tr>
+<tr>
+<td>DIC {DIC}</td>
+<td>SPNL(154,</td>
+</tr>
+<tr>
+<td>DIC(0)</td>
+<td>AEMQ</td>
+</tr>
+<tr>
+<td>DIC {DIQ}</td>
+<td>SPNL(154,</td>
+</tr>
+<tr>
+<td>DIQ(0)</td>
+<td>C</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

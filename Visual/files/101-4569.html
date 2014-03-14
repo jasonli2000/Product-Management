@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTQ1Njk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMPL EVENT (4569) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTQ1Njk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMPL EVENT</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Problem List Update Event</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol will be invoked whenever a problem is added or modified via
+Problem List options or RPC's. It is triggered by setting the Date Last
+Modified field #.03 of the Problem file #9000011, in the DTMOD^GMPLX
+function.  The following variables will be available to read and use, but 
+do NOT kill:
+ 
+   DFN    = Patient ien, file #2 
+   GMPIFN = Problem ien, file #9000011 
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>extended action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-135.html">PROBLEM LIST</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-06-14 09:02:57</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

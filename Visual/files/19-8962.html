@@ -1,0 +1,107 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODk2Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ACKQAS UPDATE CPT MODIFIERS (8962) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODk2Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ACKQAS UPDATE CPT MODIFIERS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Update CPT Modifiers per CO Directive</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>UPDATE CPT MODIFIERS PER CO DI</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The system shall allows the user to select any Modifier already defined in
+the A&amp;SP Modifier file for edit. The system allows selection of CPT
+Modifiers or a HCPCS Modifiers from the CPT Modifier File #81.3 that are
+defined as a type 'C' or type 'H'.
+The system prevents the user from adding to the A&amp;SP Modifier File any
+Modifier that is defined as Inactive on the CPT Modifier File #81.3.
+The system also prevents the user from deleting a Modifier from the A&amp;SP
+Modifier File.
+The system then prompts the user to enter the Status of the Modifier in
+QUASAR. Valid entries are '1' for Active or '0' for Inactive.
+If a new Modifier is selected from the CPT Modifier File the Modifier
+Status shall default to Active.
+If an existing Modifier is selected from the A&amp;SP Modifier File then the
+system shall display the current status of the Modifier as the default
+value.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>edit</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-150.html">QUASAR</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S ACKLAYGO="",DLAYGO=509850.5 W @IOF,!,"This option allows you to enter new Procedure Modifiers or amend the status of  existing ones.",!</td>
+</tr>
+<tr>
+<td>DIC {DIC}</td>
+<td>ACK(509850.5,</td>
+</tr>
+<tr>
+<td>DIC(0)</td>
+<td>AEMQL</td>
+</tr>
+<tr>
+<td>DIC(W)</td>
+<td>W "",$$MODTXT^ACKQUTL8(Y,""),?48,$$GET1^DIQ(81.3,Y,.04)</td>
+</tr>
+<tr>
+<td>DIE</td>
+<td>ACK(509850.5,</td>
+</tr>
+<tr>
+<td>DR {DIE}</td>
+<td>[ACKQAS ENTER/EDIT MODIFIERS]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

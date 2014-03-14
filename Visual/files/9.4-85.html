@@ -1,0 +1,1555 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTg1").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PATIENT DATA EXCHANGE (85) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTg1" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PATIENT DATA EXCHANGE</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>VAQ</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>Module used to manage patient information exchange</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This module allows medical centers to exchange patient clinical and
+administrative information through the use of MailMan.  Requests can
+be sent to a remote site.  The remote site can process the request and
+a message containing patient information will be returned.
+</pre>
+</td>
+</tr>
+<tr>
+<td>FILE</td>
+<td>
+<ol>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-394.1.html">*PDX DATA</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-394.2.html">*PDX PARAMETER</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-394.4.html">*PDX STATISTICS</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-394.3.html">*PDX STATUS</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+<dt>MERGE OR OVERWRITE SITE'S DATA:  &nbsp;&nbsp;OVERWRITE</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-394.html">*PDX TRANSACTION</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-394.61.html">VAQ - TRANSACTION</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-394.62.html">VAQ - DATA</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-394.71.html">VAQ - DATA SEGMENT</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+<dt>MERGE OR OVERWRITE SITE'S DATA:  &nbsp;&nbsp;OVERWRITE</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-394.72.html">VAQ - ENCRYPTION METHOD</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+<dt>MERGE OR OVERWRITE SITE'S DATA:  &nbsp;&nbsp;OVERWRITE</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-394.73.html">VAQ - ENCRYPTED FIELDS</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+<dt>MERGE OR OVERWRITE SITE'S DATA:  &nbsp;&nbsp;MERGE</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-394.81.html">VAQ - PARAMETER</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-394.82.html">VAQ - RELEASE GROUP</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-394.83.html">VAQ - OUTGOING GROUP</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-394.84.html">VAQ - SEGMENT GROUP</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-394.85.html">VAQ - STATUS</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+<dt>MERGE OR OVERWRITE SITE'S DATA:  &nbsp;&nbsp;OVERWRITE</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-394.86.html">VAQ - AUTO-NUMBERING</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-394.87.html">VAQ - WORKLOAD</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-394.88.html">VAQ - WORK</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+<dt>MERGE OR OVERWRITE SITE'S DATA:  &nbsp;&nbsp;OVERWRITE</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-142.99.html">HEALTH SUMMARY PARAMETERS</a></dt>
+<dl><dt>FIELD:</dt>
+<dd>
+<ol>
+<li>
+<dt>FIELD:  &nbsp;&nbsp;SPOOL DEVICE NAME</dt>
+</li>
+<li>
+<dt>FIELD:  &nbsp;&nbsp;SPOOL DEVICE NAME</dt>
+</li>
+</ol>
+</dd></dl>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;NO</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DEVELOPER (PERSON/SITE)</td>
+<td>JRP;JFP;EG;JLU;BOK/ALBANY-ISC</td>
+</tr>
+<tr>
+<td>*LOWEST FILE NUMBER</td>
+<td>394</td>
+</tr>
+<tr>
+<td>*HIGHEST FILE NUMBER</td>
+<td>394.88</td>
+</tr>
+<tr>
+<td>DEVELOPMENT ISC</td>
+<td>ALBANY</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>National</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>1.5</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;1.5</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2005-11-19 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;1996-07-22 00:00:00</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;24 SEQ #22</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-04-09 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ 
+1.  When extracting the PDX*MAS data segment, all data pertaining to the
+    patient's PERIOD OF SERVICE was not able to upload using the LD or LF
+    of the LOAD/EDIT.  Routine VAQDBII1 has been modified to correct this
+    problem.  This was reported in NOIS CAN-0595-10112.
+ 
+ 
+IMPORTANT NOTICE:
+=================
+Once installation of this patch is complete, should your site continue to
+receive Second/Third Period of Service errors, patient data will have to
+be re-Requested/Unsolicited.  This is due to the Period of Service fields
+having a value of null when transmitted.  Routine has been properly
+corrected to include a 'Yes' or 'No' value when transmission occurs.
+ 
+ 
+ROUTINE SUMMARY:
+================
+Below is the routine included in this patch.  The second line of this
+routine will look like:
+ 
+    &lt;tab&gt;;;1.5;PATIENT DATA EXCHANGE;**[patch list]**;NOV 17, 1993 
+ 
+ 
+                            CHECK^XTSUMBLD results
+ 
+           ROUTINE NAME   BEFORE PATCH    AFTER PATCH     PATCH LIST
+           =============  =============   ============    ==========
+           VAQDBII1             2772903        2817374      13,24
+ 
+ 
+       INSTALLATION INSTRUCTIONS
+       ==========================
+       1.  This patch can be loaded with users on the system. Installation
+       will take less than 5 minutes.  Use the INSTALL/CHECK MESSAGE
+       option on the PackMan menu.  This option will load the KIDS package
+       onto your system.
+ 
+       2.  Review your mapped set.  If any of the routines listed in the
+       ROUTINE SUMMARY section are mapped, they should be removed from the
+       mapped set at this time.
+ 
+       3.  From the Kernel Installation and Distribution System Menu,
+       Select the Installation menu.
+ 
+       4.  From this menu, you may elect to use the following options
+       (when prompted for INSTALL NAME, enter VAQ*1.5*24):
+                                              ==========
+ 
+       a.  Backup a Transport Global - this option will create a backup
+       message of any routines exported with the patch.  It will NOT
+       backup any other changes such as DDs or templates.
+ 
+       b.  Compare Transport Global to Current System - this option will
+       allow you to view all changes that will be made when the patch is
+       installed.  It compares all components of the patch (routines, DDs,
+       templates, etc.).
+ 
+       c.  Verify Checksums in Transport Global - this option will allow
+       you to ensure the integrity of the routines that are in the
+       transport global.
+ 
+ 
+ 
+       5.  Use the Install Package(s) option and select the package
+       VAQ*1.5*24
+       ==========
+ 
+       6.  When prompted 'Want to DISABLE Scheduled Options, Menu Options,
+       and Protocols?  YES//', respond YES.  When prompted to select the
+                                       ===
+       options you would like to place out of order, enter the following:
+ 
+ 
+                        VAQ (MENU) MAIN       Patient Data Exchange
+                        ===============
+ 
+       7.  MSM sites:  Please ensure you answer YES when asked if you want
+       to move the routines to other systems and indicated the appropriate
+       CPUs.
+ 
+       8.  If routines were unmapped as part of step 2, they should be
+       returned to the mapped set once the installation has run to
+       completion.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;26 SEQ #24</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Y2K Waiver Request ID#:Y2KW0001     Y2K Waiver Status: Approved
+   This patch may be installed during the Y2K Moratorium, either
+   BEFORE 12/15/99 or AFTER 1/15/2000.  This patch MAY NOT be
+   installed between 12/15/99 and 1/15/2000(the Y2K Lockdown Period).
+ 
+   BRK-0596-12069,EKH-0498-42577,EKH-1298-40432,NAS-0998-32328.
+   Several sites have indicated that VAQ-TRANSACTION FILE(394.61)
+   periodically creates duplicate Transaction numbers.  Routines
+   VAQFILE and VAQREQ06 have been revised to ensure Lock of file
+   until creation of IEN and Transaction number.
+ 
+ 
+Test Sites:
+==========
+Brockton, MA - 525
+Nashville, TN - 626 
+Eastern Kansas HCS - 677
+ 
+ 
+ 
+Routine Summary:
+===============
+The following routine(s) are included in this patch.  The second line of
+each routine will look like:
+ 
+ &lt;tab&gt;;;1.5;PATIENT DATA EXCHANGE;**[Patch List}**;Nov 17, 1993
+ 
+Checksums:  CHECK^XTSUMBLD
+=========
+ 
+Rtn Nm          Chksum Before          Chksum         Patch List
+------------------------------------------------------------------
+VAQFILE               3704729         3884670            22,26
+VAQREQ06              5069886         4782978        4,16,20,22,26
+ 
+ 
+Installation Instruction:
+========================
+1. This patch can be loaded with users on the system.
+ 
+2. Routine mapping is NOT recommended for these routines.  If you are
+using routine mapping, review your mapped set and ensure that these
+routines are NOT in your mapped routine before proceeding and rebuild
+your map set afterward before reactivating TaskMan.
+ 
+3. Use the "INSTALL/CHECK MESSAGE" option on the PackMan menu.  This
+will load the KIDS package into your system.
+ 
+4. The patch has now been loaded into a transport global and you will
+use KIDS to install the transport global.  On the KIDS menu, under the
+'Installation' menu, use the following options
+ 
+   2 Verify Checksums in Transport Global
+   3 Print Transport Global
+   4 Compare Transport Global to Current System
+   5 Backup a Transport Global
+   6 Install Package(s)
+             INSTALL NAME:  VAQ*1.5*26
+                            ==========
+ 
+  Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                        ==
+  Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO
+                                                                  ==
+ 
+5. If routines were unmapped as part of step 2, they should be returned
+to the mapped set once the installation has run to completion.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;28 SEQ #25</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-02-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Y2K Waiver Exemption ID#:Y2KWE0034
+   This patch may be installed at any time during the Y2K Moratorium
+   (including the 12/15/99 thru 1/15/2000 Y2K lockdown).
+ 
+   CLE-1199-42576,COS-1299-40012.
+   Several sites has indicated that PDX is unable to store data into
+   workload file #394.87, due to an undefine variable error.  Routine
+   VAQFILE has been revised to correct this problem.
+ 
+ 
+Test Sites:
+==========
+Cleveland, OH     - 541
+Columbus, OH(OPC) - 757
+ 
+ 
+ 
+Routine Summary:
+===============
+The following routine(s) are included in this patch.  The second line of
+each routine will look like:
+ 
+ &lt;tab&gt;;;1.5;PATIENT DATA EXCHANGE;**[Patch List}**;Nov 17, 1993
+ 
+Checksums:  CHECK^XTSUMBLD
+=========
+ 
+Rtn Nm          Chksum Before          Chksum         Patch List
+------------------------------------------------------------------
+VAQFILE               3884670           3917792        22,26,28
+ 
+ 
+Installation Instruction:
+========================
+1. This patch can be loaded with users on the system.
+ 
+2. Routine mapping is NOT recommended for these routines.  If you are
+using routine mapping, review your mapped set and ensure that these
+routines are NOT in your mapped routine before proceeding and rebuild
+your map set afterward before reactivating TaskMan.
+ 
+3. Use the "INSTALL/CHECK MESSAGE" option on the PackMan menu.  This
+will load the KIDS package into your system.
+ 
+4. The patch has now been loaded into a transport global and you will
+use KIDS to install the transport global.  On the KIDS menu, under the
+'Installation' menu, use the following options
+ 
+   2 Verify Checksums in Transport Global
+   3 Print Transport Global
+   4 Compare Transport Global to Current System
+   5 Backup a Transport Global
+   6 Install Package(s)
+             INSTALL NAME:  VAQ*1.5*28
+                            ==========
+ 
+  Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                        ==
+  Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO
+                                                                  ==
+ 
+5. If routines were unmapped as part of step 2, they should be returned
+to the mapped set once the installation has run to completion.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;29 SEQ #26</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-11-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ 
+ 
+ Subject:
+    Correcting wrong cross reference
+ 
+ 
+ Category:
+    Routine
+ 
+ 
+ Description:
+ ============
+    NOIS: ISA-0700-12514, NOL-0700-72818
+ 
+        Sites had reported that PDX is generating error
+    messages because of unable to find the correct
+    Domain name from the Domain file.  The problem that
+    is causing this is that the pointer is using B
+    cross reference.  Routines are modified to point at
+    C cross reference.
+ 
+ 
+  List of Test Sites:
+  ==================
+    New Orleans, Montana
+ 
+ 
+ 
+  ROUTINE SUMMARY                                                  
+  ===============                                                  
+         
+   The following routines are included in this patch.  The
+   second line of each of these routines now looks like:                  
+ 
+   &lt;tab&gt;;;1.5;PATIENT DATA EXCHANGE;**[patch list**; Date
+ 
+         
+    Routine Name     Chksum Before    Chksum After      Patch List
+    ------------     -------------    ------------      ----------
+    VAQUTL97         1469891          1499668           2,9,29
+    VAQUTL99         2220508          2284414           2,10,29
+ 
+ 
+    * From CHECK^XTSUMBLD
+ 
+ 
+ 
+ 
+  Installation Instructions:
+  ==========================
+ 
+     1. Users ARE allowed to be on the system during the installation.
+ 
+     2. DSM/AXP sites: Review your mapped routine set.  If any of the
+        routines in the Routine Summary section are mapped, disable
+        mapping for the affected routine.
+ 
+     3. Use the "INSTALL/CHECK MESSAGE" option on the PackMan menu.
+        This loads the patch into a Transport Global onto your system.
+    
+     4. You DO NOT need to stop TaskMan or the background filers.
+              
+     5. On the KIDS menu, select the "Installation" menu and use the
+        following options to install the Transport Global:
+           Verify Checksums in Transport Global
+           Print Transport Global 
+           Compare Transport Global to Current System
+           Backup a Transport Global
+ 
+           Install Package(s) 
+               INSTALL NAME: VAQ*1.5*29
+                             ==========
+ 
+           Want KIDS to INHIBIT LOGONs during the install?  YES// NO
+                                                                 ==== 
+           Want to DISABLE Scheduled Options,  Menu Options, and
+             Protocols?  NO//
+                         ==
+ 
+ 
+     6.  DSM/AXP Sites - Answer NO to the question "Want to MOVE
+          routines to other CPUs?"
+ 
+     7.  DSM/AXP sites:  If the routines were unmapped, the mapped
+         set should be rebuilt once the installation has run
+         to completion.
+ 
+ 
+.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;32 SEQ #27</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-11-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch VAQ*1.5*32
+ 
+NOIS CLE-0701-40883
+Test Site: Cleveland, OH
+
+This patch stops PDX from locking file 394.61 when $$NEWTRAN^VAQFILE is
+called to add a new record to the file.  ^DIC provides the appropriate
+locking, so PDX doesn't have to.
+ 
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It requires patch VAQ*1.5*28.
+==========================================================================
+ 
+ROUTINES:
+The second line of the routine now looks like:
+       ;;1.5;PATIENT DATA EXCHANGE;**[patch list]**;NOV 17, 1993
+ 
+             Before        After
+Name       Checksum     Checksum     Patch List
+-----------------------------------------------------------------
+VAQFILE     3917792      3972067     22,26,28,32
+VAQREQ06    4782978      4486600     4,20,26,32
+* Checksums produced by CHECK^XTSUMBLD
+ 
+This patch introduces no new routines.
+==========================================================================
+ 
+INSTALLATION:
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It requires patch VAQ*1.5*28.
+1.  Users may be on the system during installation of this patch.
+2.  DSM Sites: If any of these routines is mapped, disable mapping for the
+    affected routine(s).  
+3.  On the PackMan menu, use the 'INSTALL/CHECK MESSAGE' option.
+    This loads the patch into a Transport Global on your system.  
+4.  You do not need to stop TaskMan or the background filer.
+    Users may be on the system.
+5.  On the KIDS:Installation menu, use the following options to install
+    the Transport Global.
+       Verify Checksums in Transport Global
+       Print Transport Global
+       Compare Transport Global to Current System
+       Backup a Transport Global
+       Install Package(s)
+ Select INSTALL NAME:   VAQ*1.5*32   Loaded from Distribution &lt;date/time&gt;
+                        ==========
+ Install Questions:
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                       ==
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+                                                                       ==
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+ 
+ DEVICE: HOME// &lt;It's up to you.  You may queue it if you wish.&gt;
+                ------------------------------------------------
+6.  DSM Sites: After patch has installed, rebuild your map set, if
+    necessary.
+==========================================================================
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;31 SEQ #28</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-11-21 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch VAQ*1.5*31
+ 
+NOIS ISL-1198-52170
+Test Site: Oklahoma City
+
+This patch enables PDX to recognize and report on NKA (No Known Allergy)
+when using the API EN1^GMRADPT, provided by the Adverse Reaction Tracking
+package.
+
+Adverse Reaction Tracking released a patch, GMRA*4*10, which changed the
+data returned by EN1^GMRADPT if the patient has NKA.
+
+Before the patch, the API returned:
+GMRAL=0
+GMRAL(&lt;ptr to file 120.8&gt;)=DFN_"^NKA^0^1"
+
+After the patch, the API returned:
+GMRAL=0
+
+PDX used to grab "NKA" from the GMRAL array.  After GMRA*4*10, there was
+nothing to grab.  This patch, VAQ*1.5*31, ensures that PDX recognizes that
+GMRAL=0 means "NKA".
+ 
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It has no patch pre-requisite requirement.
+==========================================================================
+ 
+ROUTINES:
+The second line of the routine now looks like:
+       ;;1.5;PATIENT DATA EXCHANGE;**[patch list]**;NOV 17, 1993
+ 
+             Before        After
+Name       Checksum     Checksum     Patch List
+-----------------------------------------------------------------
+VAQDBIP1    4400113      5323185     31
+* Checksums produced by CHECK^XTSUMBLD
+ 
+This patch introduces no new routines.
+==========================================================================
+ 
+INSTALLATION:
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It has no patch pre-requisite requirement.
+1.  Users may be on the system during installation of this patch.
+2.  DSM Sites: If any of these routines is mapped, disable mapping for the
+    affected routine(s).  
+3.  On the PackMan menu, use the 'INSTALL/CHECK MESSAGE' option.
+    This loads the patch into a Transport Global on your system.  
+4.  You do not need to stop TaskMan or the background filer.
+    Users may be on the system.
+5.  On the KIDS:Installation menu, use the following options to install
+    the Transport Global.
+       Verify Checksums in Transport Global
+       Print Transport Global
+       Compare Transport Global to Current System
+       Backup a Transport Global
+       Install Package(s)
+ Select INSTALL NAME:   VAQ*1.5*31   Loaded from Distribution &lt;date/time&gt;
+                        ==========
+ Install Questions:
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                       ==
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+                                                                       ==
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+ 
+ DEVICE: HOME// &lt;It's up to you.  You may queue it if you wish.&gt;
+                ------------------------------------------------
+6.  DSM Sites: After patch has installed, rebuild your map set, if
+    necessary.
+==========================================================================
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;30 SEQ #29</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-11-21 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+        * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+        This patch requires PDX patch VAQ*1.5*22.  KIDS will not check
+          for the existence of this patch, because it pre-dates KIDS.
+              The site is responsible for performing the check.
+        * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+Patch VAQ*1.5*30
+ 
+NOIS CHY-0201-51534, ASH-0501-32739, CPH-0501-40775, BHS-0601-10382,
+     HIN-0701-42706, OKL-0701-70784
+Test Sites: Oklahoma City, OK; Asheville, NC; Central Plains HCS
+
+This patch prevents the sending of PDX messages to closed domains in two
+ways.
+
+1. Prevents the addition of closed domains to outgoing groups:
+Screens are placed on 2 fields in the REMOTE FACILITY multiple
+in file 394.83, VAQ - OUTGOING GROUP.  The fields are .01 REMOTE FACILITY
+and .02 REMOTE DOMAIN.  For both of these, the DOMAIN file is checked
+to ensure that the domain is not closed.  If it is, the screen fails
+and you are prevented from adding the remote facility to the outgoing group.
+
+2. Removes closed domains from outgoing groups:
+When PDX messages to outgoing groups are being built, the DOMAIN file is
+checked to ensure that the domain is not closed.  If it is, the remote
+facility is deleted from the outgoing group, and the PDX message is not
+sent to that domain.
+ 
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It requires PDX patch VAQ*1.5*22.  KIDS will not check
+for the existence of this patch, because it pre-dates KIDS.  The site is
+responsible for performing the check.
+==========================================================================
+ 
+ROUTINES:
+The second line of the routine now looks like:
+       ;;1.5;PATIENT DATA EXCHANGE;**[patch list]**;NOV 17, 1993
+ 
+             Before        After
+Name       Checksum     Checksum     Patch List
+-----------------------------------------------------------------
+VAQREQ03    3858669      4459512     22,30
+VAQREQ05    4065406      4263629     30
+VAQXRF2     2617277      3203802     30
+* Checksums produced by CHECK^XTSUMBLD
+ 
+This patch introduces no new routines.
+==========================================================================
+ 
+INSTALLATION:
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It requires PDX patch VAQ*1.5*22.  KIDS will not check
+for the existence of this patch, because it pre-dates KIDS.  The site is
+responsible for performing the check.
+1.  Users may be on the system during installation of this patch.
+2.  DSM Sites: If any of these routines is mapped, disable mapping for the
+    affected routine(s).  
+3.  On the PackMan menu, use the 'INSTALL/CHECK MESSAGE' option.
+    This loads the patch into a Transport Global on your system.  
+4.  You do not need to stop TaskMan or the background filer.
+    Users may be on the system.
+5.  On the KIDS:Installation menu, use the following options to install
+    the Transport Global.
+       Verify Checksums in Transport Global
+       Print Transport Global
+       Compare Transport Global to Current System
+       Backup a Transport Global
+       Install Package(s)
+ Select INSTALL NAME:   VAQ*1.5*30   Loaded from Distribution &lt;date/time&gt;
+                        ==========
+ Install Questions:
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                       ==
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+                                                                       ==
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+ 
+ DEVICE: HOME// &lt;It's up to you.  You may queue it if you wish.&gt;
+                ------------------------------------------------
+6.  DSM Sites: After patch has installed, rebuild your map set, if
+    necessary.
+==========================================================================
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;34 SEQ #30</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch VAQ*1.5*34
+ 
+NOIS BIR-1101-31486
+Test Site: Birmingham, AL
+
+Patch VAQ*1.5*30 exposed a problem which was not caught during its
+extensive testing period.  It was not caught until it was released.
+We're very sorry about that.
+
+It is evidenced by the following:
+
+&gt;D ^%G
+
+Global ^VAT(394.86
+        VAT(394.86
+^VAT(394.86,0) = VAQ - AUTO-NUMBERING^394.86^1^1
+^VAT(394.86,1,0) = 1
+^VAT(394.86,1,1) = 390
+^VAT(394.86,1,2) = "1"  &lt;----- corrupted
+^VAT(394.86,1,3) = 8
+^VAT(394.86,"B",1,1) = 
+
+and by:
+
+Global ^VAT(394.62,466
+        VAT(394.62,466
+^VAT(394.62,466,0) = "1"  &lt;----- corrupted
+  ...
+^VAT(394.62,"B","""1""",466) =  &lt;----- corrupted
+
+This patch fixes that, and cleans up the corruption in file 394.86.
+It can't fix PDXs which were adversely affected.  It can't fix file 394.62.
+The PDXs will have to be resent, or the data entered manually, if necessary.
+
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It requires patch VAQ*1.5*30.
+==========================================================================
+ 
+ROUTINES:
+The second line of the routine now looks like:
+       ;;1.5;PATIENT DATA EXCHANGE;**[patch list]**;NOV 17, 1993
+ 
+             Before        After
+Name       Checksum     Checksum     Patch List
+-----------------------------------------------------------------
+VAQFILE1    4265693      4507302     22,34
+VAQPRE34    * NEW *       148728     34
+* Checksums produced by CHECK^XTSUMBLD
+
+This patch introduces the following new routine:
+VAQPRE34 - pre-init has no user-callable entry points
+==========================================================================
+ 
+INSTALLATION:
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It requires patch VAQ*1.5*30.
+1.  Users may be on the system during installation of this patch.
+2.  DSM Sites: If any of these routines is mapped, disable mapping for the
+    affected routine(s).  
+3.  On the PackMan menu, use the 'INSTALL/CHECK MESSAGE' option.
+    This loads the patch into a Transport Global on your system.  
+4.  You do not need to stop TaskMan or the background filer.
+    Users may be on the system.
+5.  On the KIDS:Installation menu, use the following options to install
+    the Transport Global.
+       Verify Checksums in Transport Global
+       Print Transport Global
+       Compare Transport Global to Current System
+       Backup a Transport Global
+       Install Package(s)
+ Select INSTALL NAME:   VAQ*1.5*34   Loaded from Distribution &lt;date/time&gt;
+                        ==========
+ Install Questions:
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                       ==
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+                                                                       ==
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+ 
+ DEVICE: HOME// &lt;It's up to you.  You may queue it if you wish.&gt;
+                ------------------------------------------------
+6.  DSM Sites: After patch has installed, rebuild your map set, if
+    necessary.
+==========================================================================
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;33 SEQ #31</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch VAQ*1.5*33
+ 
+NOIS SBY-0801-31431, FAV-1001-70165, COS-1001-40729, MAR-1001-20783
+Test Site: Salisbury, NC; Fayetteville, AR; Columbus, OH
+
+This patch checks PDX requests from remote sites to ensure that the remote
+site is not flagged as Closed in the Domain file.  If the Domain file shows
+that the site is closed, then the request is ignored, the message is
+deleted from the server basket, and a message is sent to the members of the
+group G.VAQ PDX ERRORS to inform them of this.
+
+NOIS WBP-0596-21007
+Test Site: Wilkes Barre, PA
+
+This patch ensures that incoming PDX messages are deleted from the server
+basket, whether they processed successfully or errored out.
+
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It has no patch pre-requisites.
+==========================================================================
+ 
+ROUTINES:
+The second line of the routine now looks like:
+       ;;1.5;PATIENT DATA EXCHANGE;**[patch list]**;NOV 17, 1993
+ 
+             Before        After
+Name       Checksum     Checksum     Patch List
+-----------------------------------------------------------------
+VAQADM2     2534049      3075526     33
+* Checksums produced by CHECK^XTSUMBLD
+ 
+This patch introduces no new routines.
+==========================================================================
+ 
+INSTALLATION:
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It has no patch pre-requisites.
+1.  Users may be on the system during installation of this patch.
+2.  DSM Sites: If any of these routines is mapped, disable mapping for the
+    affected routine(s).  
+3.  On the PackMan menu, use the 'INSTALL/CHECK MESSAGE' option.
+    This loads the patch into a Transport Global on your system.  
+4.  You do not need to stop TaskMan or the background filer.
+    Users may be on the system.
+5.  On the KIDS:Installation menu, use the following options to install
+    the Transport Global.
+       Verify Checksums in Transport Global
+       Print Transport Global
+       Compare Transport Global to Current System
+       Backup a Transport Global
+       Install Package(s)
+ Select INSTALL NAME:   VAQ*1.5*33   Loaded from Distribution &lt;date/time&gt;
+                        ==========
+ Install Questions:
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                       ==
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+                                                                       ==
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+ 
+ DEVICE: HOME// &lt;It's up to you.  You may queue it if you wish.&gt;
+                ------------------------------------------------
+6.  DSM Sites: After patch has installed, rebuild your map set, if
+    necessary.
+==========================================================================
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;35 SEQ #32</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-01-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch VAQ*1.5*35
+ 
+NOIS FAV-1001-70165, MWV-1201-20937
+Test Sites: Fayetteville, AR; Martinsburg, WV
+
+This patch prevents the option VAQ PDX PROCESS EXTERNAL from displaying
+to the user any external requests from closed sites.  Any such requests
+will be marked for purge.
+
+This patch also provides a double-check to ensure that no transactions
+are sent to closed sites.  Any such requests will be marked for purge.
+
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It requires patch VAQ*1.5*29.
+==========================================================================
+ 
+ROUTINES:
+The second line of the routine now looks like:
+       ;;1.5;PATIENT DATA EXCHANGE;**[patch list]**;NOV 17, 1993
+ 
+             Before        After
+Name       Checksum     Checksum     Patch List
+-----------------------------------------------------------------
+VAQADM50    4268774      5135296     5,35
+VAQEXT01    5668219      6188779     14,35
+VAQUTL97    1499668      1906264     2,9,29,35
+* Checksums produced by CHECK^XTSUMBLD
+
+This patch introduces no new routines.
+==========================================================================
+ 
+INSTALLATION:
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It requires patch VAQ*1.5*29.
+1.  Users may be on the system during installation of this patch.
+2.  DSM Sites: If any of these routines is mapped, disable mapping for the
+    affected routine(s).  
+3.  On the PackMan menu, use the 'INSTALL/CHECK MESSAGE' option.
+    This loads the patch into a Transport Global on your system.  
+4.  You do not need to stop TaskMan or the background filer.
+    Users may be on the system.
+5.  On the KIDS:Installation menu, use the following options to install
+    the Transport Global.
+       Verify Checksums in Transport Global
+       Print Transport Global
+       Compare Transport Global to Current System
+       Backup a Transport Global
+       Install Package(s)
+ Select INSTALL NAME:   VAQ*1.5*35   Loaded from Distribution &lt;date/time&gt;
+                        ==========
+ Install Questions:
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                       ==
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+                                                                       ==
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+ 
+ DEVICE: HOME// &lt;It's up to you.  You may queue it if you wish.&gt;
+                ------------------------------------------------
+6.  DSM Sites: After patch has installed, rebuild your map set, if
+    necessary.
+==========================================================================
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;37 SEQ #33</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-01-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch VAQ*1.5*37
+ 
+NOIS MAD-1201-42417
+Test Site: Madison, WI
+
+If two (or more) PDX patients share the same first initial of the last name
+and the same last 4 digits of the SSN, PDX will only show the first patient
+when attempting to Load/Edit PDX Transactions based on patient name.
+This patch fixes that.
+
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It has no patch prerequisite.
+==========================================================================
+ 
+ROUTINES:
+The second line of the routine now looks like:
+       ;;1.5;PATIENT DATA EXCHANGE;**[patch list]**;NOV 17, 1993
+ 
+             Before        After
+Name       Checksum     Checksum     Patch List
+-----------------------------------------------------------------
+VAQUTL96     370770       419526     37
+* Checksums produced by CHECK^XTSUMBLD
+
+This patch introduces no new routines.
+==========================================================================
+ 
+INSTALLATION:
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It has no patch prerequisite.
+1.  Users may be on the system during installation of this patch.
+2.  DSM Sites: If any of these routines is mapped, disable mapping for the
+    affected routine(s).  
+3.  On the PackMan menu, use the 'INSTALL/CHECK MESSAGE' option.
+    This loads the patch into a Transport Global on your system.  
+4.  You do not need to stop TaskMan or the background filer.
+    Users may be on the system.
+5.  On the KIDS:Installation menu, use the following options to install
+    the Transport Global.
+       Verify Checksums in Transport Global
+       Print Transport Global
+       Compare Transport Global to Current System
+       Backup a Transport Global
+       Install Package(s)
+ Select INSTALL NAME:   VAQ*1.5*37   Loaded from Distribution &lt;date/time&gt;
+                        ==========
+ Install Questions:
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                       ==
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+                                                                       ==
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+ 
+ DEVICE: HOME// &lt;It's up to you.  You may queue it if you wish.&gt;
+                ------------------------------------------------
+6.  DSM Sites: After patch has installed, rebuild your map set, if
+    necessary.
+==========================================================================
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;36 SEQ #34</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-02-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch VAQ*1.5*36
+ 
+NOIS ANC-1201-51582
+Test Site: Anchorage, AK
+
+Patch VAQ*1.5*30 caused some corrupted .01 fields in file 394.62.  Patch
+VAQ*1.5*34 stopped further corruption.  (Please see the description in
+patch VAQ*1.5*34 for an explanation of the corruption.)  The corruption
+cannot be undone, but it can be ignored.  This patch ensures that the
+corrupted .01 fields will not adversely affect NHE or any its data.
+
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It requires patch VAQ*1.5*34.
+==========================================================================
+ 
+ROUTINES:
+The second line of the routine now looks like:
+       ;;1.5;PATIENT DATA EXCHANGE;**[patch list]**;NOV 17, 1993
+ 
+             Before        After
+Name       Checksum     Checksum     Patch List
+-----------------------------------------------------------------
+VAQUTL92    2986759      2983392     6,36
+* Checksums produced by CHECK^XTSUMBLD
+
+This patch introduces no new routines.
+==========================================================================
+ 
+INSTALLATION:
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It requires patch VAQ*1.5*34.
+1.  Users may be on the system during installation of this patch.
+2.  DSM Sites: If any of these routines is mapped, disable mapping for the
+    affected routine(s).  
+3.  On the PackMan menu, use the 'INSTALL/CHECK MESSAGE' option.
+    This loads the patch into a Transport Global on your system.  
+4.  You do not need to stop TaskMan or the background filer.
+    Users may be on the system.
+5.  On the KIDS:Installation menu, use the following options to install
+    the Transport Global.
+       Verify Checksums in Transport Global
+       Print Transport Global
+       Compare Transport Global to Current System
+       Backup a Transport Global
+       Install Package(s)
+ Select INSTALL NAME:   VAQ*1.5*36   Loaded from Distribution &lt;date/time&gt;
+                        ==========
+ Install Questions:
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                       ==
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+                                                                       ==
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+ 
+ DEVICE: HOME// &lt;It's up to you.  You may queue it if you wish.&gt;
+                ------------------------------------------------
+6.  DSM Sites: After patch has installed, rebuild your map set, if
+    necessary.
+==========================================================================
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;38 SEQ #35</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-09-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch VAQ*1.5*38
+ 
+NOIS MAD-1001-42696
+Test Sites: Madison, WI; Milwaukee, WI; Tomah, WI; Iron Mountain, MI
+
+If a veteran declines to give income information, PDX should display the
+means test as CAT C.  Instead, PDX may display it as CAT A.  This patch
+fixes that.
+
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It has no patch prerequisite.
+==========================================================================
+ 
+ROUTINES:
+The second line of the routine now looks like:
+       ;;1.5;PATIENT DATA EXCHANGE;**[patch list]**;NOV 17, 1993
+ 
+             Before        After
+Name       Checksum     Checksum     Patch List
+-----------------------------------------------------------------
+VAQDBIM     4078867      4144431     38
+VAQDBIM4    3774719      4191649     38
+* Checksums produced by CHECK^XTSUMBLD
+
+This patch introduces no new routines.
+==========================================================================
+ 
+INSTALLATION:
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It has no patch prerequisite.
+1.  Users may be on the system during installation of this patch.
+2.  DSM Sites: If any of these routines is mapped, disable mapping for the
+    affected routine(s).  
+3.  On the PackMan menu, use the 'INSTALL/CHECK MESSAGE' option.
+    This loads the patch into a Transport Global on your system.  
+4.  You do not need to stop TaskMan or the background filer.
+    Users may be on the system.
+5.  On the KIDS:Installation menu, use the following options to install
+    the Transport Global.
+       Verify Checksums in Transport Global
+       Print Transport Global
+       Compare Transport Global to Current System
+       Backup a Transport Global
+       Install Package(s)
+ Select INSTALL NAME:   VAQ*1.5*38   Loaded from Distribution &lt;date/time&gt;
+                        ==========
+ Install Questions:
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                       ==
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+                                                                       ==
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+ 
+ DEVICE: HOME// &lt;It's up to you.  You may queue it if you wish.&gt;
+                ------------------------------------------------
+6.  DSM Sites: After patch has installed, rebuild your map set, if
+    necessary.
+==========================================================================
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;39 SEQ #36</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-10-25 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch VAQ*1.5*39
+ 
+NOIS TNV-0902-30675 (Remedy Ticket HD8627/CHG2933)
+Test Sites: Tennessee Valley HCS
+
+Duplicate transaction numbers in file VAQ - TRANSACTION (#394.61) continue
+to be a problem.  The pre-init for this patch deletes the triggers on the
+TRANSACTION NUMBER (#.01) field in file VAQ - TRANSACTION (#394.61) and
+DATA (#.01) field in file VAQ - DATA (#394.62).  These triggers are
+unnecessary and are probably the cause of the problems.  After the patch
+is installed, duplicate transaction numbers should no longer be created.
+Feel free to delete the pre-init, ^VAQPRE39, after installation.
+
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It has no patch prerequisite.
+==========================================================================
+ 
+ROUTINES:
+The second line of the routine now looks like:
+       ;;1.5;PATIENT DATA EXCHANGE;**[patch list]**;NOV 17, 1993
+ 
+             Before        After
+Name       Checksum     Checksum     Patch List
+-----------------------------------------------------------------
+VAQPRE39    * NEW *       268564     39
+* Checksums produced by CHECK^XTSUMBLD
+
+This patch introduces the following new routine:
+VAQPRE39 has no user-callable entry points and may be deleted after the
+patch has been installed.
+==========================================================================
+ 
+INSTALLATION:
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It has no patch prerequisite.
+1.  Users may be on the system during installation of this patch.
+2.  DSM Sites: If any of these routines is mapped, disable mapping for the
+    affected routine(s).  
+3.  On the PackMan menu, use the 'INSTALL/CHECK MESSAGE' option.
+    This loads the patch into a Transport Global on your system.  
+4.  You do not need to stop TaskMan or the background filer.
+    Users may be on the system.
+5.  On the KIDS:Installation menu, use the following options to install
+    the Transport Global.
+       Verify Checksums in Transport Global
+       Print Transport Global
+       Compare Transport Global to Current System
+       Backup a Transport Global
+       Install Package(s)
+ Select INSTALL NAME:   VAQ*1.5*39   Loaded from Distribution &lt;date/time&gt;
+                        ==========
+ Install Questions:
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                       ==
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+                                                                       ==
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+ 
+ DEVICE: HOME// &lt;It's up to you.  You may queue it if you wish.&gt;
+                ------------------------------------------------
+6.  DSM Sites: After patch has installed, rebuild your map set, if
+    necessary.
+==========================================================================
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;40 SEQ #37</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-02-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch VAQ*1.5*40
+ 
+NOIS MAD-0103-41237
+Test Sites: Madison, Milwaukee, Tomah, &amp; Iron Mtn
+
+This patch adds Yugoslavia service and Purple Heart information to the
+PDX*MAS data which PDX extracts from the PATIENT file and displays on
+screen 6.
+
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It requires PDX patches VAQ*1.5*22 and *24.  KIDS will
+not check for the existence of these patches, because they pre-date KIDS.
+The site is responsible for performing the check.
+==========================================================================
+ 
+ROUTINES:
+The second line of the routine now looks like:
+       ;;1.5;PATIENT DATA EXCHANGE;**[patch list]**;NOV 17, 1993
+ 
+             Before        After
+Name       Checksum     Checksum     Patch List
+-----------------------------------------------------------------
+VAQDBII1    2817374      2861649     13,24,40
+VAQDIS30    5471356      6429479     13,22,40
+* Checksums produced by CHECK^XTSUMBLD
+
+This patch introduces no new routines.
+==========================================================================
+ 
+INSTALLATION:
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It requires PDX patches VAQ*1.5*22 and *24.  KIDS will
+not check for the existence of these patches, because they pre-date KIDS.
+The site is responsible for performing the check.
+1.  Users may be on the system during installation of this patch.
+2.  DSM Sites: If any of these routines is mapped, disable mapping for the
+    affected routine(s).  
+3.  On the PackMan menu, use the 'INSTALL/CHECK MESSAGE' option.
+    This loads the patch into a Transport Global on your system.  
+4.  You do not need to stop TaskMan or the background filer.
+    Users may be on the system.
+5.  On the KIDS:Installation menu, use the following options to install
+    the Transport Global.
+       Verify Checksums in Transport Global
+       Print Transport Global
+       Compare Transport Global to Current System
+       Backup a Transport Global
+       Install Package(s)
+ Select INSTALL NAME:   VAQ*1.5*40   Loaded from Distribution &lt;date/time&gt;
+                        ==========
+ Install Questions:
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                       ==
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+                                                                       ==
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+ 
+ DEVICE: HOME// &lt;It's up to you.  You may queue it if you wish.&gt;
+                ------------------------------------------------
+6.  DSM Sites: After patch has installed, rebuild your map set, if
+    necessary.
+==========================================================================
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;43 SEQ #38</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-08-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will prevent a new patient from being added to the Patient (#2)
+file if an existing patient with the same SSN exists.  It also corrects a
+DR variable leak.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;42 SEQ #39</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-02-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch VAQ*1.5*42
+ 
+NOIS: none
+Test Sites: Oklahoma City, OK; Madison, WI; Milwaukee, WI; Tomah, WI;
+            Montana HCS
+
+This patch alters PDX to use the new API from IB (Integrated Billing),
+introduced in patch IB*2.0*256, to access billing (insurance) data.
+
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It requires patch IB*2.0*267.  It also requires patch
+VAQ*1.5*13.  (KIDS will not check for this patch because it predates KIDS.
+You must check manually.)
+==========================================================================
+ 
+ROUTINES:
+The second line of the routine now looks like:
+       ;;1.5;PATIENT DATA EXCHANGE;**[patch list]**;NOV 17, 1993
+ 
+             Before        After
+Name       Checksum     Checksum     Patch List
+-----------------------------------------------------------------
+VAQDBIP7    3165540     11036802     13,42
+
+* Checksums produced by CHECK^XTSUMBLD
+
+This patch introduces no new routines.
+==========================================================================
+ 
+INSTALLATION:
+NOTE: This patch should be installed during off hours, when user activity
+is at a minimum.  It requires patch IB*2.0*267.  It also requires patch
+VAQ*1.5*13.  (KIDS will not check for this patch because it predates KIDS.
+You must check manually.)
+1.  Users may be on the system during installation of this patch.
+2.  DSM Sites: If any of these routines is mapped, disable mapping for the
+    affected routine(s).  
+3.  On the PackMan menu, use the 'INSTALL/CHECK MESSAGE' option.
+    This loads the patch into a Transport Global on your system.  
+4.  You do not need to stop TaskMan.
+    Users may be on the system.
+5.  On the KIDS:Installation menu, use the following options to install
+    the Transport Global.
+       Verify Checksums in Transport Global
+       Print Transport Global
+       Compare Transport Global to Current System
+       Backup a Transport Global
+       Install Package(s)
+ Select INSTALL NAME:   VAQ*1.5*42   Loaded from Distribution &lt;date/time&gt;
+                        ==========
+ Install Questions:
+ Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                       ==
+ Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+                                                                       ==
+ Enter the Device you want to print the Install messages.
+ You can queue the install by enter a 'Q' at the device prompt.
+ Enter a '^' to abort the install.
+ 
+ DEVICE: HOME// &lt;It's up to you.  You may queue it if you wish.&gt;
+                ------------------------------------------------
+6.  DSM Sites: After patch has installed, rebuild your map set, if
+    necessary.
+==========================================================================
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;41 SEQ #40</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-06-25 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch VAQ*1.5*41. Please refere to the Description in Forum Patch Module 
+for details.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;44 SEQ #41</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2014-01-08 15:25:50</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch addresses 2 issues with Patient Data Exchange (PDX):
+ 
+1) Issues adding users to notify for PDX transactions  
+2) &lt;UNDEFINED&gt; errors occurring due to invalid Health Summary
+   Component entries.
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>POST-INITIALIZATION ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_VAQPST01.html">VAQPST01</a></td>
+</tr>
+<tr>
+<td>POST-INIT COMPLETION DATE</td>
+<td>1996-07-22 15:53:10</td>
+</tr>
+<tr>
+<td>EXCLUDED NAME SPACE</td>
+<td>
+<ol>
+<li>
+<dt>EXCLUDED NAME SPACE:  &nbsp;&nbsp;VAQZ</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

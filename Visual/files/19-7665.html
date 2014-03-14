@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzY2NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENFARB (7665) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzY2NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENFARB</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Summary of SGL Balances</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SUMMARY OF SGL BALANCES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option generates a report of closing dollar balances by Standard
+General Ledger for a specified month. This data is obtained from FAP
+Documents (FA, FB, FC, FD, and FR) that have been sent by the site. The
+output is sorted by Station and optionally by Fund.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-18.html">ENGINEERING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_ENFARB.html">ENFARB</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

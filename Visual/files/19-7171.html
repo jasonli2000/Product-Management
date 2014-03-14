@@ -1,0 +1,98 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzE3MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCN NX OUTSTAND REPORT (7171) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzE3MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCN NX OUTSTAND REPORT</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Outstanding Equipment Requests Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>OUTSTANDING EQUIPMENT REQUESTS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This report prints a list of requests by service and priority that
+have not been processed yet.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>print</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-154.html">EQUIPMENT/TURN-IN REQUEST</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>I IOT["TRM" W !!,"Press RETURN to continue..." R C:DTIME</td>
+</tr>
+<tr>
+<td>DIC {DIP}</td>
+<td>PRCN(413,</td>
+</tr>
+<tr>
+<td>L.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FLDS</td>
+<td>[PRCNBRIE]</td>
+</tr>
+<tr>
+<td>BY</td>
+<td>[PRCNSRPR]</td>
+</tr>
+<tr>
+<td>DHD</td>
+<td>Outstanding Equipment Request Report</td>
+</tr>
+<tr>
+<td>DIS(0)</td>
+<td>I $P(^PRCN(413,D0,0),U,7)=31!($P(^(0),U,7)=10)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

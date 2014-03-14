@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNjI2Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ONCO STAT-SURVIVAL TX (6263) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNjI2Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ONCO STAT-SURVIVAL TX</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Survival by Treatment</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SURVIVAL BY TREATMENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Providing there is sufficient data, life tables and survival curves
+can be produced using Treatment or Sequence of Treatment as a
+variable. Treatment groups are defined, and search templates may
+be used to further refine the group studied.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-128.html">ONCOLOGY</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>TX^<a href="http://code.osehra.org/dox/Routine_ONCOSSAT.html">ONCOSSAT</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

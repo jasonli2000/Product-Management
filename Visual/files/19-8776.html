@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODc3Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SCMC PC ATTENDING CONVERSION (8776) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODc3Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SCMC PC ATTENDING CONVERSION</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>PC Attending Conversion Utility</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PC ATTENDING CONVERSION UTILIT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This tool will allow the user to convert current and future PC
+Attending assignments to PC Practitioner assignments.  Any assignment
+that is not current, discharged, will not be affected.  This
+utility can be run in one of two modes CHECK or FIX.  CHECK will
+go through the same procedures and checks that the FIX mode does
+only it will not convert the assignments.   It will provide the
+same report for the user to review.
+ 
+It is strongly recommended that the CHECK method be utilized first.
+This will give the user an understanding of how many records are
+affected.  When the decission is made to run in FIX mode, it is
+reommened that a small set of teams or positions be selected first.
+After the report comes back check the results before moving on.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>MAIN^<a href="http://code.osehra.org/dox/Routine_SCMCCV1.html">SCMCCV1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

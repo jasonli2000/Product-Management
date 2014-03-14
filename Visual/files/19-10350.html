@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTAzNTA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FSC TASK AGE (10350) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTAzNTA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FSC TASK AGE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Task to Update Age Fields</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>TASK TO UPDATE AGE FIELDS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is a NOIS task that runs every night.  It updates fields that
+are computed from data entered into NOIS calls (ex. age of call, age since
+last edit, office for development, etc.).  This task should be scheduled to
+run every night after midnight.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>AGE^<a href="http://code.osehra.org/dox/Routine_FSCTASKA.html">FSCTASKA</a></td>
+</tr>
+<tr>
+<td>INDEPENDENTLY INVOCABLE</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

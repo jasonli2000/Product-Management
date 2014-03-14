@@ -1,0 +1,91 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS05MDAwMDEwLjA3").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>V POV (9000010.07) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS05MDAwMDEwLjA3" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>V POV</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file has been designed for joint use by the Indian Health Service and
+the Department of Veteran Affairs.  POV is an abbreviation for "Purpose of
+Visit" (descriptive name used by IHS) or "Problem of Visit" (descriptive
+name used by VA).
+ 
+The V POV file is used to store clinical data related to the "purpose of
+visit" or "problem of visit", (POV). This is the provider's definition of
+what diagnosis to use to represent the patient care given at the visit.
+The POV entry is not the patient's "Chief Complaint" text.  It is the
+diagnosis as defined by the provider which will have an ICD Diagnosis
+code related to it to support Clinical needs and additionally support
+Administrative functions too such as Billing, Workload, and DSS.  
+ 
+There should be at least one "purpose of visit" (descriptive name used by
+IHS) or one "problem of visit" (descriptive name used by the VA) in the V
+POV file for each patient visit whether it is an inpatient, outpatient or
+field visit, and regardless of the discipline of the provider (i.e.
+dental, CHN, mental health, etc.). There is no limit to the number of
+POV's that can be entered for a patient for a given encounter.
+  
+At IHS facilities, POV's are generated automatically for this file at
+time of discharge from the Admission, Discharge and Transfer (ADT) system.
+POV's are entered in narrative form, and coded automatically to the 
+appropriate ICD9 code. Physician entered narrative which modifies the
+diagnosis, such as "doubtful, suspect, resolved" are entered by the data
+entry person in the MODIFIER field.  Narrative qualifiers, such as "not
+healing well", "date of onset", "severe" etc.. are stored in the NARRATIVE
+QUALIFIER field.  STAGE is used only as a local option.  The file contains
+pointers to the IHS Patient file, and visit file, and data must exist in
+both of these files for this visit before a POV can be entered here.
+ 
+At VA facilities, POV is used as an abbreviation for "Problem of Visit",
+or the problem treated at the visit.  POV's are primarily created
+for clinic visits from 3 sources:
+  1) The scheduling checkout process, in which case the information
+collected about the POV is limited to the ICD Diagnosis code.  The
+provider narrative becomes the ICD narrative from the ICD Diagnosis file.
+  2) The Encounter Form automated data scanning (AICS package).  In this
+case the provider narrative is the terminology defined by the clinician to
+represent the diagnosis on the encounter form. The AICS package, or other
+automated data capture tool, is able to pass the narrative and the ICD
+Diagnosis.  If the problem treated at the visit was a pre-existing problem
+from the patient's "Problem List", the related problem entry is also
+stored in the POV record. (The Problem List orientation is not utilized by
+IHS.)
+  3) The manual data entry process for encounter form data not collected
+via automated data capture.  This process is the most like the process IHS
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

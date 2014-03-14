@@ -1,0 +1,126 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuNC0xNTA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TOA (150) &nbsp;&nbsp;  AUTO INSTRUMENT (62.4)</h1>
+<div id="demo"><table id="NjIuNC0xNTA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TOA</td>
+</tr>
+<tr>
+<td>PROGRAM</td>
+<td>LATOA</td>
+</tr>
+<tr>
+<td>ENTRY for LAGEN ROUTINE</td>
+<td>Accession cross-reference</td>
+</tr>
+<tr>
+<td>CROSS LINKED BY</td>
+<td>ID</td>
+</tr>
+<tr>
+<td>*ECHO ALL INPUT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>METHOD</td>
+<td>TOA</td>
+</tr>
+<tr>
+<td>OVERLAY DATA</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>NEW DATA</td>
+<td>D NEW^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>RESTART</td>
+<td>D RESTART^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>CHEM TESTS</td>
+<td>
+<ol>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-1.html">WBC</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=+$E(Y(1),16,18)_"."_$E(Y(1),19)</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(384,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-2.html">RBC</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=+$E(Y(1),21,22)_"."_$E(Y(1),23,24),RBC=V</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(385,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-3.html">HGB</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=+$E(Y(1),26,28)_"."_$E(Y(1),29),HGB=V</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(386,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-4.html">HCT</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=+$E(Y(1),31,33)_"."_$E(Y(1),34),HCT=V</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(387,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-9.html">PLT</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=+$E(Y(1),36,39)</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(392,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-5.html">MCV</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=HCT/RBC*10,V=$J(V,1,0)</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(388,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-6.html">MCH</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=HGB/RBC*10,V=$J(V,1,1)</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(389,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-7.html">MCHC</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=HGB/HCT*100,V=$J(V,1,1)</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(390,1)</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERFACE NOTES</td>
+<td><pre>
+Param 2 may be used to divide value.  Example: If RBC is 504 and param 2
+is 100 the value will be 5.04.  The variables RBC, HCT, and HGB are
+available to calculate indices.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

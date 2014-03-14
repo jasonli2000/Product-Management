@@ -1,0 +1,146 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTEyNQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU RE-INDEX DOCUMENT FILE (125) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTEyNQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU RE-INDEX DOCUMENT FILE</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>RE-INDEX TIU DOCUMENT FILE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This bulletin will be delivered to the user who initiated the re-indexing
+process as a notice that processing has completed without error.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+    *******  RE-INDEXING OF TIU DOCUMENTS COMPLETED  *******
+  
+The Re-indexing of the TIU DOCUMENTS file (#8925) has successfully
+completed.
+   
+                         RE-INDEX STARTED:  |1|
+                       RE-INDEX COMPLETED:  |2|
+
+           COMPLETED Documents Re-indexed:            |4|
+            UNSIGNED Documents Re-indexed:             |5|
+          UNCOSIGNED Documents Re-indexed:             |6|
+
+          TOTAL # of Documents Re-indexed:            |7|
+                             ELAPSED TIME:        |8|
+                         DOCUMENTS/SECOND:           |9|
+
+NOTE: Not every document in file 8925 will be included in one of these
+indices, so you shouldn't expect agreement between the total # of
+documents re-indexed and the total # of entries in the file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Date/Time re-indexing began.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Date/Time re-indexing completed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Number of Documents added to the ACLPT X-ref.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;4</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Number of Documents added to the ACLSB X-ref.
+
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;5</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Number of Documents added to the ACLAU X-ref.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;6</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Number of Documents added to the ACLEC X-ref.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;7</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+TOTAL Number of Documents Re-indexed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;8</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Elapsed Time.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;9</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Re-indexing rate (documents/sec)
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

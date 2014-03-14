@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTMyNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LRMIXALL (1327) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTMyNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LRMIXALL</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Re-index Antimicrobial Suscept File (62.06)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RE-INDEX ANTIMICROBIAL SUSCEPT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ This option is used to re-index a single antibiotic in the 'ANTIBICROBIAL
+SUSCEPTIBILITY file (#62.06).  This option differs from the FileMan re-
+index in two ways. 1) This option removes all X-ref entries. 2) It allows
+the user to select a single antibiotic.
+ When a selection is made, X-Ref of 'AI',"AJ" and "AS" cleared and re
+defined.
+  Note: This option may be used when trouble shooting Microbiology results
+print out of antibiotics.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>MAN^<a href="http://code.osehra.org/dox/Routine_LRMIXALL.html">LRMIXALL</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

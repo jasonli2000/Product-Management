@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0xOC4wMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VISTALINK LISTENER CONFIGURATION (18.03) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0xOC4wMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VISTALINK LISTENER CONFIGURATION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file holds VistALink Listener configurations.  A configuration may 
+contain multiple Listener ports, and each Listener port may be configured 
+to start upon system startup.  Note: This only applies to Cache NT 
+systems.  VMS/DSM systems need to use the TCP/IP (UCX) utility to have
+Listeners automatically started on reboot.
+ 
+This file is pointed to by the Foundations Site Parameters file (#18.01)
+and is used when obtaining the default Listener configuration for a 
+specified BOX-VOLUME pair.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

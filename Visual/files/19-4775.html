@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDc3NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>NURAED-BATSEP-QUEUE (4775) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDc3NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>NURAED-BATSEP-QUEUE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>TaskManager Activation/Separation Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>TASKMANAGER ACTIVATION/SEPARAT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to queue the activation/separation report to print daily
+at a time designated by the user.  This option should be queued at least 2
+hours after queuing of the NURAAM-ACU option.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-106.html">NURSING SERVICE</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>I $D(ZTSK) S (NUROUT,NQSW,NURMDSW)=0,X="T-1" D ^<a href="http://code.osehra.org/dox/Routine_%25DT.html">%DT</a> S NURSDATE=$S(+Y:Y,1:"") D EN9^<a href="http://code.osehra.org/dox/Routine_NURSAGSP.html">NURSAGSP</a> S:NURMDSW NURFAC=1 D:+NURSDATE START^NURAFSD</td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTAwNTg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XU PROC CNT CLUP (10058) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTAwNTg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XU PROC CNT CLUP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>XUS Process count cleanup</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>XUS PROCESS COUNT CLEANUP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This Option is only needed for GT.M sites.
+For a GT.M site it should be scheduled to run between every 1 to 8 hours.
+This is the Kernel process count cleanup routine.
+It checks the entries in XUTL("XUSYS",$J) to see if they are still active
+and if not remove the entry.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-3.html">KERNEL</a></td>
+</tr>
+<tr>
+<td>DELEGABLE</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>CLEAR^XUSCNT(0)</td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

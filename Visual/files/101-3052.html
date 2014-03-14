@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTMwNTI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RG ADT OUTPATIENT ENCOUNTER DRIVER (3052) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTMwNTI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RG ADT OUTPATIENT ENCOUNTER DRIVER</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>CIRN ADT Outpatient Data Capture</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The addition of the RG ADT OUTPATIENT ENCOUNTER DRIVER protocol will 
+allow the tracking of patient information during clinic checkout 
+events initiated by the Scheduling (PIMS) module.
+ 
+This protocol builds HL7 messages that update the TREATING FACILITY LIST
+(#391.91) file, tracking the DATE LAST TREATED (#.03) and ADT/HL7 EVENT
+REASON (#.07) fields for a particular patient at a given facility.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>extended action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-170.html">CLINICAL INFO RESOURCE NETWORK</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K RGSD101</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S RGSD101="" D EN^<a href="http://code.osehra.org/dox/Routine_RGADT1.html">RGADT1</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2001-06-25 13:05:59</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

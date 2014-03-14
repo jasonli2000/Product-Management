@@ -1,0 +1,59 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02OS42").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LAB PENDING ORDERS ENTRY (69.6) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02OS42" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LAB PENDING ORDERS ENTRY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Lab Orders Pending file serves as a temporary storage locations for
+electronic laboratory test orders. LEDI software populates and manages the
+contents of this file.
+ 
+Electronic test orders from VA collecting sites are stored in this file
+until ordered test results have been returned. Electronic orders are
+matched with physically shipped specimen during accessioning process.
+Specimen processing status update information is also stored in this file
+to assist in the management of workload.
+ 
+When the results have been stored in the collecting site's patient
+clinical record, entries will be purged from this file.
+ 
+NOTE: The user should not directly edit this file via FileMan. Appropriate
+options are provided to manage the data in this file.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

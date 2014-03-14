@@ -1,0 +1,98 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzYwOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RC RC SERV (7608) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzYwOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RC RC SERV</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>RC SERVER DRIVER</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RC SERVER DRIVER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Messages will be sent to this server from the Regional Counsel data
+base.  These messages will contain a data line for every Reimbursable
+Health bill that was referred from this medical center.  These messages
+may be very long.  This server will also create and send confirmation
+and error messages. The tasked job will be set to run at the time of the
+server execution.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>server</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-53.html">ACCOUNTS RECEIVABLE</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D SERVER^<a href="http://code.osehra.org/dox/Routine_RCRCSRV.html">RCRCSRV</a></td>
+</tr>
+<tr>
+<td>SERVER ACTION</td>
+<td>RUN IMMEDIATELY</td>
+</tr>
+<tr>
+<td>SERVER MAIL GROUP</td>
+<td><a href="3.8-43.html">RC RC REFERRALS</a></td>
+</tr>
+<tr>
+<td>SERVER REPLY</td>
+<td>NO REPLY (DEFAULT)</td>
+</tr>
+<tr>
+<td>SAVE REQUEST</td>
+<td>Save request in Postmaster basket</td>
+</tr>
+<tr>
+<td>ZTSK RETENTION DAYS</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,264 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTE0MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>INCIDENT REPORTING (141) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTE0MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>INCIDENT REPORTING</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>QAN</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>This package is designed to track a hospital incident.</td>
+</tr>
+<tr>
+<td>FILE</td>
+<td>
+<ol>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-742.html">QA PATIENT INCIDENT REVIEW</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-742.1.html">QA INCIDENTS</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+<dt>MERGE OR OVERWRITE SITE'S DATA:  &nbsp;&nbsp;OVERWRITE</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-742.13.html">QA MEDICATION ERRORS</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+<dt>MERGE OR OVERWRITE SITE'S DATA:  &nbsp;&nbsp;OVERWRITE</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-742.4.html">QA INCIDENT REPORT</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-742.5.html">QA INCIDENT LOCATION</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+<dt>MERGE OR OVERWRITE SITE'S DATA:  &nbsp;&nbsp;OVERWRITE</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-742.14.html">QA COMPLICATIONS LEADING TO DEATH</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+<dt>MERGE OR OVERWRITE SITE'S DATA:  &nbsp;&nbsp;OVERWRITE</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;File: 1, IEN: 513.72</dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+<dt>SCREEN TO DETERMINE DD UPDATE:  &nbsp;&nbsp;I $D(^PRMQ(513.72,0))</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;File: 1, IEN: 513.941</dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+<dt>SCREEN TO DETERMINE DD UPDATE:  &nbsp;&nbsp;I $D(^PRMQ(513.941,0))</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-742.6.html">QA INCIDENT SUMMARY</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DEVELOPER (PERSON/SITE)</td>
+<td>Gregory J. Cebelinski @Hines ISC</td>
+</tr>
+<tr>
+<td>*LOWEST FILE NUMBER</td>
+<td>513.72</td>
+</tr>
+<tr>
+<td>*HIGHEST FILE NUMBER</td>
+<td>742.9</td>
+</tr>
+<tr>
+<td>DEVELOPMENT ISC</td>
+<td>Hines ISC</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>National</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>2.0</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;2.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2005-11-19 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;1996-09-25 00:00:00</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;24</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-10-28 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Delete obsolete Incident Reporting files.  Files in 742 file number range
+now being used.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;25</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-03-18 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;27 SEQ #26</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-08-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;26 SEQ #27</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;28 SEQ #28</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-02-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;29 SEQ #29</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-10-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;30 SEQ #30</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-09-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+PROBLEM ADDING SECOND PATIENT
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;31 SEQ #31</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-12-31 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Incident reports not printing.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;32 SEQ #32</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-05 00:58:03</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patient ID fix
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;33 SEQ #33</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-05-31 10:18:46</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ This patch addresses 2 issues:
+ 
+1.  A subscript error appears when scheduled auto email options are 
+run and entries in the QA INCIDENT REPORT (#742.4) file with a LOCAL CASE 
+STATUS (#.09) of "CLOSED", "DELETED, or "QUICK" have no value for the 
+INCIDENT (#.02). 
+ 
+2.  A subscript error occurs when accessing the 'Full Incident Edit' [QAN 
+INCIDENT FOLLOW-UP] option and then using a question mark '?' to view a 
+a list of existing open cases by 'Case Number', 'Date of Incident' or 
+'Patient'.
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>ENVIRONMENT CHECK ROUTINE</td>
+<td>QANIPRE</td>
+</tr>
+<tr>
+<td>ENVIRONMENT CHECK DONE DATE</td>
+<td>1992-10-16 10:30:36</td>
+</tr>
+<tr>
+<td>POST-INITIALIZATION ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_QANPST3.html">QANPST3</a></td>
+</tr>
+<tr>
+<td>POST-INIT COMPLETION DATE</td>
+<td>1992-10-16 10:32:13</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

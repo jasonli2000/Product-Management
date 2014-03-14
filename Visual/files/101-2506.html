@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI1MDY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSJU LM ACCEPT (2506) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI1MDY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSJU LM ACCEPT</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>ACCEPT</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-77.html">INPATIENT MEDICATIONS</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>S VALMBCK="Q"</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S PSJACEPT=1,VALMBCK="Q" I $G(PSJLMFIN) D:$D(^TMP("PSJINTER",$J)) STOREINT^PSGSICH1</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2012-01-30 10:42:05</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

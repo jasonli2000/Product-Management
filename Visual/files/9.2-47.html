@@ -1,0 +1,86 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTQ3").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQHELP-DISP-EP (47) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTQ3" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQHELP-DISP-EP</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>WHO CAN EDIT A HELP FRAME</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+A help frame is editable under one of the following three conditions:
+ 
+ - The user holds the XUAUTHOR key, enabling edit of all frames.
+ 
+ - The user is the author of the frame being displayed.
+ 
+ - The user is one of the editors of the frame being displayed.
+   Editors can be assigned by the author with the option
+   [ASSIGN EDITOR].
+ 
+If a user has edit privileges for a frame, then she/he can enter
+'^E' at the 'Select action' prompt to edit a frame. '^EN', '^EH',
+'^ER', 'ET', are also valid responses to edit individual fields in 
+a frame.  These will cause a switch to [EDIT MODE].
+ 
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;ASSIGN EDITOR</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-42.html">XQHELP-ASSIGNEDITOR</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;EDIT MODE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-48.html">XQHELP-BUILD</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1992-04-15 15:29:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

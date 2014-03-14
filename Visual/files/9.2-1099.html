@@ -1,0 +1,93 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTEwOTk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>EAS EZ STATUS PRINTED (1099) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTEwOTk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>EAS EZ STATUS PRINTED</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>PRINTED, PENDING SIGNATURE</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+Once an Application has been printed using the Print 1010EZ (PZ) action, 
+its status becomes PRINTED, PENDING SIGNATURE.  The printed form will 
+contain the accepted data elements from the 10-10EZ. Data elements which 
+were not accepted will not be used.  If the applicant was matched to an 
+existing VISTA patient, then data from that patient record will be used 
+on the printed form in place of non-accepted 10-10EZ data elements. 
+  
+Actions that may be performed for PRINTED, PENDING SIGNATURE Applications 
+are:
+  
+[RZ]  Reset to New
+[PZ]  Print 1010EZ
+[VZ]  Verify Signature
+[IZ]  Inactivate 1010EZ
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;IZ</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-1106.html">EAS EZ ACTION IZ</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;PZ</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-1107.html">EAS EZ ACTION PZ</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;RZ</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-1112.html">EAS EZ ACTION RZ</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;VZ</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-1113.html">EAS EZ ACTION VZ</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>2001-03-28 10:08:09</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

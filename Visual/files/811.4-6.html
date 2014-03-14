@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjQtNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-RACE PRE 2003 (6) &nbsp;&nbsp;  REMINDER COMPUTED FINDINGS (811.4)</h1>
+<div id="demo"><table id="ODExLjQtNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-RACE PRE 2003</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PXRMPDEM.html">PXRMPDEM</a></td>
+</tr>
+<tr>
+<td>ENTRY POINT</td>
+<td>RACE</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>VA-Patient's pre-2003 Race</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This single occurrence computed finding returns a patient's Race value
+from the Patient file. Patch DG*5.3*415, compliance date January 31,
+2003, made the Race field obsolete and replaced it with the Race
+Information multiple. The possible values are those in the RACE file (#10).
+If there is an entry, the computed finding will be true; otherwise it
+will be false.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>SINGLE</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

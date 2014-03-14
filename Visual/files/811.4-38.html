@@ -1,0 +1,105 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjQtMzg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-TREATING FACILITY LIST (38) &nbsp;&nbsp;  REMINDER COMPUTED FINDINGS (811.4)</h1>
+<div id="demo"><table id="ODExLjQtMzg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-TREATING FACILITY LIST</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PXRMRDI.html">PXRMRDI</a></td>
+</tr>
+<tr>
+<td>ENTRY POINT</td>
+<td>TFL</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>VA-Treating Facility List</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This multi-occurrence computed finding returns a list of treating
+facilities i.e., systems that store data related to a patient. The
+value for each entry is:
+ STATION NUMBER^NAME^DATE LAST TREATED^ADT/HL7 EVENT REASON^FACILITY
+ TYPE
+ 
+STATION NUMBER, NAME, and FACILITY TYPE are from the Institution
+file. FACILITY TYPE is one of the entries found in the FACILITY TYPE
+file. ADT/HL7 EVENT REASON is a code from the ADT/HL7 EVENT REASON
+file. If there is no ADT/HL7 EVENT REASON then DATE LAST TREATED
+will also be null.
+ 
+Some examples of values that are returned:
+ "516^BAY PINES VAMC^^^VAMC"
+ "537^JESSE BROWN VAMC^3041122.110926^3^VAMC"
+ "552^DAYTON^3001113.092056^3^VAMC"
+ "556^NORTH CHICAGO VAMC^3050406.13^3^VAMC"
+ "578^HINES, IL VAMC^3020919.2324^3^VAMC"
+ "589^VA HEARTLAND - WEST, VISN 15^^^VAMC"
+ "636^VA NWIHS, OMAHA DIVISION^^^VAMC"
+ "673^TAMPA VAMC^3001215.1327^3^VAMC"
+ "695^MILWAUKEE VAMC^3030328.13^3^VAMC"
+ 
+A CONDITION can be written that uses any of the pieces of the value.
+For example, a CONDITION to check that the FACILITY TYPE is VAMC
+would be: I $P(V,U,5)="VAMC"
+ 
+Since no date can be associated with an entry, the date of evaluation
+will be used.
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>MULTIPLE</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>EDIT HISTORY</td>
+<td>
+<ol>
+<li>
+<dt>EDIT DATE:  &nbsp;&nbsp;2006-03-10 15:00:20</dt>
+<dt>EDIT BY:  &nbsp;&nbsp;File: 200, IEN: 1342</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

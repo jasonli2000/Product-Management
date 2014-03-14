@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjkyMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCB FCP BOC LIST (2920) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjkyMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCB FCP BOC LIST</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>FCP BOC List</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>FCP BOC LIST</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+List of authorized cost center and Budget Object Codes for each
+control point.  Also shows status of overcommit switch.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>print</td>
+</tr>
+<tr>
+<td>DIC {DIP}</td>
+<td>PRC(420,</td>
+</tr>
+<tr>
+<td>L.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FLDS</td>
+<td>[PRCB FCP SUB-ACCOUNTS]</td>
+</tr>
+<tr>
+<td>BY</td>
+<td>[PRCB FCP SUB-ACCOUNT LIST]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

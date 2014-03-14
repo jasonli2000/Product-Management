@@ -1,0 +1,66 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA5NzI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VBEC DELETE CONV. STATS (10972) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA5NzI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VBEC DELETE CONV. STATS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Delete data conversion and anomaly check histories</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DELETE DATA CONVERSION AND ANO</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option deletes all data conversion and anomaly check histories from
+the VBECS DATA INTEGRITY/CONVERSION STATISTICS (#6001) file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DEL6001^<a href="http://code.osehra.org/dox/Routine_VBECDCU2.html">VBECDCU2</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

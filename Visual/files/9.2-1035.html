@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTEwMzU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XM-U-M-QUERY INFO REMOTE (1035) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTEwMzU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XM-U-M-QUERY INFO REMOTE</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>REMOTE USER QUERY INFORMATION</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+ 
+For each remote recipient, MailMan provides the following information
+when doing a Query:
+ 
+  * Name - MailMan displays the name of the remote recipient.
+ 
+  * Sent - The date and time the message was sent over the network to the
+    remote recipient.
+ 
+  * Time - This is the time (in seconds) it took to transmit the message
+    over the network to the remote recipient.
+ 
+  * Remote Message ID - If sent to a remote MailMan user, MailMan displays
+    the internal message identification number for the message and the
+    remote user's MailMan location. This information is not displayed when
+    the message is sent to a non-MailMan location.
+ 
+  * Forwarding Information - If the message was forwarded to the remote
+    recipient, MailMan indicates the name of the person who forwarded the
+    message and the date and time the message was forwarded.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1998-12-31 14:39:30</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,94 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My4yLTExOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>P-XLASER90-12P (118) &nbsp;&nbsp;  TERMINAL TYPE (3.2)</h1>
+<div id="demo"><table id="My4yLTExOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>P-XLASER90-12P</td>
+</tr>
+<tr>
+<td>RIGHT MARGIN</td>
+<td>86</td>
+</tr>
+<tr>
+<td>FORM FEED</td>
+<td>#</td>
+</tr>
+<tr>
+<td>PAGE LENGTH</td>
+<td>60</td>
+</tr>
+<tr>
+<td>BACK SPACE</td>
+<td>$C(8)</td>
+</tr>
+<tr>
+<td>OPEN EXECUTE</td>
+<td>W *27,"+5Titan12iso-P",!,*27,5,*27,"zf",!,*27,"m3300,75,75,250,2400",!</td>
+</tr>
+<tr>
+<td>CLOSE EXECUTE</td>
+<td>W !,*27,"+X"</td>
+</tr>
+<tr>
+<td>HALF UP</td>
+<td>$C(27)_"h"</td>
+</tr>
+<tr>
+<td>HALF DOWN</td>
+<td>$C(27)_"l"</td>
+</tr>
+<tr>
+<td>UNDERLINE ON</td>
+<td>$C(27)_"u"</td>
+</tr>
+<tr>
+<td>UNDERLINE OFF</td>
+<td>$C(27)_"w"</td>
+</tr>
+<tr>
+<td>PROPORTIONAL SPACING</td>
+<td>$C(27)_"j"</td>
+</tr>
+<tr>
+<td>HIGH INTENSITY (BOLD)</td>
+<td>$C(27)_"b"</td>
+</tr>
+<tr>
+<td>NORMAL INTENSITY (RESET)</td>
+<td>$C(27)_"p"</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td>Xerox Laser Printer 12 pitch portrait</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

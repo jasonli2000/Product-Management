@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTM0MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XDR AUTO MERGE (341) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTM0MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XDR AUTO MERGE</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>AUTOMATICALLY MERGE ALL READY TO MERGE VERIFIED DUPLICATES</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+This option is used to merge all Verified Duplicate pairs for a
+selected file that have a merge status of READY TO MERGE.
+ 
+This merges all records that were not previously merged in the
+normal [MERGE] process due to special package merges that needed
+to occur before the final merge could occur.
+ 
+When this option is used there will be no interaction with the operator
+and no messages written to the screen.
+ 
+Some sites may choose to place this option in a Taskman Queue to run
+in the background but it is not known what effect Fileman dictionaries
+that write messages to the screen will have on this process.
+ 
+The merge process may take quite some time depending on the amount of
+information and the number of files that have to be merged.  This option
+if not queued should only be run on a terminal that can be dedicated to
+this task for some large amount of time.
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;MERGE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-339.html">XDR MERGE PROCESS</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1991-06-24 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

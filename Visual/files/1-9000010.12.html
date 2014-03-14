@@ -1,0 +1,60 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS05MDAwMDEwLjEy").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>V SKIN TEST (9000010.12) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS05MDAwMDEwLjEy" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>V SKIN TEST</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file has been designed for joint use by the Indian Health Service and
+the Department of Veteran Affairs. There will be one record for each type
+of skin test given to a patient on a given visit.  Data must exist for a
+patient and a visit before data can be entered here.  The record is
+normally created when a skin test is given, and the results, if available,
+are entered at a later date and matched to the original record.  If
+results are entered and a skin test given does not exist, a new record is
+created.
+ 
+In the VA, If a CPT code is entered into PCE that represents a skin test,
+then a skin test entry will automatically be entered into the V Skin Test
+file.  And vice versa, if a skin test is entered into PCE that represents
+a CPT code, then a CPT entry will automatically be entered into the V CPT
+file.  This supports getting workload credit from clinical activities.
+The PCE Code Mapping file defines the relationships between Skin Tests and
+CPT codes.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

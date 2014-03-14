@@ -1,0 +1,115 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTEyNzE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LA7V 62.47 ERROR CODES (1271) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTEyNzE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LA7V 62.47 ERROR CODES</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>LAB CODE MAPPING ERROR CODES</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+=========================================================================
+ 
+Error #200
+  No File #62.47 mapping found for OBX-3
+ 
+The code set in OBX-3 was not found in the LAB CODE MAPPING file (#62.47).
+ 
+--------------------------------
+ 
+Error #201
+  No File #63 field mapping found for OBX-3
+ 
+Storage location unknown in LAB DATA file (#63).  An organism, 
+parasite, or susceptibility doesn't have a mapping to or 
+storage location in the LAB DATA file (#63).  This is usually 
+caused by an incorrect or missing RELATED ENTRY field (#2.1)
+for that code in the LAB CODE MAPPING file (#62.47).
+ 
+---------------------------------
+ 
+Error #202
+  No filing method for CONCEPT # n found for OBX-3
+ 
+The Lab package does not have a routine to process the Concept.
+ 
+---------------------------------
+ 
+Error #203
+  No Coding System found in OBX-5
+ 
+OBX-5 does not have a coding system specified.
+ 
+---------------------------------
+ 
+Error #204
+  Unknown entity in OBX-5
+ 
+The organism, parasite, etc. being reported does not have 
+an entry in its associated file (ie ETIOLOGY FIELD file (#61.2)).
+ 
+---------------------------------
+ 
+Error #205
+  Invalid SubId in OBX-4
+ 
+The SubId in OBX-4 is either empty or invalid.  The processing
+logic expected a valid SubId here and cannot continue processing.
+Action must be taken by the sender of the HL7 message to correct
+the invalid SubId.
+ 
+---------------------------------
+ 
+Error #206
+  Could not create new entry in file #X (text)
+ 
+The system needed to add a new entry "on-the-fly" to
+the file specified to handle this incoming message but
+failed to create the new entry.  This may be a problem on
+the sender's or the receiver's side. 
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>2007-02-13 15:12:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

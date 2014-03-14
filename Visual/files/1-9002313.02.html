@@ -1,0 +1,60 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS05MDAyMzEzLjAy").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>BPS CLAIMS (9002313.02) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS05MDAyMzEzLjAy" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>BPS CLAIMS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Intermediate form of transmissions.  Fields are stored in formatted form.
+Raw packet is also stored.
+ 
+Most fields are in Free Text format to accommodate NCPDP Standard 
+formatting criteria and required field lengths.  Fields other than those 
+with decimals in the number correlate directly to the field numbers 
+supplied in the NCPDP Data Dictionary.
+ 
+While many of the fields in this file indicate coded values, they are 
+NCPDP coded values preceded by the NCPDP field identifier to be used 
+in the NCPDP transmission.  Example:  Compound Code is either a 1 or 0.  
+The NCPDP field identifier for 'Compound Code' is 'D6'.  The field length 
+is 3 thereby allowing the identifier for that field to be included in the 
+data stored in that field.  So, 'D61' is stored for that field.
+ 
+Per VHA Directive 2004-038, this file definition should not be modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

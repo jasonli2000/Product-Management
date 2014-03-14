@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTYxOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENFAR3 (1618) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTYxOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENFAR3</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Check of Equipment Capitalization</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CHECK OF EQUIPMENT CAPITALIZAT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option generates a report of equipment items which appear to have
+unusual combinations in the TOTAL ASSET VALUE and CAPITALIZED? fields.
+Capitalized equipment is reported when it's Type Entry is blank.
+Capitalized NX equipment is reported when it's CMR does not begin with one
+of the standard two digit values, or it's Standard General Ledger is
+blank. Equipment items with a disposition date are excluded from the
+report. This report searches the entire equipment file and may take some
+time to run.
+ 
+These equipment items should be checked to ensure that the data in the
+Equipment file is accurate.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-18.html">ENGINEERING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_ENFAR3.html">ENFAR3</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,100 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODAyLjQtMTI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DTIME_DIFF (12) &nbsp;&nbsp;  REMINDER FUNCTION FINDING FUNCTIONS (802.4)</h1>
+<div id="demo"><table id="ODAyLjQtMTI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DTIME_DIFF</td>
+</tr>
+<tr>
+<td>ENTRY</td>
+<td>DTIMDIFF</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PXRMFF0.html">PXRMFF0</a></td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>Generalized Date Difference</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is a generalized function for returning the difference between
+two dates. The arguments to the function are:
+
+ DTIME_DIFF(F1,O1,C1,F2,O2,C2,"U","A")
+
+where F is the finding number, O is the occurrence, and C is the CSUB. U
+specifies the units in which to return the difference. The possible
+values for the units are "S" (seconds), "M" (minutes), "H" (hours),
+and "D" (days).
+
+Note that if the second date is after the first date the difference
+will be negative. If the optional last argument of "A" is present then the
+absolute value of the difference will be returned.
+  
+ Some examples: 
+  
+ DTIME_DIFF(1,2,"DATE",8,3,"ADMISSION DATE/TIME","H","A")&lt;24
+
+This will be true if the date specified by finding 1 occurrence 2,
+CSUB "DATE" and the date specified by finding 8 occurrence 3 CSUB
+"ADMISSION DATE/TIME" are less than 24 hours apart.
+  
+ DTIME_DIFF(1,1,"STOP DATE",8,2,"DATE","D")&lt;-6
+
+This will be true if the date specified by finding 8 occurrence 2
+CSUB "DATE" is more than 6 days after the date specified by finding
+1 occurrence 1 CSUB "STOP DATE".
+
+
+
+
+
+
+
+
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>ARGUMENT PATTERNS</td>
+<td>1.N~1.N~1.AP~1.N~1.N~1.AP~1""""1(1"S",1"M",1"H",1"D")1""""~0.1(1""""1"A"1"""")</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzk5Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VAFH PIVOT PURGE (7997) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzk5Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VAFH PIVOT PURGE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Purge PIMS HL7 PIVOT file</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PURGE PIMS HL7 PIVOT FILE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will purge all entries from the PIMS HL7 PIVOT file 
+(#391.71) that are older than a specific number of days as determined
+by the site.  There is no user input required.
+  
+A field in the MAS PARAMETERS file (#43) is used in conjunction with
+this option.  The name of the field is PIVOT FILE DAYS TO RETAIN and
+the field number is 391.702.  The field may be updated with a numeric
+value between 30 and 999 using the Enter/Edit option of VA FileMan.  
+This value represents the number of days worth of data to retain 
+in file #391.71 when the VAFH PIVOT PURGE option is run.
+  
+For example, if the site updates this field with a value of 100, then
+any record with a date earlier than TODAY-100 days will be deleted
+during the purge.  If the site does not update this field (i.e., the
+field value remains null), then the VAFH PIVOT PURGE option will use
+a default value of 547 days (approximately 18 months).
+   
+However, before any file #391.71 record is deleted two checks will
+be performed on the record.  (1) If the internal entry number of the
+record exists in the "AXMIT" cross-reference, it will not be deleted.
+(2) If the TYPE OF EVENT field (#.04) of the record is "1" (i.e.,
+INPATIENT EVENTS) and if the PATIENT MOVEMENT file (#405) does not
+reflect a discharge for the admission, the file #391.71 record will
+not be deleted.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_VAFHPURG.html">VAFHPURG</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

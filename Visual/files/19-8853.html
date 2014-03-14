@@ -1,0 +1,120 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODg1Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>HL AUTOSTART LINK MANAGER (8853) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODg1Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>HL AUTOSTART LINK MANAGER</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Autostart Link Manager</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>AUTOSTART LINK MANAGER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is invoked through TaskMan's Special Queuing feature.  When
+TaskMan starts through the normal startup and not through the Restart
+option, this task will start as a persistent task checking the HL7 message
+queues for message(s) to be delivered via non-persistent LLPs.  The
+primary job of the Link Manager is to insure that an LLP is available when
+messages in the Message Queue are ready to be delivered.  If there are no
+existing LLPs available, the Link Manager will task off a Link
+Sub-manager which in turn will become an LLP to deliver message(s) for a
+specific message queue requiring a non-persistent connection.
+ 
+In order to set up this option to startup when the system/TaskMan starts,
+please find the following HL7 options to create an entry
+in the OPTION SCHEDULING file:
+ 
+ STEP 1:  Taskman Management ...
+ STEP 2:  Schedule/Unschedule Options
+ STEP 3 (Create the following entry):
+ 
+Select OPTION to schedule or reschedule: HL AUTOSTART LINK MANAGER
+  Are you adding 'HL AUTOSTART LINK MANAGER' as 
+    a new OPTION SCHEDULING (the 12TH)? No// Y
+ 
+ STEP 4 (And then you will enter the FileMan ScreenMan form
+        as follows and you should edit the 'SPECIAL QUEUEING' field 
+        to have a value of 'Startup Persistent'):
+ 
+                          Edit Option Schedule
+    Option Name: HL AUTOSTART LINK MANAGER     
+    Menu Text: Autostart Link Manager                    TASK ID:
+  __________________________________________________________________________
+ 
+  QUEUED TO RUN AT WHAT TIME:
+ 
+DEVICE FOR QUEUED JOB OUTPUT:
+ 
+ QUEUED TO RUN ON VOLUME SET:
+ 
+      RESCHEDULING FREQUENCY:
+ 
+             TASK PARAMETERS:
+ 
+            SPECIAL QUEUEING: Startup Persistent  
+ 
+_______________________________________________________________________________
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-33.html">HEALTH LEVEL SEVEN</a></td>
+</tr>
+<tr>
+<td>DELEGABLE</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_HLCSLM.html">HLCSLM</a></td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>STARTUP</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0yMDA2LjU3NTg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DICOM RADIOLOGY PROCEDURES (2006.5758) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0yMDA2LjU3NTg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DICOM RADIOLOGY PROCEDURES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The DICOM RADIOLOGY PROCEDURES file (#2006.5758) contains the list of orderable radiology procedures, along with related data that is needed for the Importer to place orders on VistA.
+ 
+This file resides on the DICOM Gateway and several of the fields will be
+redundantly storing the same information for pointer fields.  This is 
+required to continue image processing when a VistA connection is lost.
+ 
+Information in this file is a combination of data from files RAD/NUC MED
+PROCEDUES (#71) and OUTSIDE IMAGE LOCATION (#2006.5759).  The data in this
+file will be periodically updated via a remote procedure file to VistA.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

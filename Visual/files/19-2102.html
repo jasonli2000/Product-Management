@@ -1,0 +1,92 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjEwMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGPT CENSUS STATUS REPORT (2102) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjEwMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGPT CENSUS STATUS REPORT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Census Status Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CENSUS STATUS REPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This options prints a report of all active admissions as of
+11:59pm for a specified census date.  The report will indicate the status
+of the census record for each admission.  This report uses the
+data stored in the CENSUS WORKFILE.
+ 
+This workfile is an extract of data from the admission data for the
+patients who were inpatients as of 11:59 on the census date.  This
+workfile makes the printing of this report much faster than otherwise
+would be possible.  Without this workfile, it would be neccessary
+to scan all admissions prior to the census date to determine if
+the admission was still active on the census date.
+ 
+NOTE:  The first time the 'Census Status Report' is run for a
+       particular census date, the CENSUS WORKFILE is automatically
+       generated.
+ 
+The user is allowed to select one, many or all divisions and
+one census status.
+ 
+The report is sorted by:
+         1) division
+         2) then status
+         3) then ward on census date
+         4) then patient name.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_DGPTCO1.html">DGPTCO1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

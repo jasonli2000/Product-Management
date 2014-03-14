@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTMzNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>EASEC LTC COPAY PRINT (9337) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTMzNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>EASEC LTC COPAY PRINT</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Calculated LTC Copayments Print</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CALCULATED LTC COPAYMENTS PRIN</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will enable the user to display or print the calculated Long
+Term Care copayments for a selected veteran.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>DELEGABLE</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K DGMTYPT</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S DGMTYPT=3 D EN^<a href="http://code.osehra.org/dox/Routine_EASECPC.html">EASECPC</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

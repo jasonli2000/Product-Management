@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuMDctMTI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ASTRA    32 cups  1&2 blank (12) &nbsp;&nbsp;  EXECUTE CODE (62.07)</h1>
+<div id="demo"><table id="NjIuMDctMTI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ASTRA    32 cups  1&2 blank</td>
+</tr>
+<tr>
+<td>EXECUTE CODE</td>
+<td>S LRCUP=$S(LRCUP<3:3,1:LRCUP+1) I LRCUP>32 S LRTRAY=LRTRAY+1,LRCUP=3</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>LOADLIST</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Sets up trays of 32 cups with the first 2 cups blank.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjUyMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCPW ADJUST APPROVAL (2523) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjUyMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCPW ADJUST APPROVAL</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Approve Adjustments</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>APPROVE ADJUSTMENTS</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>PRCPW ADJAPPR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option can be used to approve entire adjustments (all items) or
+single items on an adjustment.  When an item adjustment is approved,
+the item adjustment will no longer appear on the 'Unapproved Adjustment
+Report.'
+ 
+This option is locked with the 'PRCPW ADJAPPR' security key.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PRCPAWAP.html">PRCPAWAP</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

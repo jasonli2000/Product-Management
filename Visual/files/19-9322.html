@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTMyMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RGMT DIAG ALL PROTOCOLS (9322) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTMyMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RGMT DIAG ALL PROTOCOLS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>MPI/PD HL7 Activity by Patient/All Protocols</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>MPI/PD HL7 ACTIVITY BY PATIENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option prints information found during the Compile MPI/PD
+HL7 Data compilation for activity related to ALL protocols.  The
+^XTMP("RGMT","HL" array is searched for a user selected patient 
+and date range.
+   
+The report prints the patient's name, date range, protocol,
+transmission type, internal entry number (IEN) from the HL7 MESSAGE
+TEXT (#772) file, the date and status.  The HL7 message data found
+in the MESSAGE TEXT field is displayed.  The right margin for this
+report is 80.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-170.html">CLINICAL INFO RESOURCE NETWORK</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_RGMTHLDP.html">RGMTHLDP</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

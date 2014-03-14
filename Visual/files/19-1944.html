@@ -1,0 +1,98 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTk0NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DG PTF NO ADMISSION (1944) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTk0NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DG PTF NO ADMISSION</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Admissions without an Associated PTF Record</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ADMISSIONS WITHOUT AN ASSOCIAT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Prints admission records from bed control that have no PTF record
+associated with them. This occurs either because the admission
+occured in an earlier software version or the record was deleted.
+Admissions that have had the corresponding PTF record purged
+through the PTF Archive/Purge option will NOT appear on this listing.
+ 
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>print</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>W !!,"ENTER DISCHARGE DATE RANGE:",!,"---------------------------"</td>
+</tr>
+<tr>
+<td>DIC {DIP}</td>
+<td>DGPM(</td>
+</tr>
+<tr>
+<td>L.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FLDS</td>
+<td>[DG PTF NO ADMISSION]</td>
+</tr>
+<tr>
+<td>BY</td>
+<td>[DG PTF NO ADMISSION]</td>
+</tr>
+<tr>
+<td>DIS(0)</td>
+<td>I $D(^DGPM(D0,0)),$D(^DGPM(+$P(^(0),U,14),0)),'$P(^(0),U,16),'$P(^(0),U,26)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

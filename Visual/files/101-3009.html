@@ -1,0 +1,105 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTMwMDk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RG FACILITY INTEGRATION SERVER (3009) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTMwMDk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RG FACILITY INTEGRATION SERVER</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Facility Integration Server</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is the server for the Facility Integration Message.  It notifies
+other sites when there is a site integration that affects a particular
+patient.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>event driver</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2000-09-05 15:51:48</td>
+</tr>
+<tr>
+<td>SENDING APPLICATION</td>
+<td><a href="771-50.html">RG SITE MERGE</a></td>
+</tr>
+<tr>
+<td>TRANSACTION MESSAGE TYPE</td>
+<td><a href="771.2-6.html">ADT</a></td>
+</tr>
+<tr>
+<td>EVENT TYPE</td>
+<td><a href="779.001-8.html">A08</a></td>
+</tr>
+<tr>
+<td>PROCESSING ID</td>
+<td>P</td>
+</tr>
+<tr>
+<td>ACCEPT ACK CODE</td>
+<td><a href="779.003-1.html">AL</a></td>
+</tr>
+<tr>
+<td>APPLICATION ACK TYPE</td>
+<td><a href="779.003-1.html">AL</a></td>
+</tr>
+<tr>
+<td>VERSION ID</td>
+<td><a href="771.5-3.html">2.3</a></td>
+</tr>
+<tr>
+<td>RESPONSE PROCESSING ROUTINE</td>
+<td>D ACK^<a href="http://code.osehra.org/dox/Routine_RGFIACK.html">RGFIACK</a></td>
+</tr>
+<tr>
+<td>SUBSCRIBERS</td>
+<td>
+<ol>
+<li>
+<dt>SUBSCRIBERS:  &nbsp;&nbsp;<a href="101-3010.html">RG FACILITY INTEGRATION CLIENT</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

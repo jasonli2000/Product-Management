@@ -1,0 +1,83 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQHELP-UPDATE (56) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQHELP-UPDATE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>New/Revised Help Frames</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>NEW/REVISED HELP FRAMES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will produce a fileman listing of help frames sorted by
+DATE LAST UPDATED.  It is useful if you wish to view any recently
+created or revised frames.  You may also sort by package prefix.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>HELP FRAME</td>
+<td><a href="9.2-45.html">XQHELP-NEWFRAMES</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>print</td>
+</tr>
+<tr>
+<td>DIC {DIP}</td>
+<td>DIC(9.2,</td>
+</tr>
+<tr>
+<td>L.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FLDS</td>
+<td>[XQHNEW/REVISED FRAMES]</td>
+</tr>
+<tr>
+<td>BY</td>
+<td>[XQHNEW/REVISED FRAMES]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

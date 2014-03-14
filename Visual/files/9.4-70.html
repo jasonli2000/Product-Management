@@ -1,0 +1,3739 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTcw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RPC BROKER (70) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTcw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RPC BROKER</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>XWB</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>Remote Procedure Call Broker</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Remote Procedure Call (RPC) Broker is the software that provides Decentralized
+Hospital Computer Program (DHCP) its client/server architecture.  The RPC
+Broker allows workstations running client applications to access DHCP data and
+methods.  
+
+RPC Broker has a client module which runs on the workstation and a server
+module which runs on the host computer where the data and business rules 
+reside.  On the client side the Broker works between the applications and the
+transport protocol.  
+</pre>
+</td>
+</tr>
+<tr>
+<td>DEVELOPER (PERSON/SITE)</td>
+<td>Enrique Gomez</td>
+</tr>
+<tr>
+<td>DEVELOPMENT ISC</td>
+<td>San Francisco</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;1.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;1996-05-24 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;1996-07-15 00:00:00</dt>
+<dt>INSTALLED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION OF ENHANCEMENTS:  &nbsp;&nbsp;<pre>
+This distribution contains all the server code and data for the Remote
+Procedure Call (RPC) Broker version 1.0.
+</pre>
+</dt>
+</li>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;1.1</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2005-11-19 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;1997-11-18 00:00:00</dt>
+<dt>INSTALLED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION OF ENHANCEMENTS:  &nbsp;&nbsp;<pre>
+RPC BROKER version 1.1
+</pre>
+</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;1</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-02-20 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch fixes some small problems that were discovered after release.
+
+XWBTCPL   Remove the SYMBOL_TABLE from the VAX DSM JOB command.
+XWBTCP    When stopping the Broker, Catch a failure to open a socket.
+
+XWB BROKER EXAMPLE option was missing its type field.
+
+                 Checksum
+Routine         Old       New      2nd Line
+XWBTCP        8888247   9081629    **1**
+XWBTCPL       8380513   8215020    **1**
+
+========================================================================= 
+Installation:
+
+  1.  DSM sites - Some of these routines are usually mapped,
+      so you will need to disable mapping for the effected routines. 
+     
+ 2.  Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+     option will load the KIDS package onto your system.
+     
+  3.  The patch has now been loaded into a Transport global on your
+      system. You now need to use KIDS to install the Transport global.
+      On the KIDS menu, under the 'Installation' menu, use the following
+      options:
+      
+         Verify Checksum's in Transport Global
+         Print Transport Global
+         Compare Transport Global to Current System
+         Backup a Transport Global
+     
+ 4.  Users can remain on the system but,
+     The Listener must be stopped before installing this patch.
+     
+ 5.  On the KIDS menu, under the 'Installation' menu, use the following
+     option:
+        Install Package(s)  'XWB*1.1*1'
+                             =========
+        
+ 6.  MSM Sites - Answer YES to the question 'Want to MOVE routines to
+     other CPUs?'. Enter the names of your Compute and Print server(s).
+     
+ 7.  DSM Sites, after patch has installed, rebuild your map set.
+ 
+ 8.  Restart the Broker Listener
+ =========================================================================
+
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;2</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-08-08 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Subject: Encryption, Data Collection, Agent
+ 
+Category: 
+ 
+  - Routine
+ 
+ 
+DESCRIPTION:
+=============
+ 
+This patch addresses 3 problems with RPC Broker v1.1
+ 
+ 
+Encrypted Literal:
+ A leading period (".") in a LITERAL parameter can cause a pattern match
+ failure in RPCs. This type of literal is common when data is encrypted.
+ The failure only occurs with RPCs which combine multiple literals and an
+ array.  This fix addresses the needs of NOIS WAS-0398-22800
+ 
+  
+ 
+Data Collection Switch:
+ The original version of the broker automatically collected Response Time
+ data.  This was done to fulfill a request from Capacity Management since
+ at the time, no baseline data existed for Vista client-server
+ Applications.  The broker will not do this any longer.  Collection will
+ be ontrolled by the use of the Capacity Management tools, allowing the
+ site to decide when to turn data collection on or off. This fix addresses
+ the needs of NOIS BRX-0498-11768 and HUN-0498-21137.
+ 
+***NOTE:
+ The Capacity Management option "Enable/Disable RT Logging" looks at the
+ old Kernel Site Parameters file instead of the new Kernel System
+ Parameters file.  So, using this option will not enable/disable the RTM.
+ The Capacity Management team is aware of this and are going to issue a
+ patch.  In the meantime, a site has to use FileMan to manually turn the
+ RTM on/off in file 8989.3 (Kernel System Parameter).  The field is the
+ LOG SYSTEM RT and its within the VOLUME SET multiple.
+ Example:
+ 
+ Select OPTION: ENTER OR EDIT FILE ENTRIES  
+       Select KERNEL SYSTEM PARAMETERS DOMAIN NAME: 1 KERNEL.ISC-SF.DOMAIN.EXT
+               Select VOLUME SET: KDE// 
+                       LOG SYSTEM RT?: NO// Y  YES  &lt;&lt;==
+ 
+ 
+ 
+10 Second Network Timeout in Client Agent:
+ A 30 second timeout is being switched to 10 for network communications
+ with client agent.  In the event of network problems, this should prevent
+ delays  to exceed minutes in communications between the server and the
+ workstation client agent.  No current NOIS addresses this, this effect
+ was discovered by the SF CIOFO.
+ 
+  
+==========================================================================
+ INSTALLATION:
+ 
+ 
+ 1.  DSM sites - Some of these routines MAY BE mapped, so you will need
+     to disable mapping for the effected routines.  Broker routines do not
+     need to be mapped.
+ 
+ 2.  Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+     option will load the KIDS package onto your system.
+    
+ 3.  The patch has now been loaded into a Transport global on your
+     system. You now need to use KIDS to install the Transport global.
+     On the KIDS menu, under the 'Installation' menu, use the following
+     options:
+ 
+         Verify Checksum's in Transport Global
+         Print Transport Global
+         Compare Transport Global to Current System
+         Backup a Transport Global
+ 
+    
+ 4.  All RPC Broker users should log off.
+     Since no changes are made to the main server routines, sites do not
+     need to shut down the listener jobs, BUT sites may choose to do if it
+     make it easier to control users trying to log on during the routine
+     update.
+     
+ 5.  On the KIDS menu, under the 'Installation' menu, use the following
+     option:
+        Install Package(s)  'XWB*1.1*2'
+                             =========
+ 
+ 6.  MSM Sites - Answer YES to the question 'Want to MOVE routines to
+     other CPUs?'. Enter the names of your Compute and Print server(s).
+    
+ 7.  DSM Sites, after patch has installed, rebuild your map set.
+ 
+ 8.  Restart the Broker Listener if necessary.
+ 
+==========================================================================
+ 
+ 
+ 
+Routine Information:
+====================
+Routine Name:
+ 
+  - XWBBRK
+ 
+Routine Checksum:
+OLD: 4495672
+NEW: 4562161
+ 
+ 
+Routine Name:
+  - XWBTCPC
+ 
+Routine Checksum:
+OLD: 8204793
+NEW: 8099567
+ 
+ 
+Routine Name:
+  - XWBCAGNT
+ 
+Routine Checksum:
+OLD: 2022848
+NEW: 2022488
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;3</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-01-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+DAY-0898-41587   XWBSEC  Under CPRS when the DG routines call OP^XQCHK
+                         to record what option is used it was getting
+                         back "unknown".  The broker created context
+                         needed to set the variable XQY.
+                         
+                 Checksum
+Routine         Old       New      2nd Line
+XWBSEC        1126915   1317713    **3**
+
+Checksum's calculated by CHECK^XTSUMBLD
+
+========================================================================= 
+Installation:
+
+  1.  DSM sites - This routines is usually mapped,
+      so you will need to disable mapping for the affected routines. 
+     
+  2.  Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+      option will load the KIDS package onto your system.
+     
+  3.  The patch has now been loaded into a Transport global on your
+      system. You now need to use KIDS to install the Transport global.
+      On the KIDS menu, under the 'Installation' menu, use the following
+      options:
+      
+         Verify Checksums in Transport Global
+         Print Transport Global
+         Compare Transport Global to Current System
+         Backup a Transport Global
+     
+  4.  Users can remain on the system. 
+      Stop the Broker server(s), Stop any broker clients. 
+      (Each RPC call passes through this routine.)
+
+     
+  5.  On the KIDS menu, under the 'Installation' menu, use the following
+      option:
+        Install Package(s)  'XWB*1.1*3'
+                             =========
+                             
+        No Options or Protocols need to be placed out-of-order.
+        Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO
+                                                                        ==
+     
+  6.  DSM Sites, after patch has installed, rebuild your map set.
+=========================================================================
+
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;5 SEQ #4</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-04-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch is for the support of RUM.  This will allow the trapping of
+data for Remote Procedure Calls (RPCs) and the RPCBroker handler.
+ 
+                  Checksum
+ Routine         Old       New      2nd Line
+ XWBBRK2       2982680   3134294      **5**
+ XWBTCPC       8099567   8239171    **2,5**
+ 
+  
+  INSTALLATION:
+  
+  1.  DSM sites - The Broker routines are not usually mapped.  Disable
+mapping if necessary.
+  
+  2.  Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+option will load the KIDS package onto your system.
+  
+  3.  The patch has now been loaded into a Transport global on your
+system. You now need to use KIDS to install the Transport global. On the
+KIDS menu, under the 'Installation' menu, use the following options:
+  
+          Verify Checksum's in Transport Global
+          Print Transport Global
+          Compare Transport Global to Current System
+          Backup a Transport Global
+  
+  4.  All RPC Broker users should log off. Since no changes are made to
+the main server routines, sites do not need to shut down the listener
+jobs, BUT sites may choose to do if it makes it easier to control users
+trying to log on during the routine update.  Every RPC call passes through
+these routines.
+  
+  5.  On the KIDS menu, under the 'Installation' menu, use the following
+option:
+         Install Package(s)  'XWB*1.1*5'
+                              =========
+  6.  MSM Sites - Answer YES to the question 'Want to MOVE routines to
+other CPUs?'. Enter the names of your Compute and Print server(s).
+  
+  7.  DSM Sites - Rebuild your map set if necessary.
+ 
+  8.  Restart the Broker Listener if necessary.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;7 SEQ #5</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-06-22 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch addresses two problems:
+A command error occuring at RESTART+17^XWBTCPL when the Broker tries to
+reopen a device that is not closed.  This seems to be a problem with Cache
+sites only.  The result of this error causes the Broker Listener to stop.
+This fix is in XWBTCPL routine.
+ 
+The other problem deals with available slots.  The listener doesn't check
+for available slots before starting a new process.  The listener will now
+check the MAX SIGNON ALLOWED field of the VOLUME SET multiple in the
+KERNEL SYSTEM PARAMETERS file, the same one used by Kernel logon.  This
+fix is also in XWBTCPL.
+ 
+ &lt;&lt;THIS IS A SERVER SIDE PATCH ONLY.&gt;&gt;
+ 
+ 
+ NOISs:
+ =====
+ MRN-1198-42547  -  Broker Listener
+ WIC-0399-42263  -  Broker Listener
+ MAR-0499-20186  -  Broker Listener
+ CHY-1298-52305  -  Broker Listener
+ CTX-0499-70598  -  Available Slots
+ PUG-0399-51484  -  Available Slots
+ 
+ 
+ Routine Summary:
+ The following routine is included in this patch.  The second line of
+ this routine now looks like:
+  ;;1.1;RPC BROKER;&lt;patchlist&gt;;Mar 28, 1997
+ 
+                  Checksum
+ Routine         Old       New      2nd Line
+ XWBTCPL       8215020   8850625    **1,7**
+ 
+ List of preceeding patches: 1
+ Sites should use CHECK^XTSUMBLD to verify checksums.
+ 
+ =========================================================================
+ Installation:
+ 
+ 
+   1.  Do not run any RPC-Broker-based Client/Server software (e.g., CPRS,
+       PCMM) during the installation.  No Broker-based client/server
+       software should be running while installing this patch on the
+       server.  To identify these jobs, check the system status and verify
+       if any XWBTCPC routines are running (i.e., Broker Handler).  Once
+       identified, notify users to logoff or forcex the jobs.  Active
+       users may get NOSOURCE or CLOBBER errors.
+ 
+   2.  Stop the Broker Listener on the server.  Check the system status
+       and verify if the XWBTCPL routine is running (i.e., Broker
+       Listener).  If it is running stop it.  To stop the Listener, do the
+       following:
+ 
+           a.  Log into your M server.                   
+           b.  Enter the following at the M prompt:
+ 
+               &gt;D STOP^XWBTCP(Listener port)
+               (Typically, the Listener port is 9200)
+ 
+   3.  Broker routines are not usually mapped on systems that allow it, so
+       you will probably not have to disable mapping.
+ 
+   4.  Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+       option will load the KIDS package onto your system.
+ 
+   5.  The patch has now been loaded into a Transport global on your
+       system. You now need to use KIDS to install the Transport global.
+       On the KIDS menu, under the 'Installation' menu, use the following
+       options:
+ 
+          Verify Checksums in Transport Global
+          Print Transport Global
+          Compare Transport Global to Current System
+          Backup a Transport Global
+ 
+ 
+   6.  On the KIDS menu, under the 'Installation' menu, use the following
+       option:
+         Install Package(s)  'XWB*1.1*7'
+                              =========
+ 
+       No Options or Protocols need to be placed out-of-order.
+       Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO
+                                                                       ==
+                                                                        
+ 
+   7.  MSM Sites - Answer YES to the question 'Want to MOVE routines to
+       other CPUs?'. Enter the names of your Compute and Print server(s).
+ 
+   8.  If the routines were unmapped as part of step 3, the mapped set
+       should be rebuilt once the installation has run to completion. 
+ 
+   9.  Restart the Broker Listener on the Server:
+         a.  Log into your M server
+         b.  Enter the following at the M prompt:
+ 
+             &gt;D STRT^XWBTCP(Listener port)
+             (Typically, the Listener port is 9200)
+ 
+======================================================================
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;4 SEQ #6</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-06-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch:
+ 
+1.  Introduces a shorter timeout when logging in via any GUI application
+that is using the Broker.  The server listener process will timeout after
+90 seconds if the user has not passed in his/her access and verify codes.
+Users of existing GUI applications which were compiled under an older
+version of the BDK will not see the shorter timeout unless the GUI
+application is recompiled.  It is highly recommended that applications be
+recompiled using the new BDK to take advantage of the shorter timeout
+during login.
+ 
+2.  Updates the Broker's programmer client workstation software -- also
+known as the Broker Development Kit (BDK) -- adding support for Delphi 4
+development.
+ 
+3.  Fixes a bug in which the title bar of the Kernel login form was being
+changed when a user started entering their access code.
+ 
+IMPORTANT NOTES:
+ 
+This patch consists of 2 parts:
+ 
+ - Packman message containing the XWB*1.1*4 KIDS build.
+ - An updated BDK (programmer client workstation software).
+ 
+1.  Packman message containing the XWB*1.1*4 KIDS build. It installs 2
+modified XWB* routines used by the Broker server. This part of the patch
+is mandatory.
+ 
+ ROUTINE SUMMARY:
+ ================
+ The following is a list of the routines included in this patch.  The
+ second line of each of these routines now looks like:
+ 
+ &lt;tab&gt;;;1.1;RPC BROKER;[patch list];date
+ 
+ CHECK^XTSUMBLD results:
+ 
+ Routine Name      Before Patch     After Patch     Patch List
+ XWBBRK            4562161          4567623         2,4
+ XWBTCPC           8239171          7518635         2,5,4
+ 
+2. Updated BDK (programmer client workstation software). All sites
+doing Broker development are encouraged to retrieve the patched BDK. Note
+that this version of the BDK only supports Delphi 4 and Delphi 3.
+ 
+DO NOT INSTALL THIS PROGRAMMER CLIENT WORKSTATION SOFTWARE AT
+END-USER CLIENT WORKSTATIONS.  If you are not using the BDK in any local
+or national development, you do not need to retrieve the Broker's
+programmer client workstation software. The software does not update the
+Broker software that is running at end-user client workstations.
+ 
+The software distribution includes:
+ 
+FILE NAMES      DESCRIPTION                     Blocks          Bytes
+XWB1_1P4PG.EXE  BDK Self-Installing Executable    2944        1507118
+XWB1_1P4IG.PDF  Installation Guide                 382         195583
+XWB1_1RM.TXT    Readme text file                    15           7355
+ 
+Note:  Use Binary mode for .PDF, and .EXE files
+       Use ASCII mode for .TXT file.
+ 
+To access the updated BDK, use FTP to retrieve the software from one of
+the following CIO Field Offices' ANONYMOUS.SOFTWARE directories:
+ 
+       CIO FIELD OFFICE                FTP Address
+       Hines                           152.129.1.110
+       Albany                          152.127.1.5
+       Salt Lake City                  152.131.2.1
+ 
+BROKER-DEPENDENT COMPONENTS:
+ 
+Some components, such as the FileMan Delphi Components, reference the
+TRPCBroker component.  If you use such components for development, be
+aware that installing a new version of the TRPCBroker component (i.e. a
+new BDK) may cause incompatibilities in Delphi, resulting in a compile
+failure of the unit containing the Broker-dependent component and the
+following compilation error:
+ 
+       Unit &lt;unit1&gt; was compiled with a different version of &lt;unit2&gt;.
+ 
+Check with the creators of the Broker-dependent component to make sure
+that, with regards to the version of the BDK you are about to install:
+ 
+a) Your current component is compatible, or
+ 
+b) You can obtain a new version of the component that is compatible.
+ 
+For the FileMan Delphi Components (FMDC), patch FMDC*1.0*1 brings in a new
+version of FMDC compatible with the updated BDK.  Please refer to the
+Patch Module for more information on this FMDC patch.
+ 
+INSTALLATION:
+ 
+Server Side:
+============
+ 
+Use the following instructions in installing this server-side RPC Broker
+patch.  Do NOT follow the M Server Installation Instructions in the RPC
+Broker Installation Guide to install the server portion of this patch. The
+instructions in the Installation Guide are for virgin server installations
+and server version upgrades only.
+ 
+ 1.  Do not run any RPC-Broker-based Client/Server software (e.g., CPRS,
+PCMM) during the installation.  No Broker-based client/server software
+should be running while installing this patch on the server.  To identify
+these jobs, check the system status and verify if any XWBTCPC routine is
+running (i.e., Broker Handler).  Once identified, notify users to logoff
+or forcex the jobs.  Active users may get NOSOURCE or CLOBBER errors.
+ 
+ 2.  Stop the Broker Listener on the server.  Check the system status and
+verify if the XWBTCPL routine is running (i.e., Broker Listener).  If it
+is running stop it.  To stop the Listener, do the following:
+       a.  Log into your M server.
+       b.  Enter the following at the M prompt:
+ 
+       &gt;D STOP^XWBTCP(Listener port)
+       (Typically, the Listener port is 9200)
+ 
+ 3.  These routines are not usually mapped on systems that allow it, so
+you will probably not have to disable mapping.
+ 
+ 4.  Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+option will load the KIDS (Kernel Installation and Distribution System)
+package onto your system.
+    
+ 5.  The patch has now been loaded into a Transport global on your system.
+On the KIDS menu, select the 'Installation' menu, use the following
+options:
+         Verify Checksums in Transport Global
+         Print Transport Global
+         Compare Transport Global to Current System
+         Backup a Transport Global
+    
+ 6.  On the KIDS menu, under the 'Installation' menu, use the following
+option:
+        Install Package(s)  'XWB*1.1*4'
+                             =========
+ 
+ 7.  MSM Sites - Answer YES to the question 'Want to MOVE routines to
+other CPUs?'. Enter the names of your Compute and Print server(s).
+     AXP Sites - Answer NO to this question.
+    
+ 8.  If the routines were unmapped as part of step 3, the mapped set
+should be rebuilt once the installation has run to completion.
+ 
+ 9.  Restart the Broker Listener on the Server:
+       a.  Log into your M server
+       b.  Enter the following at the M prompt:
+ 
+       &gt;D STRT^XWBTCP(Listener port)
+ 
+Client Side:
+============
+ 
+Please follow the 'Programmer Client Workstation Installation
+Instructions' in the RPC Broker Installation Guide (XWB1_1P4IG.PDF).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;6 SEQ #7</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-09-14 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch eliminates server Broker jobs for which there is no client
+application.  These 'ghost' jobs have occurred when client processes are
+ended in a non-standard way - for example, by pressing the PC's reset
+button.  
+ 
+Note:  The server side of this patch is effective only for client
+applications (like CPRS-GUI) that have been recompiled with the Broker
+Development Kit portion of the patch.  So, installing the server patch
+alone will not eliminate the ghost jobs for client applications that have
+not been upgraded.
+ 
+Prior to this patch, these jobs would wait for 10 hours to receive data
+from the client application that no longer exists.  Two significant
+negative effects of the ghost jobs are 1) consumption of a licensed
+process, reducing the available number of user jobs and 2) retention of
+application resources (particularly LOCKs) that interferes with subsequent
+user actions.  Other than waiting 10 hours for these jobs to finally
+timeout, the only way to get rid of the ghost jobs was for IRM to manually
+kill them.
+ 
+This patch changes the time that the server waits for the client to
+contact it.  The length of the timeout is controlled by a new field in the
+Kernel System Parameters file: BROKER ACTIVITY TIMEOUT.  That field is
+distributed by Kernel patch XU*8.0*115 with a default value of
+approximately 3 minutes.  By setting the timeout to a duration much
+shorter than 10 hours, the ghost jobs are eliminated quickly if the client
+application is no longer running.  See the help for the BROKER ACTIVITY
+TIMEOUT field for advice regarding changing the value for this field.
+ 
+In order to let the server know that the client application is still
+active, the client portion of this patch initiates a periodic, background
+contact with the server.  This 'polling' of the server by the client
+resets the timeout so that the server job is not stopped when the client
+still exists.  Any client application compiled with the RPCBroker
+component distributed with this patch automatically polls.  No developer
+or user intervention is necessary, and this polling activity affects
+neither the application nor the user.
+ 
+This patch specifically resolves problems raised in the following NOISs:
+ 
+BIR-0399-32032     GUI LOCKES UP ON USERS
+OKL-1298-70542     LOCKOUT FROM GUI
+HUN-0898-21008     Providers are locked out of record
+SAG-0898-40564     TIMEOUT MANAGMENT ON GUI
+DAY-0798-40953     No DTIME in XWBTCPC
+TUA-0598-30739     GUI JOBS HANGING AROUND
+WAS-0198-20958     SYSTEM NOT RELEASING USER AFTER CLOSING CHART
+BIR-0699-31167     BROKER TIMEOUT
+SDC-0499-62471     PATIENT RECORDS LOCKED UP
+ALB-0499-52063     Patient Record Locked
+HIN-0599-42485     CPRS CONNECTIONS REMAIN ACTIVE AFTER LOGOUT
+ 
+ 
+It also fulfills a request made in the following E3R:
+ 
+9646               CHANGE OF MAIN TIMED READ FOR BROKER
+ 
+ 
+IMPORTANT NOTES: 
+========= =====
+ 
+This patch consists of 2 parts: 
+ 
+ - Packman message containing the XWB*1.1*6 KIDS build.  
+ - An updated Broker Development Kit (programmer workstation software).  
+ 
+1. The packman message containing the XWB*1.1*6 KIDS build installs 3
+modified XWB* routines and a new RPC (entry in the Remote Procedure file)
+used by the Broker server. This part of the patch is mandatory.  
+ 
+Routine Summary: 
+======= ========
+ 
+The following is a list of the routines included in this patch.  The
+second line of each of these routines now looks like: 
+ 
+&lt;tab&gt;;;1.1;RPC BROKER;[patch list];date 
+ 
+CHECK^XTSUMBLD results: 
+ 
+Routine Name      Before Patch     After Patch     Patch List 
+XWBTCPC             7518635         7635440          2,5,4,6  
+XWBLIB              674092          720789           6        
+XWBSEC              1317713         2113752          3,6      
+ 
+2. Updated BDK (programmer client workstation software). All sites doing
+Broker development are encouraged to retrieve the patched BDK. Note that
+this version of the BDK only supports Delphi 4 and Delphi 3.  
+ 
+DO NOT INSTALL THIS PROGRAMMER CLIENT WORKSTATION SOFTWARE ON END-USER
+CLIENT WORKSTATIONS.  If you are not using the BDK in any local or
+national development, you do not need to retrieve the Broker's programmer
+client workstation software.  The patch does not update the Broker
+software that is running at end-user client workstations.  
+ 
+The software distribution includes: 
+ 
+FILE NAMES      DESCRIPTION                              BYTES
+XWB1_1P6PG.EXE  BDK Self-Installing Executable           1,500,607
+XWB1_1P4IG.PDF  Installation Guide                       195,583
+XWB1_1RM.TXT    Readme text file                         13,428*
+*The size of this file will change in the future as additions are made.
+ 
+Note:  Use Binary mode to retrieve .PDF, and .EXE files 
+       Use ASCII mode to retrieve .TXT file.  
+ 
+To obtain the updated BDK, use FTP to retrieve the software from one of
+the following CIO Field Offices' ANONYMOUS.SOFTWARE directories: 
+ 
+       CIO FIELD OFFICE              FTP Address 
+       Hines                         152.129.1.110 (isc-chicago.domain.ext)
+       Albany                        152.127.1.5   (isc-albany.domain.ext)
+       Salt Lake City                152.131.2.1   (isc-slc.domain.ext)
+ 
+ 
+COMPATIBILITY WITH PRIOR VERSIONS
+============= ==== ===== ========
+ 
+The server portion of this patch is backwards compatible with client
+applications compiled with previous versions of the Broker.  So, client
+applications do not have to be recompiled when this patch is installed on
+the server. The server retains a 10 hour timeout for those client
+applications compiled with previous Broker versions; that is, they
+continue to work as they did before the patch is installed.
+ 
+If an application is compiled with the BDK for XWB*1.1*6, the server
+XWB*1.1*6 patch MUST be installed for that application to run.  That is,
+client portion of this patch requires that the server portion be
+installed.
+ 
+ 
+BROKER-DEPENDENT COMPONENTS
+================ ==========
+ 
+The following comments apply only to those developing applications with
+the BDK (programmer workstation software).  They are not relevant to
+server operation.
+ 
+Some components, such as the FileMan Delphi Components, reference the
+TRPCBroker component.  If you use such components for development, be
+aware that installing a new version of the TRPCBroker component (i.e., a
+new BDK) may cause incompatibilities in Delphi, resulting in a compile
+failure of the unit containing the Broker-dependent component and the
+following compilation error:
+  
+        Unit &lt;unit1&gt; was compiled with a different version of &lt;unit2&gt;.
+  
+Check with the creators of the Broker-dependent component to make sure
+that, with regards to the version of the BDK you are about to install:
+  
+a) Your current component is compatible, or
+  
+b) You can obtain a new version of the component that is compatible, or
+ 
+c) You have the source (.pas, .dfm, .dpk, etc.) files available so that
+the component can be recompiled successfully.
+  
+For the FileMan Delphi Components (FMDC), patch FMDC*1.0*1 brings in a new
+version of the FMDC that includes the source files.  Please refer to the
+Patch Module for more information on this FMDC patch.  Additional
+instructions regarding installing and recompiling FMDC when the Broker is
+upgraded are in XWB1_1RM.TXT found in the ANONYMOUS.SOFTWARE directories
+mentioned above and on the FMDC web page.
+ 
+INSTALLATION: 
+============
+ 
+Server Side: 
+====== ====
+ 
+The following are the installation instructions for the KIDS distribution
+for XWB*1.1*6: 
+ 
+ 1.  Do not run any RPC-Broker-based Client/Server software (e.g., CPRS,
+PCMM) during the installation.  No Broker-based client/server software
+should be running while installing this patch on the server.  To identify
+these jobs, check the system status and see if any XWBTCPC routine is
+running (i.e., Broker Handler).  Once identified, notify users to logoff
+or forcex the jobs.  Active users may get NOSOURCE or CLOBBER errors.  
+ 
+ 2.  Stop the Broker Listener on the server.  Check the system status and
+see if the XWBTCPL routine is running (i.e., Broker Listener).  If it is
+running stop it.  To stop the Listener, do the following: 
+       a.  Log into your M server.  
+       b.  Enter the following at the M prompt: 
+ 
+       &gt;D STOP^XWBTCP(Listener port) 
+       (Typically, the Listener port is 9200
+ 
+ 3.  These routines are not usually mapped on systems that support
+mapping; so, you will probably not have to disable mapping.  
+ 
+ 4.  Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+option will load the KIDS (Kernel Installation and Distribution System)
+package onto your system.  
+    
+ 5.  The patch has now been loaded into a Transport global on your system.
+ On the KIDS menu, select the 'Installation' menu, use the following
+options: 
+         Verify Checksum's in Transport Global 
+         Print Transport Global 
+         Compare Transport Global to Current System 
+         Backup a Transport Global 
+    
+ 6.  On the KIDS menu, under the 'Installation' menu, use the following
+option: 
+        Install Package(s)  'XWB*1.1*6' 
+                             =========
+ 
+ 7.  MSM Sites - Answer YES to the question 'Want to MOVE routines to
+other CPUs?'. Enter the names of your Compute and Print server(s).  
+     AXP Sites - Answer NO to this question.  
+    
+ 8.  If the routines were unmapped as part of step 3, the mapped set
+should be rebuilt once the installation has run to completion.  
+ 
+ 9.  Restart the Broker Listener on the Server: 
+       a.  Log into your M server 
+       b.  Enter the following at the M prompt: 
+ 
+       &gt;D STRT^XWBTCP(Listener port) 
+ 
+ 
+Client Side: 
+ 
+Please follow the instructions in the most recent Broker 1.1 Installation
+Guide.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;8 SEQ #8</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-12-13 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+**  Y2K WAIVER - #Y2KW0001  **
+ 
+This patch supports GUI Multi-Divisional signon.  If a user has more
+than one division to choose from, the user must select one  before
+continuing with signon.  If the user has only one division in file 200,
+this division will be used; else, the default institution in the
+Kernel System Parameters file will be used.
+ 
+This patch specifically resolves problems reported in the following NOISs:
+ EKH-1298-40440     Divisional Parameters
+ EKH-0399-40543     WHEN ENTERING THROUGH THE GUI the submit request
+ HVH-0699-12732     GUI ONLY USES PRIMARY SITE FIELDS: IC LAB ORDERS
+ FGH-0299-32563     MultiDivisional Capabilities
+ BHH-0799-41993     Lab Collection Printing Problem for Integrated Sites
+ 
+ 
+IMPORTANT NOTES: 
+=================
+ 
+This patch consists of 1 part ONLY: 
+- An updated Broker Development Kit (BDK), the programmer workstation
+software.  All sites doing Broker development are encouraged to retrieve
+the patched BDK. Note that this version of the BDK only supports Delphi 4
+and Delphi 3.  This patch doesn't support Delphi 5.
+ 
+DO NOT INSTALL THIS PROGRAMMER CLIENT WORKSTATION SOFTWARE ON END-USER
+CLIENT WORKSTATIONS.  If you are not using the BDK in any local or
+national development, you do not need to retrieve the Broker's programmer
+client workstation software.  The patch does not update the Broker
+software that is running at end-user client workstations.  
+ 
+The software distribution includes: 
+ 
+FILE NAMES      DESCRIPTION                       Bytes 
+XWB1_1P8PG.EXE  BDK Self-Installing Executable    1,636,409
+XWB1_1P4IG.PDF  Installation Guide                195,583      
+XWB1_1RM.TXT    Readme text file                  13,428*
+*The size of this file will change in the future as additions are made.
+      
+Note:  Use Binary mode to retrieve .PDF, and .EXE files 
+       Use ASCII mode to retrieve .TXT file.  
+ 
+To obtain the updated BDK, use FTP to retrieve the software from one of
+the following CIO Field Offices' ANONYMOUS.SOFTWARE directories: 
+ 
+       CIO FIELD OFFICE                FTP Address 
+       Hines                           152.129.1.110 (isc-chicago.domain.ext)
+       Albany                          152.127.1.5 (isc-albany.domain.ext)
+       Salt Lake City                  152.131.2.1 (isc-slc.domain.ext)
+ 
+BROKER-DEPENDENT COMPONENTS
+===========================
+ 
+The following comments apply only to those developing applications with
+the BDK (programmer workstation software).  They are not relevant to
+server operation.
+ 
+WARNING:
+Some components, such as the FileMan Delphi Components, reference the
+TRPCBroker component.  If you use such components for development, be
+aware that installing a new version of the TRPCBroker component (i.e., a
+new BDK) may cause incompatibilities in Delphi, resulting in a compile
+failure of the unit containing the Broker-dependent component and the
+following compilation error:
+  
+        Unit &lt;unit1&gt; was compiled with a different version of &lt;unit2&gt;.
+  
+Check with the creators of the Broker-dependent component to make sure
+that, with regards to the version of the BDK you are about to install:
+  
+a) Your current component is compatible, or
+  
+b) You can obtain a new version of the component that is compatible, or
+ 
+c) You have the source (.pas) files available so that the component can be
+recompiled successfully.
+  
+For the FileMan Delphi Components (FMDC), patch FMDC*1.0*1 brings in a new
+version of the FMDC that includes the source files.  Please refer to the
+Patch Module for more information on this FMDC patch.  Additional
+instructions regarding installing and recompiling FMDC when the Broker is
+upgraded are in XWB1_1RM.TXT found in the ANONYMOUS.SOFTWARE directories
+mentioned above and on the FMDC web page.
+ 
+CLIENT SIDE INSTALLATION: 
+========================
+ 
+THIS IS A CLIENT SIDE PATCH ONLY.  Please follow the instructions in the
+most recent Broker 1.1 Installation Guide.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;9 SEQ #9</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-01-25 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch fixes the following: 
+ 
+1.  Intersystems License.    This is the patch that works with patch
+XU*8*118. The code to share licenses when GUI and Telnet users from the
+same workstation are connected is in place and ZU now calls it.  This
+patch adds a similar call from XWBTCPC.  
+              
+2.  This patch brings a new XWB LISTENER STOP ALL option for shutting down
+multiple listeners.  It also brings a modified option XWB LISTENER STARTER
+for starting Broker listeners.
+ 
+These changes fulfill the functionality requested in the following E3Rs:
+    11934, RPC BROKER FILE SHOWS RUNNING ON OPENM FAILOVER
+    10705, LISTENERS NOT STOPPED WILL NOT START UP
+     8789, CREATE MENU STARTUP AND SHUTDOWN OPTIONS
+ 
+The changes also resolve the problems reported in the following NOIS
+calls:
+    DAY-0796-40646, Startup Queue of Listener
+    FRE-0299-60491, Broker Not Starting Automatically
+ 
+Here are the definitions of the options:
+ 
+NAME: XWB LISTENER STARTER      MENU TEXT: Start All RPC Broker Listeners
+  TYPE: run routine                     CREATOR: 
+  PACKAGE: RPC BROKER                   DELEGABLE: YES
+ DESCRIPTION:   This option will Start/Restart all the RPC Broker
+listeners under the control of the RPC BROKER SITE PARAMETERS file.  It is
+normally setup as a STARTUP type option in the taskman option scheduling
+file. This option will first STOP ALL listeners and then START ALL the
+listeners through Taskman.  (VMS sites need to be running Taskman in DCL
+context).  The XWB LISTENER STARTER cannot be used to start one particular
+listener.  To do this, in programmer mode, use STRT^XWBTCP(portnumber) on
+the node the listener needs to run on. Or use the XWB LISTENER EDIT option
+to change the status of the one listener.
+  ROUTINE: RESTART^XWBTCP               SCHEDULING RECOMMENDED: STARTUP
+  UPPERCASE MENU TEXT: START ALL RPC BROKER LISTENERS
+ 
+NAME: XWB LISTENER STOP ALL       MENU TEXT: Stop All RPC Broker Listeners
+  TYPE: run routine                     CREATOR: 
+  PACKAGE: RPC BROKER                   DELEGABLE: YES
+ DESCRIPTION:   This option will Stop all the RPC Broker listeners under
+the control of the RPC BROKER SITE PARAMETERS file.
+  ROUTINE: STOPALL^XWBTCP
+  UPPERCASE MENU TEXT: STOP ALL RPC BROKER LISTENERS
+ 
+3.  The code called by the XWB LISTENER STARTER option had a bug that
+caused it to start the listeners on the default port of 9000.  This
+problem is fixed.  The following NOIS calls reported the bug.
+              
+    BEC-0999-21188   XWB  LISTENER STARTER 
+    STX-0999-71581   BROKER STARTING 9000 IGNORING PARAME 
+ 
+4.  A new menu option, XWB MAIN MENU, is included in this patch.  Another
+option, XWB LISTENER EDIT, is also included.  Here are the option
+definitions:
+ 
+NAME: XWB MENU                     MENU TEXT: RPC Broker Management Menu
+  TYPE: menu                            CREATOR: 
+  PACKAGE: RPC BROKER                   DELEGABLE: NO
+ DESCRIPTION:   This is the main menu for RPC Broker.  
+ITEM: XWB LISTENER STOP ALL             DISPLAY ORDER: 3
+ITEM: XWB LISTENER EDIT                 DISPLAY ORDER: 1
+ITEM: XWB LISTENER STARTER              DISPLAY ORDER: 2
+  TIMESTAMP: 58079,48431
+  UPPERCASE MENU TEXT: RPC BROKER MANAGEMENT MENU
+ 
+NAME: XWB LISTENER EDIT                 MENU TEXT: RPC Listener Edit
+  TYPE: edit                            CREATOR:
+  PACKAGE: RPC BROKER                   DELEGABLE: NO
+ DESCRIPTION:   This option allows for editing the RPC BROKER SITE
+PARAMETERS file (#8994.1).
+  DIC {DIC}: XWB(8994.1,                DIC(0): AEMQ
+  DIE: XWB(8994.1,                      DR {DIE}: [XWB LISTENER EDIT]
+  TIMESTAMP OF PRIMARY MENU: 58078,56469
+  UPPERCASE MENU TEXT: RPC LISTENER EDIT
+ 
+             &lt;&lt;&lt;&lt;&lt;&lt;THIS IS A SERVER SIDE ONLY PATCH&gt;&gt;&gt;&gt;&gt;&gt;
+ 
+The updated Broker Systems Manual and the Broker Technical Manual may be
+retrieved at the following CIO Field Offices' ANONYMOUS.SOFTWARE
+directories:
+ 
+        Hines           152.129.1.110  (isc-chicago.domain.ext)
+        Albany          152.127.1.5    (isc-albany.domain.ext)
+        Salt Lake City  152.131.2.1    (isc-slc.domain.ext)
+ 
+Use Binary mode for these .PDF files:
+ 
+XWB1_1P9SM.PDF          Broker Systems Manual           See patch desc.
+XWB1_1P9TM.PDF          Broker Technical Manual         See patch desc.
+ 
+Routine Summary:
+================
+ 
+The following routines are included in this patch.  The second line of each
+of these routines now looks like:
+ ;;1.1;RPC BROKER;&lt;patchlist&gt;;Mar 28, 1997
+ 
+                 Checksum
+Routine         Old       New      2nd Line
+XWBTCP        9081629  10677300    **1,9**
+XWBTCPC       7635440   7568523    **2,5,4,6,9**
+XWBTCPL       8850625   8934371    **1,7,9**
+ 
+List of preceding patches: 6, 7
+Sites should use CHECK^XTSUMBLD to verify checksums.
+ 
+=========================================================================
+ 
+Installation:
+ 
+   1.  Do not run any RPC-Broker-based Client/Server software (e.g., CPRS,
+       PCMM) during the installation.  No Broker-based client/server 
+       software should be running while installing this patch on the 
+       server.  To identify these jobs, check the system status and verify
+       if any XWBTCPC routines are running (i.e., Broker Handler).  Once 
+       identified, notify users to logoff or forcex the jobs.  Active 
+       users may get NOSOURCE or CLOBBER errors.  
+ 
+   2.  Stop the Broker Listener on the server.  Check the system status 
+       and verify if the XWBTCPL routine is running (i.e., Broker 
+       Listener).  If it is running stop it.  To stop the Listener, do the
+       following: 
+ 
+           a.  Log into your M server.                   
+           b.  Enter the following at the M prompt: 
+ 
+               &gt;D STOP^XWBTCP(Listener port) 
+               (Typically, the Listener port is 9200) 
+ 
+   3.  Broker routines are not usually mapped on systems that allow it, so
+       you will probably not have to disable mapping.
+ 
+   4.  Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+       option will load the KIDS package onto your system.
+ 
+   5.  The patch has now been loaded into a Transport global on your
+       system. You now need to use KIDS to install the Transport global.
+       On the KIDS menu, under the 'Installation' menu, use the following
+       options:
+ 
+          Verify Checksums in Transport Global
+          Print Transport Global
+          Compare Transport Global to Current System
+          Backup a Transport Global
+ 
+   6.  On the KIDS menu, under the 'Installation' menu, use the following
+       option:
+         Install Package(s)  'XWB*1.1*9'
+                              =========
+       No Options or Protocols need to be placed out-of-order.
+       Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO
+                                                                       ==
+ 
+   7.  If the routines were unmapped as part of step 3, the mapped set
+       should be rebuilt once the installation has run to completion. 
+ 
+   8.  Restart the Broker Listener on the Server:
+         a.  Log into your M server
+         b.  Enter the following at the M prompt:
+ 
+             &gt;D STRT^XWBTCP(Listener port)
+             (Typically, the Listener port is 9200)
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;11 SEQ #10</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-01-25 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+** Y2K WAIVER - #Y2K0001 **
+ 
+This patch updates the Broker's programmer client workstation software --
+also known as the Broker Development Kit (BDK) -- adding support for
+Delphi 5 development.
+ 
+IMPORTANT NOTES:
+ 
+This patch consists of 2 parts:
+ 
+1.  Packman message containing the XWB*1.1*11 KIDS build.  The packman
+message simply updates the version multiple of the package.
+ 
+2.  Updated BDK (programmer client workstation software). All sites doing
+Broker development are encouraged to retrieve the patched BDK.  This
+version of the BDK supports Delphi 5, Delphi 4, and Delphi 3.
+ 
+DO NOT INSTALL THIS PROGRAMMER CLIENT WORKSTATION SOFTWARE AT END-USER
+CLIENT WORKSTATIONS.  If you are not using the BDK in any local or
+national development, you do not need to retrieve the Broker's programmer
+client workstation software. The software does not update the Broker
+software that is running at end-user client workstations.
+ 
+The software distribution includes:
+ 
+FILE NAMES       DESCRIPTION                       Bytes
+XWB1_1P11PG.EXE  BDK Self-Installing Executable 2,200,099
+XWB1_1P11IG.PDF  Installation Guide               185,092
+XWB1_1RM.TXT     Readme text file                  13,915*
+The size of this file will change in the future as additions are made.
+ 
+Note:  Use Binary mode for .PDF, and .EXE files
+       Use ASCII mode for .TXT file.
+ 
+To obtain the updated BDK, use FTP to retrieve the software from one of
+the following CIO Field Offices' ANONYMOUS.SOFTWARE directories:
+ 
+       CIO FIELD OFFICE                FTP Address 
+       Hines                           152.129.1.110 (isc-chicago.domain.ext)
+       Albany                          152.127.1.5 (isc-albany.domain.ext)
+       Salt Lake City                  152.131.2.1 (isc-slc.domain.ext)
+ 
+BROKER-DEPENDENT COMPONENTS:
+ 
+The following comments apply only to those developing applications with
+the BDK (programmer workstation software).  They are not relevant to
+server operation.
+ 
+Warning:
+Some components, such as the FileMan Delphi Components, reference the
+TRPCBroker component.  If you use such components for development, be
+aware that installing a new version of the TRPCBroker component (i.e. a
+new BDK) may cause incompatibilities in Delphi, resulting in a compile
+failure of the unit containing the Broker-dependent component and the
+following compilation error:
+ 
+       Unit &lt;unit1&gt; was compiled with a different version of &lt;unit2&gt;.
+ 
+Check with the creators of the Broker-dependent component to make sure
+that, with regards to the version of the BDK you are about to install:
+ 
+a) Your current component is compatible, or
+ 
+b) You can obtain a new version of the component that is compatible.
+ 
+c) You have the source (.pas, .dfm, .dpk, etc.) files available so that
+the component can be recompiled successfully.
+  
+If you're using the FileMan Delphi Components (FMDC), please note that the
+FMDC source code includes references to RPC Broker Development Kit (BDK)
+code. When you install a new version of the BDK, you will need to
+recompile the FMDC.
+      
+As of patch FMDC*1.0*1, source code for FMDC is provided, allowing you
+to recompile FMDC if necessary. For instructions on how to recompile FMDC,
+please refer to FMDC*1.0*2.
+ 
+INSTALLATION:
+ 
+Server Side:
+============
+ 
+Use the following instructions in installing this server-side RPC Broker
+patch.  Do NOT follow the M Server Installation Instructions in the RPC
+Broker Installation Guide to install the server portion of this patch.
+ 
+1.  Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+option will load the KIDS (Kernel Installation and Distribution System)
+package onto your system.  
+    
+2.  On the KIDS menu, under the 'Installation' menu, use the following
+option:
+        Install Package(s)  'XWB*1.1*11'
+                            ============
+ 
+Client Side:
+============
+ 
+Please follow the instructions in the most recent Broker 1.1 Installation
+Guide.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;15 SEQ #11</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-04-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ALL SITES SHOULD INSTALL THIS PATCH!
+ 
+This patch should correct a problem on Cache sites with the Broker looping
+with COMMAND errors.  This error is caused when the Broker tries to open
+the TCP port and the port is already open by the broker.
+ 
+This patch resolves the following NOIS calls: 
+        SPO-0300-51693
+        MUR-0300-32581
+        WCO-0300-51724
+        WRJ-1299-10856
+        MPI-1299-60581
+        FTL-0200-51217
+        BOI-0300-50946
+ 
+Routine Summary:
+ 
+The following routine is included in this patch.  The second line of this
+routine now looks like:
+ ;;1.1;RPC BROKER;&lt;patchlist&gt;;Mar 28, 1997
+ 
+               Checksum
+ Routine     Old       New      2nd Line
+ XWBTCPL   8934371   9128997    **1,7,9,15**
+ 
+ List of preceding patches: 9
+ Sites should use CHECK^XTSUMBLD to verify checksums.
+ 
+========================================================================= 
+ 
+Installation:
+ 
+   1.  Do not run any RPC-Broker-based Client/Server software (e.g., CPRS,
+       PCMM) during the installation.  No Broker-based client/server 
+       software should be running while installing this patch on the 
+       server.  To identify these jobs, check the system status and verify
+       if any XWBTCPC routines are running (i.e., Broker Handler).  Once 
+       identified, notify users to logoff or forcex the jobs.  Active 
+       users may get NOSOURCE or CLOBBER errors.  
+ 
+   2.  Stop the Broker Listener on the server.  Check the system status 
+       and verify if the XWBTCPL routine is running (i.e., Broker 
+       Listener).  If it is running stop it.  To stop the Listener, do the
+       following: 
+ 
+           a.  Log into your M server.                   
+           b.  Enter the following at the M prompt: 
+ 
+               &gt;D STOP^XWBTCP(Listener port) 
+               (Typically, the Listener port is 9200) 
+ 
+   3.  Broker routines are not usually mapped on systems that allow it, so
+       you will probably not have to disable mapping.
+ 
+   4.  Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+       option will load the KIDS package onto your system.
+ 
+   5.  The patch has now been loaded into a Transport global on your
+       system. You now need to use KIDS to install the Transport global.
+       On the KIDS menu, under the 'Installation' menu, use the following
+       options:
+ 
+          Verify Checksums in Transport Global
+          Print Transport Global
+          Compare Transport Global to Current System
+          Backup a Transport Global
+ 
+   6.  On the KIDS menu, under the 'Installation' menu, use the following
+       option:
+         Install Package(s)  'XWB*1.1*15'
+                              =========
+       No Options or Protocols need to be placed out-of-order.
+       Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO
+                                                                       ==
+ 
+   7.  If the routines were unmapped as part of step 3, the mapped set
+       should be rebuilt once the installation has run to completion. 
+ 
+   8.  Restart the Broker Listener on the Server:
+         a.  Log into your M server
+         b.  Enter the following at the M prompt:
+ 
+             &gt;D STRT^XWBTCP(Listener port)
+             (Typically, the Listener port is 9200)
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;10 SEQ #12</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-08-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch gives greater information about and control of RPCs.  Specific
+new abilities are:
+ 
+1. Blocking an RPC either locally*, remotely*, or in both contexts by
+setting a value in the INACTIVE field of the Remote Procedure file.  The
+field can be set either by a package developer and exported by KIDS or by
+a site manager using FileMan.  (Prior to this patch, values in this field
+had no effect.)
+ 
+2. Assuring that an RPC is at least a specified version when it is run
+remotely* by setting a value in the new VERSION field of the Remote
+Procedure file.
+ 
+3. Querying a server regarding the status of RPCs by using new Remote
+Procedures: XWB IS RPC AVAILABLE and XWB ARE RPCS AVAILABLE.
+ 
+Please see the on-line descriptions of the INACTIVE and VERSION fields in
+the Remote Procedure file and of the XWB IS RPC AVAILABLE and XWB ARE RPCS
+AVAILABLE Remote Procedure file entries for details of the use of the new
+functionality.
+ 
+In addition, this patch stops M errors from occurring when a client
+application 1) attempts to create a context that does not exist on the
+server or 2) attempts to run a remote procedure that does not exist on the
+server.  With this patch in both these situations, the user is shown a
+specific error message explaining the problem.  Several developers have
+requested this fix, and the following NOIS calls are resolved:
+ 
+ISP-0399-N2813     Broker Error When Client Calls Non-Existent RPC
+MWV-1099-20408     Error encountered with XWBBRK
+MWV-0499-21483     broker error since *169
+SLC-1298-50740     NULL SUBSCRIPT ERROR
+TOM-0798-41277     RPC ERRORS
+DES-1296-40252     ERROR AT PRSA+18^XWBBRK
+DAY-1196-42040     Error when PCMM not installed in the environment
+ 
+--------
+*'Locally' means an RPC is being run at the site which the user is logged
+on to; 'remotely' means an RPC is being run at a site the user is not
+directly logged on to.
+ 
+ 
+NOTES: 
+=====
+ 
+1. The packman message containing the XWB*1.1*10 KIDS build installs 3
+modified XWB* routines, one modified and one new field in the Remote
+Procedure file, and two new RPCs (entries in the Remote Procedure file).  
+ 
+Routine Summary: 
+======= ========
+ 
+The following is a list of the routines included in this patch.  The
+second line of each of these routines now looks like: 
+ 
+&lt;tab&gt;;;1.1;RPC BROKER;[patch list];date 
+ 
+CHECK^XTSUMBLD results: 
+ 
+Routine Name      Before Patch     After Patch     Patch List 
+XWBBRK              4567623          5912545         2,4,10
+XWBLIB              720789           3253016         6,10        
+XWBSEC              2113752          2425405         3,6,10
+ 
+Fields in Remote Procedure file (#8994):
+====== == ====== ========= ==== 
+ 
+INACTIVE (#.06) is modified
+VERSION  (#.09) is new
+ 
+Remote Procedure:
+====== =========
+ 
+XWB IS RPC AVAILABLE is new
+XWB ARE RPCS AVAILABLE is new
+ 
+2. There is no client portion of this patch.
+ 
+ 
+INSTALLATION: 
+============
+ 
+1.  Do not run any RPC-Broker-based Client/Server software (e.g., CPRS,
+PCMM) during the installation.  No Broker-based client/server software
+should be running while installing this patch on the server.  To identify
+these jobs, check the system status and see if any XWBTCPC routine is
+running (i.e., Broker Handler).  Once identified, notify users to logoff
+or forcex the jobs.  Active users may get NOSOURCE or CLOBBER errors.  
+ 
+ 2.  Stop the Broker Listener(s) on the server.  Check the system status
+and see if the XWBTCPL routine is running (i.e., Broker Listener).  If it
+is running stop it.  There are several ways to stop the Listeners -- see
+the current version of the RPC Broker System Manual for details.
+ 
+ 3.  These routines are not usually mapped on systems that support
+mapping; so, you will probably not have to disable mapping.  
+ 
+ 4.  Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+option will load the KIDS (Kernel Installation and Distribution System)
+package onto your system.  
+    
+ 5.  The patch has now been loaded into a Transport global on your system.
+ On the KIDS menu, select the 'Installation' menu, use the following
+options: 
+         Verify Checksum's in Transport Global 
+         Print Transport Global 
+         Compare Transport Global to Current System 
+         Backup a Transport Global 
+    
+ 6.  On the KIDS menu, under the 'Installation' menu, use the following
+option: 
+        Install Package(s)  'XWB*1.1*10' 
+                             ==========
+ 
+ 7.  When asked, answer these questions NO:
+  
+   Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                         ==
+   Want to DISABLE Scheduled Options, Menu Options, and Protocols?
+     YES// NO
+           ==
+ 
+ 8.  MSM Sites - Answer YES to the question 'Want to MOVE routines to
+other CPUs?'. Enter the names of your Compute and Print server(s).  
+     AXP Sites - Answer NO to this question.  
+    
+ 9.  If the routines were unmapped as part of step 3, the mapped set
+should be rebuilt once the installation has run to completion.  
+ 
+ 10. Restart the Broker Listener on the Server: see the current RPC Broker
+System Manual for details.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;12 SEQ #13</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-08-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch is in support of the CPRS Remote Data Views project. The
+RPC Broker is used to facilitate invocation of Remote Procedure calls on a
+remote server.  The RPC Broker uses Vista HL7 as the vehicle to pass RPC
+name and parameters from a local server to a remote server.  On the return
+path, Vista HL7 is also used to send results from the remote server back
+to the local server.
+ 
+The following is the list of required patches: 
+HL*1.6*54      
+HL*1.6*57      
+HL*1.6*58      
+XU*8.0*131 
+XU*8.0*165     
+XWB*1.1*10
+ 
+To facilitate the running of  server to server  RPCs, new RPCs are sent
+out in this patch.  The documentation on how to use these RPCs can be
+found on Forum's DBA menu. Please reference the following Integration
+Agreements:
+ 
+ #3032 Direct RPCs - controlled subscription
+ #3031 Remote RPCs - controlled subscription
+ #3033 Deferred RPCs - supported
+ 
+New Remote Procedure entries: 
+ 1. XWB REMOTE RPC 
+ 2. XWB REMOTE STATUS CHECK 
+ 3. XWB REMOTE GETDATA 
+ 4. XWB REMOTE CLEAR
+ 5. XWB DEFERRED CLEAR
+ 6. XWB DEFERRED CLEARALL
+ 7. XWB DEFERRED RPC 
+ 8. XWB DEFERRED GETDATA 
+ 9. XWB DEFERRED STATUS 
+ 10. XWB DIRECT RPC 
+ 
+New Protocol entries: 
+ 1. XWB RPC EVENT 
+ 2. XWB RPC SUBSCRIBER 
+ 
+New HL7 Application Parameter entries: 
+ 1. XWB RECEIVER 
+ 2. XWB SENDER 
+ 
+This 'Server to Server RPC' functionality is currently limited to sites
+that have implemented CIRN.  CIRN makes it possible for an application to
+know a patient's current list of treating facilities. Furthermore, CIRN
+has assumed responsibility for supervising the proper configuration and
+activation of the VA network nodes that will be used for HL7 message
+exchange.
+ 
+Routine Summary
+The following routines are included in this patch.  The second line of each
+of these routines now looks like:
+ ;;1.1;RPC BROKER;&lt;patchlist&gt;;Mar 28, 1997
+ 
+                 Checksum
+Routine         Old       New      2nd Line
+XWB2HL7                 9722375    **12**
+XWB2HL7A                6313853    **12**
+XWB2HL7B                9424236    **12**
+XWBDRPC                 4972286    **12**
+ 
+Sites should use CHECK^XTSUMBLD to verify checksums.
+ 
+========================================================================= 
+Installation:
+ 
+&gt;&gt;&gt;Users may remain on the system.
+   This patch brings in new functionality.
+   No existing package is affected by the installation
+     
+  1.  Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+      option will load the KIDS package onto your system.
+     
+  2.  The patch has now been loaded into a Transport global on your
+      system. You now need to use KIDS to install the Transport global.
+      On the KIDS menu, under the 'Installation' menu, use the following
+      options:
+      
+         Verify Checksums in Transport Global
+         Print Transport Global
+         Compare Transport Global to Current System
+         Backup a Transport Global
+     
+  3.  Users can remain on the system.
+      This patch can be queued and installed at any time.
+     
+  4.  On the KIDS menu, under the 'Installation' menu, use the following
+      option:
+        Install Package(s)  'XWB*1.1*12'
+                             ==========
+                             
+        No Options or Protocols need to be placed out-of-order.
+        Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO
+                                                                        ==
+     
+ =========================================================================
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;18 SEQ #14</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-10-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+LOM-0800-62301  XWB2HL7  If there are problems associated with the remote  
+PRO-0800-12778           site's HL7 definitions -- specifically the receiving 
+                         application. 
+                         Then the RPC XWB REMOTE STATUS CHECK will get a 
+                         UNDEF error on the variable Z. This has been fixed.
+                         
+
+Routine Summary
+The following routines are included in this patch.  The second line of each
+of these routines now looks like:
+ ;;1.1;RPC BROKER;&lt;patchlist&gt;;Mar 28, 1997
+
+                 Checksum
+Routine         Old       New      2nd Line
+XWB2HL7       9722375   9756388    **12,18**
+
+List of preceding patches: 12
+Sites should use CHECK^XTSUMBLD to verify checksums.
+
+=========================================================================
+Installation:
+
+   1.  Do not run any RPC-Broker-based Client/Server software (e.g., CPRS,
+       PCMM) during the installation.  No Broker-based client/server 
+       software should be running while installing this patch on the 
+       server.  To identify these jobs, check the system status and verify
+       if any XWBTCPC routines are running (i.e., Broker Handler).  Once 
+       identified, notify users to logoff or forcex the jobs.  Active 
+       users may get NOSOURCE or CLOBBER errors.  
+ 
+   2.  Stop the Broker Listener on the server.  Check the system status 
+       and verify if the XWBTCPL routine is running (i.e., Broker 
+       Listener).  If it is running stop it.  To stop the Listener, do the
+       following: 
+ 
+           a.  Log into your M server.                   
+           b.  Enter the following at the M prompt: 
+ 
+               &gt;D STOP^XWBTCP(Listener port) 
+               (Typically, the Listener port is 9200) 
+
+   3.  Broker routines are not usually mapped on systems that allow it, so
+       you will probably not have to disable mapping.
+
+   4.  Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+       option will load the KIDS package onto your system.
+
+   5.  The patch has now been loaded into a Transport global on your
+       system. You now need to use KIDS to install the Transport global.
+       On the KIDS menu, under the 'Installation' menu, use the following
+       options:
+
+          Verify Checksums in Transport Global
+          Print Transport Global
+          Compare Transport Global to Current System
+          Backup a Transport Global
+
+   6.  On the KIDS menu, under the 'Installation' menu, use the following
+       option:
+         Install Package(s)  'XWB*1.1*18'
+                              ==========
+       No Options or Protocols need to be placed out-of-order.
+       Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO
+                                                                       ==
+
+   7.  If the routines were unmapped as part of step 3, the mapped set
+       should be rebuilt once the installation has run to completion. 
+
+   8.  Restart the Broker Listener on the Server:
+         a.  Log into your M server
+         b.  Enter the following at the M prompt:
+
+             &gt;D STRT^XWBTCP(Listener port)
+             (Typically, the Listener port is 9200)
+
+============================================================================
+
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;14 SEQ #15</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-10-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch updates the Broker's programmer client workstation software --
+also known as the Broker Development Kit (BDK).  It adds no new
+functionality.
+ 
+This patch:
+ 
+- releases the source code for the BDK
+- splits the VistaBroker package into separate design- and run-time
+packages.
+ 
+The release of the source code does not affect how a developer uses the
+Broker Component or other parts of the BDK.  Modified BDK source code
+should NOT be used to create VistA GUI applications.  Suggestions for
+changes to the BDK should be done via NOIS (for bugs ) or E3R (for
+enhancements) for review and possible inclusion in another patch.
+ 
+The BDK now has separate run-time and design-time packages.  There is no
+longer a VistaBroker package.  The new packages are XWB_Dxx and XWB_Rxx,
+where D means Design-time and R means Run-time and where xx is two digits
+indicating the version of Delphi with which it should be used (e.g.,
+XWB_D50 is the design-time package for Delphi 5.0).  Splitting the BDK
+into separate packages resolves certain compatibility problems that arose
+from having a single run- and design-time package.  It also eliminates a
+certain problem with Delphi 5.0's dsgnintf unit that prevented users of
+the Standard edition of Delphi 5.0 from using the Broker.
+ 
+The run-time package should not be used to create executables that depend
+on a separate XWB_Rxx.bpl installed on client workstations.  There is no
+procedure in place at this time to reliably install the correct version of
+the run-time bpl on client workstations.  Do NOT compile your project so
+that it relies on dynamic linking with the BDK's run-time package; that
+is, do NOT check the 'Build with runtime packages' box on the Packages tab
+of the Project Options dialog.    
+ 
+This patch addresses issues raised in the following NOISs:
+ 
+POR-0200-51902     Can't install CPRSDTTM package in Delphi 4
+POR-0200-50554     When is the source code being distributed ?
+POR-0400-51704     RPC Broker Source Code
+ 
+ 
+IMPORTANT NOTES:
+ 
+This patch consists of 2 parts:
+ 
+1.  Packman message containing the XWB*1.1*14 KIDS build.  The packman
+message simply updates the version multiple of the package.
+ 
+2.  Updated BDK (programmer client workstation software). This version of
+the BDK supports Delphi 5, Delphi 4, and Delphi 3.  
+ 
+DO NOT INSTALL THIS PROGRAMMER CLIENT WORKSTATION SOFTWARE ON END-USER
+CLIENT WORKSTATIONS.  If you are not using the BDK in any local or
+national development, you do not need to retrieve the Broker's programmer
+client workstation software. The software does not update the Broker
+software that is running at end-user client workstations. Further, since
+no new functionality is added to the BDK by this patch, you do not have to
+retrieve and install it on programmer workstations unless you either want
+to see the BDK source code or need to use separate run- and design-time
+packages.
+ 
+The software distribution includes:
+ 
+FILE NAMES       DESCRIPTION                         Bytes 
+XWB1_1P14PG.EXE  BDK Self-Installing Executable      2,905,311
+XWB1_1P14IG.PDF  Installation Guide                    171,945
+XWB1_1RM.TXT     Readme text file                       15,686*
+*The size of this file will change in the future as additions are made.
+ 
+Note:  Use Binary mode for .PDF, and .EXE files.  
+       Use ASCII mode for .TXT file.
+ 
+To obtain the updated BDK, use FTP to retrieve the software from one of
+the following CIO Field Offices' ANONYMOUS.SOFTWARE directories:
+ 
+       CIO FIELD OFFICE                FTP Address         
+Hines                           152.129.1.110 (isc-chicago.domain.ext)
+Albany                          152.127.1.5 (isc-albany.domain.ext)        
+Salt Lake City                  152.131.2.1 (isc-slc.domain.ext)
+ 
+PACKAGE DEPENDENCIES:
+ 
+A Package may have been defined to require the Broker package.  Patch
+XWB*1.1*14 changes the identity of the Broker design-time package. If you
+try to install a package into the Delphi IDE that requires the Broker, you
+may receive an error message like:
+ 
+      Can't load package &lt;Package1&gt;.
+      One of the library files needed to run this package cannot be found.
+ 
+To resolve this problem, Open the dpk file associated with that package;
+delete the reference to the old version of the Broker in the Requires
+section; add a reference to the new design-time Broker package (XWB_Dxx)
+into the Requires section; recompile and install the package.
+ 
+BROKER-DEPENDENT COMPONENTS:
+ 
+Warning: Some components, such as the FileMan Delphi Components, reference
+the TRPCBroker component.  If you use such components for development, be
+aware that installing a new version of the TRPCBroker component (i.e. a
+new BDK) may cause incompatibilities in Delphi, resulting in a compile
+failure of the unit containing the Broker-dependent component and the
+following compilation error:
+ 
+       Unit &lt;unit1&gt; was compiled with a different version of &lt;unit2&gt;.
+ 
+Check with the creators of the Broker-dependent component to make sure
+that, with regards to the version of the BDK you are about to install:
+ 
+a) Your current component is compatible, or
+ 
+b) You can obtain a new version of the component that is compatible.
+ 
+c) You have the source (.pas, .dfm, .dpk, etc.) files available so that
+the component can be recompiled successfully.    If you're using the
+FileMan Delphi Components (FMDC), please note that the FMDC source code
+includes references to RPC Broker Development Kit (BDK) code. When you
+install a new version of the BDK, you will need to recompile the FMDC.
+   As of patch FMDC*1.0*1, source code for FMDC is provided, allowing you
+to recompile FMDC if necessary. For instructions on how to recompile FMDC,
+please refer to FMDC*1.0*2.
+ 
+INSTALLATION:
+ 
+Server Side: 
+============
+ 
+Use the following instructions in installing this server-side RPC Broker
+patch.  Do NOT follow the M Server Installation Instructions in the RPC
+Broker Installation Guide to install the server portion of this patch.
+ 
+No routines or other package components are added or modified on the
+server by this patch.
+ 
+1. Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This option
+will load the KIDS (Kernel Installation and Distribution System) package
+onto your system.        
+ 
+2. On the KIDS menu, under the 'Installation' menu, use the following
+option:
+Install Package(s)  'XWB*1.1*14'
+                     ==========
+ 
+Answer the install questions like this:
+ 
+Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                      ==
+Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+                                                                      ==
+ 
+ 
+Client Side: 
+============
+ 
+Please follow the instructions in the most recent Broker 1.1 Installation
+Guide. 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;20 SEQ #16</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-05-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+NOIS Calls: LAS-1000-62717
+            BOI-1000-52970
+            LOM-1200-62234
+            ANN-1200-41924
+            WRJ-1100-11904
+            BEC-1100-20841
+ 
+ROUTINE: XWB2HL7 
+During the early testing of RDV (Remote Data View), the DUZ value was hard set 
+to .5 just before the call to the RPC. This was done because the code to set
+up the user at the remote site wasn't ready. When the code was fixed to 
+properly set the DUZ, the old code was never removed.  This has been fixed 
+in the routine XWB2HL7.  If data was left in the ^XUTL("XQ",$J,"IO")node it 
+could cause problems when HOME^%ZIS is called by some RPC's, so this ^XUTL 
+node is killed off before the RPC is called.
+ 
+In a E-mail message from CPRS developers: The global that may be used to 
+pass data back to the RPC was not killed before its use.  This was fixed in 
+the routine XWBDRPC.
+ 
+Routine Summary
+The following routines are included in this patch.  The second line of each
+of these routines now looks like:
+ ;;1.1;RPC BROKER;&lt;patchlist&gt;;Mar 28, 1997
+ 
+                 Checksum
+Routine         Old       New      2nd Line
+XWB2HL7       9756388   9762168    **12,18,20**
+XWBDRPC       4972286   5069845    **12,20**
+ 
+List of preceding patches: 12, 18
+Sites should use CHECK^XTSUMBLD to verify checksums.
+ 
+=========================================================================
+Installation:
+ 
+   1.  Do not run any RPC-Broker-based Remote Data View software 
+       (e.g., CPRS, PCMM) during the installation.  Do not allow any 
+       incoming HL7 RDV messages. To identify these jobs, check the 
+       system status and verify if any XWBTCPC routines are running 
+       (i.e., Broker Handler).  Once identified, notify users to logoff 
+       or forcex the jobs.  Active users may get NOSOURCE or CLOBBER 
+       error messages .  
+ 
+   2.  Stop the Broker Listener on the server.  Check the system status 
+       and verify if the XWBTCPL routine is running (i.e., Broker 
+       Listener).  If it is running stop it.  To stop the Listener, do the
+       following: 
+ 
+           a.  Log into your M server.                   
+           b.  Enter the following at the M prompt: 
+ 
+               &gt;D STOP^XWBTCP(Listener port) 
+               (Typically, the Listener port is 9200) 
+ 
+   3.  Broker routines are not usually mapped on systems that allow it, so
+       you will probably not have to disable mapping.
+ 
+   4.  Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+       option will load the KIDS package onto your system.
+ 
+   5.  The patch has now been loaded into a Transport global on your
+       system. You now need to use KIDS to install the Transport global.
+       On the KIDS menu, under the 'Installation' menu, use the following
+       options:
+ 
+          Verify Checksums in Transport Global
+          Print Transport Global
+          Compare Transport Global to Current System
+          Backup a Transport Global
+ 
+   6.  On the KIDS menu, under the 'Installation' menu, use the following
+       option:
+         Install Package(s)  'XWB*1.1*20'
+                              ==========
+       No Options or Protocols need to be placed out-of-order.
+       Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO
+                                                                       ==
+ 
+   7.  If the routines were unmapped as part of step 3, the mapped set
+       should be rebuilt once the installation has run to completion. 
+ 
+   8.  Restart the Broker Listener on the Server:
+         a.  Log into your M server
+         b.  Enter the following at the M prompt:
+ 
+             &gt;D STRT^XWBTCP(Listener port)
+             (Typically, the Listener port is 9200)
+ 
+============================================================================
+ 
+ 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;22 SEQ #17</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-10-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+NOIS: BRX-0401-12377, ISA-0401-12369
+The calling site had a New Person File entry with a phone number containing a 
+trailing backslash (\).  As part of Remote Data Views (RDV) this data was then 
+encoded and sent to the remote site.
+ 
+At the remote site, a bug caused the backslash (\) to be appended to the 
+end of several other strings, which then caused the reported error.  This was 
+fixed by correcting the decoding routine.
+ 
+Because the error occurred before RDV was setup to handle an error, it caused
+the calling site to keep sending the same message repeatedly.  This has been 
+fixed by setting an error trap at the beginning of RDV.  
+ 
+If the application does not set some data into the return variable,
+XWB2HL7 will return a string starting with "-1^".
+ 
+The XWB EXAMPLE option, RPC's and routine (XWBEXMPL) are included to
+add an entry point for testing that will record the symbol table in the error
+trap.
+ 
+Routine Summary
+The following routines are included in this patch.  The second line of each
+of these routines now looks like:
+ ;;1.1;RPC BROKER;&lt;patchlist&gt;;Mar 28, 1997
+ 
+                 Checksum
+Routine         Old       New      2nd Line
+XWB2HL7       9762168  10783627    **12,18,20,22**
+XWB2HL7B      9424236   9524542    **12,22**
+XWBEXMPL      1244483   1441211    **22**
+ 
+List of preceding patches: 20
+Sites should use CHECK^XTSUMBLD to verify checksums.
+=========================================================================
+Installation:
+ 
+   1.  Do not run any RPC-Broker-based Remote Data View software 
+       (e.g., CPRS, PCMM) during the installation.  Do not allow any 
+       incoming HL7 RDV messages. To identify these jobs, check the 
+       system status and verify if any XWBTCPC routines are running 
+       (i.e., Broker Handler).  Once identified, notify users to logoff 
+       or forcex the jobs.  Active users may get NOSOURCE or CLOBBER 
+       error messages .  
+ 
+   2.  Stop the Broker Listener on the server.  Check the system status 
+       and verify if the XWBTCPL routine is running (i.e., Broker 
+       Listener).  If it is running stop it.  To stop the Listener, do the
+       following: 
+ 
+           a.  Log into your M server.                   
+           b.  Enter the following at the M prompt: 
+ 
+               &gt;D STOP^XWBTCP(Listener port) 
+               (Typically, the Listener port is 9200) 
+ 
+   3.  Broker routines are not usually mapped on systems that allow it, so
+       you will probably not have to disable mapping.
+ 
+   4.  Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+       option will load the KIDS package onto your system.
+ 
+   5.  The patch has now been loaded into a Transport global on your
+       system. You now need to use KIDS to install the Transport global.
+       On the KIDS menu, under the 'Installation' menu, use the following
+       options:
+ 
+          Verify Checksums in Transport Global
+          Print Transport Global
+          Compare Transport Global to Current System
+          Backup a Transport Global
+ 
+   6.  On the KIDS menu, under the 'Installation' menu, use the following
+       option:
+         Install Package(s)  'XWB*1.1*22'
+                              ==========
+                              
+       Want KIDS to INHIBIT LOGONs during the install? YES//
+       
+       No Options or Protocols need to be placed out-of-order.
+       Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO
+                                                                       ==
+ 
+   7.  If the routines were unmapped as part of step 3, the mapped set
+       should be rebuilt once the installation has run to completion. 
+ 
+   8.  Restart the Broker Listener on the Server:
+         a.  Log into your M server
+         b.  Enter the following at the M prompt:
+ 
+             &gt;D STRT^XWBTCP(Listener port)
+             (Typically, the Listener port is 9200)
+ 
+============================================================================
+ 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;24 SEQ #18</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-11-21 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch supports only Delphi V. 4 and Delphi V. 5.  Although Delphi V.
+3 is no longer supported, the code written for Delphi V. 3 is correct and
+this patch does not affect that code.
+ 
+Due to version-dependent code, a problem was recently encountered that is
+associated with reading the Window's registry in programs compiled with
+Delphi V. 5.  Because a conditional test was specifically looking for
+Delphi V. 4-based applications, Delphi V. 5-based applications ended up
+using Broker code for Delphi V. 3.  This can result in users having
+limited privileges, preventing their ability to read data from the
+registry.  This has been observed when a user with limited NT privileges
+attempts to select a location for the RPC Broker connection, and it
+results in the use of the default BrokerServer/9200.  However, users with
+higher levels of NT access do not see this problem.
+ 
+The BDK now has separate run-time and design-time packages.  There is no
+longer a VistaBroker package.  The new packages are XWB_Dxx and XWB_Rxx,
+where "D" means Design-time, "R" means Run-time and "xx" represents two
+digits indicating the version of Delphi with which it should be used
+(e.g., XWB_D50 is the design-time package for Delphi V. 5.0).
+ 
+The run-time package should not be used to create executables that depend
+on a separate XWB_Rxx.bpl installed on client workstations.  There is no
+procedure in place at this time to reliably install the correct version of
+the run-time bpl on client workstations.  Do NOT compile your project so
+that it relies on dynamic linking with the BDK's run-time package; that
+is, do NOT check the "Build with runtime packages" box on the Packages tab
+of the Project Options dialog.
+ 
+ 
+This patch addresses issues raised in the following NOISs:
+ 
+MAC-0601-62549  Broker host list from CPRS
+MIW-0601-41984  Host not found error
+MOU-0601-32241  CPRS GUI and serverlist.exe file
+ 
+ 
+IMPORTANT NOTES:
+ 
+This patch consists of two parts:
+ 
+1.  Packman message containing the XWB*1.1*24 KIDS build.  The packman
+message simply updates the version multiple of the package.
+ 
+2.  Updated BDK (programmer client workstation software). This version of
+the BDK supports Delphi V. 5 and Delphi V. 4.  DELPHI V. 3 IS NO LONGER
+SUPPORTED.
+ 
+DO NOT INSTALL THIS PROGRAMMER CLIENT WORKSTATION SOFTWARE ON END-USER
+CLIENT WORKSTATIONS.  If you are not using the BDK in any local or
+national development, you do not need to retrieve the Broker's programmer
+client workstation software. The software does not update the Broker
+software that is running on end-user client workstations. Further, no new
+functionality is added to the BDK by this patch.
+ 
+The software distribution includes:
+ 
+FILE NAMES       DESCRIPTION                            Bytes 
+XWB1_1P24PG.EXE  BDK Self-Installing Executable         2,117,952
+XWB1_1P14IG.PDF  Installation Guide                     171,945
+XWB1_1RM.TXT     Readme text file                       16,213*
+ 
+*The size of this file will change in the future as additions are made.
+ 
+Note:  Use Binary mode for .PDF, and .EXE files.
+       Use ASCII mode for .TXT file.
+ 
+To obtain the updated BDK, use FTP to retrieve the software from one of
+the following OI Field Offices' ANONYMOUS.SOFTWARE directories:
+ 
+       OI FIELD OFFICE             FTP Address         
+Hines                        152.129.1.110 (isc-chicago.domain.ext)
+Albany                       152.127.1.5 (isc-albany.domain.ext)        
+Salt Lake City               152.131.2.1 (isc-slc.domain.ext)
+ 
+ 
+PACKAGE DEPENDENCIES:
+ 
+A Package may have been defined to require the Broker package.  Patch
+XWB*1.1*24 changes the identity of the Broker design-time package.  If you
+try to install a package into the Delphi IDE that requires the Broker, you
+may receive an error message like:
+ 
+      Can't load package &lt;Package1&gt;.
+      One of the library files needed to run this package cannot
+      be found.
+ 
+To resolve this problem:
+ 
+1.  Open the dpk file associated with that package.
+ 
+2.  Delete the reference to the old version of the Broker in the Requires
+section.
+ 
+3.  Add a reference to the new design-time Broker package (XWB_Dxx) into
+the Requires section.
+ 
+4.  Recompile and install the package.
+ 
+ 
+BROKER-DEPENDENT COMPONENTS:
+ 
+Warning: Some components, such as the FileMan Delphi Components (FMDC),
+reference the TRPCBroker component.  If you use such components for
+development, be aware that installing a new version of the TRPCBroker
+component (i.e., a new BDK) may cause incompatibilities in Delphi,
+resulting in a compile failure of the unit containing the Broker-dependent
+component and the following compilation error:
+ 
+       Unit &lt;unit1&gt; was compiled with a different version of 
+       &lt;unit2&gt;.
+ 
+Check with the creators of the Broker-dependent component to make sure
+that, with regards to the version of the BDK you are about to install:
+ 
+a) Your current component is compatible, or
+ 
+b) You can obtain a new version of the component that is compatible.
+ 
+c) You have the source (.pas, .dfm, .dpk, etc.) files available so that
+the component can be recompiled successfully.  If you're using the FileMan
+Delphi Components (FMDC), please note that the FMDC source code includes
+references to RPC Broker Development Kit (BDK) code. When you install a
+new version of the BDK, you will need to recompile the FMDC.
+ 
+   As of patch FMDC*1.0*1, source code for FMDC is provided, allowing you
+to recompile FMDC if necessary. For instructions on how to recompile FMDC,
+please refer to FMDC*1.0*2.
+ 
+ 
+INSTALLATION:
+ 
+Server Side:
+============
+ 
+Use the following instructions in installing this server-side RPC Broker
+patch.  Do NOT follow the M Server Installation Instructions in the RPC
+Broker Installation Guide to install the server portion of this patch.
+ 
+No routines or other package components are added or modified on the
+server by this patch.
+ 
+1. Use the INSTALL/CHECK MESSAGE option on the PackMan menu. This option
+will load the KIDS (Kernel Installation and Distribution System) package
+onto your system.
+ 
+2. On the KIDS menu, under the Installation menu, use the following
+option:
+ 
+Install Package(s)  "XWB*1.1*24"
+                     ==========
+ 
+Answer the install questions like this:
+ 
+Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                      ==
+Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+      ==
+ 
+ 
+Client Side:
+============
+ 
+Please follow the instructions in the most recent Broker 1.1 Installation
+Guide.
+ 
+ 
+Client Routine Information:
+==========================
+ 
+ 
+The following information is based on the LOG file for a complete
+installation (i.e., all options checked).  A line shows the directory
+involved, based on the default installation directory.  Each file is shown
+on a separate line, with data shown for:
+ 
+filename                file       file     version     bytes    CRC32
+                        date       time    if present
+                        
+file_date, file_time and bytes can be obtained from looking at NT or
+Windows Explorer (or similar file management program) or from examining
+Properties for the file.
+ 
+ 
+C:\Program Files\VISTA\BDK32\D5
+ 
+frmSignonMessage.dcu | 04-06-2000 | 16:49:16 | | 3575 | 7ebbde9c
+frmSignonMessage.dfm | 03-24-1999 | 16:30:38 | | 2503 | c99d9a3f
+Hash.dcu | 04-06-2000 | 16:49:16 | | 3407 | 6e11e4db
+Loginfrm.dcu | 04-06-2000 | 16:49:16 | | 10278 | e6ea9af7
+Loginfrm.dfm | 03-30-2000 | 15:09:42 | | 10723 | 189eb9ab
+Mfunstr.dcu | 04-06-2000 | 16:49:16 | | 1278 | 519212c6
+Rpcbedtr.dcu | 07-26-2001 | 10:36:46 | | 5759 | d229eed1
+Rpcberr.dcu | 04-06-2000 | 16:49:16 | | 11018 | 8793213f
+Rpcberr.dfm | 03-24-1999 | 16:30:36 | | 936 | 75e6c84e
+RpcConf1.dcu | 04-06-2000 | 16:49:16 | | 7144 | 84b170e8
+RpcConf1.dfm | 02-03-2000 | 14:46:52 | | 4089 | 15e6bd20
+rpcnet.dcu | 07-11-2001 | 10:33:16 | | 11330 | c97560a2
+rpcnet.dfm | 04-06-2000 | 09:55:28 | | 281 | 8b878eb9
+SelDiv.dcu | 04-06-2000 | 16:49:16 | | 5944 | 5adb9cf3
+SelDiv.dfm | 02-03-2000 | 14:47:52 | | 3221 | ad28ebb1
+Sgnoncnf.dcu | 04-06-2000 | 16:49:16 | | 8613 | ddad2542
+Sgnoncnf.dfm | 03-30-2000 | 15:39:26 | | 2170 | 8eada139
+SplVista.dcu | 07-11-2001 | 10:33:16 | | 4176 | a42aa664
+SplVista.dfm | 03-24-1999 | 16:30:36 | | 231724 | a522e10c
+Trpcb.dcr | 06-25-1999 | 15:23:18 | | 476 | 9fd8bd12
+Trpcb.dcu | 07-11-2001 | 10:33:16 | | 19285 | 4450b0f9
+Vcedit.dcu | 04-06-2000 | 16:49:16 | | 8554 | d39d5985
+Vcedit.dfm | 03-24-1999 | 16:30:36 | | 2906 | 8737a896
+WSockc.dcu | 07-26-2001 | 11:03:13 | | 12800 | 18d2baf6
+XWBReg.dcu | 07-26-2001 | 10:36:46 | | 918 | 8b64f583
+Xwbut1.dcu | 07-11-2001 | 10:33:16 | | 6854 | 7a2cb48e
+XWB_D50.bpl | 07-26-2001 | 11:03:17 | 1.1.24.0 | 23040 | 7994c60e
+XWB_D50.dcp | 07-26-2001 | 11:03:17 | | 8957 | f3516d9b
+XWB_D50.dcu | 07-26-2001 | 11:03:17 | | 3223 | f77ebfab
+XWB_R50.bpl | 07-26-2001 | 11:03:17 | 1.1.24.0 | 375296 | 25d95d54
+XWB_R50.dcp | 07-26-2001 | 11:03:17 | | 78880 | 93424a1d
+XWB_R50.dcu | 07-26-2001 | 11:03:17 | | 2897 | cf59e7be
+Broker.cnt | 10-10-1997 | 10:08:52 | | 5005 | 557466bd
+Broker.hlp | 10-10-1997 | 09:46:20 | | 2019500 | 142de115
+BrokerSM.cnt | 10-09-1997 | 17:53:54 | | 1787 | a79a3faa
+BrokerSM.hlp | 10-09-1997 | 16:37:42 | | 2444328 | a1743e99
+ 
+ 
+C:\WINNT\system32\
+ 
+XWB_R50.bpl | 07-26-2001 | 11:03:17 | 1.1.24.0 | 375296 | 25d95d54
+ 
+ 
+C:\Program Files\VISTA\BDK32\D5\Source
+ 
+Bapi.pas | 04-05-2000 | 13:22:08 | | 16143 | b2f0a4c6
+Bapi32.dpr | 03-24-1999 | 16:30:36 | | 297 | 5695f186
+frmSignonMessage.dfm | 03-24-1999 | 16:30:38 | | 2503 | c99d9a3f
+frmSignonMessage.pas | 04-05-2000 | 13:23:02 | | 1104 | 6becf6c6
+Hash.pas | 04-05-2000 | 13:24:10 | | 3642 | 15f82810
+Loginfrm.dfm | 03-30-2000 | 15:09:42 | | 10723 | 189eb9ab
+Loginfrm.pas | 04-05-2000 | 13:24:52 | | 9010 | 8a3180b5
+Mfunstr.pas | 04-05-2000 | 13:25:16 | | 2428 | 5c7d87d
+Rpcbedtr.pas | 04-05-2000 | 13:25:48 | | 5244 | 554eab2d
+Rpcberr.dfm | 03-24-1999 | 16:30:36 | | 936 | 75e6c84e
+Rpcberr.pas | 04-05-2000 | 13:35:18 | | 7085 | db5e1d1d
+RpcConf1.dfm | 02-03-2000 | 14:46:52 | | 4089 | 15e6bd20
+RpcConf1.pas | 04-05-2000 | 13:37:30 | | 4969 | ba6f63e8
+rpcnet.dfm | 04-06-2000 | 09:55:28 | | 281 | 8b878eb9
+rpcnet.pas | 07-11-2001 | 10:17:10 | | 11279 | 76cba96f
+SelDiv.dfm | 02-03-2000 | 14:47:52 | | 3221 | ad28ebb1
+SelDiv.pas | 04-05-2000 | 13:38:46 | | 5103 | ac237cad
+Sgnoncnf.dfm | 03-30-2000 | 15:39:26 | | 2170 | 8eada139
+Sgnoncnf.pas | 04-05-2000 | 13:39:06 | | 5824 | 698571b5
+SplVista.dfm | 03-24-1999 | 16:30:36 | | 231724 | a522e10c
+SplVista.pas | 07-11-2001 | 10:17:02 | | 2537 | 946d0504
+Trpcb.dcr | 06-25-1999 | 15:23:18 | | 476 | 9fd8bd12
+Trpcb.pas | 07-11-2001 | 10:16:52 | | 41668 | e0f2050d
+Vcedit.dfm | 03-24-1999 | 16:30:36 | | 2906 | 8737a896
+Vcedit.pas | 04-05-2000 | 13:40:54 | | 5918 | 8e86170d
+WSockc.pas | 07-26-2001 | 11:02:24 | | 26275 | f76aa165
+XWBReg.pas | 04-05-2000 | 13:42:50 | | 912 | 8e286b55
+Xwbut1.pas | 07-11-2001 | 10:20:54 | | 9977 | 2f69588c
+XWB_D50.dpk | 07-09-2001 | 12:06:06 | | 658 | 441496c
+XWB_D50.res | 07-09-2001 | 12:06:04 | | 1684 | d15c2bc2
+XWB_R50.dpk | 07-09-2001 | 12:07:46 | | 1113 | ce020a2b
+XWB_R50.res | 07-09-2001 | 12:07:44 | | 1680 | 9888b151
+ 
+ 
+C:\Program Files\VISTA\BDK32\D4
+ 
+frmSignonMessage.dcu | 04-06-2000 | 16:38:26 | | 3474 | 5171af7e
+frmSignonMessage.dfm | 03-24-1999 | 16:30:38 | | 2503 | c99d9a3f
+Hash.dcu | 04-06-2000 | 16:38:26 | | 3445 | d44d04b0
+Loginfrm.dcu | 04-06-2000 | 16:38:26 | | 10116 | f295f963
+Loginfrm.dfm | 03-30-2000 | 15:09:42 | | 10723 | 189eb9ab
+Mfunstr.dcu | 04-06-2000 | 16:38:26 | | 1287 | cea6bdf5
+Rpcbedtr.dcu | 04-06-2000 | 16:40:36 | | 5722 | c9f7bed3
+Rpcberr.dcu | 04-06-2000 | 16:38:26 | | 10915 | 48821c37
+Rpcberr.dfm | 03-24-1999 | 16:30:36 | | 936 | 75e6c84e
+Rpcconf1.dcu | 04-06-2000 | 16:38:26 | | 7020 | fc3cd7b5
+RpcConf1.dfm | 02-03-2000 | 14:46:52 | | 4089 | 15e6bd20
+Rpcnet.dcu | 07-20-2001 | 11:30:38 | | 11294 | f35f63d8
+rpcnet.dfm | 04-06-2000 | 09:55:28 | | 281 | 8b878eb9
+SelDiv.dcu | 04-06-2000 | 16:38:26 | | 5841 | 6a2587fb
+SelDiv.dfm | 02-03-2000 | 14:47:52 | | 3221 | ad28ebb1
+Sgnoncnf.dcu | 04-06-2000 | 16:38:26 | | 8478 | 38775bc7
+Sgnoncnf.dfm | 03-30-2000 | 15:39:26 | | 2170 | 8eada139
+Splvista.dcu | 07-20-2001 | 11:30:38 | | 4075 | 9e88d03c
+SplVista.dfm | 03-24-1999 | 16:30:36 | | 231724 | a522e10c
+Trpcb.dcr | 06-25-1999 | 15:23:18 | | 476 | 9fd8bd12
+Trpcb.dcu | 07-20-2001 | 11:30:38 | | 19539 | 388d1409
+Vcedit.dcu | 04-06-2000 | 16:38:26 | | 8389 | d509b09f
+Vcedit.dfm | 03-24-1999 | 16:30:36 | | 2906 | 8737a896
+WSockc.dcu | 07-26-2001 | 11:33:21 | | 12752 | bd7988d2
+XWBReg.dcu | 04-06-2000 | 16:40:36 | | 926 | 20433d5c
+Xwbut1.dcu | 07-20-2001 | 11:30:38 | | 6842 | 5a9b68c1
+XWB_D40.bpl | 07-26-2001 | 11:33:21 | 1.1.24.0 | 22016 | 08d182df
+XWB_D40.dcp | 07-26-2001 | 11:33:21 | | 8727 | 2edd32c6
+XWB_D40.dcu | 07-26-2001 | 11:33:21 | | 2900 | de2fe0d1
+XWB_R40.bpl | 07-26-2001 | 11:33:21 | 1.1.24.0 | 373760 | 3e08ae56
+XWB_R40.dcp | 07-26-2001 | 11:33:21 | | 78344 | c88f66d4
+XWB_R40.dcu | 07-26-2001 | 11:33:21 | | 2623 | 29d300ad
+Broker.cnt | 10-10-1997 | 10:08:52 | | 5005 | 557466bd
+Broker.hlp | 10-10-1997 | 09:46:20 | | 2019500 | 142de115
+BrokerSM.cnt | 10-09-1997 | 17:53:54 | | 1787 | a79a3faa
+BrokerSM.hlp | 10-09-1997 | 16:37:42 | | 2444328 | a1743e99
+ 
+ 
+ 
+C:\WINNT\system32\
+ 
+XWB_R40.bpl | 07-26-2001 | 11:33:21 | 1.1.24.0 | 373760 | 3e08ae56
+ 
+ 
+C:\Program Files\VISTA\BDK32\D4\Source
+ 
+Bapi.pas | 04-05-2000 | 13:22:08 | | 16143 | b2f0a4c6
+Bapi32.dpr | 03-24-1999 | 16:30:36 | | 297 | 5695f186
+frmSignonMessage.dfm | 03-24-1999 | 16:30:38 | | 2503 | c99d9a3f
+frmSignonMessage.pas | 04-05-2000 | 13:23:02 | | 1104 | 6becf6c6
+Hash.pas | 04-05-2000 | 13:24:10 | | 3642 | 15f82810
+Loginfrm.dfm | 03-30-2000 | 15:09:42 | | 10723 | 189eb9ab
+Loginfrm.pas | 04-05-2000 | 13:24:52 | | 9010 | 8a3180b5
+Mfunstr.pas | 04-05-2000 | 13:25:16 | | 2428 | 5c7d87d
+Rpcbedtr.pas | 04-05-2000 | 13:25:48 | | 5244 | 554eab2d
+Rpcberr.dfm | 03-24-1999 | 16:30:36 | | 936 | 75e6c84e
+Rpcberr.pas | 04-05-2000 | 13:35:18 | | 7085 | db5e1d1d
+RpcConf1.dfm | 02-03-2000 | 14:46:52 | | 4089 | 15e6bd20
+RpcConf1.pas | 04-05-2000 | 13:37:30 | | 4969 | ba6f63e8
+rpcnet.dfm | 04-06-2000 | 09:55:28 | | 281 | 8b878eb9
+rpcnet.pas | 07-11-2001 | 10:23:46 | | 11210 | d02eb245
+SelDiv.dfm | 02-03-2000 | 14:47:52 | | 3221 | ad28ebb1
+SelDiv.pas | 04-05-2000 | 13:38:46 | | 5103 | ac237cad
+Sgnoncnf.dfm | 03-30-2000 | 15:39:26 | | 2170 | 8eada139
+Sgnoncnf.pas | 04-05-2000 | 13:39:06 | | 5824 | 698571b5
+SplVista.dfm | 03-24-1999 | 16:30:36 | | 231724 | a522e10c
+SplVista.pas | 07-11-2001 | 10:25:22 | | 2528 | e133f2a
+Trpcb.dcr | 06-25-1999 | 15:23:18 | | 476 | 9fd8bd12
+Trpcb.pas | 07-11-2001 | 10:25:12 | | 41667 | 2499a80d
+Vcedit.dfm | 03-24-1999 | 16:30:36 | | 2906 | 8737a896
+Vcedit.pas | 04-05-2000 | 13:40:54 | | 5918 | 8e86170d
+WSockc.pas | 07-26-2001 | 11:31:18 | | 26275 | f76aa165
+XWBReg.pas | 04-05-2000 | 13:42:50 | | 912 | 8e286b55
+Xwbut1.pas | 07-11-2001 | 10:27:04 | | 9980 | 44563118
+XWB_D40.dpk | 07-09-2001 | 11:31:34 | | 659 | cd4c3678
+XWB_D40.res | 07-09-2001 | 11:31:32 | | 1688 | b1a4fa3d
+XWB_R40.dpk | 07-09-2001 | 11:32:12 | | 1118 | f71dd4e9
+XWB_R40.res | 07-09-2001 | 11:32:10 | | 1680 | a41a750d
+ 
+ 
+C:\Program Files\VISTA\BDK32\
+ 
+BrokerProgPref.exe | 03-24-1999 | 09:03:34 | | 327680 | d13c4bce
+BROKERPROGPREF.HLP | 09-16-1997 | 15:39:10 | | 22500 | 72cc929d
+ServerList.exe | 01-26-1999 | 11:47:56 | | 513536 | 324b2f34
+SERVERLIST.HLP | 09-16-1997 | 10:28:02 | | 8341 | 6ff7a68b
+ 
+ 
+C:\Program Files\VISTA\BDK32\HEADERS
+ 
+BAPI32.bas | 08-20-1997 | 17:50:44 | | 1899 | 3f2f8fe1
+Bapi32.h | 08-25-1997 | 10:59:16 | | 980 | 683a80df
+Bapi32.hpp | 08-25-1997 | 11:05:48 | | 4842 | b53def20
+ 
+ 
+Made Dir: C:\Program Files\VISTA\BDK32\SAMPLES\BROKEREX
+ 
+BrokerExample.dpr | 09-05-1997 | 17:37:48 | | 640 | b2da3256
+BrokerExampleAboutFrm.dfm | 09-17-1997 | 17:54:00 | | 2212 | 5602350d
+BrokerExampleAboutFrm.PAS | 09-17-1997 | 17:54:00 | | 883 | a61f16f0
+BrokerExampleFrm.dfm | 09-17-1997 | 18:13:10 | | 7266 | a3e77c7b
+BrokerExampleFrm.PAS | 09-17-1997 | 18:13:12 | | 8746 | 7db22f31
+ 
+ 
+C:\Program Files\VISTA\BDK32\SAMPLES\VB5EGCHO
+ 
+BAPI32.bas | 08-20-1997 | 17:50:44 | | 1899 | 3f2f8fe1
+egcho.bas | 08-11-1997 | 11:03:44 | | 148 | 3dce23c9
+Egcho.frm | 08-11-1997 | 11:30:50 | | 28311 | 6a6e4e98
+egcho.vbp | 08-14-1997 | 11:08:26 | | 1831 | 1c61491a
+ 
+end of file list
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;16 SEQ #19</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-02-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+NOIS: WCO-0300-50643
+      XWBTCPC
+  Under Cache 3.2 error trapping conditions, the return of control wouldn't go 
+  to the correct routine, resulting in a run-away job. Fixed by being explicit 
+  about the routine to return to.
+                        
+  When a READ or WRITE error occurs, the error trap code was trying to send 
+  an error message to the client. This caused an error, which resulted in a 
+  second error being logged.
+                        
+  The calls to RTL were remove from logging the broker code. If Response Time 
+  Logging is on, then the RPC will still be logged.
+
+  Worked with the NVS to use the correct call to see that Broker connection
+  got registered as client server so they all connections from one IP address
+  could share Cache one licenses.
+  
+  A change was made to check the IP address of the PEER and to use that if
+  different than the IP address in the header.  This allows the use of NAT
+  translation.
+
+NOIS: CLL-0301-40678
+      JAC-0301-70277
+      XWBTCPC
+   If an application Newed the XWBOS variable and then experienced an error,
+   it would cause a second error in the error module of the Broker.  This 
+   has been fixed by setting the value of XWBOS in the error trap module.
+
+NOIS: KAN-0201-40992
+      XWBTCPL
+   If a connection was made to the RPC Broker listener port that failed to 
+   send the correct information, this could cause the listener to fail to 
+   detect other connection requests.  This has been fixed by changing the 
+   timeout on the read and resetting the port if this happens.
+
+Routine Summary
+The following routines are included in this patch.  The second line of each
+of these routines now looks like:
+ ;;1.1;RPC BROKER;&lt;patchlist&gt;;Mar 28, 1997
+
+                 Checksum
+Routine         Old       New      2nd Line
+XWBBRK        5912545   5552318    **2,4,10,16**
+XWBTCPC       7568523   7379419    **2,5,4,6,9,16**
+XWBTCPL       9128997  10414009    **1,7,9,15,16**
+
+List of preceding patches: 10, 15
+Sites should use CHECK^XTSUMBLD to verify checksums.
+
+=========================================================================
+Installation:
+
+   1.  During the installation, do not run any RPC-Broker-based Client/Server
+       software (e.g., CPRS, PCMM, BCMA).  No Broker-based client/server 
+       software should be running while installing this patch on the 
+       server.  You can identify these jobs by checking the system status 
+       and verifying if any XWBTCPC routines are running (i.e., Broker 
+       Handler).  If you find any of these jobs running on the system,  
+       notify users to logoff or FORCEX the jobs.  Active users may get 
+       NOSOURCE or CLOBBER errors.  
+ 
+   2.  Stop the Broker Listener on the server.  Do this by first 
+       checking the system status, then verifying if the XWBTCPL 
+       routine is running (i.e., Broker Listener).  If you find this 
+       routine running on your system, STOP IT.  To stop the Broker 
+       Listener, do the following: 
+ 
+           a.  Log into your M server.                   
+           b.  Enter the following command at the M prompt: 
+ 
+               &gt;D STOP^XWBTCP(Listener port) 
+               (Typically, the Listener port is 9200) 
+
+   3.  Stop any users that are using Broker applications. This applies
+       to any job in XWBTCPC or in CPRS.
+       
+   4.  Broker routines are not usually mapped on systems that allow mapping.
+       So, you will probably not have to disable mapping.
+
+   5.  Use the Kernel Option 'INSTALL/CHECK MESSAGE' located on the 
+       PackMan menu. This option will load the KIDS package onto your 
+       system.
+
+   6.  The patch has now been loaded into a Transport global on your
+       system. Now you need to use KIDS to install the Transport global.
+       On the KIDS menu, under the 'Installation' menu, use the following
+       options:
+
+          Verify Checksums in Transport Global
+          Print Transport Global
+          Compare Transport Global to Current System
+          Backup a Transport Global
+
+   7.  On the KIDS Installation menu, use the option Install Package(s).
+       Respond to the prompts as follows:
+       
+       Select INSTALL NAME:  XWB*1.1*16
+                             ==========
+                             
+       Want KIDS to INHIBIT LOGONs during the install? YES//
+                              
+       No Options or Protocols need to be placed out-of-order.
+       Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO
+                                                                       ==
+
+   8.  If the routines were unmapped as part of step 3, the mapped set
+       should be rebuilt once the installation has run to completion. 
+
+   9.  Restart the Broker Listener on the Server:
+         a.  Log into your M server
+         b.  Enter the following at the M prompt:
+
+             &gt;D STRT^XWBTCP(Listener port)
+             (Typically, the Listener port is 9200)
+
+============================================================================
+
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;27 SEQ #20</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-03-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Test sites:      San Diego, Seattle, and El Paso
+ 
+NOIS:            None
+ 
+Required builds: XWB*1.1*22
+ 
+PATCH DESCRIPTION
+ 
+When using the GUI Computerized Patient Record System (CPRS), "remote
+data views" are available to the user showing patient information
+collected real-time from remote sites.  The collection of real-time data
+from remote sites also occurs from other sites such as the Government
+Computer-based Patient Record (GCPR), and other packages such as Bar-code
+Medication Administration (BCMA), and Integrated Billing (IB).  This data
+collection occurs as the result of calls to a RPC Broker - HL7 bridge
+routine.
+ 
+When calls for remote site data are made by these packages to the HL7
+package, the requests are placed in a message queue awaiting processing.
+A background job processes the entries in the message queue, collects the
+data from the remote site, and makes the remote site's data available to
+local users.
+ 
+Presently, there is only one message queue to a given site.  When users
+make multiple calls to the same remote site, the messages are processed
+in the order they were queued, each one finishing before the next request
+is started and processed.  If any of the requests in a processing queue
+take a long time to process, or if there are a large number of requests
+waiting processing, inordinately high delays are seen before the remote
+data is available to local users.
+ 
+Prior to this patch, processing of requests to the HL7 package for
+remote data made by GCPR and CPRS, was performed synchronously - in order
+of time of request - each job finishing before the next job started. This
+patch enables asynchronous processing - multiple jobs running at the same
+time.
+ 
+ 
+REQUEST TIMEOUTS
+ 
+When requests are made to remote sites for data, there is a limit to how
+long the calling procedure will wait for a reply.  When a request for
+remote data is not returned within the length of time specified in the
+ACK TIMEOUT field of the logical link used for the remote request, the
+call fails.  If your site experiences this problem, you may need to
+increase the value of the ACK TIMEOUT field for the involved logical
+link in increments of 30 to 60 seconds until the problem stops. (VACIO
+is one link that has shown a need for a longer timeout.)  Refer to 'How
+to edit Links', section 2.2 in the Health Level Seven Site Manager
+Developer manual, for additional help in editing links.
+ 
+ 
+The routines XWB2HL7 and XWB2HL7C are included in this patch.  The first
+and second lines of these routines are shown below.
+ 
+    XWB2HL7   ;ISF/RWF - Remote RPC via HL7 ;8/27/01  09:31
+               ;;1.1;RPC BROKER;**12,18,20,22,27**;Mar 28, 1997
+    XWB2HL7C  ;ISF/RWF - Remote RPC via HL7 ;12/27/01 15:33
+               ;;1.1;RPC BROKER;**27**;Mar 28, 1997
+ 
+The VA Kernel checksums for the routines included in this patch
+(calculated using CHECK^XTSUMBLD) are listed below.
+ 
+                Checksum        Checksum
+  Routine Name  Before Patch    After Patch     Patch List
+  ============  ============    ===========     =====================
+  XWB2HL7       10783627        10960487        12,18,20,22,27
+  XWB2HL7C      --------         1022701        27
+ 
+Sites should use CHECK^XTSUMBLD to verify checksums after patch
+installation.
+ 
+ Installation Instructions:
+ ==========================
+   1.  Do not run any RPC Broker-based Remote Data View (RDV) software
+       (e.g., CPRS, PCMM) during the installation of this patch, and do
+       do not allow any incoming HL7 RDV messages. To identify these jobs,
+       check the system status, locating all running XWBTCPC (Broker
+       Handler) routines. If any XWBTCPC routines are running,
+       notify the users associated with the running routines to log off.
+       If it is not possible to contact users, it will be necessary to
+       stop the jobs manually, using a utility such as FORCEX on VMS
+       systems, or RESJOB on Cache systems. (Users may get NOSOURCE or
+       CLOBBER error messages if this patch is installed while they are
+       working.)
+ 
+   2.  Stop the Broker Listener on the server.  Check the system status
+       and verify if the XWBTCPL routine is running. (i.e., Broker
+       Listener).  If it is running, stop it using the command shown
+       below.
+ 
+       From the M prompt, enter:
+ 
+         &gt;D STOP^XWBTCP(LISTENER-PORT)
+ 
+       When stopping the listener using the above command, substitute
+       the actual port number for 'LISTENER-PORT'.  Typically, the
+       listener port is 9200.  (If the listener port is 9200, the
+       actual command would be 'D STOP^XWBTCP(9200)'.)
+ 
+   3.  AXP/DSM SITES:  Review your mapped routine set.  If any of the
+       routines patched by XWB*1.1*27 are mapped, they should be
+       removed from the mapped set at this time.
+ 
+   4.  Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu to
+       load the KIDS package onto your system.
+ 
+   5.  Step 4 loads a transport global on your system. Before actually
+       installing the software contained in this transport global, you
+       should take the time to review what will happen when the
+       software is installed, and take other actions such as backing
+       up the software that is about to be overwritten.  The menu options
+       shown below should be used when performing review and backup tasks.
+ 
+          Verify Checksums in Transport Global
+          Print Transport Global
+          Compare Transport Global to Current System
+          Backup a Transport Global
+ 
+   6.  Patch XWB*1.1*27 is now loaded into a transport global on your
+       system.  The next step is to use KIDS to install the
+       transport global.  This is done using the 'Installation' menu's
+       'Install Package(s) [XPD INSTALL BUILD]' menu option.  When
+       using this menu option to install the patch build, you will be
+       asked several questions.  The questions, and the answers you
+       should supply, are shown below.
+ 
+       INSTALL NAME:  &lt;XWB*1.1*27&gt;
+       Want KIDS to INHIBIT LOGONS during the install?  &lt;NO&gt;
+       Want to DISABLE Scheduled Options, Menu Options,
+         and Protocols?  &lt;NO&gt;
+ 
+   7.  AXP/DSM SITES: After the patch has been installed, rebuild
+       your map set, if necessary.
+ 
+   8.  Restart the Broker Listener on the Server.  From the M prompt,
+       enter the following command:
+ 
+             &gt;D STRT^XWBTCP(LISTENER-PORT)
+ 
+       Remember to substitute the actual port number for
+       'LISTENER-PORT'.  (See step #2 above.)
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;25 SEQ #21</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-05-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This Patch Addresses the Following NOIS Call:
+=============================================
+1. WIC-0701-42695
+
+Problem Statement:
+------------------
+Integrated Billing (IB) has released a patch that uses the RPC Broker Remote 
+Data View (RDV) RPCs to collect data from remote systems. This caused a 
+significant increase in the number of Remote Users (i.e., visitors) added to 
+sites' local NEW PERSON files (#200).
+
+Patch Solution:
+---------------
+
+A new field named SUPPRESS RDV USER SETUP (#.1) has been added to the REMOTE 
+PROCEDURE file (#8994). It regulates the addition of Remote Users to sites' 
+local NEW PERSON files for the RDV-based RPCs. This new field contains either 
+one of the following two values:
+
+  1. NO (default value) -- The Remote User will be added to the site's local 
+  NEW PERSON file.
+    
+  2. YES -- The Remote User will NOT be added to the NEW PERSON file and the 
+  DUZ will be set to the Postmaster.
+  
+  
+Routine XWB2HL7 was changed with patch XWB*1.1*22.
+
+=========================================================================
+Installation:
+       
+   1.  There are no routines in this patch. The Broker does NOT
+       need to be stopped.  Users can remain on the system.
+
+   2.  Use the Kernel Option 'INSTALL/CHECK MESSAGE' located on the 
+       PackMan menu. This option will load the KIDS package onto your 
+       system.
+
+   3.  The patch has now been loaded into a Transport global on your
+       system. Now you need to use KIDS to install the Transport global.
+       On the KIDS menu, under the 'Installation' menu, use the following
+       options:
+
+          Verify Checksums in Transport Global
+          Print Transport Global
+          Compare Transport Global to Current System
+          Backup a Transport Global
+
+   4.  On the KIDS Installation menu, use the option Install Package(s).
+       Respond to the prompts as follows:
+       
+       Select INSTALL NAME:  XWB*1.1*25
+                             ==========
+                             
+       Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                              
+       No Options or Protocols need to be placed out-of-order.
+       Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO
+                                                                       ==
+
+============================================================================
+
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;13 SEQ #22</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-05-28 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch provides silent login functionality in the Broker.  Any GUI
+application that uses the Broker may now be able to login to an M Server
+silently (i.e. without any user dialog).  The logins supported via the GUI
+are:
+1) setting the access code and verify code properties of the USER object
+for the RPCBroker so that no sign-on dialog displays (if the user is
+Multi-divisional, a division property may also be set); 
+and 
+2) Obtaining a token which may be passed to an application being started 
+by the current application.
+ 
+  This patch also provides support for Enterprise Single Sign-On using an
+Authentication Proxy when it becomes available.
+ 
+  Since mechanisms are provided for a silent (dialog free) sign-on for the
+RPCBroker, it may be used in situations where dialogs are not desirable. 
+To further support this, control of whether dialogs are shown for errors
+detected is also supported with the property ShowErrorMsgs.  The default
+value for this property is semRaise which will raise an error message in a
+dialog box.  If this is not desirable, the value should be set to
+semQuiet.  However, if this value is chosen, the application MUST check
+the RPCBError property for information about any errors encountered
+following EVERY broker call.  The application may also set the
+OnRPCBFailure property with a method to be called in the event an error is
+encountered.  This method accepts an RPCBroker instance as an argument so
+that it may obtain the information in the RPCBError property.
+ 
+This patch also fulfills the following E3Rs:
+         11265, Allowing Access and Verify Codes to be Passed
+         10668, Auto Signon for Instrument
+         12800, Programmatic Login
+ 
+The patch also resolves the following NOIS calls:
+         HIN-0300-41574, PROBLEM WITH F1 SHORTCUT FOR HELP IN GUI
+         HOU-0399-72697, Signing on via Broker
+         ISW-1299-22382, CPRS W/XWB*1.1*8
+         ISW-1299-21488, CPRS W/XWB*1.1*8
+ 
+IMPORTANT NOTES:
+ 
+This patch consists of 2 parts:
+ 
+1.  Packman message containing the XWB*1.1*13 KIDS build.  The packman
+message simply updates the version multiple of the package.
+ 
+2.  Updated BDK (programmer client workstation software). This version of
+the BDK supports Delphi 4, Delphi 5, and Delphi 6. 
+ 
+DO NOT INSTALL THIS PROGRAMMER CLIENT WORKSTATION SOFTWARE ON END-USER
+CLIENT WORKSTATIONS.  If you are not using the BDK in any local or
+national development, you do not need to retrieve the Broker's programmer
+client workstation software. The software does not update the Broker
+software that is running at end-user client workstations.
+ 
+The software distribution includes:
+ 
+ FILE NAMES       DESCRIPTION                         Bytes
+ XWB1_1P13PG.EXE  BDK Self-Installing Executable   4,416,873    
+ XWB1_1P13IG.PDF  Installation Guide                 453,899  
+ XWB1_1P13RM.TXT  Readme text file                    21,688
+ XWB1_1P13DG.PDF  Developer's Guide                  502,143
+ XWB1_1P13SM.PDF  Systems Manual                     708,711
+ XWB1_1P13TM.PDF  Technical Manual                   350,314  
+ 
+Note:  Use Binary mode for .PDF, and .EXE files. 
+       Use ASCII mode for .TXT file.
+ 
+To obtain the updated BDK, use FTP to retrieve the software from one of
+the following CIO Field Offices' ANONYMOUS.SOFTWARE directories:
+ 
+  CIO FIELD OFFICE                FTP Address        
+  Hines                           152.129.1.110 (isc-chicago.domain.ext)
+  Albany                          152.127.1.5 (isc-albany.domain.ext)
+  Salt Lake City                  152.131.2.1 (isc-slc.domain.ext)
+ 
+PACKAGE DEPENDENCIES:
+ 
+A Package may have been defined to require the Broker package.  Patch
+XWB*1.1*13 changes the identity of the Broker design-time package. If you
+try to install a package into the Delphi IDE that requires the Broker, you
+may receive an error message like:
+ 
+      Can't load package &lt;Package1&gt;.
+      One of the library files needed to run this package cannot be found.
+ 
+To resolve this problem, Open the dpk file associated with that package;
+delete the reference to the old version of the Broker in the Requires
+section; add a reference to the new design-time Broker package (XWB_Dxx)
+into the Requires section; recompile and install the package.
+ 
+BROKER-DEPENDENT COMPONENTS:
+ 
+Warning: Some components, such as the FileMan Delphi Components, reference
+the TRPCBroker component.  If you use such components for development, be
+aware that installing a new version of the TRPCBroker component (i.e. a
+new BDK) may cause incompatibilities in Delphi, resulting in a compile
+failure of the unit containing the Broker-dependent component and the
+following compilation error:
+ 
+       Unit &lt;unit1&gt; was compiled with a different version of &lt;unit2&gt;.
+ 
+Check with the creators of the Broker-dependent component to make sure
+that, with regards to the version of the BDK you are about to install:
+ 
+a) Your current component is compatible, or
+ 
+b) You can obtain a new version of the component that is compatible.
+ 
+c) You have the source (.pas, .dfm, .dpk, etc.) files available so that
+the component can be recompiled successfully.    If you're using the
+FileMan Delphi Components (FMDC), please note that the FMDC source code
+includes references to RPC Broker Development Kit (BDK) code. When you
+install a new version of the BDK, you will need to recompile the FMDC.
+   As of patch FMDC*1.0*1, source code for FMDC is provided, allowing you
+to recompile FMDC if necessary. For instructions on how to recompile FMDC,
+please refer to FMDC*1.0*2.
+ 
+INSTALLATION:
+ 
+Server Side:
+============
+ 
+Use the following instructions in installing this server-side RPC Broker
+patch.  Do NOT follow the M Server Installation Instructions in the RPC
+Broker Installation Guide to install the server portion of this patch.
+ 
+No routines or other package components are added or modified on the
+server by this patch.
+ 
+1. Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This option
+will load the KIDS (Kernel Installation and Distribution System) package
+onto your system.       
+ 
+2. On the KIDS menu, under the 'Installation' menu, use the following
+option:
+   Install Package(s)  'XWB*1.1*13'
+                        ==========
+ 
+Answer the install questions like this:
+ 
+Want KIDS to INHIBIT LOGONs during the install? YES// NO
+                                                      ==
+Want to DISABLE Scheduled Options, Menu Options, and Protocols? YES// NO
+ 
+Client Side:
+============
+ 
+Please follow the instructions in the most recent Broker 1.1 Installation
+Guide.
+ 
+The following list gives the specific attributes including size
+and CRC-32 for all of the files installed on the client
+using the installation program XWB1_1P13PG.EXE.
+ 
+ 
+   Date      Time   Attrib    Bytes     CRC-32  Filename
+---------- -------- ------ ----------- -------- --------
+ 
+C:\Program Files\vista\BDK32
+03/24/1999 09:03:34 A-----     327,680 D13C4BCE BrokerProgPref.exe
+08/28/2001 14:47:48 A-----      61,357 053E8CD1 Brokerprogpref.hlp
+01/26/1999 11:47:56 A-----     513,536 324B2F34 ServerList.exe
+09/16/1997 10:28:02 A-----       8,341 6FF7A68B Serverlist.hlp
+ 
+C:\Program Files\vista\BDK32\D4
+05/03/2002 11:41:38 A-----       3,211 7EBB75C6 AddServer.dcu
+03/01/2002 12:42:38 A-----       1,060 5A4B54B0 AddServer.dfm
+05/03/2002 11:41:38 A-----       5,554 1502199A APi.dcu
+05/03/2002 11:41:38 A-----       3,118 8CF3150A fConfirmMapping.dcu
+04/02/2002 11:43:32 A-----       1,006 E055A556 fConfirmMapping.dfm
+05/03/2002 11:41:38 A-----       3,504 CA35111D frmSignonMessage.dcu
+03/05/2002 17:48:52 A-----       2,805 A2BCFA3C frmSignonMessage.dfm
+05/03/2002 11:41:38 A-----       3,337 5D120C0B fRPCBErrMsg.dcu
+01/24/2002 18:21:20 A-----         495 85FF429E fRPCBErrMsg.dfm
+05/03/2002 11:41:38 A-----       4,500 86ACB9BD fRPCBTimer.dcu
+01/23/2002 14:45:04 A-----       1,130 B880B883 fRPCBTimer.dfm
+05/03/2002 11:41:38 A-----       3,445 170F31B4 Hash.dcu
+05/03/2002 11:41:38 A-----      17,584 19C9A091 Loginfrm.dcu
+02/15/2002 10:24:00 A-----      11,849 E398882A Loginfrm.dfm
+05/03/2002 11:41:38 A-----       1,287 FD26D493 MFunStr.dcu
+05/03/2002 11:42:14 A-----       4,860 B65899DB RpcbEdtr.dcu
+05/03/2002 11:41:38 A-----      10,935 29B2836D Rpcberr.dcu
+07/18/2001 13:10:26 A-----         999 407D7B76 Rpcberr.dfm
+05/03/2002 11:41:38 A-----       8,748 E64FAADB Rpcconf1.dcu
+07/18/2001 13:10:26 A-----       4,198 B1EDACB5 Rpcconf1.dfm
+05/03/2002 11:41:38 A-----      11,340 7608F41E RpcNet.dcu
+07/18/2001 13:10:26 A-----         281 8B878EB9 Rpcnet.dfm
+05/03/2002 11:41:38 A-----       5,473 7D124F20 RpcSLogin.dcu
+05/03/2002 11:41:38 A-----       7,460 402A5C02 seldiv.dcu
+08/14/2001 14:50:26 A-----       3,355 DEE29911 SelDiv.dfm
+05/03/2002 11:41:38 A-----       9,751 F36A8BF3 Sgnoncnf.dcu
+07/18/2001 13:10:28 A-----       2,170 8EADA139 Sgnoncnf.dfm
+05/03/2002 11:41:38 A-----       4,075 837E23BB Splvista.dcu
+07/18/2001 13:10:30 A-----     231,571 9BAF7C4E Splvista.dfm
+05/03/2002 11:41:38 A-----      26,988 A3327CA3 Trpcb.dcu
+05/03/2002 11:41:38 A-----       9,604 D145A271 VCEdit.dcu
+07/18/2001 13:10:30 A-----       2,939 53C32B50 Vcedit.dfm
+05/03/2002 11:41:38 A-----      12,836 7317C056 WSockc.dcu
+05/03/2002 11:41:38 A-----       3,211 332A7436 xuesap_TLB.dcu
+05/03/2002 11:42:14 A-----         900 169D53F5 XWBReg.dcu
+05/03/2002 11:41:38 A-----      38,806 03477064 XWBRich20.dcu
+05/03/2002 11:41:38 A-----       6,842 C00E694E Xwbut1.dcu
+05/03/2002 11:42:28 A-----       3,946 59384EB0 XWB_D40.dcu
+05/03/2002 11:41:38 A-----       3,594 A9DE995C XWB_R40.dcu
+ 
+C:\Program Files\vista\BDK32\D5
+05/03/2002 10:57:44 A-----       3,312 7157FA1E AddServer.dcu
+03/01/2002 12:42:38 A-----       1,060 5A4B54B0 AddServer.dfm
+05/03/2002 10:57:44 A-----       5,516 FCB56F2B APi.dcu
+05/03/2002 10:57:44 A-----       3,219 2B54D0F7 fConfirmMapping.dcu
+04/02/2002 11:43:32 A-----       1,006 E055A556 fConfirmMapping.dfm
+05/03/2002 10:57:44 A-----       3,605 912BE386 frmSignonMessage.dcu
+03/05/2002 17:48:52 A-----       2,805 A2BCFA3C frmSignonMessage.dfm
+05/03/2002 10:57:44 A-----       3,438 05361234 fRPCBErrMsg.dcu
+01/24/2002 18:21:20 A-----         495 85FF429E fRPCBErrMsg.dfm
+05/03/2002 10:57:44 A-----       4,601 F674C379 fRPCBTimer.dcu
+01/23/2002 14:45:04 A-----       1,130 B880B883 fRPCBTimer.dfm
+05/03/2002 10:57:44 A-----       3,407 A7BD03D4 Hash.dcu
+05/03/2002 10:57:44 A-----      17,574 6E917952 Loginfrm.dcu
+02/15/2002 10:24:00 A-----      11,849 E398882A Loginfrm.dfm
+05/03/2002 10:57:44 A-----       1,278 22543969 Mfunstr.dcu
+05/03/2002 10:58:46 A-----       4,905 6B78EED7 Rpcbedtr.dcu
+05/03/2002 10:57:44 A-----      11,038 6AC4DDC4 Rpcberr.dcu
+07/18/2001 13:10:26 A-----         999 407D7B76 Rpcberr.dfm
+05/03/2002 10:57:44 A-----       8,854 426E7C06 Rpcconf1.dcu
+07/18/2001 13:10:26 A-----       4,198 B1EDACB5 Rpcconf1.dfm
+05/03/2002 10:57:44 A-----      11,375 7440A453 Rpcnet.dcu
+07/18/2001 13:10:26 A-----         281 8B878EB9 Rpcnet.dfm
+05/03/2002 10:57:44 A-----       5,600 FCCAAFBE RpcSLogin.dcu
+05/03/2002 10:57:44 A-----       7,580 304030AE SelDiv.dcu
+08/14/2001 14:50:26 A-----       3,355 DEE29911 SelDiv.dfm
+05/03/2002 10:57:44 A-----       9,884 F5A23097 Sgnoncnf.dcu
+07/18/2001 13:10:28 A-----       2,170 8EADA139 Sgnoncnf.dfm
+05/03/2002 10:57:44 A-----       4,176 F09335F0 Splvista.dcu
+07/18/2001 13:10:30 A-----     231,571 9BAF7C4E Splvista.dfm
+05/03/2002 10:57:44 A-----      26,741 DA37941B Trpcb.dcu
+05/03/2002 10:57:44 A-----       9,776 C32D8E3E VCEdit.dcu
+07/18/2001 13:10:30 A-----       2,939 53C32B50 Vcedit.dfm
+05/03/2002 10:57:44 A-----      12,884 36051FFD WSockc.dcu
+05/03/2002 10:57:44 A-----       3,203 E9A3B39E xuesap_TLB.dcu
+05/03/2002 10:58:46 A-----         892 EF9D7E60 XWBReg.dcu
+05/03/2002 10:57:44 A-----      38,761 4109D6D2 XWBRich20.dcu
+05/03/2002 10:57:44 A-----       6,854 BA592D46 Xwbut1.dcu
+05/03/2002 10:58:50 A-----       4,229 17A82F92 XWB_D50.dcu
+05/03/2002 10:57:44 A-----       3,810 B80172F1 XWB_R50.dcu
+ 
+C:\Program Files\vista\BDK32\D6
+05/03/2002 11:46:36 A-----       3,470 0BAC17B5 AddServer.dcu
+03/01/2002 12:42:38 A-----       1,060 5A4B54B0 AddServer.dfm
+05/03/2002 11:46:36 A-----       5,764 211F36D8 APi.dcu
+05/03/2002 11:46:36 A-----       3,377 619EF0D7 fConfirmMapping.dcu
+04/02/2002 11:43:32 A-----       1,006 E055A556 fConfirmMapping.dfm
+05/03/2002 11:46:36 A-----       3,763 F2B0B888 frmSignonMessage.dcu
+03/05/2002 17:48:52 A-----       2,805 A2BCFA3C frmSignonMessage.dfm
+05/03/2002 11:46:36 A-----       3,596 5FF3BB8F fRPCBErrMsg.dcu
+01/24/2002 18:21:20 A-----         495 85FF429E fRPCBErrMsg.dfm
+05/03/2002 11:46:36 A-----       4,765 3BF1C6A4 fRPCBTimer.dcu
+01/23/2002 14:45:04 A-----       1,130 B880B883 fRPCBTimer.dfm
+05/03/2002 11:46:36 A-----       3,513 254D85AA Hash.dcu
+05/03/2002 11:46:36 A-----      17,956 1C54586E Loginfrm.dcu
+02/15/2002 10:24:00 A-----      11,849 E398882A Loginfrm.dfm
+05/03/2002 11:46:36 A-----       1,422 68CE9C83 Mfunstr.dcu
+05/03/2002 11:46:54 A-----       5,176 35722506 Rpcbedtr.dcu
+05/03/2002 11:46:36 A-----      11,240 0CF2DEFA Rpcberr.dcu
+07/18/2001 13:10:26 A-----         999 407D7B76 Rpcberr.dfm
+05/03/2002 11:46:36 A-----       9,114 A4B5C2D4 Rpcconf1.dcu
+07/18/2001 13:10:26 A-----       4,198 B1EDACB5 Rpcconf1.dfm
+05/03/2002 11:46:36 A-----      11,832 36D0D0D7 Rpcnet.dcu
+07/18/2001 13:10:26 A-----         281 8B878EB9 Rpcnet.dfm
+05/03/2002 11:46:36 A-----       5,812 6A83D8D0 RpcSLogin.dcu
+05/03/2002 11:46:36 A-----       7,766 61179F74 SelDiv.dcu
+08/14/2001 14:50:26 A-----       3,355 DEE29911 SelDiv.dfm
+05/03/2002 11:46:36 A-----      10,107 B6DDFE46 Sgnoncnf.dcu
+07/18/2001 13:10:28 A-----       2,170 8EADA139 Sgnoncnf.dfm
+05/03/2002 11:46:36 A-----       4,334 D16DC224 Splvista.dcu
+07/18/2001 13:10:30 A-----     231,571 9BAF7C4E Splvista.dfm
+05/03/2002 11:46:36 A-----      27,400 3A115982 Trpcb.dcu
+05/03/2002 11:46:36 A-----      10,048 04A28CC8 Vcedit.dcu
+07/18/2001 13:10:30 A-----       2,939 53C32B50 Vcedit.dfm
+05/03/2002 11:46:36 A-----      14,008 3BBAA3BE WSockc.dcu
+05/03/2002 11:46:36 A-----       3,232 50BCB332 xuesap_TLB.dcu
+05/03/2002 11:46:54 A-----         934 EA790E07 XWBReg.dcu
+05/03/2002 11:46:36 A-----      41,783 E2E9B7C1 XWBRich20.dcu
+05/03/2002 11:46:36 A-----       7,250 EF42A89C Xwbut1.dcu
+05/03/2002 11:47:02 A-----       4,936 3AD2612D XWB_D60.dcu
+05/03/2002 11:47:02 A-----       4,311 993C794A XWB_R60.dcu
+ 
+C:\Program Files\vista\BDK32\Help
+05/06/2002 11:01:42 A-----       2,733 003146A6 broker.als
+05/06/2002 10:22:22 A-----         175 6FD0E64D broker.cnt
+05/01/2002 13:07:56 A-----   1,371,098 59078E96 Broker.hlp
+05/06/2002 10:21:48 A-----       5,895 584D535E broker.toc
+ 
+ 
+C:\Program Files\vista\BDK32\Samples\BrokerEx
+12/17/2001 14:13:32 A-----       1,427 5A02EFAC BrokerExample.dof
+09/05/1997 17:37:48 A-----         640 B2DA3256 BrokerExample.dpr
+05/02/2002 15:47:28 A-----     792,576 564C54CC BrokerExample.exe
+12/17/2001 14:13:14 A-----         876 483416C3 BrokerExample.res
+09/17/1997 17:54:00 A-----       2,212 5602350D BrokerExampleAboutFrm.dfm
+09/17/1997 17:54:00 A-----         883 A61F16F0 BrokerExampleAboutFrm.PAS
+03/26/2002 14:33:20 A-----       7,539 B2C0B964 BrokerExampleFrm.dfm
+03/26/2002 14:33:20 A-----       8,923 8A5BB648 BrokerExampleFrm.PAS
+ 
+C:\Program Files\vista\BDK32\Samples\SilentSignOn (p13)
+11/29/2001 15:56:26 A-----      36,358 CA226130 frmVistAAbout.dfm
+11/29/2001 15:56:40 A-----       9,165 9886C601 frmVistAAbout.pas
+02/20/2002 11:48:12 A-----       2,123 113C64A2 fXWBAppHandle1.dfm
+02/20/2002 11:47:22 A-----       2,158 CAA37588 fXWBAppHandle1.pas
+02/20/2002 11:55:14 A-----       1,493 DDE5120E fXWBAppHandle2.dfm
+02/20/2002 11:53:24 A-----       2,387 E509BF8F fXWBAppHandle2.pas
+02/20/2002 11:30:46 A-----       3,101 D18D7FEB fXWBAVCodes.dfm
+02/20/2002 11:34:48 A-----       2,962 E868A418 fXWBAVCodes.pas
+02/20/2002 11:37:52 A-----       3,532 0342E8B4 fXWBOnFail.dfm
+02/20/2002 11:38:22 A-----       2,815 21A7384C fXWBOnFail.pas
+09/24/2001 09:12:30 A-----       2,179 B175057C ReadMeForSamples.txt
+02/20/2002 11:47:22 A-----       1,382 5B3428BA XWBAppHandle1.dof
+09/24/2001 08:55:02 A-----         211 569EEF61 XWBAppHandle1.dpr
+04/02/2002 12:07:56 A-----     638,464 62E61FE8 XWBAppHandle1.exe
+02/20/2002 11:53:24 A-----       1,373 C262DAD6 XWBAppHandle2.dof
+09/24/2001 08:56:20 A-----         211 3795C783 XWBAppHandle2.dpr
+04/02/2002 12:08:12 A-----     638,976 49DBE496 XWBAppHandle2.exe
+02/20/2002 11:33:28 A-----       1,457 141A1A7B XWBAVCodes.dof
+02/20/2002 11:29:58 A-----         298 7BD8DA83 XWBAVCodes.dpr
+04/02/2002 12:08:24 A-----     618,496 280ACDED XWBAVCodes.exe
+02/20/2002 11:33:18 A-----       1,732 704ABF98 XWBAVCodes.res
+02/20/2002 11:42:06 A-----       1,480 A5F32F63 XWBOnFail.dof
+09/24/2001 08:41:32 A-----         220 7A9C940F XWBOnFail.dpr
+04/02/2002 12:08:40 A-----     640,000 A404A20F XWBOnFail.exe
+ 
+C:\Program Files\vista\BDK32\Samples\Vb5Egcho
+08/20/1997 17:50:44 A-----       1,899 3F2F8FE1 BAPI32.bas
+08/11/1997 11:03:44 A-----         148 3DCE23C9 egcho.bas
+08/11/1997 11:30:50 A-----      28,311 6A6E4E98 Egcho.frm
+04/29/2002 11:29:16 A-----       1,268 03E3DC91 egcho.vbp
+ 
+C:\Program Files\vista\BDK32\Source
+03/01/2002 12:42:38 A-----       1,060 5A4B54B0 AddServer.dfm
+01/30/2002 11:52:22 A-----         496 43B76701 AddServer.pas
+03/08/2002 17:20:18 A-----       6,720 87361A13 APi.pas
+04/02/2002 11:43:32 A-----       1,006 E055A556 fConfirmMapping.dfm
+04/02/2002 11:18:06 A-----         444 FF52F074 fConfirmMapping.pas
+03/05/2002 17:48:52 A-----       2,805 A2BCFA3C frmSignonMessage.dfm
+12/19/2001 13:18:02 A-----       1,122 0490D6BF frmSignonMessage.pas
+01/24/2002 18:21:20 A-----         495 85FF429E fRPCBErrMsg.dfm
+01/25/2002 11:06:48 A-----         631 3FC90CC6 fRPCBErrMsg.pas
+01/23/2002 14:45:04 A-----       1,130 B880B883 fRPCBTimer.dfm
+01/25/2002 14:48:52 A-----       1,691 ABDDBAD6 fRPCBTimer.pas
+07/18/2001 13:10:24 A-----       3,642 15F82810 Hash.pas
+11/05/2001 10:37:48 A-----       2,701 81304061 IISBase.inc
+02/15/2002 10:24:00 A-----      11,867 CC8CA856 Loginfrm.dfm
+04/30/2002 14:43:40 A-----      17,793 B3BD3B47 Loginfrm.pas
+07/18/2001 13:10:26 A-----       2,430 79AAC9E8 Mfunstr.pas
+11/05/2001 11:32:34 A-----       4,241 17C7491F Rpcbedtr.pas
+07/18/2001 13:10:26 A-----         999 407D7B76 Rpcberr.dfm
+01/25/2002 11:27:20 A-----       7,097 CC57B9CB Rpcberr.pas
+07/18/2001 13:10:26 A-----       4,198 B1EDACB5 Rpcconf1.dfm
+05/02/2002 13:20:14 A-----       7,373 EE6F6EB9 Rpcconf1.pas
+07/18/2001 13:10:26 A-----         281 8B878EB9 Rpcnet.dfm
+08/27/2001 11:20:48 A-----      11,669 672990EF Rpcnet.pas
+08/17/2001 09:55:02 A-----       8,857 5181563A RpcSLogin.pas
+08/14/2001 14:50:26 A-----       3,355 DEE29911 SelDiv.dfm
+01/18/2002 14:52:28 A-----       7,570 893C9B76 SelDiv.pas
+07/18/2001 13:10:28 A-----       2,170 8EADA139 Sgnoncnf.dfm
+11/26/2001 11:52:44 A-----       7,294 D2536776 Sgnoncnf.pas
+12/27/2001 09:45:12 A-----       1,405 056B2027 ShowApp.pas
+07/18/2001 13:10:30 A-----     231,571 9BAF7C4E Splvista.dfm
+07/18/2001 13:10:30 A-----       2,373 AF07D43F Splvista.pas
+04/30/2002 14:41:18 A-----      55,442 3C6D2198 Trpcb.pas
+07/18/2001 13:10:30 A-----       2,939 53C32B50 VCEdit.dfm
+11/21/2001 15:52:36 A-----       8,191 0781D595 VCEdit.pas
+05/01/2002 14:17:44 A-----      27,555 1C3B503E WSockc.pas
+08/30/2001 10:41:42 A-----       2,820 74887B7B Xuesap.tlb
+01/23/2002 14:03:38 A-----       7,404 E98BBBC3 xuesap_TLB.pas
+11/05/2001 11:35:12 A-----         939 69783674 XWBReg.pas
+07/18/2001 13:10:34 A-----      47,867 951FE0BD XWBRich20.PAS
+08/14/2001 14:23:38 A-----       9,764 3788FC47 Xwbut1.pas
+07/18/2001 13:10:30 A-----         924 35CE723F XWB_D40.dcr
+05/03/2002 11:42:36 A-----       1,409 9DF0350B XWB_D40.dof
+05/03/2002 11:42:08 A-----         690 3198F765 XWB_D40.dpk
+05/03/2002 11:42:06 A-----       1,700 139B5A20 XWB_D40.res
+07/18/2001 13:10:32 A-----         924 35CE723F XWB_D50.dcr
+05/03/2002 10:58:58 A-----       1,344 A4C42D47 XWB_D50.dof
+05/03/2002 10:58:42 A-----         687 7084EF60 XWB_D50.dpk
+05/03/2002 10:58:40 A-----       1,700 D699F3BC XWB_D50.res
+07/18/2001 13:10:32 A-----         924 35CE723F XWB_D60.dcr
+03/11/2002 13:29:54 A-----       1,412 5C4B00F4 XWB_D60.dof
+01/28/2002 10:15:52 A-----         690 7E3E24AC XWB_D60.dpk
+01/30/2002 08:30:16 A-----       1,680 BDAB593D XWB_D60.res
+05/03/2002 11:41:44 A-----       1,435 A08B013B XWB_R40.dof
+05/03/2002 11:41:28 A-----       1,630 45167A2B XWB_R40.dpk
+05/03/2002 11:41:26 A-----       1,700 331F3D38 XWB_R40.res
+05/03/2002 10:57:54 A-----       1,360 A3CD6F7F XWB_R50.dof
+05/03/2002 10:57:36 A-----       1,592 D52BFC75 XWB_R50.dpk
+05/03/2002 10:57:34 A-----       1,700 03A7F6F4 XWB_R50.res
+03/11/2002 13:29:28 A-----       1,530 75C50861 XWB_R60.dof
+03/11/2002 13:29:06 A-----       1,601 E7D594E6 XWB_R60.dpk
+01/30/2002 09:17:44 A-----       1,680 AAAB51DE XWB_R60.res
+ 
+ 
+ 
+In the following $(DELPHI4), $(DELPHI5) and $(DELPHI6) represent the
+parent directory for Delphi4, Delphi5, and Delphi6 respectively, for which
+the default would be C:\Program Files\Borland\Delphi4 or Delphi5 or
+Delphi6.
+ 
+$(DELPHI4)\Bin
+05/03/2002 11:42:28 A-----      24,576 BEE33AA5 XWB_D40.bpl
+05/03/2002 11:41:38 A-----     459,776 86E9CB85 XWB_R40.bpl
+ 
+$(DELPHI4)\Lib
+05/03/2002 11:42:28 A-----       8,587 F26659D6 XWB_D40.dcp
+05/03/2002 11:41:38 A-----     152,044 134854B1 XWB_R40.dcp
+ 
+$(DELPHI5)\Programs\Bpl
+05/03/2002 10:58:50 A-----      25,600 C96A468F XWB_D50.bpl
+05/03/2002 10:58:50 A-----       8,788 F1923ED5 XWB_D50.dcp
+05/03/2002 10:57:46 A-----     460,800 E7989BC6 XWB_R50.bpl
+05/03/2002 10:57:46 A-----     152,574 77306E5F XWB_R50.dcp
+ 
+$(DELPHI6)\Programs\Bpl
+05/03/2002 11:47:02 A-----      26,624 B088E557 XWB_D60.bpl
+05/03/2002 11:47:02 A-----       9,634 F003B974 XWB_D60.dcp
+05/03/2002 11:46:36 A-----     416,768 CFF242F6 XWB_R60.bpl
+05/03/2002 11:46:36 A-----     162,457 C4396637 XWB_R60.dcp
+ 
+ 
+ 
+The following file, needed for correct display of help files
+generated with Robohelp, may be installed if it is not already
+present.  (WINNT may be replaced by WINDOWS)
+ 
+C:\WINNT\System32
+06/30/2000 14:47:16 A-----   1,048,576 641895FF roboex32.dll
+ 
+ 
+ 
+The following files are installed by the Wise installer and may
+vary in size, CRC, etc., depending upon the selections made during
+the installation.
+ 
+05/06/2002 14:44:32 A-----      26,779 B81F32D4 INSTALL.LOG
+06/25/1999 11:55:30 A-----     149,504 30FDD633 UNWISE.EXE
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;26 SEQ #23</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-05-28 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description for this patch may be found in the patch message or in 
+the patch module on Forum.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;29 SEQ #24</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-05-28 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The patch description may be found in the packman message or on Forum in
+the patch module.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;28 SEQ #25</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-10-25 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Associated Patches:
+ 
+XT*7.3*58       &lt;&lt;= must be installed BEFORE `XWB*1.1*28'
+XU*8.0*225      &lt;&lt;= **ONLY FOR CACHE SITES** must be installed BEFORE 
+                 `XWB*1.1*28'
+XU*8.0*238      &lt;&lt;= must be installed BEFORE `XWB*1.1*28'
+ 
+ 
+DESCRIPTION
+===========
+The M-to-M Broker provides a new implementation of the RPC Broker 
+enabling the exchange of VISTA M-based data and business rules between 
+two VISTA M servers, where both servers reside on the same, or on 
+different VISTA M systems. It has been developed to provide Client/Server 
+functionality resident solely within the VISTA environment.  The 
+requesting server functions in the capacity of a "client." The server 
+receiving that request functions in the capacity of a "server." The 
+Client/Server roles of each server can change depending on at what point 
+in time each VISTA M server is making the request for data from it's 
+counterpart VISTA M server. 
+ 
+The requesting server and the receiving server can reside on the same, or 
+on different VISTA M systems.  All M-to-M Broker client and server 
+routines are packaged in one KIDS build.  This build will need to be 
+installed on each VISTA system required for M-to-M Broker processing. 
+ 
+Further information is provided in a separate document, "M-to-M BROKER 
+Supplemental Documentation, Patch XWB*1.1*28" This document can be 
+obtained by using FTP from the appropriate Customer Service directory:
+ 
+ 
+  OI FIELD OFFICE    FTP ADDRESS      DIRECTORY
+  ======================================================
+  Albany                127.0.0.1 (ftp.fo-albany.domain.ext)
+  Hines                 127.0.0.1 (ftp.fo-chicago.domain.ext)
+  Salt Lake City        152.131.2.1 (ftp.fo-slc.domain.ext)
+ 
+  Host File Name: XWB1_1P28SP.PDF
+ 
+This document can also be downloaded from the Infrastructure 
+Documentation center web page:
+ 
+  http://vista.domain.ext/vdl/#App128
+ 
+ 
+Background
+==========
+ 
+VISTA Imaging requested the development of the M-to-M Broker to be used 
+to communicate between the M client on the VISTA Imaging Digital Imaging 
+and Communications in Medicine (DICOM) Gateway and the M server on the 
+main VISTA Hospital Information System.
+ 
+The VISTA Imaging DICOM Gateway architecture uses M software on a 
+workstation to create associations between newly acquired images and the 
+computerized patient record.  Previous to the development of the M-to-M 
+Broker, the gateway system communicated with the main Hospital 
+Information System using the Distributed Data Processing (DDP) protocol, 
+stored the acquired images on NT file servers and set database entries to 
+reference them.
+ 
+Problems with DDP
+ 
+* Causes database inconsistencies.
+* Complete lack of security.
+* DDP is bound to MAC addresses.
+* DDP can be very slow on a busy HIS and/or network.
+* DDP runs very slowly in a WAN environment because of inherent network 
+  latencies.
+ 
+Because of the database inconsistency problem, incidents of matching 
+images to the wrong patient occurred at one particular site.
+ 
+DDP doesn't have any security.  M-to-M Broker uses many of the robust 
+security features implemented by the VISTA RPC Broker and Kernel 
+software.  These security features are transparent to the end user and 
+without additional impact on IRM.
+ 
+For the VISTA Imaging DICOM Gateway, the M applications on separate VISTA 
+systems will be converted to use this new M-to-M Broker software to 
+communicate to the main HIS.  This will then eliminate the need for DDP 
+where it is used.
+ 
+ 
+List of Test Sites
+==================
+ 
+VISTA Imaging System Team, Washington Office of Information Field Office 
+(OIFO)
+VAMC San Francisco
+ 
+Blood Bank Team Coordination
+============================
+Clearance = August 21, 2002 
+ 
+ 
+Routine Summary
+===============
+The following routines are included in this patch.  The second
+line of each of these routines now looks like:
+ 
+     &lt;tab&gt;;;1.1;RPC BROKER;**[patch list]**; Mar 28, 1997
+ 
+ 
+Remote Procedure Calls
+======================
+ 
+Two new RPCs will be exported with this package to be used as examples 
+for the purposes of testing the M-to-M Broker.
+ 
+  XWB M2M EXAMPLE LARRY 
+  XWB M2M EXAMPLE REF
+ 
+ 
+Checksums
+=========
+Sites should use CHECK^XTSUMBLD to verify checksums. 
+ 
+  Routine Name  Before Patch    After Patch     Patch List
+  ============  ============    ===========     ==========
+  XWBM2MC       None            6758340         28
+  XWBM2MS       None            160268          28
+  XWBM2MT       None            7883957         28
+  XWBRL         None            3848552         28
+  XWBRM         None            3795059         28
+  XWBRMX        None            3053319         28
+  XWBRPC        None            10961081        28
+  XWBRPCC       None            5907709         28
+  XWBUTL        None            3238078         28
+  XWBVL         None            1814637         28
+  XWBVLC        None            1920009         28
+  XWBVLL        None            3018372         28
+ 
+ 
+ 
+Installation Instructions
+=========================
+ 
+&gt;&gt;&gt;Users may remain on the system.
+&gt;&gt;&gt;TaskMan does *not* need to be stopped.
+ 
+  1.  DSM sites - Some of these routines are usually mapped,
+      so you will need to disable mapping for the affected routines.
+ 
+  2.  Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+      option will load the KIDS package onto your system.
+ 
+  3.  The patch has now been loaded into a Transport global on your
+      system. You now need to use KIDS to install the Transport global.
+      On the KIDS menu, under the 'Installation' menu, use the following
+      options:
+ 
+         Verify Checksums in Transport Global
+         Print Transport Global
+         Compare Transport Global to Current System
+         Backup a Transport Global
+ 
+  4.  Users can remain on the system. This patch can be loaded any
+      non-peak time.
+      This patch can be queued and installed at any time.
+      TaskMan can remain running.
+ 
+  5. On the KIDS menu, under the 'Installation' menu, use the following
+      option:
+        Install Package(s)  'XWB*1.1*28'
+                             ==========
+  
+      Want KIDS to Rebuild Menu Trees Upon Completion of Install? YES// NO
+ 
+      Want KIDS to INHIBIT LOGONs during the install? YES// NO
+ 
+      Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO
+                                                                                                    ==
+ 
+  6.  DSM Sites, after patch has installed, rebuild your map set.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;32 SEQ #27</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-04-30 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Please refer to the Description in the FORUM Patch Module for details.
+Patch XWB*1.1*32.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;41 SEQ #29</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-05-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+There are two fixes included in this patch:
+ 
+1)  The server-side code of the M2M Broker was not using the error 
+trapping correctly.  The special variable $ETRAP is NEWed when it should 
+not be (in routine XWBVLL).  As a result the error logger can get into an
+infinite loop.  The error is caused when the socket between the client and
+the server gets "broken".  To resolve this issue $ETRAP is removed from 
+the list of NEWed variables in this instance.
+ 
+2) A new TCP/IP entry point to start the M2M listener on a Cache/VMS 
+system in now available.  The entry point is CACHEVMS^XWBVLL.  This entry 
+should replace the entry point "UCX^XWBVLL" in the VMS-command file 
+(refer to patch XWB*1.1*28 for more information on the VMS-command file 
+and TCP/IP service to support the M2M listener).  
+ 
+For Cache/VMS sites:     
+$ccontrol session "&lt;configname&gt;" "-U" "&lt;namespace&gt;" "CACHEVMS^XWBVLL"
+ 
+Notice above, that "configname" is the name of the configuration in the 
+Configuration manager that you start from the Cache cube.  It is 
+recommended to enclose configname with double quotes (").  For example: 
+$ccontrol session "ISFVA1" "-U" "VAH" "CACHEVMS^XWBVLL"
+ 
+There are various ways to accomplish this for multiple nodes in a 
+cluster, depending on how your site is set up.  Here are two 
+possibilities:
+a.  You can have different .com files for each node with each file 
+containing its specific configname.
+ 
+b.  Write some code so you can use the same .com file for all nodes.  For 
+example: 
+$ NODE=F$EDIT(F$GETSYI("SCSNODE"),"COLLAPSE,TRIM")
+$ assign  'f$trnlnm("SYS$NET")' SYS$NET
+$ ccontrol session "''NODE'" "-U" "VAH" "CACHEVMS^XWBVLL"
+ 
+Note:  The NODE is enclosed with a double quotes ("), two single quotes 
+(') then ending with one single quote (') and a double quote (").
+ 
+This is assuming that the namespace is standard in the production nodes.  
+For test nodes that have a different namespace, it is recommended to use 
+it's own .com file.  
+ 
+ 
+Patch Tracking #: #37876991
+ 
+ 
+Documentation for M-to-M Broker update, Patch XWB*1.1*41, is provided in 
+this patch description. In addition to this, the complete documentation 
+supplement for the M-to-M Broker, Patch XWB*1.1*28, can be found in the 
+VistA Anonymous directories and on the VistA Documentation Library (VDL) 
+in the following two formats:
+ 
+    XWB1_1P28SP.PDF                    XWB1_1P28SP.DOC
+ 
+The preferred retrieval method to download the documentation for Patch 
+XWB*1.1*28 is to FTP from the ANONYMOUS.SOFTWARE directory at: 
+ 
+   DOWNLOAD.VISTA.DOMAIN.EXT.
+ 
+This transmits the file from the first available FTP server. Sites may 
+also elect to retrieve software directly from one of the following 
+servers.
+   
+   OI Field Office         FTP Address                  Directory
+   ------------------------------------------------------------------
+   Albany             ftp.fo-albany.domain.ext     ANONYMOUS.SOFTWARE
+   Hines              ftp.fo-hines.domain.ext      ANONYMOUS.SOFTWARE
+   Salt Lake City     ftp.fo-slc.domain.ext        ANONYMOUS.SOFTWARE
+   
+ Note:  These files must be transferred in binary or IMAGE, not
+        ASCII, mode.  The VistA Documentation Library (VDL) contains
+        all end-user manuals.
+ 
+The Web address for the VistA Documentation Library (VDL), where you can 
+also obtain the documentation for M-to-M Broker, Patch XWB*1.1*28, is as 
+follows:
+ 
+   http://www.domain.ext/vdl/Infrastructure.asp?appID=128
+ 
+ 
+ 
+ 
+List of Test Sites
+==================
+VISTA Imaging System Team, Washington Office of Information Field Office 
+(OIFO)
+ 
+Routine Summary
+The following routines are included in this patch.  The second line of 
+each of these routines now looks like:
+ ;;1.1;RPC BROKER;**[Patch List]**;Mar 28, 1997
+ 
+Checksums:
+Sites should use CHECK^XTSUMBLD to verify checksums
+ 
+Routine Name    Before Patch    After Patch    Patch List
+============    ============    ===========    ==========
+XWBVLL          3018372         3252550        28,41
+ 
+ 
+Installation Instructions
+=========================
+&gt;&gt;&gt;Users may remain on the system.
+&gt;&gt;&gt;TaskMan does *not* need to be stopped.
+ 
+   1.  Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+       option will load the KIDS package onto your system.
+ 
+   2.  DSM sites - These routines should not be in any mapping.
+ 
+   3.  The patch has now been loaded into a Transport global on your
+       system. Now you need to use KIDS to install the Transport global.
+       On the KIDS menu, under the 'Installation' menu, use the following
+       options:
+ 
+          Verify Checksums in Transport Global
+          Print Transport Global
+          Compare Transport Global to Current System
+          Backup a Transport Global
+                 
+   4.  Users can remain on the system. This patch can be loaded any
+       non-peak time.
+       TaskMan can remain running.
+ 
+   5.  Installation will take less than 2 minutes.
+       On the KIDS menu, under the 'Installation' menu, use the following
+       option:
+        Install Package(s)  'XWB*1.1*41'
+                             ==========
+ 
+       Want KIDS to Rebuild Menu Trees Upon Completion of Install? YES//NO
+       Want KIDS to INHIBIT LOGONs during the install? YES// NO
+       Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO
+ 
+   6.  For Cache/VMS sites ONLY - Update the VMS-command file with this 
+       new entry for Cache/VMS.  The following should be all on one line:
+       $ccontrol session &lt;configname&gt; "-U" "&lt;namespace&gt;" "CACHEVMS^XWBVLL"
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;35 SEQ #30</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-02-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Please refer to the Description in the FORUM Patch Module for details.
+Patch XWB*1.1*35.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;34 SEQ #33</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-11-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Please refer to the Description in the FORUM Patch Module for details.
+Patch XWB*1.1*34.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;39 SEQ #34</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-11-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Please refer to the Description in the FORUM Patch Module for details.
+Patch XWB*1.1*39.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;43 SEQ #36</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-05-25 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Please refer to the Description in the FORUM Patch Module for details.
+XWB*1.1*43  New broker long timeout fix.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;46 SEQ #37</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-08-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Please refer to the Description in the FORUM Patch Module for details.
+XWB*1.1*46 Remove string length limit.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;45 SEQ #38</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-09-23 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Please refer to the Description in the FORUM Patch Module for details
+on patch XWB*1.1*45.
+This patch is part of the Broker Security Enhancement (in conjunction 
+with patch XU*8*404).
+ 
+**************************  NOTE  ***************************************
+        This Patch must be installed before XU*8*404.
+        
+*************************************************************************
+
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;49 SEQ #40</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-23 13:46:39</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Please refer to the Description in the FORUM Patch Module for details.
+XWB*1.1*49 Improve support for Linux.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;54 SEQ #41</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-03-26 09:54:55</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Please refer to the Description in the FORUM Patch Module for details.
+XWB*1.1*54 Handle long parameters in RDV.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;53 SEQ #42</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-05-04 09:58:05</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+XWB*1.1*53.  See the patch description on Forum.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;57 SEQ #43</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-04-12 09:54:16</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Handles timing for coversheet loads in the foreground.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;59 SEQ #44</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-11-05 16:25:25</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Refer to the patch description on Forum.
+
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;62 SEQ #46</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-09-30 10:27:42</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Please see the patch description on FORUM, in the National Patch Module.
+
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

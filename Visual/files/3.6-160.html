@@ -1,0 +1,96 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTE2MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OOPS WC EDITED (160) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTE2MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OOPS WC EDITED</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>Worker's Compensation edited CA1</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is the message that is sent to the Supervisor if the Worker's
+Compensation personnel edited one of the following fields after the
+Supervisor has signed the form:  INJURED PERFORMING DUTY(#146), NOT INJURED
+PERFORMING DUTY (#147), INJURY CAUSED BY EMPLOYEE (#148), INJURY CAUSED BY
+EMPLOYEE EXPLAIN (#149), SUPERVISOR AGREE/DISAGREE (#163), SUPERVISOR NOT
+AGREE EXPLAIN (#164), or REASON FOR CONTROVERTS (#165).
+</pre>
+</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+The Supervisor's signature has been removed from the CA1 for the following
+incident:
+ 
+Date of Incident: |3|
+          Case #: |2|
+
+The Worker's Compensation Manager has signed the claim.
+ 
+</pre>
+</td>
+</tr>
+<tr>
+<td>PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Name of Person - name of the Person Involved
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Case Number - ASISTS Case number
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Date of Incident - this is the date/time of the injury/illness
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,111 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC05NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU LOAD RECORD FOR EDIT (94) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC05NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU LOAD RECORD FOR EDIT</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>GET4EDIT</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_TIUSRVR.html">TIUSRVR</a></td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>GLOBAL ARRAY</td>
+</tr>
+<tr>
+<td>AVAILABILITY</td>
+<td>SUBSCRIPTION</td>
+</tr>
+<tr>
+<td>WORD WRAP ON</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This RPC loads the return array with data in a format consistent with that
+required by the TIU UPDATE RECORD API.  It should be invoked when the user
+invokes the Edit action, to load the dialog for editing the document.
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;TIUDA</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the record number (IEN) in file 8925 for the document to be
+edited.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;DR</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;245</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This optional parameter allows the calling application to specify the
+fields to be returned in Y(FIELD #) as expected by the edit dialog.
+ 
+e.g., for a PROGRESS NOTE, the user may only edit the DATE/TIME OF NOTE
+(Field #1301), the AUTHOR OF NOTE (Field #1202), and (per user preference)
+the SUBJECT of the note (Field #1701) (in addition to the body of the
+note, of course). For a Discharge Summary, the user may edit the URGENCY
+of the record (Field #.09), DICTATED BY (Field #1202), DICTATION DATE
+(Field #1307), ATTENDING PHYSICIAN (Field #1209), and an optional SUBJECT
+(if specified as preferred by the user).
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>RETURN PARAMETER DESCRIPTION</td>
+<td><pre>
+The return array will be subscripted by the field #, with the body of the
+document in the ^TMP("TIUEDIT",$J,"TEXT",n) subscript.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

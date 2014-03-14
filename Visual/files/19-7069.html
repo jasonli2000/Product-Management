@@ -1,0 +1,229 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzA2OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ACKQAS VISIT ENTRY (7069) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzA2OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ACKQAS VISIT ENTRY</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>New Clinic Visits</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>NEW CLINIC VISITS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The New Clinic Visits option allows you to enter A&amp;SP clinic visits 
+into the computer. When entering a new visit, if all required 
+information is not typed in, the entire visit is deleted. This is 
+done to eliminate errors caused by incomplete data.
+  
+After you identify the division and clinic location, the software asks you
+for the visit date. QUASAR defaults to today's date and will accept any
+DHCP date format except a future date.
+  
+At the "Select A&amp;SP Patient Name" prompt, enter the patient's name. 
+If a new name is entered (i.e., a name not previously in the A&amp;SP 
+PATIENT file (#509850.2)), QUASAR asks if you want to add the new 
+patient to the file. The software also gives you the cumulative count 
+of unique patients entered in the file.
+ 
+If the selected patient does not have a Primary Eligibility the system
+displays an error message to this effect and returns to the division
+prompt.
+ 
+If you have not selected an existing visit and the Send to PCE value on
+the Site Parameters file for the selected division is set to true the
+system checks to see if there are any appointments set up for this patient
+on this date.  If there are they are displayed, you have the option to
+select one.  If you select an appointment the appointment time is used to
+populate the visit time field in the visit record.  If there are no
+appointments for the patient the system then checks if there are any PCE
+visits for the patient on the selected day.  If there are they are
+displayed and you are given the option to select one.  If one is selected
+data from the PCE visit (that is valid within QUASAR) is used to populate
+the visit record.
+  
+Next, QUASAR provides a brief patient inquiry excerpt, a list of rated 
+disabilities, Service Connected data and the A&amp;SP problem list if any
+diagnostic codes have been entered.
+ 
+You are then required to enter a visit time.
+  
+You are asked to enter the initial visit date. If the patient is a 
+new patient, the initial visit date is the date of the patient's first 
+A&amp;SP clinic visit.
+ 
+If the USE ASP CLINIC FILE NUMBER parameter is set to YES for the
+Division, the system shall prompt you to enter the Local Clinic Number for
+the Patient.
+ 
+If the USE C&amp;P parameter is set to YES for the Division, then the system
+shall look for an open C&amp;P request for the Patient. If one is found then
+the system will prompt if the Visit you are entering is a C&amp;P Exam.
+ 
+If you have selected a PCE Visit then the system will have retrieved
+all the Diagnosis Codes from the PCE Visit that are valid for QUASAR and
+these codes shall be displayed. You will not have to re-enter the same
+Diagnosis Codes into QUASAR.
+QUASAR asks for a diagnostic code (i.e., ICD-9-CM code). For evaluations, 
+the disease codes are those conditions found to be present during the 
+evaluation. For treatment and therapy visits, the disease codes are those 
+conditions which are TREATED. Conditions previously diagnosed during an 
+evaluation but not treated during the visit are NOT entered. The 
+first code entered is always assumed to be the primary complaint. 
+Disease codes are added to the Problem List.  You should exercise 
+caution when entering disease codes.
+ 
+If the Send to PCE parameter for the Division is set to NO the Visit
+Eligibility will not be prompted.
+If the Send to PCE parameter for the Division is set to YES and the
+Patient is not defined as Service Connected then the system will set the
+Visit Eligibility to the Patient's Primary Eligibility and this field will
+not be displayed.
+  
+If the Send to PCE parameter for the Patient is set to YES and the Patient
+is Service Connected the system will prompt for the Visit Eligibility. It
+will display all the Patient's Eligibilities. If the list of Eligibilities
+does not include NSC (Non-Service Connected) then this will also be
+displayed. The system shall prompt the user to select an Eligibility for
+the Visit from those displayed.
+ 
+If the Send To PCE parameter is set to YES for the Division, and the
+Patient is Service Connected then the system shall prompt if the Visit's
+Treatment was Service Connected. 
+ 
+If the Send To PCE parameter is set to YES for the Division, the Visit's
+Treatment is Service Connected and the Patient is classified as having
+been exposed to Agent Orange, the system shall prompt if the Visit's
+Treatment was related to Agent Orange Exposure. 
+ 
+If the Send To PCE parameter is set to YES for the Division, the Visit's
+Treatment is Service Connected and the Patient is classified as having
+been exposed to Radiation, the system shall prompt if the Visit's
+Treatment was related to Radiation Exposure. 
+ 
+If the Send To PCE parameter is set to YES for the Division, the Visit's
+Treatment is Service Connected and the Patient is classified as having
+been exposed to Environmental Contaminants, the system shall prompt if the
+Visit's Treatment was related to Environmental Contaminants. 
+ 
+Depending on your site parameter settings, the software may ask for
+audiometric data. These data fields are used to enter audiometric 
+thresholds and word recognition scores. The audiometric fields appear 
+for all C&amp;P exams (even when a code for normal hearing [389.8] is 
+entered) and for any routine audiometric evaluation where a hearing 
+loss code is entered in the diagnostic code field. The audiometric 
+data field does not appear when a code for normal hearing (389.8) or 
+when a non-hearing loss code (e.g., dizziness 780.4) is entered in 
+the diagnostic code field. Enter a whole number between -10 and 105. 
+Missing data is coded as 1. No response at the limits of the 
+audiometer or 105 dB HL, whichever is lower, is coded as 110.
+Note: VACO prohibits presentation of audiometric stimuli.
+ 
+If the user selected a PCE Visit, the system shall copy the Providers
+associated with the PCE Visit over to QUASAR, discarding any that are not
+defined as active on the A&amp;SP Staff file. Prior to prompting for the
+Providers for this visit, the system shall display the Providers copied
+over from PCE.
+  
+Next, you are prompted for Primary Provider, Secondary Provider and
+Student. The Primary Provider field contains the name of the primary A&amp;SP
+Provider who participated in the exam. If a second Provider was involved
+with the visit, enter his or her name.  If a Student was involved with
+this visit, enter the student's name. A screen allows you to select only
+Providers and Students, who are active on the exam visit date.
+ 
+If the you selected a PCE Visit, the system shall copy the Procedure
+codes and any associated CPT Modifiers and Procedure Volumes, for that
+Visit over to QUASAR, discarding any that are not defined as active on the
+A&amp;SP Procedure file or the A&amp;SP CPT Modifier File. Prior to asking you to
+enter the Procedures for this visit, the system shall display any
+Procedures (with CPT Modifiers and Volume) copied over from PCE.
+ 
+QUASAR asks for a procedure code (i.e., CPT-4 code).
+After entering a CPT Procedure code the system shall prompt for any CPT
+Modifiers (if appropriate) and a Volume, before returning to ask for
+another CPT Procedure Code.
+ 
+The final prompt is for the total time spent during the clinic visit. 
+Time is recorded in minutes and is to include direct (e.g., face-to-face) 
+and indirect time (e.g., paperwork, documentation, administration).
+ 
+If the Send to PCE parameter is set to YES for the Division the system
+shall ensure that the each of the required PCE fields has had data
+entered.  If any required fields have not had data entered they are
+displayed.  You then have the option to return to the amend the visit or
+quit and therefore delete the visit.
+  
+The New Clinic Visits option is not used to edit visits. Existing 
+clinic visits can be edited with the Edit an Existing Visit option.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-150.html">QUASAR</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K ACKSITE,ACKCSC</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>W @IOF,!,"This option is used to enter new A&SP clinic visits.  Existing clinic",!,"visits should be updated with the Edit an Existing Visit option.",!</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>VISIT^<a href="http://code.osehra.org/dox/Routine_ACKQAS.html">ACKQAS</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

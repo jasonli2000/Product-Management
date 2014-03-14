@@ -1,0 +1,66 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS01OS4y").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>WAITING TIME (59.2) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS01OS4y" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>WAITING TIME</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file holds waiting time data.  For each date, for each division
+identified in file 59, the total number of requests (visits) and the
+total waiting time for each hourly period from 8AM to 5PM (8-9, 9-10
+etc.) are stored.  Also stored are the total number of requests which
+were filled but not picked up by the end of the day.  Data is put into
+this file from the prescription ready file (52.11). It is not intended that 
+data in this file be entered or manipulated directly through the VA 
+FileManager. The option to use this file is under the Bingo Manager menu 
+and is called Bingo Statistical Report.
+ 
+ 
+ 
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;PSO</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

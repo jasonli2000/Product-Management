@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTcwNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ECDSSYN (706) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTcwNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ECDSSYN</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Procedure Synonym/Default Volume (Enter/Edit)</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+** You must have access to locations, DSS Units, and categories in order 
+to use this option. ** 
+ 
+** You must create Event Capture locations, DSS Units, and procedures 
+before using this option.  If the DSS Units use categories to group 
+procedures, you must also define the categories before using this 
+option. ** 
+ 
+A procedure synonym is the locally-recognized name for a local or  
+national procedure.  This option allows you to enter, edit, and delete 
+the procedure synonym, Associated Clinic, and Volume.  
+ 
+It is acceptable to have multiple synonyms for a procedure, because 
+the synonyms are associated with the Event Code Screens that define 
+the procedures.  For data entry and reports, the software uses the   
+procedure synonym, if one exists.  
+ 
+Procedures that are being passed to PCE must have an Associated Clinic. 
+When you enter or edit an Associated Clinic using this option, it 
+becomes the default clinic during data entry.  Likewise, when you   
+enter or edit the Volume with this option, it becomes the Default 
+Volume during data entry.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1997-03-26 09:42:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>EXIT EXECUTE STATEMENT</td>
+<td>W @IOF</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My4yLTMz").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>C-TELEVIDEO (33) &nbsp;&nbsp;  TERMINAL TYPE (3.2)</h1>
+<div id="demo"><table id="My4yLTMz" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>C-TELEVIDEO</td>
+</tr>
+<tr>
+<td>SELECTABLE AT SIGN-ON</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>RIGHT MARGIN</td>
+<td>80</td>
+</tr>
+<tr>
+<td>FORM FEED</td>
+<td>#,$C(27,42,27,94)</td>
+</tr>
+<tr>
+<td>PAGE LENGTH</td>
+<td>24</td>
+</tr>
+<tr>
+<td>BACK SPACE</td>
+<td>$C(8)</td>
+</tr>
+<tr>
+<td>HOME CURSOR</td>
+<td>$C(27,94)</td>
+</tr>
+<tr>
+<td>REVERSE VIDEO ON</td>
+<td>$C(27)_"G4"</td>
+</tr>
+<tr>
+<td>REVERSE VIDEO OFF</td>
+<td>$C(27)_"G0"</td>
+</tr>
+<tr>
+<td>ERASE TO END OF LINE</td>
+<td>$C(27,116)</td>
+</tr>
+<tr>
+<td>ERASE TO END OF PAGE</td>
+<td>$C(27,121)</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td>Televideo video terminal</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTMzMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XDR IDENTIFY METHODS (333) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTMzMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XDR IDENTIFY METHODS</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>DUPLICATES: METHODS FOR FINDING</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+BASIC SEARCH
+ 
+This method checks the entire selected file for duplicates.  It starts
+at the beginning of a file and checks each record against a subgroup
+of records (defined by the candidate collection routine written by
+the package developer) for possible duplicates.  If two records are
+determined to be potential duplicates they are placed in the Duplicate
+Record file as Potential Duplicates.  These records will then be
+verified as either Verified Duplicates or Verified Non-Duplicates.
+ 
+The amount of time the search will take depends on the number of records
+in the file.  When you start a Basic search it will be placed in a
+Taskman Queue to be run in a background job.  This search can be halted
+and restarted any number of times if necessary.
+ 
+ 
+NEW SEARCH
+ 
+This method checks only newly added and edited records.  It should
+be completed in one night, but can be halted and restarted just as
+the basic search if necessary.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1991-06-24 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

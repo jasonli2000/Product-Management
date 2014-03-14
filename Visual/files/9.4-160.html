@@ -1,0 +1,274 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTE2MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>INTEGRATED PATIENT FUNDS (160) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTE2MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>INTEGRATED PATIENT FUNDS</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>PRPF</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>PATIENT FUNDS.  INTEGRATED WITH PATIENT FILE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This package is the class I version of the Patient funds accounting system.
+</pre>
+</td>
+</tr>
+<tr>
+<td>FILE</td>
+<td>
+<ol>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-470.html">PATIENT FUNDS</a></dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-470.1.html">PATIENT FUNDS MASTER TRANSACTION</a></dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-470.2.html">PATIENT FUNDS FORMS</a></dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-470.5.html">PATIENT FUNDS TEMPORARY TRANSACTION</a></dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;File: 1, IEN: 16</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-470.3.html">PATIENT FUNDS TRANSACTION COUNTER</a></dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-470.6.html">PATIENT FUNDS REMARKS CODE</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DEVELOPER (PERSON/SITE)</td>
+<td>BECKER/ISC WASHINGTON@ALTOONA</td>
+</tr>
+<tr>
+<td>DEVELOPMENT ISC</td>
+<td>SAN FRANCISCO</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>National</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;3</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;1989-02-17 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;1997-04-08 00:00:00</dt>
+</li>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;3.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2005-11-19 00:00:00</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;6</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-05-28 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch contains the changes necessary to support the following
+items:
+ 
+1.  Delete references to files 3, 6, and 16.
+2.  Recode electronic signatures per IG instructions.
+3.  Address IC concerns regarding suspense processing and restrictions.
+4.  Archive and purge
+5.  Correct errors relating to FM 21.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;7</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-01-20 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ 
+This patch contains the changes necessary to support the following
+items:
+ 
+1. Remove routines previously used for conversion from 3/6/16.
+2. Run a File 16 conversion of the Provider Authorizing Restriction field,
+of file 470 which was inadvertantly missed in Patch PRPF*3.0*6.
+3. Modify the header used in the PRPF Archive tape.
+4. Corrects problems identified in NOIS - DAY-0697-40888, DAN-0697-42229
+and BAN-0697-11023
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;8</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-06-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch addresses two unrelated problems in the Patient Funds
+package that resulted in the following NOIS:
+ 
+   Overview of NOIS MESSAGES:
+   -------------------------
+ CLE-1097-42161 - re occasional display of info from Engineering (due to
+non-initialization of print buffer)
+ TOM-1297-41000 - re inclusion of inactive patients in some reports
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;9 SEQ #9</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-09-14 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch prevents a possible future management error.  The default and
+maximum date for archieving and purging was "TODAY" when logically one
+should be purging or archieving "recent" data.  To prevent recurrance of
+this, the maximum date for these two events has been changed to TODAY-400.
+ 
+ 
+ 
+ Overview of NOIS MESSAGES:
+ 
+ -------------------------
+ 
+ MAR-0798-20011   How to restore unintentionally deleted records.
+ 
+ 
+ 
+ There are no E3R messages associated with this patch.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;10 SEQ #10</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-03-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;11 SEQ #11</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-11-21 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+REMOVE OBSOLETE OPTIONS AND INVALID FORM ENTRY
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;12 SEQ #12</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-01-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+REMOVE OBSOLETE OPTIONS AND INVALID FORM ENTRY
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;13 SEQ #13</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-09-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+PERSONAL FUNDS MULTIDIV
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;14 SEQ #14</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-09-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+CORRECT BAL CHECK REPORT
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;15 SEQ #17</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-07-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patient Funds Diagnostic Patch
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;16 SEQ #19</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-04 22:13:24</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patient Funds Migration Patch
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;17</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-12-09 12:53:22</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch is the 3rd and final patch in the 3 patch series used to 
+migrate a legacy Patient Funds package to the new VPFS Enterprise 
+application. Only use this patch if the migration process has been 
+successfully completed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;18 SEQ #21</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-05-26 19:11:31</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch corrects the issue of the inability to add Guardian
+information to new patients added since Veteran's Personal Finance 
+System (VPFS) was successfully installed.
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

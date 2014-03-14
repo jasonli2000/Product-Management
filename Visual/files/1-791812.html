@@ -1,0 +1,60 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OTE4MTI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TRANSMISSION BATCH (791812) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OTE4MTI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TRANSMISSION BATCH</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Transmission Batch File contains individual batches of orders with
+pointers to all orders that have been grouped in that batch for
+transmission to the DDC. The file contains information specific to each
+batch, such as the status of the batch and the pointer to the transmission
+message. This is a dynamic file whose entries are deleted as part of the
+purge process when all orders in the batch are no longer active.
+ 
+When a transmission batch is closed, all information needed by the DDC for
+each order is gathered and stored in the Transmission Batch File in the
+exact format that is sent in the mail message to the DDC. This information
+is stored in the "H" node of the file which is a non-standard node. The
+"H" node has been made non-standard in order to conserve space in the
+transmission message.
+ 
+Data definitions for this file are distributed with the ROES. No data is
+distributed.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

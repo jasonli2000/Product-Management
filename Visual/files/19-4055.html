@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDA1NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSJV PROVIDER PRINT (4055) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDA1NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSJV PROVIDER PRINT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Active Provider Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ACTIVE PROVIDER REPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+  This lists all active providers in the PROVIDER File (6). The report
+includes the following fields:
+ 
+     NAME (From the NEW PERSON File)
+     INACTIVATION DATE (From the PROVIDER File)
+     INACTIVE DATE (For Pharmacy, from the NEW PERSON File)
+     AUTHORIZED TO WRITE MED ORDERS (From the NEW PERSON File)
+ 
+  Only providers who are marked as AUTHORIZED TO WRITE MED ORDERS in the
+NEW PERSON File (200) are selectable through Inpatient Medications
+version 4.0
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-85.html">PATIENT DATA EXCHANGE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ENP^PSJPRE49</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

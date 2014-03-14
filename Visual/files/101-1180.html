@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTExODA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBDF PCE EVENT (1180) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTExODA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBDF PCE EVENT</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Process events from PCE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol is the event handler attached
+to the PXK VISIT DATA EVENT protocol.
+
+In order to determine if all data from encounter
+forms has been collected it is necessary to flag
+all printed forms as having data input.  If the
+input is from AICS then the Form Tracking file is
+automatically updated.  If data entry is done through
+Scheduling or PCE then the form tracking file is not
+updated.
+ 
+This protocol ensures that data during data entry
+through PCE or scheduling flags a manual data entry
+field in the Form Tracking file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-76.html">AUTOMATED INFO COLLECTION SYS</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D MAN^<a href="http://code.osehra.org/dox/Routine_IBDFPCE.html">IBDFPCE</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1997-05-01 16:37:55</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

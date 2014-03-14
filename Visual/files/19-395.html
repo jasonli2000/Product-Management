@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzk1").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XMMGR-LARGE-MESSAGE-REPORT (395) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzk1" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XMMGR-LARGE-MESSAGE-REPORT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Large Message Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LARGE MESSAGE REPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This report lists messages that either are longer than a specified
+number of lines (see field 8.14 in the MailMan Site Parameters - file 4.3),
+or which have either no or only one owner, or no text,
+or no subject, as such messages are of interest to site management.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-4.html">MAILMAN</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ENTER^<a href="http://code.osehra.org/dox/Routine_XMUT2.html">XMUT2</a></td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

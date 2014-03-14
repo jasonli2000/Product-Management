@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzc2MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSGW SITE (3761) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzc2MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSGW SITE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Site Parameters</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SITE PARAMETERS</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>PSGW PARAM</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Allows user to set site parameters for Automatic Replenishment package.
+A site parameter called AR/WS AMIS FLAG controls WHEN the collection of
+AMIS data begins.  Read all available documentation before setting this
+parameter!
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>SITE^<a href="http://code.osehra.org/dox/Routine_PSGWEE.html">PSGWEE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

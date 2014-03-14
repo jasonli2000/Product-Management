@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjQ3Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCP RECEIVE PURCHASE ORDER (2476) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjQ3Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCP RECEIVE PURCHASE ORDER</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Purchase Order Receiving To Inventory Point</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PURCHASE ORDER RECEIVING TO IN</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+  ** For receiving from any source other than Supply Whse. (Issues) **
+  User enters a P.O. and the partial number received.  For recurring items,
+the process updates inventory quantity. The process also recalculates
+the average unit cost for the item, based on a weighted average between the
+quantity on hand at the old average price, and the quantity received at
+a new price.  It also updates the last unit cost, and the date last
+received, as well as receiving history showing the date and quantity
+received, and the percentage of normal stock level on hand before the
+receipt was posted to the inventory.  If the operator has specified
+that s/he wishes to keep a detailed inventory transaction history, this
+file is also updated.
+  For nonrecurring items, the process updates only the distribution
+history for the inventory point receiving the item.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PRCPPOLM.html">PRCPPOLM</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1988-05-26 08:25:47</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

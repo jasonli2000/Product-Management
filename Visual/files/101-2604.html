@@ -1,0 +1,92 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI2MDQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRC QC CONSULTS/REQUESTS PENDING RESOLUTION (2604) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI2MDQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRC QC CONSULTS/REQUESTS PENDING RESOLUTION</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>List Manager Print Of Consults Pending Resolution for QC</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+List Manager Protocol:  Gather QC data on number of consults still pending
+resolution.  Gives statistics by status and service.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2605.html">GMRC QC SELECT SERVICE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SS</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Select Service</dt>
+<dt>PROMPT:  &nbsp;&nbsp;Select Service</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D KILL^<a href="http://code.osehra.org/dox/Routine_VALM10.html">VALM10</a>()</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a></td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>24</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>2</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2002-09-06 19:25:49</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTAy").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LR COUNT ACC TESTS (902) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTAy" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LR COUNT ACC TESTS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Count accessioned tests</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>COUNT ACCESSIONED TESTS</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>LRSUPER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Provides a count of all verified tests by requesting area and cumulative totals
+for a given accession area.  The report will list the # of accessions
+and test counts by location and also give a total # of accessions
+and total test count by accession area.  The option has two displays
+"Counts by location" and "Counts by test."
+ This option is different from the option 'LAB ACCESSION AND TEST
+COUNTS' in that it only counts verified test'
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_LRUPACA.html">LRUPACA</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

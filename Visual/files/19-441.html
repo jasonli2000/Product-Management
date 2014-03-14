@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDQx").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XTVG COMPARE (441) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDQx" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XTVG COMPARE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Global Compare for selected package</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>GLOBAL COMPARE FOR SELECTED PA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to produce a listing of changes in the global structure,
+including file protection and templates, between a previously stored
+version of the package (using the Accumulate Global ... (XTVGC UPDATE) 
+option).
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_XTVGC2.html">XTVGC2</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI1OTU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRCACT ADD NEW ORDERS (2595) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI1OTU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRCACT ADD NEW ORDERS</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Add New Orders</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Add a new order via CPRS.  Note:  An order entered with this action will
+not be seen by the service until the order is signed and released by CPRS.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2617.html">GMRCACT ADD PHARMACY CONSULT REQUEST</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>S VALMBCK="R" S:$D(^TMP("GMRC",$J,"CURRENT","MENU")) XQORM("HIJACK")=^("MENU") D:$D(GMRC("NMBR")) RESET^GMRCSLMV(GMRC("NMBR")) K:$D(GMRC("NMBR")) GMRC("NMBR")</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D SLCT1^<a href="http://code.osehra.org/dox/Routine_ORQPT.html">ORQPT</a>,EN^ORCMENU,AD^GMRCSLM1,HDR^GMRCSLM,INIT^GMRCSLM</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>3</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1999-04-16 15:24:17</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

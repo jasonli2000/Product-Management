@@ -1,0 +1,92 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTc1Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQUIT CONTROL (756) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTc1Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQUIT CONTROL</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Passing Control To The Application</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+  
+     When the Application (Lab, IFCAP, etc.) defined the variable XQUIT in
+the Entry Action of one of their options, control used to pass to the Menu
+System and it would prevent the user from running that option.  It makes
+more sense, however, for the application to take control so that problem
+that caused it to set the XQUIT might be corrected.  A new executable
+field has therefore been added to the Option File to which control will be
+passed.  It is called XQUIT EXECUTABLE: ^DIC(19,Option IEN,21).
+  
+    When an XQUIT is encountered this field is executed.  If the XQUIT
+disappears then the Menu Sytem proceeds along satisfying the user's
+instructions as if nothing happened.  If the XQUIT is not killed then the
+user will be returned to the previous menu.  If XQUIT EXECUTABLE is blank
+then the users will be shown a [message] before being sent back to where
+they came from.  If there is code in this field, however, no message will
+be printed on the assumption that the application took care of informing
+the user.
+  
+    Code can be entered in this field by a programmer, but only by using
+the screen-based Option Editor, [OPED].  It is not supported by the
+traditional editor XUEDITOPT.
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;MESSAGE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-755.html">XQUIT MESSAGE</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;OPED</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-761.html">XQ OPED</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1998-04-15 11:34:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

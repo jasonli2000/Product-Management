@@ -1,0 +1,86 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTY2Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SDPP PATIENT PROFILE DISPLAY APPOINTMENTS (663) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTY2Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SDPP PATIENT PROFILE DISPLAY APPOINTMENTS</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Appointments</td>
+</tr>
+<tr>
+<td>SYNONYM</td>
+<td>
+<ol>
+<li>
+<dt>SYNONYM:  &nbsp;&nbsp;AP</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This action will allow the user to display all appointments or appointments
+for a date range.
+ 
+It will also allow the user to select a specific clinic to display.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-48.html">SCHEDULING</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K SDBEG,SDEND,SDLN,SDFLG,SDTYP,VALMHDREND,^TMP("SDAPT",$J)</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>N SDY S (SDTYP,SDFLG)=2,DIC=44 D ALL^<a href="http://code.osehra.org/dox/Routine_SDPPSEL.html">SDPPSEL</a> Q:SDERR  D ASK^<a href="http://code.osehra.org/dox/Routine_SDPPSEL.html">SDPPSEL</a> Q:SDERR  D ^<a href="http://code.osehra.org/dox/Routine_SDPPALL.html">SDPPALL</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1996-06-26 17:39:23</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

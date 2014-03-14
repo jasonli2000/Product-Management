@@ -1,0 +1,54 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03Mjc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DSS EXTRACT LOG (727) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03Mjc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DSS EXTRACT LOG</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains data about the extracts from DHCP packages.  Each
+entry includes the date of the extract, the package for which the
+extract was run, the date range covered by the extract, and the
+number of records sent.  Data is entered into this file by the
+extract routines at the time extracts are transmitted to the
+commercial software.  Data in this file may be viewed by appropriate
+options within the DSS package.  It is not intended that this file
+be read directly via VA FileMan and DATA IN THIS FILE MUST NEVER
+BE EDITED.  Editing data in this file will severely compromise the
+integrity of all DSS applications.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

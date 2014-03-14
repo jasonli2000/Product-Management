@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA5MzM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>WII BUILD ADT EVENTS (10933) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA5MzM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>WII BUILD ADT EVENTS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>WII Build ADT Events</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>WII BUILD ADT EVENTS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is to be scheduled via Taskman to run once a week.
+ 
+This option will run the routine WIIACT4 line tag EN.  This will insert 
+qualifying entries into the WII ADMISSIONS DISCHARGES (#987.5) file.  See 
+the DD description for an expanded description.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_WIIACT4.html">WIIACT4</a></td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>STARTUP</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

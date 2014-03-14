@@ -1,0 +1,111 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzQ0Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SROQD (7443) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzQ0Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SROQD</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Deaths Within 30 Days of Surgery</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DEATHS WITHIN 30 DAYS OF SURGE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option lists patients who had surgery within the selected date range 
+and who died within 30 days of surgery. Two separate reports are  
+available through this option.  
+  
+ 1. Total Cases Summary 
+    This report may be printed in one of three ways.  
+    a. All Cases 
+       The report will list all patients who had surgery within the 
+       selected date range and who died within 30 days of surgery, along 
+       with all of the patients' operations that were performed during the
+       selected date range.  
+    b. Outpatient Cases Only The report will list only the surgical cases
+       that are associated with deaths that are counted as outpatient
+       (ambulatory) deaths.  
+    c. Inpatient Cases Only
+       The report will list only the surgical cases that are associated 
+       with deaths that are counted as inpatient deaths.  
+  
+ 2. Specialty Procedures 
+    This report will list the surgical cases that are associated with 
+    deaths that are counted for the national surgical specialty linked to 
+    the local surgical specialty. Cases are listed by national surgical 
+    specialty.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-127.html">SURGERY</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D EXIT^<a href="http://code.osehra.org/dox/Routine_SROVAR.html">SROVAR</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D ^<a href="http://code.osehra.org/dox/Routine_SROVAR.html">SROVAR</a></td>
+</tr>
+<tr>
+<td>XQUIT EXECUTABLE</td>
+<td>Q</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_SROQD.html">SROQD</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

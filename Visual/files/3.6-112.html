@@ -1,0 +1,121 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTExMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU DS CONVERSION ERRORS (112) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTExMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU DS CONVERSION ERRORS</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>DISCHARGE SUMMARY CONVERSION</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+             *******  CONVERSION COMPLETED  *******
+  
+The Discharge Summary conversion has completed.  One or more Summaries
+were not converted due to missing information, or inability to match
+the record to an existing admission.
+   
+            DISCHARGE SUMMARY CONVERSION ERROR REPORT
+            =========================================
+  
+                     CONVERSION STARTED:  |1|
+                   CONVERSION COMPLETED:  |2|
+    
+                    SUMMARIES CONVERTED:  |3|
+
+                SUMMARIES NOT CONVERTED:  |4|
+                  - MISSING INFORMATION:  |5|
+                  -  NO ADMISSION FOUND:  |6|
+========================================================================
+
+You may see a list of the records which failed to convert by using the
+M global lister (i.e., ^%G) to examine the ^GMR(128,"CNV","FAIL",DS #, 
+subscript.  The DS # refers to the entry number in file 128.
+</pre>
+</td>
+</tr>
+<tr>
+<td>PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Date/Time conversion started
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Date/Time conversion completed
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Number of Summaries successfully processed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;4</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Number of Summaries not Converted.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;5</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Number of Summaries which were not converted due to missing
+information.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;6</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Number of Summaries which failed to convert due to current admission
+not being found.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,50 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0yMDA2LjU3NTk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OUTSIDE IMAGING LOCATION (2006.5759) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0yMDA2LjU3NTk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OUTSIDE IMAGING LOCATION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Entries in this file are locations identified in Radiology's IMAGING LOCATION file (#79.1) for 
+entities that are non-credit locations.  These entries will be used by the DICOM Gateways during the 
+ordering process to assign a location to an 'unordered' Radiology study.  The DICOM Gateways 
+periodically download this file.
+ 
+Use menu option 'Build Outside Imaging Location File' [MAG BUILD OUT LOC] to populate this file.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

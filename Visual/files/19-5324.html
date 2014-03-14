@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTMyNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA COMPEDIT (5324) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTMyNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA COMPEDIT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Complication Type Entry/Edit</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>COMPLICATION TYPE ENTRY/EDIT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This function allows the coordinator to enter/edit
+complication types that may be associated with an exam.  The
+user can indicate an exam and a specific complication using the
+'Case Number Edit' option.
+ 
+The most commonly used complication type is a contrast material
+reaction complication.  In the case of this complication, the
+patient's record in the Allergy Tracking System
+will be automatically updated to indicate
+the patient has had a contrast material reaction.  As a result,
+everytime the patient is registered for a procedure that may involve
+contrast material, the receptionist will be warned and he/she should
+then take the appropriate action.
+ 
+When the system is initialized, two complications are loaded into
+the module.  They are 'Contrast Material Reaction' and 'No Complication'.
+Other site specific entries can be added using this function.
+ 
+Finally, this field can be specified in criteria used when searching
+the database using VA FileMan.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>7^<a href="http://code.osehra.org/dox/Routine_RAMAIN.html">RAMAIN</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

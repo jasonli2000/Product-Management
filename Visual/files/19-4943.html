@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDk0Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>NURS-EXP (4943) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDk0Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>NURS-EXP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>NURS Staff Experience Integrity Check/Fix</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>NURS STAFF EXPERIENCE INTEGRIT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ This option checks the integrity of the NURS STAFF Experience sub-file.
+The option will detect and correct the following discrepancies:
+ 
+1. Change pointer values in name field to appropriate free-text values.
+ 
+2. Delete corrupted entries containing no data or cross references.
+ 
+3. Restore the missing name field for entries with a "B" index entry.
+ 
+4. Convert lower case name data to uppercase.
+ 
+5. Delete entries not found in the NURS CLINICAL BACKGROUND File.
+ 
+6. Remove duplicate cross reference entries from the subfile.
+ 
+This option checks, cleans and re-crossreferences the Nurstaff Experience
+Sub-File.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-106.html">NURSING SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_NURSEXP.html">NURSEXP</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

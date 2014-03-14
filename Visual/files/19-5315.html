@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTMxNQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA SYSDIV (5315) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTMxNQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA SYSDIV</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Division Parameter Set-up</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DIVISION PARAMETER SET-UP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The 'Division Parameter Set-Up' function allows the
+coordinator to define division parameters.
+ 
+The module is designed to handle multiple divisions
+within a medical center.  While most medical centers have only
+one division, there are a number that are multi-divisional.  As
+a result, it was necessary to structure the entire system around
+the division concept.
+ 
+However, single division medical centers will not notice this
+in the everyday execution of the module.  Only in the initial set-up
+will there be any reference to 'division' for these single division
+sites.
+ 
+Each division will have its own set of parameters defining such
+division-wide criteria as, should the exam 'requested date' be asked
+and are impressions required on reports.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>1^<a href="http://code.osehra.org/dox/Routine_RASYS.html">RASYS</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

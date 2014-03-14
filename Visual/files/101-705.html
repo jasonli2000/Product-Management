@@ -1,0 +1,106 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTcwNQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SDAM RT MENU (705) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTcwNQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SDAM RT MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Record Tracking</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu protocol contains the record tracking actions available on the 
+Appointment Management and Check-Out screens.
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-702.html">SDAM RT MAS-FILL-NEXT</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-704.html">SDAM RT MAS-CHART-PROFILE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-692.html">SDAM RT MAS-RE-CHARGE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-703.html">SDAM RT MAS-CHART-REQUEST</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-48.html">SCHEDULING</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>S VALMBCK="R" D HOME^<a href="http://code.osehra.org/dox/Routine_%25ZIS.html">%ZIS</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S XQORM(0)="1A" D FULL^<a href="http://code.osehra.org/dox/Routine_VALM1.html">VALM1</a></td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>S X="?" D DISP^<a href="http://code.osehra.org/dox/Routine_XQORM1.html">XQORM1</a> W !</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Record Tracking Option:</td>
+</tr>
+<tr>
+<td>MENU DEFAULT</td>
+<td>Recharge a Chart</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1996-06-13 18:50:54</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

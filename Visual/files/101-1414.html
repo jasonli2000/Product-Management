@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE0MTQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PXCE HOSPITAL LOCATION VIEW (1414) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE0MTQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PXCE HOSPITAL LOCATION VIEW</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>View by Clinic</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This action allows you to change the display of appointments or
+encounters based on a clinic.  For example, if your current list
+includes all appointments for a specified date range for the selected
+patient, and you want to display all appointments for a specific clinic,
+you may use this action to change the display to include appointments or
+encounters for the desired clinic.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-111.html">PCE PATIENT CARE ENCOUNTER</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D DONE^<a href="http://code.osehra.org/dox/Routine_PXCE.html">PXCE</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D NEWHOSL^<a href="http://code.osehra.org/dox/Routine_PXCENEW.html">PXCENEW</a></td>
+</tr>
+<tr>
+<td>IDENTIFIER</td>
+<td>VC</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1997-08-04 11:51:14</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

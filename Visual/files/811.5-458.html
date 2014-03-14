@@ -1,0 +1,96 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjUtNDU4").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-WH PAP SMEAR SCREEN IN LAB PKG (458) &nbsp;&nbsp;  REMINDER TERM (811.5)</h1>
+<div id="demo"><table id="ODExLjUtNDU4" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-WH PAP SMEAR SCREEN IN LAB PKG</td>
+</tr>
+<tr>
+<td>DATE CREATED</td>
+<td>2003-07-21 00:00:00</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+No mapping necessary.  This term represents PAP Smear results documented
+in the Laboratory package. Use the new VA-WH PAP SMEAR IN LAB PKG
+computed finding distributed with this reminder term. This computed
+finding looks for PAP smear results in the Laboratory package that have 
+a result status that does not represent an "Unsatisfactory" result.
+ 
+This computed finding will only work if the Women's Health WV PROCEDURE 
+TYPE file entry for PAP SMEAR has SNOMED TOPOGRAPHY and MORPHOLOGY codes
+defined.  Each code in the Women's Health WV PROCEDURE TYPE file must 
+have a result status defined that indicates the code either represents a
+"NEM" (No Evidence of Malignancy), "Abnormal" or "Unsatisfactory" result.
+</pre>
+</td>
+</tr>
+<tr>
+<td>FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.4-21.html">VA-WH PAP SMEAR IN LAB PKG</a></dt>
+<dt>CONDITION:  &nbsp;&nbsp;I V("UNSATISFACTORY")="F"</dt>
+<dt>CONDITION CASE SENSITIVE:  &nbsp;&nbsp;NO</dt>
+<dt>INTERNAL CONDITION:  &nbsp;&nbsp;I $G(V("UNSATISFACTORY"))="F"</dt>
+<dt>V SUBSCRIPT LIST:  &nbsp;&nbsp;"UNSATISFACTORY";</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>SPONSOR</td>
+<td><a href="811.6-12.html">Women Veterans Health Program</a></td>
+</tr>
+<tr>
+<td>EDIT HISTORY</td>
+<td>
+<ol>
+<li>
+<dt>EDIT DATE:  &nbsp;&nbsp;2005-05-25 15:49:26</dt>
+<dt>EDIT BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>EDIT COMMENTS:  &nbsp;&nbsp;<pre>
+Exchange Install
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

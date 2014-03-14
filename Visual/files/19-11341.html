@@ -1,0 +1,69 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTEzNDE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRSNR MISMATCHES ETA POC-DAP (11341) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTEzNDE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRSNR MISMATCHES ETA POC-DAP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Mismatch Report-Point of Care vs. ETA Timecard</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>MISMATCH REPORT-POINT OF CARE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option provides POC data approval personnel the ability to report any
+mismatches between the ETA timecard and the Nurse's Point of Care (POC) 
+record.  Mismatches are reported when there is a discrepancy between the
+two records for either the type of time or start and stop times for a 
+particular type of time.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DAP^<a href="http://code.osehra.org/dox/Routine_PRSNRMM1.html">PRSNRMM1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

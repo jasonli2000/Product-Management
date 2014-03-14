@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTQzMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA RPTDISTPURGE (5432) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTQzMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA RPTDISTPURGE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Distribution Queue Purge</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DISTRIBUTION QUEUE PURGE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows IRM to schedule the purging
+of the distribution queue files. The user is prompted
+for a date. Any report printed prior to the specified
+date is purged from the Report Distribution file and the
+activity log in the Report Distribution Queue file.
+Output for the purge contains the date the
+purge is started and finished.
+ 
+Again, only information printed prior to the scheduled date
+is purged.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>PURGE^<a href="http://code.osehra.org/dox/Routine_RARTST.html">RARTST</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

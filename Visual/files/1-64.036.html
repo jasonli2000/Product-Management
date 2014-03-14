@@ -1,0 +1,64 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02NC4wMzY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LAB DSS LAR EXTRACT (64.036) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02NC4wMzY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LAB DSS LAR EXTRACT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file is used to store extracted DSS clinical data. The calling
+application is responsible for purging the data before and after a call is
+made to the laboratory API routine LRCAPDAR.
+ 
+The structure and contents of this file is to support DSS extraction of
+specific clinical values to monitor patient treatment effectiveness.
+ 
+This file is not for local use and should only be used by the DSS calling
+application.
+ 
+This file is solely for DSS utilization.
+ 
+Criteria for data extraction of clinical values is specified the DSS LAB
+TESTS (#727.2) file. The file is populated by the DSS Coordinator with the
+advise of the Laboratory Information Manager (LIM). Populating DSS LAB
+TESTS file without the approval of the LIM will lead to unexpected or
+unreliable data extraction performance.
+ 
+Normally there is no residual data stored in this file and journaling is
+not required.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

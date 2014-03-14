@@ -1,0 +1,148 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjQtMjI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-PROGRESS NOTE (22) &nbsp;&nbsp;  REMINDER COMPUTED FINDINGS (811.4)</h1>
+<div id="demo"><table id="ODExLjQtMjI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-PROGRESS NOTE</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PXRMTIU.html">PXRMTIU</a></td>
+</tr>
+<tr>
+<td>ENTRY POINT</td>
+<td>NOTE</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>VA-Progress Note</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This computed finding will return multiple instances of a progress
+note based on the exact title of the TIU DOCUMENT DEFINTION or the
+internal entry number (IEN) of the TIU DOCUMENT DEFINTION. If the
+IEN is used, it should be preceded by the "`" character. The note
+title or IEN is specified in the COMPUTED FINDING PARAMETER field.
+If you want to search for notes with a certain status, then append
+"^status" to the title. Status can be any of the following:
+
+  1 = UNDICTATED
+  2 = UNTRANSCRIBED
+  3 = UNRELEASED
+  4 = UNVERIFIED
+  5 = UNSIGNED
+  6 = UNCOSIGNED
+  7 = COMPLETED
+  8 = AMENDED
+  9 = PURGED
+ 10 = TEST
+ 11 = ACTIVE
+ 13 = INACTIVE
+ 14 = DELETED
+ 15 = RETRACTED
+
+If status is not specified, then the default is to search for notes with
+a status of COMPLETED.
+
+For example, if the COMPUTED FINDING PARAMETER field contains:
+ ADMITTING HISTORY &amp; PHYSICAL^5
+
+the search would be for notes with the exact title of "ADMITTING
+HISTORY &amp; PHYSICAL" and a status of "UNSIGNED."
+
+If the IEN were used then the COMPUTED FINDING PARAMETER filed would
+be:
+ `1091^5
+
+Note: The specified TIU DOCUMENT DEFINITION must have a TYPE of
+"DOC"; if it does not, the computed finding will always be false.
+
+The values returned by this computed finding that can be used in the
+Condition are V=note title, V("TITLE")=note title and
+V("AUTH")=author of note.
+
+Additional data for use in the Condition can be obtained by
+appending "^1" after the status; for example:
+ ADMITTING HISTORY &amp; PHYSICAL^5^1
+ ADMITTING HISTORY &amp; PHYSICAL^^1
+
+(In the second example, since the status is blank, it would default to
+notes with a status of COMPLETED.)
+
+The additional data is:
+
+V("DISPLAY NAME")=Display name of TIU title.
+
+V("EPISODE BEGIN DATE/TIME")=String_":"_EPISODE BEGIN DATE/TIME
+where String is "Adm" for ward locations and "Visit" for all other
+location types. Date/time is in MM/DD/YY format.
+
+V("EPISODE END DATE/TIME")=String_" "_EPISODE END DATE/TIME where
+string is null if no date/time or "Dis: " if date/time exists.
+Date/time is in MM/DD/YY format
+
+V("HOSPITAL LOCATION")=External format of HOSPITAL LOCATION from TIU
+DOCUMENT file
+
+V("NUMBER OF IMAGES")=Number of images associated with TIU DOCUMENT
+entry
+
+V("REQUESTING PACKAGE")=REQUESTING PACKAGE REFERENCE field from TIU
+DOCUMENT file (internal format)
+
+V("SUBJECT")=SUBJECT (OPTIONAL description) field from TIU DOCUMENT
+file (note that characters are limited to ensure returned string is
+not longer than 255 characters).
+
+
+
+
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>MULTIPLE</td>
+</tr>
+<tr>
+<td>CF PARAMETER REQUIRED</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

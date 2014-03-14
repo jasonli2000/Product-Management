@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjQtODI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-PCMM MHTC (82) &nbsp;&nbsp;  REMINDER COMPUTED FINDINGS (811.4)</h1>
+<div id="demo"><table id="ODExLjQtODI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-PCMM MHTC</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PXRMPCMM.html">PXRMPCMM</a></td>
+</tr>
+<tr>
+<td>ENTRY POINT</td>
+<td>MHTC</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>VA-PCMM Mental Health Treatment Coordinator</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This computed finding returns the patient's current Mental Health
+Treatment Coordinator (MHTC). The Scheduling API this computed
+finding uses does not take a date as a parameter so it only returns
+the MHTC as of the actual calendar date. Therefore, this computed
+finding cannot be used to determine if the patient had an MHTC
+sometime in the past.
+
+The default value of the computed finding is the MHTC. The following
+additional CSUBs are returned:
+
+MHTC - Mental Health Treatment Coordinator
+ROLE - role
+TEAM - team
+TEAM POSITION - team position
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>MULTIPLE</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

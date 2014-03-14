@@ -1,0 +1,87 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzgx").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LA ERR PRINT (781) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzgx" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LA ERR PRINT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Lab Error Trap Listing</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LAB ERROR TRAP LISTING</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ This option is used to list system errors involving the Auto Instruments
+routines. When an error occurs, LABERR routine stores the variables in
+the ^%ZTSK global. The amount of time before these variables are
+automatically purged is controlled by the field 606 in file 69.9 file.
+  This option will first present a list of errors contained in
+the error trap. This is serves as an index giving some basic informa
+tion about the error. A complete listing of the errors list can
+be obtained by entering '?'.
+  One can then select a specific error for a detailed listing of
+variables. This option does not allow for the restoring of variables
+to the user's partition.
+   NOTE: The Y variable is consumed by the ^%ZTLOAD ROUTINES, therefore
+those variables are stored under LABZY(x). However if you enter 'Y'
+you will be presented with correct Y(x) variables even though they
+are not shown in the complete display function.
+ 
+   This option is primarily for programmers or advanced power users.
+This option is generally of little use to the casual user. But this
+does allow the user to relay information to support persons. 
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-11.html">AUTOMATED LAB INSTRUMENTS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_LABERRP.html">LABERRP</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

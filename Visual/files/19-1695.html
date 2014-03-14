@@ -1,0 +1,111 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTY5NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>HL PURGE TRANSMISSIONS (1695) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTY5NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>HL PURGE TRANSMISSIONS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Purge Messages</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PURGE MESSAGES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option purges entries from the HL7 message files:
+ 773 - HL7 MESSAGE ADMINISTRATION
+ 772 - HL7 MESSAGE TEXT
+ 
+These files contain a record of all outgoing HL7 transmissions and their
+status.  Messages are purged if they are in a certain status and are a
+certain number of days old.  The default parameters (number of days) are
+taken from fields in file 869.3, HL COMMUNICATION SERVER PARAMETERS.  The
+fields should be set such that a balance is struck between the need to
+keep disk space from filling up and the need to keep messages around long
+enough so that they can be investigated in case problems arise.
+Please see the descriptions of these fields for more information:
+  41 - PURGE COMPLETED MESSAGES
+  42 - PURGE AWAITING ACK MESSAGES
+  43 - PURGE ALL MESSAGES
+ 
+Note that the number of days in field 43 must be greater than or equal
+to the number of days in field 42, which must be greater than or equal
+to the number of days in field 41.  If any of the fields violates this
+rule, then the default values of these fields will be used, instead.
+ 
+To purge entries in an error status, run this option directly and answer
+'Yes' to the question about purging them.  It is recommended that entries
+in an error status be reviewed before purging.  For this reason, such
+messages are NOT purged by automatically recurring scheduled runs of this
+option.
+ 
+It is recommended that this option be scheduled to run once a day to keep
+the files from getting too large.  On TaskMan's 'Edit Option Schedule',
+the TASK PARAMETERS field is ignored.  Instead, the parameters are taken
+from the fields in file 869.3, noted above.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-33.html">HEALTH LEVEL SEVEN</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>PURGE^<a href="http://code.osehra.org/dox/Routine_HLUOPT1.html">HLUOPT1</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-05-07 15:08:35</td>
+</tr>
+<tr>
+<td>*RESCHEDULING FREQUENCY</td>
+<td>1D</td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

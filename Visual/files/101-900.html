@@ -1,0 +1,135 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTkwMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBTRV  MENU (900) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTkwMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBTRV  MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Review Editor Menu</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-901.html">IBTRV QUICK EDIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;QE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;22</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-904.html">IBTRV DELETE REVIEW</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DR</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;21</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-905.html">IBTRV EXPAND REVIEW</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;VE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;32</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-907.html">IBTRV COMPLETE REV</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CS</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;23</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-910.html">IBTRV DIAGNOSIS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DU</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;35</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-858.html">IBCNS EXIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;EX</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;41</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-970.html">IBTRV PROCEDURE UPDATE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PU</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;36</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-976.html">IBTRV PROVIDER UPDATE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PV</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;37</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-983.html">IBTRV ADD NEXT REVIEW</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AN</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1008.html">IBTRV CHANGE PATIENT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CP</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;40</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>I $G(IBFASTXT)=1 S VALMBCK="Q"</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a></td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2010-10-20 12:32:13</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

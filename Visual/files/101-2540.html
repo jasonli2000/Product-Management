@@ -1,0 +1,95 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI1NDA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSJ LM RETURNS/DESTROYED MENU (2540) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI1NDA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSJ LM RETURNS/DESTROYED MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Returns/Destroyed Menu</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu allows the user access to the Report Returns (UD) option
+and the Returns/Destroyed Entry (IV) option.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2538.html">PSJI LM RETURNS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RD</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;21</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2539.html">PSJU LM RET</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RR</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-77.html">INPATIENT MEDICATIONS</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>S VALMBCK="R" K PSJHIDFG</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S PSJHIDFG=1</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>40</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-02-12 10:39:03</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

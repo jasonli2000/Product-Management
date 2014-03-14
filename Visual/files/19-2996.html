@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjk5Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCFA RETRANSMIT BATCH (2996) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjk5Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCFA RETRANSMIT BATCH</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Retransmit Code Sheets Batch to Austin</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RETRANSMIT CODE SHEETS BATCH T</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>PRCFA TRANSMIT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows a user to retransmit a batch to Austin.  It
+must be determined by the user that the original transmission failed or a
+duplicated transmission could occur.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>RT^<a href="http://code.osehra.org/dox/Routine_PRCFACR5.html">PRCFACR5</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

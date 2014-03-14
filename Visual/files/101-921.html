@@ -1,0 +1,155 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTkyMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBTRC  MENU (921) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTkyMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBTRC  MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Insurance Review Menu</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-922.html">IBTRC ADD INS. ACTION</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AI</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-923.html">IBTRC DELETE INS. ACTION</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DR</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;12</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-924.html">IBTRC QUICK EDIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;QE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;21</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-925.html">IBTRC VIEW/EDIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;VE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;22</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-926.html">IBTRC APPEAL/DENIALS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;31</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-958.html">IBTRC ADD COMMENT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AC</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;31</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-959.html">IBTRC SHOW SC CONDITIONS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SC</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;25</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-858.html">IBCNS EXIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;EX</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;41</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-967.html">IBTRC DIAGNOSIS UPDATE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DU</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;35</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-972.html">IBTRC PROCEDURE UPDATE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PU</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;36</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-978.html">IBTRC PROVIDER UPDATE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PV</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;37</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-984.html">IBTRC STATUS CHANGE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CS</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;14</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1001.html">IBTRC PRINT REV WORKSHEET</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RW</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;39</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1007.html">IBTRC CHANGE PATIENT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CP</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;40</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>I $G(IBFASTXT)=1 S VALMBCK="Q"</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a></td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2010-10-20 12:32:13</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

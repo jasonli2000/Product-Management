@@ -1,0 +1,110 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC0xNjMz").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DSIC PX GET VISIT INFO (1633) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC0xNjMz" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DSIC PX GET VISIT INFO</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>VSTALL</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DSICPX2</td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>GLOBAL ARRAY</td>
+</tr>
+<tr>
+<td>AVAILABILITY</td>
+<td>AGREEMENT</td>
+</tr>
+<tr>
+<td>WORD WRAP ON</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This RPC is a wrapper around the ENCEVENT^PXKENC api.  It does not return 
+all the data that the PX api does.  It returns a subset of that data.  
+The PX api is designed to return all the visit date in the various files 
+for a VISIT ien.  See routine for more detailed description.
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;IEN</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;16</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the internal entry number (ien) to the VISIT file (#9000010)
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>RETURN PARAMETER DESCRIPTION</td>
+<td><pre>
+On error return List[0] := -1^error message
+ 
+Else return List[0] := p1^p2^p3^...p12
+            List[n] := secondary provider duz ^ sec prov name (1st m last)
+                       where n = 1,2,3,...
+ 
+       p1 = fm visit date.time
+       p2 = external visit date.time
+       p3 = primary PCE diagnosis short description
+       p4 = primary PCE diagnosis code
+       p5 = primary PCE provider duz
+       p6 = primary PCE provider name (1st m last)
+       p7 = service connected (y)
+       p8 = agent orange (y)
+       p9 = ionizing radiation (y)
+      p10 = Persian Gulf exposure (y)
+      p11 = military sexual trauma (y)
+      p12 = head &amp; neck cancer (y)
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

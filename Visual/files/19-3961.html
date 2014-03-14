@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzk2MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSD CORRECT EXISTING GS (3961) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzk2MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSD CORRECT EXISTING GS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Existing Green Sheets Correction</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>EXISTING GREEN SHEETS CORRECTI</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the pharmacy supervisor access to make corrective
+actions on Controlled Substances orders.  The CS software allows
+pharmacy to add existing Green Sheets active orders on an NAOU at
+package setup.  These orders may be tracked using the CS software.
+Sometimes one of these existing Green Sheets may be incorrectly
+entered in the software.  Using this option, the pharmacy supervisor
+may delete this erroneous existing Green Sheet.  An entry in the
+CS CORRECTION LOG file (#58.87) will be created to log a history
+of all corrective actions.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-83.html">CONTROLLED SUBSTANCES</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN2^<a href="http://code.osehra.org/dox/Routine_PSDCOR.html">PSDCOR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

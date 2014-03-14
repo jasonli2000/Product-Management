@@ -1,0 +1,91 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NzkwLjQwNC0xNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PAP, follow-up due. (17) &nbsp;&nbsp;  WV NOTIFICATION PURPOSE (790.404)</h1>
+<div id="demo"><table id="NzkwLjQwNC0xNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NOTIFICATION PURPOSE</td>
+<td>PAP, follow-up due.</td>
+</tr>
+<tr>
+<td>PRIORITY</td>
+<td>ASAP</td>
+</tr>
+<tr>
+<td>LETTER TEXT</td>
+<td><pre>
+|NOWRAP|
+ 
+|CENTER("Women's Health Clinic")|
+ 
+|CENTER(" 7 Your Street")|
+ 
+|CENTER("Your City, ST  77777")|
+ 
+ 
+     |TODAY|
+ 
+ 
+                                                        SSN: |$E(SSN#,6,9)|
+     |$P(NAME,",",2)| |$P(NAME,",")|                  
+     |COMPLETE ADDRESS|
+ 
+ 
+ 
+ 
+ 
+- -                                                                    - -
+ 
+     Dear Ms. |$P(NAME,",",1)|,
+ 
+     The results of your recent Pap smear are something, something.
+     This is the body of the letter and should be edited to say what
+     you want for this Purpose of Notification.
+ 
+     It may go on to say: Your next something will be due one year from
+     now.  At that time we will mail you a reminder letter, or you may
+     schedule the appointment yourself by calling our Family Medicine
+     Clinic at 777-7777 or our Women's Clinic at 777-7777.
+ 
+     Sincerely,
+ 
+ 
+ 
+     Wendy Wellness, LPN
+     Women's Health Program
+     phone: 777-7777
+ 
+ 
+     printed: |NOW|
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

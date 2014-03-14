@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA4OTY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRC RPT LOCAL COMPLETE RATE (10896) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA4OTY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRC RPT LOCAL COMPLETE RATE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Consults Local Completion Rate</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CONSULTS LOCAL COMPLETION RATE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This report will provide the local sites with an option to generate a
+report listing consults requested, consults completed, consult completion
+rates, completed consults with results attached and rate of completed
+consults with results attached for a user determined date range.
+ 
+For completed consults with results attached, the report includes those 
+consults that have results attached either in the TIU, Medicine or 
+Clinical Procedures applications.
+ 
+Excluded from the report are: Prosthetics consults, Consults with a status
+of Cancelled or Discontinued, and Inter-facility Consults (IFC) requests
+where the reporting site is the sending site for the IFC.
+ 
+The report can be run in a summary format to view on screen or print and 
+a comma delimited format for importing into in spreadsheet and/or database
+software.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-44.html">CONSULT/REQUEST TRACKING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_GMRCSTLA.html">GMRCSTLA</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

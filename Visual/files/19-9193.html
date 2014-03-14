@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTE5Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>EAS EZ REMOVE SIGNATURE (9193) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTE5Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>EAS EZ REMOVE SIGNATURE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Remove Signature Verification</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>REMOVE SIGNATURE VERIFICATION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Allows the user to remove Signature Verification from the 1010EZ
+Application.  The status of the Application reverts from 'Signed'
+to either 'Printed, Pending Signature' or 'In Review'.  
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-181.html">ENROLLMENT APPLICATION SYSTEM</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>REMSIG^<a href="http://code.osehra.org/dox/Routine_EASEZU5.html">EASEZU5</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

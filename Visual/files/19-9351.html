@@ -1,0 +1,94 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTM1MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RG REMOTE PDAT MENU (9351) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTM1MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RG REMOTE PDAT MENU</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Remote Patient Data Query Menu</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>REMOTE PATIENT DATA QUERY MENU</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu provides options to query any facility at which a selected
+patient has been seen, check the query, and display the remote patient
+data that is returned from that site.  The remote data fields retrieved
+include the Integration Control Number (ICN), the Coordinating Master
+of Record (CMOR) site, MPI/PD Activity Score, Subscription Control
+Number, Treating Facility list, CMOR History and CMOR Change Request 
+History.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-9348.html">RG REMOTE PDAT SEND</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;10</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-9349.html">RG REMOTE PDAT CHECK</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;20</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-9350.html">RG REMOTE PDAT DISPLAY</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;30</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-170.html">CLINICAL INFO RESOURCE NETWORK</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2003-03-29 19:00:43</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

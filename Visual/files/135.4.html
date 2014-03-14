@@ -1,0 +1,62 @@
+<html>
+
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#PATIENT_CONSCIOUSNESS").dataTable({
+        "bInfo": true,
+        "iDisplayLength": 25,
+        "sPaginationType": "full_numbers",
+        "bStateSave": true,
+        "bAutoWidth": true
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>File PATIENT_CONSCIOUSNESS(135.4) Data List</h1><div id="demo"><table id="PATIENT_CONSCIOUSNESS" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>IEN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="135.4-1.html">ALERT-ORIENTED</a></td>
+<td>1</td>
+</tr>
+<tr>
+<td><a href="135.4-2.html">ALERT-DISORIENTED</a></td>
+<td>2</td>
+</tr>
+<tr>
+<td><a href="135.4-3.html">RESTING</a></td>
+<td>3</td>
+</tr>
+<tr>
+<td><a href="135.4-4.html">DELIRIOUS & RESTLESS</a></td>
+<td>4</td>
+</tr>
+<tr>
+<td><a href="135.4-5.html">SEMICOMA</a></td>
+<td>5</td>
+</tr>
+<tr>
+<td><a href="135.4-6.html">DEEP COMA</a></td>
+<td>6</td>
+</tr>
+<tr>
+<td><a href="135.4-7.html">ANESTHETIZED</a></td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

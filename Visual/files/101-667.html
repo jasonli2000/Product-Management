@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTY2Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SDPP PATIENT PROFILE DISPLAY ALL (667) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTY2Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SDPP PATIENT PROFILE DISPLAY ALL</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>All</td>
+</tr>
+<tr>
+<td>SYNONYM</td>
+<td>
+<ol>
+<li>
+<dt>SYNONYM:  &nbsp;&nbsp;AL</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This action allows the user to display all information concerning Add/Edits,
+Appointments, Enrollments, Dispositions, and Means Test Information, or
+will display the above for a date range.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-48.html">SCHEDULING</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K SDBEG,SDEND,SDFLG,SDLN,SDTYP,SDALL,VALMHDREND</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>K SDY S SDALL=1,(SDTYP,SDFLG)=6 D ALL^<a href="http://code.osehra.org/dox/Routine_SDPPSEL.html">SDPPSEL</a> Q:SDERR  D ^<a href="http://code.osehra.org/dox/Routine_SDPPALL.html">SDPPALL</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1996-06-26 17:39:23</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

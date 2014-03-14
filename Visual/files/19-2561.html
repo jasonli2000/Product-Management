@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjU2MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCP DAYS STOCK ON HAND REPORT (2561) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjU2MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCP DAYS STOCK ON HAND REPORT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Days Of Stock On Hand Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DAYS OF STOCK ON HAND REPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Days Of Stock On Hand Report will print the item master number,
+description, nsn (for whse), unit per issue, total usage for the
+period, average usage per day, current quantity on-hand, number of
+days of quantity on-hand remaining, and the total selling value of
+stock on hand.  The total selling value of stock on-hand will be
+totaled at the end of the report.
+ 
+The warehouse will have the option to select specific item nsn's to
+display and the number of days stock on-hand.  Items which are
+greater or less than the specified number of days stock on-hand will
+be printed.  The report will sort ny nsn.
+ 
+The primary and secondary will have the option to select specific
+group categories to display and the number of days stock on-hand. 
+Items which are greater than or less than the specified number of days
+stock on-hand will be printed.  The report will sort by group category
+and description.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PRCPRSOH.html">PRCPRSOH</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1994-01-26 07:39:58</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

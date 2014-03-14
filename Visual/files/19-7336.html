@@ -1,0 +1,139 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzMzNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCH PROCESS PC (7336) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzMzNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCH PROCESS PC</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Process Purchase Card Menu</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PROCESS PURCHASE CARD MENU</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu contains the options for enter/edit of
+simplified and detailed purchase card orders,
+receiving purchase card orders, amending purchase card
+orders, and converting or canceling purchase card orders.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-7307.html">PRCH ENTER DETAILED ORDER</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-7305.html">PRCH ENTER SIMPLIFIED ORDER</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-7306.html">PRCH EDIT SIMPLIFIED ORDER</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-7308.html">PRCH EDIT DETAILED ORDER</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-7278.html">PRCH AMENDMENT TO P/C ORDER</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-7279.html">PRCH ADUST VOUCH TO P/C ORDER</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;6</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-7277.html">PRCH REC PURCHASE CARD ORDER</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;7</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2685.html">PRCH DISPLAY VENDOR</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;9</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2684.html">PRCH DISPLAY ITEM</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;8</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-7281.html">PRCH CONVERT P/C ORDER TO 2237</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-7282.html">PRCH CONV P/C ORDER TO A DEL</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;12</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-7317.html">PRCH CANCEL PC ORDER</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;13</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-7276.html">PRCH CREATE PURCHASE CARD</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;10</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-52.html">IFCAP</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>I '$D(^PRC(440.5,"C",DUZ)) S XQUIT=1 W !!,"You are not authorized to use this menu." Q</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2006-03-08 13:50:59</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

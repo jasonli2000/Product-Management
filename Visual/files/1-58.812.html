@@ -1,0 +1,62 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS01OC44MTI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DA UPLOAD (58.812) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS01OC44MTI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DA UPLOAD</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains Supply Items and Order Units used in matching uploaded
+Prime Vendor invoice data.
+ 
+The user inputs the name of a supply item and the item's corresponding
+Vendor Stock Number (VSN). When an item is uploaded from the vendor, the
+Drug Accountability software attempts to identify the item by the NDC.
+If a match cannot be found, the entries in this file will be checked.
+By storing the supply items, the user does not have to identify the item
+on the invoice as a supply item each time it is uploaded. 
+ 
+The Prime Vendor ships drugs in a variety of order unit sizes. In some
+instances, the order unit on a invoiced item does not match the order 
+unit in the facility's files. When this occurs the user has to perform a 
+manual match on the item.
+ 
+By entering the order unit sent by the Prime Vendor to the order unit in
+VISTA, the matching can be performed automatically during the upload 
+process.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

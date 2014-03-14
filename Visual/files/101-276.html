@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI3Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OR GUA DC GENERIC ORDERS NOTASK (276) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI3Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OR GUA DC GENERIC ORDERS NOTASK</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>DC Generic Orders on Discharge (Untasked)</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol will discontinue all generic orders for a patient when the
+patient is discharged.  The protocol should be set up as an item on the
+DGPM MOVEMENT EVENTS protocol.  It will check to see if the movement is
+a discharge and then discontinue all generic orders (orders created by the
+Order Entry/Results Reporting package itself).  The DC process is done
+interactively, which may sometimes result in a wait.  If this protocol
+is placed before the ORU PATIENT MOVMT protocol in the item multiple
+of the DGPM MOVEMENT EVENTS protocol, the review screen will reflect
+active orders AFTER the generic orders are DC'd.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-35.html">ORDER ENTRY/RESULTS REPORTING</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>Q:$G(DGPMT)'=3  D EN^<a href="http://code.osehra.org/dox/Routine_ORMEVNT.html">ORMEVNT</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1999-04-16 15:22:35</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

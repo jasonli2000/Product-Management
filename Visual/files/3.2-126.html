@@ -1,0 +1,66 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My4yLTEyNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>P-SLN03W (126) &nbsp;&nbsp;  TERMINAL TYPE (3.2)</h1>
+<div id="demo"><table id="My4yLTEyNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>P-SLN03W</td>
+</tr>
+<tr>
+<td>RIGHT MARGIN</td>
+<td>132</td>
+</tr>
+<tr>
+<td>FORM FEED</td>
+<td>#</td>
+</tr>
+<tr>
+<td>PAGE LENGTH</td>
+<td>64</td>
+</tr>
+<tr>
+<td>BACK SPACE</td>
+<td>$C(8)</td>
+</tr>
+<tr>
+<td>OPEN EXECUTE</td>
+<td>S CSI=$C(27)_"[" W *27,"[5i" W CSI_"!p"_CSI_"?21 J"_CSI_"15m"_CSI_"1;66r" H 2 W CSI_"2g" H 1 W CSI_"14;22;30;38;46;54;62;70;78;86;94;102;110;118;126u" H 1 W #</td>
+</tr>
+<tr>
+<td>CLOSE EXECUTE</td>
+<td>W $C(27)_"[!p" W *27,"[4i" W #</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td>SLAVED LN03 LANDSCAPE MODE FOR VT220</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

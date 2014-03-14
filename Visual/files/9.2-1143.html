@@ -1,0 +1,90 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExNDM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUDOC DEVICE ALT SYNTAX (1143) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExNDM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUDOC DEVICE ALT SYNTAX</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Alternate Syntax for Device Specification</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+ 
+An alternate syntax is available for specifying right margin and page
+length when responding to the device prompt. Using the alternate format,
+you can specify pitch, intensity, and quality. The success of specifying
+these additional attributes, however, depends on whether the corresponding
+fields have been defined by IRM at your site.
+ 
+The syntax requires the use of a slash (/) after the last semicolon. You
+can then use the letters B, L, M, P, and Q in any order, without
+separating punctuation to delimit the pieces. These codes specify:
+ 
+   B  Boldface
+   L  Page length
+   M  Margin
+   P  Pitch
+   Q  Quality (can be Q, Q1, or Q2)
+ 
+For example, you could specify:
+ 
+   DEVICE: LASER;P-LASER-LANDSCAPE;/M132L100P16BQ2
+ 
+In this example, the margin is set to 132 (M132), the page length to 100
+lines (L100), the pitch to 16 (P16), the intensity to bold typeface (B),
+and the quality set to letter quality (Q2). An absence of the B would
+indicate normal intensity. The quality settings are Q, Q1, and Q2.
+ 
+Your IRM needs to confirm that the appropriate code to set the specified
+printer attributes is set up for the device that you are using. Then, when
+the Device Handler closes the device, IRM needs to be sure that
+appropriate reset code is in the Close Execute field so that the
+characteristics do not stay in effect. If, for example, someone requests a
+small pitch, subsequent reports will also use the small pitch unless reset
+in the close execute statement for that device (or altered by the open
+execute statement of the next device called).
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>2001-07-19 11:01:03</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

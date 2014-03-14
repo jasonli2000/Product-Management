@@ -1,0 +1,58 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03MjU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>EC NATIONAL PROCEDURE (725) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03MjU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>EC NATIONAL PROCEDURE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains a set of nationally defined procedures for
+use in the Event Capture software. These procedures are
+necessary for data collection in DSS that are not represented
+in the CPT file (#81). These procedures were defined by the
+Decision Support System (DSS) Program Office or its designee.
+ 
+Entries in this file are standard procedures that should not be
+edited or deleted. Options exist within the Event Capture
+Management Menu that provide users the tools to add
+locally recognized procedures to this file. These local
+entries will be added, by the using the Event Capture
+software, at internal entry number above 90,000.
+ 
+This file should NOT be modified directly using VA FileMan.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjAtMTU2").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>URINE RBC CASTS (156) &nbsp;&nbsp;  LABORATORY TEST (60)</h1>
+<div id="demo"><table id="NjAtMTU2" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>URINE RBC CASTS</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>BOTH</td>
+</tr>
+<tr>
+<td>SUBSCRIPT</td>
+<td>CHEM, HEM, TOX, SER, RIA, ETC.</td>
+</tr>
+<tr>
+<td>LOCATION (DATA NAME)</td>
+<td>CH;701;1</td>
+</tr>
+<tr>
+<td>FIELD</td>
+<td>DD(63.04,701,</td>
+</tr>
+<tr>
+<td>HIGHEST URGENCY ALLOWED</td>
+<td><a href="62.05-2.html">ASAP</a></td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>RBC/CAS</td>
+</tr>
+<tr>
+<td>PRINT CODE</td>
+<td>$J($S(X="F":"Few",X="N":"NoneObs",1:X),LRCW)</td>
+</tr>
+<tr>
+<td>PRINT ORDER</td>
+<td>13.3</td>
+</tr>
+<tr>
+<td>SITE/SPECIMEN</td>
+<td>
+<ol>
+<li>
+<dt>SITE/SPECIMEN:  &nbsp;&nbsp;<a href="61-71.html">URINE</a></dt>
+<dt>UNITS:  &nbsp;&nbsp;/LPF</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATA NAME</td>
+<td>File: 63, IEN: 701</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

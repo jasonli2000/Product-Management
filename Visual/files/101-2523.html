@@ -1,0 +1,124 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI1MjM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSJI LM ACTIVE MENU (2523) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI1MjM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSJI LM ACTIVE MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>IV Active Order Actions</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu allows the user a set of actions to take on an active IV order.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2520.html">PSJI LM DISCONTINUE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DC</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2521.html">PSJI LM EDIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;ED</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2527.html">PSJI PC HOLD</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;HD</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2525.html">PSJI PC RENEWAL</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RN</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2528.html">PSJI PC ONCALL</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;OC</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2526.html">PSJ PC IV LOG</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AL</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;6</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3277.html">PSJI LM VERIFY</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;VF</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;7</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3384.html">PSJ LM FLAG</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;FL</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;8</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-77.html">INPATIENT MEDICATIONS</a></td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I $$ACTIONS^<a href="http://code.osehra.org/dox/Routine_PSJLIUTL.html">PSJLIUTL</a></td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D A^<a href="http://code.osehra.org/dox/Routine_PSJ200.html">PSJ200</a>(21,19),SHOW^VALM S XQORM("#")=+$O(^ORD(101,"B","PSJI LM EDIT",0))_"^1:"_$S($G(P("OT"))="F":11,1:12)</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>25</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-12-12 14:12:05</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

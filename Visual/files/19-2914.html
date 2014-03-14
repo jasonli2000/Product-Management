@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjkxNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCB BOC ADD/EDIT (2914) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjkxNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCB BOC ADD/EDIT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Add/Edit BOC</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ADD/EDIT BOC</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows you to add a new budget object code or change the 
+name of an existing budget object code.  Whenever the program offices 
+in VA Central Office change the budget object codes that you use, you 
+will have to use this option to make the necessary changes to the 
+Budget Object Code File. You can use this option to create new entries 
+or to change the name or number of existing entries.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>HELP FRAME</td>
+<td><a href="9.2-401.html">PRCB BOC ADD/EDIT</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ADD^<a href="http://code.osehra.org/dox/Routine_PRCBSA.html">PRCBSA</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

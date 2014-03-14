@@ -1,0 +1,59 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTQw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DG CONSISTENCY (40) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTQw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DG CONSISTENCY</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>INCONSISTENCY EDIT</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+I attempted to update inconsistencies for the below indicated patient but
+was unable to complete the task because I don't hold the 'DG ELIGIBILITY'
+security key and certain data have been verified already.  Please use the
+'EDIT INCONSISTENT DATA' option to clear up these inconsistencies asap.
+   
+PATIENT NAME:  |1|                            SSN:  |2|
+   
+NOTIFICATION STATUS:  |5|
+    
+INITIALLY IDENTIFIED BY:  |4|
+INITIALLY IDENTIFIED ON:  |3|
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

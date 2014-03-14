@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTM2NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LA7S RESULTS RETRANSMIT (9365) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTM2NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LA7S RESULTS RETRANSMIT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Retransmit LEDI Lab Results</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RETRANSMIT LEDI LAB RESULTS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Allows a user at a host facility to select one or more accessions
+that were received from other LEDI collecting facilities and retransmit
+results associated with the accession(s) to the sending/collecting facility
+via HL7 messaging. 
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-11.html">AUTOMATED LAB INSTRUMENTS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_LA7SRR.html">LA7SRR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

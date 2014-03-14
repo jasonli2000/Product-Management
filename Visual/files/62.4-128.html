@@ -1,0 +1,192 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuNC0xMjg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>HEMATRAK 480 (128) &nbsp;&nbsp;  AUTO INSTRUMENT (62.4)</h1>
+<div id="demo"><table id="NjIuNC0xMjg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>HEMATRAK 480</td>
+</tr>
+<tr>
+<td>PROGRAM</td>
+<td>LAH480</td>
+</tr>
+<tr>
+<td>ENTRY for LAGEN ROUTINE</td>
+<td>Tray-cup or sequence x-ref</td>
+</tr>
+<tr>
+<td>CROSS LINKED BY</td>
+<td>IDE</td>
+</tr>
+<tr>
+<td>NEW DATA</td>
+<td>D NEW^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>RESTART</td>
+<td>D RESTART^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>CHEM TESTS</td>
+<td>
+<ol>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-11.html">SEGS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(3),1,3)/10 S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(394,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-12.html">BANDS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(3),4,6)/10 S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(395,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-1156.html">LYMPH</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(3),7,9)/10 S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(776,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-14.html">MONOS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(3),10,12)/10 S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(397,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-15.html">EOSINO</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(3),13,15)/10 S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(398,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-16.html">BASO</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(3),16,18)/10 S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(399,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-351.html">ATYPICAL LYMPHOCYTES</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(3),19,21)/10 S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(471,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-371.html">PLASMA CELLS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(3),22,24)/10 S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(472,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-17.html">META</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(3),25,27)/10 S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(400,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-18.html">MYELO</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(3),28,30)/10 S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(401,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-433.html">BLASTS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(3),34,36)/10 S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(403,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-397.html">NUCLEATED RBC/100WBC</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(3),37,39)/10 S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(404,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-25.html">ANISOCYTOSIS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(4),2) D ACODE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(408,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-26.html">POIKILOCYTOSIS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(4),3) D ACODE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(409,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-27.html">MICROCYTOSIS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(4),4) D ACODE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(410,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-28.html">MACROCYTOSIS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(4),5) D ACODE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(411,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-29.html">POLYCHROMASIA</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(4),6) D ACODE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(412,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-30.html">HYPOCHROMIA</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(4),7) D ACODE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(413,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-353.html">SPHEROCYTES</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(4),8) D ACODE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(473,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-31.html">TARGET CELLS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(4),9) D ACODE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(414,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-354.html">BASOPHILIC STIPPLING</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(4),10) D ACODE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(474,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-355.html">TOXIC GRANULATION</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(4),11) D ACODE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(475,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-356.html">HYPERSEGMENTED NEUTROPHILS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(4),12) D ACODE</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(476,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-100.html">RETICULOCYTES</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(5),1,4) D NUM</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(428,1)</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERFACE NOTES</td>
+<td><pre>
+Hematrak 360,480,590 can all use the program, LAH480.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

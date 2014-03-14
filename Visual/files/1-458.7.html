@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS00NTguNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PT PHYSICIAN MEMORANDUM (458.7) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS00NTguNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PT PHYSICIAN MEMORANDUM</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains all of the information related to the part-time physician's
+Memoranda of Service Level Expectation.  Memorandum will only be applicable for
+part-time physicians who work adjustable hours.  A memorandum will cover 26 pay
+periods.
+
+The file will contain all of the information related to the part-time
+physician's memoranda including a per pay period breakdown of hours worked
+and various comments fields that will assist Human Resources as the reconcile
+the memoranda after its completion or termination.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

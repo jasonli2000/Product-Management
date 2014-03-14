@@ -1,0 +1,2415 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTE0MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PROSTHETICS (140) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTE0MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PROSTHETICS</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>RMPR</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>PROSTHETICS VERSION 3.0 ALPHA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The DHCP Prosthetic package automates many functions for Prosthetics.  The
+record of Prosthetics Service (VA Form 10-2319) and the appropriate
+VAF 1358 obligation, are updated at the time of purchase (entry into the
+computer) of the item or service provided to the veteran.  This update is
+accomplished through direct links to IFCAP and the electronic patient VAF
+10-2319. Purchasing is simplified by entering the information only once
+into the computer and letting it update your 1358 account balances and the
+patient VAF 10-2319.
+ 
+   Purchasing Module
+ 
+Purchasing interfaces with IFCAP into the IFCAP 1358 module.  Forms 
+printed include the Authorization Invoice (VAF 10-2421), and Authority to
+Exceed Amount on the Service Card (FL 10-55).  For tracking transactions
+associated with purchasing, Prosthetics will accommodate the Prosthetic
+Service Card Invoice (VAF 10-2520), the Prescription and Authorization for
+Eyeglasses (VAF 10-2914), No-Form, Pickup/Delivery Charges, Request for
+Estimate (FL10-90), and Patient Notification Letter.
+ 
+ 
+   Electronic 10-2319 Module
+  
+Record of Prosthetics Services is fully incorporated into DHCP displayed in
+multiple terminal screens.  Appliances and services issued are
+automatically recorded to the electronic VAF 10-2319 when purchases are
+obligated or issued from stock.  In addition, PSC Card, Clothing
+Allowance, Auto Adaptive Equipment, Patient Correspondence, and other
+patient data is recorded and displayed within the Electronic VAF 10-2319
+Module.  This is the module that provides the basis for all AMIS reports.
+ 
+   Entitlement Records Module
+  
+Information collected by Medical Administration Service (MAS) to determine
+eligibility of benefits to the veteran is displayed in this module.
+Patient data includes name, social security number, date of birth,
+address, remarks, temporary address, phone, sex, next of kin, military
+service, eligibility status, verification of eligibility, disability
+ratings, diagnostic codes, admission date, discharge date, type of
+discharge, clinic enrollment, and pending appointments.
+  
+   AMIS Module
+  
+This module calculates the new and repair work sheets based on the infor-
+mation collected in the electronic 10-2319 file.
+This module also automatically generates Genric Code sheets that will be
+saved for editing and transmission to Austin.
+ 
+   Inventory Module
+  
+Inventory is linked to the Generic Inventory Package.  Each station has the
+option to activate GIP.
+ 
+ 
+   Correspondence Module
+  
+Letters sent to patients are generated from this module.  Denial letters
+are counted on AMIS automatically when end-of-quarter AMIS reports are
+run.
+  
+ 
+   Scheduled Meetings and Home/Liaison Visits Module
+  
+Appointment information for Prosthetics Clinics can be pulled over onto
+the Prosthetics VAF 10-2527 to be printed as Appointment Roster and Clinic
+Action Sheets.
+ 
+Home/Liaison visits can also be entered and printed in this module.  All
+Appointment Visits and Home/Liaison Visits will be calculated on AMIS at
+the end of the quarter.
+ 
+    Prosthetic Lab Module
+ 
+The Prosthetic Lab module automates VA Form 10-2529-3, Request and Receipt
+for Prosthetic Appliances or Services, which is used to maintain a
+consolidated record of prosthetic services furnished to eligible veterans.
+This includes activities at Orthotic Laboratories, Restoration
+Laboratories, Shoe Last Clinics, Wheelchair Repair Shops, National Foot
+Centers, and the Denver Distribution Center.
+</pre>
+</td>
+</tr>
+<tr>
+<td>FILE</td>
+<td>
+<ol>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-660.html">RECORD OF PROS APPLIANCE/REPAIR</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-661.html">PROS ITEM MASTER</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-662.html">PROS DISABILITY CODE</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+<dt>MERGE OR OVERWRITE SITE'S DATA:  &nbsp;&nbsp;MERGE</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-663.html">PROS AMIS CODES</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+<dt>MERGE OR OVERWRITE SITE'S DATA:  &nbsp;&nbsp;MERGE</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-665.html">PROSTHETICS PATIENT</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-664.html">PROSTHETICS 1358</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-663.2.html">ACTIVITIES NEW/REPAIR WORKSHEET TOTALS</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-668.html">PROSTHETIC SUSPENSE</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-667.html">VEHICLE OF RECORD</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-667.1.html">PROS AUTO-ADAPTIVE EQUIP</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-667.2.html">AUTO-ADAPTIVE MANUFACTURER</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-667.3.html">V.O.R. TRANSACTION</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-665.2.html">PROS LETTER</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-663.4.html">PROSTHETIC APPOINTMENT WORKSHEET</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-663.3.html">PROSTHETIC DISABILITY WORKSHEET</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-665.1.html">PROSTHETIC HOME/LIAISON VISITS</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-660.1.html">PROS RETURNED/CONDEMNED</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-664.1.html">PROSTHETIC 2529-3</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-664.2.html">PROSTHETIC WORK ORDER</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-669.1.html">PROSTHETIC LAB W.O #</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-664.3.html">PROSTHETIC LAB HOURS DATE</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-665.4.html">PROS LETTER TRANSACTION FILE</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-664.4.html">PROS LABORATORY/RESTORATIONS WORKSHEET</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PRINT TEMPLATE</td>
+<td>
+<ol>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR SUSPENSE CLOSE</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-668.html">PROSTHETIC SUSPENSE</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR PRINT ITEM</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-661.html">PROS ITEM MASTER</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR 7306D 1ST</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-663.3.html">PROSTHETIC DISABILITY WORKSHEET</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR 7306D 2ND</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-663.3.html">PROSTHETIC DISABILITY WORKSHEET</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR 7306D 3RD</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-663.3.html">PROSTHETIC DISABILITY WORKSHEET</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR 7306D 4TH</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-663.3.html">PROSTHETIC DISABILITY WORKSHEET</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR 2527 HDR</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-663.4.html">PROSTHETIC APPOINTMENT WORKSHEET</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR CLINIC PRINT</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-663.4.html">PROSTHETIC APPOINTMENT WORKSHEET</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR OPEN VISITS</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-665.1.html">PROSTHETIC HOME/LIAISON VISITS</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR CLOSED VISITS</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-665.1.html">PROSTHETIC HOME/LIAISON VISITS</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR 2527 PHDR</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-663.4.html">PROSTHETIC APPOINTMENT WORKSHEET</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR 25293</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-664.1.html">PROSTHETIC 2529-3</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR 2529 INQ</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-664.1.html">PROSTHETIC 2529-3</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR 2529 VIEW</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-664.2.html">PROSTHETIC WORK ORDER</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR 2529 NT</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-660.html">RECORD OF PROS APPLIANCE/REPAIR</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR DATA EXCHANGE</dt>
+<dt>FILE:  &nbsp;&nbsp;File: 1, IEN: 665.5</dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR BLANK</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-665.4.html">PROS LETTER TRANSACTION FILE</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR PAGE</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-665.4.html">PROS LETTER TRANSACTION FILE</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR FL 10-90 ADP</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-665.4.html">PROS LETTER TRANSACTION FILE</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR FL 10-90 CONT HEAD</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-665.4.html">PROS LETTER TRANSACTION FILE</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR FL 10-90 CONT TRLR</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-665.4.html">PROS LETTER TRANSACTION FILE</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR FL 10-90 OVER</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-665.4.html">PROS LETTER TRANSACTION FILE</a></dt>
+</li>
+<li>
+<dt>PRINT TEMPLATE:  &nbsp;&nbsp;RMPR 2529-3 STATUS</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-664.1.html">PROSTHETIC 2529-3</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INPUT TEMPLATE</td>
+<td>
+<ol>
+<li>
+<dt>INPUT TEMPLATE:  &nbsp;&nbsp;RMPR55</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-664.html">PROSTHETICS 1358</a></dt>
+</li>
+<li>
+<dt>INPUT TEMPLATE:  &nbsp;&nbsp;RMPR 2520</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-664.html">PROSTHETICS 1358</a></dt>
+</li>
+<li>
+<dt>INPUT TEMPLATE:  &nbsp;&nbsp;RMPR ITEM EDIT</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-661.html">PROS ITEM MASTER</a></dt>
+</li>
+<li>
+<dt>INPUT TEMPLATE:  &nbsp;&nbsp;RMPR PATIENT ADD</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-665.html">PROSTHETICS PATIENT</a></dt>
+</li>
+<li>
+<dt>INPUT TEMPLATE:  &nbsp;&nbsp;RMPRE2319</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-660.html">RECORD OF PROS APPLIANCE/REPAIR</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>SORT TEMPLATE</td>
+<td>
+<ol>
+<li>
+<dt>SORT TEMPLATE:  &nbsp;&nbsp;RMPR SUSPENSE CLOSE</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-668.html">PROSTHETIC SUSPENSE</a></dt>
+</li>
+<li>
+<dt>SORT TEMPLATE:  &nbsp;&nbsp;RMPR PRINT ITEM</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-661.html">PROS ITEM MASTER</a></dt>
+</li>
+<li>
+<dt>SORT TEMPLATE:  &nbsp;&nbsp;RMPR OPEN VISITS</dt>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-665.1.html">PROSTHETIC HOME/LIAISON VISITS</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DEVELOPER (PERSON/SITE)</td>
+<td>PHOENIX/VAMC</td>
+</tr>
+<tr>
+<td>*LOWEST FILE NUMBER</td>
+<td>660</td>
+</tr>
+<tr>
+<td>*HIGHEST FILE NUMBER</td>
+<td>669.9</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>National</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>ADDITIONAL PREFIXES</td>
+<td>
+<ol>
+<li>
+<dt>ADDITIONAL PREFIXES:  &nbsp;&nbsp;RMPO</dt>
+</li>
+<li>
+<dt>ADDITIONAL PREFIXES:  &nbsp;&nbsp;RMPS</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;3.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2005-11-19 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;1996-09-24 00:00:00</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;13</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-09-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+It is very important to install this patch prior to the end of
+the quarter to assure that Prosthetics will report accurate
+information.
+ 
+Sites that have a Prosthetic Lab, AMIS currently will double count 2421's.
+ This patch corrects this problem.
+ 
+When the option 'List Open Stock Issues' is used, the new VISA Purchase
+Card transactions show on the list as well as Stock Issues.  This patch
+will correct this problem.
+ 
+Some sites have not been reporting all Issue From Stock transactions on
+AMIS due to the Delivery Date either being null, or a Delivery date
+outside the AMIS reporting period.  To correct this problem, the Delivery
+Date is no longer asked and the routine will stuff in the current date.
+ 
+Once this patch has been installed have Prosthetics use the List Open
+Stock Issues option and make sure all transactions have a Delivery Date
+with the date they are doing the data entry.  This will assure that all
+transactions are counted on AMIS.
+ 
+This patch also addresses the problems from the following NOIS reports:
+ 
+LAS-0596-61654 
+SFC-0596-62183
+MAD-0596-42179
+ 
+Checksum     Before      After
+RMPROPN1     7720327     7297330
+RMPR29C      7821428     7921291
+RMPR6        20477861    20520152
+RMPR29A      17059538    17069195
+RMPRSTK      15195669    14968768
+ 
+  INSTALLATION:
+ 
+   1. Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+option will load the KIDS package in this message onto your system.
+ 
+   2. Answer NO to the question: 'Shall I preserve what is on disk in a
+separate back-up message ?'
+ 
+   3. The patch has now been loaded into a Transport global on your
+system. You now need to use KIDS to install the Transport global.
+ 
+  4.  From the 'Installation' menu, use the option 'Verify Checksums 'in
+the Transport Global' and verify that all routines have the correct
+checksum.
+ 
+   5. On the KIDS menu, under the 'Installation' menu, use the option
+'Install Package(s)'. Select the package 'RMPR*3.0*13' and proceed with
+installation.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;14</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-09-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Routine RMPRSTL was obmitted from Patch RMPR*3*13.
+This patch contains routine RMPRSTL.
+ 
+It is very important to install this patch prior to the end of
+the quarter to assure that Prosthetics will report accurate information.
+ 
+INSTALLATION:
+ 
+1. Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+option will load the KIDS package in this message onto your system.
+ 
+2. The patch has now been loaded into a Transport global on your
+system. You now need to use KIDS to install the Transport global.
+ 
+3.  From the 'Installation' menu, use the option 'Verify Checksums 'in
+the Transport Global' and verify that all routines have the correct
+checksum.
+ 
+4. On the KIDS menu, under the 'Installation' menu, use the option
+'Install Package(s)'. Select the package 'RMPR*3.0*14' and proceed with
+installation.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;15</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-09-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ 
+1.  Reprint Option, PCR    Reprint a Purchase Card Form has been 
+modified to allow a closed VISA transaction to be reprinted.
+ 
+2.  Purchasing Option, EDPC   Edit Purchase Card Transaction has 
+been modified to allow editing the Bank Authorization Number 
+after the VISA transaction has been closed.
+ 
+ 
+ 
+ 
+ 
+Checksum   After Install
+RMPR4P21   18707942
+RMPR4EPC   1452962    
+ 
+ 
+INSTALLATION:
+ 
+   1. Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This option
+will load the KIDS package in this message onto your system.
+ 
+   2. The patch has now been loaded into a Transport global on your system.
+You now need to use KIDS to install the Transport global.
+ 
+  3.  From the 'Installation' menu, use the option 'Verify Checksums 'in the
+Transport Global' and verify that all routines have the correct checksum.
+ 
+  4. On the KIDS menu, under the 'Installation' menu, use the option 'Install
+Package(s)'. Select the package 'RMPR*3.0*15' and proceed with installation.
+ 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;12</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-09-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The HCPCS Coding Work Group and EP has just completed 
+the final review of the HCPCS functionality.
+ 
+This patch will bring in new functionality consistent 
+with private sector coding standards.  This is also the 
+coding system used by MCCR for billing purposes and 
+will be utilized by DSS.  It is imperative that we use 
+a coding system that is consistent throughout the DVA 
+system for accountability of information.  This is why 
+this patch RMPR*3*12 was developed.
+ 
+This information will also be used to capture data 
+reported on AMIS, and will ultimately be part of an 
+AMIS replacement system.
+ 
+This patch brings in a new server option and server 
+routine.  You will need to create a new Mail Group 
+called RMPR SERVER, and assign the Chief of Prosthetics 
+as a member.  Members of this mail group will receive a 
+message that the server has been activated.
+ 
+ 
+Patch Dependencies
+------------------
+The following patches MUST BE INSTALLED prior to loading this patch:
+RMPR*3*3
+RMPR*3*13
+ 
+ 
+Installation Overview
+---------------------
+If installed during the normal work day it is 
+recommended that the following menu options (File #19) 
+and all of their descendants be disabled to prevent 
+possible conflicts.  Other DHCP users will not be affected.
+ 
+RMPR OFFICICAL
+RMPR CLERK
+ 
+Install Time
+------------
+The estimated install time is 2 minutes or less.
+ 
+Installation
+------------
+ 
+1. Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This option will
+load the KIDS package in this message onto your system.
+ 
+2. The patch has now been loaded into a Transport global on your system. You
+now need to use KIDS to install the Transport global.
+ 
+3.  From the 'Installation' menu, use the option 'Verify Checksums 'in the
+Transport Global' and verify that all routines have the correct checksum.
+ 
+4. On the KIDS menu, under the 'Installation' menu, use the option 'Install
+Package(s)'. Select the package 'RMPR*3.0*12' and proceed with installation.
+ 
+Creat Mail Group
+----------------
+      Use VA FileMan to add the Mail Group:
+ 
+      *Note: This Mail Group must have a real user in the MEMBER field.
+&gt;D P^DI
+   ------
+  VA FileMan 21.0
+ 
+  Select OPTION: ENTER OR EDIT FILE ENTRIES
+                 --------------------------
+  INPUT TO WHAT FILE: MAIL GROUP    (XX entries)
+                      ----------
+  EDIT WHICH FIELD: ALL// &lt;return&gt;
+                          --------
+ 
+  Select MAIL GROUP NAME: RMPR SERVER
+                          -----------
+  Are you adding 'RMPR SERVER' as a new MAIL GROUP (the XXX)? Y  (Yes)
+
+   MAIL GROUP COORDINATOR: &lt;enter a coordinator&gt;
+Select MEMBER: LNAME,FNAME &lt;== Enter a real user here
+   Are you adding 'LNAME,FNAME' as a new MEM (the X for this MAIL GROUP)?
+    Y (Yes)
+    -
+   Select MEMBER:  &lt;return&gt;
+                   --------
+     DESCRIPTION:  &lt;return&gt;
+                   --------
+      1&gt; This Mail Group is used to alert Prosthetic Service Chiefs
+        -----------------------------------------------------------
+      2&gt;that the National Data Extract Server has been activated, by who,
+        -----------------------------------------------------------------
+      3&gt;and for what dates.
+        -------------------
+      4&gt;
+     EDIT Option: &lt;return&gt;
+     TYPE: pu  public
+           --
+     ORGANIZER: &lt;enter a organizer&gt;
+                ------------------
+     COORDINATOR: LNAME,FNAME// &lt;return&gt;
+                  -----------
+     Select AUTHORIZED SENDER:   &lt;return&gt;
+                                 --------
+     ALLOW SELF ENROLLMENT?: n  NO
+                             -
+     REFERENCE COUNT:  &lt;return&gt;
+                       --------
+     LAST REFERENCED: &lt;return&gt;
+                      --------
+     RESTRICTIONS: 0  UNRESTRICTED
+                   -
+   Select MEMBER GROUP NAME: &lt;return&gt;
+                             --------
+   Select REMOTE MEMBERS: &lt;return&gt;
+                         ---------
+   Select DISTRIBUTION LIST:  &lt;return&gt;
+                              --------
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;16</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-09-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+When Prosthetics is using GIP, option Issue From Stock does not prompt
+for HCPCS code.  This patch will add the functionality to sites
+using GIP.
+ 
+Reference  NOIS CLA-0996-21207.
+ 
+ 
+Patch Dependencies
+------------------
+The following patch MUST BE INSTALLED prior to loading this patch;
+                  RMPR*3*12
+ 
+Installation Overview
+---------------------
+If installed during the normal work day it is
+recommended that the following menu options (File #19)
+and all their descendants be disabled to prevent
+possible conflicts.. Other DHCP users will not be affected.
+ 
+RMPR OFFICIAL
+RMPR CLERK
+Install Time
+-------------
+The estimated install time is 2 minutes or less.
+ 
+ 
+INSTALLATION:
+-------------
+  1. Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+option will load the KIDS package in this message onto your system.
+ 
+  2. The patch has now been loaded into a Transport global on your
+system. You now need to use KIDS to install the Transport global.
+ 
+  3.  From the 'Installation' menu, use the option 'Verify Checksums 'in
+the Transport Global' and verify that the routine RMPRSTK has the correct
+checksum.
+ 
+  4. On the KIDS menu, under the 'Installation' menu, use the option
+'Install Package(s)'. Select the package 'RMPR*3.0*16' and proceed with
+installation.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;17</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-10-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This has only one input template RMPRE2319 for file 660.
+This will allow editing HCPCS in 2319 record.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;18</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-11-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch Dependencies
+------------------
+The following patches MUST BE INSTALLED prior to loading this patch:
+RMPR*3*12
+XM*DBA*104 
+ 
+ 
+ Installation Overview
+ ---------------------
+All users may be on the system while this patch is loaded.
+ 
+Install Time
+------------
+The estimated install time is 2 minutes or less.
+ 
+Installation
+------------
+ 
+1. Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This option l
+load the KIDS package in this message onto your system.
+ 
+2. The patch has now been loaded into a Transport global on your system. You
+now need to use KIDS to install the Transport global.
+ 
+3.  From the 'Installation' menu, use the option 'Verify Checksums 'in the
+Transport Global' and verify that all routines have the correct checksum.
+ 
+4. On the KIDS menu, under the 'Installation' menu, use the option 'Install
+Package(s)'. Select the package 'RMPR*3.0*18' and proceed with installation.
+ 
+ Verify Mail Group 
+----------------
+Please verify that mail group RMPR SERVER is on your system, and the Chief of
+Prosthetics is a member.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;19</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-12-05 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Description:
+========================
+This patch was developed in response to the Eligibility Refom
+introduced by PL-104-262.
+ 
+This patch will add the new public law as a choice when you add a
+disability code.
+ 
+You will find when you select OPT/NSC under PATIENT CATEGORY, and
+then prompted for SPECIAL CATEGORY a forth item has been added,
+ELIGIBILITY REFORM.  Even though Eligibility Reform is suitable for
+both Special Legislation and Eligibility Reform, you should select
+Eligibility Reform so the transactions can be separated for trending
+analysis.
+ 
+Example:
+ TYPE OF TRANSACTION: INITIAL ISSUE//
+ PATIENT CATEGORY: SC/OP// ?
+      Enter the Patient Category for this issue.
+      Choose from:
+        1        SC/OP
+        2        SC/IP
+        3        NSC/IP
+        4        NSC/OP
+ PATIENT CATEGORY: SC/OP// 4  NSC/OP
+ SPECIAL CATEGORY: ?
+      Enter the patient's Special Category if applicable.
+      Choose from:
+        1        SPECIAL LEGISLATION
+         2        A&amp;A
+             3        PHC
+            4        ELIGIBILITY REFORM
+ SPECIAL CATEGORY: 4  ELIGIBILITY REFORM
+ 
+ 
+ 
+ 
+  Patch Dependencies:
+  =======================
+  The following patches MUST BE INSTALLED prior to loading this patch:
+  RMPR*3*3
+  RMPR*3*12
+  RMPR*3*15
+  RMPR*3*16
+  RMPR*3*18
+ 
+ 
+  Patch Dependencies:
+  =======================
+  The following patches MUST BE INSTALLED prior to loading this patch:
+  RMPR*3*3
+  RMPR*3*12
+  RMPR*3*15
+  RMPR*3*16
+  RMPR*3*18
+ The estimated install time is 2 minutes or less.
+ 
+ 
+  Installation
+  ========================
+ 
+  1. Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This
+ option will load the KIDS package in this message onto your system.
+ 
+ 2. The patch has now been loaded into a Transport global on your
+system.  You need to use KIDS to install the Transport global.
+ 
+  3.  From the 'Installation' menu, use the checksums 'in the
+  Transport Global' and verify that all routines have the correct checksum.
+ 
+ 
+  4. On the KIDS menu, under the 'Installation' menu, use the option
+  'Install Package(s)'. Select the package 'RMPR*3.0*19' and proceed with
+  installation.
+ 
+ 
+Routine Information:
+====================
+ RMPR4LI   value = 7635778
+ RMPR4P21  value = 17560908
+ RMPRED6   value = 24363847
+ RMPRHIS   value = 8052646
+ RMPRHISD  value = 7536482
+ RMPRL9    value = 15221017
+ RMPRLI    value = 6867549
+ RMPRP21   value = 18656811
+ RMPRSTK   value = 14899657
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;21</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-12-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is a fix for patch RMPR*3*19, and should only be loaded after patch 
+RMPR*3*19.
+ 
+This patch will remove the offending DIC("W") from routine RMPRSTK.
+ 
+ 
+ 
+Patch Dependencies
+------------------
+The following patches MUST BE INSTALLED prior to loading this patch:
+RMPR*3*19
+ 
+Installation Overview
+ ---------------------
+No Prosthetics users should be on the system.
+ 
+Install Time
+------------
+The estimated install time is 2 minutes or less.
+ 
+ 
+Installation
+------------
+ 
+1. Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This option l
+load the KIDS package in this message onto your system.
+ 
+2. The patch has now been loaded into a Transport global on your system. You
+now need to use KIDS to install the Transport global.
+ 
+3.  From the 'Installation' menu, use the option 'Verify Checksums 'in the
+Transport Global' and verify that all routines have the correct checksum.
+ 
+4. On the KIDS menu, under the 'Installation' menu, use the option 'Install
+Package(s)'. Select the package 'RMPR*3.0*21' and proceed with installation.
+ 
+ 
+RMPRSTK   value = 14878864
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;20 SEQ #19</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-01-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch contains NEW functionality to interface the Prosthetics 
+Purchase Card Module to IFCAP.
+ 
+This new functionality will eliminate the need for Prosthetic 
+Purchasing Agents to enter both Prosthetic and IFCAP purchase card 
+orders. After this patch is installed, users will remain in the 
+Prosthetic options to create and cancel orders without going into the 
+IFCAP purchase card order options. The Prosthetic Purchase Card 
+orders will be assigned purchase order numbers using the IFCAP common 
+number series.  Both Prosthetic and IFCAP purchase card orders will 
+have the same purchase order numbers.
+ 
+This patch is an enormous time saver for Prosthetic users, by 
+eliminating the need for duplication of order input into both IFCAP 
+and Prosthetics.  This patch provides the Interface between IFCAP and 
+Prosthetics. 
+ 
+This patch also addresses the problems from the following NOIS 
+reports:
+ 
+     NOIS
+---------------
+ STX-0996-70100
+ DAY-0896-41319
+ DAY-0896-41131
+ 
+ Mail Message:
+ 22635364
+ 
+Patch Dependencies
+------------------
+The following patches MUST BE INSTALLED prior to loading this patch:
+ 
+PRC*5*107
+RMPR*3*3
+RMPR*3*12
+RMPR*3*15
+RMPR*3*19
+ 
+Installation Overview
+---------------------
+ 
+ 
+Install Time
+------------
+The estimated install time is 2 minutes or less.
+ 
+ 
+Installation
+------------
+ 
+1. Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This 
+option l load the KIDS package in this message onto your system.
+ 
+2. The patch has now been loaded into a Transport global on your 
+system. You now need to use KIDS to install the Transport global.
+ 
+3.  From the 'Installation' menu, use the option 'Verify Checksums 
+'in the Transport Global' and verify that all routines have the 
+correct checksum.
+ 
+4. On the KIDS menu, under the 'Installation' menu, use the option 
+'Install Package(s)'. Select the package 'RMPR*3.0*20' and proceed 
+with installation.
+ 
+CHECK^XTSUMBLD results
+----------------------
+RMPR29P   value = 8396439
+RMPR421   value = 4996627
+RMPR421A  value = 13010718
+RMPR421B  value = 5444806
+RMPR421C  value = 6607288
+RMPR4C1   value = 8115231
+RMPR4C21  value = 6415903
+RMPR4LI   value = 7506137
+RMPR4LOP  value = 12607366
+RMPR4OPN  value = 11453190
+RMPR4P22  value = 11642686
+RMPR4P24  value = 5567655
+RMPR4UTL  value = 6093300
+RMPRAINQ  value = 8060339
+RMPRP55   value = 18639880
+RMPRPAT5  value = 8036386
+RMPRSE1   value = 15550927
+ 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;22 SEQ #20</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-01-22 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will fix the problem of some vendors from 
+looping.  If a vendor does not have a contract, the prompt for 
+Contract Number will not be displayed.
+ 
+This patch also addresses the problems from the following NOIS 
+reports:
+ 
+NOIS
+---------------
+CMS-0197-31032
+BIL-0197-30995
+CLE-0197-40968
+BEC-0197-20893
+ATG-0197-30576
+MAD-0197-40460
+ 
+Patch Dependencies
+------------------
+The following patches MUST BE INSTALLED prior to loading this patch:
+RMPR*3*20
+ 
+Install Time
+------------
+The estimated install time is 2 minutes or less.
+ 
+Installation
+------------
+ 
+1. Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This 
+option l load the KIDS package in this message onto your system.
+ 
+2. The patch has now been loaded into a Transport global on your 
+system. You now need to use KIDS to install the Transport global.
+ 
+3.  From the 'Installation' menu, use the option 'Verify Checksums 
+'in the Transport Global' and verify that all routines have the 
+correct checksum.
+ 
+4. On the KIDS menu, under the 'Installation' menu, use the option 
+'Install Package(s)'. Select the package 'RMPR*3.0*22' and proceed 
+with installation.
+ 
+CHECK^XTSUMBLD results
+----------------------
+RMPR421A  value = 13049745
+ 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;23 SEQ #21</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-03-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ 
+ 
+ 
+This patch is in response to NOIS MGY-0197-31093.
+It updates the address for the National Footwear Center in New YorK
+from: 252 7th Avenue, Floor 2, New York, NY 10001 
+to  : 210 Varick Street, Floor 10,  New York, NY 10014
+ 
+ 
+It is also in response to NOIS TAM-0197-31968
+The variable RMPRTRN was being killed off too soon.
+The KILL statement is moved after the I block, which may sometimes be
+executed and does use the variable to set a data node.
+ 
+To install: Have all Prosthetic Lab users off the system.  
+            Use Kids to Load the Patch.
+            Move the routine to all systems.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;24 SEQ #22</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-03-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Install Time
+------------
+The estimated install time is 2 minutes or less.
+ 
+ 
+Installation
+------------
+ 
+1. Use the 'INSTALL/CHECK MESSAGE' option on the PackMan menu. This option
+load the KIDS package in this message onto your system.
+ 
+2. The patch has now been loaded into a Transport global on your system. You
+now need to use KIDS to install the Transport global.
+ 
+3.  From the 'Installation' menu, use the option 'Verify Checksums 'in the
+Transport Global' and verify that all routines have the correct checksum.
+ 
+4. On the KIDS menu, under the 'Installation' menu, use the option 'Install
+Package(s)'. Select the package 'RMPR*3.0*24' and proceed with installation.
+ 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;25 SEQ #23</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-08-08 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ This patch contains corrections to the following NOISs.
+ 
+ NOIS SYR-0497-10562
+ -------------------
+ This patch corrects a printing problem reported in NOIS SYR-0497-10562.
+ Under certain circumstances, when the user executes the "Display/Print
+ Patient 2319" option, sorted by "Appliance Transactions" the total cost
+ heading displayed more than one numeric value. This patch contains
+ modifications that will display the total cost value only once. In
+ routine RMPRPAT3, logical conditions were inserted to print either the
+ shipping/delivery or total labor cost if the total cost field is null.
+ 
+ NOIS LAS-0597-62425
+ -------------------
+ This patch corrects problems associated with NOIS LAS-0597-62425 (and
+ others). If a user executes the menu Purchase Card Site Parameter and
+ receives the following statement:
+ 
+      Enter the IFCAP Site used with the Purchase Card Module
+      The following site you select will be used on all your
+      Purchase Card Transactions in IFCAP only.
+ 
+ YOU ARE NOT AN AUTHORIZED FISCAL USER.  CONTACT SITE MANAGER.
+ 
+ This action will cause PRC("SITE") to be undefined.
+ 
+ As a result, this would cause the error reported in the NOIS. However,
+ when a valid FISCAL USER moves through the menu, the site parameter would
+ be reset.
+ 
+ To resolve this problem, the code was changed to not allow a null value. 
+ 
+ 
+ NOIS NIN-0497-41607
+ -------------------
+ This patch corrects a problem with the COCP limitation reported in NOIS
+ SYR-0497-10562. When the user executes the "Close Out Purchase" option
+ and answer yes to the cost out transactions, the option responded with
+ Dollar amount must be within contract authority guidelines.  Changes were
+ made to remove the $25000 and $2500 limitations.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;26 SEQ #24</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-12-13 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ 
+PATCH SUBJ: VISALEVEL II, RECONCILIATION
+ 
+Patch Description:
+ 
+IFCAP PATCH PRC*5*125 MUST BE INSTALLED BEFORE INSTALLING THIS PATCH.
+ 
+Patch RMPR*3.0*26 is an enhancement to the Close Out Purchase Card
+Transaction [RMPR4 CLOSE OUT] option. This option is now called
+RECONCILE/CLOSE OUT PURCHASE CARD TRANSACTION
+and located under the PURCHASING
+[RMPR PURCHASING MENU] option.  The Reconcile/Close Out Purchase Card
+Transaction option allows you to perform IFCAP amendments or adjustment
+and reconciliation during the closing of prosthetic purchase orders.
+Before this enhancement, users had to switch between both Prosthetics and
+IFCAP packages to complete these function.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;28</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-03-30 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch RMPR*3.0*28 will export a new global RMPR(661.1, options [RMPR
+ADD/EDIT HCPCS, RMPR NPPD HCPCS and RMPR HCPCS HISTORY],
+modify input template [RMPRE2319], replaces all occurences of
+prompt 'Enter HCPCS' to 'Enter PSAS HCPCS',reverse display of records in
+all SUSPENSE MENU options.  The patch will also
+export a partial DD update for files 660, 664 and 664.1 and create a "G"
+cross referenced for file #660.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;30 SEQ #26</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-06-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will correct string error, missing fields for shipping entries
+in file #660 and PSAS HCPCS prompt during the close-out of 1358.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;31</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-07-25 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;32 SEQ #28</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-10-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;33</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-03-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the new Prosthetic Inventory module and a modified lab module.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;34</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-03-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;35 SEQ #31</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-06-22 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;29</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-10-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+HOME OXYGEN PACKAGE
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;36</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-10-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;40 SEQ #34</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-10-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;37 SEQ #35</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-10-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+A patch for Prosthetics Inventory fixes.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;38 SEQ #36</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;39</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;42 SEQ #38</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;43 SEQ #39</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-01-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;44 SEQ #40</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-03-13 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;47 SEQ #41</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-04-05 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;46 SEQ #42</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-05-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;48</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-06-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;41</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-07-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;49 SEQ #45</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-07-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;45 SEQ #46</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-08-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;50 SEQ #47</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-10-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;52 SEQ #48</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-11-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;54</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-01-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;51 SEQ #50</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-01-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;56 SEQ #51</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-02-28 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;53 SEQ #52</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-02-28 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;55 SEQ #53</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-05-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;57 SEQ #54</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-06-08 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;58</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-08-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;64 SEQ #56</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-09-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;67 SEQ #57</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-11-21 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;62 SEQ #58</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-03-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+PCE
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;69 SEQ #59</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-06-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+2002 HCPCS update
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;70 SEQ #60</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-09-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+NPPD updates and View 2319 read only.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;72 SEQ #61</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-12-09 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+PATCH #72 - DBIA USAGE
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;71 SEQ #62</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-02-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;76 SEQ #63</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-06-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+2003 HCPCS UPDATE
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;59 SEQ #64</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-07-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Delay Order Report, 2319 button attached.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;77 SEQ #65</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-09-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Nois Fixes.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;74</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-09-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Prosthetics Code Set Versioning.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;81 SEQ #67</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-10-23 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;80 SEQ #68</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-11-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Copy CPRS Consults.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;86 SEQ #69</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-03-30 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ENCAPSULATION OF IB.  USE OF INSUR API INSIDE PROSTHETICS BILLINGS REPORT.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;84 SEQ #70</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-07-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;85 SEQ #71</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-09-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Allow consults to forward to a tracker only service and correct the 
+problem of overwriting the Initial Action Data when forwarding a consult.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;91 SEQ #72</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-09-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;87 SEQ #73</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-09-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Serial Number, Make and Model for recall.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;82 SEQ #74</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-10-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Add text to the PCE Interface Message and Remove SSN from the Patient 
+Correspondence and Patient Notification Letters.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;92 SEQ #75</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-11-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Code Set Versionsing for ICD9.  Replace all direct calls to ICD9 with API 
+IDDX^ICDCODE.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;99 SEQ #76</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-11-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;97 SEQ #77</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-01-18 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+CANCELING A CLONED CONSULT ISSUE
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;96</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-02-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;103 SEQ #79</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-03-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;61</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-04-01 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patch #61 - Barcoding and File Redesign.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;106 SEQ #81</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-05-25 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;107 SEQ #82</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-06-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;109 SEQ #83</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-06-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Please see FORUM for full patch description.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;105 SEQ #84</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-08-13 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will address two issues;
+  1. Problem accessing the 2319 correspondence letter prompt.
+  2. The use of the % variable in 3 routines.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;111 SEQ #85</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-08-13 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Fix to the Prosthetics Reconciliation process to compare the correct 
+dollar amounts so the program will not trigger an ammendment.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;112 SEQ #86</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-08-13 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+SYNTAX error during merge process due to Prosthetics package having null 
+routine node in Package File (9.4) due to incorrect KIDS build.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;78</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-09-05 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+PROSTHETICS CLINICAL INDICATOR DATA CAPTURE BUILD
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;90 SEQ #88</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-09-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;113 SEQ #89</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-09-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;114 SEQ #90</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-09-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+SUBSCRIPT ERROR/PCE ERROR MESSAGE
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;108 SEQ #91</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-02-13 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will address three issues:
+  1. The hard coded Default Barcode Printer Name
+  2. The P-ZEBRA printer subtype requirement
+  3. Items still being added to a inactive location
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;116 SEQ #92</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-02-13 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;115 SEQ #93</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-05-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ 
+1. RMPR Clerk Menu not prompting for site
+2. Extra line feeds in Purchase Order ITEMS section after patch 90
+3. Oxygen letters: site name wrapping into patient's address
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;127 SEQ #94</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-05-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. PIP roll-up does not match local Item Detail Report.
+ 
+2.  Fix the ien for station number starting point in PIP Extract 
+    collection to begin at station ien 1 instead of 2.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;117 SEQ #95</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-05-25 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1.  Delete Field 19 (bogus entry) in File #660 which comflicts with
+    field 4.1 of same file, both using node 0, piece 22.
+ 
+2.  Prevent dual entries in File #661.6 and #661.7 from having time 
+    stamp one second apart for "return-in" when piece 6 of Suspense
+    file #661.63) is null.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;118 SEQ #96</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-05-25 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. When using the option 'RMPR WH DISPLAY' and the DELIVER TO field is 
+   'other' print "Deliver To Attention" on 2nd line.
+ 
+2. When using the option  RECONCILE/CLOSE OUT PURCHASE C  RMPR4 CLOSE 
+   OUT     [Reconcile/Close Out Purchase Card Transaction] Shipment Date 
+   will occur for date query for each item on the Purchase Card.
+ 
+3. Prosthetics location prompt is case sensitive when using option [UP  
+   Reconcile Item Balance].
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;98 SEQ #97</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-06-08 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Prosthetics PFSS
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;124 SEQ #98</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-07-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+PROSTHETICS GUI PURCHASING NOT ADHERING TO VISTA FM DATA DICTIONARY FIELD
+LENGTHS FOR FILES #664/660.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;121 SEQ #99</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-07-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Delete issue from stock error &lt;SUBSCRIPT&gt;DEL68^RMPRPCED
+ 
+2. Problem with option, Edit/Delte Issue from Stock 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;120 SEQ #100</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-07-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Up-arrow out of option [RMPR INQ SUSPENSE] and going to option [RMPR 
+   SUSP] will use the same patient from the initial inquiry, instead of
+   prompting for new patient name.
+ 
+2. Consult cloning carries over inactive ICD9 diagnosis codes.
+ 
+3. Bad entries (null) in the VISIT File (9000010) when RMPR PCE 
+   BACKGROUND job running. 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;110 SEQ #101</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-08-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Type of Transaction data missing in Extract.
+ 
+2. HOME/O2 Suspense Issue - PROSTHETICS PATIENT RECORDS NOT LINKED
+    TO SUSPENSE.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;128 SEQ #102</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-09-23 02:03:16</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. UNDEF ITM+9^RMPR29 - variable rmtype NULL
+ 
+2. Institution IEN appears instead of station number on PSAS HCPCS HISTORY
+   and Nightly PCE Background mail message
+ 
+3. Inventory does not always update correctly with quantity issued 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;93 SEQ #103</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-11-22 23:11:01</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;131 SEQ #104</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-11-22 23:44:57</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Prosthetics midnight processing of issues to PCE causing invalid data 
+structures in file #900010,VISIT 
+ a. Subscript error in Austin transmission &lt;SUBSCRIPT&gt;SITE+10^VASITE
+ b. File entry points to another patient
+ c. AMBCARE data into Austin
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;129 SEQ #105</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-06-27 21:24:38</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. 2421 FORM filing DELIVER TO and DELIVER TO ATTENTION in files 660 and 
+   664 incorrectly.
+ 
+2. Full SSNs still visible in regular 2421
+ 
+3. RMPRPFC missing tag 'EN' in XDRMERG0 process
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;126 SEQ #106</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-06-27 21:29:16</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;119 SEQ #107</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-04 22:29:31</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Follow-up patch to GUI Purchasing to put the Vista Option out of order.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;132 SEQ #108</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-04 22:29:52</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1.  Issue with P.O. continuation page
+2.  Prosthetics Inventory message for ROP levels ignores partially filled
+    orders as outstanding.
+3a. Inventory Order Report does not acknowledge partially filled orders.
+3b. Partially filled orders cannot be later updated with receipts that
+    may be received.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;134 SEQ #109</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-04 23:08:04</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Prosthetics software - Add/Change NPPD lines FY07
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;75 SEQ #110</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-04 23:57:55</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;138 SEQ #111</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-05 00:36:31</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1.  ERROR- &lt;MAXNUMBER&gt;EN1+1^RMPREXT
+ 
+2.  Sending Gulf War Veteran status via national NPPD rollup
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;122 SEQ #112</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-05 00:49:02</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;60 SEQ #113</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-05 01:16:23</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;133 SEQ #114</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-05 01:16:43</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1.  CAN+5^RMPR4M removing item from order
+ 
+2.  Two entries in V PROVIDER file from Prosthetics Midnight PCE task
+ 
+3.  Question on data in File 9000010 (Visit File) for field CREATED BY 
+    USER
+ 
+4.  Error &lt;SUBSCRIPT&gt;DESP+19^RMPRN6
+ 
+5.  Security Statement - Prosthetics Purchase Order
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;130 SEQ #115</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-12-12 20:27:18</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. &lt;UNDEFINED&gt;MORE+3^RMPRFO6 when printing patient letter with 
+   continuation page.
+ 
+2. Remove option [Record 2237 Purchase to 2319].
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;88 SEQ #116</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-12-12 21:21:16</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Scheduling Replacement Encapsulation for Prosthetics.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;135 SEQ #118</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-12-12 23:00:50</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1.  Status of original consult changes from closed to active when it is
+    cloned and a Post Initial Action action occurs.
+ 
+2.  Prosthetics ordering issue for multiple orders against suspense
+    record.
+ 
+3.  Prosthetics GUI Delayed Order Report problem.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;137 SEQ #119</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-02-03 22:56:02</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Ship charges not removed during CPO when using '@' or '0.00'.
+ 
+2. L code grouping calculator problem when viewing screen 4 of 2319.
+ 
+3. 2319 not displaying pre patient merged 660 records.
+ 
+4. List Open Purchase Card transactions by Initiator report has POs
+   cancelled in GUI.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;142 SEQ #120</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-05-26 15:38:35</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. No data available for clinics
+ 
+2. &lt;SUBSCRIPT&gt;CONT+5^RMPR29CA
+ 
+3. &lt;UNDEFINED&gt;UPD+2^RMPR29CA
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;140 SEQ #121</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-05-26 19:19:56</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Add notification to LIST OPEN PURCHASE CARD TRANSACTION report to
+   identify "dangling" amendments. 
+ 
+2. Purge Suspense records undefined error: EN1+5^RMPR8PG
+ 
+3. HOME OXYGEN PRESCRIPTION DATE in add/edit not defaulting
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;139 SEQ #122</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-05-26 19:21:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1.  Error: $ZE= &lt;UNDEFINED&gt;PRT+2^RMPRP21
+ 
+2.  RMPR INV DEACTIVATE - option does not honor case sensitivity
+ 
+3.  Delete stock issue on an inactive HCPCS item
+ 
+4.  Option Print OIF/OEF Items Issued problem from RMPR package 
+ 
+5.  Patient SSN security risk - SSN displays under CLAIM NUMBER on PO
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;141 SEQ #123</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-05-26 19:21:34</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. &lt;SUBSCRIPT&gt;PRT+26^RMPRPRT1 error when print patient's 2319.
+ 
+2. Deleting stock boots user out of system &lt;SUBSCRIPT&gt;DIK+3^DIK
+ 
+3. &lt;UNDEFINED&gt;EN1+12^RMPRD1 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;148 SEQ #124</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-20 16:05:27</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Home Oxygen Billing Transaction editing error:
+      &lt;UNDEFINED&gt;COMMON+6^RMPOLM1
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;145 SEQ #125</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-22 13:02:23</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Duplicate encounters when editing
+ 
+2. EDIT INVENTORY ITEM - not allow edit of VENDOR
+ 
+3. Discontinue Prosthetic PCE's
+ 
+4. Eliminate rejected Prosthetic PCE's
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;144 SEQ #126</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-22 13:03:16</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. OWL attaches wrong DD23 - roll/scroll item detail display of 2319
+ 
+2. OWL ERROR: &lt;UNDEFINED&gt;F+2^DIED
+ 
+3. Prosthetics software - Add/Change NPPD Lines FY08
+ 
+4. Prosthetics closed OWL/LAB Consult date discrepancy reported
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;146 SEQ #127</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-22 13:03:26</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. &lt;UNDEFINED&gt;UPD+1^RMPR9CA  Close GUI PO error
+ 
+2. &lt;UNDEFINED&gt;DIS+2^RMPRPAT2  Display/Print 2319
+ 
+3. &lt;UNDEFINED&gt;LINK+14^RMPRPCE1  Suspense Link Error
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;152 SEQ #128</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-22 16:22:55</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+&lt;UNDEFINED&gt;MAIL+16^RMPR5HQ7 - during PIP monthly roll up
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;147 SEQ #129</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-23 12:27:51</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ 
+ 
+1. Prosthetics Home Oxygen software
+ 
+2. Purchase Card Number printed on invoice
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;143 SEQ #131</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-05-07 14:23:13</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ 
+MULTIPLE FIXES TO THE PROSTHETICS GUI
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;83 SEQ #132</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-09-24 10:48:17</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;125 SEQ #133</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-09-24 10:48:27</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+MANDATORY PATIENT NOTIFICATIONS
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;151</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-12-09 15:32:30</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. &lt;UNDEFINED&gt;DT442+7^PRCFFUD1
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;154 SEQ #135</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-03-16 14:28:10</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. HD311528 remove routines RMPRPCEA and RMPRPCEB
+ 
+2. HD321817 Remove names on Home Oxygen POs in IFCAP
+ 
+3. HD303222 no line tag called ELQQM in routine RMPRPIY6
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;150 SEQ #136</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-03-30 10:39:39</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Negative GROUPER COUNTER field in 669.9
+ 
+2. Prosthetics software - ED2
+ 
+3. NPPD lines not appearing for 5-Rental items  
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;153 SEQ #137</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-04-14 17:04:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Remove field #9 from printed Prosthetics Patient Purchase Order
+ 
+2. Prosthetics - Change in NPPD line names
+ 
+3. FGH - still getting error &lt;UNDEFINED&gt;HDR+2^RMPRN63
+ 
+4. Security clause on Prosthetics Patient PO
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;155 SEQ #138</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-07-06 12:22:21</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Error in Suspense Processing when viewing 2319
+ 
+2. Calculation flag HCPCS item and shipping charge added together on 
+   display 2319
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;159 SEQ #139</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-09-29 11:29:04</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. New Prosthetics line number: R99 B  NONRESPONSE
+ 
+2. Cannot print home oxygen report
+ 
+3. Entire SSN appears on Home Oxygen letter
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;164 SEQ #140</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-04-14 10:58:52</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. New NPPD (National Prosthetic Patient Database) Line updates needed
+   to support the HCPCS (Healthcare Common Procedure Coding System) Item 
+   file (#661.1) national updates for NPPD reporting and PIP (Productivity
+   Improvement Program) national rollup.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;157 SEQ #141</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-04-28 16:15:51</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Prosthetics GUI Required date field does not transfer to Purchase Card 
+order.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;162 SEQ #142</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-08-17 10:30:25</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. When using the "23 Display 2319" option, if a user decides to exit 
+   using the up caret (^) symbol at the Enter 10-2319 screen to VIEW
+   prompt, they will receive a system error.
+ 
+2. When a user in the Prosthetics application views the Display/Print 
+   Display 2319 menu option, HCPCS items and shipping charges are not
+   being displayed correctly.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;161 SEQ #144</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-08-29 15:55:04</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Add new field #1.3 (VERSION DATE) to file #661.1 [PROSTHETIC HCPCS] to
+   facilitate synchronization of HCPCS (Healthcare Common Procedure 
+   Coding System) code update between VISTA Prosthetics GUI and an 
+   enterprise asset management system.
+ 
+2. Site received a subscript error in option Issue from Stock due to 
+   incomplete inventory item bar code scan.
+ 
+3. When reprinting Purchase Order on Vista a Patient Notification letter
+   prints showing the patient social security number.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;165 SEQ #145</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-09-08 09:54:15</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Home Oxygen charges for patient do not total for all linked Fund 
+   Control Points.
+ 
+2. The VistA National Prosthetic Patient Database (NPPD) reporting
+   does not match the national NPPD rollup for Unique Social
+   Security Number (SSN) totals between NEW item costs and USED
+   inventory item costs.
+ 
+3. Delete Prosthetics options Manual Send Delivery Notification and  
+   Returned Delivery Verification Card and remove same options from
+   Prosthetics Utilities Menu as the government contract for Letter 
+   Notification was cancelled. 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;160 SEQ #146</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-10-25 16:34:20</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Excessive number of pages print for each letter when selecting
+   'print all' Home Oxygen letters.
+ 
+2. Prosthetics GUI display for 2319, screen 7 for HISA (Home 
+   Improvement Structural Alterations) displays no HISA information
+   for known HISA order. 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;169 SEQ #147</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-03-29 18:31:44</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. 2012 NPPD Line updates
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;163 SEQ #148</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-04-25 09:57:27</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Cannot link patient record to Suspense:
+   a. When select patients appearing on the GUI Delayed Order
+      Report.
+ 
+   b. After selecting patient, current issue item does not display.
+ 
+2. Report 'Print Item Usage By Location' fails to print due to a missing 
+   HCPCS item reference.
+ 
+3. Prosthetics GUI error when displaying Delayed Order Report (DOR)
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;171 SEQ #149</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-08-29 13:01:35</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Unlinked patient 2319s not displaying in option 'Link Patient Record
+   to Suspense'.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;166 SEQ #150</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-08-19 15:01:43</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch updates the Prosthetics Privacy Act Statements and fixes
+issues with Purchasing being unable to post Prosthetics Home Oxygen
+transactions.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;172 SEQ #151</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-09-16 16:08:44</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. National HCPCS file updates are not handling multi line descriptions
+   correctly.
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>ENVIRONMENT CHECK ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_RMPRPRE.html">RMPRPRE</a></td>
+</tr>
+<tr>
+<td>ENVIRONMENT CHECK DONE DATE</td>
+<td>1996-09-24 18:17:20</td>
+</tr>
+<tr>
+<td>POST-INITIALIZATION ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_RMPRPOST.html">RMPRPOST</a></td>
+</tr>
+<tr>
+<td>POST-INIT COMPLETION DATE</td>
+<td>1996-09-24 18:18:39</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

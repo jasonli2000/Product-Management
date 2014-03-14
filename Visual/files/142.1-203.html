@@ -1,0 +1,99 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTQyLjEtMjAz").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PCE HEALTH FACTORS SELECTED (203) &nbsp;&nbsp;  HEALTH SUMMARY COMPONENT (142.1)</h1>
+<div id="demo"><table id="MTQyLjEtMjAz" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PCE HEALTH FACTORS SELECTED</td>
+</tr>
+<tr>
+<td>PRINT ROUTINE</td>
+<td>HFSEL;GMTSPXFP</td>
+</tr>
+<tr>
+<td>EXTERNAL/EXTRACT ROUTINE</td>
+<td>
+<ol>
+<li>
+<dt>EXTERNAL/EXTRACT ROUTINE:  &nbsp;&nbsp;HF;PXRHS07(DFN,END,BEG,NUM,.ARY)</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>TIME LIMITS APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>SHF</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This component allows a user to select specific health factors by category
+and then lists the health factors, which apply to a particular patient for
+user-specified time and occurrence limits.
+ 
+Set the occurrence limit to 1 to list the latest unique health factors
+for each selected category. (E.g. If there were 12 "Non-Smoker" health
+factor entries, only the latest "Non-Smoker" entry would display.
+
+Note: Health Factors have a DISPLAY ON HEALTH SUMMARY 
+option that determines whether or not they will show on a Health Summary 
+report.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MAXIMUM OCCURRENCES APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SELECTION FILE</td>
+<td>
+<ol>
+<li>
+<dt>SELECTION FILE:  &nbsp;&nbsp;<a href="1-9999999.64.html">HEALTH FACTORS</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DEFAULT HEADER NAME</td>
+<td>Health Factor Select</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>PX</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

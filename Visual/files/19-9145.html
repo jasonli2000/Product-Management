@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTE0NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCP REMOVE SS FROM DIST ORD (9145) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTE0NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCP REMOVE SS FROM DIST ORD</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Remove Supply Station From Dist Order</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>REMOVE SUPPLY STATION FROM DIS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will only be used when the interface between GIP and the
+supply stations is down for a long time.  It allows the user to identify
+an individually orders that will be processed further in GIP and not by
+the supply stations.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>REMFLAG^<a href="http://code.osehra.org/dox/Routine_PRCPOPR.html">PRCPOPR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

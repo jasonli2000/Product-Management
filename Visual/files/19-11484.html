@@ -1,0 +1,89 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTE0ODQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XU EPCS DISUSER PRIVS (11484) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTE0ODQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XU EPCS DISUSER PRIVS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Print DISUSER Prescribers with Privileges</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PRINT DISUSER PRESCRIBERS WITH</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is for the DEA ePCS project and will print all DISUSER users who
+have privileges to any of the SCHEDULEs II through V and who have a DEA# or 
+VA#.  This option prints the NAME, SCHEDULESs, VA#, DUZ, TERMINATION DATE
+and DEA#.
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>print</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-3.html">KERNEL</a></td>
+</tr>
+<tr>
+<td>DIC {DIP}</td>
+<td>VA(200,</td>
+</tr>
+<tr>
+<td>L.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FLDS</td>
+<td>[XU EPCS DISUSER PRIVS PRINT]</td>
+</tr>
+<tr>
+<td>BY</td>
+<td>[XU EPCS DISUSER2 SORT]</td>
+</tr>
+<tr>
+<td>DIS(0)</td>
+<td>I $$VUSER2^<a href="http://code.osehra.org/dox/Routine_XUEPCSRT.html">XUEPCSRT</a>(D0,0)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,104 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTExNzU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRA VERIFY DATA (1175) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTExNzU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRA VERIFY DATA</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Verification of Reaction Data</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol will be activated whenever a reaction is Verified.
+Listed below are the variables that will be defined for that reaction.
+     
+ Variables:
+     GMRAPA = The Internal Entry Number of the reaction in
+              File 120.8 (PATIENT ALLERGIES)
+  GMRAPA(0) = The zero node of the entry in file 120.8.
+              Below is a description of the data for that node.
+ 
+              $P  Field name              Field type
+              ---------------------------------------------------------------
+              1   PATIENT                 Pointer to File 2 (PATIENT)
+              2   REACTANT                Free Text of Reaction
+              3   GMR ALLERGY             Variable Pointer *
+              4   ORIGINATION DATE/TIME   Date/Time (FileMan format)
+              5   ORIGINATOR              Pointer to File 200 (NEW PERSON)
+              6   OBSERVED/HISTORICAL     Set of Codes 
+                                          (o=Observed,h=Historical)
+              12  ORIGINATOR SIGN OFF     Set of Codes
+                                          (1=Signed,(Zero or Null)=Unsigned)
+              14  MECHANISM               Set of Codes
+                                          (U=Unknown,P=Pharmacologic,A=Allergy)
+              16  VERIFIED                Set of Codes
+                                          (1=Verified,(0 or Null)=Not Verified)
+              17  VERIFICATION DATE/TIME  Date/Time (FileMan format)
+              18  VERIFIER                Pointer to File 200 
+              20  ALLERGY TYPE            Free Text/Set of Codes
+                                          1 to 3 characters long
+                                          (Where "D" = Drug,
+                                                 "F" = Food,
+                                                 "O" = Other)
+ 
+ 
+*The GMR ALLERGY field is a variable pointer which points to one of five
+ possible files. They are: 
+ 
+File Name              File Reference
+---------              --------------
+GMR ALLERGIES          GMR(120.8,  (e.g., 212;GMR(120.8,)
+    
+NATIONAL DRUG          PSNDF(
+DRUG                   PSDRUG(
+DRUG INGREDIENTS       PS(50.416,
+VA DRUG CLASS          PS(50.605,            
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>extended action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1996-07-15 15:35:29</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

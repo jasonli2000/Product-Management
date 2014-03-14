@@ -1,0 +1,86 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My4yLTEw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>C-VT52 (10) &nbsp;&nbsp;  TERMINAL TYPE (3.2)</h1>
+<div id="demo"><table id="My4yLTEw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>C-VT52</td>
+</tr>
+<tr>
+<td>SELECTABLE AT SIGN-ON</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>RIGHT MARGIN</td>
+<td>80</td>
+</tr>
+<tr>
+<td>FORM FEED</td>
+<td>#,$C(27,72,27,74)</td>
+</tr>
+<tr>
+<td>PAGE LENGTH</td>
+<td>24</td>
+</tr>
+<tr>
+<td>BACK SPACE</td>
+<td>$C(8)</td>
+</tr>
+<tr>
+<td>*OLD XY CRT</td>
+<td>W $C(27,89,DY+32,DX+32)</td>
+</tr>
+<tr>
+<td>XY CRT</td>
+<td>W $C(27,89,DY+32,DX+32)</td>
+</tr>
+<tr>
+<td>ERASE TO END OF LINE</td>
+<td>$C(27,91,75)</td>
+</tr>
+<tr>
+<td>ERASE TO END OF PAGE</td>
+<td>$C(27,91,74)</td>
+</tr>
+<tr>
+<td>HIGH INTENSITY (BOLD)</td>
+<td>$C(27,91,49,109)</td>
+</tr>
+<tr>
+<td>LOW INTENSITY (UNBOLD)</td>
+<td>$C(27,91,109)</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td>DEC VT-52 video</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

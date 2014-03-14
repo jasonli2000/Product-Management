@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTg3Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRC SETUP REQUEST SERVICES (1877) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTg3Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRC SETUP REQUEST SERVICES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Set up Consult Services</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SET UP CONSULT SERVICES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to setup the Hospital hierarchy of services and
+specialties.  Each service/specialty defined in this file may be
+setup to have a consult print at its own service printer when the
+consult is entered and signed using the "Add orders" menus in OE/RR.
+  
+Teams of clinicians may also be associated with each Service/Specialty.
+The team members will be notified when a new consult is ordered
+from their service/specialty.
+  
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_GMRCSRVS.html">GMRCSRVS</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1992-11-17 14:35:04</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNjI2Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ONCO ANNUAL-CROSSTABS (6267) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNjI2Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ONCO ANNUAL-CROSSTABS</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Annual Cross Tabs (80c)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ANNUAL CROSS TABS (80C)</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Cross Tabs specifying year/range
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>Q</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>W @IOF,!!!,?10,"ANNUAL Cross Tabs",!!!</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ACT^<a href="http://code.osehra.org/dox/Routine_ONCOSA.html">ONCOSA</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-08-11 11:37:52</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

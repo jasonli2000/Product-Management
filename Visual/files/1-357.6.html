@@ -1,0 +1,61 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zNTcuNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PACKAGE INTERFACE (357.6) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zNTcuNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PACKAGE INTERFACE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains a description of all of the interfaces with other packages.
+The form will invoke the proper interface routines by doing a lookup on
+this file and then calling the routine by indirection. The
+Data will be exchanged between the encounter form utilities and other
+packages by putting the data in at @IBARY. Interfaces that pass a single
+value or record will will reference data as in: S DATA=@IBARY. Interfaces
+that pass lists of records or values will reference the data as in:
+S DATA=@IBARY@(&lt;number of item on the list&gt;).
+ 
+Note that multiple entries in this file can have the same entry points
+into routines. This is for efficiency purposes. For example, patient name,
+DOB and sex are all located on the same node of the Patient file. Each of
+these items of data can have its own entry in the Package Interface file,
+but by using the same entry point there is a savings because all of the
+data on that node can be obtained at once. The routine that invokes the
+entry points keeps track of those already invoked so that they are not
+repeated.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,66 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTczMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSD HL7 ADT (732) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTczMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSD HL7 ADT</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>PSD PAT ADT PROTOCOL</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+     The PSDHL7 routine is invoked by the Controlled Substances post-init.
+This routine is also independantly invokable at any time that a site needs
+to set up their interface for narcotic dispensing equipment systems.  One
+of the steps this routine performs is to add the PSD PAT ADT Protocol to
+the DGPM MOVEMENT EVENTS driver.  When this is done, any admits, transfers,
+or discharges will invoke the PSDADT1 routine to build and transmit an ADT
+message using the HL7 package.
+ 
+     If you do NOT want to perform this step at the time of the post-init,
+you can simply D ^PSDHL7 when you're ready.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1996-03-29 08:56:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

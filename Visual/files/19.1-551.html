@@ -1,0 +1,54 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTkuMS01NTE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ROR VA GENERIC USER (551) &nbsp;&nbsp;  SECURITY KEY (19.1)</h1>
+<div id="demo"><table id="MTkuMS01NTE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ROR VA GENERIC USER</td>
+</tr>
+<tr>
+<td>DESCRIPTIVE NAME</td>
+<td>Runs local registries reports</td>
+</tr>
+<tr>
+<td>PERSON LOOKUP</td>
+<td>LOOKUP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This key allows users to run reports for local registries excluding VA HIV
+and VA HEPC.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

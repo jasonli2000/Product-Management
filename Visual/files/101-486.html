@@ -1,0 +1,117 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTQ4Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRCM STATUS MENU (486) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTQ4Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRCM STATUS MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Select OE/RR status Menu</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-30.html">ORRP ALL</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AL</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-33.html">ORRP C/E</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Completed orders</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-31.html">ORRP CURRENT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CU</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-32.html">ORRP DC</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DC</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-36.html">ORRP PENDING</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PD</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;7</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-44.html">CONSULT/REQUEST TRACKING</a></td>
+</tr>
+<tr>
+<td>REQUIRED VARIABLES</td>
+<td>
+<ol>
+<li>
+<dt>REQUIRED VARIABLES:  &nbsp;&nbsp;GMRCBUF</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>S XQORM(0)="1A",XQORM("??")="D HSTS^GMRCAST"</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Order Status:</td>
+</tr>
+<tr>
+<td>MENU DEFAULT</td>
+<td>Active Orders</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>80</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1999-04-16 15:22:35</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

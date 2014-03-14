@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTIzNDQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORC REPORT ACTIONS (2344) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTIzNDQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORC REPORT ACTIONS</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Report action menu</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>extended action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2232.html">ORC DETAILED DISPLAY</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D DESELECT^<a href="http://code.osehra.org/dox/Routine_ORCHART.html">ORCHART</a>(ORNMBR) S:$D(^TMP("OR",$J,"CURRENT","MENU")) XQORM("HIJACK")=^("MENU")</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S ORNMBR=$P(XQORNOD(0),"=",2) D SELECT^<a href="http://code.osehra.org/dox/Routine_ORCHART.html">ORCHART</a>(ORNMBR)</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>W ""</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2000-06-12 08:15:13</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

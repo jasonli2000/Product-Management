@@ -1,0 +1,90 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTEzNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQSRV-AUDIT (134) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTEzNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQSRV-AUDIT</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Auditing Server Options</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+   
+    Server options are auditted in the same way that other option
+types are, with a few added features.  Field #223 'Server Audit'
+will insure that each request appears in the Audit Log for Options
+if it is set to "Y".  In addition to the regular information that
+is stored about any audited option (Option, User, Device, Job,
+Date/Time of Exit from Option, and CPU) audited servers also
+leave a trail to the requester by recording the Message Number
+of the requesting message in the Message File ^XMB(3.9),
+the return address of the Sender, the Subject of the message,
+and the Action taken by the menu system on this request.
+   The message that is sent to an option to request a server
+may very well have information stored in it that the server
+routine will unload from that message.  The Action taken by
+the menu system may simply be "Routine XXX completed normally",
+or it might be an [error message] of some kind.
+   A server option will also be audited in like fashion if
+the server's name-space is being audited by the regular option
+auditing software, or if an audit has been specifically requested
+for that option thorugh the regular auditing menus.  Even if
+'Server Audit' (Field #223) is marked "N" (no audit) the server
+will still be audited if it is targeted by the regular audit
+software through the Security Officer's menu.
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;ERROR MESSAGE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-137.html">XQSRV-ERROR</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-07-11 15:05:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,131 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTAzNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PXRR MOST FREQUENT DIAGNOSES (5034) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTAzNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PXRR MOST FREQUENT DIAGNOSES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Diagnosis Ranked by Frequency</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DIAGNOSIS RANKED BY FREQUENCY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This report produces two lists: most frequent diagnoses (ICD) and most
+frequent diagnostic categories.  The list entries are ordered with the
+most frequent encounter diagnosis first.  The most frequent
+diagnosis categories list is based on the ICD diagnostic category related
+to each diagnosis in the frequent diagnosis list.
+ 
+The report can be generated using a number of different selection
+criteria. The selection criteria are:
+ 
+  Facility - select the facilities encounters to include in the report.
+ 
+  Primary Diagnoses only or All Diagnoses - if primary is selected then
+  only primary diagnosis associated with an encounter will be included in
+  the report.  All diagnosis will include Primary and secondary diagnoses
+  associated with an encounter.  
+ 
+  Encounter Date Range - only encounters that fall within the specified
+  date range will be used to generate the report.
+ 
+  Number of most frequent diagnoses - this will determine how many
+  diagnoses and diagnoses categories will be listed on the report. For
+  example, if 20 was input for this criteria, the report would list up to
+  20 of the most frequent diagnoses found associated with encounters.  The
+  diagnoses are ranked from most frequent to least frequent.  The same is
+  true for diagnostic categories.  If the encounters contained less than
+  20 different diagnoses, then the report would list all the different
+  diagnoses that were found.
+ 
+The remaining criteria are optional for singling out diagnosis entries
+based on other encounter or patient data. The user can accept the default
+"other" encounter/patient criteria which is all VA Clinic encounters
+(Service Category of "A" or "I") for all patients.
+ 
+Other encounter/patient report selection criteria:
+ 
+   Service Category - only encounters with the specified service
+   category or categories will be used to generate the report. This
+   defaults to "AI" for Ambulatory encounters and encounters at a clinic
+   where the patient had an inpatient status.
+ 
+   Clinic Stop Code - only encounters with the specified list of clinic
+   stop codes will be used to generate the report.
+ 
+   Provider criteria can specify All Providers, Primary
+   Providers, Selected Providers, or Selected Provider Classes.
+ 
+        Providers - only encounters, where one of the encounter providers
+        is the same as one of the providers selected, will be used to
+        generate the report.
+ 
+        Primary Providers - only encounters, where one of the encounter
+        providers is designated as a Primary provider, will be used to
+        generate the report.
+ 
+        Provider class - only encounters, where one of the encounter
+        providers has the same provider class as one of the providers
+        classes selected, will be used to generate the report.
+ 
+   Patient Date of Birth Range - only encounters, where the patient's date
+   of birth falls in the specified range, will be used to generate the
+   report.
+ 
+   Patient Sex - only encounters, where the patient's sex matches the
+   specified sex, will be used to generate the report.
+ 
+To include all encounters, ignoring all defaults for the other criteria,
+the user may specify "A" for All Encounters at the Other criteria prompt.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>MAIN^<a href="http://code.osehra.org/dox/Routine_PXRRFDD.html">PXRRFDD</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

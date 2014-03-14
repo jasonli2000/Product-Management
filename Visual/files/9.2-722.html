@@ -1,0 +1,69 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTcyMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ECCP1 (722) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTcyMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ECCP1</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Summary of Procedures and Categories (Old File)</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+** If your facility currently has Event Capture V. 1.6 installed, you
+should run the Summary of Procedures and Categories (Old) option to print 
+data from the pilot EVENT CODE SCREENING file (#720.2) for use in 
+converting data to the current data formats. **
+ 
+This option allows you to print/display the Event Code Screens for one 
+or all DSS Units within a specified location.  If DSS Units are 
+defined to group procedures by category, you can select one or all 
+categories.  All procedures will print for the selected categories. 
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1995-05-12 06:17:31</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>EXIT EXECUTE STATEMENT</td>
+<td>W @IOF</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

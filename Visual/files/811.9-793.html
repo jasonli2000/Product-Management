@@ -1,0 +1,496 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjktNzkz").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-TBI SCREENING (793) &nbsp;&nbsp;  REMINDER DEFINITION (811.9)</h1>
+<div id="demo"><table id="ODExLjktNzkz" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-TBI SCREENING</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>TBI Screening</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Reminder is applicable once in a lifetime of all patients whose date of 
+separation from the service is 9/11/01 or later and have had service in 
+OEF/OIF.  If Service Date of Separation is more recent than last TBI 
+Screening, then reminder will be due again for patient.
+ 
+Reminder is resolved by completing the screen.
+ 
+Reminder creation requested by the Office of Patient Care 
+Services.  Designed by the TBI Screening Workgroup chaired by Dr. Barbara 
+Sigford and based on a reminder from Minneapolis built by Ronald Patire 
+and Dr. Brian Neil.
+ 
+Revisions June 2007:
+  1. Refusal can be entered
+  2. URLs added for information
+  3. Screening done at another VA option added.
+  4. Additional choices for head injury added.
+ 
+Revisions October 2008 - PXRM*2*11
+  1. Combat vet patients need screening
+  2. Cognitive impairment exclusion added
+ 
+Revisions April 2009 - PXRM*2*12
+  1. Change from use of Combat Vet to OEF/OIF from patient file
+  2. Add documentation of discussion of positive screen with the patient
+  3. remove cognitive impairment per TBI Committee as exclusion
+</pre>
+</td>
+</tr>
+<tr>
+<td>TECHNICAL DESCRIPTION</td>
+<td><pre>
+Reminder is due for all patients with Last Service Separation date of
+9/11/01 or later.   Reminder is resolved by any of the health factors
+associated with the responses of section 1; OR health factor for Previous
+TBI Diagnosis; OR health factor TBI PT Refused.
+</pre>
+</td>
+</tr>
+<tr>
+<td>BASELINE AGE FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;99Y</dt>
+<dt>NO. OF AGE MATCH LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF AGE NO MATCH LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-135.html">VA-IRAQ/AFGHAN PERIOD OF SERVICE</a></dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+The patient's last service separation date is prior to 9/11/01.
+\\
+</pre>
+</dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;AND</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;3010911</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-568019.html">VA-ACTIVE DUTY</a></dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-824.html">VA-TBI SCREENING COMPLETED SCREENING RESOLUTIONS</a></dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;AND</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-134.html">VA-IRAQ/AFGHAN SERVICE NO</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+The record indicates that the patient did not serve in OEF or OIF.
+\\
+</pre>
+</dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;2</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-568012.html">VA-IRAQ/AFGHAN SERVICE</a></dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-828.html">VA-TBI-PREVIOUS TBI DX</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+Patient has documentation of previous TBI diagnosis on chart.
+</pre>
+</dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;9/11/01</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-829.html">VA-TBI-PT REFUSAL</a></dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-30D</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.4-578006.html">VA-SERVICE SEPARATION DATES</a></dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-944.html">VA-COMBAT VET</a></dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FUNCTION FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(4)>MRD(1)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;4</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(3,6,7)>MRD(1)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;6</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;7</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+The patient's most recent service separation date is more recent than
+their last screening - if the patient was discharged after 
+9/11/01 then rescreening is needed after any new period of service.
+</pre>
+</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(1)>MRD(3,5,6,7)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;6</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;7</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;3</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;4</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;MRD(5)>MRD(4)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;5</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;4</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>FN(2)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>CUSTOMIZED COHORT LOGIC</td>
+<td>(FI(5)&FF(4))!(FI(1)&'FF(1))!(FI(2)&'FI(4))</td>
+</tr>
+<tr>
+<td>INTERNAL PATIENT COHORT LOGIC</td>
+<td>(FI(5)&FF(4))!(FI(1)&'FF(1))!(FI(2)&'FI(4))</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS COUNT</td>
+<td>6</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS LIST</td>
+<td>5;FF4;1;FF1;2;4</td>
+</tr>
+<tr>
+<td>CUSTOMIZED RESOLUTION LOGIC</td>
+<td>(FI(3)!FI(6)!FI(7))&FF(2)</td>
+</tr>
+<tr>
+<td>INTERNAL RESOLUTION LOGIC</td>
+<td>(FI(3)!FI(6)!FI(7))&FF(2)</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS COUNT</td>
+<td>4</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS LIST</td>
+<td>3;6;7;FF2</td>
+</tr>
+<tr>
+<td>AGE FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS COUNT</td>
+<td>3</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS LIST</td>
+<td>8;9;FF3</td>
+</tr>
+<tr>
+<td>WEB SITES</td>
+<td>
+<ol>
+<li>
+<dt>URL:  &nbsp;&nbsp;http://vaww1.domain.ext/rehab4veterans/docs/TBI_Screening_Brochure_QandA.pdf</dt>
+<dt>WEB SITE TITLE:  &nbsp;&nbsp;Patient Handout on TBI</dt>
+</li>
+<li>
+<dt>URL:  &nbsp;&nbsp;http://vaww1.domain.ext/rehab4veterans/page.cfm?pg=26</dt>
+<dt>WEB SITE TITLE:  &nbsp;&nbsp;VA Physical Med & Rehab Polytrauma</dt>
+</li>
+<li>
+<dt>URL:  &nbsp;&nbsp;http://vaww1.domain.ext/rehab4veterans/page.cfm?pg=20</dt>
+<dt>WEB SITE TITLE:  &nbsp;&nbsp;VA Physical Med & Rehab TBI</dt>
+</li>
+<li>
+<dt>URL:  &nbsp;&nbsp;http://www.polytrauma.domain.ext/index.asp</dt>
+<dt>WEB SITE TITLE:  &nbsp;&nbsp;VA Polytrauma System of Care</dt>
+</li>
+<li>
+<dt>URL:  &nbsp;&nbsp;http://www.bt.cdc.gov/masscasualties/blastinjuryfacts.asp?s_cid=ccu082508_blastinjuries_e</dt>
+<dt>WEB SITE TITLE:  &nbsp;&nbsp;CDC - Blast Injury Information</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>LINKED REMINDER DIALOG</td>
+<td><a href="801.41-4136.html">VA-TBI SCREENING</a></td>
+</tr>
+<tr>
+<td>GENERAL COHORT FOUND TEXT</td>
+<td><pre>
+Patients who served in combat in either Iraq (Operation Iraqi Freedom) or 
+in Afghanistan (Operation Enduring Freedom) should be screened for 
+Traumatic Brain Injury.
+</pre>
+</td>
+</tr>
+<tr>
+<td>GENERAL COHORT NOT FOUND TEXT</td>
+<td><pre>
+\\
+Patients who were discharged from the service prior to 9/11/01 or who did
+NOT serve in OEF or OIF do NOT need to be screened for TBI.
+\\
+</pre>
+</td>
+</tr>
+<tr>
+<td># OF GEN. COHORT FOUND LINES</td>
+<td>3</td>
+</tr>
+<tr>
+<td># GEN. COHORT NOT FOUND LINES</td>
+<td>4</td>
+</tr>
+<tr>
+<td># GEN. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>SPONSOR</td>
+<td><a href="811.6-21.html">Office of Patient Care Services</a></td>
+</tr>
+<tr>
+<td>USAGE</td>
+<td>CRX</td>
+</tr>
+<tr>
+<td>EDIT HISTORY</td>
+<td>
+<ol>
+<li>
+<dt>EDIT DATE:  &nbsp;&nbsp;2009-11-18 09:57:23</dt>
+<dt>EDIT BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>EDIT COMMENTS:  &nbsp;&nbsp;<pre>
+Exchange Install
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

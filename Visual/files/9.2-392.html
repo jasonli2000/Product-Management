@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTM5Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCS-2237 (392) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTM5Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCS-2237</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>ENTERING REQUESTS</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+Select Item Display from the
+Requestors Menu.
+ 
+If the item isn't in the Item Master File, create a Non-Repetitive Order.
+If the item is in the Item Master File and lists the warehouse as one of
+the vendors, create an Issue Book Request.  If the item is in the Item 
+Master File, but doesn't list the warehouse as one of the vendors, create 
+a Repetitive/Non-Repetitive Order.  The use of the Repetitive Order is 
+discouraged.  Create a 1358 order to request a service if the cost is
+estimated and a contract is in place.
+ 
+CHOOSE FROM:
+   2               NON-REPETITIVE (2237) ORDER
+   3               REPETITIVE (PR CARD) ORDER
+   4               REPETITIVE AND NON-REP ORDER
+   5               ISSUE BOOK/INTERVAL ISSUE 
+ 
+     YOU MAY ENTER A NEW CPA FORM TYPE, IF YOU WISH
+     ANSWER MUST BE 3-30 CHARACTERS IN LENGTH
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1994-04-21 16:06:04</td>
+</tr>
+<tr>
+<td>INVOKED BY ROUTINE</td>
+<td>
+<ol>
+<li>
+<dt>INVOKED BY ROUTINE:  &nbsp;&nbsp;FORM TYPE:</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

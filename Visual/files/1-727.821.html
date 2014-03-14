@@ -1,0 +1,56 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03MjcuODIx").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PHYSICAL MOVEMENT SETUP EXTRACT (727.821) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03MjcuODIx" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PHYSICAL MOVEMENT SETUP EXTRACT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file is used to hold information to create data for the physical
+movements (transfers and discharges) for inpatients on the date that a
+site chooses to begin using DSS.  Data is entered into this file by a
+background job which identifies all patients who were in the facility
+on the selected date.  Then these entries are moved, by another
+background job, to the PHYSICAL MOVEMENT EXTRACT file (#727.808)
+to be transferred to the DSS package.  Once the transfer to the PHYSICAL
+MOVEMENT EXTRACT file (#727.808) is complete, data is purged from
+this file, and it becomes inactive.
+  
+Data elements in this file should never be entered, edited, or deleted
+through the VA FileMan.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

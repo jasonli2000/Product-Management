@@ -1,0 +1,63 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAtMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>BLACK, NOT OF HISPANIC ORIGIN (1) &nbsp;&nbsp;  RACE (10)</h1>
+<div id="demo"><table id="MTAtMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>BLACK, NOT OF HISPANIC ORIGIN</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>4</td>
+</tr>
+<tr>
+<td>SYNONYM</td>
+<td>
+<ol>
+<li>
+<dt>SYNONYM:  &nbsp;&nbsp;NEGRO</dt>
+</li>
+<li>
+<dt>SYNONYM:  &nbsp;&nbsp;AFROAMERICAN</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INACTIVE</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>INACTIVATION DATE</td>
+<td>2003-01-09 00:00:00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjY3OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCHPM REQST SPLIT (2678) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjY3OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCHPM REQST SPLIT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Split a Request in PPM</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SPLIT A REQUEST IN PPM</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option can extract line items from a 2237 request. It creates a new
+request for the extracted line items. It will print this new request.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN3^<a href="http://code.osehra.org/dox/Routine_PRCHG.html">PRCHG</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-01-13 14:57:36</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

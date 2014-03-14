@@ -1,0 +1,83 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTM0NjU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSB BCBU PMU_B02 RECV (3465) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTM0NjU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSB BCBU PMU_B02 RECV</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Recieve PMU_B02 Messages</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is an HL7 subscriber to the PMU_B02 event as implemented for the 
+BCMA contingency backup software. Personnel create and update events are 
+sent to the backup workstations to keep BCMA users in sync with Vista.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>subscriber</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2003-09-12 17:28:03</td>
+</tr>
+<tr>
+<td>RESPONSE MESSAGE TYPE</td>
+<td><a href="771.2-1.html">ACK</a></td>
+</tr>
+<tr>
+<td>RECEIVING APPLICATION</td>
+<td><a href="771-87.html">PSB PMU RECV</a></td>
+</tr>
+<tr>
+<td>EVENT TYPE</td>
+<td><a href="779.001-214.html">B02</a></td>
+</tr>
+<tr>
+<td>PROCESSING ROUTINE</td>
+<td>D PARSIT^<a href="http://code.osehra.org/dox/Routine_ALPBGEN1.html">ALPBGEN1</a></td>
+</tr>
+<tr>
+<td>ROUTING LOGIC</td>
+<td>Q</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

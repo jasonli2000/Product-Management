@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NC4yLTI0").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>EIE.DOMAIN.EXT (24) &nbsp;&nbsp;  DOMAIN (4.2)</h1>
+<div id="demo"><table id="NC4yLTI0" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>EIE.DOMAIN.EXT</td>
+</tr>
+<tr>
+<td>FLAGS</td>
+<td>C</td>
+</tr>
+<tr>
+<td>DISABLE TURN COMMAND</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>TRANSMISSION SCRIPT</td>
+<td>
+<ol>
+<li>
+<dt>TRANSMISSION SCRIPT:  &nbsp;&nbsp;TCP/IP</dt>
+<dt>PRIORITY:  &nbsp;&nbsp;1</dt>
+<dt>NUMBER OF ATTEMPTS:  &nbsp;&nbsp;5</dt>
+<dt>TYPE:  &nbsp;&nbsp;Simple Mail Transfer Protocol</dt>
+<dt>NETWORK ADDRESS (MAILMAN HOST):  &nbsp;&nbsp;127.0.0.18</dt>
+<dt>TEXT:  &nbsp;&nbsp;<pre>
+O H=EIE.DOMAIN.EXT,P=TCP/IP-MAILMAN
+C TCPCHAN-SOCKET25
+</pre>
+</dt>
+<dt>TRANSMISSION SCRIPT NOTES:  &nbsp;&nbsp;<pre>
+THIS DOMAIN WILL BE USED FOR ENTERPRISE INFRASTRUCTURE ENGINEERING TRANSMISSIONS TO AUSTIN
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>STATION</td>
+<td>116</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

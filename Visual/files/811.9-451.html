@@ -1,0 +1,431 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjktNDUx").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-MHV DIABETES RETINAL EXAM (451) &nbsp;&nbsp;  REMINDER DEFINITION (811.9)</h1>
+<div id="demo"><table id="ODExLjktNDUx" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-MHV DIABETES RETINAL EXAM</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>Eye Exam for Diabetes</td>
+</tr>
+<tr>
+<td>DO IN ADVANCE TIME FRAME</td>
+<td>1M</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This reminder is set to be due yearly in patients with diabetes.  
+ 
+If the patient meets all 3 criteria for a 2 year exam, then the frequency
+is changed to every 2 years.
+ 
+The absence of diabetic retinopathy is represented by a reminder term 
+that can be used to map any local health factors or exams that indicate 
+the absence of diabetic retinopathy.
+ 
+Reminder terms for HbA1c, insulin and outcomes of prior eye exams are 
+included.
+ 
+The reminder is applicable only if 2 instances of diabetes ICD codes are 
+found in the chart in the past 2 years.
+</pre>
+</td>
+</tr>
+<tr>
+<td>BASELINE AGE FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;1Y</dt>
+<dt>NO. OF AGE MATCH LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF AGE NO MATCH LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-566.html">VA-MHV DIABETES</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+People with diabetes have a higher risk to develop eye problems than 
+people without diabetes.  Some eye problems have no symptoms until it is 
+too late. A dilated eye exam is recommended every one to two years or 
+more frequently if there is eye disease. An eye specialist puts eye drops 
+into both eyes for the exam. After the test, you will be sensitive to 
+bright light for 2 to 4 hours. Bring sunglasses to wear after the test.
+ 
+Eye problems caused by diabetes can be treated if caught early.\\ 
+  Eye problems that can develop with diabetes are:\\
+     Glaucoma - increased pressure in the eye\\
+     Cataracts - the lens in the eye becomes less clear\\
+     Problems of the retina or back of the eye\\
+ 
+Here are some ways you can help to prevent eye problems:\\
+     Keep your blood sugar in good control\\
+     Keep your blood pressure level normal\\
+     Do not use tobacco\\
+     Get your dilated eye exam regularly\\
+     Report new changes in your vision to your primary care team
+         or to an eye specialist\\
+\\
+</pre>
+</dt>
+<dt>RANK FREQUENCY:  &nbsp;&nbsp;2</dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;AND</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-24M</dt>
+<dt>OCCURRENCE COUNT:  &nbsp;&nbsp;2</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;21</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-574.html">VA-MHV RETINAL EXAM FOR DIABETES</a></dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-578.html">VA-MHV INSULIN</a></dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-579.html">VA-MHV DIABETIC RETINOPATHY</a></dt>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;1Y</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+There is information recorded in your chart that suggests that a prior 
+exam of your eyes showed some changes from diabetes.  Your eyes should be 
+examined at least once per year.
+</pre>
+</dt>
+<dl><dt>STATUS LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;ACTIVE</dt>
+</li>
+</ol>
+</dd></dl>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;3</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-580.html">VA-MHV NO DIABETIC RETINOPATHY</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+There is information in your chart that a recent eye exam showed no
+evidence of changes due to diabetes.
+</pre>
+</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;2</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-573.html">VA-MHV HBA1C >7.9</a></dt>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;1Y</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+Your last HbA1c was 8.0 higher.  This means that your diabetes 
+is not under ideal control.  You should check with your Health Care Team 
+for advice on getting your diabetes under better control.
+</pre>
+</dt>
+<dt>CONDITION:  &nbsp;&nbsp;I V>7.9</dt>
+<dt>INTERNAL CONDITION:  &nbsp;&nbsp;I V>7.9</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;3</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-572.html">VA-MHV HBA1C <8.0</a></dt>
+<dt>CONDITION:  &nbsp;&nbsp;I V<8.0</dt>
+<dt>INTERNAL CONDITION:  &nbsp;&nbsp;I V<8.0</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-565.html">VA-MHV HBA1C ALL RESULTS</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+The goal for the hemoglobin A1c is to maintain the level as low as
+possible.   A hemoblogin A1c (HbA1c) level of 7 or lower demonstrates
+excellent control of diabetes.  A level of 9 or higher shows poor control.
+</pre>
+</dt>
+<dt>OCCURRENCE COUNT:  &nbsp;&nbsp;4</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;3</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FUNCTION FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;COUNT(1)>1</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-2.html">COUNT</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>1</dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;AND</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+Patients who have no evidence of diabetic eye disease can have an eye exam
+every 2 years.
+</pre>
+</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;FI(1)&FI(5)&(MRD(5)>MRD(4))</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-5.html">FI</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;5</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;5</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;4</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-1.html">MRD</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;4</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)&FN(2)&(FN(3)>FN(4))</dt>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;2Y</dt>
+<dt>RANK FREQUENCY:  &nbsp;&nbsp;1</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;2</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERNAL PATIENT COHORT LOGIC</td>
+<td>(SEX)&(AGE)&FI(1)&FF(1)</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS COUNT</td>
+<td>4</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS LIST</td>
+<td>SEX;AGE;1;FF1</td>
+</tr>
+<tr>
+<td>INTERNAL RESOLUTION LOGIC</td>
+<td>(0)!FI(2)</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS COUNT</td>
+<td>1</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS LIST</td>
+<td>2</td>
+</tr>
+<tr>
+<td>AGE FINDINGS COUNT</td>
+<td>3</td>
+</tr>
+<tr>
+<td>AGE FINDINGS LIST</td>
+<td>4;6;FF2</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS COUNT</td>
+<td>4</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS LIST</td>
+<td>3;5;7;8</td>
+</tr>
+<tr>
+<td>WEB SITES</td>
+<td>
+<ol>
+<li>
+<dt>URL:  &nbsp;&nbsp;http://www.healthwise.net/myhealthevet/Content/StdDocument.aspx?DOCHWID=tf1308&SECHWID=tf1311</dt>
+<dt>WEB SITE TITLE:  &nbsp;&nbsp;Diabetic Eye Disease</dt>
+</li>
+<li>
+<dt>URL:  &nbsp;&nbsp;http://www.diabetes.org/type-2-diabetes/eye-complications.jsp</dt>
+<dt>WEB SITE TITLE:  &nbsp;&nbsp;American Diabetes Association- Eye Complications</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td># OF GEN. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>GENERAL RES. NOT FOUND TEXT</td>
+<td><pre>
+No recent eye exam was found in your record that included an examination 
+of the retina for complications of diabetes. If you have had a dilated 
+eye exam by a Eye doctor outside of the VA, please bring this information 
+with you to your next visit.  Otherwise, check with your primary care
+team about how to get a detailed exam of your eyes.
+</pre>
+</td>
+</tr>
+<tr>
+<td># GEN. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. NOT FOUND LINES</td>
+<td>5</td>
+</tr>
+<tr>
+<td>SUMMARY COHORT FOUND TEXT</td>
+<td><pre>
+Anyone with diabetes should have a dilated eye exam.
+</pre>
+</td>
+</tr>
+<tr>
+<td># SUM. COHORT FOUND LINES</td>
+<td>1</td>
+</tr>
+<tr>
+<td># SUM. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SUMMARY RES. NOT FOUND TEXT</td>
+<td><pre>
+No recent eye exam was found in your record that included an examination
+of the retina for complications of diabetes.
+</pre>
+</td>
+</tr>
+<tr>
+<td># SUM. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. NOT FOUND LINES</td>
+<td>2</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>SPONSOR</td>
+<td><a href="811.6-14.html">National Clinical Practice Guideline Council</a></td>
+</tr>
+<tr>
+<td>USAGE</td>
+<td>CPR</td>
+</tr>
+<tr>
+<td>EDIT HISTORY</td>
+<td>
+<ol>
+<li>
+<dt>EDIT DATE:  &nbsp;&nbsp;2009-04-22 12:25:51</dt>
+<dt>EDIT BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>EDIT COMMENTS:  &nbsp;&nbsp;<pre>
+Exchange Install
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

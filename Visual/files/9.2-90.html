@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTkw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUDOC DEVICE LOOKUP TECH (90) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTkw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUDOC DEVICE LOOKUP TECH</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>TECHNICAL OVERVIEW: DEVICE LOOKUP</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+The Device Name, .01 Field of the Device File, may be used for lookup.
+If several names match the character string entered, a choice is presented.
+ 
+The device $I (port number) may also be used for lookup.  The search will
+find all devices on all volume sets/CPUs that use a port of this number.
+ 
+Specifying the volume set/CPU will narrow the lookup search.  Entering
+the CPU name will display a choice of devices on that CPU.  Entering the
+CPU name and $I, separated by a decimal point, will shorten the list:
+ 
+     Select DEVICE NAME: BBB.75
+ 
+Devices are also cross-referenced by the flag which indicates whether
+it is a sign-on system device.  Entering 'SYS' will display all devices
+with the flag set to 'yes'.  This may be combined with the CPU and $I
+as above to futher limit the lookup choices:
+ 
+     Select DEVICE NAME: SYS.BBB.75
+ 
+These lookup methods are possible since the Device File contains a number
+of cross-references: by name, $I, Volume Set(CPU), and Sign-on/System.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-01-20 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

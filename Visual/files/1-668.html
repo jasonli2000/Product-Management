@@ -1,0 +1,55 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02Njg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PROSTHETIC SUSPENSE (668) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02Njg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PROSTHETIC SUSPENSE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Prosthetic Suspense file used to contain information regarding pending Prosthetic requests and orders.  This file contains both Manual and CPRS Orders.
+  
+When a suspense is added to Prosthetics the status is OPEN.  Once an 
+initial action is taken on the suspense record, the status changes from 
+OPEN to PENDING.  The status remains PENDING when additional action is 
+taken on a suspense record.  The status is changed to CLOSED when the 
+process is complete and either service was performed or an item was given 
+to the patient.
+ 
+There are two main types of suspense items, MANUAL and CPRS via Consult
+Tracking.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

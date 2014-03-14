@@ -1,0 +1,3059 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTE2Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TEXT INTEGRATION UTILITIES (163) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTE2Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TEXT INTEGRATION UTILITIES</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>TIU</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>Text Integration Utilities</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This package is designed to manage the capture, retention, retrieval and 
+processing of any patient-visit-oriented document.  Its first version will 
+support Discharge Summaries, Progress Notes, and Consult Results.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DEVELOPER (PERSON/SITE)</td>
+<td>JER/SLC</td>
+</tr>
+<tr>
+<td>DEVELOPMENT ISC</td>
+<td>SALT LAKE ISC</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>National</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;1.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2005-11-19 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;1997-10-06 00:00:00</dt>
+<dt>INSTALLED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION OF ENHANCEMENTS:  &nbsp;&nbsp;<pre>
+TEXT INTEGRATION UTILITIES v1.0
+ 
+Text Integration Utilities (TIU) is a collection of software tools that
+manage clinical documents in a standardized way. The initial release of
+Version 1.0 includes Discharge Summary and Progress Notes. TIU replaces
+the previous versions of these DHCP packages, while incorporating all of
+the functionality of them.
+ 
+Benefits of TIU
+ 
++ Ability to view and manipulate clinical documents from a single program
++ Upload capability for many types of documents
++ Improved searching and retrieving capabilities across documents
++ Less duplication of effort for clinicians, managers, and other staff
++ Boilerplate support
++ Links to the Computerized Patient Record System (CPRS), Authorization/
+  Subscription Utility (ASU), Incomplete Record Tracking (IRT), and
+  interfacility document transfer
+ 
+Costs
+ 
++ Planning your Document and User Class hierarchies.
++ Setting up the Document hierarchy so that your current Progress Notes
+  can be converted into the new TIU structure
++ Setting up and populating the User Classes (ASU)
++ Setting up the Upload Utilities and other TIU parameters
++ Converting existing progress notes and discharge summaries to TIU
++ Switching Progress Notes and Discharge Summary menus to TIU menus
+</pre>
+</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;1</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-02-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Description:
+===========
+PATCH 1: This patch resolves a number of problems with the Remote
+Procedure Calls which support CPRS, the scoping of demographic variables,
+and one of the cross-references supporting the query by Service, which
+have been reported since release of TIU.
+ 
+The following routines are included in this distribution:
+ 
+ 1. Routine:   TIUDEV
+               Added ZTSAVE("OR*") to the list of variables to be
+               saved in the call to ^%ZTLOAD for queued output.
+               This was done to prevent an UNDEF error when queuing
+               output from the Notes and Summaries Tabs of the CPRS
+               Chart.
+ 
+ 2. Routines:  TIUEDI2         TIUEDIT
+               Modified TIUEDI2 to prevent prompting inappropriately
+               for the user to edit an unsaved note, for which they
+               are not listed as the person by whom the note was
+               entered.  Modified TIUEDIT to assure that demographic
+                variables are scoped appropriately between patients
+               during successive entry of multiple TIU documents.
+ 
+ 3. Routine:   TIULA2
+               - Modified the display of titles to indicate the title
+                 for which an addendum has been entered, and to pre-
+                 pend a "+" when a document has addenda, or a "*" when
+                 a document is an unsigned "STAT" document.
+               - Modified the selection code to allow multiple
+                 selection at any '^' TO STOP prompt, and to support
+                 the selection of an indefinite number of notes,
+                 without resulting in a STRLEN error, which had been
+                 reported by WPB when a range of approximately 200
+                 notes was selected.
+ 
+ 4. Routine:   TIULG   WPB NOIS COS-0797-N0060
+               Modified the BADSIG subroutine to print the message:
+               &lt; [TITLE] SAVED - WITHOUT SIGNATURE &gt;
+               when the user elects not to sign the note on exit
+               from the entry or edit function, rather than echoing
+               a message indicating how to enter their electronic
+               signature code using the User's Toolbox option.
+ 
+ 5. Routine:   TIULX
+               Modified the CWAD subroutine to assure that the
+                variable GMRPQT is appropriately scoped, prior to
+               calling PAT^GMRPNOR1 to get the string indicating
+               which CWAD indicators were on file for the current
+               patient, and setting the variable VALMBCK="R" to
+               assure that the Notes and Summaries Tabs of the
+               CPRS chart are properly refreshed on return from
+               a call to this subroutine.
+ 
+ 6. Routine:   TIUPEFIX
+               Modified the STUFREC subroutine to assure that the
+               appropriate status is computed when resolving upload
+               errors.
+ 
+ 7. Routine:   TIUPRD
+               Modified the Print Driver to ensure that all documents
+               identified in a call to the routine do exist, and are
+               not merely artifacts of corrupt cross-reference entries
+               left by disconnect errors, or other interrupted
+               processes.
+ 
+ 8. Routine:   TIURA
+               Added a NEW command at the line tag PRINTX to scope
+               the variable IOSTBM appropriately, and allow printing
+               of documents to VA FileMan's Browser device.
+ 
+ 9. Routine:   TIURC
+               Fixed the COPY function to assure that the appropriate
+               visit location was being recorded for the "destination"
+               note, rather than copying the visit location from the
+               "source" note.
+ 
+10. Routine:   TIURD1
+               Modified to resolve a number of issues with reassign-
+               ment of addenda (particularly following signature),
+               including the scrambling of signature blocks when
+               addenda were swapped with, or moved to replace their
+               originals.
+ 
+11. Routines:  TIUSRV          TIUSRVD
+               TIUSRVLL        TIUSRVLO
+               TIUSRVP
+               These routines, which primarily support TIU's Remote
+               Procedure Calls, were modified to fix several issues
+               that were identified during implementation of CPRS
+               v1.0T12 at WPB, as follows:
+               - TIUSRV: the variable VALMAR needed to be scoped
+                 using the NEW command to avoid collision with the
+                 variable's value in the calling environment,
+               - TIUSRVD: the variables VAIN and VADM were scoped
+                 using the NEW command to avoid leaving demographic
+                 and inpatient variables around between successive
+                 patients. The subroutine TRAVERSE was modified to
+                 filter inactive titles from the list when composing
+                 a new note using the CPRS GUI.
+               - TIUSRVLL: Added a condition to assure that UNSIGNED
+                 addenda are included in the list of notes presented
+                 to an author using the Review Progress Notes option.
+               - TIUSRVLO: Modified date limit computation to assure
+                 that both upper and lower bounds are inclusive (e.g.,
+                 from TODAY to TODAY will get all of today's notes),
+                 when accessed through CPRS (this was already true
+                 within TIU itself).
+               - TIUSRVP: Modified the VALIDATE function for evaluating
+                 electronic signatures passed from a client application
+                 to exclude a match when the user's es is NULL, and the
+                 string passed from the calling application is NULL.
+ 
+ Routine Summary: 
+ ================
+ The following is a list of the routines included in this patch.  The 
+ second line of each of these routines will look like: 
+  
+ &lt;tab&gt;;;1.0;TEXT INTEGRATION UTILITIES;**[Patch List]**;Jun 20, 1997 
+ 
+  Routine Name         Before Patch    After Patch     Patch List
+  ============         ============    ===========     ==========
+  TIUDEV                 663743          715912            1
+  TIUEDI2               2954081         3117146            1
+  TIUEDIT              15928365        16237072            1
+  TIULA2               11422552        11932899            1
+  TIULG                 2290558         2618361            1
+  TIULX                 3630728         3681078            1
+  TIUPEFIX              8681313         8870198            1
+  TIUPRD                3348806         3379168            1
+  TIURA                15894554        15915703            1
+  TIURC                15436202        15421240            1
+  TIURD1               20613578        19512855            1
+  TIUSRV               15487391        15503668            1
+  TIUSRVD               4955592         5082369            1
+  TIUSRVLL              6543081         6594347            1
+  TIUSRVLO              8206046         8457918            1
+  TIUSRVP               8220630         8488903            1
+ 
+ 
+Data Dictionary: 
+===============
+This patch also exports a partial DD for the .01 field of file 8925,
+with a correction to the KILL LOGIC for the ASVC2 Cross-reference on
+that field.
+ 
+ 
+Input Templates:
+===============
+The input templates TIU ENTER/EDIT PROGRESS NOTE and TIUZ ENTER/EDIT
+PN were modified to allow editing of expected cosigner, whenever one
+may have been designated.  These templates formerly only asked for
+expected cosigner when the author was known to require one.  This
+prohibited editing of mis-designated cosigners for notes that were
+captured through the upload process.  
+ 
+ 
+Installation Instructions: 
+==========================
+This patch may be installed with users on the system; however, it
+should be installed at a non-peak time to minimize disruption to
+the users. Installation of this patch will take less than 2 minutes.  
+   
+1. Use the INSTALL/CHECK MESSAGE option on the Packman Menu.  
+  
+2. Review your mapped set.  If any of the routines listed in this 
+   patch are mapped, they should be removed from the mapped set at 
+   this time, along with TIUXRC* and TIUEPN*, which include the
+   code for compiled cross-references and input template effected
+   by this patch.  
+   
+3. From the Kernel Installation and Distribution System (KIDS) Menu, 
+   select the Installation menu.  
+   
+4. From the Installation menu, you may elect to use the following 
+   options (when prompted for INSTALL NAME, enter TIU*1.0*1): 
+   a.  Backup a Transport Global 
+   b.  Compare Transport Global to Current System 
+   c.  Verify Checksums in Transport Global 
+   
+5. Use the Install Package(s) option and select the package TIU*1.0*1.
+  
+6. When prompted 'Want to DISABLE Scheduled Options, Menu Options, and 
+   Protocols? YES//', respond YES, and DISABLE the TIU* Options and
+   Protocols.
+  
+7. If routines were unmapped as part of step 2, they should be returned 
+   to the mapped set once the installation has run to completion.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;6 SEQ #1</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-11-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ This patch fixes a String Too Long error in Document Definition Action
+ CREATE. This problem was communicated in a local NOIS message in Seattle.
+ It has not been reported as a national NOIS.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;3 SEQ #5</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-02-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+PATCH 3: This patch fixes a number of problems with the batch upload
+facilities of TIU, including the alerts and options for filing error
+resolution. It also fixes a discrepancy in the estimated time to
+completion computed by the Progress Notes conversion.
+ 
+The following routines are included in this distribution:
+ 
+ 1. Routine:   TIUADD
+               Changed line ADDENDUM+9 to exit the subroutine when
+               the user isn't authorized to add an addendum to the
+               selected record. This is the appropriate behavior, and
+               will also prevent a rare UNDEF error at ADDENDUM+17^TIUADD
+               that had been observed at several test sites.
+ 
+ 2. Routine:   TIUCHLP
+               Modified the GETPAT and GETPN subroutines to accom-
+               modate the changes to the filing error resolution
+               approach for BOTH the alerts and the option to
+               Review Upload Filing Events.
+ 
+ 3. Routine:   TIULC
+               Changed line REQVER+2 to recognize when the requirement
+               for verification has been satisfied for a given record,
+               and not impose the requirement inappropriately. Coincides
+               with changes to TIUT to assure that the release logic, and
+               signature alerts are always executed appropriately.
+ 
+ 4. Routine:   TIULC1
+               Added a function POSTSIGN, to identify the Post-signature
+               action for a given document definition, and enforce its
+               inheritance.
+ 
+ 5. Routine:   TIUMOVE                              NOIS: PUG-0997-50895
+               Modified the MAIN subroutine to prevent an error reported
+               by Puget Sound and Central Texas, where repetitive upload
+               of single documents through the option for direct entry of
+               a Discharge Summary was occasionally resulting in a mis-
+               match to the patient.
+ 
+ 6. Routine:   TIUPEVNT                             NOIS: PUG-0997-50895
+               Modified to help assure that changes to TIUMOVE are
+               reflected appropriately in the handling of upload filer
+               errors.
+ 
+ 7. Routine:   TIUPNCV7
+               Modified the SETVAR subroutine to correct the
+               computation of estimated time remaining.
+ 
+ 8. Routine:   TIUPUTC
+               Modified the GETREC subroutine to prevent a
+               &lt;NULLSUBSCR&gt; error when a caption is not associated
+               with any particular field in the target file.
+  
+ 9. Routine:   TIUPUTPN
+               Modified to assure that notes that have been released from
+               the DRAFT state are not overwritten when subsequent
+               information is uploaded for the same title and visit (an
+               addendum will be added instead).
+ 
+10. Routine:   TIUPUTU
+               Modified the CANEDIT function to exclude overwriting
+               any Discharge Summary record that had proceeded beyond
+               release from draft, whether the release event was
+               successfully recorded or not.
+ 
+11. Routine:   TIURE
+               Modified the FILERR subroutine to accommodate the
+               changes to the error resolution approach when the
+               option to Review Upload Filing Events is in use.
+ 
+12. Routine:   TIURS
+               Modified the ES subroutine to prevent prompting multiply
+               to "Print this Note? NO//" when an addendum is added for
+               cosigner's comments. Also changed ES subroutine to respond
+               appropriately when the /ES/ block elements contain a semi-
+               colon, preventing a COMMAND error. Implemented the post-
+               signature action supported by changes in TIULC1.
+ 
+13. Routine:   TIUT                                  NOIS: PUG-0997-51130
+               Modified the VERIFY subroutine to stuff DUZ for field
+               1306 (VERIFIED BY), whereas it was stuffing DT. Also
+               modified the RELEASE subroutine to assure that the release
+               logic is executed when an uploaded document fails to be
+               filed initially, and is subsequently filed using the
+               options or alerts for filing error correction.
+ 
+ 
+ Routine Summary: 
+ ================
+ The following is a list of the routines included in this patch.  The 
+ second line of each of these routines will look like: 
+  
+ &lt;tab&gt;;;1.0;TEXT INTEGRATION UTILITIES;**[Patch List]**;Jun 20, 1997 
+ 
+  Routine Name         Before Patch    After Patch     Patch List
+  ============         ============    ===========     ==========
+  TIUADD                 7939178         7989408            3
+  TIUCHLP                5315023         5741332            3
+  TIULC                  8062118         8116087            3
+  TIULC1                 5470005         5678356            3
+  TIUMOVE                6394806         6445124            3
+  TIUPEVNT              12440029        12489033            3
+  TIUPNCV7               5344754         5294994            3
+  TIUPUTC               11775034        11993374            3
+  TIUPUTPN               6063243         6063169            3
+  TIUPUTU                5268373         5381409            3
+  TIURE                  6411729         6529651            3
+  TIURS                  9109901         9376324            3
+  TIUT                   6965722         6971292            3
+ 
+ 
+Installation Instructions: 
+==========================
+This patch may be installed with users on the system; however, it
+should be installed at a non-peak time to minimize disruption to
+the users. Installation of this patch will take less than 2 minutes.  
+   
+1. Use the INSTALL/CHECK MESSAGE option on the Packman Menu.  
+  
+2. Review your mapped set.  If any of the routines listed in this 
+   patch are mapped, they should be removed from the mapped set at 
+   this time, along with TIUXRC* and TIUEPN*, which include the
+   code for compiled cross-references and input template effected
+   by this patch.  
+   
+3. From the Kernel Installation and Distribution System (KIDS) Menu, 
+   select the Installation menu.  
+   
+4. From the Installation menu, you may elect to use the following 
+   options (when prompted for INSTALL NAME, enter TIU*1.0*3): 
+   a.  Backup a Transport Global 
+   b.  Compare Transport Global to Current System 
+   c.  Verify Checksums in Transport Global 
+   
+5. Use the Install Package(s) option and select the package TIU*1.0*3.
+  
+6. When prompted 'Want to DISABLE Scheduled Options, Menu Options, and 
+   Protocols? YES//', respond YES, and DISABLE the TIU* Options and
+   Protocols.
+  
+7. If routines were unmapped as part of step 2, they should be returned 
+   to the mapped set once the installation has run to completion.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;2</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-02-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Changes were made to 10 Document Definition routines fixing minor errors
+and closing a small loophole which permitted users to edit objects and
+possibly make them ambiguous.
+ 
+Problems fixed:
+ 
+1.  Messages "Deleted" and "NOT Deleted" wrapped when user deleted entry
+from Document Definition file.  Messages are now written on following
+line.
+ 
+2.  If user entered a name like AGE (which happens to be the abbreviation
+of an object) as a new Document Definition, say, under option Sort
+Document Definitions, it was not accepted.  This was to prevent entering
+ambiguous objects, but was too restrictive since the user may plan to make
+AGE say, a Title, in which case it doesn't create an ambiguous object. AGE
+is now accepted except under option Create Objects.
+ 
+3.  If user entered Document Definition using Fileman with name like DOB
+(which happens to be the abbreviation of an object) and no other fields,
+user could edit it under Basics from the Sort option, and give it type
+Object.  This creates an ambiguous object (if DOB is in boilerplate text,
+code doesn't know whether to use original object PATIENT DATE OF BIRTH, or
+new object DOB).  User can no longer edit type of DOB to object.
+ 
+4.  When using hidden action Print List (PL), neither P-MESSAGE nor
+BROWSER worked as a device.  They work now.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;5 SEQ #3</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-02-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This build fixes Document Definition code that gave users the erroneous
+message NO OWNER when they tried to activate Titles whose boilerplate text
+contained objects with no owner.  Users also received this erroneous
+message when TRYing such a Title.  The problem is fixed and users now
+receive the message: BAD/INACTIVE OBJECT IN BOILERPLATE TEXT.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;8 SEQ #6</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-02-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;11 SEQ #7</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-03-30 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module
+under patch TIU*1.0*11.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;4 SEQ #8</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-03-30 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch is described on the National Patch Module, under patch
+TIU*1*4.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;7 SEQ #9</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-04-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch is described on the National Patch Module, under patch
+TIU*1*7.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;15 SEQ #10</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-04-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch is described on the National Patch Module, under patch
+TIU*1*15.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;9 SEQ #11</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-04-28 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found on the National Patch Module
+under TIU*1*9
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;12 SEQ #13</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-05-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module
+under patch TIU*1.0*12.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;10 SEQ #14</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-05-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found on the National Patch Module
+under TIU*1*10.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;18 SEQ #15</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-05-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch is described on the National Patch Module, under TIU*1*18.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;13 SEQ #16</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-05-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module
+under patch TIU*1.0*13.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;24 SEQ #17</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-05-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch is described on the National Patch Module, under patch TIU*1*24.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;14 SEQ #18</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-07-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;19</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-08-08 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found on the National Patch Module
+under TIU*1*19.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;23 SEQ #20</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-08-31 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For a complete description of this patch, please refer to the National
+Patch Module, under TIU*1*23.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;25 SEQ #21</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-09-23 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For a completed description of this patch, please refer to the National
+Patch Module, under TIU*1*25.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;28 SEQ #22</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-10-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For a complete description of this patch, please refer to the National
+patch module, under TIU*1*28.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;33 SEQ #23</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-10-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found on the National Patch under
+TIU*1*33.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;37 SEQ #24</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-10-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found on the National Patch under
+TIU*1*37.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;29 SEQ #25</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-10-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found on the National Patch Module
+under TIU*1*29.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;30 SEQ #26</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-10-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found on the National Patch under
+TIU*1*30.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;26 SEQ #27</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-11-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found on the National Patch Module
+under TIU*1*26.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;32 SEQ #28</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-11-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found on the National Patch under
+TIU*1*32.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;17 SEQ #29</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-11-25 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;35 SEQ #30</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-11-25 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch
+Module under TIU*1*35.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;36 SEQ #31</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-12-14 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*36.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;44 SEQ #32</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-12-14 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*44.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;22 SEQ #33</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-12-14 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For a complete description of this patch, please refer to the National
+Patch Module, under TIU*1*22.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;31 SEQ #34</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-12-14 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*31.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;27 SEQ #35</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-12-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For a complete description of this patch, please refer to the National
+Patch Module, under TIU*1*27.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;41 SEQ #36</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-12-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found on the National Patch under
+TIU*1*41.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;40 SEQ #37</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-12-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found on the National Patch under
+TIU*1*40.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;34 SEQ #38</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-12-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found on the National Patch Module
+under TIU*1*34.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;42 SEQ #39</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-01-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found on the National Patch under
+TIU*1*42.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;46 SEQ #40</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-01-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*46.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;20 SEQ #41</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-01-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For a completed description of this patch, please refer to the National
+Patch Module, under TIU*1*20.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;49 SEQ #42</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-01-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found on the National Patch Module
+under TIU*1*49.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;54 SEQ #43</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-02-01 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For a complete description of this patch, please refer to the patch module, 
+under TIU*1*54.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;21 SEQ #44</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-02-01 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found on the National Patch Module
+under TIU*1*21.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;56 SEQ #45</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-02-01 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+A complete description of this patch can be found in the National Patch 
+Module under TIU*1*56.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;55 SEQ #46</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-02-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+A complete description of this patch can be found in the National Patch
+Module under TIU*1*55.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;48 SEQ #47</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-02-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*48.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;50 SEQ #48</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-02-23 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For a complete description of this patch, please refer to the patch module, 
+under TIU*1*50.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;51 SEQ #49</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-03-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found on the National Patch Module
+under TIU*1*51.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;43 SEQ #50</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-04-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;59 SEQ #51</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-04-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*59.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;45 SEQ #52</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-04-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*45.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;38 SEQ #53</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-06-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*38.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;70 SEQ #54</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-06-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*70.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;69 SEQ #55</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-06-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*69.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;65 SEQ #56</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-06-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch
+Module under TIU*1*65.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;72 SEQ #57</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-06-22 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+A complete description of this patch can be found in the National Patch
+Module under TIU*1*72.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;57 SEQ #58</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-07-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For a complete description of this patch, please refer to the National
+Patch Module, under TIU*1*57.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;66 SEQ #59</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-07-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch under 
+TIU*1*66.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;47 SEQ #60</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-08-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For a complete description of this patch, please refer to the patch
+module, under TIU*1*47.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;39 SEQ #61</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-08-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For a complete description of this patch, please refer to the patch module, 
+under TIU*1*39.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;52 SEQ #62</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-08-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For a complete description of this patch, please refer to the patch module, 
+under TIU*1*52.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;67 SEQ #63</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-08-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*67.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;77 SEQ #64</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-09-14 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module
+under TIU*1*77.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;71 SEQ #65</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-09-14 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;75 SEQ #66</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-09-14 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;64 SEQ #67</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-09-14 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module
+under patch TIU*1*64.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;62 SEQ #68</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-09-14 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For a complete description of this patch, please refer to the patch
+module, under TIU*1*62..
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;74 SEQ #69</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-09-14 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;76 SEQ #70</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-10-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For a complete description of this patch, please refer to the patch
+module, under TIU*1*76.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;53 SEQ #71</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-10-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For a complete description of this patch, please refer to the patch module, 
+under TIU*1*53.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;84 SEQ #72</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-10-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch under
+TIU*1*84.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;83 SEQ #73</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-10-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found on the National Patch Module 
+under TIU*1*83.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;73 SEQ #74</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-10-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*73.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;68 SEQ #75</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-10-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch under 
+TIU*1*68.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;63 SEQ #76</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For a complete description of this patch, please refer to the patch module, 
+under TIU*1*63.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;86 SEQ #77</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch under
+TIU*1*86.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;87 SEQ #78</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch under
+TIU*1*87.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;92 SEQ #79</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-01-25 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*92.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;79 SEQ #80</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-02-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*79.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;94 SEQ #81</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-02-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*94.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;80 SEQ #82</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-02-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*80.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;90 SEQ #83</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-03-13 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module
+under TIU*1*90.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;91 SEQ #84</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-04-05 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module
+under patch TIU*1*91.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;101 SEQ #85</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-04-05 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module,
+under TIU*1*101.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;102 SEQ #86</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-05-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*102.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;99 SEQ #87</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-06-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module
+under TIU*1*99.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;93 SEQ #88</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-06-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*93.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;81 SEQ #89</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-06-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ 
+The description of this build can be found in the National Patch Module
+under patch TIU*1.0*81.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;89 SEQ #90</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-07-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch under
+TIU*1*89.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;98 SEQ #91</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-07-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*98.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;82 SEQ #92</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-08-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*82.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;103 SEQ #93</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-09-05 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*103.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;104 SEQ #94</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-11-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*104.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;88 SEQ #95</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-11-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch under
+TIU*1*88.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;78 SEQ #96</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-11-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module
+under the heading of TIU*1*78.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;107 SEQ #97</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-01-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*107.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;58 SEQ #98</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-01-22 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*58.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;108 SEQ #99</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-04-05 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*108.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;61 SEQ #100</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-04-23 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For a complete description of this patch, please refer to the patch
+module, under TIU*1*61.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;111 SEQ #102</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-04-30 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1.0*111.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;100</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-04-30 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build is found in the National Patch Module under
+patch TIU*1*100.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;96 SEQ #104</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-05-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*96.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;114 SEQ #105</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-05-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build is found in the National Patch Module under
+patch TIU*1*114.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;105 SEQ #106</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-06-08 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*105.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;110 SEQ #107</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-08-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description for this patch can be found in the National Patch Module
+under TIU*1*110.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;121 SEQ #108</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-08-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module
+under patch TIU*1*121.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;119 SEQ #109</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-08-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*119.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;118 SEQ #110</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-09-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build is found in the National Patch Module under
+patch TIU*1*118.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;116 SEQ #111</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-09-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module
+under patch TIU*1*116.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;117 SEQ #112</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-09-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*117.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;125 SEQ #113</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-09-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*125.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;120 SEQ #114</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-09-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build is found in the National Patch Module under
+patch TIU*1*120.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;115 SEQ #115</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-09-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build is found in the National Patch Module under
+patch TIU*1*115.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;123 SEQ #117</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-11-21 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build is found in the National Patch Module under
+patch TIU*1*123.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;127 SEQ #118</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*127.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;122 SEQ #119</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build is found in the National Patch Module under
+patch TIU*1*122.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;126 SEQ #120</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*126.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;129 SEQ #121</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-01-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build is found in the National Patch Module under 
+patch TIU*1*129.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;132 SEQ #122</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-03-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*132.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;109</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-06-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description on this patch may be found in the National Patch Module
+under TIU*1*109.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;124 SEQ #124</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-06-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*124.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;138 SEQ #125</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-06-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*138.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;130 SEQ #126</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-07-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module
+under patch TIU*1*130.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;131 SEQ #127</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-08-14 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module 
+under TIU*1*131.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;140 SEQ #128</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-08-14 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*140.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;136 SEQ #129</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-08-14 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*136.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;146 SEQ #130</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-09-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*146.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;139 SEQ #132</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-10-25 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*139.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;145 SEQ #133</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-12-20 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1.0*145. 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;142 SEQ #134</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-12-20 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1.0*142.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;143 SEQ #135</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-01-09 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*143.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;148 SEQ #136</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-01-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1.0*148.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;156 SEQ #137</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-02-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1.0*156.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;154 SEQ #138</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-03-01 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build is found in the National Patch Module under
+patch TIU*1*154.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;149 SEQ #139</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-03-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*149.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;155 SEQ #140</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-03-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the  National Patch Module 
+under TIU*1.0*155.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;152 SEQ #141</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-04-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1.0*152.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;150 SEQ #142</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-04-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build is found in the National Patch Module under
+patch TIU*1*150.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;151 SEQ #143</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-04-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build is found in the National Patch Module under
+patch TIU*1*151.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;135 SEQ #144</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-05-20 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1.0*135.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;144 SEQ #145</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-06-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module, 
+under patch TIU*1*144.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;160 SEQ #146</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-06-28 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1.0*160.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;164 SEQ #147</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-06-28 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build is found in the National Patch Module under
+patch TIU*1*164.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;158 SEQ #148</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-07-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1.0*158.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;153 SEQ #149</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-08-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build is found in the National Patch Module under
+patch TIU*1*153.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;137</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-09-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module 
+under patch TIU*1*137.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;134 SEQ #151</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-09-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*134.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;170 SEQ #152</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-09-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description for this patch may be found in the National Patch Module 
+under TIU*1.0*170.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;165</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-09-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of the build for patch TIU*1*165 can be found in the 
+National Patch Module.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;161</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-09-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description for this patch may be found in the National Patch Module 
+under TIU*1.0*161.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;168</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-10-23 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;167 SEQ #156</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-10-23 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found under the National Patch Module 
+under TIU*1.0*167.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;162 SEQ #157</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-01-31 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module 
+under patch TIU*1*162.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;181</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-01-31 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*181.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;159 SEQ #159</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-03-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1.0*159.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;176 SEQ #160</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-03-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;113</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-03-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description on this patch may be found in the National Patch Module
+under TIU*1*113.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;141 SEQ #162</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-04-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*141.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;183 SEQ #163</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-04-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;112</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-04-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build is found in the National Patch Module under
+patch TIU*1*112.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;174 SEQ #165</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-07-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description for this patch may be found in the National Patch Module 
+under TIU*1*174.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;185 SEQ #166</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-09-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1.0*185.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;178 SEQ #167</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-10-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module 
+under patch TIU*1.0*178.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;187 SEQ #168</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-10-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*187.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;179 SEQ #169</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-10-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*179.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;163 SEQ #170</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-11-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National 
+Patch Module under TIU*1.0*163.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;188 SEQ #171</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-11-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+
+The description of this patch may be found in the National Patch Module 
+under TIU*1*188.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;177 SEQ #172</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-11-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description for this patch may be found in the National Patch Module 
+under TIU*1*177.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;169 SEQ #173</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-12-28 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module 
+under TIU*1.0*169.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;175 SEQ #174</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-01-18 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found under the National Patch Module 
+under TIU*1.0*175.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;171 SEQ #175</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-02-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Completed Doc-CHANGE TITLE fix  Replace
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;166</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-03-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build is found in the National Patch Module under
+patch TIU*1.0*166.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;157 SEQ #177</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-03-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Please refer to the patch description in the national patch module for
+information regarding this patch.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;180 SEQ #178</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-04-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1.0*180.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;173 SEQ #179</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-04-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module 
+under patch TIU*1.0*173.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;193 SEQ #180</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-06-25 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;192 SEQ #181</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-07-09 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ERROR DURING UPLOAD OF DOCUMENTS UNDER CERTAIN CONDITIONS.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;182 SEQ #182</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-08-13 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module 
+under TIU*1*182.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;197 SEQ #183</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-08-13 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;195 SEQ #184</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-08-13 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+WHEN THERE IS MORE THAN ONE OPERATION REPORT FOR THE SAME DAY, THERE IS 
+NO WAY TO TELL WHICH OPERATION REPORT TO CHOOSE.  ADD PRINCIPAL PROCEDURE 
+NAME TO LIST.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;186 SEQ #185</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-10-20 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*186.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;194 SEQ #186</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-11-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+IN CPRS GUI, NOTES, VIEW, SIGNED BY AUTHOR IT DISPLAYS NOTES BY SIGNED BY 
+INSTEAD OF AUTHOR.  IN ROLL AND SCROLL OPTION 2B Review Progress Notes, 
+SS DOES THE SAME.  IN ROLL AND SCROLL CPRS, NOTES, CV IT DOES THE SAME.  
+THIS PATCH WILL CORRECT THOSE PROBLEMS.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;191 SEQ #187</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-11-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1.0*191.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;198 SEQ #188</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-12-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+CORRECT A PROBLEM WITH ACTIVE/RECENT MEDS OBJECT. UNDER CERTAIN 
+CONDITIONS IT WOULD SHOW A DISCONTINUED MED AND NOT THE ACTIVE MED FOR 
+THE SAME DRUG.
+ 
+PROBLEM WITH TIU DOCUMENT PARAMETER EDIT.  SITES WERE CHANGING THE 
+DOCUMENT NAME DURING THE EDIT AND LOOSING ALL THE PARAMETERS FOR THE 
+DOCUMENT.  ADDED A WARNING MESSAGE IF DOCUMENT NAME IS CHANGED OR DELETED.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;203 SEQ #189</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-01-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+If the Patient Movement Record field (1401) of the TIU Document file 
+(8925) is null an unfined error occurs when trying to edit the Discharge 
+Summary. The input template TIU ENTER/EDIT DS will be modified to prevent 
+this hard error.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;206 SEQ #190</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-02-13 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+WHEN DELETING A TIU DOCUMENT PARAMETER AN UNDEFINED OCCURS.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;201 SEQ #191</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-03-08 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Fix problem in boilerplate logic when a line of boilerplate text contains 
+more than one object.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;212 SEQ #192</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-05-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+DOCUMENT PARAMETER VALUES CAN BE LOST WHILE EDITING A DOCUMENT PARAMETER.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;189 SEQ #193</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-05-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Contains the Missing Expected Cosigner Report and a fix to the TIU UNK 
+ADDENDA MENU option's synonym.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;209 SEQ #194</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-05-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the national patch module 
+under patch TIU*1.0*209.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;202 SEQ #195</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-05-05 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1.0*202.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;184</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-05-05 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module 
+under patch TIU*1*184.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;207 SEQ #197</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-06-08 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Fix header display and prompts for TIU document display options and fix 
+prompt for option TIU REVIEW DS CLINICIAN.
+.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;199 SEQ #198</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-07-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Fix ACL cross reference for field .02 in file 8925.1. Add field "SIGNED 
+BY SURROGATE to file 8925.7 and provide tool to set this field for notes 
+signed prior to this patch.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;218 SEQ #199</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-08-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the national patch module 
+under patch TIU*1.0*218.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;204 SEQ #200</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-08-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+UNDEFINED ERROR IN TIUPUTS WHEN THERE IS NO DATE/TIME OUT OF OR.  TIU 
+VITALS OBJECTS (WEIGHT, HEIGHT AND TEMP) NOT WORKING PROPERLY WHEN 
+RESULTS ARE REFUSED, UNAVAILABLE OR PASS.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;208 SEQ #201</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-08-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Fix display of a long Author's name in the TIU BROWSE menu options and 
+fix the duplicate display of notes in the TIU SEARCH BY PATIENT/TITLE 
+option.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;200 SEQ #202</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-12-12 13:42:24</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found under the National Patch Module 
+under TIU*1.0*200.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;214 SEQ #203</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-11-22 22:21:09</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Report on and optionally fix mismatched ID notes. Report on parent notes 
+that may not be an id note.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;217 SEQ #204</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-11-22 23:47:14</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Change TIU AUTHORIZATION RPC to not allow deletion of a Parent ID note if 
+it has a Child.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;211</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-12-11 16:26:05</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*211.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;220</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-12-27 14:45:55</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+See patch description in the National Patch Module.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;210 SEQ #207</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-12-27 14:47:29</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will add a parameter to the TIU PARAMETERS file (8925.99) 
+called LENGTH OF SIGNER ALERT PERIOD. This parameter will be used to 
+determine how far back the TIU NIGHTLY TASK should search when looking 
+for documents needing a signature. Input transforms for fields START OF 
+ADD SGNR ALERT PERIOD and END OF ADD SGNR ALERT PERIOD in file 8925.99 
+were not working properly and were corrected. It also correctS an 
+undefined error in routine TIUSRVPT.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;190 SEQ #208</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-12-28 07:37:34</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;223 SEQ #209</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-06-29 21:08:29</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1.0*223.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;216 SEQ #210</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-04 23:39:23</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Fix boilerplate "TRY" function and prompts in TIU REVIEW SCREEN MRT.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;215 SEQ #211</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-05 00:47:06</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+When using Copy to create a new document, the print name from the 
+origingal document is the print name for the newly created document.  
+Since the print name is what is displayed in CPRS this causes a problem.
+ 
+ 
+Prohibit Edit, Delete, Amend of TIU Surgery documents in TIU LM or CPRS.
+Change error message when trying to delete Interdisciplinary Parent Note 
+that has kids.
+ 
+Prohibit Edit or Send Back of uncosinged documents.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;205 SEQ #212</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-05 00:54:42</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Fix provider encounter data in document upload.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;225 SEQ #213</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-05 01:17:15</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*225.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;213 SEQ #214</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-05 01:23:07</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Please see the National Patch Module for patch TIU*1*213.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;226 SEQ #215</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-05 01:32:47</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Modify TIU Medications object to include route and schedule for inpatient 
+IV'S.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;221 SEQ #216</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-05 01:37:17</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Problem 1 - when there are 2 appointments in the same day an uploaded 
+document always posts to the last appointment.
+Problem 2 - Alerts for additional signer are being sent on a retracted 
+document
+Problem 3 - Addendum alerts are sent to author and expected co-signer 
+daily when an additonal signer is overdue for signature
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;222 SEQ #217</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-12-12 21:20:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found under the National Patch Module 
+under TIU*1.0*222.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;235 SEQ #218</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-12-12 21:53:01</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*235.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;230</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-12-12 22:10:45</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found under the National Patch Module
+under TIU*1.0*230.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;236 SEQ #220</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-12-12 22:51:22</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Restore routine TIULP, TIUSRVA and TIUFLF4 to pre-patch TIU*1.0*215 state.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;231 SEQ #222</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-05-26 13:14:49</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Utility to analyze problems that may have been caused by the installation 
+of patch TIU*1.0*215.  Runs upon install and also as a stand alone option.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;238 SEQ #223</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-07-22 08:09:52</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*238.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;224 SEQ #224</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-07-22 14:24:56</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Fix the following defects
+HD 169774  UPDATE OF 8925.1 "ACL" INDEX
+HD 71187 UNDEFINED STATUS+9^TIUR
+HD 69681 DIFFERENCE IN PRINTING IDENTIFIED SIGNERS
+HD 69457 UNDEFINED UPRBLD+38^TIURL
+HD 209427 LM rebuild list does not display properly after a line is 
+deleted.
+ 
+HD 71015 UNDEFINED SETREC+7^TIURL
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;234 SEQ #221</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-21 15:35:11</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+For a description of this build see the National Patch Module entry for 
+TIU*1*234.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;219</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-21 15:49:38</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+See National Patch Module, TIU*1*219.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;228 SEQ #226</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-21 16:01:52</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found under the National Patch Module 
+under TIU*1.0*228.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;242 SEQ #227</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-22 12:09:19</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*242.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;227 SEQ #228</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-22 12:21:22</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will correct addendum, alert, and signature issues.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;233 SEQ #229</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-23 11:46:21</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch includes fixes for the following Remedy tickets:
+ 
+ HD69299 - ID SIGNER/CO-SIGNER
+ HD99628 - Spacebar option not working after patch TIU*1*173 
+ HD69093 - Can not print warning for addendum
+ HD94265 - Can not delete duplicate UNDICTATED Opertion Report
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;246</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-23 12:23:57</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*246.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;237 SEQ #231</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-11-09 11:24:38</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+PSI-07-154
+ 
+Problem with TIU C&amp;P upload. The upload requires the IEN of file 396.4 as 
+the reference number.  If there is an error on the upload processing the 
+error alert can post the exam results to the wrong veteran.  The upload 
+can also post to closed exam requests.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;249</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-11-18 09:56:39</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*249.
+
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;232 SEQ #233</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-02-24 15:39:13</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Fix the following defects.
+HD69695 When using copy to create a new document, the print name from the 
+original document is the print name for the newly created document.
+HD70760 In CPRS do not allow edit, delete, addendum of Nurse 
+Intraoperative Report and Anesthesia Report.  
+ Also, prohibit Amend, or Verify/Unverify -&gt; Edit functions
+ for the Nurse Intraoperative Report and  Anesthesia Report
+ in the options listed below:
+ 
+    TIU BROWSE DOCUMENT MGR       Individual Patient Document
+    TIU BROWSE DOCUMENT MRT       Individual Patient Document
+    TIU MAIN MENU MGR       Text Integration Utilities (MIS Manager)
+    TIU MAIN MENU MRT       Text Integration Utilities (MRT)
+    TIU REVIEW SCREEN MIS MANAGER       Multiple Patient Documents
+    TIU REVIEW SCREEN MRT       Multiple Patient Documents
+    TIU SEARCH LIST MGR       Search for Selected Documents
+    TIU SEARCH LIST MRT       Search for Selected Documents
+ 
+ 
+ 
+HD166528 Update message displayed when trying to delete an 
+Interdisciplinary Parent note that has kids.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;244 SEQ #234</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-06-03 10:42:51</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*244.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;250 SEQ #235</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-08-16 12:07:32</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module
+under TIU*1*250.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;257</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-01-24 12:58:22</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this patch may be found in the National Patch Module 
+under TIU*1*257.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;241 SEQ #237</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-05-26 11:17:54</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+HD229090 Additional signer does not appear on documents that are 
+administratively closed
+HD247418 Incorrect ??doc for START OF ADD SGNR ALERT PERIOD.  Also update 
+technical manual
+HD70039 No entry in TIU Technical Manual for TIU Nightly Task
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;248 SEQ #238</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-05-31 14:38:38</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch related to Remedy 277123 and PSPO 1093.  The TIU option TIU 
+MISSING TEXT CLEANUP retracts documents and therefore should be 
+restricted to users who hold security key TIU MISSING TEXT CLEAN.
+Security key TIU MISSING TEXT CLEAN should only be assigned to someone
+that holds Chief,MIS or Chief, HIM class in USR.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;239 SEQ #239</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-06-20 17:40:56</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch adresses the following Remedy tickets:
+ 
+ HD168903 - TIU documents/consults
+ duplicate(s): HD211236,202522,193385
+ HD311014 - One Progress Note on two consults
+ HD152076 - User Class expires
+ HD131840 - Addtl Signer - User Class Requiring Cosignature (error box)
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;255 SEQ #241</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-11-28 15:29:33</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ This patch will correct the following issue:
+ 
+ An Identified Signer disappears from a note after re-identifying
+ the signer (using the Identify Additional Signature command) and 
+ then clicking on either the "Remove" or "Remove All" button. 
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;260</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-03-23 12:52:39</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;261</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-03-23 12:58:55</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module 
+under patch TIU*1*261.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;252 SEQ #244</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-08-29 11:59:14</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+See TIU*1*252 in the National Patch Module.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;259 SEQ #245</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-09-07 15:15:41</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This build for TIU*1*259 addresses 2 issues.
+ 
+First, it adds the date of the document to alerts for OVERDUE signatures.
+ 
+Second, it changes TIU VISTA MRT Option Unsigned/Uncosigned Report [TIU 
+UNSIGNED/UNCOSIGNED REPORT] so that documents requiring a cosignature are
+sorted under the service of the Expected Cosigner rather than the author.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;264 SEQ #246</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-01-22 17:12:34</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ This patch will correct the following issues:
+ If a user enters a note in Mobile Electronic Documentation, and does not 
+ select a different note before exiting, in some cases the newly entered 
+ note would be lost.
+ 
+ The parameter TIU MED HSTYPE was set to accept a free text value that 
+ should contain a pointer to the Health Summary type to be used with MED. 
+ This was a problem, because a user had to know the Internal entry 
+ number of the health summary in order to update the parameter.
+ 
+ When certain Patient Data Objects are imported from MED notes, internal 
+ data was incorrectly getting added to the note. 
+ 
+ Mobile Electronic Documentation was calculating when to suggest 
+ database compaction incorrectly. Also, when database compaction was 
+ suggested, and the users clicked Yes in order to compact the database, 
+ MED would get stuck in an infinite loop and hang.
+ 
+ The Action menu, in MED is displaying on all tabs, even though it is 
+ only related to the Notes tab. This can cause confusion if there is a 
+ note selected on the notes tab and the user is on a different tab.
+ 
+ When using a dialog template in MED, parent choices are grayed out. 
+ When the same choices are not grayed out if viewed in CPRS.
+ 
+ Med Install guide references the wrong Key.
+ 
+ If a user attempted to retrieve two patients with the same names they
+ would import correctly, but only one would be selectable in the patient
+ selection dialog.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;269 SEQ #247</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-01-31 11:33:07</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will address an undefined error - &lt;UNDEFINED&gt;PRNTSCRN+5^TIURA2
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;265</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-05-16 12:56:03</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module
+under patch TIU*1*265.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;267 SEQ #249</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-05-16 17:44:12</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The description of this build can be found in the National Patch Module 
+under TIU*1*267.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;274 SEQ #250</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-06-24 11:36:34</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Prevent notes without text from being signed
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;275</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-08-29 11:11:29</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+See patch description on FORUM for patch TIU*1.0*275.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;256 SEQ #252</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-09-04 16:51:41</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+When a Nurse Intraoperative Report (NIR) or Anesthesia report is entered 
+and signed in the Surgery package, a note is created in Text Integration 
+Utility (TIU).  The note is created in file TIU DOCUMENT (8925).  If the 
+note is entered and signed mistakenly in the Surgery Package there is no
+way to delete the note in either Surgery or TIU.
+ 
+This patch will allow Privacy Act Officers or MIS/HIM Chiefs to
+delete/retract Nurse Intraoperative reports (NIR) or Anesthesia 
+reports (AR) from CPRS GUI - Surgery tab or in VistA through the 
+following options:
+ 
+TIU BROWSE DOCUMENT MGR
+TIU BROWSE DOCUMENT MRT
+TIU SEARCH LIST MGR
+TIU REVIEW SCREEN MIS MANAGER
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;276 SEQ #253</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-09-09 14:55:26</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will resolve the following issues in the Text Integration
+Utilities package:
+ 
+-Inability to search for Expected Cosigner
+-Error loading boilerplate text with attached template
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;272 SEQ #254</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-09-30 10:18:50</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will resolve the following issues:
+1) Completed documents are showing on TIU report of "All My 
+Unsigned" documents.
+2) GETFLD+2^TIUSRVF subscript errors
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;271 SEQ #255</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2014-01-06 16:27:30</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will correct the following issues:
+ 
+ Users unable to find any results when searching for addenda using the 
+ Text Integration Utilities (MRT) [TIU MAIN MENU MRT] option
+ 
+ String dates are being stored in the REFERENCE DATE field (#1301) of 
+ the TIU DOCUMENT file (#8925).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;279</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2014-01-15 16:43:56</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

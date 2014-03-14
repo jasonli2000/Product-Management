@@ -1,0 +1,67 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTEzMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FBAA CLERK LOOK-UP (5131) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTEzMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FBAA CLERK LOOK-UP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Clerk Look-Up For An Authorization</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CLERK LOOK-UP FOR AN AUTHORIZA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the holder of the FBAASUPERVISOR security
+key to look-up who was the last user to enter and/or edit
+a selected authorization.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_FBAACLU.html">FBAACLU</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

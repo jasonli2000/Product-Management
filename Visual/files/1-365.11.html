@@ -1,0 +1,51 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zNjUuMTE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IIV AUTO MATCH (365.11) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zNjUuMTE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IIV AUTO MATCH</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Auto Match file is a VistA facility to help IIV match user-entered 
+insurance company names to the correct insurance company names in the 
+insurance company file.  This file links together an Auto Match Value 
+with a valid insurance company name.  The Auto Match Value may contain 
+common spelling mistakes and wildcard characters to aid in the selection 
+of a valid insurance company name.
+Per VHA Directive 10-93-142, this file definition should not be modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODkyNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENFA CT CAP LIST (8926) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODkyNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENFA CT CAP LIST</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Show Equipment Task Will Leave Capitalized</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SHOW EQUIPMENT TASK WILL LEAVE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The option generates a report of currently capitalized equipment that does
+NOT meet the criteria to be expensed by the one-time task. The output is
+sorted by station and then by value. The reason why the equipment will not
+be expensed by the one-time task is shown. See the description of the List
+Equipment to be Expensed by Task option for more information on the
+criteria.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-18.html">ENGINEERING</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>I $G(DT)>3020725 W $C(7),!," *** This option is obsolete and it should not be used.***"</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_ENFACTS.html">ENFACTS</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

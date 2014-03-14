@@ -1,0 +1,144 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE3NjU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU BROWSE MENU CLINICIAN (1765) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE3NjU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU BROWSE MENU CLINICIAN</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Review/edit/sign</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Menu of actions which may be executed by clinicians.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1779.html">TIU BROWSE ACTION EDIT</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1780.html">TIU BROWSE ACTION PRINT</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1785.html">TIU BROWSE ACTION SIGN/COSIGN</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;9</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1761.html">TIU ACTION QUIT</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;23</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1782.html">TIU BROWSE ACTION SEARCH</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1841.html">TIU BROWSE ACTION COPY</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1873.html">TIU BROWSE ACTION MAKE ADDENDUM</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;7</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1778.html">TIU BROWSE ACTION DELETE</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;15</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1924.html">TIU BROWSE ACTION DESIGNATE SIGNERS</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;13</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1963.html">TIU BROWSE MENU LINK</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;17</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2172.html">TIU BROWSE ACTION EDIT ENCOUNTER</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;19</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3046.html">TIU BROWSE ACTION ID NOTE</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;21</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>S:$D(DIROUT) TIUQUIT=1</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S XQORM("SH")=0</td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I 1 X:$D(^ORD(101,+$P(^ORD(101,DA(1),10,DA,0),"^"),24)) ^(24)</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>S VALMSG="+ Next Screen  - Prev Screen  ?? More actions" D RESIZE^<a href="http://code.osehra.org/dox/Routine_TIULM.html">TIULM</a>(21,18),SHOW^VALM</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2006-05-05 12:43:19</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzE1Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCA LAST ACTIVITY (3153) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzE1Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCA LAST ACTIVITY</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Report of AR by Last Activity Date</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>REPORT OF AR BY LAST ACTIVITY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This report will print bills, sorted by category, by the date of Last
+Activity.  The date of last activity is defined as the date when the
+bill was last 'looked' at or had some activity.
+ 
+This date is derived by finding the most recent date of the following:
+ 
+1) Last time a letter printed (LETTER1, LETTER2, LETTER3)
+2) Date bill was prepared
+3) Date status was last updated
+4) Date the last transaction was entered into the system or Transaction date
+ 
+If none of these dates are found, then the default date is 01/01/91.
+ 
+Only those bills in an 'unresolved' status (Active, Suspense, Pending
+Calm Code, etc.) are printed.  Those bills that have been resolved are
+not displayed.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-53.html">ACCOUNTS RECEIVABLE</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D LAST^<a href="http://code.osehra.org/dox/Routine_PRCADEL.html">PRCADEL</a> K DTOUT</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

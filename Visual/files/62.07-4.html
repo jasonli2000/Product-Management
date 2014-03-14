@@ -1,0 +1,50 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuMDctNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>QUARTERLY (4) &nbsp;&nbsp;  EXECUTE CODE (62.07)</h1>
+<div id="demo"><table id="NjIuMDctNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>QUARTERLY</td>
+</tr>
+<tr>
+<td>EXECUTE CODE</td>
+<td>S %DT="",X="T" D ^%DT S LRAD=$E(Y,1,3)_"0000"+(($E(Y,4,5)-1)\3*300+100) S LRAN=1+$S($D(^LRO(68,LRWLC,1,LRAD,1,0)):$P(^(0),"^",4),1:0) Q</td>
+</tr>
+<tr>
+<td>PURGE CONTROL</td>
+<td>Q</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>ACCESSION</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

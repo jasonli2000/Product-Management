@@ -1,0 +1,96 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTMzNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA EDITCN (5337) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTMzNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA EDITCN</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Case No. Exam Edit</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CASE NO. EXAM EDIT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This function allows the user to edit exams for patients by selecting
+either the case number or the patient's name.  If the case number doesn't
+exist or is inactive, the system will indicate so with an error message.
+This function should be used to re-edit fields that have already been
+entered but need to be corrected. Only fields where data has previously
+been entered will appear for re-edit.  The Status Tracking options should
+be used to enter data and insure that exams progress to a status of
+'Complete'.
+ 
+Once an exam is edited and in the 'COMPLETE' status, the associated
+request will display a message as follows: "** Note: Request has been
+changed by Radiology/Nuclear Medicine**".
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K RAOPT("EDITCN")</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S RAOPT("EDITCN")=""</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EDIT^<a href="http://code.osehra.org/dox/Routine_RAEDCN.html">RAEDCN</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>1997-02-04 14:16:40</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

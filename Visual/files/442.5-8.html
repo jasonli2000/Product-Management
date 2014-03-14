@@ -1,0 +1,69 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NDQyLjUtOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>REQUISITION (8) &nbsp;&nbsp;  PAT TYPE (442.5)</h1>
+<div id="demo"><table id="NDQyLjUtOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>REQUISITION</td>
+</tr>
+<tr>
+<td>PROCESSING CONTROL</td>
+<td>PAYMENT PROCESSING</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>RQ</td>
+</tr>
+<tr>
+<td>ORDER</td>
+<td>5</td>
+</tr>
+<tr>
+<td>REC RPT REQUIRED</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The original request is routed to PPM instead of to P&amp;C.  PPM enters the
+requisition document.  Only Federal Source vendors may be selected.
+LOG code sheets are generated for Depot, GSA or DLA. (May be Fedstrip or
+Milstrip format).  If unposted, Fiscal obligates the funds and the P.O.
+prints back in Supply Service.  The warehouse enters receiving, then
+the Receiving Report is printed in Fiscal.  Fiscal processes to create
+the CALM receiving code sheets.  If POSTED stock, only GSA or DLA is
+handled since the LOG system handles Depot Push.  No obligation is
+done by Fiscal and no receiving reports are sent by Fiscal to CALM.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

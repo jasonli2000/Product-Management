@@ -1,0 +1,52 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0yMDA2LjU3NTc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DICOM RADIOLOGY PROCEDURE MODIFIERS (2006.5757) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0yMDA2LjU3NTc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DICOM RADIOLOGY PROCEDURE MODIFIERS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The DICOM RADIOLOGY PROCEDURE MODIFIERS file (#2006.5757) resides on the
+DICOM Gateway.  It contains the list of Radiology procedure modifiers 
+that may be used when placing orders for VistA on the DICOM Gateway. 
+ 
+This file is periodically updated on the Gateway by a remote procedure
+call to VistA to read file Radiology's PROCEDURE MODIFIERS (#71.2).
+This allows the Gateway to continue processing if a VistA connections 
+is lost.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

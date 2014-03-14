@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTI0MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FBUC REQUEST INFORMATION (5241) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTI0MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FBUC REQUEST INFORMATION</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Request Information on Unauthorized Claim</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>REQUEST INFORMATION ON UNAUTHO</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Request information on an unauthorized claim.  Selection of claims
+is limited to those claims which have a status of INCOMPLETE UNAUTHORIZED
+CLAIM, PENDING - REASON UNKNOWN, COMPLETE/PENDING REVIEW,
+APPEAL/NOTICE OF DISAGREE RECV or APPEAL/ISSUED STATMENT OF CASE.
+  
+A letter will print or be flagged for printing (depending upon your
+parameter set-up) if the request causes the status to change, or 
+requests additional information.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>REQ^<a href="http://code.osehra.org/dox/Routine_FBUCED.html">FBUCED</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,126 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTIzMDM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORCHART MEDS MENU (2303) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTIzMDM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORCHART MEDS MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Meds Tab menu</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-46.html">ORB BLANK LINE1</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;13</dt>
+<dt>FORMAT CODE:  &nbsp;&nbsp;output only</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2262.html">ORCHANGE LIST</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CV</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;21</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2223.html">ORC PATIENT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SP</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;31</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2236.html">ORCHART TABS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CC</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;22</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2308.html">ORC ADD MED</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;NW</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2227.html">ORC ADD ORDERS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AD</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;12</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2418.html">ORC CLOSE CHART</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;Q</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;32</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-47.html">ORB BLANK LINE2</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;23</dt>
+<dt>FORMAT CODE:  &nbsp;&nbsp;output only</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-48.html">ORB BLANK LINE3</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;33</dt>
+<dt>FORMAT CODE:  &nbsp;&nbsp;output only</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I 1 X:$D(^ORD(101,+$P(^ORD(101,DA(1),10,DA,0),U),24)) ^(24)</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D PHDR^<a href="http://code.osehra.org/dox/Routine_ORCHART.html">ORCHART</a></td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1999-04-16 15:27:50</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,90 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA0NTM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBBA BATCH DFT (10453) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA0NTM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBBA BATCH DFT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>PFSS Charge Batch Processing</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PFSS CHARGE BATCH PROCESSING</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The menu option is used to schedule via TaskManager the PFSS Charge
+Batch Processor.  Normally, this option should be scheduled to run
+once daily at a time of low system activity.
+  
+When the batch processor starts, it will set data into two fields
+in the PFSS SITE PARAMETERS file (#372):
+(1) The CHARGE PROCESSOR RUNNING field (#.1) will be set to "YES".
+(2) The CHARGE PROCESS START TIME field (#.11) will be set to the
+current system date/time.
+  
+When charge batch processing is complete, then:
+(1) The CHARGE PROCESSOR RUNNING field (#.1) will be set to "NO".
+(2) The CHARGE PROCESS START TIME field (#.11) will be deleted.
+  
+When a charge batch processor job is started, it always checks the
+status of the CHARGE PROCESSOR RUNNING field.  If this field is set to
+"YES", then the job quits immediately.  This insures that only one
+batch processor is running at any given time.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_IBBADFTO.html">IBBADFTO</a></td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

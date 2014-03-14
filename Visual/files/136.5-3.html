@@ -1,0 +1,109 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTM2LjUtMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SYSTEMIC SEPSIS (3) &nbsp;&nbsp;  PERIOPERATIVE OCCURRENCE CATEGORY (136.5)</h1>
+<div id="demo"><table id="MTM2LjUtMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OCCURRENCE CATEGORY</td>
+<td>SYSTEMIC SEPSIS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Definition Revised (2007):
+Sepsis is a vast clinical entity that takes a variety of forms. The 
+spectrum of disorders spans from relatively mild physiologic 
+abnormalities to septic shock. Please report the most significant level
+using the criteria below:
+ 
+1. Sepsis: Sepsis is the systemic response to infection. Report this 
+variable if the patient has clinical signs and symptoms of SIRS. SIRS 
+is a widespread inflammatory response to a variety of severe clinical
+insults. This syndrome is clinically recognized by the presence of two 
+or more of the following:
+   - Temp &gt;38 degrees C or &lt;36 degrees C
+   - HR &gt;90 bpm
+   - RR &gt;20 breaths/min or PaCO2 &lt;32 mmHg(&lt;4.3 kPa)
+   - WBC &gt;12,000 cell/mm3, &lt;4000 cells/mm3, or &gt;10% immature (band) 
+     forms
+   - Anion gap acidosis: this is defined by either:
+      [Na + K] - [Cl + HCO3 (or serum CO2)]. If this number is 
+      greater than 16, then an anion gap acidosis is present.
+     or
+      Na - [Cl + HCO3 (or serum CO2)]. If this number is greater
+      than 12, then an anion gap acidosis is present.
+ 
+ and one of the following:
+   - positive blood culture
+   - clinical documentation of purulence or positive culture from any 
+     site thought to be causative
+ 
+2. Severe Sepsis/Septic Shock: Sepsis is considered severe when it is 
+associated with organ and/or circulatory dysfunction. Report this 
+variable if the patient has the clinical signs and symptoms of SIRS or 
+sepsis AND documented organ and/or circulatory dysfunction. Examples of
+organ dysfunction include: oliguria, acute alteration in mental status,
+acute respiratory distress. Examples of circulatory dysfunction 
+include: hypotension, requirement of inotropic or vasopressor agents.
+ 
+* For the patient that had sepsis preoperatively, worsening of any of 
+the above signs postoperatively would be reported as a postoperative 
+sepsis.
+ 
+Examples:
+ 
+A patient comes into the emergency room with signs of sepsis - WBC 31, 
+Temperature 104. CT shows an abdominal abscess. He is given antibiotics
+and is then taken emergently to the OR to drain the abscess. He 
+receives antibiotics intraoperatively. Postoperatively his WBC and
+Temperature are trending down.
+  POD#1 WBC 24, Temp 102 
+  POD#2 WBC 14, Temp 100 
+  POD#3 WBC 10, Temp 99 
+This patient does not have postoperative sepsis as his WBC and 
+Temperature are improving each postoperative day. 
+ 
+Patient comes into the ER with s/s of sepsis - WBC 31, Temp 104. CT 
+shows an abdominal abscess. He is given antibiotics and is taken 
+emergently to the OR to drain the abscess. He receives antibiotics 
+intraoperatively. Postoperatively his WBC and Temp are as follows:  
+  POD#1 WBC 28, Temp 103
+  POD#2 WBC 24, Temp 102.6
+  POD#3 WBC 22, Temp 102 
+  POD#4 WBC 21, Temp 101.6
+  POD#5 WBC 30, Temp 104  
+This patient does have postoperative sepsis because on postoperative 
+day #5, his WBC and Temperature increase. The patient is having
+worsening of the defined signs of sepsis.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

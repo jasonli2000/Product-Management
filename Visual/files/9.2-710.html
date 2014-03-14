@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTcxMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ECCP (710) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTcxMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ECCP</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Print Category and Procedure Summary</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+** You must have locations, DSS Units, local categories, and procedures 
+defined before using this option. ** 
+ 
+** You might want to print this report as a reference guide for data 
+entry personnel at your facility. **
+ 
+This option allows you to print/display the Event Code Screens for one 
+or all DSS Units within a specified location.  If your DSS Units are 
+defined to group procedures by categories, you can select one or all 
+categories.  All procedures print for each category.  The output includes
+ - Run Date 
+ - Location 
+ - Service 
+ - DSS Unit 
+ - Category (if applicable) 
+ - Procedure Name 
+ - National Number 
+ - Associated Clinic (if applicable) 
+ 
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1995-04-24 13:46:16</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>EXIT EXECUTE STATEMENT</td>
+<td>W @IOF</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

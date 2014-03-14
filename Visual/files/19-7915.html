@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzkxNQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCA RCDMC LESSER WITHHOLDING (7915) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzkxNQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCA RCDMC LESSER WITHHOLDING</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Enter Lesser DMC Withholding Amount</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ENTER LESSER DMC WITHHOLDING A</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Normally, when a patient is referred to DMC, the total amount owed is
+withheld.  This option will allow the local sites to enter a lesser
+amount.  That amount then will be deducted from the debtor monthly until
+the full amount owed is collected.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>LESSW^<a href="http://code.osehra.org/dox/Routine_RCDMC90U.html">RCDMC90U</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

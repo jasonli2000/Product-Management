@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA3ODA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRSA RECESS VIEWER-NURSE (10780) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA3ODA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRSA RECESS VIEWER-NURSE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Review FY Recess for 9 Month AWS Employee</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>REVIEW FY RECESS FOR 9 MONTH A</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>PRSAWS9</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is a view only option that provides a display of the recess schedule
+for a 9 month/3 month alternate work schedule (AWS).  To select a 9
+month/3 month AWS recess schedule, enter a fiscal year.  Once the schedule
+is selected, enter actions at the Select Action prompt to navigate through
+the recess schedule, print the recess schedule and display a summary.  
+Nurses must hold the PRSAWS9 security key to access this option.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>Short Menu Text</td>
+<td>Recess Viewer</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>NURSE^<a href="http://code.osehra.org/dox/Routine_PRSARC.html">PRSARC</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

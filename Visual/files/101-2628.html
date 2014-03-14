@@ -1,0 +1,99 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI2Mjg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRCACTM CHANGE VIEW (2628) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI2Mjg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRCACTM CHANGE VIEW</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Change View ...</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is the menu of selection criteria for consults (date range, service,
+or status).
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2601.html">GMRCACT TRK DATE CHANGE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DT</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2616.html">GMRCACT VIEW BY STATUS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;ST</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-545.html">GMRCACT SELECT SERVICE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SS</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2629.html">GMRCB BLANK LINE</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-44.html">CONSULT/REQUEST TRACKING</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D EXIT^<a href="http://code.osehra.org/dox/Routine_GMRCSLMA.html">GMRCSLMA</a>("R")</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>W ""</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2000-05-25 14:46:18</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

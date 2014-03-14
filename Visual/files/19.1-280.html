@@ -1,0 +1,55 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTkuMS0yODA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRPF DEFERRAL OVERRIDE (280) &nbsp;&nbsp;  SECURITY KEY (19.1)</h1>
+<div id="demo"><table id="MTkuMS0yODA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRPF DEFERRAL OVERRIDE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This key is used to authorize an individual to override a deferral
+date on an account and to disperse funds.  It does not allow
+an individual to overdraw the account.
+ 
+To assure backward compatibility, If the key has NOT been assigned to
+anyone, all clerks may override a deferral.  However if even one person
+has been assigned the key, ALL persons needing to override a transaction
+will require the key.
+ 
+This key should be assigned to a lead clerk, supervisor, assistant chief
+or chief.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

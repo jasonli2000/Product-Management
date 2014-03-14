@@ -1,0 +1,149 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE0MTY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PXCE SDAM LIST MENU (1416) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE0MTY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PXCE SDAM LIST MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Appointment Lists</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This action allows you to change which appointments will be displayed
+based on their status of the appointments. For example, you may change the
+display to list cancelled, checked in, checked out, future appointments,
+inpatient appointments, appointment where no action has been taken, non
+count appointments, no show appointments or all appointments.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-624.html">SDAM LIST CHECKED IN</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CI</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-625.html">SDAM LIST NO SHOWS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;NS</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-626.html">SDAM LIST ALL</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;TA</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-628.html">SDAM LIST NO ACTION</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;NA</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-647.html">SDAM LIST CANCELLED</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CA</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-653.html">SDAM LIST FUTURE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;FU</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;6</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-654.html">SDAM LIST INPATIENT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;IP</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;7</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-678.html">SDAM LIST NON-COUNT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;NC</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;8</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-627.html">SDAM LIST CHECKED OUT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CO</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;9</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-111.html">PCE PATIENT CARE ENCOUNTER</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>S:'$D(VALMBCK) VALMBCK="" D EXIT^<a href="http://code.osehra.org/dox/Routine_PXCESDAM.html">PXCESDAM</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D FULL^<a href="http://code.osehra.org/dox/Routine_VALM1.html">VALM1</a> S XQORM(0)="1A"</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>W ""</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select List:</td>
+</tr>
+<tr>
+<td>MENU DEFAULT</td>
+<td>Total Appt Profile</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>40</td>
+</tr>
+<tr>
+<td>IDENTIFIER</td>
+<td>AL</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1997-08-04 11:51:14</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,50 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS00NDQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>REQUEST FOR QUOTATION (444) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS00NDQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>REQUEST FOR QUOTATION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file serves as a worksheet for the Request for Quotation process.
+The Purchasing agent can edit data imported from one or more 2237s.
+This data is then the basis for the electronically submitted RFQ.
+Correspondence via 864 Transactions (Text Messages) are stored in a
+multiple of this file.  The quotes submitted by vendors are also stored
+in a multiple of this file.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,668 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuNC0xNTU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VITEK (155) &nbsp;&nbsp;  AUTO INSTRUMENT (62.4)</h1>
+<div id="demo"><table id="NjIuNC0xNTU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VITEK</td>
+</tr>
+<tr>
+<td>PROGRAM</td>
+<td>LAMIVTK</td>
+</tr>
+<tr>
+<td>LOAD/WORK LIST</td>
+<td>File: 68.2, IEN: 15</td>
+</tr>
+<tr>
+<td>ENTRY for LAGEN ROUTINE</td>
+<td>Accession cross-reference</td>
+</tr>
+<tr>
+<td>CROSS LINKED BY</td>
+<td>+ID</td>
+</tr>
+<tr>
+<td>*ECHO ALL INPUT</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>METHOD</td>
+<td>VITEK</td>
+</tr>
+<tr>
+<td>DEFAULT ACCESSION AREA</td>
+<td><a href="68-12.html">MICROBIOLOGY</a></td>
+</tr>
+<tr>
+<td>OVERLAY DATA</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>NEW DATA</td>
+<td>D NEW^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>RESTART</td>
+<td>D RESTART^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>HANDSHAKE RESPONSE</td>
+<td>S OUT=$C(6)</td>
+</tr>
+<tr>
+<td>MICRO CARD TYPE</td>
+<td>
+<ol>
+<li>
+<dt>MICRO CARD TYPE:  &nbsp;&nbsp;0E</dt>
+<dt>CARD NAME:  &nbsp;&nbsp;GNI</dt>
+<dt>PROCESS CARD CALL:  &nbsp;&nbsp;D 512^LAMIV12</dt>
+<dl><dt>MESSAGE:</dt>
+<dd>
+<ol>
+<li>
+<dt>CODE:  &nbsp;&nbsp;43</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Suggested - Serology confirmation required</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;44</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;1</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Suggested - confirm with indole reaction</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;45</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Questionable Inoculum</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;46</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Questionable Biopattern</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;47</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Good Confidence, Marginal Separation</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>MICRO CARD TYPE:  &nbsp;&nbsp;13</dt>
+<dt>CARD NAME:  &nbsp;&nbsp;GNS</dt>
+<dt>PROCESS CARD CALL:  &nbsp;&nbsp;D ^LAMIV12</dt>
+<dl><dt>MESSAGE:</dt>
+<dd>
+<ol>
+<li>
+<dt>CODE:  &nbsp;&nbsp;46</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Oxidase negative</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;46</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;1</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Oxidase positive</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>MICRO CARD TYPE:  &nbsp;&nbsp;05</dt>
+<dt>CARD NAME:  &nbsp;&nbsp;YBC</dt>
+<dt>PROCESS CARD CALL:  &nbsp;&nbsp;D 54^LAMIV11</dt>
+<dl><dt>MESSAGE:</dt>
+<dd>
+<ol>
+<li>
+<dt>CODE:  &nbsp;&nbsp;36</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Trichosporon penicillatum if true hyphae, arthrospores,blastospores present</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;41</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;2</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;NOTE 4: Sucrose Negative.  See tech bulletin.</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;42</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;2</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;NOTE 4: Sucrose Negative.  See tech bulletin</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;43</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Questional Biopattern</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;44</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Good confidence, Marginal Separation</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;45</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;NOTE 1: Glucose well Negative</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;46</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;NOTE 2: Check inoculum.</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;47</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;NOTE 3: Supplemental tests required.</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>MICRO CARD TYPE:  &nbsp;&nbsp;14</dt>
+<dt>CARD NAME:  &nbsp;&nbsp;GNU</dt>
+<dt>PROCESS CARD CALL:  &nbsp;&nbsp;D ^LAMIV12</dt>
+<dl><dt>MESSAGE:</dt>
+<dd>
+<ol>
+<li>
+<dt>CODE:  &nbsp;&nbsp;41</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;2</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;NOTE 4: Sucrose Negative.  See tech bulletin.</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;42</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;2</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;NOTE 4: Sucrose Negative.  See tech bulletin</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;43</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Questional Biopattern</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;44</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Good confidence, Marginal Separation</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;45</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;NOTE 1: Glucose well Negative</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;46</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;NOTE 2: Check inoculum.</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;47</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;NOTE 3: Supplemental tests required.</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>MICRO CARD TYPE:  &nbsp;&nbsp;0F</dt>
+<dt>CARD NAME:  &nbsp;&nbsp;GPI</dt>
+<dt>PROCESS CARD CALL:  &nbsp;&nbsp;D 511^LAMIV11</dt>
+<dl><dt>MESSAGE:</dt>
+<dd>
+<ol>
+<li>
+<dt>CODE:  &nbsp;&nbsp;46</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Questionable Biopattern</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;47</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Good confidence, Marginal Separation</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>MICRO CARD TYPE:  &nbsp;&nbsp;0FB</dt>
+<dt>CARD NAME:  &nbsp;&nbsp;GPI-2</dt>
+<dt>PROCESS CARD CALL:  &nbsp;&nbsp;D 510^LAMIV10</dt>
+<dl><dt>MESSAGE:</dt>
+<dd>
+<ol>
+<li>
+<dt>CODE:  &nbsp;&nbsp;46</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Questionable Biopattern</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;47</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Good Confidence, Marginal Separation</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>MICRO CARD TYPE:  &nbsp;&nbsp;0B</dt>
+<dt>CARD NAME:  &nbsp;&nbsp;UID-1</dt>
+<dt>PROCESS CARD CALL:  &nbsp;&nbsp;D ^LAMIV10</dt>
+<dl><dt>MESSAGE:</dt>
+<dd>
+<ol>
+<li>
+<dt>CODE:  &nbsp;&nbsp;43</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Suggest confirmation of non-stained globules</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>MICRO CARD TYPE:  &nbsp;&nbsp;12</dt>
+<dt>CARD NAME:  &nbsp;&nbsp;UID-3</dt>
+<dt>PROCESS CARD CALL:  &nbsp;&nbsp;D 510^LAMIV10</dt>
+<dl><dt>MESSAGE:</dt>
+<dd>
+<ol>
+<li>
+<dt>CODE:  &nbsp;&nbsp;46</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Oxidase negative</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;46</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;1</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Oxidase positive</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>MICRO CARD TYPE:  &nbsp;&nbsp;0C</dt>
+<dt>CARD NAME:  &nbsp;&nbsp;BACIL</dt>
+<dt>PROCESS CARD CALL:  &nbsp;&nbsp;D 52^LAMIV10</dt>
+<dl><dt>MESSAGE:</dt>
+<dd>
+<ol>
+<li>
+<dt>CODE:  &nbsp;&nbsp;43</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Suggest confirmation of non-stained globules</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>MICRO CARD TYPE:  &nbsp;&nbsp;10</dt>
+<dt>CARD NAME:  &nbsp;&nbsp;GPS-M</dt>
+<dt>PROCESS CARD CALL:  &nbsp;&nbsp;D ^LAMIV11</dt>
+<dl><dt>MESSAGE:</dt>
+<dd>
+<ol>
+<li>
+<dt>CODE:  &nbsp;&nbsp;46</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;CATALASE NEGATIVE</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;46</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;1</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;CATALASE POSITIVE</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;47</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Catalase Negative/Enterococcus</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;47</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;1</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Catalase Negative/Non-enterococcus</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;47</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;2</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Catalase Positive/Coagulase positive</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;47</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;3</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Catalase positive/Coagulase negative</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;48</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Beta Lactamase negative</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;49</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;1</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Beta Lactamase positive</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;50</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;0</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;CF, CZ, AMOX/CA, AMP/SULB reported as "R" for oxacillin- resistant staph- NCCLS</dt>
+</li>
+<li>
+<dt>CODE:  &nbsp;&nbsp;51</dt>
+<dt>FLAG VALUE:  &nbsp;&nbsp;1</dt>
+<dt>MESSAGE:  &nbsp;&nbsp;Possible OX, CF, CZ, AMOX/CA, AMP/SULB resistant organism- NCCLS</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERFACE NOTES</td>
+<td><pre>
+The electrical connection of the VITEK can be done with the following.
+   VITEK                     LSI
+    2---------\/-------------2
+    3---------/\-------------3
+    4--|
+    5--|
+ 
+    6--|
+    8--|---------------------20
+   20--|
+ 
+    7------------------------7
+ 
+To set up the VITEK unidirectionally you will need to run the program
+CIEP on the VITEK to configure the instrument.  If you are running with
+bidirectional you will need to run the program BCIEP to accomplish this.
+ 
+To set up the VITEK for unidirectional the following paramaters should
+be set as:
+ 
+ON/OFF SWITCH:      OFF
+RETRY WAIT:         10 SECONDS   (SET TO MAX ALLOWED)
+ACK WAIT:           3  SECONDS   (SET TO MAX ALLOWED)
+NACKS BEFORE AUTO DISABLE:    3
+STX/ETX PROTOCOL:   "SSS"/&lt;CR&gt;&lt;LF&gt;
+HOST PROTOCAL CHARACTERISTICS:      1200 BAUD, NO PARITY, 8 BIT/CHAR,
+                                           2 STOP BITS
+XON TIME-OUT VALUE:  10
+DELAY BETWEEN CHARACTERS:  50
+DISPLAY DATA OPTION:    OFF
+AMS COMPUTER INTERFACE:   ENABLED
+ 
+For bidirectional you have the following parameters.
+BIDIRECTIONAL INTERFACE (UPLOAD) IS :   ENABLED
+BIDIRECTIONAL INTERFACE (DOWNLOAD) IS:  ENABLED
+DOWNLOAD PORT:   /dev/tty1
+UPLOAD PORT:     /dev/tty1
+TIMEOUTS:
+  CHECKSUM &lt;ACK&gt;:  default is 3  set as high as possible
+  HOST RESPONSE:   defalut is 3  set as high as possible
+  XON/XOFF:        default is 10  set higher if having problems
+RETRY LIMITS:
+  CHECKSUM ERROR: 3
+  &lt;ENQ&gt;:   3
+RETRY INTERVALS:
+  CHECKSUM ERROR:  10
+  &lt;ENQ&gt;:     10
+DELAYS:
+  LAST MASTER:       DEFAULT 10 SET HIGHER
+  INTER-RECORD:     DEFAULT 10 SET HIGHER
+  INTERMESSAGE:   DEFAULT 10   SET HIGHER
+END OF RECORD FORMATS
+  STX: ENABLED      ETX: DISABLED
+  RS:  DISABLED      GS: DISABLED
+TOTAL NUMBER OF FAILED MESSAGED ALLOWED:  3
+FIELD TERMINATION CHARACTER(S):  |
+START UP MESSAGE:  DISABLED
+ 
+In some instances the VITEK will not recieve our acknowledge back in the
+10 second time limit of VITEK and will retransmit the record a second time.
+If this is occuring from the console of the VITEK enter /ETC/HOSTCTS OFF
+This command will in most cases clear up double sending of records.
+ 
+The VITEK has one caution that must be remembered.  If during transmission
+the VITEK does not receive acknowledgement from the CPU that the records
+had been received within 3 tries it will turn the interface off.  When 
+this occurs several things must be remembered.
+1.  The VITEK will not transmit again until the operator turns the
+interface back on.
+2.  Once the interface has been turned back on the operator can retransmit
+records ONLY if the cards have NOT been removed from the machine.  If they
+have been removed the entire test must be rerun.
+ 
+This node of the Auto Instrument file is configured to support revision
+AI of the VITEK software.  Sometime around release of Revision L there was
+a change in the reporting of values out of the VITEK.  Then with the release
+of Revisions W and above to Revision AI they have periodically changed
+values being reported.  The entries in this file have been set up for
+Revision AI and therefore NOTE that we will support only revision AI or
+later.
+ 
+The VITEK has several tables which need to be built before the
+instrument can be run.  These tables have an entry and then a
+abbrreviation.  These tables are set up to match your DHCP tables.
+ 
+Now we are ready to start setting up the VITEK entry which has several
+steps that must be followed in sequence in order to set the entry up
+properly.
+ 
+STEP 1.
+The VITEK uses a large number of drugs when doing its reporting.
+You MUST have all drugs entered into the Antimicrobial Sensitivity file
+(62.06) and the Lab Data File (63) before setting up the Autoinstrument
+file (62.4).  See the Lab installation guide for particulars for 
+adding new drugs to the system.
+ 
+STEP 2.
+Also since the VITEK can report over 100 different organisms make sure that
+all the organisms are entered into the Etiology file (61.2) before setting
+up the Autoinstrument node (62.4).  See lab installation guide for
+procedures on adding a new organism to the etiology file.
+ 
+STEP 3.
+Step thru the beginning fields and fill them in as you would normally
+do.  Several fields will need to be set up differently depending on
+whether you are running unidirectionally or bidirectionally.
+These fields are:
+Program Name  uni = LAMIVTK  bi = LAMIVTKU
+Handshake response   uni = S OUT=$C(6)  bi = D ^LAMIVTKC
+ 
+STEP 4.
+The entry comes with 10 card types already started for you.  These entries
+are never to be deleted as other entries will refer back to them.
+Using your VITEK interface documentation enter the card type you will
+want to enter organisms or drugs for.  Step thru the prompts until you
+come to the Select Organism prompt.  Enter the organism name and its
+card code for each organism for this card type.   Once you have organisms
+entered for the intitial 10 entries you do not have to enter organisms for
+any of the following card types as the code will refer back to these
+initial entries.
+ 
+When entering a new card the process card call field needs to be filled
+in with the MUMPS code listed below for PRocessing call.  For example
+if you want to process a GNS-F1 card which has a card code of 54 you
+would enter 'D ^LAMIV12'.
+ 
+Card  Ref. 
+Code  Spec.   Name    Processing call
+ 01   5.1     GPS-A   D ^LAMIV11
+ 02   5.3     GPSSA   D ^LAMIV11
+ 03   5.5     GPSTA   D ^LAMIV11
+ 04                   NOT USED
+ 05   5.4     YBC     D 54^LAMIV11
+ 06-0A                CARD TYPES NOT USED
+ 0B   5.10    UID-1   D ^LAMIV10
+ 0C   5.2     BACIL   D 52^LAMIV10
+ 0D   XXX     BIOLD   NOT SUPPORTED BY VITEK
+ 0E   5.12    GNI     D 512^LAMIV12
+ 0F   5.11    GPI     D 511^LAMIV11
+ 0FB  5.11    GPI-2   Mate to '0F' which holds 2nd organism table.
+                      Called from '0F' card if needed.
+ 10   5.13    GPS-M   D ^LAMIV11
+ 11   XXX     SCC     NOT SUPPORTED BY VITEK
+ 12   5.10    UID-3   D 510^LAMIV10
+ 13   5.14    GNS     D ^LAMIV12
+ 14   5.15    GNU     D ^LAMIV12
+ 15   5.16    GNS-T   D ^LAMIV12
+ 16   5.17    GNU-T   D ^LAMIV12
+ 17-A4   GNS FLEX     D ^LAMIV12
+ 
+Since so many of the cards have the same organisms identified they are
+entered only once on one type of card.  The Gram Positive cards
+use 1 of 2 tables of organisms which are listed under card types '0F'
+and '0FB' and these tables are used for lookup of the organism for all
+gram positive identifications whether it is on an GPI card or on a 
+GPS flex card.  The Gram Negative codes are handled by a single table
+identified under the GNI card and is used for all flex panals also.
+Gram Negative flex cards can list up to 5 organisms on one card and
+when this occurs the organism list is found on the GNS card.
+ 
+The following is a list of where the organisms will be found for 
+the different cards.
+ 
+Card '0F' is the main GPI card, and is used by all GPS cards for
+          Org ID lookup.
+Card '0FB' is the secondary GPI card used to hold second table of
+          organisms.  It is used by processing routine when needed.
+          This card is a Pseudo card and therefore does not have a call.
+Card '0E' is the main GNI card, and is used by all GNS cards for
+          Org ID lookup.
+CARD '10' is the main GPS flex card and is used by all other flex cards
+          for Organism lookup when multiple organisms are identified.
+CARD '05' is the main card used for identifying yeasts.
+CARD '0B' is used to identify urines
+CARd '12' is also used to identify urines.
+CARD '13' is the GNS flex card and is used by all other flex cards
+          for organism lookup when multiple organisms are identified.
+CARD '14' is the GNU flex card and is used by all other flex cards
+          for organism lookup when multiple organisms are identified.
+CARD '0C' is used for Bacillus identification.
+ 
+STEP 5
+Now step to the Select drug prompt for the card type.  If the
+documentation has a list of drugs for that card type then enter the
+drug name, its param 1, its card code, and the print order.
+ 
+Many of the drugs listed for a card type have more than one code
+associated with the drug.  When this occurs you will add the drug
+name to the listing once for each code associated with that drug.
+ 
+The VITEK data is processed by a set of routines that start LAMIV.
+        LAMIV00 is routine used to determine MIC value for the drug.
+                The routine is called from the param1 field of the drug
+                subfield of the micro card type field.  The param1 is in
+                the form: "S RUN="x"_U_LARTN D @RUN  where "x" is the line
+                tag to enter the routine LAMIV00..  The Tag line in the
+                routine LAMIV00 for each entry point tells which drug codes
+                and type of card (pos, neg) are valid for this entry point.
+                For example if you are using a gram negative card which
+                reports out the drug code as 'C' for tetracycline you 
+                would find by looking at the routine LAMIV00 that the 
+                proper entry point would be at 'I' and the entry in param1
+                would then be 'S LARTN="I"_U_"LAMIV00" D @LARTN'.
+        LAMIV10 is routine used for processing bacillus and urine ID cards
+        LAMIV11 is routine for processing Gram Positive identification,
+                flex cards and Yeast cards.
+        LAMIV12 is routine for processing Gram Negative identification
+                and Gram Negative flex cards cards.
+ 
+The above routines will convert the VITEK coded data to an organism
+name, a drug name, a raw MIC value, and an interpretation which will
+all be shown to you upon verification.
+ 
+Certain drugs have codes which can not be entered thru fileman.  These
+drug codes are "^@?".  These characters have special meaning to FILEMAN
+and cannot be entered directly.  To get around this problem the routine
+LAMICRA is included.  This routine will prompt for the autoinstrument
+entry, the card type and then walk thru the drug nodes displaying the
+entered code.  You can enter the code or enter a return at this time.
+The routine will either continue when a return is entered or enter the
+code into the file and build the "C" cross reference entry for you.
+ 
+****NOTE**** If the autoinstrument file is ever recross referenced you
+will have to reenter these codes as they will be lost.
+ 
+The last field here is the print order field.  This field is used by
+the verify code to display the list of drugs in whatever order you
+chose.  This was primarily added so that the organisms and drugs would
+display in the same order as the printed VITEK form.
+ 
+Occasionally VITEK will start producing a new card type.  These cards will
+usually have a card code above A4.  If you want to use the new card be
+sure of the type of card it is and use the process card call that is used
+for a similar card.
+ 
+When running in bidirectional mode some additional fields need to be
+filled in.
+ 
+The FILE BUILD ROUTINE field needs to have the program name LAMIVTKD
+which builds and stores the download records from the load list file.
+ 
+In the Lab Site Parameter file you will need to respond to the new field
+DOWNLOAD FULL DATA.  If you answer YES the routines will download all
+of the data available about the patient and test.  If you answer NO the
+routines will only download the minimum information needed by the 
+instrument to run the test.
+ 
+In the LAB TEST file those tests that are to be downloaded will need a
+unique number assigned to it (0-9) in the field MICRO PREFIX CODE.
+ 
+The auto instrument file has 3 additional fields to fill in.
+Send tray/cup - which is a yes/no answer and is the default display
+when you start generating the download file.
+Queue build - is a yes/no answer that is the default display when
+starting to generate a download file and determines if the file is
+built while you wait or is queued out to run by itself giving you
+you terminal back immediately.
+ 
+Be very aware that the verify routines used by the rest of the LAB will
+NOT work for microbiology.  Use only the verify routines for micro
+which will be supplied.
+</pre>
+</td>
+</tr>
+<tr>
+<td>FILE BUILD ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_LAMIVTKD.html">LAMIVTKD</a></td>
+</tr>
+<tr>
+<td>SEND TRAY/CUP LOCATION</td>
+<td>no</td>
+</tr>
+<tr>
+<td>QUEUE BUILD</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

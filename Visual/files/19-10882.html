@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA4ODI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RCDMC EDIT DMC REPORT # OF DAY (10882) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA4ODI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RCDMC EDIT DMC REPORT # OF DAY</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Enter/Edit DMC Report # Days for Episodes of Care</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ENTER/EDIT DMC REPORT # DAYS F</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows users to enter/edit the "NUMBER OF DAYS FOR DMC 
+REPORTS" site parameter in the AR Site Parameter (#342) file. This will
+allow the user to select how many days in the past bills for episodes of
+care will be included on the following reports when they are scheduled by
+IRM to be run on a recurring basis:
+     DMC Debt Validity Report
+     DMC Debt Validity Management Report
+     Rated Disability Eligibility Change Report
+ 
+The minimum value for this site parameter is 365 days (1 year) and the
+maximum value is 3650 days (10 years). If no value is added for this site 
+parameter the default value will be 365 days.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EDITRDAY^<a href="http://code.osehra.org/dox/Routine_RCMSITE.html">RCMSITE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

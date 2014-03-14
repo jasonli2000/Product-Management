@@ -1,0 +1,62 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS05MDAwMDEwLjE4").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>V CPT (9000010.18) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS05MDAwMDEwLjE4" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>V CPT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The V CPT file has been defined for joint use by the Indian Health Service
+and the Department of Veteran Affairs. This is the file used to store CPT
+related services performed at a visit.  Data must exist for a patient and
+a visit before data can be entered in the V CPT file.
+ 
+This file is used in the VA to identify procedures that were done to a
+patient at an encounter or occassion of service.  The procedures may
+have been performed by a primary or secondary provider of patient
+care.  Procedures checked off and scanned from ambulatory care encounter
+forms are stored here to record that they were done.  Results of
+procedures are not included.
+ 
+This file is restricted to procedures that have a CPT code.  The V
+Treatment file is used to store procedures without CPT codes that do not
+fit into any other V-file category.
+ 
+The Provider Narrative field represents the preferred text for this
+procedure as defined by the clinician.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

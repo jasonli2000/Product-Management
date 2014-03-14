@@ -1,0 +1,63 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS05ODcuNQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>WII ADMISSIONS DISCHARGES (987.5) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS05ODcuNQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>WII ADMISSIONS DISCHARGES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The purpose of this file is to track admissions and discharges of Active 
+duty Veterans and to facilitate the notification of these movements to 
+the DOD. This file is populated by the weekly back ground job [WII BUILD 
+ADT EVENTS].  In order for a patient to be in this file, the veteran must 
+have one of three eligibilities entered in the Patient File (#2). TRICARE 
+, SHARING AGREEMENT or OTHER FEDERAL AGENCY. 
+ 
+Entries that have a status of approved to transmit will be sent to the 
+VISN for review and then roll up to the DOD.  
+ 
+In the case of admission and discharge occurring in the same collection 
+period there will only be one entry.  In the case that a discharge occurs 
+in a subsequent collection period there will be a second entry.  Entries 
+are dinum to the Patient Movement file (#405)
+ 
+Entries into this file should NOT be done manually.
+The option WII REVIEW ADT EVENTS WILL utilizes List Manager to allow a 
+point of contact at the local facility to approve entries for 
+transmission or just the opposite block transmission.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

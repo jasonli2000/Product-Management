@@ -1,0 +1,54 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OTguOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ROR LAB SEARCH (798.9) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OTguOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ROR LAB SEARCH</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Lab search criteria are stored in this file. These
+criteria are referenced by the selection rules and
+used in the search for Lab results.
+ 
+It is possible but not recommended to use the same
+criterion for several different registries.
+ 
+Records of the file are uniquely identified by the
+criterion name. The "A" primary key and the "B"
+uniqueness index are used for this purpose.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

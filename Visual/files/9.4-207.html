@@ -1,0 +1,741 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTIwNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VBECS (207) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTIwNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VBECS</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>VBEC</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>VistA Blood Establishment Computer System</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This package, VBECS, exists in the M environment to
+perform integrity checks on existing VistA Blood Bank
+data, convert relevant data for migration to parallel
+applications, and to migrate VistA data to parallel
+applications when specific application events are
+triggered.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DEVELOPMENT ISC</td>
+<td>Hines Office of Information</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;1.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2009-04-23 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;2009-06-09 00:00:00</dt>
+<dt>INSTALLED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION OF ENHANCEMENTS:  &nbsp;&nbsp;<pre>
+VBEC*1*0 is being exported as part of the VBECS_BUNDLE_1.KID package 
+release. The installation of this bundle will be controlled by phase 
+release.  An Implementation Manager will be assigned to your site and 
+will contact your POC for VBECS and will provide your site with the 
+location of the KIDS Host Files prior to your scheduled installation date 
+Installation Sequence.  The VBECS BUNDLE is a host file that consists of 
+both VBEC*1*0 and LR*5.2*325.  Installation of the VBECS BUNDLE will 
+automatically install both VBEC*1*0 and LR*5.2*325
+=====================
+ 
+I. OVERVIEW
+The VistA Blood Establishment Computer Software (VBECS) shall facilitate 
+ongoing compliance with Food and Drug Administration (FDA) standards for 
+medical devices and enhance the Department of Veterans Affairs (VA) 
+Veterans Health Administration's (VHA) ability to deliver quality 
+services to meet the needs of the user community. VBECS is considered an 
+encapsulated medical device and therefore does not communicate directly 
+with other VistA applications.
+ 
+Two new namespaces are being introduced into the VistA enterprise with 
+the release of VBECS. The first, gov.va.med.vbecs, represents the Blood 
+Bank medical device software. The second, VBEC, represents the VBECS 
+Application Interfacing Support software. The VBEC namespace, created in 
+the VBEC 1.0 KIDS build, will be added to the Package file in VistA and 
+is used to identify the M software and files that support interfacing 
+other VistA applications with the Blood Bank medical device. This 
+software is not released as part of the Blood Bank medical device.
+ 
+II. FUNCTIONAL OVERVIEW
+The reengineered Blood Bank system uses VistALink and Health Level Seven 
+(HL7) messaging for data exchange with a client-server mode application 
+interfacing architecture through M Application Programmer Interfaces 
+(APIs), VistA Remote Procedure Calls (RPCs), and HL7 interfaces released 
+in the VBEC 1.0 KIDS build.
+ 
+This software will provide a transparent database transition through the 
+use of M APIs, RPCs, and HL7 interfaces. The APIs released in this build 
+will allow other VistA applications to continue the retrieval of Blood 
+Bank data stored in the Blood Bank system. The RPCs will allow the Blood 
+Bank system to continue to retrieve data from other VistA applications. 
+The HL7 interfaces will allow the exchange of data between the Blood Bank 
+system and other VistA applications.
+ 
+III. TECHNICAL COMPONENTS
+This section lists the components of the VBECS, and LAB SERVICES 
+installed in VistA by the VBEC BUNDLE 1.0 Multi Package KIDS build that 
+supports VBECS.
+ 
+ 
+MAIL GROUP:
+===========
+ VBECS INTERFACE ADMIN - Receives alert mail messages when problems  
+arise with VBECS Application Interfacing. The users added to this  group 
+would be Lab/Blood Bank supervisors and/or IRM responsible for  managing 
+the VBECS package and interfaces.
+ 
+ROUTINES:
+=========
+VBECA1
+VBECA1A
+VBECA1B
+VBECA1B1
+VBECA3
+VBECA3A
+VBECA3B
+VBECA3C
+VBECA4
+VBECA5A
+VBECA5B
+VBECA6
+VBECA7
+VBECA7A
+VBECA7A1
+VBECA7B
+VBECENV
+VBECHLRT
+VBECLU
+VBECLU0
+VBECLU3
+VBECPOST
+VBECRL
+VBECRPC
+VBECRPC1
+VBECRPCA
+VBECRPCB
+VBECRPCC
+VBECRPCD
+VBECRPCE
+VBECRPCH
+VBECRPCM
+VBECRPCP
+VBECRPCW
+VBECVLC
+ 
+ 
+OPTION:
+=======
+ VBECS VISTALINK CONTEXT - (B)roker type option used by VistALink to
+ authenticate users. All Blood Bank users must have this option
+ assigned as a Secondary Menu Option.
+ 
+ 
+PROTOCOL:
+=========
+ VBECS ADT-AO8 CLIENT - This protocol is used to deliver HL7 messages
+ from VistA to VBECS via the VBECSPTU logical link.
+ 
+ VBECS ADT-A08 ROUTER - This protocol is used to receive an HL7 message
+ from the VAFC ADT-A08 SERVER protocol and executes routing logic to
+ determine whether the message is to be forwarded to VBECS. VBECS
+ receives only messages that contain changes to various patient
+ demographic data.
+ 
+ VBECS ADT-AO8 SERVER - This event driver protocol is triggered by the
+ 
+ VBECS ADT-A40 CLIENT - This protocol is used to deliver the HL7
+ message from VistA to VBECS via the VBECSPTM logical link.
+ 
+ VBECS ADT-A40 SERVER - This event driver protocol is triggered by the
+ 
+ 
+ VBECS OMG CLIENT - This is the subscriber protocol to the VBECS OMG
+ SERVER protocol that receives the HL7 message from VBECS providing
+ order updates to the original order message.
+ 
+ VBECS OMG SERVER - This protocol is triggered when an HL7 message from
+ VBECS is received by the HL7 package.
+ 
+HL7 APPLICATION PARAMETER:
+==========================
+ VBECS - This HL7 Application represents the VBECS side of the VBECS/CPRS 
+interface.
+ 
+ VBECS ADT - This HL7 Application represents the receiving application
+ of the Patient Update and Patient Merge router protocols.
+ 
+ VBECS TRIGGER - This HL7 Application represents the VBECS side of the
+ Patient Update and Patient Merge interfaces.
+ 
+HL LOGICAL LINK:
+================
+ VBECS-OERR - Used to transmit HL7 messages from VBECS to CPRS.
+ 
+ VBECSPTM - Used to transmit HL7 messages from VistA to VBECS when a
+ patient merge event occurs.
+ 
+ VBECSPTU - Used to transmit HL7 messages from VistA to VBECS when a
+ patient update event occurs.
+ 
+PARAMETER DEFINITION:
+=====================
+ VBECS VISTALINK - Parameter definition used to identify all VBECS 
+Parameters.
+ 
+PARAMETERS:
+===========
+ LISTENER IP ADDRESS - Stores the value of the Blood Bank medical
+ device server where the VistALink listener is installed.
+ 
+ LISTENER PORT NUMBER - Stores the value of the port number where Blood
+ Bank medical device VistALink listener is listening.
+ 
+ These Parameters are used by M APIs to build the XML messages used by 
+VistALink.
+ VBECS Blood Products
+ VBECS DSS Extract
+ VBECS Order Entry
+ VBECS Patient ABID
+ VBECS Patient ABO_RH
+ VBECS Patient Available Units
+ VBECS Patient Report
+ VBECS Patient TRRX
+ VBECS Patient Transfusion History
+ VBECS Update Workload Event
+ VBECS Workload
+ 
+REMOTE PROCEDURE:
+=================
+ VBECS ACCESSION AREA LOOKUP
+ VBECS BLOOD BANK USER LOOKUP
+ VBECS DIVISION LOOKUP
+ VBECS DSS EXTRACT
+ VBECS HCPCS CODES LOOKUP
+ VBECS HOSPITAL LOCATION LOOKUP
+ VBECS LAB ACCESSION UID LOOKUP
+ VBECS LAB ORDER LOOKUP BY UID
+ VBECS LAB TEST RESULTS LOOKUP
+ VBECS LABORATORY TEST LOOKUP
+ VBECS MED PROFILE LOOKUP
+ VBECS PATIENT LOOKUP
+ VBECS PROVIDER LOOKUP
+ VBECS WORKLOAD CODES LOOKUP
+ 
+GLOBALS - FILES:
+===============
+ ^VBEC(6002.01, - VBECS WORKLOAD CAPTURE File (#6002.01)
+ 
+ ICRs:
+ =====
+ The following ICRs were created to allow data transfer between the Blood 
+Bank medical device and the VBECS Application Interfacing Support 
+software.
+ 4607, 4608, 4609, 4610, 4611, 4612, 4613, 4614, 4615, 4616, 4617,
+ 4618, 4619, 4620, 4621, 4622, 4623, 4624, 4625, 4626, 4627, 4628, 4633
+ 
+ The following ICRs were created, or modified, to allow data transfer 
+between the VBECS Application Interfacing Support software and other 
+VistA applications.
+ 1587, 1963, 2400, 2503, 2817, 3176, 3177, 3181, 3631, 3879, 4629,
+ 4636, 4766, 4767, 4773, 4774, 4776, 4779,
+ 
+ASSOCIATED REMEDY TICKETS
+=========================
+ N/A
+ 
+TEST SITES:
+===========
+ HEARTLAND-EAST HCS
+ PHILADELPHIA, PA
+ SAN DIEGO, CA
+ 
+SACC Exemptions:
+================
+XINDEX displays the following warning. The Standards And Conventions 
+Committee granted an exemption to allow the use of a star read on May 4th 
+2006.
+ 
+VBECRL   * *  114 Lines,  4099 Bytes, Checksum: B10917646
+         FOR  READ VBECX#VBECREAD:VBECTO SET TOFLAG=$T DO:VBECFRST CHK 
+DO:'VBECS
+          TOP  QUIT:DONE
+   READ+6       I - Star or pound READ used.
+ 
+Installation Sequence 
+======================
+The files listed below represent the patches that will be part of the 
+controlled phased release.  Follow the sequence listed below when your 
+phased installation occurs.
+ 
+  1. LR*5.2*335
+  2. LR*5.2*367
+  3. VBECS Bundle (consisting of VBEC*1*0 and LR*5.2*325)
+  4. VBEC*1.0*1
+  5. OR*3.0*212
+ 
+Documentation Retrieval:
+ 
+Documentation is available for the entire VBECS package on the 
+ANONYMOUS.SOFTWRE directory at one of the following Office of Information 
+(OI) Field Offices.  Sites may retrieve documentation in either ".PDF" or 
+"DOC" format in one of the following ways:
+ 
+1.      The preferred method is to FTP the files from :
+Download.vista.domain.ext
+ 
+2.      Sites may also elect to retrieve documentation directly from a 
+specific server as follows:
+       Albany                  ftp.fo-albany.domain.ext
+       Hines                   ftp.fo-hines.domain.ext
+       Salt Lake City          ftp.fo-slc.domain.ext
+ 
+NOTE:  The documentation files listed below will be listed in each of the 
+VBECS and LR patches that are part of the VBECS package and associate 
+patches, they only need to be downloaded once.
+ 
+File Name                                   Retrieval format:  Binary
+===========                                 ==========================
+Blood Bank Pre-Implementation Data Validation, Mapping, and Conversion 
+ADPAC Guide.doc
+Blood Bank Pre-Implementation Data Validation, Mapping, and Conversion 
+ADPAC Guide.pdf
+Blood Bank Pre-Implementation Data Validation, Mapping, and Conversion 
+Installation and User Guide.doc
+Blood Bank Pre-Implementation Data Validation, Mapping, and Conversion 
+Installation and User Guide.pdf
+Blood Bank Pre-Implementation Data Validation, Mapping, and Conversion 
+Technical Manual.doc
+Blood Bank Pre-Implementation Data Validation, Mapping, and Conversion 
+Technical Manual.pdf
+VBECS Data Conversion Recommended Validation Method.xls
+VBECS Application Interfacing Support Software Installation and User 
+Configuration Guide.doc
+VBECS Application Interfacing Support Software Installation and User 
+Configuration Guide.pdf
+VBECS Implementation Process.xls
+VistA Blood Establishment Computer Software (VBECS) 1.4.0.0 Installation 
+Guide.doc
+VistA Blood Establishment Computer Software (VBECS) 1.4.0.0 Installation 
+Guide.pdf
+VistA Blood Establishment Computer Software (VBECS) 1.4.0.0 Technical 
+Manual-Security Guide.doc
+VistA Blood Establishment Computer Software (VBECS) 1.4.0.0 Technical 
+Manual-Security Guide.pdf
+VistA Blood Establishment Computer Software (VBECS) 1.4.0.0 User Guide.doc
+VistA Blood Establishment Computer Software (VBECS) 1.4.0.0 User Guide.pdf
+Known Defects and Anomalies.doc
+Known Defects and Anomalies.pdf
+ 
+INSTALLATION INSTRUCTIONS:
+==========================
+ 
+ Pre-Installation Items:
+ =======================
+ 
+  Environment Check:
+  ------------------
+Programmer access is required to install this patch. Prior to 
+installation, the installer must ensure the DUZ(0) node of the DUZ array 
+is set to the "@" symbol.
+ 
+  Users on the System:
+  --------------------
+   This patch may be installed with users on the system.
+ 
+  Software Installation Time:
+  ---------------------------
+   The estimated installation time for this patch is less than 
+   5 minutes during non-peak hours.
+ 
+  Queuing:
+  ---------
+   Note: Patch installation requires responses from the installer and
+   must not be queued.
+ 
+  Pre-requisites:
+  ---------------
+   Patch installer must enter the collection sample types for new Lab
+   tests created during installation. Obtain sample types from the
+   Laboratory Information Manager
+ 
+  Namespace:
+  ----------
+   The namespace for the VBECS Application Interfacing Support package is:
+    Name: VBECS - Prefix: VBEC
+ 
+  Required Patches:
+  -----------------
+   Application                          Patch/Build
+   -----------------------------        -----------
+   Laboratory Services                  LR*5.2*187
+                                        LR*5.2*288
+                                        LR*5.2*294
+   Toolkit                              XT*7.3*58
+ 
+  New File and Global Information:
+  --------------------------------
+   There is one new global, ^VBEC.  The ^VBEC global contains the
+   following new file.
+                                                        Journaling
+   File #   File Name                   Global Root     Recommended
+   ------   ------------------------    ------------    -----------
+   6002.01  VBECS WORKLOAD CAPTURE      ^VBEC(6002.01,  YES
+ 
+  VBECS Configuration Checklists:
+  -------------------------------
+   a. Complete Appendix D: Configuration Checklist of the VistA Blood
+      Establishment Computer Software (VBECS) Installation Guide.
+   b. Complete Appendix B: Configuration Worksheet of the VBECS 
+      Application Interfacing Support Software Installation and User
+      Configuration Guide.
+ 
+  Installation Steps:
+  ===================
+ 
+The installation of VBECS and its related patches are being handled as a 
+controlled release. The implementation manager will contact you with the 
+location of the KIDS Host Files prior to your scheduled installation 
+date. The documentation files will be available for download in advance 
+of installation through the anonymous download site.
+ 
+   1. Use the 'LOAD A DISTRIBUTION' option (#1) on the 'KIDS INSTALLATION'
+      menu, and enter: VBECS_BUNDLE_1.KID 
+ 
+   2. From the 'Kernel Installation &amp; Distribution System' menu, select
+      the Installation menu.
+ 
+   3. From this menu, you may now elect to use the following options (when
+      prompted for INSTALL NAME, enter  VBECS BUNDLE 1.0)
+ 
+      a. Backup a Transport Global - This option will create a backup
+         message of any routines exported with the patch.  It will NOT
+         backup any changes such as DDs or templates.
+ 
+      b. Compare Transport Global to Current System - This option will
+         allow you to view all changes that will be made when the patch
+         is installed.  It compares all components of the patch
+         (routines, DDs, templates, etc.).
+ 
+      c. Verify Checksums in Transport Global - This option will allow you
+         to ensure the integrity of the routines that are in the
+         transport global.
+ 
+      d. Print Transport Global - this option will allow you to view the
+         components of the KIDS build.
+ 
+   4. Use the Install Package(s) option and select package
+      VBECS_BUNDLE_1.KID.  This will automatically install VBEC*1*0
+      and LR*5.2*325
+ 
+   5. When prompted "Enter the Coordinator for Mail Group 'VBECS INTERFACE
+      ADMIN':", please enter the name of the individual that will be
+      responsible for maintaining the new mail group. This mail group
+      receives notifications when an HL7 transmission, or a query through
+      the VBECS VistALink client, to the Blood Bank medical device has
+      failed. The users added to this group would be Lab/Blood Bank
+      supervisors and/or IRM staff responsible for managing the VBECS
+      package and interfaces.
+ 
+   6. When prompted 'Want KIDS to Rebuild Menu Trees Upon Completion of
+      Install? NO//', respond Yes.
+ 
+   7. When prompted 'VBECS Server IP Address:', enter the Cluster
+      IP address from Appendix B: Configuration Worksheet, Hardware
+      Information, row 1.
+ 
+   8. When prompted 'VBECS VistALink Listener Service Port Number:',
+      enter the VistALink Listener Service port number from
+      Appendix B: Configuration Worksheet, Hardware Information, row 2
+      for installing in the TEST account, row 3 for installing in the
+      PRODUCTION account.
+ 
+   9. When prompted 'Want KIDS to INHIBIT LOGONs during the install?
+      No//', it is recommended you answer NO.
+ 
+   8. When prompted 'Want to DISABLE Scheduled Options, Menu Options,
+      and Protocols? No//', respond NO
+ 
+  11. When prompted by "Select COLLECTION SAMPLE for Lab Test
+      ABO/RH - LAB:," select the collection sample appropriate for the
+      ABO/Rh test.
+ 
+  12. When prompted by "Select COLLECTION SAMPLE for Lab Test ANTIBODY
+      SCREEN - LAB:," select the collection sample appropriate for the
+      Antibody Screen test.
+ 
+  13. When prompted by "Select COLLECTION SAMPLE for Lab Test DIRECT
+      ANTIGLOBULIN TEST - LAB:," select the collection sample appropriate
+      for the Direct Antiglobulin Test test.
+ 
+  14. When prompted by "Select COLLECTION SAMPLE for Lab Test TRANSFUSION
+      REACTION WORKUP - LAB:," select the collection sample appropriate
+      for the Transfusion Reaction Workup test.
+ 
+  15. When prompted by "Select COLLECTION SAMPLE for Lab Test 
+      TYPE &amp; SCREEN - LAB:," select the collection sample appropriate for
+      the Type &amp; Screen test.
+ 
+  16. The POST Installation routine VBECPOST will be deleted from
+      your system automatically after successful installation.
+</pre>
+</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;1</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-06-09 15:35:33</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch is being released in support of the VBECS (VistA Blood 
+Establishment Computer System) Blood Bank Package.  The routines, 
+protocols, remote procedures, and options in this patch are used by the 
+DSS (Decision Support System) and CPRS (Computerized Patient Record 
+System).  There is no direct user interaction with the contents of this 
+patch.
+ 
+Routines: VBECDSS
+========  VBECHLOR
+ 
+Options:  VBECS VISTALINK CONTEXT
+========
+ 
+ 
+Protocols: VBEC OMG CLIENT
+========== 
+ 
+Remote Procedures: VBEC DSS EXTRACT
+==================
+ 
+ 
+Files: VBECS DSS EXTRACT  (# 6002.03)
+======
+ 
+Associated ICRs: None
+=============== 
+ 
+ 
+Associated Remedy Tickets:  None
+==========================
+ 
+ 
+Associated NSR/E3R: None
+==============
+ 
+ Test Site(s):
+==============
+ 
+ HEARTLAND-EAST HCS
+ PHILADELPHIA, PA
+ SAN DIEGO, CA
+ 
+ Installation Information:
+==========================
+ 
+VBEC*1*1 is being exported as part of the VBECS package release.  The 
+installation of VBEC*1*1 will be controlled by phase a phased release.  
+An Implementation Manager will be assigned to your site and will contact 
+your POC for VBECS and will provide your site with the location of the 
+KIDS Host Files prior to your scheduled installation date. 
+ 
+Installation Sequence
+=====================
+ 
+The patches listed below represent those that will be part of the 
+controlled phased release.  Follow the sequence listed below when your 
+phased installation occurs.
+ 
+  1. LR*5.2*335
+  2. LR*5.2*367
+  3. VBECS Bundle (consisting of VBEC*1*0 and LR*5.2*325)
+  4. VBEC*1.0*1
+  5. OR*3.0*212
+ 
+ Installation File:
+ 
+VBEC_1_1.KID 
+The VBEC_1_1.KID file will be made available by the Implementation 
+Manager prior to your site's implementation schedule along with 
+instruction to retrieve. 
+ 
+ 
+Documentation Retrieval:
+ 
+Documentation is available for the entire VBECS package on the 
+ANONYMOUS.SOFTWRE directory at one of the following Office of Information 
+(OI) Field Offices.  Sites may retrieve documentation in either ".PDF" or 
+"DOC" format in one of the following ways:
+ 
+1.      The preferred method is to FTP the files from :
+Download.vista.domain.ext
+ 
+2.      Sites may also elect to retrieve documentation directly from a 
+specific server as follows:
+       Albany                  ftp.fo-albany.domain.ext
+       Hines                   ftp.fo-hines.domain.ext
+       Salt Lake City          ftp.fo-slc.domain.ext
+ 
+NOTE:  The documentation files listed below will be listed in each of the 
+VBECS and LR patches that are part of the VBECS package and associate 
+patches, they only need to be downloaded once.
+ 
+File Name                                   Retrieval format:  Binary
+===========                                 ==========================
+Blood Bank Pre-Implementation Data Validation, Mapping, and Conversion 
+ADPAC Guide.doc
+Blood Bank Pre-Implementation Data Validation, Mapping, and Conversion 
+ADPAC Guide.pdf
+Blood Bank Pre-Implementation Data Validation, Mapping, and Conversion 
+Installation and User Guide.doc
+Blood Bank Pre-Implementation Data Validation, Mapping, and Conversion 
+Installation and User Guide.pdf
+Blood Bank Pre-Implementation Data Validation, Mapping, and Conversion 
+Technical Manual.doc
+Blood Bank Pre-Implementation Data Validation, Mapping, and Conversion 
+Technical Manual.pdf
+VBECS Data Conversion Recommended Validation Method.xls
+VBECS Application Interfacing Support Software Installation and User 
+Configuration Guide.doc
+VBECS Application Interfacing Support Software Installation and User 
+Configuration Guide.pdf
+VBECS Implementation Process.xls
+VistA Blood Establishment Computer Software (VBECS) 1.4.0.0 Installation 
+Guide.doc
+VistA Blood Establishment Computer Software (VBECS) 1.4.0.0 Installation 
+Guide.pdf
+VistA Blood Establishment Computer Software (VBECS) 1.4.0.0 Technical 
+Manual-Security Guide.doc
+VistA Blood Establishment Computer Software (VBECS) 1.4.0.0 Technical 
+Manual-Security Guide.pdf
+VistA Blood Establishment Computer Software (VBECS) 1.4.0.0 User Guide.doc
+VistA Blood Establishment Computer Software (VBECS) 1.4.0.0 User Guide.pdf
+Known Defects and Anomalies.doc
+Known Defects and Anomalies.pdf
+ 
+ 
+Installation Instructions:
+==========================
+This patch may be loaded with users on the system.
+Installation will take less than 5 minutes.
+ 
+    1) Use the 'LOAD A DISTRIBUTION' option on the KIDS Installation
+       menu. The Host File name is VBEC_1_1.KID .  Answer YES to the
+       question: "Want to Continue with Load? YES//"
+    2) From the Kernel Installation and Distribution System Menu,
+       select the Installation menu.
+    3) From this menu, you may elect to use the following options
+       (when prompted for the INSTALL NAME, enter VBEC*1.0*1).
+       a) Backup a Transport Global - this option will create a backup
+          message of any routines exported with the patch.  It will NOT
+          backup any other changes such as DDs or templates.
+       b) Compare Transport Global to Current System - this option will
+          allow you to view all changes that will be made when the patch
+          is installed.  It compares all components of the patch
+          (routines, DDs, templates, etc.).
+       c) Verify Checksums in Transport Global - this option will allow
+          you to ensure the integrity of the routines that are in the
+          transport global.
+       d) Print Transport Global - this option will allow you to view the
+          components of the KIDS build.
+    4) Use the Install Package(s) option and select the package
+       VBEC*1.0*1.
+    5) When prompted 'Want KIDS to Rebuild Menu Trees Upon Completion of
+       Install? NO//' respond YES
+    6) When prompted 'Want KIDS to INHIBIT LOGONs during the install?
+       NO//', respond NO.
+    7) When prompted 'Want to DISABLE Scheduled Options, Menu Options, and
+       Protocols? NO//', respond NO.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;0</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-01-30 00:00:00</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch is part of the VBECS BUNDLE 1.0 controlled release. See the
+description for the VBECS BUNDLE 1.0 for patch details.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;3</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-09-02 10:30:52</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch contains changes to the VBECS Blood Bank package. Refer to the 
+patch listed in the Forum patch module for more details.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;10</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-03-09 15:12:50</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch contains changes to the VBECS Blood Bank package. Refer to the 
+patch listed in the Forum patch module for more details.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;27</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-09-24 15:25:57</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;56 SEQ #57</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-06-19 12:39:14</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

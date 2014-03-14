@@ -1,0 +1,94 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OC4x").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>COMPLICATION TYPES (78.1) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OC4x" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>COMPLICATION TYPES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains the types of complications that may occur while a
+procedure is being performed.  If there is a complication during an exam,
+then the technologist can indicate which of these complications in this
+file the exam should be associated with by using either the 'Case No. Edit'
+or 'Edit Exam By Patient' functions of the module.
+ 
+When the system is initialized, two complications are loaded into the
+module. They are 'no complications' and 'contrast reaction'.
+ 
+If a 'contrast medium reaction' is associated with an exam, then the
+patient's record in the Allergy Tracking System will automatically be
+updated to indicate he/she has had a reaction. As a result, everytime the
+patient is registered for a procedure that may involve contrast material,
+the receptionist will be warned and he/she should then take appropriate
+action.
+ 
+Entries in this file should not be deleted.  Adding new entries is always
+allowed.
+ 
+ Data Storage
+ ------------
+The data for the 'COMPLICATIONS TYPE' file is stored in the ^RA(78.1,
+global. At the present time this file is very static after day-one
+initialization is complete.  However, it still should be journaled.
+It should also be translated if the operating system supports this function.
+ 
+ Input Templates
+ ---------------
+The package does not use any input templates associated with
+this file.
+ 
+ Print Templates
+ ---------------
+The package does not use any print templates associated with this
+file.
+ 
+ Sort Templates
+ --------------
+The package does not use any sort templates associated with this
+file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;RA</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

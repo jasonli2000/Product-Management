@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE0MTE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PXCE ENCOUNTER LIST (1411) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE0MTE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PXCE ENCOUNTER LIST</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>List by Encounter</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This action allows you to change the display from a list of appointments
+for this patient to a list of encounters for this patient.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-111.html">PCE PATIENT CARE ENCOUNTER</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S $P(PXCEVIEW,"^",2)="V" S PXCECONT=1 Q</td>
+</tr>
+<tr>
+<td>IDENTIFIER</td>
+<td>LI</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1997-08-04 11:51:14</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

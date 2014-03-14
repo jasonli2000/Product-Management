@@ -1,0 +1,92 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUDOC DEVICE PROMPT* (116) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUDOC DEVICE PROMPT*</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>RESPONDING TO THE DEVICE PROMPT</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+ 
+When prompted for a device, you may enter the name of the device or another
+response as shown below:
+ 
+     DEVICE: DVNM5         to specify the device with the name DVNM5.
+ 
+     DEVICE: HOME          to direct output to your terminal.  Alternatively
+                           enter H, h, 0, or just press return.
+ 
+     DEVICE: P             to select the closest printer if one is defined.
+                           (This may be disabled when using decservers or
+                           MICOM port contention.)
+ 
+     DEVICE: Q             to [QUEUE] your output to run in the background.
+ 
+You may optionally specify a right margin or page length to override the
+default Device file settings:
+ 
+     DEVICE: DVNM5;80;66   to use the DVNM5 device with a right margin of
+                           80 columns and page length of 66 lines.
+                                                                [CONTINUE]
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;CONTINUE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-118.html">XUDOC DEVICE PROMPT SYNTAX</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;QUEUE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-117.html">XUDOC DEVICE PROMPT QUEUING</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-04-18 22:01:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

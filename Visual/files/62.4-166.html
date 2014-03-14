@@ -1,0 +1,116 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuNC0xNjY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IL 508 (166) &nbsp;&nbsp;  AUTO INSTRUMENT (62.4)</h1>
+<div id="demo"><table id="NjIuNC0xNjY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IL 508</td>
+</tr>
+<tr>
+<td>PROGRAM</td>
+<td>LAIL508</td>
+</tr>
+<tr>
+<td>ENTRY for LAGEN ROUTINE</td>
+<td>Accession cross-reference</td>
+</tr>
+<tr>
+<td>CROSS LINKED BY</td>
+<td>+IDE</td>
+</tr>
+<tr>
+<td>NEW DATA</td>
+<td>D NEW^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>RESTART</td>
+<td>D RESTART^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>CHEM TESTS</td>
+<td>
+<ol>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-176.html">SODIUM</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(5,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-177.html">POTASSIUM</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(6,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-179.html">CO2</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(8,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-178.html">CHLORIDE</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(7,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-175.html">GLUCOSE1</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(2,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-174.html">UREA NITROGEN</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(3,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-173.html">CREATININE</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(4,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-180.html">CALCIUM</a></dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(9,1)</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERFACE NOTES</td>
+<td><pre>
+The internal number for each test is the test code transmitted by the 
+instrument + 1.
+ 
+TEST                 CODE FROM IL 508        CHEM TESTS NUMBER
+--------------------------------------------------------------
+NA                   00                      1
+K                    01                      2
+TCO2                 02                      3
+CL                   03                      4
+GLU                  04                      5
+BUN                  05                      6
+CREATININE           06                      7
+TP or CA             07                      8
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

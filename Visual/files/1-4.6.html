@@ -1,0 +1,62 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS00LjY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TRANSMISSION SCRIPT (4.6) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS00LjY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TRANSMISSION SCRIPT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Transmission scripts are lists of script commands that are executed by
+the script processor for Network Mail transmissions in order when they
+are invoked.  The command in a Script that invokes a transmission
+script is the CALL.  Therefore 'C KERNEL' invokes a script that
+interfaces with the SMTP (Simple Mail Transfer Protocol) process using
+the SCP (Simple Communications Protocol).  Transmission scripts are
+used most often to invoke a portion of a longer script that is used in many 
+different domains.  It can then be used in many different domains.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;XM</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

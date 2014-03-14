@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTU1MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENPMRDEFRL (1551) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTU1MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENPMRDEFRL</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Rapid Deferral of PM Worklist</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RAPID DEFERRAL OF PM WORKLIST</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Defers all entries on a user specified PM worklist. All work orders on
+subject worklist are given a PM Status of DEFERRED and a close out date
+of TODAY. Time and Materials are not posted. This option is intended to
+be run only if you want to post DEFERRAL's of all open line items (PM
+work orders) on subject worklist to Equipment Histories.
+ 
+This option is not intended for use in cases where there is some
+expectation that you may wish to otherwise close-out the PM worklist
+in question at some later date. That is to say, once a scheduled
+preventive maintenance inspection task has been recorded as DEFERRED
+it will be difficult to change it to PASSED.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_ENEQPMR6.html">ENEQPMR6</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

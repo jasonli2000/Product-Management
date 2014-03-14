@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTk0").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUDOC SPOOL MGT1 (94) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTk0" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUDOC SPOOL MGT1</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>MANAGING THE SPOOLER</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+You, the systems manager, will need to use the Spool Management Menu to
+set system defaults and assign spooling privileges.  This menu is part of
+the Systems Manager Menu.
+ 
+System defaults (site parameters) set a maximum for the number of documents
+per user, the maximum spool lines per user, and the maximum lifetime of
+spool documents.  The Kernel Site Parameter File holds this data.
+ 
+User access involves 3 New Person file attributes.  First, may this user
+write to the spool device?  If not, a message to that effect will be issued
+when the user attempts to use the spool device.
+ 
+Second, when printing a spool document, may this user send output to more
+than one printer?  If so, the system will continue to prompt for another
+device until the response is null.
+ 
+Third, may this user make spool documents into mail messages?  If so, the
+user may treat the spool document just like a mail message, to copy, edit,
+or send over the network.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1992-04-15 11:44:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

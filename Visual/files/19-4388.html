@@ -1,0 +1,90 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDM4OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSU PBM MANUAL (4388) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDM4OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSU PBM MANUAL</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Manual Pharmacy Statistics</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>MANUAL PHARMACY STATISTICS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to gather the statistical information for a selected
+date range from the following files:
+ 
+ 1. Pharmacy Patient IV Sub-file           File # 55.01
+ 2. Pharmacy Patient UD Sub-file           File # 55.06
+ 3. AR/WS Stats File                       File # 58.5
+ 4. Prescription                           File # 52
+ 5. Procurement                            File # 442,# 58.811,# 58.81
+ 6. Controlled Substances                  File # 58.81
+ 7. Laboratory                             File # 60,# 63
+ 8. Patient Demographics                   File # 2
+ 9. Outpatient Visits                      File # 9000010,# 9000010.07
+ 10. Inpatient PTF Record                  File # 45
+ 11. Provider Data                         File # 200,# 7,# 49,# 8932.1
+ 
+This data can be collected for ALL of the files listed or for one or more
+specific file.  A summary of data or a detailed report by drug can be
+delivered to you in a mail message or in a hard copy report.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-97.html">PHARMACY BENEFITS MANAGEMENT</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PSUCP.html">PSUCP</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-06-16 09:58:58</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,58 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NzguNy01MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PATIENT ADDRESS LINE 1 (51) &nbsp;&nbsp;  LABEL PRINT FIELDS (78.7)</h1>
+<div id="demo"><table id="NzguNy01MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PRINT FIELD</td>
+<td>PATIENT ADDRESS LINE 1</td>
+</tr>
+<tr>
+<td>TYPE OF DATA</td>
+<td>PATIENT DEMOGRAPHICS</td>
+</tr>
+<tr>
+<td>DEFAULT TITLE</td>
+<td>Address Line 1:</td>
+</tr>
+<tr>
+<td>TEST VALUE</td>
+<td>123 South Main Street</td>
+</tr>
+<tr>
+<td>INTERNAL VARIABLE</td>
+<td>RASTRONE</td>
+</tr>
+<tr>
+<td>MUMPS CODE TO SET VARIABLE</td>
+<td>S RASTRONE=$$ADDRESS^RAUTL18(+$O(^RA(78.7,"B","PATIENT ADDRESS LINE 1",0)),RADFN)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

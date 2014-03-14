@@ -1,0 +1,56 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zLjUy").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRINT QUEUE JOB (3.52) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zLjUy" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRINT QUEUE JOB</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file is used to record print jobs passed to a print server.  Under
+Linux a CUPS is used to provide print services and to manage print queues.
+
+Print jobs are passed to the print server via a host file.  Each time a host
+file is created a new entry will be created in this file.  The file will be
+purged of old entries on a regular basis.
+
+The principle use of this file is to insure that the name of the host file is
+unique.  A secondary use is to track the host files, for example, so that
+old files can be purged regularly, or to aid in troubleshooting of problems
+involving print queues. 
+
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

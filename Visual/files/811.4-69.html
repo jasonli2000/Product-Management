@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjQtNjk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-FILEMAN DATE (69) &nbsp;&nbsp;  REMINDER COMPUTED FINDINGS (811.4)</h1>
+<div id="demo"><table id="ODExLjQtNjk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-FILEMAN DATE</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PXRMDATE.html">PXRMDATE</a></td>
+</tr>
+<tr>
+<td>ENTRY POINT</td>
+<td>FMDATE</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>VA-FileMan Date</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The purpose of this computed finding is to allow the creation of a
+finding that has a specific date to be used for comparison purposes
+in a function finding date function.
+
+This computed finding takes any acceptable FileMan date, via the
+COMPUTED FINDING PARAMETER, and sets the date of the finding and its
+value to that date.
+
+See the FileMan Getting Started Manual to learn about acceptable
+FileMan date/time formats and abbreviations. Additionally, you may
+use the abbreviations T-NY or NOW-NY, where N is an integer and Y
+stands for years.
+
+For example, setting the COMPUTED FINDING PARAMETER to T-3M would
+give the finding a date and value of the evaluation date minus three
+months.
+
+
+
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>SINGLE</td>
+</tr>
+<tr>
+<td>CF PARAMETER REQUIRED</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

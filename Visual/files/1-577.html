@@ -1,0 +1,50 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS01Nzc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VDEF EVENT DESCRIPTION (577) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS01Nzc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VDEF EVENT DESCRIPTION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file describes VDEF events.  Mostly, these events match the 
+list of events in the HL7 2.4 standard, but there are some cases where
+there may be multiple entries in this file for a single HL7 standard 
+event.
+ 
+ENTRIES IN THIS FILE SHOULD NOT BE EDITED IN PRODUCTION ACCOUNTS.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,83 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OTAwMjMxMy45MS0zNTM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>993 (353) &nbsp;&nbsp;  BPS NCPDP FIELD DEFS (9002313.91)</h1>
+<div id="demo"><table id="OTAwMjMxMy45MS0zNTM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NCPDP FIELD NUMBER</td>
+<td>993</td>
+</tr>
+<tr>
+<td>NAME</td>
+<td>INTERNAL CONTROL NUMBER</td>
+</tr>
+<tr>
+<td>FORMAT</td>
+<td>ALPHA/NUMERIC</td>
+</tr>
+<tr>
+<td>ID</td>
+<td>A7</td>
+</tr>
+<tr>
+<td>LENGTH</td>
+<td>30</td>
+</tr>
+<tr>
+<td>D0 LENGTH</td>
+<td>30</td>
+</tr>
+<tr>
+<td>D0 FORMAT</td>
+<td>ALPHANUMERIC</td>
+</tr>
+<tr>
+<td>GET CODE</td>
+<td><pre>
+S BPS("X")=""
+</pre>
+</td>
+</tr>
+<tr>
+<td>D0 FORMAT CODE</td>
+<td><pre>
+S BPS("X")=$$ANFF^BPSECFM($G(BPS("X")),30)
+</pre>
+</td>
+</tr>
+<tr>
+<td>SET CODE</td>
+<td><pre>
+; This field currently not implemented
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

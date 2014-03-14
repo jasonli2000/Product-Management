@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTQzODU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>EDP NEW PATIENT (4385) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTQzODU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>EDP NEW PATIENT</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>New EDIS Patient Event</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This extended action protocol will be processed when a new patient is
+added to the EDIS Patient Board.  Items added to this event may look for:
+ 
+ EDPDATA = ED Log ien ^ DFN ^ Time In ^ Hospital Location ien
+ 
+To support some devices that previously monitored SDAM APPOINTMENT EVENTS,
+the following variables will also be defined:
+ 
+     DFN = Patient file #2 ien
+     SDT = Time In
+    SDCL = Hospital Location file #44 ien
+   SDATA = ^DFN ^ SDT ^ SDCL
+ SDAMEVT = 1 (unscheduled new visit)
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>extended action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-212.html">EMERGENCY DEPARTMENT</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-01-22 17:13:53</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,49 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zOC42").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>INCONSISTENT DATA ELEMENTS (38.6) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zOC42" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>INCONSISTENT DATA ELEMENTS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The INCONSISTENT DATA ELEMENTS file contains those entries which are
+checked by the MAS module consistency checker.  Other than turning
+individual checks on or off the user should not alter or add to this
+file in any way.  Making any modification to this file will definitely
+cause the consistency checker to function improperly.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

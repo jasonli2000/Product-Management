@@ -1,0 +1,59 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02NC43").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>CUMULATIVE (64.7) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02NC43" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>CUMULATIVE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ 
+This file stores temporary pages of the cumulative report.
+ 
+The data in this file is maintained by the cumulative routines.  
+Because patient care can be effected if the cumulative report has 
+incomplete lab results, you should not edit this file or data contained
+within it.  Contact your ISC for technical support if problems arise.
+ 
+Cross-reference descriptions:
+ 
+ ^LAC("LRKILL",LRDFN,MAJOR HDR #,MINOR HDR #,CDT,0) = minor hdr #^CDT^IDT
+ ^LAC("LRKILL",LRDFN,MAJOR HDR #,MINOR HDR #,CDT,IFN) = test location
+ ^LAC("LRKILL",LRDFN,"MISC",1,CDT,0) = IDT^CDT^verify date/time^accession^topography
+ ^LAC("LRKILL",LRDFN,"MISC",1,CDT,IFN)= test location
+ 
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

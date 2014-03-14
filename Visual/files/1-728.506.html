@@ -1,0 +1,59 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03MjguNTA2").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DSS DRUG PRODUCT CODE (728.506) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03MjguNTA2" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DSS DRUG PRODUCT CODE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file holds information needed to determine the DSS drug product
+code for any entry in the local DRUG file (#50) which has been matched
+to an entry in the NATIONAL DRUG file (#50.6).  The determining factors
+are VA classification, route of administration, and, in some cases,
+specific VA product name.  These factors have been determined by the
+DSS pharmaceutical task force based, in part, on information provided
+by the National Drug File (NDF) task force.  Use of this file depends
+on fields in the local DRUG file (#50) which were set by the matching
+process in the National Drug File package as specified by the NDF task
+force.
+ 
+For these reasons, it is imperative that neither the data nor the
+data dictionary for this file be modified at the local VAMC.  As
+modifications are required, they will be sent from the developers as
+directed by the involved task force members.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,51 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS04OTI1LjI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU UPLOAD BUFFER (8925.2) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS04OTI1LjI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU UPLOAD BUFFER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file buffers uploaded ASCII reports during the upload process, until
+they can be successfully routed to their respective destinations within
+DHCP.  It will support the development of tools for responding to error
+messages (e.g., the correction of errors experienced during
+routing/filing) by the appropriate users, so as to avoid the necessity of
+making all edits on the client system and re-initiating the upload in
+response to an error condition.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

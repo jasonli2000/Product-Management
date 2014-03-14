@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTkuMS01MTE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU MED MANUAL PATIENT (511) &nbsp;&nbsp;  SECURITY KEY (19.1)</h1>
+<div id="demo"><table id="MTkuMS01MTE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU MED MANUAL PATIENT</td>
+</tr>
+<tr>
+<td>DESCRIPTIVE NAME</td>
+<td>Allow Manual Patient Notes</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+If a user holds this key they will be allowed to import notes from MED 
+for patients they manually created when offsite.  Matching to VistA 
+patient's occurs on SSN, DOB, SEX, First letter of both Last and First 
+name.  Only if these all match will the patient lookup be allowed.  
+Without this key this functionality will be disabled.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

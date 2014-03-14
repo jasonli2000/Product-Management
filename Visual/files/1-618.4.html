@@ -1,0 +1,60 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02MTguNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MENTAL HEALTH INPT (618.4) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02MTguNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MENTAL HEALTH INPT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is the main data file for Mental Health Inpatient features.  It
+contains current and past treatment episodes.  Team information, clinician
+responsibility and treatment data are stored.  This is a flat file that
+may be easily archived and restored.
+
+Cross-references:
+ AC   ; xref for current admissions only by primary therapist.
+ ACP  ; xref for current admissions only by physician.
+ ACR  ; xref for current admissions only by resident.
+ AIN  ; xref for all admissions by admit date.
+ AOUT ; xref for all admissions by discharge/transfer date.
+ AST  ; xref for current admissions only by ward and team.
+ AWC  ; xref for current admissions only by ward and team.
+ C    ; xref for all patients by DFN.
+ CP   ; xref for current admissions only by DFN.
+
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

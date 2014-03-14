@@ -1,0 +1,60 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS00MTAuNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DELIVERY SCHEDULE (410.6) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS00MTAuNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DELIVERY SCHEDULE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains all of the delivery schedules for items
+that the Control Point wishes to distribute on a request.
+For each item of a request, they can distribute by date, 
+quantity, Sub-Control Point and/or Delivery Point.  This file
+contains all delivery schedules for each item of a request for
+a repetitive, non-repetitive or a non-repetitive/repetitive
+form type.  If the Sub-Control Point is entered, the dollar
+amount of the item's cost is calculated for that Sub-Control 
+Point and all delivery schedules' cost distribution to Sub-Control 
+Points is totaled and the Sub-Control Point Multiple of the request
+is updated with the Sub-Control Point and its associated dollar amount.
+If the distributed quantities and the request's transaction dollar
+amount matches, then entry into the Sub-Control Point Multiple
+is not required.  When the Control Point Official signs the
+request, this delivery schedule's Sub-Control Point dollar amount
+distribution updates the Sub-Control Point Balance.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

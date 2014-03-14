@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExNjQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XM-I-N-DOMAIN FILE-SESSION (1164) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExNjQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XM-I-N-DOMAIN FILE-SESSION</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>DOMAIN FILE FIELDS USED WHILE TRANSMITTING</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+
+The following fields in the DOMAIN file 4.2 are used once a connection with
+a remote site has been established:
+
+  [VALIDATION NUMBER] (field #1.6), if present, is used while communicating
+  with another site to confirm that the site is really the intended one.
+
+  [DISABLE TURN COMMAND] (field #1.7) controls whether your site will accept
+  messages from the domain in the same session as the one in which your site
+  sends messages to the domain.
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;DISABLE TURN COMMAND</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-1168.html">XM-I-N-DOMAIN FILE-TURN</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;VALIDATION NUMBER</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-1167.html">XM-I-N-DOMAIN FILE-VALIDATE</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>2002-05-07 15:34:15</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

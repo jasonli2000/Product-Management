@@ -1,0 +1,92 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUSERINQ (70) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUSERINQ</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>User Inquiry</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>USER INQUIRY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option displays various user attributes.  If the user is currently
+signed on, it displays the job and device numbers, the sign-on time, and
+what option is being executed.  Otherwise, it displays the last sign-on
+time. It also displays which keys are held by this user.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>HELP FRAME</td>
+<td><a href="9.2-73.html">XUUSER-INQ</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>inquire</td>
+</tr>
+<tr>
+<td>DIC {DIC}</td>
+<td>VA(200,</td>
+</tr>
+<tr>
+<td>DIC(0)</td>
+<td>AEMQ</td>
+</tr>
+<tr>
+<td>FLDS</td>
+<td>[XUSERINQ]</td>
+</tr>
+<tr>
+<td>IOP</td>
+<td>HOME</td>
+</tr>
+<tr>
+<td>DIC {DIQ}</td>
+<td>VA(200,</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1991-05-15 14:41:37</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

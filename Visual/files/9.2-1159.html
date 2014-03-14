@@ -1,0 +1,87 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExNTk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XM-I-S-SITE PARAMETERS-DISK (1159) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExNTk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XM-I-S-SITE PARAMETERS-DISK</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>SITE PARAMETERS AFFECTING DISK SPACE MANAGEMENT</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+
+Here are some Site Parameters in file 4.3 which affect disk space management.
+For these fields, see both the options and the DDs for more information:
+
+These fields are used by option XMAUTOPURGE to purge unreferenced messages:
+
+  Use NO-PURGE DAYS BUFFER (field #4.301) to protect the newest messages.
+
+  Use NO-PURGE DAYS BUFFER (LOCAL) (field #142) to protect the newest locally
+  created messages.
+
+  Use WEEKDAY DAYS TO PURGE (field #4.304) to limit the purge to messages
+  created recently, when the purge is run on weekdays.  When the purge is
+  run on Saturdays, this field is ignored, and every message is considered.
+
+  Use AUTOMATIC INTEGRITY CHECK (field #4.303) to indicate whether an integrity
+  check of the Mailbox file 3.7 should be run before the purge.
+
+These fields are used by option XMPURGE-BY-DATE:
+
+  Use DATE PURGE CUTOFF DAYS (field #10.03) to calculate a cutoff date.
+
+  Use DATE PURGE GRACE PERIOD (field #10.04) to give users a warning.
+
+These fields are used by option XMMGR-IN-BASKET-PURGE:
+
+  Use IN-BASKET-PURGE DAYS (field #10) to indicate how many days a message
+  may remain unread before being considered for purge.
+
+  Use IN-BASKET-PURGE TYPE (field #10.01) to indicate whether the purge
+  applies to the IN basket only (default) or to all baskets.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>2002-05-07 09:41:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

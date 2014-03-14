@@ -1,0 +1,110 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OC4y").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LBL/HDR/FTR FORMATS (78.2) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OC4y" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LBL/HDR/FTR FORMATS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains the print formats for the following types of imaging
+output:
+ 
+          o flash cards
+          o exam labels
+          o jacket labels
+          o report headers
+          o report footers
+ 
+The entries are all site specific.  No entries are loaded when the
+module is initialized.  Each format can contain any of the fields
+from the 'LABEL PRINT FIELDS' file.
+ 
+Also, if the same print field is desired more than once on the same
+'format', then enclose the print field name in double quotes (").
+For example, if two FREE TEXT fields are needed on a report header,
+then at the 'Select PRINT FIELDS:' prompt enter "FREE TEXT".
+ 
+ Data Storage
+ ------------
+The data for the 'LBL/HDR/FTR FORMATS' file is stored in the ^RA(78.2,
+global. At the present time this file is very static after day-one
+initialization is complete.  However, it still should be journaled.
+It should also be translated if the operating system supports this function.
+ 
+ Input Templates
+ ---------------
+The following is a list of input templates used by the package
+and the entry in the OPTIONS file (#19) that uses the template:
+ 
+                     Compiled
+ Name                Routine  Description; Option(s)
+ ----                -------  ----------------------
+ RA FLASH CARD EDIT           Use to enter/edit formats into this file;
+                              RA FLASHFORM
+ 
+ This input template should not be modified.
+ 
+ Print Templates
+ ---------------
+ The following is a list of print templates used by the package:
+ 
+ Name                  Description; Option(s)
+ ----                  ----------------------
+ RA FLASH PRINT        Prints a listing of formats and their attributes;
+                       RA FLASHFORMP
+ 
+ Sort Templates
+ --------------
+ The following is a list of sort templates associated with this file:
+ 
+ Name                  Related Print Template
+ ----                  ----------------------
+ RA FLASH PRINT        RA FLASH PRINT
+ 
+ The modification of any sort template is not recommended.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;RA</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

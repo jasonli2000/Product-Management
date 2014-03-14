@@ -1,0 +1,59 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zNTAuNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>BILLABLE AMBULATORY SURGICAL CODE (350.4) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zNTAuNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>BILLABLE AMBULATORY SURGICAL CODE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Contains the HCFA rate groups for ambulatory surgeries that may
+be billed.  This file is time sensitive, a procedure may have multiple entries
+indicating updates effective on different dates.  These updates include a
+procedure changing rate groups or changing status.
+ 
+The data in this file is either transfered from 350.41 or 
+entered interactively and is used to calculate the charge for a procedure
+on any given date.
+ 
+Per VHA Directive 10-93-142, this file definition should not be modified.
+ 
+ 
+As of 10/1/96 this functionality has not been authorized.  The data in this
+file is deleted by patch IB*2*52 and the file definition will be deleted
+in a future release.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

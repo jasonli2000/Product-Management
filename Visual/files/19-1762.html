@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTc2Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORDERS MENU (1762) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTc2Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORDERS MENU</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>CPRS Menu</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CPRS MENU</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu allows patient orders to be entered, active orders to be
+reviewed and/or acted upon and patient profiles to be displayed.
+ 
+TECHNICAL NOTE:
+This option is used to transfer control of menus and options used in
+the OE/RR package to the Protocol file (101).  Items should NOT be
+placed on this menu.  The counterpart of this menu in file 101 is
+OR USER MENU where menu items used with OE/RR are placed.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D ^<a href="http://code.osehra.org/dox/Routine_ORCHART.html">ORCHART</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1988-12-10 20:47:32</td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>1992-12-19 17:10:56</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

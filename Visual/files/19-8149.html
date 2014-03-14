@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODE0OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCAC RC TRANSMISSION (8149) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODE0OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCAC RC TRANSMISSION</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Transmission Log for RC</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>TRANSMISSION LOG FOR RC</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option displays the AR Transmissions sent via the Regional Counsel
+Interface.  Users may View or Forward the mail messages in this
+log.  They may also Delete or append Comments to existing AR RC
+Transmission File entries.  Entries in this file will contian a
+Purge Date set by the RC Parameters option.  Entries will be 
+purge when the background option, Reconciliation Rollup Request
+Background Task1 runs.  This file may grow to be very large.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-53.html">ACCOUNTS RECEIVABLE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_RCRCEL.html">RCRCEL</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

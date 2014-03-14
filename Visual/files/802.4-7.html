@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODAyLjQtNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DIFF_DATE (7) &nbsp;&nbsp;  REMINDER FUNCTION FINDING FUNCTIONS (802.4)</h1>
+<div id="demo"><table id="ODAyLjQtNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DIFF_DATE</td>
+</tr>
+<tr>
+<td>ENTRY</td>
+<td>DIFFDATE</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PXRMFF0.html">PXRMFF0</a></td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>Date Difference</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This function returns the difference in days between the date of the
+first finding in the list and the date of the second finding. The
+default is to return the absolute value but if the optional third
+parameter of "N" is present then the actual value is returned. If
+you want the actual value be aware that if the second date is more
+recent than the first the result will be negative.
+
+Some examples:
+
+DIFF_DATE(1,8)&gt;5
+This will be true if the dates of finding 1 and finding 8 are more
+than 5 days apart.
+
+DIFF_DATE(1,8,"N")&lt;-6
+This will be true if the dates of finding 1 and finding 8 are more
+than 6 days apart and the date of finding 8 is after finding 1.
+
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>ARGUMENT PATTERNS</td>
+<td>1.N~1.N~.1(1""""1"N"1"""")</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

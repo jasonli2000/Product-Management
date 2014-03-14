@@ -1,0 +1,56 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTkuMS0zNDk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSO COPAY (349) &nbsp;&nbsp;  SECURITY KEY (19.1)</h1>
+<div id="demo"><table id="MTkuMS0zNDk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSO COPAY</td>
+</tr>
+<tr>
+<td>DESCRIPTIVE NAME</td>
+<td>Outpatient Pharmacy Copay Key</td>
+</tr>
+<tr>
+<td>KEEP AT TERMINATE</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This Key is given to Pharmacy users that may be responsible for resetting
+the Copay status of prescriptions. Holders of this Key will receive mail
+messages indicating that a prescription may need further action regarding
+Copay status.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

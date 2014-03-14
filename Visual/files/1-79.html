@@ -1,0 +1,123 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RAD/NUC MED DIVISION (79) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RAD/NUC MED DIVISION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains, for each division entry, parameters that the module
+uses during various stages of exam and report processing and inquiring.
+These parameter switches allow the 'customizing' of the module for each
+division by the package coordinator.
+ 
+The module is designed to handle multiple divisions within a medical
+center.  While most medical centers only have one division, there are a
+number that are multi-divisional.  As a result, it was necessary to
+structure the entire system around the division concept.
+ 
+However, single division medical centers will not notice this in the
+everyday execution of the module.
+ 
+Within a division there may be a number of physical locations
+where an imaging procedure can be performed.  The module is designed to
+handle multiple locations within a division.  However, each location can
+only be associated with one division.  Location data is stored in the
+'IMAGING LOCATIONS' file (#79.1).
+ 
+These parameters are loaded into the user's partition once the module
+determines which division and location the user is currently associated
+with.  This is determined by one of two ways: 1) the device the user is
+using is an entry in the 'INPUT DEVICES' sub-file of the 'IMAGING
+LOCATIONS' file or 2) if (1) is not true than the module will simply ask
+the user what his/her current location is.  Method 1 is becoming obsolete;
+it was used before virtual terminals came into being.  Therefore, most
+systems will ask the user for a sign-on imaging location.
+ 
+ 
+Entries in this file should not be deleted. Adding new entries is always
+allowed.
+ 
+ Data Storage
+ ------------
+The data for the 'RAD/NUC MED DIVISION' file is stored in the ^RA(79,
+global. At the present time this file is very static after day-one
+initialization is complete.  However, it still should be journaled.
+It should also be translated if the operating system supports this function.
+ 
+ Input Templates
+ ---------------
+The following is a list of input templates used by the package
+and the entry in the OPTIONS file (#19) that uses the template:
+ 
+                        Compiled
+ Name                   Routine   Description; Option(s)
+ ----                   -------   ----------------------
+ RA DIVISION PARAMETERS           Used to enter/edit division parameters
+                                  that the package coordinator controls;
+                                  RA SYSDIV
+ 
+If any modifications to these input templates are needed for local
+purposes, then great care should be taken not to degrade any branching logic
+in the template.
+ 
+ Print Templates
+ ---------------
+ The following is a list of print templates used by the radiology package:
+ 
+ Name                  Description; Option(s)
+ ----                  ----------------------
+ RA IMAGE DIV LIST     Prints the division parameters for the entries in
+                       this file;
+                       RA SYSDIVLIST
+ 
+ Sort Templates
+ --------------
+The radiology package does not use any sort templates associated with this
+file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;RA</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

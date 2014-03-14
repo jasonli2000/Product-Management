@@ -1,0 +1,90 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTc1NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQUIT MESSAGE (755) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTc1NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQUIT MESSAGE</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>A Message To The User When An XQUIT Is Encountered</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+  
+     When the XQUIT variable is detected by the Menu System and there is
+no code in the XQUIT EXECUTABLE field a message is printed on the user's
+screen.  The default message looks like this:
+ 
+  **&gt; Sorry, access to this option has been denied by the application.
+ 
+       The variable XQUIT was encountered at the option
+       '{The menu text of the option that defined XQUIT}.'
+       You are being returned to:
+       '{The menu the user jumped or stepped from}.'
+ 
+     If there is code in the EXQUIT EXECUTABLE field no message is printed
+on the assumption that the application programmer has taken care of it.
+If there is no such code but there is message text in the XQUIT MESSAGE
+field then that text is displayed instead of the default message through
+a Menu System call to [DISPLAY]^XQUTL.  The programmer has access to this
+entry point, as well as [PRINT]^XQUTL(.array name) for posting messages on
+the user's screen.  These are both supported entry points.
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;DISPLAY</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-762.html">XQ XQUTL DISPLAY</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;PRINT</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-754.html">XQ XQUTL PRINT</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1998-04-15 12:48:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODAwMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VAFC BATCH OUTPATIENT (8001) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODAwMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VAFC BATCH OUTPATIENT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>OUTPATIENT BATCH JOB HL7 v2.3</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>OUTPATIENT BATCH JOB HL7 V2.3</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+DO NOT SCHEDULE THIS OPTION UNLESS THERE IS A SPECIFIC APPLICATION THAT
+REQUIRES NOTIFICATION OF SCHEDULING APPOINTMENTS WITH A HL7 A08 v2.3 MESSAGE.
+
+This option is not intended to be run from programmer mode.  No output to
+the screen is intended.  When this job is scheduled through TaskMan
+a routine will loop through the Hospital Location file "S" node and
+generate an A08 HL7 v2.3 message for all appointments for today that
+have a status of "No action taken" or "Future".
+
+It should be scheduled to run after midnight but before 0400 hours.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_VAFCCOPT.html">VAFCCOPT</a></td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

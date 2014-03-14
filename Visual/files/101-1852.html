@@ -1,0 +1,350 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE4NTI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIUFHA ACTION COPY (1852) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE4NTI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIUFHA ACTION COPY</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Copy/Move</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+MANAGER OPTIONS
+ 
+OVERVIEW
+ 
+Copy/Move is a very powerful action and should be used with great care.
+It is accessible only through the Document Definitions (Manager)
+menu [TIUF DOCUMENT DEFINITION MGR].  Like other actions on the
+Manager menu, it disregards ownership. Users are expected to move only
+titles or documents for which they are responsible.
+ 
+Under the action Copy/Move, users may choose MT to MOVE TITLE, MD to MOVE
+DOCUMENTS, C to COPY, or U to UPDATE DOCUMENTS:
+ 
+  MT: A Title may be moved to a different Document Class, for example,
+  when hospital services are reorganized.  Documents defined by the
+  title are then updated with the new PARENT DOCUMENT TYPE (field # .04).
+ 
+  MD: ALL documents defined by a given title may be moved to another
+  title, for example, when a little-used title is eliminated in favor of
+  a broader title.
+ 
+  C: Titles, components, and objects may be copied, for example, when
+  jump-starting a new Document Definition by copying and then editing the
+  copy. Title and component copies may be placed under the same parent as
+  the original, placed under a new parent, or left as orphans.
+ 
+  U: Documents defined by a particular title are updated with the correct
+  PARENT DOCUMENT TYPE (field # .04).
+ 
+When Moving or Copying a title, users must be aware that changing
+positions in the hierarchy gives an entry NEW INHERITED behavior.
+Accordingly, some moves may not be appropriate.  It is the user's
+responsibility to determine whether or not a given action is appropriate.
+ 
+ 
+DETAILED DESCRIPTION
+ 
+Action C COPY:
+ 
+The Copy action prompts for an entry to copy and a new entry name to copy
+into. This name must be different from the name of the entry being copied.
+The action then creates a new entry with the chosen name and copies the
+fields in the Document Definition File 8925.1 into the new entry.
+ 
+Certain fields require more information on exactly how they are copied:
+ 
+  EMPTY FIELDS - If the original has empty fields, they are copied empty,
+                 NOT as inherited.
+ 
+  STATUS FIELD - If the original has a Status of Active or Test, the entry
+                 may be copied, but the copy has a Status of Inactive.
+ 
+  NATIONAL STANDARD FIELD - If the original is National Standard, the
+                            entry may be copied, but the copy is not
+                            National Standard.
+ 
+  SHARED FIELD - If a component is Shared, it may be copied but the copy
+                 is not Shared.  If the component has subcomponents, new
+                 nonshared subcomponents are created and added to the
+                 copy.
+ 
+  ITEMS FIELD - If the original entry has items, the action prompts for
+                item names to copy into, creates NEW entries for the
+                items, and adds the NEW items to the copy.
+ 
+  SHARED ITEMS - If a Nonshared entry has a Shared item, the action does
+                 NOT copy the Shared item but merely adds the Shared item
+                 to the copy.
+ 
+TITLES and COMPONENTS can be copied from the Edit Option or the Sort
+Option.
+ 
+If an entry is copied under the Edit option, the user is asked which
+parent to add the copy to, and the copy is added as an item to this
+parent.  If no parent is selected, the copy is left as an orphan.
+ 
+Copying an Entry to a New Parent:
+ 
+  If the user is copying a title, then the parent to which the copy is
+  added must be in the hierarchy and must be a document class.
+ 
+  If the user is copying a component, then the parent to which the copy is
+  added must be in the hierarchy and must be a title or a component. The
+  parent must be inactive and may not be National Standard or Shared.
+ 
+If an entry is copied under the Sort option (not the Edit option),
+then the title or component copies are left as orphans.
+ 
+Although orphan titles or components will not appear in the Document
+Definition hierarchy, they can be still be added to a parent through both
+the Sort AND THE EDIT options by selecting action ITEMS for the parent,
+then action Add/Create, and then the orphan item.
+ 
+Checking Copies:
+ 
+  Copy titles which have been given a new parent should be thoroughly
+  checked before they are activated since their inherited behavior may
+  have changed.
+ 
+  The check should include Document Definition attributes of the entry
+  (including Upload characteristics), TIU Document Parameters, and
+  Business Rules. Consider inherited as well as explicit values.  Any
+  other implicit behavior, local or national, that applies to the entry
+  must also be checked.
+ 
+  Although there is no harm in coping a Title to ANY document class in the
+  hierarchy as long as the copy is not activated (since the copy has no
+  documents), there is no reason to expect that such copies will function
+  at all, much less function properly.  The user should either ensure that
+  they function properly in every way, or delete such copies from the
+  Document Definition file.
+ 
+  Copy COMPONENTS which have been given a new parent should also be
+  checked by thoroughly testing the parent title as above. The copy action
+  leaves the parent title of the copy component inactive. It is the user's
+  responsibility to test the new parent title and then reactivate it so it
+  is available to users for entering documents.
+ 
+Note: Although Action Copy COULD be used to change the behavior of an
+entry (i.e. change the copy and inactivate the original), it is better to
+use Action Edit or Move and not clutter up the file with inactive entries.
+Most behavior can be edited even when the entry is In Use by documents.
+Titles can be moved even when they are In Use by documents.
+ 
+ 
+Copying Objects:
+ 
+OBJECTS are copied from the Sort Option or the Create Objects Option.
+Object Abbreviation and Print Name are not copied, since they must be
+different from those of the original. If the user does not have
+programmer access, the Object Method is not copied since it is an M
+field. Since even inactive objects affect the Document Definition action
+TRY for titles whose boilerplate text contains the object, objects should
+not be copied/created without good reason. They should be thoroughly
+tested before being activated.
+ 
+ 
+Action MT Move Title:
+ 
+The action Move Title is accessed from the Edit option only, since it
+involves only entries in the Document Definition hierarchy.
+ 
+Action Move Title PERMITS:
+ 
+  Moving TITLES
+  Moving between DOCUMENT CLASSES WITHIN THE SAME CLASS
+ 
+Action Move Title DOES NOT PERMIT:
+ 
+  Moving CLASSES or DOCUMENT CLASSES
+  Moving COMPONENTS 
+    (The same effect can be achieved by deleting the component as an item
+    from its parent, and adding it as an item to the new parent.  This can
+    be done even if the component is In Use.)
+  Moving NATIONAL STANDARD titles
+  Moving titles which are not in the DOCUMENT DEFINITION HIERARCHY
+  Moving titles between CLASSES
+  Moving FAULTY titles (known as faulty to the computer)
+  Moving titles to FAULTY DOCUMENT CLASSES
+  Moves which RESULT in FAULTY titles
+    (For example, suppose Title NURSE NOTE inherits its Print Method from
+    its document class NIGHT NURSE DOCUMENT CLASS.  Suppose DAY NURSE
+    DOCUMENT CLASS has no Print Method. (This is not a fault since the
+    titles under it could all have their own Print Methods.)  If a user
+    moves NURSE NOTE from NIGHT NURSE DOCUMENT CLASS to DAY NURSE DOCUMENT
+    CLASS, then the title lacks a Print Method and becomes faulty.
+    Documents using the title don't print.  In this case, the title must
+    first be given its own Print Method, and THEN moved.)
+ 
+The above restrictions are intended to prevent moves between Document
+Classes with very different behavior.  However, hierarchies vary, and
+some structures will still permit risky moves.  For example, if Consults
+are under Progress Notes, the user can move a nonconsult Title to
+Document Class CONSULTS. This sort of move is NOT advised. Anyone
+contemplating such a move should carefully read the paragraphs below on
+the Consequences of Moves between Very Different Document Classes.
+ 
+Moving a title automatically inactivates it.  Therefore, managers should
+move titles only during off-peak hours. After the title is inactivated and
+moved under a new Document Class, the MT action attempts to update the
+PARENT DOCUMENT TYPE field (#.04) for existing documents of the title.
+This may take awhile if there are many documents to update.  (If certain
+documents were not updated, the user must update them later, using action
+Update Documents.)  When the action is finished, the title is LEFT
+INACTIVE.
+ 
+Checking the Title:
+ 
+Since the title has changed position within the hierarchy, its behavior
+may have changed.  It is the user's responsibility to thoroughly check its
+new behavior, and then to reactivate it so it is available for entering
+new documents.
+ 
+The check should include Document Definition attributes of the entry
+(including Basic, Technical, and Upload fields), TIU Document Parameters,
+and Business Rules. Consider inherited as well as explicit values.  Any
+other implicit behavior, local or national, that applies to the entry must
+also be checked.
+ 
+It is possible that the Document Definition action TRY might state that
+an entry looks OK when it still does not function.  For example,
+the action TRY may quit without continuing on to let the user enter a
+trial document. In such a case, check the title's Document Definition
+Fields against a different title that DOES work. (The TRY action checks
+that fields EXIST, but does not check whether or not they function
+properly.)
+ 
+ 
+Possible Consequences of Moves between Very Different Document Classes:
+ 
+Some behaviors are explicit, being determined by parameters, Business
+Rules, etc..  Others are implicit. For example, a Consult document is
+linked to a request when it is created, while a Progress Note document is
+not.  These differences mean, for example, that one document may belong to
+a given cross reference or have a certain field, while another lacks the
+field and is not in the cross reference. Furthermore, the entry may have
+Business Rules, parameters, etc., which are not appropriate in its new
+position. It may also be lacking necessary ones.
+ 
+Except for updating the PARENT DOCUMENT TYPE field (#.04) for documents of
+a title, the COPY/MOVE actions simply move the entry AS IS, making
+no attempt to ensure that it functions correctly in its new position. It
+is the user's responsibility to determine whether or not a move is
+reasonable, and to make all necessary changes to documents, Document
+Definitions, and rules/parameters.
+ 
+This does NOT mean that all moves are dangerous.  The more the difference
+in behavior and the greater the number of documents a title has, the
+greater the risk.
+ 
+Moves may take awhile if a title has many documents.  In the meantime,
+existing documents may not function properly, and users may not be able to
+enter given Titles.
+ 
+On the other hand there should be little risk in moving, say, a
+Cardiology/Medicine Service Progress Note title from Document Class
+MEDICINE SERVICE to Document Class CARDIOLOGY.
+ 
+Action MD Move Documents:
+ 
+Under this action, users select an old title and a new title.  The action
+then attempts to move ALL the documents of the old title to the new title.
+After a document is moved, its Parent Document Type is updated if
+necessary. If some documents are not available for move/update, they can
+be moved later using the same action.  The old title is then no longer In
+Use and can be deleted if desired.
+ 
+The old title is inactivated while documents are moved, and LEFT INACTIVE.
+If the user wants it available for entering documents, the user must
+reactivate it.
+ 
+Action Move Documents DOES NOT PERMIT:
+ 
+  Moving documents from or to titles that have components
+  Moving documents to a faulty title
+  Moving documents between CLASSES
+  Moving SELECTED documents (To move a particular document from one Title
+    to another, use Hidden Action CT Change Title for that particular
+    document.)
+ 
+The behavior of documents is determined by their title.  Therefore, moving
+documents from one title to another can affect their behavior.  Users are
+responsible to make sure the behavior of the target title is appropriate
+BEFORE moving documents to it.  Anyone contemplating a move between very
+different titles should carefully read the warnings under action Move
+Title, above.
+ 
+ 
+Action U Update Documents:
+ 
+This action is intended as a possible follow-up to action Move Title.  It
+will usually not be necessary since action Move Title itself attempts to
+update documents defined by the moved title, giving them the correct new
+Parent Document Type.  However, if a document is not available, then
+action Move Title finishes, leaving that document with the old Parent
+Document Type. This may affect document behavior.  It will cause CWADs to
+fail to generate alerts, and conversely will cause nonCWADs to generate
+CWAD alerts.  It may have other consequences in the future.
+ 
+Action U Update Documents is intended for this situation.  It updates
+every document defined by a certain title to the correct Parent Document
+Type. It can be run multiple times if necessary and entails no risk.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D COPYMOVE^<a href="http://code.osehra.org/dox/Routine_TIUFHA2.html">TIUFHA2</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1999-09-14 18:58:17</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

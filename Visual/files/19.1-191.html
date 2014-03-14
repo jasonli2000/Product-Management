@@ -1,0 +1,59 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTkuMS0xOTE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IVM SYS (191) &nbsp;&nbsp;  SECURITY KEY (19.1)</h1>
+<div id="demo"><table id="MTkuMS0xOTE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IVM SYS</td>
+</tr>
+<tr>
+<td>DESCRIPTIVE NAME</td>
+<td>IVM System Manager's Key</td>
+</tr>
+<tr>
+<td>PERSON LOOKUP</td>
+<td>LOOKUP</td>
+</tr>
+<tr>
+<td>KEEP AT TERMINATE</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This key is used to to lock the IVM SYS MGR MENU option in the IVM
+package.  The purpose of this key is to restrict access to this
+menu from all users except IRM staff and IVM package coordinators.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

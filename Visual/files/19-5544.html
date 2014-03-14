@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTU0NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ECTS BEDSECTION (5544) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTU0NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ECTS BEDSECTION</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Bedsection Workload</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>BEDSECTION WORKLOAD</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The user may choose to print this report for a single selected
+AMIS segment, or for all segments in the AMIS 334-341 file.
+If all segments are chosen, the user may select the AMIS
+month/year date range for the report.  A separate page prints
+for each AMIS month/year selected.  For each segment, the
+following totals are shown: operating beds at the end of the month,
+discharges, and patient days of care.  The discharge total is
+comprised of 'DEATHS, BO AND ABO' plus 'DISCHARGE TO OPT/NSC'
+plus 'DISCHARGES NOT OPT/NSC' plus 'TRANSFER OUT'.
+Alternatively, the user may choose to print the report for a
+single segment.  After choosing the segment, the user may
+select the AMIS month/year date range.  The same fields will
+be displayed for the selected AMIS segment.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-119.html">INTERIM MANAGEMENT SUPPORT</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_ECTSBED.html">ECTSBED</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1990-10-02 13:53:09</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

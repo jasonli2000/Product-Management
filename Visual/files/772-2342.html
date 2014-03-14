@@ -1,0 +1,100 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NzcyLTIzNDI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>2006-03-08 00:01:00 (2342) &nbsp;&nbsp;  HL7 MESSAGE TEXT (772)</h1>
+<div id="demo"><table id="NzcyLTIzNDI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DATE/TIME ENTERED</td>
+<td>2006-03-08 00:01:00</td>
+</tr>
+<tr>
+<td>SERVER APPLICATION</td>
+<td><a href="771-63.html">ROR SITE</a></td>
+</tr>
+<tr>
+<td>TRANSMISSION TYPE</td>
+<td>OUTGOING</td>
+</tr>
+<tr>
+<td>MESSAGE ID</td>
+<td>502342</td>
+</tr>
+<tr>
+<td>PARENT MESSAGE</td>
+<td><a href="772-2342.html">2006-03-08 00:01:00</a></td>
+</tr>
+<tr>
+<td>PRIORITY</td>
+<td>DEFERRED</td>
+</tr>
+<tr>
+<td>RELATED EVENT PROTOCOL</td>
+<td><a href="101-3278.html">ROR-SITE-DRIVER</a></td>
+</tr>
+<tr>
+<td>MESSAGE TYPE</td>
+<td>BATCH OF MESSAGES</td>
+</tr>
+<tr>
+<td>NAMESPACE</td>
+<td>ROR</td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td><a href="771.6-3.html">SUCCESSFULLY COMPLETED</a></td>
+</tr>
+<tr>
+<td>DATE/TIME PROCESSED</td>
+<td>2012-10-13 15:00:16</td>
+</tr>
+<tr>
+<td>NO. OF CHARACTERS IN MESSAGE</td>
+<td>152</td>
+</tr>
+<tr>
+<td>NO. OF EVENTS IN MESSAGE</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MESSAGE TEXT</td>
+<td><pre>
+MSH|^~\&amp;|ROR SITE||||||CSU^C09^CSU_C09|502342-1|T|2.4|||AL|NE|USA
+
+PID|1||0^^^^U||PSEUDO^PATIENT
+
+CSR|VA HIV^1.5.18.1||050^SOFTWARE SERVICE^99VA4|0^^^^U^0^0
+
+BTS|1
+
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

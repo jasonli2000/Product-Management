@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjU1MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCP AVAILABILITY LISTING (2551) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjU1MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCP AVAILABILITY LISTING</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Availability Listing</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>AVAILABILITY LISTING</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Availability Listing will print the item master number,
+description, nsn, unit per issue, group category, quantity on-hand,
+quantity due-in, quantity due-out, reorder point, issue multiple,
+average unit cost, total value, and if the item is set to 'kill when
+zero.'
+ 
+The warehouse will have the option to sort by the selected nsn or
+account code.  The report will sort by account code and nsn.
+ 
+The primary will have the option to select specific group categories
+to display.  The report will sort by group category and description.
+
+The user has the option to print a summary of the report data.  By
+printing the summary, the report will not display each item.  In the
+warehouse inventory point, the inventory value by account code will
+be summarized.  In the primary and secondary inventory points, the
+inventory value by group category will be summarized.
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PRCPRAVL.html">PRCPRAVL</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

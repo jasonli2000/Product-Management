@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA4OTE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OR MEDICATION QO CHECKER (10891) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA4OTE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OR MEDICATION QO CHECKER</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Medication Quick Order Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>MEDICATION QUICK ORDER REPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option generates two reports (printed to an e-mail message sent to 
+the originator of the report) of Quick Orders that should be evaluated 
+due to the addition of three new fields in CPRS 27:  Route, IV Type and 
+Schedule.  One report includes QOs that are contained in an order menu, 
+order set or a reminder dialog.  The other report includes QOs that are 
+stand alone and not included in another entry. 
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-35.html">ORDER ENTRY/RESULTS REPORTING</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D ATWILL^<a href="http://code.osehra.org/dox/Routine_ORWOD.html">ORWOD</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

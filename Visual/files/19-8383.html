@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODM4Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENY2K_NATIONAL_QUEUED (8383) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODM4Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENY2K_NATIONAL_QUEUED</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Schedule Option for Y2K National Roll-up</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SCHEDULE OPTION FOR Y2K NATION</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>ENY2K_ROLL_UP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Transmits Y2K information to a server at FORUM, from which it is sent to
+VACO. Intended to be scheduled to run once a month.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-18.html">ENGINEERING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DEQVACO^<a href="http://code.osehra.org/dox/Routine_ENY2VACO.html">ENY2VACO</a></td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzc3Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSGW CLEAR AMIS EXCEPTIONS (3773) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzc3Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSGW CLEAR AMIS EXCEPTIONS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Incomplete AMIS Data</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>INCOMPLETE AMIS DATA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option loops through the "AEX" - exceptions cross-reference in the
+AR/WS Stats File - 58.5.  Drugs in this cross-reference had data
+missing from the Drug file at the time the quantity was dispensed,
+and thus could not be added to the cumulative AMIS statistics.
+For the selected date range, the drug will be shown, and the user
+will be asked to supply the missing data.  At that time, the routine
+will update the AMIS statistics, and delete the "AEX" cross-reference.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PSGWCL.html">PSGWCL</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,54 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02MDEuNzU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MH CHOICES (601.75) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02MDEuNzU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MH CHOICES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains the individual selections possible in a multiple choice 
+question.  Examples are Yes or No, True or False, 1.  Abraham Lincoln, 
+2. George Washington, 3. George W. Bush or 4. Richard Nixon. For instruments 
+first defined in the legacy system MH INSTRUMENT file (#601), a single 
+character is specified for a multiple choice answer.  If George Washington 
+was the choice selected the legacy value would be 2.  
+
+Choices are pointed to by the MH CHOICETYPES file (#601.751) which is a 
+collection of choices.  Choices are referenced in the MH ANSWERS file 
+(#601.85) as a pointer to the full response.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

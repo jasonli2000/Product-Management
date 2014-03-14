@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTE4MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LA7 AMENDED RESULTS RECEIVED (181) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTE4MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LA7 AMENDED RESULTS RECEIVED</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>LAB AMENDED RESULTS RECEIVED</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Mail bulletin created by Laboratory package when processing a LEDI
+interface type HL7 result (ORU) message which contains laboratory
+testing results that are flagged as amended.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+Laboratory results on the following patient have been received via a HL7
+interface that indicate the results have been amended. Please use the
+appropriate laboratory option to amend these results on this system.
+ 
+  
+ Action: |14|
+ 
+ 
+      Interface: |1|
+    File #62.49: |2|
+ 
+   Patient Name: |3|
+     Patient ID: |4|
+ 
+    Specimen ID: |5|
+ Collection D/T: |6|
+   Test/analyte: |7|
+       Producer: |8|
+  Producer's ID: |9|
+                  
+ 
+     Observation
+     -----------
+          Value: |10|
+          Units: |11|
+      Ref range: |12|
+          Flags: |13|
+ 
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

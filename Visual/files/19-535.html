@@ -1,0 +1,109 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTM1").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FHNOM (535) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTM1" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FHNOM</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Supplemental Feedings</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SUPPLEMENTAL FEEDINGS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu allows entry to all supplemental feeding options
+except the file management options.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-532.html">FHNO1E</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;SF</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-531.html">FHNO1I</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;IN</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-533.html">FHNO2</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;LA</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-534.html">FHNO3</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;WL</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-575.html">FHNO9</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;WR</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-576.html">FHNO10</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;WP</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-619.html">FHNO12</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;SH</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>W @IOF,!!?19,"S U P P L E M E N T A L   F E E D I N G S",!!!</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2005-03-11 13:00:22</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

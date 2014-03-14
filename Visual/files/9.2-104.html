@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTEwNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUFILE ACCESS USE1 (104) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTEwNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUFILE ACCESS USE1</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>INTRODUCTION</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+As systems manager, you are responsible for granting access to your system.
+You must gauge the needs of each user and assign an appropriate degree of
+access authority.  Too much may risk the security of your system while too
+little may inhibit productive activity.
+ 
+Application packages are distributed with menus for different groups of
+users.  Menus and keys are provided which control access to the application
+files.  File entries and associated attribute fields may be displayed,
+edited, or deleted according to the design of the option regardless of any
+file access.  The only instance when file access is checked during the use 
+of an option is when VA FileMan becomes directly involved.
+ 
+In an option the application programmer controls access to the initial
+file.  File access is not checked.  Within the option, however, the
+application may call VA FileMan to point to another file.  Then file access
+is checked since VA FileMan, not the application, is operative.
+ 
+So you must grant file access whenever VA FileMan is directly governing
+user activity.  This will primarily concern your VA FileMan users, people
+with DIUSER as a menu option, who will need to have file access.  Hence,
+the [PURPOSE] of granting file access is to control the use of VA FileMan.
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;PURPOSE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-110.html">XUFILE ACCESS USE1.1</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-02-13 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

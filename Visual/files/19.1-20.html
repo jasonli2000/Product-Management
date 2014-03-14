@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTkuMS0yMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XMSTAR (20) &nbsp;&nbsp;  SECURITY KEY (19.1)</h1>
+<div id="demo"><table id="MTkuMS0yMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XMSTAR</td>
+</tr>
+<tr>
+<td>DESCRIPTIVE NAME</td>
+<td>MailMan Broadcast Permission</td>
+</tr>
+<tr>
+<td>KEEP AT TERMINATE</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Holders of the XMSTAR key may send Broadcast messages to all users.
+They may also send Limited Broadcast messages to subsets of local users,
+such as all users belonging to a certain division.
+
+Give this key to users who need to send broadcast messages to all users.
+The POSTMASTER does not need this key, but POSTMASTER surrogates do.
+
+If a user does not need to send broadcast messages to all users, but
+does need to be able to send limited broadcast messages to subsets of
+local users, give the user the XMSTAR LIMITED key, instead.
+
+The POSTMASTER and holders of the XMSTAR key do not need the 
+XMSTAR LIMITED key.  They already have the capability to send limited
+broadcast messages.
+
+The XMSTAR key and the XMSTAR LIMITED key are mutually exclusive.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MUTUALLY EXCLUSIVE KEYS</td>
+<td>
+<ol>
+<li>
+<dt>MUTUALLY EXCLUSIVE KEYS:  &nbsp;&nbsp;<a href="19.1-316.html">XMSTAR LIMITED</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

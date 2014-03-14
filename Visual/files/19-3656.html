@@ -1,0 +1,92 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzY1Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSJI ACTIVE (3656) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzY1Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSJI ACTIVE</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Active Order List (IV)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ACTIVE ORDER LIST (IV)</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+  This report will show all orders that are active from the time that
+this report is run.  This report is similar to the ward list, since
+the ward list also contains all active orders when it is run.  However,
+this report:
+    - Can be run at any time rather than at a start of coverage time.
+    - Will not affect the calculation of labels after order entry.
+      (After order entry the program will check to see if the ward list
+      has been run to calculate the # of labels needed for the
+      'ACTION' prompt.)
+    - Will contain all types of IV orders (Hyperals, Admixture,
+      Piggybacks etc.).
+    - Can be run for specific wards.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K PSIVBEG,PSIVEND,WRDB,WRDE,I1,I</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D ^<a href="http://code.osehra.org/dox/Routine_PSIVXU.html">PSIVXU</a> Q:$D(XQUIT)  D ENTACT^<a href="http://code.osehra.org/dox/Routine_PSIVRNL.html">PSIVRNL</a>,ENIVKV^PSGSETU</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1988-08-23 10:27:32</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

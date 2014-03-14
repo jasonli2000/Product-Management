@@ -1,0 +1,80 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTcwMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SCRPW TRANS MT EQUAL U RPT (9703) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTcwMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SCRPW TRANS MT EQUAL U RPT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Encounters Transmitted with MT Status of U</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ENCOUNTERS TRANSMITTED WITH MT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This report prints a list of patients who have encounters which will 
+transmit with a means test indicator of 'U'. The patient will be included
+on the report only if ALL the patient's encounters within the date range
+selected will transmit with a MTI of 'U'.  This will focus the list on
+patients who do not have a valid MT status in the National Patient Care
+Database (NPCD) for the date range chosen. The current FY is the suggested
+date range for this report.  Formatted for 132 col. output, this report 
+will not format correctly to an 80 column device.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-48.html">SCHEDULING</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D EN^<a href="http://code.osehra.org/dox/Routine_SCRPW81.html">SCRPW81</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

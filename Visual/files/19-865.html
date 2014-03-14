@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODY1").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LRAC INITIALIZE (865) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODY1" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LRAC INITIALIZE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Initialize LAC global & X references</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>INITIALIZE LAC GLOBAL & X REFE</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>LRLIASON</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This function is used on the occasion the hospital is ready to begin
+actual charting of the daily cummulative.  It may be run multiple times
+to restart the page numbering during the testing phase of implementation.
+Once actual charting has begun, it should never be run again!  While
+all pages are numbered and dated, the potential for confusion should be
+obvious.  If you have access to this function, you are considered by
+those who have given you access to be a professional; act accordingly.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>KILL^<a href="http://code.osehra.org/dox/Routine_LRACM.html">LRACM</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

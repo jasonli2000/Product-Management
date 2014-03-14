@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjUwNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCP NIGHTLY EMER STK LVL (2506) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjUwNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCP NIGHTLY EMER STK LVL</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Night Task Flag Inventory at Emergency Stock Lvl</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>NIGHT TASK FLAG INVENTORY AT E</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option should be set up as a background job by the site manager
+to run once nightly.  The job searches the inventory file, and if any items
+are found that have a quantity on hand less than or equal to the emergency
+stock level assigned to the item, a flag will be set on the inventory, so
+that the next time a user signs on to that inventory, they will see a
+message notifying them that they have stock at emergency reorder level and
+will be allowed to run a report showing them which items are at that level.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PRCPUEMS.html">PRCPUEMS</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

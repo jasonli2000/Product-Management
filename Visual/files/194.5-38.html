@@ -1,0 +1,58 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTk0LjUtMzg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TYPE OF RECORD (38) &nbsp;&nbsp;  LABEL PRINT FIELD (194.5)</h1>
+<div id="demo"><table id="MTk0LjUtMzg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PRINT FIELD</td>
+<td>TYPE OF RECORD</td>
+</tr>
+<tr>
+<td>TYPE OF LABEL</td>
+<td>RECORD or REQUEST</td>
+</tr>
+<tr>
+<td>DEFAULT TITLE</td>
+<td>Record Type:</td>
+</tr>
+<tr>
+<td>TEST VALUE</td>
+<td>MEDICAL RECORD</td>
+</tr>
+<tr>
+<td>INTERNAL VARIABLE</td>
+<td>RTV(38)</td>
+</tr>
+<tr>
+<td>MUMPS CODE TO SET VARIABLE</td>
+<td>S RTV(RTJ)=$S($D(^DIC(195.2,+$P(RT0,"^",3),0)):$P(^(0),"^"),1:"UNKNOWN")</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

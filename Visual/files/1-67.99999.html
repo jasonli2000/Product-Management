@@ -1,0 +1,51 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02Ny45OTk5OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ARCHIVED LAB MONTHLY WORKLOADS (67.99999) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02Ny45OTk5OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ARCHIVED LAB MONTHLY WORKLOADS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ This file contains archived LAB MONTHLY WORKLOADS file data. It
+is an exact copy of ^LRO(67.9 but is designed to be deleted from the
+system to free disk space. I can also be restored with out overlaying
+current data.
+  Not all sites will make use of this file. If this file is used then
+historical reports are possible. This file should be populated before
+the LAB MONTHLY WORKLOADS [^LRO(67.9)] global is purged from the system.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNjYwMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SOWKXREF (6600) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNjYwMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SOWKXREF</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Re-initialize Look-up Values</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RE-INITIALIZE LOOK-UP VALUES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will be used to re-index the 'CP' and 'BS5' cross references
+on file #650.  This option is needed for when MAS change a SSN or Name of
+a patient.  The 'CP' and 'BS5' cross references are similar to the 'B'
+and 'BS5' cross references found on the MAS patient file.  Because cross
+references may become out of sync with MAS, this option allows the cross
+references to be updated when there is a change.  This option is queued,
+preferably during off hours.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-137.html">SOCIAL WORK</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D XREF^<a href="http://code.osehra.org/dox/Routine_SOWKOPT.html">SOWKOPT</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

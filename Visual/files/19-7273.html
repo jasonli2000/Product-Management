@@ -1,0 +1,116 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzI3Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SRO PCE STATUS (7273) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzI3Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SRO PCE STATUS</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>PCE Filing Status Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PCE FILING STATUS REPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option provides a report of the PCE filing status of completed cases 
+performed during the selected date range.  The report may be printed for 
+OR surgical cases, non-OR procedures or both.  Also, the report may be 
+printed for all specialties or for a single specialty only.  
+  
+This report is intended to be used as a tool in the review of Surgery 
+case information that is passed to PCE.  The report uses 2 status 
+categories: 
+  (1) FILED - This status indicates that case information has already been
+      filed with PCE.  
+  (2) NOT FILED - This status indicates that the case information has not
+      been filed with PCE.  The case may or may not be missing information
+      needed to file with PCE.  
+  
+Two forms of the report are available, the long and the short. The long 
+form uses a 132 column format and prints case information including the 
+surgeon/provider, the attending, the specialty, the principal post-op 
+diagnosis, and the principal procedure.  If the PCE filing status is 
+FILED, the CPT codes and ICD diagnosis codes will be printed.  If the 
+filing status is NOT FILED, information fields needed for PCE filing that 
+do not contain data will be printed.  At the end of the report, the 
+number of cases in each PCE filing status will be printed, plus the 
+number of CPT and ICD codes for cases with a status of FILED.  
+  
+The short form uses an 80 column format and does not include 
+surgeon/provider, attending, principal post-op diagnosis and CPT and ICD 
+code information.  The totals printed at the end will show only the total 
+cases for each status.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-127.html">SURGERY</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D EXIT^<a href="http://code.osehra.org/dox/Routine_SROVAR.html">SROVAR</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D ^<a href="http://code.osehra.org/dox/Routine_SROVAR.html">SROVAR</a></td>
+</tr>
+<tr>
+<td>XQUIT EXECUTABLE</td>
+<td>Q</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_SROPCE0.html">SROPCE0</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

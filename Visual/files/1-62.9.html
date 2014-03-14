@@ -1,0 +1,52 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02Mi45").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LAB SHIPPING CONFIGURATION (62.9) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02Mi45" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LAB SHIPPING CONFIGURATION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file is used to define and described a relationship between two
+facilities, a collecting facility and a host facility, for the collecting,
+processing, receipting and reporting of laboratory testing of clinical
+specimens. It is used to control the building of shipping manifests which
+are used as shipping documents for the transport of clinical specimens between
+the facilities which make up the configuration. It controls how the specimens
+are processed at both facilities and the means and methods used to
+communicate test orders and results for these two entities.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

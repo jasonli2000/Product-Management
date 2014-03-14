@@ -1,0 +1,70 @@
+<html>
+
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#SEw3LU1lZGljaW5l").dataTable({
+        "bInfo": true,
+        "iDisplayLength": 25,
+        "sPaginationType": "full_numbers",
+        "bStateSave": true,
+        "bAutoWidth": true
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>Package: <a href="http://code.osehra.org/dox/Package_Medicine.html">Medicine</a> HL7 List</h1><div id="demo"><table id="SEw3LU1lZGljaW5l" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Event Type</th>
+<th>Transaction Message Type</th>
+<th>Sender</th>
+<th>Receiver</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="101-3017.html">MCAR Device Server</a></td>
+<td>event driver</td>
+<td><a href="779.001-46.html">R01</a></td>
+<td><a href="771.2-3.html">ORU</a></td>
+<td><a href="771-52.html">INST-MCAR</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="101-3018.html">MCAR Device Client</a></td>
+<td>subscriber</td>
+<td><a href="779.001-46.html">R01</a></td>
+<td><a href="771.2-3.html">ORU</a></td>
+<td></td>
+<td><a href="771-51.html">MCAR-INST</a></td>
+</tr>
+<tr>
+<td><a href="101-3626.html">MCAR ORM SERVER</a></td>
+<td>event driver</td>
+<td><a href="779.001-38.html">O01</a></td>
+<td><a href="771.2-5.html">ORM</a></td>
+<td><a href="771-51.html">MCAR-INST</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="101-3627.html">MCAR ORM CLIENT</a></td>
+<td>subscriber</td>
+<td><a href="779.001-39.html">O02</a></td>
+<td></td>
+<td></td>
+<td><a href="771-52.html">INST-MCAR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

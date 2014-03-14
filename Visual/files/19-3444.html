@@ -1,0 +1,99 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzQ0NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRA PRINT-FDA EXCEPT BY PT (3444) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzQ0NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRA PRINT-FDA EXCEPT BY PT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Print Patient FDA Exception Data</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PRINT PATIENT FDA EXCEPTION DA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the user to select a patient and date/time range, then
+displays the patient's reactions that:
+ 1) are not entered-in-error,
+ 2) are observed drug reactions,
+ 3) are marked as 'signed-off' by the originator of the entry,
+ 4) have an origination date/time within the date/time range selected by
+    the user, and
+ 5) do not have the minimum amount of FDA data needed.
+     
+The FDA data needed is:
+ a) date/time of the reaction,
+ b) patient,
+ c) date/time the reaction was reported,
+ d) person who reported the reaction,
+ e) the reaction itself,
+ f) the suspected agent, and
+ g) at least one of the following questions must be answered
+    1) Patient died?
+    2) Reaction treated with RX drug?
+    3) Life Threatening illness?
+    4) Required hospitalization?
+    5) Prolonged Hospitalization?
+    6) Resulted in permanent disability?
+    7) Patient recovered?
+    8) Is this event a Congenital Anomaly?
+    9) Did this event require intervention to prevent impairment?
+    10) Required ER/MD visit?
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-71.html">ADVERSE REACTION TRACKING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN1^<a href="http://code.osehra.org/dox/Routine_GMRAEF1.html">GMRAEF1</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-03-26 15:32:44</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

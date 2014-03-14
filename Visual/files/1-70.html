@@ -1,0 +1,157 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RAD/NUC MED PATIENT (70) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RAD/NUC MED PATIENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains imaging information for patients.  This file is the
+focal point of the entire radiology/nuclear medicine module.
+ 
+The file has four basic sections.  They are the following:
+ 
+    I. General Patient demographics
+   II. Patient demographics that are imaging related
+  III. Registered exam information
+   IV. Outside films registry; where films received from other hospitals
+       are recorded into the system
+ 
+ Data Storage
+ ------------
+The data for the 'RAD/NUC MED PATIENT' file is stored under the ^RADPT
+global. This file is very volatile and should be journaled and translated if
+the operating system supports these two functions.
+ 
+ Input Templates
+ ---------------
+The following is a list of input templates used by the package
+and the entry in the OPTIONS file (#19) that uses the template:
+ 
+                       Compiled
+ Name                  Routine    Description; Option(s)
+ ----                  --------   ----------------------
+ RA DIAGNOSTIC BY CASE            Used to input interpreting physicians
+                                  and diagnostic code;
+                                  RA DIAGCN
+ 
+ RA OUTSIDE ADD                   Add outside films into system;
+                                  RA ADDEXAM
+ 
+ RA OUTSIDE EDIT                  Edit outside film registry;
+                                  RA OUTEDIT
+ 
+ RA OUTSIDE SUPEROK               Indicate outside film to require
+                                  supervisor 'ok' before returning;
+                                  RA OUTFLAG
+ 
+ 
+ RA CANCEL                        Cancel a registered exam;
+                                  RA CANCEL
+ 
+ RA EXAM EDIT                     Edit a registered exam;
+                                  RA EDITCN, RA EDITPT
+ 
+ RA LAST PAST VISIT               Allows entry of the last visit by a
+                                  patient to the department
+                                  before this module was installed;
+                                  RA PAST
+ 
+ RA NO PURGE SPEC IFICATION       Indicates no purging of an exam report.
+                                  RA NOPURGE
+ 
+ RA OVERRIDE                      Exam status is made complete without
+                                  doing a requirements check;
+                                  RA OVERRIDE
+ 
+ RA REGISTER           ^RACTRG*   Initial registered exam entry;
+                                  RA REG
+ 
+ RA STATUS CHANGE                 Status Tracking input;
+                                  RA STATRACK
+ 
+If any modifications to these input templates are needed for local
+purposes, then great care should be taken not to degrade any
+branching logic in the template.  Making modifications is not recommended.
+ 
+The following templates contain a large amount of branching and
+MUMPS code and as a result they are uneditable:
+ 
+   - RA REGISTER
+   - RA STATUS CHANGE
+   - RA EXAM EDIT
+ 
+ 
+ Print Templates
+ ---------------
+ The following is a list of print templates used by the package:
+ 
+ Name                 Description; Option(s)
+ ----                 ----------------------
+ 
+ RA DAILY LOG         Prints an informational report for all
+                      exams for a specified date.
+                      RA LOG
+ 
+ RA OUTSIDE LIST      Prints list of outside films needing to be
+                      returned by a specified date;
+                      RA OUTSIDERPT
+ 
+ Sort Templates
+ --------------
+ The following is a list of sort templates associated with this file:
+ 
+ Name                 Related Print Template
+ ----                 ----------------------
+ 
+  RA DAILY LOG        RA DAILY LOG
+ 
+  RA OUTSIDE LIST     RA OUTSIDE LIST
+ 
+Also, the modification of the other sort templates is not recommended.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;RA</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

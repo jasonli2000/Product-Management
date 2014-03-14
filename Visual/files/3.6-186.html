@@ -1,0 +1,104 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTE4Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>HDIS ERRORS (186) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTE4Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>HDIS ERRORS</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>HDIS Error has occurred</td>
+</tr>
+<tr>
+<td>MAIL GROUP</td>
+<td>
+<ol>
+<li>
+<dt>MAIL GROUP:  &nbsp;&nbsp;<a href="3.8-213.html">HDIS ERRORS</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>RETENTION DAYS</td>
+<td>10</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Notification of an error occurring during HDIS VUID processing.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+An error has occurred at |1|
+On |2|
+Error message: |3|
+</pre>
+</td>
+</tr>
+<tr>
+<td>PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Station Name and number.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Date/time error occurred.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+An Error has occurred at |1| On |2|. Error Message: |3|
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PRIORITY?</td>
+<td>NO</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

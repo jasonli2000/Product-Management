@@ -1,0 +1,100 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuNC0xNDY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TDX (146) &nbsp;&nbsp;  AUTO INSTRUMENT (62.4)</h1>
+<div id="demo"><table id="NjIuNC0xNDY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TDX</td>
+</tr>
+<tr>
+<td>PROGRAM</td>
+<td>LATDX</td>
+</tr>
+<tr>
+<td>ENTRY for LAGEN ROUTINE</td>
+<td>Tray-cup or sequence x-ref</td>
+</tr>
+<tr>
+<td>CROSS LINKED BY</td>
+<td>CUP</td>
+</tr>
+<tr>
+<td>METHOD</td>
+<td>TDX</td>
+</tr>
+<tr>
+<td>OVERLAY DATA</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>NEW DATA</td>
+<td>D NEW^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>RESTART</td>
+<td>D RESTART^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>CHEM TESTS</td>
+<td>
+<ol>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-219.html">GENTAMICIN</a></dt>
+<dt>PARAM 3:  &nbsp;&nbsp;GENTAMICIN</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(55,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-370.html">TOBRAMYCIN</a></dt>
+<dt>PARAM 3:  &nbsp;&nbsp;TOBRAMYCIN</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(93,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-210.html">DILANTIN</a></dt>
+<dt>PARAM 3:  &nbsp;&nbsp;PHENYTOIN</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(23,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-207.html">PHENOBARBITAL</a></dt>
+<dt>PARAM 3:  &nbsp;&nbsp;PHENOBARBITAL</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(27,1)</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERFACE NOTES</td>
+<td><pre>
+Param 3 contains the test name that is transmitted.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,64 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODkzMC42LTEx").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LIVE (11) &nbsp;&nbsp;  USR RECORD STATUS (8930.6)</h1>
+<div id="demo"><table id="ODkzMC42LTEx" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LIVE</td>
+</tr>
+<tr>
+<td>SYMBOL</td>
+<td>AL</td>
+</tr>
+<tr>
+<td>SEQUENCE</td>
+<td>105</td>
+</tr>
+<tr>
+<td>APPLIES TO</td>
+<td>document definition</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This status applies to document definitions only.
+ 
+Documents may be entered for document definitions of status ACTIVELIVE.
+ACTIVELIVE status is intended for actual, clinical documents, NOT for test
+documents.
+ 
+If a document definition has status ACTIVELIVE, then its status may be
+changed to ACTIVENOLONGER only.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

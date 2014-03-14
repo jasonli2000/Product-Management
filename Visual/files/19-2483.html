@@ -1,0 +1,121 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjQ4Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCP MANAGER MENU (2483) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjQ4Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCP MANAGER MENU</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Manager For Primary Inventory Point Menu</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>MANAGER FOR PRIMARY INVENTORY</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>PRCP MGRKEY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu contains options for editing primary control parameters
+and for calculating due-ins, etc.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2482.html">PRCP INVPT PARAM ENTER/EDIT</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2477.html">PRCP PURGE MENU</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2499.html">PRCP DATE RECEIVED DELETE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2486.html">PRCP INV CONTROL PARAM PRINT</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2530.html">PRCP DIST COST EDIT</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2533.html">PRCP GROUP CATEGORY EDIT</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2534.html">PRCP STORAGE LOCATION EDIT</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2509.html">PRCP DUEIN CALCULATE/UPDATE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-8913.html">PRCP UNDO CONVERSION</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-9145.html">PRCP REMOVE SS FROM DIST ORD</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-9150.html">PRCP UPDATE SUPPLY STA ITEMS</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-10685.html">PRCP ON-DEMAND AUDIT REPORT</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>K:$G(PRCP("DPTYPE"))'="P" PRCP S PRCP("DPTYPE")="P" D DISPLAY^<a href="http://code.osehra.org/dox/Routine_PRCPUSEL.html">PRCPUSEL</a> I '$G(PRCP("I")) S XQUIT=1 D NOMENU^<a href="http://code.osehra.org/dox/Routine_PRCPUSEL.html">PRCPUSEL</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2007-09-04 22:43:38</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

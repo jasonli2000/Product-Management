@@ -1,0 +1,56 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS04MDEuNDM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>REMINDER FINDING ITEM PARAMETER (801.43) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS04MDEuNDM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>REMINDER FINDING ITEM PARAMETER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file is used to predefine a preferred dialog element or dialog group
+to represent a reminder finding item.  Auto generation of a reminder
+dialog from the reminder definition uses the dialog in this file in
+preference to using the Finding Type Parameter's prefix and suffix
+to create a sentence.
+ 
+The finding items are restricted to finding types that can be used to
+resolve the reminder from the CPRS GUI.
+ 
+This file is for local use only. It does not contain any nationally
+distributed entries. Local entries in this file are not exchanged with
+other sites via the reminder exchange tool.  
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

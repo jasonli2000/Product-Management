@@ -1,0 +1,54 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zNTQuNzE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IB COPAY TRANSACTIONS (354.71) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zNTQuNzE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IB COPAY TRANSACTIONS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+DO NOT delete entries in this file.  DO NOT edit data in this file with VA
+File Manager.
+ 
+This file stores individual transactions for outpatient medication
+copayments.  The transactions in this file will be used to store detailed
+information about a patient's rx copayments, including amounts billed and
+not billed.  There should be transactions stored in this file for both
+this facility and other treating facilities through out the VA system.
+ 
+Per VHA Directive 10-93-142, this file definition should not be modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

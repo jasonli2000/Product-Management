@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTE3Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OR PERFORMANCE MONITOR (9177) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTE3Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OR PERFORMANCE MONITOR</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Performance Monitor Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PERFORMANCE MONITOR REPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option produces a report showing the number of orders entered by
+provider.  The report includes a detailed listing as well as a summary.
+The detail listing includes pertinent information about each order
+associated with the listed provider.  The summary report shows the number
+of orders entered for a provider, the number of orders entered by an ORES
+key holder, the percentage of orders entered by an ORES key holder for the
+given provider and a break down of the orders by nature of order for those
+that were entered by a non-ORES key holder.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-35.html">ORDER ENTRY/RESULTS REPORTING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_ORPRPM.html">ORPRPM</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

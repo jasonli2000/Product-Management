@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDc1MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>NURAMN-MANCK (4750) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDc1MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>NURAMN-MANCK</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Nursing Batch Job Status Check</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>NURSING BATCH JOB STATUS CHECK</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option checks the status of the manhours, and NURSING Package
+batch jobs to see if they completed.
+If these jobs do not run to completion on a specific date or
+shift, a mail bulletin is sent to the NURS-ADP mail group.  This job should
+be queued to run at least 2 hours after the NURAAM-ACU option runs and run 
+with a rescheduling frequency of 1D.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-106.html">NURSING SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN1^<a href="http://code.osehra.org/dox/Routine_NURAMB3.html">NURAMB3</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1992-10-08 13:50:47</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

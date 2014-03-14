@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA0NDg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUSFACHK (10448) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA0NDg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUSFACHK</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Check Failed Access Log</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CHECK FAILED ACCESS LOG</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option runs the Failed Access Check routine "XUSFACHK".
+It looks to see if there have been a large number of failed access 
+attempts since the routine was last run.
+If it finds that the number of failed access attempts is greater that the 
+limit in the Kernel system parameter field "FAILED ATTEMPTS LIMIT - IRM"
+during normal business hours (8am to 4:30pm) it sends a message to the
+mail group stored in the field "IRM MAIL GROUP" or the limit set in Kernel
+system parameter "FAILED ATTEMPTS LIMIT - AOD" after hours, it sends a
+message to the mail group in the "AFTER HOURS MAIL GROUP".
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>DELEGABLE</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>FAILED^<a href="http://code.osehra.org/dox/Routine_XUSFACHK.html">XUSFACHK</a></td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

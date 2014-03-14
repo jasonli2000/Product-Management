@@ -1,0 +1,109 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTMwMDI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RMPR SUSP EDIT MAN (3002) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTMwMDI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RMPR SUSP EDIT MAN</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Edit Suspense</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Function description
+ 
+This option is used to edit a manual Suspense record, not a
+CPRS electronic record for a patient. The following information for a
+suspense record can be edited:
+ 
+  Station
+  Veteran Suspense form
+  Requestor
+  Description of item/services.
+ 
+ 
+ 
+Steps
+ 
+To edit a manual suspense, follow these steps:
+ 
+Step    Action
+1       At the Select Item(s): Next Screen// prompt, type ED for the Edit
+        Manual Suspense option, and press &lt;Enter.&gt;  
+ 
+        Note: If no changes are required, press &lt;Enter&gt; at the // prompt
+        to bypass the editing option.
+2       Type a number (from the list shown) to select an order, and press
+        &lt;Enter.&gt;
+3       At the STATION:  HINES, IL// prompt, press &lt;Enter&gt; or change the
+        station.
+4       At the VETERAN prompt, press&lt;Enter&gt; if the correct veteran name is
+        shown or enter the correct name.
+5       At the SUSPENSE FORM prompt, press &lt;Enter&gt; to accept the default
+        option.
+6       At the REQUESTOR prompt, press &lt;Enter&gt; to accept the requestor
+        shown or enter the correct requestor.
+7       At the DESCRIPTION OF ITEM/SERVICES: prompt, press &lt;Enter&gt; to
+        accept the description shown.
+8       At the Edit? NO// prompt, type a Y for Yes to edit the
+        description, and press &lt;Enter.&gt;
+9       In the text editor, revise the information as needed.  
+10      When complete, press the "Num Lock" key + "E" key to exit out of
+        the text editor, save the data, and return to the Suspense
+        Processing list.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-140.html">PROSTHETICS</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D EMAN^<a href="http://code.osehra.org/dox/Routine_RMPREO23.html">RMPREO23</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2003-11-26 14:21:34</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

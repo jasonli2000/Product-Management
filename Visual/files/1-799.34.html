@@ -1,0 +1,51 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OTkuMzQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ROR REPORT PARAMETERS (799.34) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OTkuMzQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ROR REPORT PARAMETERS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The ROR REPORT PARAMETERS file stores the report
+definitions that are used by the ROR REPORT 
+SCHEDULE remote procedure to schedule the reports.
+ 
+Records of the file are uniquely identified by the
+report code (the "A" primary key and the
+uniqueness index "KEY" are used for that purpose).
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

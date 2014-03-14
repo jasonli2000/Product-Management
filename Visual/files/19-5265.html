@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTI2NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FBUC STATUS OUTPUT (5265) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTI2NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FBUC STATUS OUTPUT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Status Display/Print of Unauthorized Claims</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>STATUS DISPLAY/PRINT OF UNAUTH</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option displays/prints unauthorized claims by PSA and status.
+You have the option to sort by either vendor or veteran for the primary
+sort.  The report will then sort by what you did not select.  You have
+the option to group all veterans within a vendor or all vendors which
+serviced a veteran.  The output also subtototals the number of claims
+within a status, and displays the expiration date, if one exists.  If
+the unauthorized claim is due to expire within thirty days of the date
+the output was generated an asterisk ('*') will follow the expiration date.
+  
+A disposition code will appear after those unauthorized claims having
+a dispositioned status.
+  (Note:  The disposition code will only display if the unauthorized claim
+has a status of either DISPOSITIONED, APPEAL DISPOSITIONED or
+BVA DISPOSITION.)
+  The codes are:
+ AP for Approved, AS for Approved to Stabilization, DA for Disapproved,
+    CW for Canceled/Withdrawn,  AB for Abandoned
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ASK^<a href="http://code.osehra.org/dox/Routine_FBUCOUT.html">FBUCOUT</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-06-08 12:23:45</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

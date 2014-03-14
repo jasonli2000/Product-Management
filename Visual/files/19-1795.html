@@ -1,0 +1,87 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTc5NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OR ADD ORDERS (1795) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTc5NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OR ADD ORDERS</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Add New Orders</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ADD NEW ORDERS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu allows patient orders to be entered.
+ 
+TECHNICAL NOTE:
+This option is used to transfer control of menus and options used in
+the OE/RR package to the Protocol file (101).  Items should NOT be
+placed on this menu.  The counterpart of this menu in file 101 is
+ORADD where menu items used with OE/RR are placed.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D KILL^<a href="http://code.osehra.org/dox/Routine_ORCMENU.html">ORCMENU</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>K ORVP,ORTAB D EN^<a href="http://code.osehra.org/dox/Routine_ORQPT.html">ORQPT</a>,EN^ORCMENU</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1988-12-10 20:47:32</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

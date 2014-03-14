@@ -1,0 +1,99 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTEwMTE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XM-U-M-QUERY NETWORK (1011) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTEwMTE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XM-U-M-QUERY NETWORK</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>NETWORK QUERY ON A MESSAGE</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+ 
+You can use the Query Network action code (i.e., 'QN') to retrieve
+network/trace header information and [DETAILED] information about each
+addressee ([LOCAL] and [REMOTE] recipients) of a message. However, it is
+primarily used as a diagnostic tool.
+ 
+NOTE: The network/trace header information includes all the different mail
+      server relay information while the message passed from server to
+      server to get to you.
+ 
+Also, when messages are received from a non-MailMan remote sites, MailMan
+captures the 'From' address from the message header and not from the
+envelope. However, the 'From' address from the envelope is captured in a
+field and is displayed by the QN action code when it differs from the
+message header 'From' address.
+ 
+NOTE: The envelope contains the 'From' and 'To' address used by the mail
+      transport system and is not part of the message itself.
+ 
+[MORE]... 
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;DETAILED</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-1008.html">XM-U-M-QUERY DETAILED</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;MORE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-1038.html">XM-U-M-QUERY NETWORK-2</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;LOCAL</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-1036.html">XM-U-M-QUERY INFO LOCAL</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;REMOTE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-1035.html">XM-U-M-QUERY INFO REMOTE</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1999-04-28 07:12:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

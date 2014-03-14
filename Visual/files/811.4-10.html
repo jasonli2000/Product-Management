@@ -1,0 +1,97 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjQtMTA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-ADMISSIONS FOR A DATE RANGE (10) &nbsp;&nbsp;  REMINDER COMPUTED FINDINGS (811.4)</h1>
+<div id="demo"><table id="ODExLjQtMTA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-ADMISSIONS FOR A DATE RANGE</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PXRMINPL.html">PXRMINPL</a></td>
+</tr>
+<tr>
+<td>ENTRY POINT</td>
+<td>ADM</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>VA-Admissions for a Date Range</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This list type computed finding can be used to build a list of
+patients who were admitted in the specified date range. A Reminder
+Location List can be used to restrict the selection of patients to
+only the ward locations included in the location list. To do this
+enter the exact .01 name of a Reminder Location List into the 
+COMPUTED FINDING PARAMETER field. If a Reminder Location List is not
+used then all ward locations will be included.
+
+The CONDITION field may also be used to select entries by any of the
+following CSUB subscripts:
+
+V or V("VALUE") = the ward to which the patient was admitted
+                  in the format of 9;3EAST (IEN;Ward Name)
+
+V("INSTITUTION") = the name of the INSTITUTION (file #4) entry 
+                   with which the ward is associated in the format 
+                   5000;ELY;660GC (IEN;Institution Name;Station Number) 
+
+V("TYPE_OF_MVMT") = the type of movement entry from file 405.1
+                    (e.g., REGULAR, OPT-NSC, OPT-SC, etc.)
+
+
+
+
+
+
+
+
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>LIST</td>
+</tr>
+<tr>
+<td>CF PARAMETER REQUIRED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

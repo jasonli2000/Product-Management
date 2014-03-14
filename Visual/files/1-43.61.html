@@ -1,0 +1,64 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS00My42MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>G&L TYPE OF CHANGE (43.61) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS00My42MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>G&L TYPE OF CHANGE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file consists of a table of G&amp;L type of changes.  Previously, 
+this was a set of codes in the G&amp;L Corrections File (#43.5).  
+The data in this file is distributed with the MAS package and must 
+NOT be altered in any way.  There are currently 15 entries in this file:
+ 
+      1   ADMISSION ENTERED
+      2   ADMISSION DELETED
+      3   ADMISSION DATE EDITED
+      4   TRANSFER ENTERED
+      5   TRANSFER DELETED
+      6   TRANSFER DATE EDITED
+      7   DISCHARGE ENTERED
+      8   DISCHARGE DELETED
+      9   DISCHARGE DATE EDITED
+     10   ADMISSION WARD EDITED
+     11   MOVEMENT TYPE EDITED
+     12   TRANSFER WARD EDITED
+     13   FACILITY TS ENTERED
+     14   FACILITY TS DELETED
+     15   FACILITY TS DATE EDITED
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

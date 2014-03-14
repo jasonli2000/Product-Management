@@ -1,0 +1,83 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTk2MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORRCMC PATIENT TASK (9960) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTk2MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORRCMC PATIENT TASK</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Care Management Task 1.0</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CARE MANAGEMENT TASK 1.0</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is the option context for RPCs called by the Care Management Task Editor.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>Broker (Client/Server)</td>
+</tr>
+<tr>
+<td>RPC</td>
+<td>
+<ol>
+<li>
+<dt>RPC:  &nbsp;&nbsp;<a href="8994-1726.html">ORRC TASKS BY ID</a></dt>
+</li>
+<li>
+<dt>RPC:  &nbsp;&nbsp;<a href="8994-1725.html">ORRC TASKS BY PATIENT</a></dt>
+</li>
+<li>
+<dt>RPC:  &nbsp;&nbsp;<a href="8994-1728.html">ORRC TASK EDIT</a></dt>
+</li>
+<li>
+<dt>RPC:  &nbsp;&nbsp;<a href="8994-1727.html">ORRC TASK ADD</a></dt>
+</li>
+<li>
+<dt>RPC:  &nbsp;&nbsp;<a href="8994-1436.html">ORRHCU ID2EXT</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

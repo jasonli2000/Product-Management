@@ -1,0 +1,468 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjktOTQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LONG TERM STEROID USE (94) &nbsp;&nbsp;  REMINDER DEFINITION (811.9)</h1>
+<div id="demo"><table id="ODExLjktOTQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LONG TERM STEROID USE</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>Long Term Steroid Use</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Used to identify patients on long term steroids that put them at risk of 
+pneumococcal disease.  Per CDC, those patients should receive PCV13 
+vaccination.
+ 
+This reminder is sent out set to look for 3 prescriptions for steroids 
+  the most recent one with a days supply of &gt;21 and 2 prior prescriptions 
+with durations of &gt;21 days.  Current prescriptions could have a very 
+short duration since the duration is the start date to today for an 
+active prescription.  This is why for the most recent Rx, the search is 
+for days supply and not for duration.
+ 
+The reminder also looks for any recent Rx that has a days supply of &gt;70 
+days - and counts this as long term steroid use also.
+</pre>
+</td>
+</tr>
+<tr>
+<td>BASELINE AGE FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;99Y</dt>
+<dt>NO. OF AGE MATCH LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF AGE NO MATCH LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-542.html">STEROIDS - PNEUMOCOCCAL DZ RISK</a></dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;AND</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-14</dt>
+<dt>RXTYPE:  &nbsp;&nbsp;O</dt>
+<dt>OCCURRENCE COUNT:  &nbsp;&nbsp;4</dt>
+<dt>USE STATUS/COND IN SEARCH:  &nbsp;&nbsp;YES</dt>
+<dl><dt>STATUS LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;ACTIVE</dt>
+</li>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;DISCONTINUED</dt>
+</li>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;DISCONTINUED (EDIT)</dt>
+</li>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;EXPIRED</dt>
+</li>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;HOLD</dt>
+</li>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;SUSPENDED</dt>
+</li>
+</ol>
+</dd></dl>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-542.html">STEROIDS - PNEUMOCOCCAL DZ RISK</a></dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-90</dt>
+<dt>ENDING DATE/TIME:  &nbsp;&nbsp;T-60</dt>
+<dt>RXTYPE:  &nbsp;&nbsp;O</dt>
+<dt>OCCURRENCE COUNT:  &nbsp;&nbsp;2</dt>
+<dt>USE STATUS/COND IN SEARCH:  &nbsp;&nbsp;YES</dt>
+<dl><dt>STATUS LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;ACTIVE</dt>
+</li>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;DISCONTINUED</dt>
+</li>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;DISCONTINUED (EDIT)</dt>
+</li>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;DISCONTINUED BY PROVIDER</dt>
+</li>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;EXPIRED</dt>
+</li>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;HOLD</dt>
+</li>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;SUSPENDED</dt>
+</li>
+</ol>
+</dd></dl>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-542.html">STEROIDS - PNEUMOCOCCAL DZ RISK</a></dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-150</dt>
+<dt>ENDING DATE/TIME:  &nbsp;&nbsp;T-120</dt>
+<dt>RXTYPE:  &nbsp;&nbsp;O</dt>
+<dt>OCCURRENCE COUNT:  &nbsp;&nbsp;2</dt>
+<dt>USE STATUS/COND IN SEARCH:  &nbsp;&nbsp;YES</dt>
+<dl><dt>STATUS LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;ACTIVE</dt>
+</li>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;DISCONTINUED</dt>
+</li>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;DISCONTINUED (EDIT)</dt>
+</li>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;DISCONTINUED BY PROVIDER</dt>
+</li>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;EXPIRED</dt>
+</li>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;HOLD</dt>
+</li>
+<li>
+<dt>STATUS:  &nbsp;&nbsp;SUSPENDED</dt>
+</li>
+</ol>
+</dd></dl>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FUNCTION FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;VALUE(1,1,"DAYS SUPPLY")>70!(VALUE(1,2,"DAYS SUPPLY")>70)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-8.html">VALUE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;DAYS SUPPLY</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-8.html">VALUE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;DAYS SUPPLY</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>70!(FN(2)>70)</dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;AND</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;VALUE(2,1,"DURATION")>21!(VALUE(2,2,"DURATION")>21)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-8.html">VALUE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;DURATION</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-8.html">VALUE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;DURATION</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>21!(FN(2)>21)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;VALUE(3,1,"DURATION")>21!(VALUE(3,2,"DURATION")>21)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-8.html">VALUE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;DURATION</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-8.html">VALUE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;DURATION</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>21!(FN(2)>21)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FUNCTION FINDING NUMBER:  &nbsp;&nbsp;4</dt>
+<dt>FUNCTION STRING:  &nbsp;&nbsp;VALUE(1,1,"DAYS SUPPLY")>21!(VALUE(1,2,"DAYS SUPPLY")>21)</dt>
+<dl><dt>FUNCTION LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-8.html">VALUE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;DAYS SUPPLY</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>FUNCTION NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>FUNCTION:  &nbsp;&nbsp;<a href="802.4-8.html">VALUE</a></dt>
+<dl><dt>FUNCTION ARGUMENT LIST:</dt>
+<dd>
+<ol>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>FINDING NUMBER:  &nbsp;&nbsp;DAYS SUPPLY</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</dd></dl>
+<dt>LOGIC:  &nbsp;&nbsp;FN(1)>21!(FN(2)>21)</dt>
+<dt>NO. FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>CUSTOMIZED COHORT LOGIC</td>
+<td>FI(1)&FF(1)!(FI(1)&FI(2)&FI(3)&FF(4)&FF(2)&FF(3))</td>
+</tr>
+<tr>
+<td>INTERNAL PATIENT COHORT LOGIC</td>
+<td>FI(1)&FF(1)!(FI(1)&FI(2)&FI(3)&FF(4)&FF(2)&FF(3))</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS COUNT</td>
+<td>8</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS LIST</td>
+<td>1;FF1;1;2;3;FF4;FF2;FF3</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AGE FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td># OF GEN. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>LOCAL</td>
+</tr>
+<tr>
+<td>USAGE</td>
+<td>R</td>
+</tr>
+<tr>
+<td>EDIT HISTORY</td>
+<td>
+<ol>
+<li>
+<dt>EDIT DATE:  &nbsp;&nbsp;2014-03-06 10:05:04</dt>
+<dt>EDIT BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>EDIT COMMENTS:  &nbsp;&nbsp;<pre>
+Exchange Install
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,143 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC0yODE1").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SPN PROS UTL SPECIFIC (2815) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC0yODE1" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SPN PROS UTL SPECIFIC</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>COL</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_SPNJRPP2.html">SPNJRPP2</a></td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>GLOBAL ARRAY</td>
+</tr>
+<tr>
+<td>AVAILABILITY</td>
+<td>AGREEMENT</td>
+</tr>
+<tr>
+<td>INACTIVE</td>
+<td>ACTIVE</td>
+</tr>
+<tr>
+<td>APP PROXY ALLOWED</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Returns detailed information for delivered prosthetics items for a list 
+of given patients (based on the ICN) based on a date range, and 
+prosthetic item list.
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;ICNLIST</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LIST</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patient's ICN in string format (ICN^ICN^ICN^ICN...)
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;FDATE</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Date to start search from.  
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;TDATE</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Date to end search at.  
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;ITEMS</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LIST</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Array that has the prosthetic item names
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>RETURN PARAMETER DESCRIPTION</td>
+<td><pre>
+ 
+Return format:
+ 
+ITM999^Prosthetic item number^brief description of prosthetic 
+item^Prosthetic HCPCS^EOL999
+ 
+(detail/repeating):
+Station ID^Patient name^Patient SSN^ total cost of item(s)^transaction 
+type^Date Delivered^EOL999
+ 
+TOT999^number of patients ordering item^ total cost of ordered 
+items^EOL999
+ 
+ 
+Sample of return:
+ 
+ITM999^2128^WHEELCHAIR,CUSTOM^WHEELCHAIR LIGHTWEIGHT LEG R^EOL999
+CHEYENNE VAMC^SPINALCORD,FIVE^000-00-0005^298.89^INITIAL^12/28/2001^EOL999
+TOT999^1^298.89^EOL999
+ITM999^2129^EYEGLASSES, PRESCRIPTION^BIFOCAL VISION PRESCR^EOL999
+CHEYENNE 
+VAMC^SPINALCORD,THREE^000-00-0003^102.45^REPLACE^03/31/2001^EOL999
+TOT999^1^102.45^EOL999
+ITM999^9958^PROSTHETIC SOCK WOOL BK^AFO MOLDED ANKLE GAUNTLET ^EOL999
+CHEYENNE VAMC^SPINAL,CORD 
+PTONE^000-00-1001^53.95^INITIAL^04/22/2001^EOL999
+TOT999^1^53.95^EOL999 
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

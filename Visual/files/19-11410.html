@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTE0MTA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LA7V 62.47 MAP SUSCS (11410) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTE0MTA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LA7V 62.47 MAP SUSCS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Map All Susceptibilities</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>MAP ALL SUSCEPTIBILITIES</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>LRLIASON</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Displays the antibiotics from file #62.06 and suggests to the user which 
+entry from file #62.06 should be mapped to the LOINC code in the LAB CODE 
+MAPPING file (#62.47).
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>MAPABS^<a href="http://code.osehra.org/dox/Routine_LA7VLCM.html">LA7VLCM</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

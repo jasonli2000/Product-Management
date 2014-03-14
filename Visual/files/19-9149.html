@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTE0OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCP NON-SS ORDER BUILDER (9149) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTE0OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCP NON-SS ORDER BUILDER</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Non-SS Order Builder</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>NON-SS ORDER BUILDER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will be activated only through the Task Manager and will
+control the effort to automatically generate a distribution order for
+all secondary inventory points not linked to a supply station.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-52.html">IFCAP</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>NSS^<a href="http://code.osehra.org/dox/Routine_PRCPAGSS.html">PRCPAGSS</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

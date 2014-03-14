@@ -1,0 +1,116 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE3MzE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>USR BUSINESS RULE MENU (1731) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE3MzE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>USR BUSINESS RULE MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Business Rule Menu</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Menu of actions useful in the management of Business Rules.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1727.html">USR BUSINESS RULE ADD</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1728.html">USR BUSINESS RULE EDIT</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1729.html">USR BUSINESS RULE DELETE</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;7</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1730.html">USR BUSINESS RULE CHANGE VIEW</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;9</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1726.html">USR CLASS ACTION QUIT</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;10</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1733.html">USR ACTION SEARCH LIST</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-162.html">AUTHORIZATION/SUBSCRIPTION</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S XQORM("SH")=0 S:$G(VALMSG)'["*" VALMSG="+ Next Screen  - Prev Screen  ?? More Actions",VALM("MAX")=+$G(VALMCNT)+1</td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I 1 X:$D(^ORD(101,+$P(^ORD(101,DA(1),10,DA,0),"^"),24)) ^(24)</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>S XQORM("#")=$G(^TMP("USRRUL",$J,"#")) D RESIZE^<a href="http://code.osehra.org/dox/Routine_USRLM.html">USRLM</a>((IOSL-2),18),SHOW^VALM K XQORM("XLATE","FIND")</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2009-04-21 15:27:13</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

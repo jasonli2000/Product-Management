@@ -1,0 +1,100 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTQyLjEtMTk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LAB CUMULATIVE SELECTED 2 (19) &nbsp;&nbsp;  HEALTH SUMMARY COMPONENT (142.1)</h1>
+<div id="demo"><table id="MTQyLjEtMTk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LAB CUMULATIVE SELECTED 2</td>
+</tr>
+<tr>
+<td>PRINT ROUTINE</td>
+<td>MAIN;GMTSLRS7</td>
+</tr>
+<tr>
+<td>EXTERNAL/EXTRACT ROUTINE</td>
+<td>
+<ol>
+<li>
+<dt>EXTERNAL/EXTRACT ROUTINE:  &nbsp;&nbsp;;GMTSLRSE</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>TIME LIMITS APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>SCL2</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This component contains information extracted from the Lab package. Not
+only do time and maximum occurrence limits apply to this component, but
+the user is allowed to select as many as seven atomic Lab tests. Data
+presented include: collection date/time, specimen, test names with results
+and reference flags in columnar (horizontal) format. Comments will also be
+conditionally displayed, depending on the value of the DISPLAY COMMENTS ON
+LABS Health Summary Site Parameter. When comments are displayed, a lower
+case letter will be displayed to the left of the date for entries with
+comments. Comments will be displayed after all the results are displayed
+with comments being linked by the lower case letter. Up to 26 comments can
+be included.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MAXIMUM OCCURRENCES APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SELECTION FILE</td>
+<td>
+<ol>
+<li>
+<dt>SELECTION FILE:  &nbsp;&nbsp;<a href="1-60.html">LABORATORY TEST</a></dt>
+<dt>SELECTION COUNT LIMIT:  &nbsp;&nbsp;7</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DEFAULT HEADER NAME</td>
+<td>Lab Cum Selected 2</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>LR</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

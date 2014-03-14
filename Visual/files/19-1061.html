@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA2MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LRAP PRINT SINGLE (1061) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA2MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LRAP PRINT SINGLE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Print single report only</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PRINT SINGLE REPORT ONLY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Prints a list of any pathology accessions in cytopath, electron microscopy,
+and surgical pathology for cumulative reports for micro exams.  Also prints
+final reports and completed autopsy reports.  For final reports, if the report
+has been electronically signed and stored in TIU, the report will be pulled
+from TIU.  Otherwise, the report will be generated from the data stored in the
+LAB DATA (#63) file.  The option asks if a 'Final Office Copy' should be
+printed.  The 'Final Office Copy' prints SNOMED codes on a separate page
+since they are no longer printed on the SF515.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>S^<a href="http://code.osehra.org/dox/Routine_LRAPP.html">LRAPP</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

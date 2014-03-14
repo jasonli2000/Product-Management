@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA4NDA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGHT HL7 MESSAGE MONITOR (10840) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA4NDA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGHT HL7 MESSAGE MONITOR</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Home Telehealth HL7 Message Monitor</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>HOME TELEHEALTH HL7 MESSAGE MO</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option monitors HL7 messages that were transmitted to home telehealth
+vendors. The rescheduling frequency should coincide with the Parameters
+Definition file (#8989.51). The default value is 15 minutes, but it can be
+changed by the site. The option orders thru the Home Telehealth file 
+(#391.31) and tries to find messages that have not received AAs within a
+predetermined amount of time. If it finds any HL7 messages that meet the
+criteria, it retransmits the messages.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_DGHTRTX.html">DGHTRTX</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

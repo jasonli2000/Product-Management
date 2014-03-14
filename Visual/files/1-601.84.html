@@ -1,0 +1,55 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02MDEuODQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MH ADMINISTRATIONS (601.84) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02MDEuODQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MH ADMINISTRATIONS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The MH ADMINISTRATIONS file (#601.84) contains the data collected during the 
+administration of a specified instrument from the MH TESTS AND SURVEYS file 
+(#601.71) given to a patient at a specific date and time. For each 
+administration of a specified instrument from the MH TESTS AND SURVEYS file 
+(#601.71) there will be an entry in this file. 
+
+An entry in this file does not store the results of the instrument's 
+administration but is an index to the instrument's administration. The entry 
+indicates whether the instrument has been completed, who ordered the 
+instrument, how many questions were answered and if the test has been 
+electronically signed.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

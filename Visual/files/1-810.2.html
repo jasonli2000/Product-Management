@@ -1,0 +1,217 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS04MTAuMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>REMINDER EXTRACT DEFINITION (810.2) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS04MTAuMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>REMINDER EXTRACT DEFINITION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+National extract definitions were sent out with Clinical Reminders V.2.0 to
+support site roll-up of reporting totals to the Austin Automation Center
+(AAC).  The generic extract functionality supports corporate level management
+analysis by providing reports that:
+ 
+ - summarize patient reminder compliance totals (not applicable,
+   applicable, due, not due)
+ - summarize finding total counts that reflect the most recent findings
+   resulting from reminder evaluation
+ - summarize finding total counts that reflect site activities during the
+   reporting month.  
+ - list unique applicable patients included in the finding count (Patient
+   List is not sent to Austin)
+ 
+An extract definition may be manually run or set-up to automatically run
+monthly or quarterly.  The extract can be defined to only produce compliance
+totals, or to also include finding totals.
+ 
+Each extract definition identifies:
+ -  Which type of totals the extract will create: compliance, finding 
+ -  What patient list(s) should be created first, second, third, , and
+    what criteria should be used to build the patient list(s).
+ -  For each patient list created when the extract is run, what reminders
+    should be run.
+ -  For each reminder run, what findings found should be used to include
+    in finding count totals, based on the reminder status for each
+    patient, and pre-defined counting groups.
+ -  Counting groups are used to define findings that may have been found
+    from reminder evaluation, as well as findings that may not be in the
+    reminder but need to be counted for utilization counts.
+ -  Counts are accumulated depending on whether the reminder status was
+    applicable, not applicable, due or not due for the patient.
+ -  Utilization counts count how many times the findings in a counting
+    group were entered during the reporting period for the patients in
+    the patient list.
+ 
+The extract definition also identifies the last extract reporting period run
+and the next reporting period to be run.  This information is used to support
+managing extract runs.  The next reporting period is used by the next
+automated run to know which period should be run.  
+ 
+The reporting results are stored in the REMINDER EXTRACT SUMMARY file (#811.3)
+ 
+The national extract definitions are defined in this file to support generic
+extract and roll-up needs by facility. The generic extract tools provide
+options to:
+ -  manage extract criteria 
+ -  manage extract runs (manual and automated)
+ -  manage transmissions to AAC
+ -  view extract reporting results
+ -  view the list of patients making up the patient denominator
+ 
+When analyzing the results of an extract run, it is important to take note of
+the following information before drawing conclusions:
+ - list rule criteria used to create the target patient lists
+   (denominators)
+ - reminder definition used to create applicable, not applicable, due and
+   not due compliance and finding totals
+ - counting rules used to accumulate totals 
+ - counting groups of findings and the type of totals accumulated (all
+   patients, applicable, due or not due patients)
+ 
+The following is a comparison of Reminder Due and Reminder Extract report
+functionality: 
+ 
+ Reminder Due reports:
+ 
+   Use report criteria and pre-defined report templates with location/clinic
+   stop, provider, and team lists to build the list of patients that will be 
+   used to evaluate reminders.
+   
+   National Reminder Due report criteria and pre-defined report templates are 
+   not nationally distributed.
+ 
+   The Reminder Due report evaluates reminders and provides counts for Total
+   patients, applicable patients and patients due.
+ 
+   The patient with a Due status can be saved in a Reminder Patient List for
+   further follow-up Patient Demographic and Health Summary reporting.
+ 
+   The findings in the reminder are not used to accumulate counts.
+ 
+   An existing Reminder Patient List can be used to identify target patients,
+   instead of report criteria and report templates.
+ 
+   The Reminder Due report can be created in a Summary or detailed report
+   format, and is typically queued to run in a job during off-hours.
+ 
+ National extract reports:
+ 
+   Defines complex extract criteria into one extract definition that is
+   pre-defined as a national Reminder Extract Definition.
+ 
+   Pre-defined national extract criteria uses findings (reminder terms),
+   independent of a reminder definition, to build one or more lists of
+   patients that are used to evaluate one or more reminders.
+ 
+   National extract criteria used to identify patients is similar to VA
+   External Peer Review (EPRP) performance measure reporting criteria.  
+   EPRP performance measures often require a current qualifying visit and
+   an anchor visit during the previous year. Since some patients seen
+   during a reporting month do not have a prior year anchor visit, the
+   national extract's total patient counts for a given month will
+   typically be less than the Reminder Due report's total patient counts
+   for the same month.
+ 
+   The lists of patients used for each reporting period's national
+   extract are stored on the local system for sites to validate the
+   patient denominator counts and provide local quality of care
+   monitoring.
+ 
+   Compliance total counts are accumulated based on the reminder status
+   for each patient: total, applicable, not applicable, due, and not
+   due.  The extract criteria used to create the totals is stored with 
+   the total counts on the local system, as well as transmitted to the
+   AAC.
+ 
+   Finding total counts are accumulated for pre-defined national finding groups
+   based on the findings found during reminder evaluation for the patient. The
+   finding counts are totaled into categories that reflect the reminder status
+   for each patient: total, applicable, not applicable, due and not due patient
+   counts.  The finding counts are sent to the AAC with the extract criteria 
+   used to create the counts.
+ 
+   Utilization counts are accumulated for pre-defined national finding groups
+   that count how many times specified findings were entered during the 
+   reporting period for patients for each patient denominator.  The finding 
+   counts are sent to the AAC with the extract criteria used to create the 
+   counts.
+ 
+   Each patient that had a finding count is stored on the local system for
+   follow-up patient care and validation of reporting results. The patients are
+   not sent to the AAC.
+ 
+   The national extract tools use Mailman links with the HL7 interface to send
+   compliance totals and finding totals for each monthly period to the AAC. AAC
+   adds the national monthly reporting to the Compliance Totals National 
+   Database stored at the AAC.
+ 
+   The national extract reports are generated by a job. IRM Staff can help set
+   up each type of extract definition to automatically reschedule itself to run
+   monthly at each site. The extract run needs to occur prior to the tenth of
+   each month. 
+ 
+   The sites can manually rerun an extract and/or selectively retransmit an
+   extract to AAC in the event of a failed transmission. The Extract Summary
+   reports may be used to verify compliance totals.  
+ 
+   Parties interested in viewing the AAC Compliance Totals National Database
+   may be granted read-only access to this data.  The AAC uses the
+   national database to create Simple Authentication and Security (SAS)
+   files with read-only access.
+ 
+File relationships:
+ 
+   The extract definition uses list rules (#810.4) to build lists of patients.
+   If the extract definition is for Compliance and Finding Totals, the extract
+   definition will be defined with counting rules (#810.7). The counting rules
+   will be defined based on counting groups (#810.8). 
+ 
+   Data from the extract is stored in the extract summary file (#810.3) and 
+   patient lists are saved in the patient list file (#810.5). HL7 messages 
+   containing the extract data from the extract summary (#810.3) are passed
+   to the HL7 package for transmission to the AAC. Individual patient
+   level data is not sent to Austin. However, a list of patients with
+   particular findings may be stored in the extract summary file (#810.3)
+   for validation of patients.
+ 
+Nationally distributed definitions are prefixed 'VA-' and cannot be modified 
+by site.  
+ 
+Sites should name locally created extract definitions according to their local 
+naming convention.  
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

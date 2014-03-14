@@ -1,0 +1,86 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTM2LjUtNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PNEUMONIA (4) &nbsp;&nbsp;  PERIOPERATIVE OCCURRENCE CATEGORY (136.5)</h1>
+<div id="demo"><table id="MTM2LjUtNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OCCURRENCE CATEGORY</td>
+<td>PNEUMONIA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Definition Revised (2007):
+Inflammation of the lungs caused primarily by bacteria, viruses, and/or
+chemical irritants, usually manifested by chills, fever, pain in the
+chest, cough, purulent, bloody sputum. Report as an occurrence if the
+patient has pneumonia meeting the definition of pneumonia below AND
+pneumonia not present preoperatively.
+ 
+Pneumonia must meet one of the following TWO criteria:
+Criterion 1.
+  Rales or dullness to percussion on physical examination of chest AND
+  any of the following:
+  a. New onset of purulent sputum or change in character of sputum
+  b. Organism isolate from blood culture
+  c. Isolation of pathogen from specimen obtained by transtracheal
+     aspirate, bronchial brushing, or biopsy
+ 
+ OR
+ 
+Criterion 2.
+  Chest radiographic examination shows new or progressive infiltrate, 
+  consolidation, cavitation, or pleural effusion AND any of the 
+  following:
+  a. New onset of purulent sputum or change in character of sputum
+  b. Organism isolated from blood culture
+  c. Isolation of pathogen from specimen obtained by transtracheal    
+     aspirate, bronchial brushing, or biopsy
+  d. Isolation of virus or detection of viral antigen in respiratory
+     secretions
+  e. Diagnostic single antibody titer (IgM) or fourfold increase in
+     paired serum samples (IgG) for pathogen
+  f. Histopathologic evidence of pneumonia
+ 
+*If pneumonia was present preoperatively and resolved postoperatively 
+and a new pneumonia is identified within 30 days after surgery, the
+following criteria must be met in order to report as a postoperative
+pneumonia occurrence:
+   - Patient must have completed the antibiotic course for the 
+     previous pneumonia.
+   - Patient must have evidence of a clear chest x-ray after the 
+     previous pneumonia and prior to the new pneumonia.
+   - There must be evidence of a new isolate of micro-organism on 
+     culture.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

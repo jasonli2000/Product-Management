@@ -1,0 +1,69 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExMDc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>EAS EZ ACTION PZ (1107) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExMDc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>EAS EZ ACTION PZ</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>PRINT 1010EZ (PZ)</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+The 10-10EZ form is printed using all 'accepted' data.  VistA Patient 
+data is used, if available, for any field not 'accepted'.
+  
+Form printing done by Print 1010EZ (PZ) must be queued to a valid
+print device capable of accommodating 132 characters per line.
+  
+Once the 10-10EZ is printed, actions of Accept Field, Accept All,
+Clear All, and Update Field can no longer be used.  The Processing
+Status becomes PRINTED, PENDING SIGNATURE.
+  
+The PZ action prints the 10-10EZ form with data.  But a simple printout
+of all data shown on the List Manager screens can be obtained by
+using the hidden action Print Screen (PS).
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>2001-03-28 14:13:26</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

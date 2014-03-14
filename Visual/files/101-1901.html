@@ -1,0 +1,91 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE5MDE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIUF PRINT SCREEN (1901) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE5MDE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIUF PRINT SCREEN</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Print Screen</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+NOTE ON PRINTING:  ALL printing of document definitions is done using
+built-in hidden actions PS Print Screen and PL Print List.  User first
+locates the data to be printed so that it shows on the screen and then
+user selects action PS or PL.  To locate the appropriate data use the
+Edit, Sort, or Create option to list appropriate entries. Option Edit
+Document Definitions shows the hierarchy.  Option Sort Document
+Definitions shows sorted document definitions including Orphans, Objects,
+and Shared Components.  Option Create Document Definitions shows a
+particular line of descent of the hierarchy.  Option Create Objects shows
+objects.  To print a list, select action PS or PL at this point. 
+ 
+To print information on a single given entry, first locate the entry in
+one of the above lists, then select Action Detailed Display, action
+Boilerplate Text, or action Items.  Action Detailed Display shows all
+available information for a given entry.  Action Items shows the items of
+a given entry.  THEN select action PS or PL.
+ 
+PRINT SCREEN allows the user to print the current display screen.  Action
+prints ONLY what is currently visible on the screen, ignoring information
+that can be moved to horizontally or vertically (pages), so user should
+move left/right and up/down to desired information before printing. To
+print more than one visible screen of information use action PL Print
+List.  For Print Screen enter PS.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S VALMSG=$$VMSG^TIUFL D PRT^<a href="http://code.osehra.org/dox/Routine_VALM1.html">VALM1</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1997-10-06 10:20:18</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzM5NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCH RECON REPORT (3394) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzM5NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCH RECON REPORT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Reconciliation Report - Purchase Card</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RECONCILIATION REPORT - PURCHA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This report displays, for a user-entered date range, all Purchase
+Card orders entered in IFCAP.  The report sorts the transactions
+by Fund Control Point, and within that by Purchasing Agent, and
+within that by date.  The report also shows the status of the order, and
+is intended to be used by Purchasing Agents in reconciling credit card
+charges with Purchase Card orders entered in IFCAP.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-52.html">IFCAP</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PRCHCARD.html">PRCHCARD</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1995-10-19 08:58:51</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

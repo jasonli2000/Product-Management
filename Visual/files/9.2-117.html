@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUDOC DEVICE PROMPT QUEUING (117) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUDOC DEVICE PROMPT QUEUING</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>QUEUING OUTPUT</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+ 
+There are two ways to invoke queuing at the device prompt.  You may either
+respond with Q, then specify a device as follows:
+ 
+     DEVICE: Q
+     DEVICE: DVNM5
+ 
+Or you may first specify a device, and then indicate that you would like to
+have your output queued.  For example:
+ 
+     DEVICE: DVNM5
+     DO YOU WANT YOUR OUTPUT QUEUED? NO// YES
+ 
+In both cases, you will then be asked to specify a time for queuing.  You
+may accept the default (now) or indicate a later time in the usual format.
+Queuing sends your output to the Task Manager for processing.  Meanwhile,
+you may continue working without delay.  TaskMan will process your job in
+the background and send it to the device you had requested.  (Freeing the
+home device is not always possible since it involves detaching the home
+device from the existing process, a procedure which is not supported by all
+operating systems.)
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-04-19 11:07:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

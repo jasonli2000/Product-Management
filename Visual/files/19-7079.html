@@ -1,0 +1,168 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzA3OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ACKQAS SITE PARAMS (7079) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzA3OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ACKQAS SITE PARAMS</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>A&SP Site Parameters</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>A&SP SITE PARAMETERS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The A&amp;SP Site Parameters option allows you to enter data into the
+A&amp;SP SITE PARAMETERS file (#509850.8). This data determines how
+QUASAR behaves when entering Visit information at your site.
+  
+After entering your site name you will be asked whether you wish
+QUASAR to INTERFACE WITH PCE. If you answer YES then the overnight
+batch transmission job that sends the data to PCE will be activated.
+  
+Next you must define each Division for which Visit data is recorded
+at your site. For each Division you will then be asked whether or
+not data for this Division should be sent to PCE, whether or not to
+use Local File numbers to identify patients, whether or not to use 
+the AMIE C&amp;P Interface, whether or not to require audiometric data 
+for hearing loss Diagnosis Codes, and the names of all the clinics 
+at which the visits take place.
+  
+In order to use Quasar to record visit data for a Division, the 
+Division must be defined on this file and have a status of ACTIVE.
+The Status should be set to INACTIVE if you no longer record visits
+for a Division or you have entered a Division by mistake. (You can 
+not delete a Division from this file but changing the status to 
+INACTIVE has the same effect). The Division status referred to here
+applies only to Quasar and has no effect on any other packages.
+  
+If the parameter INTERFACE WITH PCE is set to YES, then visit data 
+will be transmitted to PCE for all Divisions that have the SEND TO
+PCE parameter set to YES. This means the interface may be turned off
+for a single Division by setting the SEND TO PCE parameter for that
+Division to NO. If the INTERFACE TO PCE parameter is set to NO then
+NO DATA will be sent to PCE for any Division.
+  
+Answer YES or NO to the USE ASP CLINIC FILE NUMBER field. Some sites 
+have existing LOCAL (not medical center) file numbers associated with 
+their Audiology and Speech Pathology patients and wish to continue 
+using these numbers. If you answer YES, you can cross-reference 
+QUASAR visit entries to your current file numbering system.
+    
+The USE C&amp;P field can be answered YES or NO. Answer YES if you wish 
+to use QUASAR's AMIE/C&amp;P interface. If you use a different reporting
+procedure and do not wish to use the AMIE/C&amp;P interface, answer NO.
+  
+The AMIE linkage feature allows entry of text and audiometric data
+in the AMIE format, adequation of the results, and hand-off of the 
+report to the AMIE Compensation and Pension package. If this option 
+is enabled, QUASAR is informed when an Audiology C&amp;P exam is 
+scheduled. When an entry is made for the patient, the user is asked 
+"Is this a C&amp;P exam?" If the user responds yes, in addition to the 
+usual QUASAR information, narrative data is requested for generating
+the AMIE report.
+  
+If the C&amp;P exam prompt does not appear, the patient entered is either 
+(1) not a C&amp;P patient, (2) Veterans Affairs Regional Office (VARO)
+did not request an AUDIO exam (see Form 2507), or (3) the patient's 
+C&amp;P claim has been closed by the C&amp;P Unit. Users should contact their 
+C&amp;P Unit. If it is determined that the patient has a C&amp;P visit, the 
+C&amp;P prompt can be turned on by entering ^C after the patient 
+identifying information is entered.
+  
+Answer YES or NO to the BYPASS AUDIOMETRICS field. Certain diagnosis 
+codes (i.e., hearing loss codes) are flagged to require audiometric 
+data to be entered when those codes are used for a visit. By 
+answering YES for the BYPASS AUDIOMETRICS field, you allow users to 
+bypass the entry of that data.  If you answer NO, users are not 
+allowed to bypass the entry of audiometric data.
+  
+The final prompt is for CLINIC LOCATION. Clinics can be established 
+by name (e.g., Audiology or Speech Pathology), by function (e.g., 
+Hearing Aid Clinic or Dysphagia Clinic), or by clinician (e.g., 
+Audiology-Smith). Only clinic locations established by MAS can be 
+selected. Contact MAS for further information. Multi-divisional sites 
+or those with more than one A&amp;SP location are entered. There must be 
+at least one clinic entered for this field.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>edit</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-150.html">QUASAR</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K ACKLAYGO,DLAYGO</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S ACKLAYGO="",DLAYGO=509850.8 W @IOF,!,"This option allows you to configure the QUASAR package to meet facility needs.",!</td>
+</tr>
+<tr>
+<td>DIC {DIC}</td>
+<td>ACK(509850.8,</td>
+</tr>
+<tr>
+<td>DIC(0)</td>
+<td>AEMQ</td>
+</tr>
+<tr>
+<td>DIE</td>
+<td>ACK(509850.8,</td>
+</tr>
+<tr>
+<td>DR {DIE}</td>
+<td>[ACKQAS SITE]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODg3Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ECX MTL SOURCE AUDIT (8877) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODg3Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ECX MTL SOURCE AUDIT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Mental Health (MTL) Extract Audit</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>MENTAL HEALTH (MTL) EXTRACT AU</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>OUT OF ORDER, DO NOT USE THIS OPTION!!!</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will generate a report from the MENTAL HEALTH EXTRACT
+file (#727.812) which will allow the DSS extract manager to
+verify extract data before transmission to the Austin Automation
+Center.
+  
+The following VistA application reports should be of assistance
+in the verification process:
+  
+Report Title - USAGE STATISTICS
+Menu Option -  Usage Statistics [YSMUSE]
+   
+Report Title - Addiction Severity Index Status Report
+Menu Option - Site Report by Date [YSAS MANAGEMENT REPORT]
+  
+Be sure that the extract audit report and the external application
+report are generated for the same date or date range.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-165.html">DSS EXTRACTS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_ECXAMTL.html">ECXAMTL</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

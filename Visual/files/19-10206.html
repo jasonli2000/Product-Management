@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTAyMDY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SD-PAIT REPAIR (10206) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTAyMDY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SD-PAIT REPAIR</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>SD-PAIT Last Run Repair</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SD-PAIT LAST RUN REPAIR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will allow repair of a PAIT that was interrupted either by a system
+problem or an error. The error cause has to be addressed before this repairing
+process takes place and a new transmission starts.
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S SDR=+$O(^SDWL(409.6,99999999),-1) I $P($G(^SDWL(409.6,SDR,0)),"^",7)?7N1".".N W !,"NO ENTRY TO REPAIR!",! S SDR="" H 1 Q</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>RPAIT^SDRPA04(SDR)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

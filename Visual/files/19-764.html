@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzY0").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FHMTKN (764) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzY0" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FHMTKN</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>List Patients With No/prev Patterns</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LIST PATIENTS WITH NO/PREV PAT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the user to run two listings.  One list
+consists of all the inpatients that do not have any Diet
+Pattern that match with their current-diet.  The second list
+consists of a listing of inpatients that do not have a current
+individual pattern but have had a individual pattern for a 
+previous Diet order.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-9.html">DIETETICS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_FHMTK5.html">FHMTK5</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

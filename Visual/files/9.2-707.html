@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTcwNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ECDSS PROCEDURE (707) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTcwNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ECDSS PROCEDURE</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Local Procedure (Enter/Edit)</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+** You might want to print a list of procedures with their associated CPT 
+codes to use as a reference BEFORE USING THIS OPTION.  If so, use the 
+National/Local Procedure Reports option on the Management Reports 
+submenu of the Event Capture Management Menu.  This report can be 
+lengthy if you opt to include national procedures, so you should queue 
+it to print during nonpeak hours. **
+ 
+This option allows you to ENTER or EDIT, but NOT DELETE local 
+procedures in the EC NATIONAL PROCEDURE file (#725).  Procedures that 
+are being passed to the PCE software must have an associated CPT code.
+For new procedures, you must also enter a local procedure code number. 
+The local procedure code must be 5 characters:  1 uppercase alpha 
+character followed by 4 alpha and/or numeric characters.  This 
+number will be used as the national code number for your local procedure. 
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1997-03-26 09:25:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>EXIT EXECUTE STATEMENT</td>
+<td>W @IOF</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

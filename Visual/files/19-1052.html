@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA1Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LRAC DISCHARGE (1052) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA1Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LRAC DISCHARGE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Patient Lab Discharge Summary (Manual)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PATIENT LAB DISCHARGE SUMMARY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+THIS OPTION PRINTS IN THE INTERIM FORMAT,  The report prints site codes for
+tests and prints a separate page(s) at the end of the report which lists the
+performing lab name, address and site code.
+This option will print interim reports for a selected patient within a given 
+time period.  The printout will go inverse date order.  This report will output
+all tests for the time period specified.  This option will only print verified
+results.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>CUM^<a href="http://code.osehra.org/dox/Routine_LRRP2.html">LRRP2</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

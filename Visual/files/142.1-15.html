@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTQyLjEtMTU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PROGRESS NOTES (15) &nbsp;&nbsp;  HEALTH SUMMARY COMPONENT (142.1)</h1>
+<div id="demo"><table id="MTQyLjEtMTU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PROGRESS NOTES</td>
+</tr>
+<tr>
+<td>PRINT ROUTINE</td>
+<td>PN;GMTSPN</td>
+</tr>
+<tr>
+<td>TIME LIMITS APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>PN</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This component contains progress notes entered using the Text Integration 
+Utilities (TIU) and Mental Health packages.  Time and maximum occurrence 
+limits apply to this component.  Data presented include:  Progress note 
+date/time written, title, text of note, electronic signature block 
+(including possible cosignature and cosigner comments), and the note's
+correction text and correction date/time.
+    
+Only those notes which have been signed with an electronic signature
+or electronically marked signed on chart will be reported.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MAXIMUM OCCURRENCES APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>DEFAULT HEADER NAME</td>
+<td>Progress Notes</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

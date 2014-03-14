@@ -1,0 +1,86 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODk2NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PXRM DEFINITION EDIT (8965) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODk2NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PXRM DEFINITION EDIT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Add/Edit Reminder Definition</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ADD/EDIT REMINDER DEFINITION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to edit the Clinical Reminder Definitions. Several
+predefined reminder definitions were distributed with the PCE package
+based on the Ambulatory Care EP Preventative Health Maintenance
+Guidelines.
+ 
+Nationally distributed reminder definitions items all have a "VA-"
+prefix. VA- for Ambulatory Care EP reminders and VA-* for National
+Center for Health Promotion reminders. To alter a VA- prefixed reminder
+item, first copy it to a different name and then edit the reminder
+definition to reflect your site's requirements for the reminder.
+ 
+Sites may change anything in a local reminder definition to meet their
+needs. Findings at each site may require modification to represent
+local use of clinical data.
+ 
+The distributed reminder definitions "Technical Description" will give
+help to the coordinator for ensuring the reminder definition is
+modified to reflect local guidelines for reminders.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-180.html">CLINICAL REMINDERS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EEDIT^<a href="http://code.osehra.org/dox/Routine_PXRMREDT.html">PXRMREDT</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

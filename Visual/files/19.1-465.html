@@ -1,0 +1,67 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTkuMS00NjU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>QACV_DMGR (465) &nbsp;&nbsp;  SECURITY KEY (19.1)</h1>
+<div id="demo"><table id="MTkuMS00NjU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>QACV_DMGR</td>
+</tr>
+<tr>
+<td>DESCRIPTIVE NAME</td>
+<td>PATS Data Migration Manager</td>
+</tr>
+<tr>
+<td>PERSON LOOKUP</td>
+<td>LOOKUP</td>
+</tr>
+<tr>
+<td>KEEP AT TERMINATE</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>SEND TO J2EE</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This key is assigned to the person responsible for migrating the legacy
+Patient Representative data into the new Patient Advocate Tracking System 
+(PATS).
+ 
+The user must own the key in order to make a VistALink connection from the
+web-based application used to migrate the data into PATS to the VistA
+system where the legacy Patient Representative data resides.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

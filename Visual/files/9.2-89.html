@@ -1,0 +1,87 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTg5").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUDOC DEVICE LOOKUP (89) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTg5" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUDOC DEVICE LOOKUP</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>DEVICE LOOKUP</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+There are several ways to select a device when using the Device Editor
+options.  They are ways of responding to the following prompt:
+ 
+     Select DEVICE NAME:
+ 
+When you enter the name of a device, a lookup is done on the Device File
+to find a device by that name.  Along with name, there are several other
+device attributes that can be used for lookup:
+ 
+     DEVICE NAME      Logical device name (.01 Field of the Device File).
+ 
+     PORT/DEVICE $I   Physical port connection on the residing CPU.
+ 
+     VOLUME SET/CPU   The volume set or central processing unit.
+ 
+     SIGN-ON SYSTEM   Flag indicating whether the device can be used to
+                      sign-on and access the computer system.
+ 
+The Device File is cross-referenced which is the [TECHNICAL INFORMATION]
+used to provide these four alternative lookup methods.
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;TECHNICAL INFORMATION</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-90.html">XUDOC DEVICE LOOKUP TECH</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-01-20 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

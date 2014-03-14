@@ -1,0 +1,90 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzMz").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XMTALK (333) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzMz" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XMTALK</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>TalkMan</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>TALKMAN</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>XMTALK</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+TalkMan allows the user to communicate with another domain through the
+script processing ability of MailMan.  Since the Script Processing
+mode is transparent, the user need not know any security passwords...
+He only needs to know the name of the Domain and have access to the
+option.  In addition, the script for the domain must have a 'T' command
+and the FLAGS field must contain a 'T'.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>HELP FRAME</td>
+<td><a href="9.2-1145.html">XM-I-C-TALKMAN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-4.html">MAILMAN</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>TALK^<a href="http://code.osehra.org/dox/Routine_XMCTLK.html">XMCTLK</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1992-12-18 14:40:38</td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>1993-04-08 10:42:58</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

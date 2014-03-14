@@ -1,0 +1,222 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjktMzQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ZZVA-ADVANCED DIRECTIVES EDUCATION (34) &nbsp;&nbsp;  REMINDER DEFINITION (811.9)</h1>
+<div id="demo"><table id="ODExLjktMzQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ZZVA-ADVANCED DIRECTIVES EDUCATION</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>ZZ Advanced Directives Education</td>
+</tr>
+<tr>
+<td>DO IN ADVANCE TIME FRAME</td>
+<td>0M</td>
+</tr>
+<tr>
+<td>INACTIVE FLAG</td>
+<td>INACTIVE</td>
+</tr>
+<tr>
+<td>INACTIVE CHANGE DATE</td>
+<td>2005-03-11 12:42:51</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Advanced directives information given to all patients once.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TECHNICAL DESCRIPTION</td>
+<td><pre>
+This reminder is distributed with the PCE package.  The source of this
+reminder definition is the Ambulatory Care Expert Panel.  It is based on
+feedback from facilities wanting to track Advanced Directive Education.
+ 
+This reminder is an education type reminder.  It relies on an active
+education topic entry representing the Advanced Directives education in
+the Education Topics file. 
+ 
+This reminder will be considered "DUE NOW" if there is no patient
+education entry for advanced directive education in the "V Patient Ed."
+file.  The V Patient Ed. File summarizes the patient education provided by
+clinicians at an encounter/visit.
+ 
+By recording the education topic given at an encounter via a scanned
+encounter form (or other interface to PCE), the reminder will be
+considered "not indicated". Historical patient education for advanced
+directives can be recorded in the PCE User Interface to make the reminder
+not indicated.
+ 
+The Clinical Maintenance component in the Health Summary will display the
+latest date on record where advanced directive education/screening was
+provided to the patient.
+ 
+Initial installation comment:
+ 
+The PCE package is distributed with a preliminary set of education
+topics, which includes the VA-ADVANCED DIRECTIVES, and VA-ADVANCED
+DIRECTIVES SCREENING entries. 
+ 
+The VA-ADVANCED DIRECTIVES education is defined as this reminders
+education topic, in lieu of additional/other Advanced Directive education
+topics you might want to create and activate at your site.
+ 
+The VA-ADVANCED DIRECTIVES SCREENING education is defined to help track
+the fact that an inquiry or screening was made to determine if the
+patient needed Advanced Directive education/counseling.  
+ 
+If this reminder is used at your site, you may want to add at a minimum,
+these two education topics on an encounter form for those clinics who
+would be addressing this reminder.
+</pre>
+</td>
+</tr>
+<tr>
+<td>BASELINE AGE FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;99Y</dt>
+<dt>NO. OF AGE MATCH LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF AGE NO MATCH LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="9999999.09-338.html">VA-ADVANCE DIRECTIVES</a></dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+No record of Advanced Directives education/screening on file.
+</pre>
+</dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="9999999.09-9.html">VA-ADVANCE DIRECTIVES SCREENING</a></dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+No record of Advanced Directives education/screening on file.
+</pre>
+</dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;1</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERNAL PATIENT COHORT LOGIC</td>
+<td>(SEX)&(AGE)</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS COUNT</td>
+<td>2</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS LIST</td>
+<td>SEX;AGE</td>
+</tr>
+<tr>
+<td>INTERNAL RESOLUTION LOGIC</td>
+<td>(0)!FI(1)!FI(2)</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS COUNT</td>
+<td>2</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS LIST</td>
+<td>1;2</td>
+</tr>
+<tr>
+<td>AGE FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td># OF GEN. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>RESCISSION DATE</td>
+<td>2005-02-04 00:00:00</td>
+</tr>
+<tr>
+<td># SUM. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>USAGE</td>
+<td>C</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

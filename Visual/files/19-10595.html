@@ -1,0 +1,87 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA1OTU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGPF ENABLE DIVISIONS (10595) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA1OTU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGPF ENABLE DIVISIONS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Record Flag Enable Divisions</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RECORD FLAG ENABLE DIVISIONS</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>DGPF MANAGER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows multi-divisional facilities to enable individual 
+medical center divisions stored in the MEDICAL CENTER DIVISION (#40.8) 
+file as patient record flag assignment owners.  Once a medical center 
+division has been enabled as a patient record flag assignment owner, it
+may also be disabled through this option.  Disabling a medical center 
+division will only be allowed if there are no active patient record flag
+assignments associated with the division.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>I '$P($G(^DG(43,1,"GL")),U,2) W !,"Your facility is not multi-divisional.",*7 S XQUIT=1</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_DGPFDIV.html">DGPFDIV</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

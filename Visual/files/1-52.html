@@ -1,0 +1,65 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS01Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRESCRIPTION (52) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS01Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRESCRIPTION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Contains all outpatient RX data used by the outpatient pharmacy package.
+As the above indicates, this is the hub of the outpatient system.  It will
+easily be the largest pharmacy file in time and is pointed to very heavily.
+Deletion of an entry in this file must be handled VERY carefully and is not
+allowed if refills have been issued.
+ 
+Of particular interest is that essentially all the history pertaining to a
+particular Rx is contained in each Rx entry.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;PS</dt>
+</li>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;PSO</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

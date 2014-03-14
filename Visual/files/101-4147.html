@@ -1,0 +1,104 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTQxNDc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGPF TRANSMISSION ERRORS MENU (4147) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTQxNDc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGPF TRANSMISSION ERRORS MENU</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol menu contains all the activities for viewing and
+retransmitting PRF Rejected Status ("RJ") HL7 error messages.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4149.html">DGPF TRANSMIT SORT LIST</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CS</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;10</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4150.html">DGPF TRANSMIT VIEW MESSAGE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;VM</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;20</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4148.html">DGPF TRANSMIT REJECT MESSAGE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RM</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;30</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I $D(@VALMAR@("IDX"))</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a></td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>40</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2006-12-11 15:56:24</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzYxMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSJU PLDP (3612) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzYxMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSJU PLDP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>ENter Units Dispensed</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ENTER UNITS DISPENSED</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>PSJU PL</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+  Allows the user to enter the units actually dispensed into the cart for
+which the respective pick list was run.  This option allows the user
+to select only those pick lists which have not already been filed away.
+From here, the user may then file the pick list away, a process that makes
+the data usable for cost reports.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PSGPLDP.html">PSGPLDP</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

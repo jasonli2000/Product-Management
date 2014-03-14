@@ -1,0 +1,50 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0yOS4xMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MST HISTORY (29.11) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0yOS4xMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MST HISTORY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file tracks the Military Sexual Trauma status for veterans as part
+of the data collection requirement for VHA Directive 98-058, 
+"Sexual Trauma Counseling Care and Services".  Data in this file SHOULD
+NOT BE MODIFIED directly.  This is a history file which tracks the 
+historical MST status for a veteran.  All entries should be done through
+the associated List Manager application.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

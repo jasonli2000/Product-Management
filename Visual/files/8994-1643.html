@@ -1,0 +1,137 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC0xNjQz").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DSIC DPT INP INFO BRIEF (1643) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC0xNjQz" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DSIC DPT INP INFO BRIEF</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>INQ</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DSICDPT</td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>SINGLE VALUE</td>
+</tr>
+<tr>
+<td>AVAILABILITY</td>
+<td>AGREEMENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This will return certain data related to a patient's current admission.  
+The data returned and the order that it is returned is controlled by the 
+FLAG parameter.  For more detailed description, see routine INQ^DSICDPT
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;DFN</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;15</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is a pointer to the PATIENT file.
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;FLAG</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;26</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is 3 "^"- piece string of single character codes which dictate what 
+data will be returned and the order that that data is returned for a 
+patient's current admission.
+  1st ^-piece - flags related to the current patient movement
+  2nd ^-piece - flags related to the admission movement
+  3rd ^-piece - flags related to the discharge movement
+  Default FLAG = "MDWFPpAa^MD^MD"
+ 
+  Flag Code  Description
+  ---------  -----------------------------------------
+      M      pointer to movement (#405)
+      D      external movement date.time
+      d      internal (Fileman movement date.time)
+      W      external ward location
+      P      name of Primary Care Physician
+      p      DUZ of Primary Care Physician
+   Following only applicable to current movement
+      F      pointer to PTF record (#45)
+      R      external room-bed
+      A      name of ATTENDING PHYSICIAN
+      a      DUZ of ATTENDING PHYSICIAN
+      S      external FACILITY TREATING SPECIALTY (#42.4)
+      s      internal FACILITY TREATING SPECIALTY (#42.4)
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;LODGE</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;1</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This boolean flag controls whether or not Lodger movements (admissions) 
+should be included in search.  If LODGE = 1 then return lodger 
+movements.  Else exclude them.  Default value is 0, exclude them.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>RETURN PARAMETER DESCRIPTION</td>
+<td><pre>
+If problems or if the patient is not an inpatient, return -1^message
+ 
+Else return a string, p1^p2^p3^p4^p5^...   where the data returned in 
+each piece is controled by the FLAG parameter.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

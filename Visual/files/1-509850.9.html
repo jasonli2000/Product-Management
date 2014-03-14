@@ -1,0 +1,62 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS01MDk4NTAuOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>AUDIOMETRIC EXAM DATA (509850.9) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS01MDk4NTAuOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>AUDIOMETRIC EXAM DATA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file is used to maintain a record of audiological exams.
+It contains all of the air conduction, bone conduction and word
+recognition test results.
+  
+When signed (DATE SIGNED field), the results are transmitted
+to the Denver Distribution Center to be stored in a national
+database.  The information from the last exam received for
+a patient is also added to hearing aid orders for the patient
+placed through the Remote Order Entry System(ROES3.0) at the DDC.
+  
+Data for this file is only entered through the Audiometric
+Exam Module GUI application: ACKQROES3E.  Entering data in
+any other way, may have unpredictable results, as help for
+individual fields and most data validation takes place in
+that application.
+  
+An accompanying GUI application: ACKQROES3 uses the data in
+this file to create a graphical audiogram.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

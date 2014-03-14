@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjQ2Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBT OUTPUT LIST VISITS (2463) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjQ2Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBT OUTPUT LIST VISITS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>List Visits Requiring Reviews</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LIST VISITS REQUIRING REVIEWS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will print a list of visits that require either an insurance
+review, hospital review or both.  In addition only visits that are
+admissions may be printed.   The user may select the date range of visits
+to print.
+ 
+This option can be used to list the Random Sample cases being tracked
+for Hospital Reviews by answering the prompts that only hospital reviews for
+admissions are wanted.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_IBTOLR.html">IBTOLR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

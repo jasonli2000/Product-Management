@@ -1,0 +1,60 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03MDQuMTAy").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TERM_TYPE (704.102) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03MDQuMTAy" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TERM_TYPE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+NOTICE: This file is maintained exclusively by the CP Terminology group 
+and must not be modified or edited in any way. Subsequent releases of CP 
+Terminology may create lasting errors in the CliO data store if this file 
+is changed.
+ 
+ 
+GUI PROGRAMMING NOTES:
+ 
+This file translates 1-1 to the TTermType ordinal set by the file's 
+internal entry number (ien).
+ 
+The ordinal set is as follows:
+ 
+  TTermType = (ttUnknown, ttObservation, ttUnit, ttMethod, ttPosition, 
+               ttLocation, ttQuality, ttProduct, ttNullFlavor, ttTask,
+               ttSchedule, ttValue, ttConcept);
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

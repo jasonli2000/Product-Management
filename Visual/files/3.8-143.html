@@ -1,0 +1,61 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My44LTE0Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SC CWT EXTRACT MONITOR (143) &nbsp;&nbsp;  MAIL GROUP (3.8)</h1>
+<div id="demo"><table id="My44LTE0Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SC CWT EXTRACT MONITOR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+If defined, members of this mail group will receive the messages which
+contain the raw data sent to Austin as a part of the Clinic Wait Time
+extract.  It facilitates the occasional monotoring of this process if
+indicated.
+ 
+This mail group should not normally have members defined.  The presence of
+defined members will result in extract messages being stored in the local
+MESSAGE (#3.9) file.  Storage of these messages locally will not occur if
+there are no local recipients.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>public</td>
+</tr>
+<tr>
+<td>COORDINATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

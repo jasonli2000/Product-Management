@@ -1,0 +1,137 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTIzMzI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORS PRINT MENU (2332) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTIzMzI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORS PRINT MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Print Reports</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-65.html">ORS HEALTH SUMMARY</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-67.html">ORS LAB INTERIM</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;10</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-66.html">ORS GRAPH LABS</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;15</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-70.html">ORS BLOOD BANK</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;20</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-71.html">ORS ANATOMIC PATH REPORT</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;25</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-68.html">ORS VITALS REPORT</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;30</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-69.html">ORS VITALS CUM REPORT</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;35</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-61.html">ORS 24HR SUMMARY</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;40</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-62.html">ORS RNG SUMMARY</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;45</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-63.html">ORS CUSTOM SUMMARY</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;50</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-64.html">ORS CHART SUMMARY</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;55</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-226.html">ORS RX ACTION PROFILE</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;60</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-187.html">ORS AD HOC HEALTH SUMMARY</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;65</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2776.html">ORS PROBLEM LIST</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;37</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D EXIT^<a href="http://code.osehra.org/dox/Routine_ORPRS07.html">ORPRS07</a> S:$D(^TMP("OR",$J,"CURRENT","MENU")) XQORM("HIJACK")=^("MENU")</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D FULL^<a href="http://code.osehra.org/dox/Routine_VALM1.html">VALM1</a> S VALMBCK="R"</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>W ""</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Report(s):</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>40</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2004-03-30 18:20:30</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

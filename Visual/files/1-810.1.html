@@ -1,0 +1,57 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS04MTAuMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>REMINDER REPORT TEMPLATE (810.1) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS04MTAuMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>REMINDER REPORT TEMPLATE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file is used by the reminder reports options only. For each type of
+report (e.g. Reminders Due), selection parameters used in a report may be
+saved as a template when the report is being run. When running reports,
+the user may opt to retrieve parameters from an existing template as the
+basis of a new report. Templates may be modified, renamed, copied, or
+deleted from the reminder report options.
+ 
+The parameters for the reminder reports consist of a patient sample (e.g.
+PCMM team) from which a patient list is built and also a list of reminders
+to be evaluated for each selected patient.
+ 
+The field names in the template file correspond to the local variable and
+array names used in the print routines.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

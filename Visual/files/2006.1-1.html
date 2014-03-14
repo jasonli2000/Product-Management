@@ -1,0 +1,409 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MjAwNi4xLTE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SOFTWARE SERVICE (1) &nbsp;&nbsp;  IMAGING SITE PARAMETERS (2006.1)</h1>
+<div id="demo"><table id="MjAwNi4xLTE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INSTITUTION NAME</td>
+<td><a href="4-1.html">SOFTWARE SERVICE</a></td>
+</tr>
+<tr>
+<td>CURRENT NAMESPACE</td>
+<td>ZZT</td>
+</tr>
+<tr>
+<td>CURRENT RAID GROUP</td>
+<td><a href="2005.2-2.html">RG-ZZT1</a></td>
+</tr>
+<tr>
+<td>SITE CODE</td>
+<td>ZZT</td>
+</tr>
+<tr>
+<td>PURGE-RETENTION DAYS FULL FILE</td>
+<td>45</td>
+</tr>
+<tr>
+<td>RETENTION DAYS HL7 & DICOM</td>
+<td>45</td>
+</tr>
+<tr>
+<td>SERVER TASK</td>
+<td>1033510</td>
+</tr>
+<tr>
+<td>TIER 2 RESERVE</td>
+<td>5</td>
+</tr>
+<tr>
+<td>FILE TYPES</td>
+<td>
+<ol>
+<li>
+<dt>FILE TYPES:  &nbsp;&nbsp;TXT</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>MULTI NAMESPACE</td>
+<td>
+<ol>
+<li>
+<dt>MULTI NAMESPACE:  &nbsp;&nbsp;ZZ</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>NO AUTOWRITE UPDATE</td>
+<td>NO AUTOWRITE UPDATE</td>
+</tr>
+<tr>
+<td>PURGE-RETENTION DAYS BIG FILE</td>
+<td>45</td>
+</tr>
+<tr>
+<td>PURGE-RETENTION DAYS ABS FILE</td>
+<td>120</td>
+</tr>
+<tr>
+<td>PURGE-RETENTION DAYS PHOTOID</td>
+<td>99999</td>
+</tr>
+<tr>
+<td>IMPORT QUEUE SECURITY</td>
+<td>ON</td>
+</tr>
+<tr>
+<td>NET SITE SERVICE</td>
+<td><a href="2005.2-1.html">VISTASITESERVICE</a></td>
+</tr>
+<tr>
+<td>AUTOPURGE</td>
+<td>ON</td>
+</tr>
+<tr>
+<td>PURGE BY</td>
+<td>DATE ACCESSED</td>
+</tr>
+<tr>
+<td>EXPRESS PURGE</td>
+<td>ON</td>
+</tr>
+<tr>
+<td>EXPRESS PURGE RATE</td>
+<td>100000</td>
+</tr>
+<tr>
+<td>RAID PURGE FACTOR</td>
+<td>1</td>
+</tr>
+<tr>
+<td>SCHEDULED VERIFIER</td>
+<td>ON</td>
+</tr>
+<tr>
+<td>SCHEDULED VERIFIER FREQUENCY</td>
+<td>1</td>
+</tr>
+<tr>
+<td>DATE OF SCHEDULED VERIFIER</td>
+<td>2011-05-31 00:00:00</td>
+</tr>
+<tr>
+<td>SCHEDULED VERIFIER TIME</td>
+<td>2355</td>
+</tr>
+<tr>
+<td>BP MAIL MESSAGE</td>
+<td>
+<ol>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;Imaging_Integrity_Check</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-269.html">MAG_ZZT_Imaging_Integrity_Ch</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;GCC_Copy_Error</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-270.html">MAG_ZZT_GCC_Copy_Error</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;Application_process_failure</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-271.html">MAG_ZZT_Application_process_</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;Image_Cache_Critically_Low</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-272.html">MAG_ZZT_Image_Cache_Critical</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;Monthly_Image_Site_Usage</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-273.html">MAG_ZZT_Monthly_Image_Site_U</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;Ad_Hoc_Image_Site_Usage</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-274.html">MAG_ZZT_Ad_Hoc_Image_Site_Us</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;INSTALLATION</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-275.html">MAG_ZZT_INSTALLATION</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;Image_File_Size_Variance</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-276.html">MAG_ZZT_Image_File_Size_Vari</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;Verifier_Scan_Error_log</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-277.html">MAG_ZZT_Verifier_Scan_Error_</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;Imaging_Site_Verification_Issue</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-278.html">MAG_ZZT_Imaging_Site_Verific</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;VI_BP_Queue_Processor_failure</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-279.html">MAG_ZZT_VI_BP_Queue_Processo</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;Photo_I_D_Action</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-280.html">MAG_ZZT_Photo_I_D_Action</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;Get_Next_RAID_Group_failure</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-281.html">MAG_ZZT_Get_Next_RAID_Group_</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;Scheduled_Purge_failure</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-282.html">MAG_ZZT_Scheduled_Purge_fail</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;Scheduled_Verifier_failure</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-283.html">MAG_ZZT_Scheduled_Verifier_f</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;Site_report_task_was_restarted</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-284.html">MAG_ZZT_Site_report_task_was</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;Auto_RAID_group_purge</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-285.html">MAG_ZZT_Auto_RAID_group_purg</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;Scheduled_RAID_Group_Adv</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-286.html">MAG_ZZT_Scheduled_RAID_Group</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>BP MAIL MESSAGE:  &nbsp;&nbsp;VI_BP_Eval_Queue</dt>
+<dt>Message Interval:  &nbsp;&nbsp;6</dt>
+<dl><dt>Mail Group:</dt>
+<dd>
+<ol>
+<li>
+<dt>Mail Group:  &nbsp;&nbsp;<a href="3.8-287.html">MAG_ZZT_VI_BP_Eval_Queue</a></dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>CT PRESETS 2</td>
+<td>Abdomen|350|40~Bone|2000|500~Disk|900|250~Head|80|40~Lung|1500|-700~Mediastinum|500|40~~~</td>
+</tr>
+<tr>
+<td>PCT FREE SPACE DICOM MSGS</td>
+<td>10</td>
+</tr>
+<tr>
+<td>RETENTION DAYS DICOM MSGS</td>
+<td>15</td>
+</tr>
+<tr>
+<td>TIMEOUT WINDOWS DISPLAY</td>
+<td>60</td>
+</tr>
+<tr>
+<td>TIMEOUT WINDOWS CAPTURE</td>
+<td>90</td>
+</tr>
+<tr>
+<td>*VERSION CHECKING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>TELEREADER TIMEOUT (MINUTES)</td>
+<td>180</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

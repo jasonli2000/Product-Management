@@ -1,0 +1,116 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI3Njk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGMTH HARDSHIP MENU (2769) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI3Njk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGMTH HARDSHIP MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>HARDSHIP DETERMINATIONS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Contains the protocols for adding, editing, and deleting means test hardship
+determinations.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2770.html">DGMTH ADD HARDSHIP</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;GH</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2771.html">DGMTH DELETE HARDSHIP</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DH</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Delete Hardship</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2772.html">DGMTH EDIT HARDSHIP</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;EH</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Edit Hardship</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2775.html">DGMTH EDIT COMMENTS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;EC</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Edit Comments</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I 1 X:$D(^ORD(101,+$P(^ORD(101,DA(1),10,DA,0),"^",1),24)) ^(24)</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a></td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>40</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1999-10-03 16:53:49</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

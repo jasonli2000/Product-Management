@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTQ1Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>NURS-LOCATION-DELETE (452) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTQ1Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>NURS-LOCATION-DELETE</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Deleting a Nursing Location</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+A NURSING LOCATION CANNOT BE DELETED!!
+ 
+To simulate a deletion:
+ 
+   1.  Run the WARD DEACTIVATION PATIENT UPDATE OPTION (NURSPT-WRDINA) to: a)
+       remove patients from the unit of the simulated deletion and b) set the
+       PATIENT CARE STATUS Field of this nursing location to inactive.
+ 
+   2.  Set the WARD STATUS Field of the nursing location to (I) inactive.  
+ 
+   3.  Assign the corresponding MAS location(s) for the inactivated nursing
+       location to a new or already existing nursing location, remembering
+       that all FILE 42 ward location entries must be associated with an
+       active (WARD STATUS FIELD) nursing location, including MASONLY.
+ 
+   4.  Delete the MAS location entry(s) for the old/original nursing
+       location to be deactivated.
+ 
+   5.  Deactivate nursing locations which are receiving the MAS locations
+       referenced in step 3 (excluding MASONLY).  Reactivate these wards
+       using the WARD ACTIVATION PATIENT UPDATE option (NURSPT-WRDACT). This
+       process will place patients from the closed unit on their new locations
+      in the Nursing System.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1992-01-30 08:16:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjQ5OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCP RECEIVE ISSUE BOOK ORDER (2498) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjQ5OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCP RECEIVE ISSUE BOOK ORDER</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Receive Issue Book Order</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RECEIVE ISSUE BOOK ORDER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used by the primary inventory point to receive in
+issue book requests distributed by the warehouse.  When receiving
+in the issue book request, the primary on-hand quantity and due-in
+quantity is adjusted.  The warehouse quantities are not changed until
+the warehouse posts the issue book request.  If the warehouse has
+posted the issue book request, the primary will not be able to
+receive the order in since the primary receiving process was done during
+warehouse posting.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PRCPWPPL.html">PRCPWPPL</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

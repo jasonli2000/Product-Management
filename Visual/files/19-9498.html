@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTQ5OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>EASEC LTC EXEMPT TST VIEW EDIT (9498) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTQ5OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>EASEC LTC EXEMPT TST VIEW EDIT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>View LTC Copay Exemption Test Editing</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>VIEW LTC COPAY EXEMPTION TEST</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the user to view all changes made to a particular Long 
+Term Care Copay Exemption Test for a patient.  Some of the displayed 
+information includes date of change, user who made the change, and the 
+type of change.  If a change involves a change to the test status, then 
+both the current and previous values are displayed.
+ 
+If a LTC Exemption test is deleted, any associated changes are also 
+deleted.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-181.html">ENROLLMENT APPLICATION SYSTEM</a></td>
+</tr>
+<tr>
+<td>DELEGABLE</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S DGMTYPT=4 D DIS^<a href="http://code.osehra.org/dox/Routine_DGMTAUD.html">DGMTAUD</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTQ2NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA CDR REPORT (5464) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTQ2NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA CDR REPORT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Cost Distribution Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>COST DISTRIBUTION REPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option produces a report of exam workload by cost distribution center
+to assist the department in preparing their Cost Distribution Report
+(CDR). If the supervisor has access to more than one division or imaging
+type, s/he is prompted to select the divisions and imaging types to
+include in the report.
+ 
+The reports are listed by division, imaging type within the division, and
+then by cost distribution center within the imaging type. The report
+contains the following information: procedure, number of examinations, and
+percentages of examinations. The report groups all examinations together
+by cost distribution center for each imaging type and division. The report
+gives information for each individual procedure performed within the cost
+distribution center.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>DISPLAY OPTION?</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-115.html">RADIOLOGY/NUCLEAR MEDICINE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_RACDR.html">RACDR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

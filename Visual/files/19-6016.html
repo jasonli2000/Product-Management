@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNjAxNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MCWKLDD (6016) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNjAxNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MCWKLDD</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Workload Reporting Device Selection</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>WORKLOAD REPORTING DEVICE SELE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option provides a mechanism for the user to select a printing device
+or devices to receive message transmissions (Patient ID, Provider ID,
+Patient SSN, CPT Code, and date/time).  The message transmission occurs at
+the time the Medicine procedure is signed and released and only when the
+Workload reporting option is turned on.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D ^<a href="http://code.osehra.org/dox/Routine_MCDIEDIE.html">MCDIEDIE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>WLDEV^<a href="http://code.osehra.org/dox/Routine_MCWORKLD.html">MCWORKLD</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

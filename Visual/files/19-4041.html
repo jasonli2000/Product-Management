@@ -1,0 +1,86 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDA0MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSA IV ALL LOCATIONS (4041) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDA0MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSA IV ALL LOCATIONS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>All Location Dispense/Purge</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ALL LOCATION DISPENSE/PURGE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The All Location Dispense/Purge option should be scheduled, using TaskMan,
+to run nightly to update all Drug Accountability locations with dispensing
+from the IV STATS (#50.8), PRESCRIPTION (#52), and the UNIT DOSE PICK LIST
+STATS (#57.6) files. It also searches all active pharmacy locations and
+master vaults for drug balances  equal to or less than the reorder level
+if drug balances are maintained in the location or vault. A mail message
+containing these drugs is sent to all holders of the PSA ORDERS key. To
+avoid competing locks of ^PSD globals, it should not be scheduled within
+one hour of the Update AMIS Stats File [PSGW UPDATE AMIS STATS] option and
+after the Compile IV Costs in Background [PSJI BACKGROUND JOB] option.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-84.html">DRUG ACCOUNTABILITY</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PSAPSI3.html">PSAPSI3</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-07-22 07:53:43</td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

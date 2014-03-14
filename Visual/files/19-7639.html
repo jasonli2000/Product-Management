@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzYzOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGPRE UPDATE CALL LIST (7639) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzYzOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGPRE UPDATE CALL LIST</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Add New Appointments to Call List</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ADD NEW APPOINTMENTS TO CALL L</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This job will add appointments to the Pre-Registration Call List. The user
+will be prompted for the date to look for appointments to add to the call
+list. The default date is 'TODAY' plus the DAYS TO PULL from the MAS
+PARAMETERS File.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_DGPREBJ1.html">DGPREBJ1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

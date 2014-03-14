@@ -1,0 +1,94 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjA0OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DG PATIENT TYPE PARAMETER EDIT (2049) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjA0OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DG PATIENT TYPE PARAMETER EDIT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Patient Type Update</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PATIENT TYPE UPDATE</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>DG SUPERVISOR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to update the PATIENT TYPE (#391) file.  The
+prompts which are preceded by the word SHOW are used to determine
+which registration screens should be shown for that specific patient
+type.  The prompts which are preceded by the word ASK are used to
+identify those data groups within the SHOW screens which are editable.
+The IGNORE VETERAN PROMPTS prompt is used to permit users to answer
+'veteran' only questions during registration even if that patient type
+may be identified as not being a veteran, i.e., military retireee.
+All prompts are answerable by entering either a '1' for YES or a '0'
+for NO.  A NULL response is assumed to mean NO.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>edit</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>DIC {DIC}</td>
+<td>DG(391,</td>
+</tr>
+<tr>
+<td>DIC(0)</td>
+<td>AEMQ</td>
+</tr>
+<tr>
+<td>DIE</td>
+<td>DG(391,</td>
+</tr>
+<tr>
+<td>DR {DIE}</td>
+<td>[DG PATIENT TYPE]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

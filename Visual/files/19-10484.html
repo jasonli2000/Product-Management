@@ -1,0 +1,119 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA0ODQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LRBE PANEL CPT REPORT (10484) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA0ODQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LRBE PANEL CPT REPORT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Lab Tests and CPT Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LAB TESTS AND CPT REPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is designed to be reviewed by billing department and/or the
+Lab service to determine if laboratory file setup complies with billing
+guidelines and regulations. This option should be assigned to persons 
+involved with lab billing compliance including all applicable lab staff
+(e.g. LIM, Lab Manager, AO, etc.).
+ 
+This option will print CPT codes that will be passed to PCE based on the 
+Laboratory Billing Aware PCE reporting hierarchy. This report should be 
+used to assist proper CPT coding of laboratory test and panels. This 
+report will provide an alphabetical list of active laboratory procedures 
+that have CPT codes. There are multiple report sorting options provided; 
+all are printed in the same format. The data printed is determined by 
+certain fields in the Laboratory Test (#60) file and WKLD CODE (#64) file.
+Consult patch LR*5.2*291 documentation for coding guidelines.
+ 
+There are two forms of the report depending if the test is panel or 
+atomic. This is an example of a AMA Compliant panel test.
+Legend: IEN of test = Test Name
+       CPT code  CPT code name  [Field location where the CPT is located]*
+'*' Indicates this is a AMA Compliant panel.
+If test is a panel: a listing of the atomic tests
+*********** r = Required Test [IEN of test] Test Name
+ 
+372  =  LYTES
+        80051  ELECTROLYTE PANEL  [DEFAULT SITE/SPECIMEN CPT]*
+ 
+372 = LYTES
+**********     r[176]  SODIUM
+               r[177]  POTASSIUM
+               r[178]  CHLORIDE
+               r[179]  CO2
+ 
+The second form is for atomic test. This form includes CPT codes by 
+specimen if the test has SITE/SPECIMEN  (multiple) entries.
+ 
+176 = r SODIUM  
+        84295  ASSAY OF SERUM SODIUM  [WKLD CODE-84295.0000]
+176 = r SODIUM   (SPEC) = URINE
+        84300  ASSAY OF URINE SODIUM  [WKLD CODE-84300.0000]
+176 = r SODIUM   (SPEC) = SERUM
+        84295  ASSAY OF SERUM SODIUM  [WKLD CODE-84295.0000]
+176 = r SODIUM   (SPEC) = PLASMA
+        84295  ASSAY OF SERUM SODIUM  [WKLD CODE-84295.0000]
+ 
+If the procedure has SITE/SPECIMEN (#100) field, each specimen will also 
+be indicated
+(SPEC) = Specimen name from TOPOGRAPHY FIELD (#61) file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>RESTRICT DEVICES?</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ASK^<a href="http://code.osehra.org/dox/Routine_LRBEPRPT.html">LRBEPRPT</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA0Njk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA TIMELINESS REPORT (10469) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA0Njk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA TIMELINESS REPORT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Summary/Detail report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SUMMARY/DETAIL REPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the supervisor to generate a report of timeliness of 
+performing outpatient Radiology orders for a user specified date range, 
+where the beginning and ending date is the Exam Date.  The timeliness is
+measured in days, from the Desired Date of the order as entered by the
+clinician, to the Exam Date as entered by the technician.  The summary
+report will group the days within the date range into 30 day increments.  
+The detail report will list each exam within the date range.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-115.html">RADIOLOGY/NUCLEAR MEDICINE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_RAPMW.html">RAPMW</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

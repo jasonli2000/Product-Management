@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzM1").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XMUT-REC-FIND (335) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzM1" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XMUT-REC-FIND</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Find Messages for User</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>FIND MESSAGES FOR USER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Use this option to find all the messages that a user has ever had and has
+not terminated from.  This list of messages can be used as input into two
+other processes:  Deliver Found Messages into User's IN Basket, and List
+Messages Found.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>HELP FRAME</td>
+<td><a href="9.2-1149.html">XM-I-D-RECOVER MSGS-FIND</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>A^<a href="http://code.osehra.org/dox/Routine_XMUT1.html">XMUT1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

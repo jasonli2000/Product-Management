@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDgyMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRV VMSITE (4822) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDgyMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRV VMSITE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Enter/Edit Vitals Qualifiers</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ENTER/EDIT VITALS QUALIFIERS</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>GMRV*5*19 - shutdown Vitals CHUI</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used by the application coordinator to create and edit
+hospital-wide qualifiers associated with vital signs and other patient
+measurements captured in the Vitals/Measurements application.  Data is
+stored in the GMRV Vital Qualifier (#120.52) file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-104.html">GEN. MED. REC. - VITALS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>CHAR^<a href="http://code.osehra.org/dox/Routine_GMRVSITE.html">GMRVSITE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

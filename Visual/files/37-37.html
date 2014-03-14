@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MzctMzc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>HOSPITAL WAITING LIST (37) &nbsp;&nbsp;  DISPOSITION (37)</h1>
+<div id="demo"><table id="MzctMzc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>HOSPITAL WAITING LIST</td>
+</tr>
+<tr>
+<td>*AMIS 331 GROUP</td>
+<td>HOSPITAL CARE</td>
+</tr>
+<tr>
+<td>*AMIS 320 GROUP</td>
+<td>HOSPITAL</td>
+</tr>
+<tr>
+<td>AMIS 401-420 DISPOSITION GROUP</td>
+<td>HOSP W/L</td>
+</tr>
+<tr>
+<td>INACTIVE</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>SYNONYM</td>
+<td>
+<ol>
+<li>
+<dt>SYNONYM:  &nbsp;&nbsp;WAITING LIST</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PROGRAM ACTION</td>
+<td>D 3^DGDIS1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

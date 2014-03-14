@@ -1,0 +1,86 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTExOTU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>HLO LOG READ/WRITE ERRORS (11195) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTExOTU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>HLO LOG READ/WRITE ERRORS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>LOG READ/WRITE ERRORS</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LOG READ/WRITE ERRORS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is a troubleshooting option. Logging all errors should be turned on for
+only short periods while troubleshooting a communication problem, and will
+cause TCP/IP errors to be entered to the Kernel Error Trap.
+
+Normally, the HLO software (HL7 optimized) will NOT log common errors that
+occur durring TCP/IP communication, such as READ and WRITE errors, though other
+types of errors ARE always entered to the Kerel Error Trap. Turning
+logging on will cause READ and WRITE errors to be logged to the Kernel Error
+Trap.
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>DISPLAY OPTION?</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-33.html">HEALTH LEVEL SEVEN</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D LOGALL^<a href="http://code.osehra.org/dox/Routine_HLOUSR.html">HLOUSR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

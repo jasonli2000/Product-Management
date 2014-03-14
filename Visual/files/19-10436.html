@@ -1,0 +1,108 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA0MzY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBT QUICK REV CODING STAT (10436) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA0MzY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBT QUICK REV CODING STAT</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Quick Review Coding Status Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>QUICK REVIEW CODING STATUS REP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This report allows the MCCF staff to select a specific patient to see 
+the status of the claim so they know at a glance whether or not it is 
+ready for billing.
+ 
+The report input variable is: Patient Name
+Report is sorted by ENCOUNTER DATE/TIME
+The following fields are to printed on this report:
+1.      Patient Social Security Number
+2.      Outpatient  Encounter Location
+3.      Encounter Date and Time 
+4.      Reason Not Billable
+5.      Billable Findings Type
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>print</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K DFN</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>N DIC S DIC="^DPT(",DIC(0)="AEMNQ" D ^<a href="http://code.osehra.org/dox/Routine_DIC.html">DIC</a> S:Y<1 XQUIT=1 S:Y>0 DFN=+Y</td>
+</tr>
+<tr>
+<td>DIC {DIP}</td>
+<td>IBT(356,</td>
+</tr>
+<tr>
+<td>L.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FLDS</td>
+<td>[IBT QUICK REV CODING STAT]</td>
+</tr>
+<tr>
+<td>BY</td>
+<td>[IBT QUICK REV CODING STAT]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTAwMzY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LREPI GENERATE REPORT/SP (10036) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTAwMzY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LREPI GENERATE REPORT/SP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Lab EPI Generate Local Report/Spreadsheet</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LAB EPI GENERATE LOCAL REPORT/</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The job is automatically tasked after selecting the national EPI or local
+pathogens, time period, segments/fields, report or spreadsheet type, and will
+take approximately 2-3 hours to generate.  When the report or spreadsheet has
+finished generating an alert is automatically sent to the user generating the
+report or spreadsheet.   The report or spreadsheet can then be viewed on the
+screen or printed using the new Lab EPI Print Local Report/Spreadsheet option.
+Note: NO data is transmitted to Austin when using this option 
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_LREPIRS.html">LREPIRS</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

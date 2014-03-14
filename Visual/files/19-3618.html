@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzYxOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSJU EWG (3618) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzYxOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSJU EWG</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Ward Groups</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>WARD GROUPS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+  Oft times a Pharmacy 'ward' will actually encompass several MAS wards.
+Therefore, this package uses WARD GROUPS.  This option allows the user to
+name their ward groups and select which MAS wards fall under each one.  If
+there is a ward that stands alone, a ward group must be defined (probably
+with the same name), with that ward under it.
+  When a new WARD GROUP is entered, it's TYPE is asked (PHARMACY and MAS
+are the choices).  This field is NOT editable.  No two ward groups marked
+as PHARMACY may contain the same ward, while MAS ward groups may be
+arranged and rearranged, as desired.  Only PHARMACY ward groups are select-
+able at the PICK LIST options, while any ward group is selectable at the
+other print options.
+  The parameters that determine how pick lists for a ward group should print
+are now editable through this option, allowing the site to make such
+determinations by ward group.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ENWG^<a href="http://code.osehra.org/dox/Routine_PSGFILED.html">PSGFILED</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

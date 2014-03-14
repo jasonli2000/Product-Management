@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNjQ5MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMPL BUILD ENC FORM LIST (6491) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNjQ5MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMPL BUILD ENC FORM LIST</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Copy Selection List from IB Encounter Form</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>COPY SELECTION LIST FROM IB EN</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will allow creating a new selection list by copying a list
+already created through the Encounter Form utility (Integrated Billing
+package) into a new entry in file #125.  This list will then be available
+for editing further (only the new list will be altered - the list saved
+in the Integrated Billing pkg with the form will not be changed here),
+or for use to select from when entering new problems to a patient's list.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-135.html">PROBLEM LIST</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_GMPLBLDF.html">GMPLBLDF</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

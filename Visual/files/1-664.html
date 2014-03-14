@@ -1,0 +1,50 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02NjQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PROSTHETICS 1358 (664) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02NjQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PROSTHETICS 1358</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is a bridge file used to temporarily store purchasing information
+that links with the 1358 Daily Record File (424) prior to close out.
+Upon close out, transactions may be purged by using the Purge menu
+option.  Normally, purging this file may be done for transactions over
+180 days old.  The purge retaining time is set in the site parameter file.
+PARAMETER file (669.9).
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

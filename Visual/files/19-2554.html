@@ -1,0 +1,87 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjU1NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCP COST TREND ANALYSIS (2554) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjU1NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCP COST TREND ANALYSIS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Cost Trend Analysis Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>COST TREND ANALYSIS REPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Cost Trend Analysis Report will compute the average item cost
+for the specified period based on the monthly opening balance last
+receipt cost.  It will compare the computed average item cost with
+the current monthly opening balance average cost and display the
+percent increase or decrease change.  The report will print the item
+master number, description, nsn (for whse), unit per issue,
+cumulative average cost, current month average item cost, and percent
+change.  It will break out each month and year in the selected date
+range and display the last cost opening balance.
+ 
+The user will have the option to specify the date range which should
+be used in computing the average item cost.  The user can also
+specify which items to display and to print only a summary of the
+report.  If the user selects to print only a summary, the report
+will not break out each month and year on the report.
+
+The warehouse can select specific nsn's to display and the report
+will sort by nsn.  The primary and secondary can select specific
+item master numbers to display and the report will sort by
+description.
+ 
+The primary will have the option to select specific group categories
+to display.  The report will sort by group category and description.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PRCPRCTA.html">PRCPRCTA</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

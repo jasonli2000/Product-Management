@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNjI5").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FHPRF2 (629) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNjI5" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FHPRF2</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Forecasted Diet Census</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>FORECASTED DIET CENSUS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows for the forecast of the total census for
+a Production Facility for a specified date. The forecast is based
+upon MAS census counts for the same day of the week for
+the last 9 occurrences and is then corrected by examining
+the error between the forecast and the actual census for
+the most recent three days.  This report also includes all the
+outpatient meals in a specific Production Facility for a specified
+date.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_FHPRF1.html">FHPRF1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

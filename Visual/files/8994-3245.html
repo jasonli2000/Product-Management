@@ -1,0 +1,122 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC0zMjQ1").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSB WITNESS (3245) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC0zMjQ1" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSB WITNESS</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>WITNESS</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PSBRPC1.html">PSBRPC1</a></td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>ARRAY</td>
+</tr>
+<tr>
+<td>AVAILABILITY</td>
+<td>PUBLIC</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Used by frmWintess to validate if a Witness at the client is authorized 
+to be a witness for a BCMA action, i.e. High Risk Drug administration.
+ 
+Validation is achieved via not allowing the logged in person to witness 
+for themselves, also persons that hold certain keys can't be a valid 
+witness.
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;PSBACC</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Access Code
+</pre>
+</dt>
+</li>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;PSBVER</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LITERAL</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Verify Code.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>RETURN PARAMETER DESCRIPTION</td>
+<td><pre>
+Results array is returned in the following forms:
+  
+  Valid authorization of Witness.
+   
+      Results[0] = 'Witness DUZ^Witness Name'
+  
+  Invalid authorization of Witness.
+   
+      Results[0] = '-1^Invalid Witness sign-on'
+            Or     '-1^Cannot Witness for yourself'
+            Or     '-1^A student does not have authority to witness a 
+                       High Risk/High Alert administration.'
+            Or     '-1^You do not have authority to witness a 
+                       High Risk/High Alert administration.'
+            Or     '-1^Read-Only users do not have authority to witness a 
+                       High Risk/High Alert administration.'
+            Or     '-1^Invalid VistA user - No Primary menu setup for 
+                       this user in the NEW PERSON file.'
+            Or     '-1^A non-BCMA user does not have authority to witness 
+                       a High Risk/High Alert administration.'
+ 
+ Success of the call is validated by the first up-arrow piece of data 
+ being greater than 0.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

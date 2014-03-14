@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA3Nzc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRSA RECESS ENTER/EDIT (10777) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA3Nzc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRSA RECESS ENTER/EDIT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Recess Enter/Edit for 9 Month AWS</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RECESS ENTER/EDIT FOR 9 MONTH</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option provides timekeepers the ability to enter and edit recess
+schedules for nurses working a 9 month/3 month alternative work schedule 
+(AWS). Timekeepers may only enter or edit recess schedules for nurses on
+the 9-month/3-month AWS that are within T&amp;L units assigned to them.  When
+entering a new recess schedule the date that the AWS becomes effective is
+required. If a date is entered that is not the first Sunday of the pay
+period then the option assumes the first Sunday for the pay period in
+which the user supplied date falls.  The option limits the available 
+recess schedules for entry and editing to the current, next and last 
+fiscal years.  The option invokes the ListManager to produce a list of
+weeks in calendar format from the first week of the AWS through the end of
+the fiscal year.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ENEDIT^<a href="http://code.osehra.org/dox/Routine_PRSARC.html">PRSARC</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

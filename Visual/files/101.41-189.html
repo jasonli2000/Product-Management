@@ -1,0 +1,176 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLjQxLTE4OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORWD GENERIC VITALS (189) &nbsp;&nbsp;  ORDER DIALOG (101.41)</h1>
+<div id="demo"><table id="MTAxLjQxLTE4OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORWD GENERIC VITALS</td>
+</tr>
+<tr>
+<td>DISPLAY TEXT</td>
+<td>VITAL SIGNS</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>dialog</td>
+</tr>
+<tr>
+<td>DISPLAY GROUP</td>
+<td><a href="100.98-12.html">VITALS/MEASUREMENTS</a></td>
+</tr>
+<tr>
+<td>SIGNATURE REQUIRED</td>
+<td>ORES</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-104.html">GEN. MED. REC. - VITALS</a></td>
+</tr>
+<tr>
+<td>ITEMS</td>
+<td>
+<ol>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-4.html">OR GTX ORDERABLE ITEM</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Vital Sign:</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>INDEX:  &nbsp;&nbsp;S.V/M</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the vital sign you wish to be taken.</dt>
+<dt>SCREEN:  &nbsp;&nbsp;I $$ACTIVE^<a href="http://code.osehra.org/dox/Routine_ORDD43.html">ORDD43</a>(Y)</dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;N IDX,SCR S IDX=$G(ORDIALOG(PROMPT,"D")),SCR=$G(ORDIALOG(PROMPT,"S")) D XHELP^<a href="http://code.osehra.org/dox/Routine_ORDD43.html">ORDD43</a>(IDX,SCR)</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;cboMeasurement</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-6.html">OR GTX START DATE/TIME</a></dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the date [time optional] when you wish these signs to be taken.</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y="NOW"</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;txtStart</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-170.html">OR GTX SCHEDULE</a></dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter either a standard administration schedule or one of your own, up to 70 characters.</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;cboSchedule</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-19.html">OR GTX FREE TEXT 1</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Special Instructions:</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter any additional instructions for this order, up to 240 characters.</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;3</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;txtComment</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-24.html">OR GTX STOP DATE/TIME</a></dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the date [time optional] to stop taking this vital sign.</dt>
+<dt>POST-SELECTION ACTION:  &nbsp;&nbsp;I $$FTDCOMP^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a>("START DATE/TIME","STOP DATE/TIME",">") K DONE,ORDIALOG(PROMPT,ORI) W $C(7),!,"Cannot end before start date/time!",!</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y=$$VAL^ORCD("START DATE/TIME")</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;txtStop</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;6</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-143.html">OR GTPARM BPSYS</a></dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter critical values for the systolic blood pressure.</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y="100"</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;4</dt>
+<dt>LEADING TEXT:  &nbsp;&nbsp;BPsys <</dt>
+<dt>TRAILING TEXT:  &nbsp;&nbsp;,</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;txtBPsys</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;7</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-142.html">OR GTPARM BPDIAS</a></dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the critical values for the diastolic blood pressure.</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y="120"</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;5</dt>
+<dt>LEADING TEXT:  &nbsp;&nbsp;BPdia ></dt>
+<dt>TRAILING TEXT:  &nbsp;&nbsp;,</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;txtBPdia</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;8</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-186.html">ORWD GTPARM PULSE LT</a></dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter critial values for the heart rate.</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y="60"</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;6</dt>
+<dt>LEADING TEXT:  &nbsp;&nbsp;Pulse <</dt>
+<dt>TRAILING TEXT:  &nbsp;&nbsp;,</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;txtPulseLT</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;9</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-185.html">ORWD GTPARM PULSE GT</a></dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter critical values for the heart rate.</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y="120"</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;7</dt>
+<dt>LEADING TEXT:  &nbsp;&nbsp;Pulse ></dt>
+<dt>TRAILING TEXT:  &nbsp;&nbsp;,</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;txtPulseGT</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;10</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-145.html">OR GTPARM TEMPERATURE</a></dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter critical values for temperature (fahrenheit).</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y="101"</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;8</dt>
+<dt>LEADING TEXT:  &nbsp;&nbsp;Temp ></dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;txtTemp</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;5.5</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-184.html">OR GTX CALLHO</a></dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;I 0</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y=0</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;3.5</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;chkCallHO</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>LISTBOX TEXT</td>
+<td>Vitals</td>
+</tr>
+<tr>
+<td>WINDOW FORM ID</td>
+<td>170</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-06-14 09:02:59</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,120 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLjQxLTE3OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OR GXMISC GENERAL (179) &nbsp;&nbsp;  ORDER DIALOG (101.41)</h1>
+<div id="demo"><table id="MTAxLjQxLTE3OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OR GXMISC GENERAL</td>
+</tr>
+<tr>
+<td>DISPLAY TEXT</td>
+<td>General Purpose Generic Order</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>dialog</td>
+</tr>
+<tr>
+<td>DISPLAY GROUP</td>
+<td><a href="100.98-13.html">NURSING</a></td>
+</tr>
+<tr>
+<td>SIGNATURE REQUIRED</td>
+<td>ORES</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-35.html">ORDER ENTRY/RESULTS REPORTING</a></td>
+</tr>
+<tr>
+<td>VERIFY ORDER</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ITEMS</td>
+<td>
+<ol>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-4.html">OR GTX ORDERABLE ITEM</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Patient Care:</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>INDEX:  &nbsp;&nbsp;S.NURS</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter a patient care item.</dt>
+<dt>SCREEN:  &nbsp;&nbsp;I $$ACTIVE^<a href="http://code.osehra.org/dox/Routine_ORDD43.html">ORDD43</a>(Y)</dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;N IDX,SCR S IDX=$G(ORDIALOG(PROMPT,"D")),SCR=$G(ORDIALOG(PROMPT,"S")) D XHELP^<a href="http://code.osehra.org/dox/Routine_ORDD43.html">ORDD43</a>(IDX,SCR)</dt>
+<dt>EXIT ACTION:  &nbsp;&nbsp;N OI S OI=+$G(ORDIALOG(PROMPT,INST)) D:OI ORDMSG^ORCD(OI)</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;cboNursing</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-19.html">OR GTX FREE TEXT 1</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Instructions:</dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;C</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the instructions for this order, up to 240 characters of text.</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>START NEW LINE:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-6.html">OR GTX START DATE/TIME</a></dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>ASK ON EDIT ONLY:  &nbsp;&nbsp;YES</dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;RCW</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the date/time to begin this order.</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y="NOW"</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-24.html">OR GTX STOP DATE/TIME</a></dt>
+<dt>ASK ON EDIT ONLY:  &nbsp;&nbsp;YES</dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;RCW</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the date/time to end this order.</dt>
+<dt>POST-SELECTION ACTION:  &nbsp;&nbsp;I $$FTDCOMP^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a>("START DATE/TIME","STOP DATE/TIME",">") K DONE W $C(7),!,"Cannot end before start date/time!",!</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>LISTBOX TEXT</td>
+<td>Patient Care</td>
+</tr>
+<tr>
+<td>WINDOW FORM ID</td>
+<td>151</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-06-14 09:02:59</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

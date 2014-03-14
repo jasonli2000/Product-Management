@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzc3OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSGW COST PER AOU (3779) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzc3OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSGW COST PER AOU</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Cost Report Per AOU (80 column)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>COST REPORT PER AOU (80 COLUMN</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+For a user selected date range, this report will show all active drugs for
+one AOU, several AOUs, or ALL AOUs, with total quantity dispensed and cost.
+(It will print only Bottom Totals if desired.)
+The report gives a total of all quantities dispensed and all drug costs
+for that AOU.  Also, if wards/locations and services have been defined
+for the AOU, a breakdown report will print.  It shows the defined 
+wards/locations percentage of total, and cost per ward/location.
+If services are defined, it shows the defined services, percentage of
+ward/location and cost per service.  The report may be queued to print 
+at a later time.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PSGWCPA.html">PSGWCPA</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MjcuMTctNDg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>Functional Independence Measure (48) &nbsp;&nbsp;  CATASTROPHIC DISABILITY REASONS (27.17)</h1>
+<div id="demo"><table id="MjcuMTctNDg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>Functional Independence Measure</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>CONDITION</td>
+</tr>
+<tr>
+<td>TEST SCORE RANGE</td>
+<td>SCORE'<4&(PERM=1)</td>
+</tr>
+<tr>
+<td>HELP TEXT</td>
+<td><pre>
+The FIM contains 18 measures in 6 domains.  The 13 MOTOR ITEMS are in 4 
+domains:
+ - self-care,
+ - sphincter control,
+ - transfers, and
+ - locomotion.  
+When you respond to this field, you are entering the number of MOTOR items 
+for which the veteran received a score of 2 or lower.
+</pre>
+</td>
+</tr>
+<tr>
+<td>VALIDATION</td>
+<td>X\1=X&(X'<0)&(X'>13)</td>
+</tr>
+<tr>
+<td>HL7 TRANSMISSION VALUE</td>
+<td>FIM</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

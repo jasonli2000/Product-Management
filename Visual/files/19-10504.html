@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA1MDQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBCR RC EXTRACT (10504) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA1MDQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBCR RC EXTRACT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Extract Charge Master RC Rates</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>EXTRACT CHARGE MASTER RC RATES</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>IB SUPERVISOR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to extract Reasonable Charges rates from Charge 
+Master in a format that can be imported to Excel.  The extract will allow 
+you to create a text file that is delimitated by the circumflex/caret (^) 
+character.  When importing to Excel specify that delimiter.  This can be 
+used for any version of RC from 2.0 or above.  The output device selected 
+should be a Host File Server (HFS) or the Current Terminal (for screen 
+capture).
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_IBCROE.html">IBCROE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

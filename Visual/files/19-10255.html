@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTAyNTU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PXRM EXTRACT PATIENT LIST (10255) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTAyNTU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PXRM EXTRACT PATIENT LIST</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Patient List Management</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PATIENT LIST MANAGEMENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option manages reminder patient lists. Local patient lists may be
+created from list rules, copied to OE/RR teams, copied to other patient
+lists or deleted.
+ 
+Local patient lists and national patient lists (from the extract process) 
+are listed. Individual lists may be displayed or printed or used to run 
+health summaries.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-180.html">CLINICAL REMINDERS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>START^PXRMLPU(0)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

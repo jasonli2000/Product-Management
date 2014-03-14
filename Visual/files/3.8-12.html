@@ -1,0 +1,62 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My44LTEy").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VAQ PDX ERRORS (12) &nbsp;&nbsp;  MAIL GROUP (3.8)</h1>
+<div id="demo"><table id="My44LTEy" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VAQ PDX ERRORS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Mail group that will receive any recoverable errors that occur
+when using PDX.  These errors will generally happen when a PDX
+message can not be properly received by the PDX Server or when
+a PDX message can not be properly created by the PDX Transmitter.
+This group will typically consist of the ADPAC(s) and IRM personnel
+responsible for PDX.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>public</td>
+</tr>
+<tr>
+<td>ORGANIZER</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ALLOW SELF ENROLLMENT?</td>
+<td>NO</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

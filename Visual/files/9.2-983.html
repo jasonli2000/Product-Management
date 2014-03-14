@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTk4Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XM-I-S-MESSAGE LINE LIMIT (983) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTk4Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XM-I-S-MESSAGE LINE LIMIT</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>P-MESSAGE LINE LIMIT FIELD</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+ 
+The P-MESSAGE LINE LIMIT field (#16.1), in the MAILMAN SITE PARAMETERS
+file (#4.3), allows IRM to set the maximum number of lines that can be
+written to the [P-MESSAGE] device. This helps MailMan to operate more
+efficiently when using the P-MESSAGE device.
+ 
+IRM can populate this field with a number ranging from 2000 to 9,999,999
+(no decimal points). There is no default for this field.
+ 
+If this field is null, there is no limit set when writing to the P-MESSAGE
+device.
+ 
+If a value is entered into this field, the number of lines written to the
+P-MESSAGE device is limited to that value. If the number of lines exceeds
+this value, MailMan will truncate the report when it reaches the maximum
+number of lines and puts the following message (between lines of
+asterisks) at the end of the message text:
+ 
+    *******************************************************************
+    P-MESSAGE line limit of nnnn reached.  Rest of file ignored.
+    *******************************************************************
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;P-MESSAGE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-890.html">XM-U-M-PRINT DEVICE P-MESSAGE</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1998-12-16 09:54:57</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,50 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0xLjUyMTU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SQLI_TABLE (1.5215) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0xLjUyMTU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SQLI_TABLE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Descriptor of a set of table elements: Includes name and file no.
+(See SQLI_TABLE_ELEMENTS). Each ^DD(DA) represents a table in a relational
+model of FileMan. Further, each index represents a table. 
+ 
+Each schema contains multiple tables. Each table contains just one primary
+key, but multiple columns, foreign keys and indicies.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

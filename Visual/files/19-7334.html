@@ -1,0 +1,86 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzMzNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCH P/C ORACLE (7334) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzMzNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCH P/C ORACLE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Unreconciled Austin Payment Transactions</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>UNRECONCILED AUSTIN PAYMENT TR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to print oracle transaction data from
+unreconciled transactions.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>print</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-52.html">IFCAP</a></td>
+</tr>
+<tr>
+<td>DIC {DIP}</td>
+<td>PRCH(440.6,</td>
+</tr>
+<tr>
+<td>L.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FLDS</td>
+<td>[PRCH P/C ORACLE]</td>
+</tr>
+<tr>
+<td>BY</td>
+<td>[PRCH P/C ORACLE UNREC SORT]</td>
+</tr>
+<tr>
+<td>DIS(0)</td>
+<td>I $P($G(^PRCH(440.6,D0,0)),"^",16)="N"</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

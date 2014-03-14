@@ -1,0 +1,89 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTQyLjEtMjA1").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PCE OUTPATIENT ENCOUNTERS (205) &nbsp;&nbsp;  HEALTH SUMMARY COMPONENT (142.1)</h1>
+<div id="demo"><table id="MTQyLjEtMjA1" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PCE OUTPATIENT ENCOUNTERS</td>
+</tr>
+<tr>
+<td>PRINT ROUTINE</td>
+<td>OUTPT;GMTSPXOP</td>
+</tr>
+<tr>
+<td>TIME LIMITS APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>OE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This component lists outpatient diagnosis (ICD-9) and procedure (CPT) for a
+particular patient. The user can specify item and occurrence limits,
+whether hospital location should be displayed or not, the format of ICD-9
+data (e.g. code only, long text, short text or no ICD-9 data), and whether
+the provider narrative should be displayed or not.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MAXIMUM OCCURRENCES APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>Patient Care Encounter Package not yet installed</td>
+</tr>
+<tr>
+<td>DEFAULT HEADER NAME</td>
+<td>Outpatient Encounter</td>
+</tr>
+<tr>
+<td>HOSPITAL LOCATION APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>ICD TEXT APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>PROVIDER NARRATIVE APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>CPT MODIFIER APPLICABLE</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

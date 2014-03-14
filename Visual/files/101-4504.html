@@ -1,0 +1,115 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTQ1MDQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBNCPDP INS ELIG VER INQ MENU (4504) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTQ1MDQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBNCPDP INS ELIG VER INQ MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Patient Insurance</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4067.html">IBNCPDP VIEW EXP POL</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;VP</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4068.html">IBNCPDP QUIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;EX</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;6</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4502.html">IBNCPDP INS ELIG SEND</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RX</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4503.html">IBNCPDP INS ELIG EFF DATE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DT</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4505.html">IBNCPDP INS ELIG TOGGLE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AL</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4506.html">IBNCPDP INS ELIG PAT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CP</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>I $G(IBFASTXT) S VALMBCK="Q"</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>K IBFASTXT</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a></td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>40</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2011-11-02 12:02:45</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

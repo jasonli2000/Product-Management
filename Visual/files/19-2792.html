@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjc5Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCFA OBLIGATION PROCESSING (2792) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjc5Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCFA OBLIGATION PROCESSING</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Obligation Processing</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>OBLIGATION PROCESSING</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This function is used to assign an obligation number to a service
+request.  The request is transferred to Fiscal/Accounting from
+A&amp;MM service after they have reviewed and confirmed the
+order.
+After the document has been obligated, the option updates the Control
+Point records, when possible, and prints the completed 2138 in A&amp;MM.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PRCFFMO.html">PRCFFMO</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-02-26 11:22:29</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

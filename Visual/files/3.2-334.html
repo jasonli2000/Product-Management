@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My4yLTMzNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>P-REMOTE HP LASER/16/6/UP/DS (334) &nbsp;&nbsp;  TERMINAL TYPE (3.2)</h1>
+<div id="demo"><table id="My4yLTMzNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>P-REMOTE HP LASER/16/6/UP/DS</td>
+</tr>
+<tr>
+<td>SELECTABLE AT SIGN-ON</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>RIGHT MARGIN</td>
+<td>132</td>
+</tr>
+<tr>
+<td>FORM FEED</td>
+<td>#</td>
+</tr>
+<tr>
+<td>PAGE LENGTH</td>
+<td>60</td>
+</tr>
+<tr>
+<td>BACK SPACE</td>
+<td>$C(8)</td>
+</tr>
+<tr>
+<td>OPEN EXECUTE</td>
+<td>W *27,"E",*27,"(s16.7H",*27,"&l8D"</td>
+</tr>
+<tr>
+<td>CLOSE EXECUTE</td>
+<td>W $C(27),"E" D CLOSE^NVSPRTU</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td>Portrait 16cpi Dual Sided</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

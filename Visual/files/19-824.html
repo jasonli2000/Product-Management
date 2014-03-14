@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODI0").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LRACC1 (824) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODI0" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LRACC1</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Long form accession list</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LONG FORM ACCESSION LIST</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Detailed list of accessions by accession area.  The list produces
+a complete listing of accessions over a specified time period.
+The user can opt to print only specified tests and/or only
+uncompleted entries.  The status of each test for an accession
+is also given.  Microbiology has its own "Long Form Accession"
+list (LRMIACC1).  The Long Form Accession list can effectively
+replace log books, provide a list of uncompleted test(s) for 
+an accession area, and be used at the end of the shift and work 
+day to monitor what is left on the list.  Use the option "Remove
+an Accession" (LRDELOG) to remove an unwanted accession so that 
+the "rollover" option, if activated, will work as desired.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_LRWRKLST.html">LRWRKLST</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

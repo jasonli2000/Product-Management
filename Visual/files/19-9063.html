@@ -1,0 +1,104 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTA2Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBAT INPT PROSTHETIC ITEMS (9063) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTA2Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBAT INPT PROSTHETIC ITEMS</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Edit Inpatient Prosthetic Items</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>EDIT INPATIENT PROSTHETIC ITEM</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>IB SUPERVISOR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will allow entering/editing/deleting of items that should be
+billed for inpatient prosthetics.  Items in here will be automatically
+billed by the nightly background job for inpatients.  No other inpatient
+issued items will be automatically billed.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>edit</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K DLAYGO,DIDEL</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S (DLAYGO,DIDEL)=351.67</td>
+</tr>
+<tr>
+<td>DIC {DIC}</td>
+<td>IBAT(351.67,</td>
+</tr>
+<tr>
+<td>DIC(0)</td>
+<td>AEMQL</td>
+</tr>
+<tr>
+<td>DIE</td>
+<td>IBAT(351.67,</td>
+</tr>
+<tr>
+<td>DR {DIE}</td>
+<td>.01</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

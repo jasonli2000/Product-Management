@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OTg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ROR REGISTRY RECORD (798) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OTg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ROR REGISTRY RECORD</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The ROR REGISTRY RECORD file contains records of
+local registries. Each record associates a patient
+with a registry and contains registry-specific and
+additional service information (when the patient 
+was added to the registry, if they were confirmed,
+etc).
+ 
+Records of the file are uniquely identified by 
+the patient and the registry (the "A" primary key
+and the uniqueness index "KEY" are used for that
+purpose).
+ 
+When the record of this file is deleted, the logic
+of the ADELETE cross-reference tries to delete the
+associated records from the ROR HIV RECORD 
+(#799.4), ROR PATIENT (#798.4), and ROR PATIENT
+EVENTS (#798.3) files.
+ 
+A permanent screen (the ^DD(798,0,"SCR") node) 
+restricts access to records of this file. Users
+can only access records of those registries that
+they have the security key(s) for. Users with the
+ROR VA IRM security key can access all records of
+the file.
+ 
+If you want the changes in the security keys
+allocation to have an effect immediately, you 
+should rebuild the "ACL" cross-reference of the
+.01 field of the SECURITY KEY multiple of the ROR
+REGISTRY PARAMETERS file (#798.1). See the
+description of the cross-reference for more
+details.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

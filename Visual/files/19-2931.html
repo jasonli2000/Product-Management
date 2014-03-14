@@ -1,0 +1,101 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjkzMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCU FPDS RPT (2931) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjkzMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCU FPDS RPT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>FPDS Reports - FY89</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>FPDS REPORTS - FY89</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is a menu of the FPDS reports available for printing.
+These reports are for FY 1989 or later.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2932.html">PRCU FPDS CONTRACT</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2933.html">PRCU FPDS LI</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2936.html">PRCU FPDS <25K</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2937.html">PRCU >25K</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2938.html">PRCU <25K W/O FPDS</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S %F="SP" D ^<a href="http://code.osehra.org/dox/Routine_PRCFSITE.html">PRCFSITE</a> S:'$D(PRC("SITE")) XQUIT=""</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2000-10-27 09:31:21</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

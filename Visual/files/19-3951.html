@@ -1,0 +1,120 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzk1MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSD CORRECTION LOG (3951) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzk1MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSD CORRECTION LOG</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Correction Menu</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CORRECTION MENU</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu option allows the pharmacy supervisor access to make corrective
+actions on Controlled Substances orders.
+ 
+Sometimes nursing may erroneously flag a Green Sheet ready for pharmacy
+pickup.  Using this option, the pharmacy supervisor may change the
+Green Sheet order status from COMPLETED - GREEN SHEET READY FOR PICKUP
+to DELIVERED - ACTIVELY ON NAOU to correct this problem.
+  
+The CS software allows pharmacy to add existing Green Sheets, active
+orders on an NAOU, at package setup.  These orders may be tracked
+using the CS software.  Sometimes one of these existing Green Sheets
+may be incorrectly entered in the software.  Using this option,
+the pharmacy supervisor may delete this erroneous existing Green
+Sheet.
+   
+An entry in the CS CORRECTION LOG file (#58.87) will be created
+to log a history of all corrective actions.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3960.html">PSD CORRECT STATUS</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3961.html">PSD CORRECT EXISTING GS</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3936.html">PSD EDIT/CANC VER ORD</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3964.html">PSD CORRECT GS STATUS</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3979.html">PSD ERR/ADJ PENDING REPORT</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;20</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3980.html">PSD ERR/ADJ RESOLVED REPORT</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;40</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3987.html">PSD ERR/ADJ EDIT</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;30</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-83.html">CONTROLLED SUBSTANCES</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1997-04-08 18:50:54</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

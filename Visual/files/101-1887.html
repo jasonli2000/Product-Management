@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE4ODc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIUFD EDIT UPLOAD MGR (1887) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE4ODc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIUFD EDIT UPLOAD MGR</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Edit Upload</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+MANAGER OPTIONS
+TIU permits documents to be dictated and then uploaded into TIU or into
+other files.  Upload information can be set by this action for Document
+Definition Classes, Document Classes, or Titles, and is heritable.
+ 
+Although upload information is heritable, it is NOT displayed by the
+Document Definition Utility when it is inherited rather than belonging to
+the entry itself.  To edit/view existing upload information, select
+action Detailed Display for the entry where such information is set rather
+than lower entries.  Do NOT set partial information at a lower level; if
+information is set at all at a lower level, it must be complete at that
+level.
+ 
+Upload information includes basic characteristics such as the file/field
+which will store the text of the document, as well as header information
+for each fixed-field to be uploaded.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D EDUPLOAD^<a href="http://code.osehra.org/dox/Routine_TIUFD4.html">TIUFD4</a></td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I $P(TIUFNOD0,U,4)="CL"!($P(TIUFNOD0,U,4)="DC")!($P(TIUFNOD0,U,4)="DOC")</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1998-11-25 16:21:45</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

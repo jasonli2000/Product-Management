@@ -1,0 +1,63 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS05Ljk1").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PATCH MONITOR PARAMETER (9.95) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS05Ljk1" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PATCH MONITOR PARAMETER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is the parameter file that controls certain functions of the Patch 
+Monitor software:
+ 
+   .01          SITE NAME
+   1            MAIL GROUPS  (multiple)
+   2            NUMBER OF DAYS TO KEEP DATA
+   3            DELETE INSTALLED PATCHES?
+ 
+Site name: Free text name of the facility.
+ 
+Mail groups: groups that wish to receive the uninstalled bulletin.
+ 
+Number of days to keep data: number of days to allow data to remain, 
+provided field 3 is answered NO.  If field 3 is answered YES, this field 
+is ignored.
+ 
+Delete installed patches? - YES allows the nightly job to remove patches 
+shown as installed.  NO does not remove them.  If this field is answered 
+YES, field 2 is ignored.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

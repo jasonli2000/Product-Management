@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA0OTA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>BPS UNSTRAND SCREEN (10490) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA0OTA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>BPS UNSTRAND SCREEN</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>View/Unstrand Submissions Not Completed</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>VIEW/UNSTRAND SUBMISSIONS NOT</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>BPS MANAGER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+List Manager screen which permits users to see submissions that have not
+completed and have been in progress for one half hour or more. Users
+can then unstrand these submissions.  In the case of billing 
+requests and reversals, the submissions can be processed via the
+ECME user screen (i.e., reversed, resubmitted).  For eligibility 
+verification submissions, the submissions will unstrand to permit
+processing of subquent requests.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_BPSUSCR.html">BPSUSCR</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>2000-03-21 08:28:14</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

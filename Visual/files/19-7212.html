@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzIxMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XPD BACKUP (7212) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzIxMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XPD BACKUP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Backup a Transport Global</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>BACKUP A TRANSPORT GLOBAL</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option creates a MailMan message that will backup all current routines
+on your system that would be replaced by the Packages in this Transport
+Global. Those components that are not routines must be backed up separately
+if they need to be preserved. 
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-2.html">KIDS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_XPDIB.html">XPDIB</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

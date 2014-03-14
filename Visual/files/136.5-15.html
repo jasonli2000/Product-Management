@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTM2LjUtMTU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>BLEEDING/TRANSFUSIONS (15) &nbsp;&nbsp;  PERIOPERATIVE OCCURRENCE CATEGORY (136.5)</h1>
+<div id="demo"><table id="MTM2LjUtMTU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OCCURRENCE CATEGORY</td>
+<td>BLEEDING/TRANSFUSIONS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Definition Revised (2004):
+Any transfusion (including autologous) of packed red blood cells or 
+whole blood given from the time the patient leaves the operating room 
+up to and including 72 hours postoperatively. Report as an occurrence
+for five or more units of packed red blood cell in the postoperative
+period including hanging blood from the OR that is finished outside
+of the OR. If the patient receives shed blood, autologous blood, cell
+saver blood or pleurovac postoperatively, this is counted if greater
+than four units. The blood may be given for any reason.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

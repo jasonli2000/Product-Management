@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODAy").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LRQC (802) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODAy" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LRQC</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Quality control display (Levey-Jennings)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>QUALITY CONTROL DISPLAY (LEVEY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Quality control data are displayed against the normal mean and standard
+deviation entered for the requested test (in the Test field of the
+Lab Control Name file).  The option uses a modified Levey-Jennings
+format to allow a printout on the VA printers.  This format is 
+vertical and the time scale is sequential and not proportional.
+The report will list all dates, control values, total # of
+controls (N), target range, actual range obtained, and will flag
+any values outside of 3SD.  The control values outside of 3SD are 
+not used in the calculation of the actual range obtained.  The
+report also has a line where the responsible laboratory official 
+may review the output of the report (CAP Requirement).  The
+"mean" is denoted by the ***** line, 1SD &amp; 3SD are denoted by the 
+..... lines, and 2SD is denoted by the ::::: lines.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_LRQC.html">LRQC</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

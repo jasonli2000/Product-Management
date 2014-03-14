@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjQtNzY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-PATIENT RECORD FLAG LIST (76) &nbsp;&nbsp;  REMINDER COMPUTED FINDINGS (811.4)</h1>
+<div id="demo"><table id="ODExLjQtNzY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-PATIENT RECORD FLAG LIST</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PXRMPRF.html">PXRMPRF</a></td>
+</tr>
+<tr>
+<td>ENTRY POINT</td>
+<td>GETLST</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>VA-Patient Record Flag List</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This list type computed finding returns a list of all patients who
+have a specified record flag active any time in the date range.
+
+The Computed Finding Parameter is used to specify the flag in the
+following format: FLAG NAME^FLAG TYPE 
+  
+Where FLAG NAME is the exact name of the flag and FLAG TYPE is L for
+local or N for national. FLAG TYPE is optional and defaults to L.
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>LIST</td>
+</tr>
+<tr>
+<td>CF PARAMETER REQUIRED</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

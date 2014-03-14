@@ -1,0 +1,58 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NzguNy0yMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>STAFF SIGNATURE NAME (23) &nbsp;&nbsp;  LABEL PRINT FIELDS (78.7)</h1>
+<div id="demo"><table id="NzguNy0yMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PRINT FIELD</td>
+<td>STAFF SIGNATURE NAME</td>
+</tr>
+<tr>
+<td>TYPE OF DATA</td>
+<td>EXAM SPECIFIC</td>
+</tr>
+<tr>
+<td>DEFAULT TITLE</td>
+<td>Signature:</td>
+</tr>
+<tr>
+<td>TEST VALUE</td>
+<td>Dr. Susan Dickerson</td>
+</tr>
+<tr>
+<td>INTERNAL VARIABLE</td>
+<td>RASIGS</td>
+</tr>
+<tr>
+<td>MUMPS CODE TO SET VARIABLE</td>
+<td>S RASIGS=$S($D(^VA(200,+$P(RAY3,"^",15),20)):$P(^(20),"^",2),$D(^(0)):$P(^(0),"^"),1:"")</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

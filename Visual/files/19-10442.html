@@ -1,0 +1,111 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA0NDI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SD WAIT LIST UTILITIES (10442) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA0NDI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SD WAIT LIST UTILITIES</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Wait List (Sch/PCMM) Utilities</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>WAIT LIST (SCH/PCMM) UTILITIES</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>SDWL MENU</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-10439.html">SDWL TRANSFER REQUEST</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;1</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-10438.html">SDWL TRANSFER ACCEPT</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;2</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-10744.html">SDWL BATCH CLINIC CHANGE</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-10745.html">SDWL ENTER/EDIT WITH ACA FLAG</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-10743.html">SD WAIT LIST OPEN CLOSED ENTRY</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;5</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-48.html">SCHEDULING</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D EXMNU^<a href="http://code.osehra.org/dox/Routine_SDWLIFT.html">SDWLIFT</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D ENMNU^<a href="http://code.osehra.org/dox/Routine_SDWLIFT.html">SDWLIFT</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2007-12-12 21:18:55</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUXREF (29) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUXREF</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>List Options by Parents and Use</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LIST OPTIONS BY PARENTS AND US</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option produces a cross reference listing of all options, showing
+their parents on the menu tree, detecting bad pointers, and showing
+which options have no parents.  It also shows the use(s) of the option as
+a primary menu option, a secondary menu option, or a tasked option, or
+a combination of these.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>HELP FRAME</td>
+<td><a href="9.2-28.html">XQXREF</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_XQ31.html">XQ31</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

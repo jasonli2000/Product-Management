@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTQyLjEtMjQy").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>NEXT OF KIN (242) &nbsp;&nbsp;  HEALTH SUMMARY COMPONENT (142.1)</h1>
+<div id="demo"><table id="MTQyLjEtMjQy" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>NEXT OF KIN</td>
+</tr>
+<tr>
+<td>PRINT ROUTINE</td>
+<td>NOKC;GMTSDEM2</td>
+</tr>
+<tr>
+<td>EXTERNAL/EXTRACT ROUTINE</td>
+<td>
+<ol>
+<li>
+<dt>EXTERNAL/EXTRACT ROUTINE:  &nbsp;&nbsp;NOKC;GMTSDEM2</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>NOK</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Displays the name, relation, address, phone number of the Next of Kin.  If
+a Secondary Next of Kin exist, then it will be printed too.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DEFAULT HEADER NAME</td>
+<td>Next of Kin</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>DG</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

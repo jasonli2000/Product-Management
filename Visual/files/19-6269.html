@@ -1,0 +1,69 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNjI2OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ONCO STAT-CROSSTAB STG/TREAT (6269) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNjI2OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ONCO STAT-CROSSTAB STG/TREAT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Treatment by Stage - Cross tabs</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>TREATMENT BY STAGE - CROSS TAB</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Produces Cross Tabs (4 tables) for Treatment by Stage for I,II,III,IV.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>TS^<a href="http://code.osehra.org/dox/Routine_ONCOSCG.html">ONCOSCG</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-09-30 15:23:23</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

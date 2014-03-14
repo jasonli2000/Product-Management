@@ -1,0 +1,48 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS00MDkuNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PATIENT APPOINTMENT INFO LOG (409.6) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS00MDkuNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PATIENT APPOINTMENT INFO LOG</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Patient Appointment Information Transmission (PAIT) log is maintained 
+in this file.  Log entries are added when appointment information is 
+transmitted to the Austin Automation Center via HL7 messages.  File 
+entries are deleted automatically when HL7 acknowledgments are received.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

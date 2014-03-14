@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTQ1NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA EXAMSTATUS MASS OVERRIDE (5455) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTQ1NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA EXAMSTATUS MASS OVERRIDE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Mass Override Exam Status</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>MASS OVERRIDE EXAM STATUS</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>RA MGR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used by the supervisor to override one or more
+statuses of exams to complete.  The user is asked to select the statuses
+to override and then asked for a cutoff date.  The cutoff date must be
+at least 60 days prior to the current date.  A printed report is
+generated of all the exams whose status is overridden to complete.
+Due to the volume of records which may be affected by this option, it is
+recommended that the ADPAC carefully consider the division parameters
+setup in the Rad/Nuc Med Division file.  The fields in question are: Track
+Exam Status Changes (.11) and Track Request Status Changes (.119).
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_RAESO.html">RAESO</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

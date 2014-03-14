@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTQ4OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENPMR2 (1488) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTQ4OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENPMR2</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Rapid Closeout of PM Work Orders</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RAPID CLOSEOUT OF PM WORK ORDE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Closes out an entire PM worklist. User is prompted for any PM work orders
+that are to be closed out individually. All work orders on the specified
+list which are not closed out individually will be assigned a PM status
+of PASSED and default values (if any) for time and materials. This option
+may take a while to run, so the user is given the opportunity to free his
+terminal. Freeing the terminal causes this option to begin to run
+immediately as a background job. This option may slow the system
+noticeably and it may be desireable to assign this task a lower priority
+than interactive jobs.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>RCO^<a href="http://code.osehra.org/dox/Routine_ENEQPMR2.html">ENEQPMR2</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

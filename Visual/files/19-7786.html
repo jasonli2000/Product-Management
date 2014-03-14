@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzc4Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU PRINT PN WARD (7786) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzc4Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU PRINT PN WARD</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Ward- Print Progress Notes</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>WARD- PRINT PROGRESS NOTES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will allow the printing of Progress Notes for ALL patients on
+the ward at the time the job is queued to print.  All of the notes for a
+selected date range (regardless of the location of the note) will print.
+This option is only for WARD locations.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>LOC^<a href="http://code.osehra.org/dox/Routine_TIUPRPN4.html">TIUPRPN4</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

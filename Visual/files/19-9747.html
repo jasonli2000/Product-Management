@@ -1,0 +1,91 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTc0Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSO TPB RX ENTRY (9747) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTc0Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSO TPB RX ENTRY</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>TPB Rx (Prescription) Entry</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>TPB RX (PRESCRIPTION) ENTRY</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>PLACED OUT OF ORDER BY PSO*7*227</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Transitional Pharmacy Benefit (TPB) Project provides this option to 
+the Clinical Pharmacists unless determined otherwise by the local site,
+to process prescriptions written by NON-VA Physicians.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K PSOTPBFG</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D ^<a href="http://code.osehra.org/dox/Routine_PSOLSET.html">PSOLSET</a>:'$D(PSOPAR) S PSOTPBFG=1</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PSOTPRX1.html">PSOTPRX1</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2003-08-22 16:11:47</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

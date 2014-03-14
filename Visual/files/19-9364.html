@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTM2NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LA7S MANIFEST TEST REQ INFO (9364) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTM2NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LA7S MANIFEST TEST REQ INFO</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Edit Required Test Information</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>EDIT REQUIRED TEST INFORMATION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows a user to enter/edit information that is
+required to be sent with a test when it is shipped.
+ 
+Examples can be the total volume of urine collected for a timed
+urine test, weight of specimen collected, duration of specimen
+collection, patient height and weight.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-11.html">AUTOMATED LAB INSTRUMENTS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>REQINFO^<a href="http://code.osehra.org/dox/Routine_LA7SM2.html">LA7SM2</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

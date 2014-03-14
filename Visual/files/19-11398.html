@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTEzOTg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LA7 REPROCESS HL7 MESSAGES (11398) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTEzOTg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LA7 REPROCESS HL7 MESSAGES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Reprocess Lab HL7 Messages</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>REPROCESS LAB HL7 MESSAGES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Option to allow reprocessing of selected incoming Lab HL7 messages.
+
+Messages should be of type (I)ncoming, have a status of (X)purgable, (E)rror
+or (Q)ueued for processing and be related to a message configuration type:
+  1 - LAB UI
+ 10 - LEDI
+ 
+Messages for other configuration types should not be reprocessed at this time
+
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-11.html">AUTOMATED LAB INSTRUMENTS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_LA7UTILB.html">LA7UTILB</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

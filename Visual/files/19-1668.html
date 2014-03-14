@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTY2OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENFA SEND BY CMR (1668) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTY2OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENFA SEND BY CMR</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Batch Send FA Documents (by CMR)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>BATCH SEND FA DOCUMENTS (BY CM</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>ENFACS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will send FA Documents (code sheets) to the Fixed Assets
+package (FAP) in Austin for equipment belonging to a specified CMR.
+Appropriate data will be extracted from the Equipment file and used to
+populate the code sheets. Only equipment which is capitalized (CAPITALIZED
+field = YES) will be considered. FA Documents will not be created for
+equipment entries already established in FAP.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-18.html">ENGINEERING</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S ENBAT("XMT")=1 D CMR^<a href="http://code.osehra.org/dox/Routine_ENFAXMTM.html">ENFAXMTM</a> K ENBAT("XMT")</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

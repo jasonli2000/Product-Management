@@ -1,0 +1,113 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTQ1NDA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGEN MSDS MENU (4540) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTQ1NDA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGEN MSDS MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Patient MSDS Menu</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol menu contains all the activities for patient MSDS data 
+display and edit.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4541.html">DGEN MSDS ADD</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AD</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;10</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4543.html">DGEN MSDS EDIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;ED</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;20</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4542.html">DGEN MSDS DELETE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;30</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4544.html">DGEN MSDS VIEW HISTORY</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;VH</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;40</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D PEXIT^<a href="http://code.osehra.org/dox/Routine_DGRP61.html">DGRP61</a></td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a></td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>25</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2012-03-29 18:36:24</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,173 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTIwMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OR PROBLEM NTRT BULLETIN (201) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTIwMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OR PROBLEM NTRT BULLETIN</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>NEW PROBLEM/DIAGNOSIS TERM REQUEST</td>
+</tr>
+<tr>
+<td>MAIL GROUP</td>
+<td>
+<ol>
+<li>
+<dt>MAIL GROUP:  &nbsp;&nbsp;<a href="3.8-266.html">OR CACS</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This bulletin will be delivered to the OR CACS Mail Group. It informs the 
+group that a new NTRT Request has been initiated by a Clinician at their 
+facility. Upon receipt, the CACs should discuss the request internally, 
+and with their local Medical Records Committee. If the group concurs, they
+should file an official NTRT request for the new term/expression at the
+NTRT website: 
+ 
+http://vista.domain.ext/ntrt/
+ 
+The NTRT Terminology Stewards for the Problem List Domain will consider
+the request, and inform the facility of their decision as to whether the
+new term should be added to the Enterprise Terminology.
+ 
+If the local group does not concur with the request, they should defer
+filing an NTRT Request, and discuss the decision with the requester.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+                *** New Problem/Diagnosis Term Request ***
+ 
+      Requested term: |1|
+Date/Time of request: |2|
+   Name of requester: |3| 
+             Service: |4|
+            Location: |5|
+             Patient: |6| 
+Clinician's Comments:
+|7|
+ 
+A New Term Rapid Turnaround (NTRT) mail message has been sent to you 
+because a user from your facility has failed to find a suitable term 
+after initiating the search options within the Problem List application 
+and has chosen to request a new term to be added to the Problem List 
+subset. 
+ 
+Please review the requested term and verify it is understandable, 
+clinically useful, and does not already exist within the Problem List 
+subset. If the term is found appropriate, then submit a NTRT request at 
+the NTRT website, http://vista.domain.ext/ntrt/. Follow the link to 
+Access the NTRT Request Web Site.
+ 
+The Problem List domain steward will review each request and respond to 
+you with the outcome of this request. If the term is approved by the 
+Problem List NTRT committee it will be added to the Problem List subset 
+and made available within future searches.  
+ 
+The progress of this request may be monitored by accessing the NTRT 
+website at the NTRT website.
+ 
+If you have questions, need more information, or are having accessibility 
+problems with this website, please contact STS by Exchange E-Mail: [VHA 
+OI HDI STS NTRT].
+ 
+Thank-you.
+</pre>
+</td>
+</tr>
+<tr>
+<td>PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Text of the unresolved term or expression.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Date/Time of the request.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Name of Requester.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;4</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Hospital Service with which the requester is associated.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;5</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Location (i.e., Facility) where the request originated.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;6</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Patient Name and (Last I/Last 4).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;7</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Explanatory comments. For example, if the requested term is "SVT" the 
+clinician would have an opportunity to describe its meaning (e.g., 
+Superficial vein thrombosis, etc.). 
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

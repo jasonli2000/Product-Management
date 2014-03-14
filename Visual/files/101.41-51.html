@@ -1,0 +1,204 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLjQxLTUx").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRCOR CONSULT (51) &nbsp;&nbsp;  ORDER DIALOG (101.41)</h1>
+<div id="demo"><table id="MTAxLjQxLTUx" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRCOR CONSULT</td>
+</tr>
+<tr>
+<td>DISPLAY TEXT</td>
+<td>Consult</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>dialog</td>
+</tr>
+<tr>
+<td>DISPLAY GROUP</td>
+<td><a href="100.98-11.html">CONSULTS</a></td>
+</tr>
+<tr>
+<td>SIGNATURE REQUIRED</td>
+<td>ORES</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-44.html">CONSULT/REQUEST TRACKING</a></td>
+</tr>
+<tr>
+<td>VERIFY ORDER</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ASK FOR ANOTHER ORDER</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ITEMS</td>
+<td>
+<ol>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-4.html">OR GTX ORDERABLE ITEM</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Consult to Service/Specialty:</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>INDEX:  &nbsp;&nbsp;S.CSLT</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Select the service/specialty consultation you wish to request for this patient.</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;I $G(ORTYPE)'="Q",'$D(OREDIT),'$G(OREWRITE)</dt>
+<dt>SCREEN:  &nbsp;&nbsp;I $$ACTIVE^<a href="http://code.osehra.org/dox/Routine_ORDD43.html">ORDD43</a>(Y),$D(^TMP("GMRCS",$J,+$P(^(0),U,2)))</dt>
+<dt>POST-SELECTION ACTION:  &nbsp;&nbsp;I $G(ORESET)'=+Y D CKSERV^<a href="http://code.osehra.org/dox/Routine_ORCDGMRC.html">ORCDGMRC</a> K GMRCREAF</dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;D LISTSERV^<a href="http://code.osehra.org/dox/Routine_ORCDGMRC.html">ORCDGMRC</a>(1)</dt>
+<dt>EXIT ACTION:  &nbsp;&nbsp;N OI S OI=+$G(ORDIALOG(PROMPT,INST)),ORSERV=+$P($G(^ORD(101.43,OI,0)),U,2) D:ORSERV SERVMSG^ORCDGMRC</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>TRAILING TEXT:  &nbsp;&nbsp;Cons</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;cboService</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-15.html">OR GTX WORD PROCESSING 1</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Reason for Request:</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter a brief description of why this consult is being requested.</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;I $G(ORTYPE)="Z"!'$G(GMRCREAF)!($G(GMRCREAF)=1&'FIRST)</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;D REASON^<a href="http://code.osehra.org/dox/Routine_ORCDGMRC.html">ORCDGMRC</a></dt>
+<dt>ENTRY ACTION:  &nbsp;&nbsp;S:'$D(GMRCREAF) GMRCREAF=$$REAF^GMRCDRFR(+$G(ORSERV))</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;memReason</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-10.html">OR GTX CATEGORY</a></dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter if the service rendered will be on an inpatient or outpatient basis.</dt>
+<dt>POST-SELECTION ACTION:  &nbsp;&nbsp;I $G(ORESET)'="",ORESET'=$P(Y,U) D CHANGED^<a href="http://code.osehra.org/dox/Routine_ORCDGMRC.html">ORCDGMRC</a>("CAT")</dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;D SETLIST^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a></dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S:$G(ORTYPE)'="Z" Y=$S($$INPT^ORCD:"I",1:"O")</dt>
+<dt>ENTRY ACTION:  &nbsp;&nbsp;S ORDIALOG(PROMPT,0)=$P(ORDIALOG(PROMPT,0),";",1,2) ;I or O only</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;refCategory</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-7.html">OR GTX URGENCY</a></dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>INDEX:  &nbsp;&nbsp;S.GMRCT</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Select the urgency indicating how quickly results from this consult are needed.</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y=9</dt>
+<dt>ENTRY ACTION:  &nbsp;&nbsp;D URGENCY^<a href="http://code.osehra.org/dox/Routine_ORCDGMRC.html">ORCDGMRC</a>("C")</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;4</dt>
+<dt>OMIT TEXT:  &nbsp;&nbsp;ROUTINE</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;cboUrgency</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-140.html">OR GTX PLACE OF CONSULTATION</a></dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Select the preferred place to see the patient for this consult.</dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;D LIST^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a></dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S:$G(ORTYPE)'="Z" Y=$S($$VAL^ORCD("CATEGORY")="I":"B",1:"C")</dt>
+<dt>ENTRY ACTION:  &nbsp;&nbsp;D PLACE^<a href="http://code.osehra.org/dox/Routine_ORCDGMRC.html">ORCDGMRC</a></dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;3</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;cboPlace</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;6</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-17.html">OR GTX PROVIDER</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Attention:</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the service/specialty user who is to be notified of this request.</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;I '$G(GMRCNOAT)</dt>
+<dt>SCREEN:  &nbsp;&nbsp;N ORT S ORT=$P(^(0),U,11) I 'ORT!(ORT>DT)</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;txtAttn</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;7</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-20.html">OR GTX FREE TEXT</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Provisional Diagnosis:</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter a preliminary diagnosis relating to this request, up to 240 characters.</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;I '$G(GMRCNOPD)</dt>
+<dt>POST-SELECTION ACTION:  &nbsp;&nbsp;D LEX^<a href="http://code.osehra.org/dox/Routine_ORCDGMRC.html">ORCDGMRC</a></dt>
+<dt>ENTRY ACTION:  &nbsp;&nbsp;D ENPDX^<a href="http://code.osehra.org/dox/Routine_ORCDGMRC.html">ORCDGMRC</a></dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;txtProvDiag</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;1.1</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-178.html">OR GTX FREE TEXT OI</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Consult Type:</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the type of consult you wish to have done at this service</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;I $G(ORTYPE)="Z"!$D(ORDIALOG(PROMPT,INST)) ;populated by QO only</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;7.1</dt>
+<dt>PARENT:  &nbsp;&nbsp;<a href="101.41-20.html">OR GTX FREE TEXT</a></dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-166.html">OR GTX CODE</a></dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;I 0 ;stuffed in via Prov Dx</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;4.5</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-15820.html">OR GTX EARLIEST DATE</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Earliest appropriate date:</dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;W</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the earliest appropriate date for this consult to be performed.</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;Q:'$G(ORSERV)  I $G(^GMR(123.5,ORSERV,"INT"))'=1</dt>
+<dt>POST-SELECTION ACTION:  &nbsp;&nbsp;Q:$G(ORTYPE)'="Z"  I $G(ORDIALOG(PROMPT,INST))'["T" K DONE W $C(7),!,"Response must be relative date (e.g. TODAY, T+7D, T+3M)"</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y=$$GET^XPAR("PKG","ORCDGMRC EARLIEST DATE DEFAULT",1,"Q")</dt>
+<dt>EXIT ACTION:  &nbsp;&nbsp;N X,Y,%DT S X=$G(ORDIALOG(PROMPT,INST)),%DT="X" I $L(X) D ^<a href="http://code.osehra.org/dox/Routine_%25DT.html">%DT</a> S:Y>0 ORDATE=$P(Y,".")</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;calEarliest</dt>
+<dt>WINDOWS DEFAULT:  &nbsp;&nbsp;S Y=$$GET^XPAR("PKG","ORCDGMRC EARLIEST DATE DEFAULT",1,"Q")</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D GETSERV^<a href="http://code.osehra.org/dox/Routine_ORCDGMRC.html">ORCDGMRC</a></td>
+</tr>
+<tr>
+<td>QUICK SETUP</td>
+<td>D GETSERV^<a href="http://code.osehra.org/dox/Routine_ORCDGMRC.html">ORCDGMRC</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K ORSERV,ORPDX,GMRCNOPD,GMRCNOAT,GMRCREAF,^TMP("GMRCS",$J),^TMP("GMRCSLIST",$J)</td>
+</tr>
+<tr>
+<td>LISTBOX TEXT</td>
+<td>Consult</td>
+</tr>
+<tr>
+<td>WINDOW FORM ID</td>
+<td>110</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-06-14 09:03:00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

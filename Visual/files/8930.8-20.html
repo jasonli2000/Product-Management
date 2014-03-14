@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODkzMC44LTIw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IDENTIFY SIGNERS (20) &nbsp;&nbsp;  USR ACTION (8930.8)</h1>
+<div id="demo"><table id="ODkzMC44LTIw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IDENTIFY SIGNERS</td>
+</tr>
+<tr>
+<td>EVENT TYPE</td>
+<td>authorization</td>
+</tr>
+<tr>
+<td>APPLIES TO</td>
+<td>document</td>
+</tr>
+<tr>
+<td>USER VERB</td>
+<td>IDENTIFY SIGNERS FOR</td>
+</tr>
+<tr>
+<td>DOCUMENT VERB</td>
+<td>HAVE SIGNERS IDENTIFIED</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This action allows the identification of users whose concurrence is
+expected, but NOT REQUIRED.  It may be used by the author of a note to
+call a given document to another user's (e.g., teammate's) attention.  An
+example might be a Resident or Fellow who wishes for a Staff Physician's
+concurrence on a complex note or consult.  The recipient of the alert for
+concurrence signature may add an addendum or sign the document, but may
+not generally edit the document itself.  His signature in this case does
+NOT complete the document, but merely indicates concurrence.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

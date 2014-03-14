@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODgzNQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FBAA COST COMPARISON (8835) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODgzNQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FBAA COST COMPARISON</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>RBRVS Fee Schedule Cost Comparison</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RBRVS FEE SCHEDULE COST COMPAR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option generates a report of the estimated savings or cost from use
+of the RBRVS Fee Schedule during a user-specified date range.  The Date
+Finalized field is used to select the payments.  The results are grouped
+and reported by CPT CODE-CPT MODIFIER(S) values.  Additional detail is
+printed when the output device supports 130 characters per line.  The
+report columns are described below:
+ Total Occurrences: The count and total amount paid for all payments.
+ Payments at RBRVS: The count and total amount paid for payments whose
+     amount paid is equal to the RBRVS fee schedule amount that was
+     calculated during payment entry.
+ Estimated Payment if RBRVS was not used: This column is only displayed
+     when the output device supports 130 characters per line.  It displays
+     what the system believes might have been paid if the RBRVS fee
+     schedule had not been implemented.  If the service is covered by
+     the VA 75th Percentile Fee schedule, then the system assumes that
+     payment would have been made at that amount.  Otherwise, the system
+     assumes that the amount claimed is usual &amp; customary and would have
+     been paid.
+ Est. Savings from RBRVS: The estimated payment amounts minus the actual
+    RBRVS payment amounts.  Negative values are shown in parenthesis.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-114.html">FEE BASIS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_FBAAPCS.html">FBAAPCS</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

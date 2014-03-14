@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODg0Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SCMC PRECEPTOR CONVERSION (8847) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODg0Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SCMC PRECEPTOR CONVERSION</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>PRECEPTOR CONVERSION</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PRECEPTOR CONVERSION</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>SC PCMM SETUP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the user to QUEUE off a job that will build the preceptor
+histories.  It will be based upon what is currently in your PCMM preceptor
+precepty relationships.  Before each of the histories can be set up, all of
+the business rules pertaining to preceptor relationships will be checked.
+
+This is the same job that was run as part of the post init for patch SD*5.3*177
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ENMAIN^SCMCCV3(21)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

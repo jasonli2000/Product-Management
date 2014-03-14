@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzk2MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSD CORRECT STATUS (3960) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzk2MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSD CORRECT STATUS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Correct Order Status - GS Ready for Pickup</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CORRECT ORDER STATUS - GS READ</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the pharmacy supervisor access to correct the
+order status of certain CS orders.  Sometimes nursing may erroneously
+flag a Green Sheet ready for pharmacy pickup.  Using this option, the
+pharmacy supervisor may change the Green Sheet order status from
+COMPLETED - GREEN SHEET READY FOR PICKUP to DELIVERED - ACTIVELY ON
+NAOU to correct this problem.  An entry in the CS CORRECTION LOG
+file (#58.87) will be created to log a history of all corrective
+actions.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-83.html">CONTROLLED SUBSTANCES</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN1^<a href="http://code.osehra.org/dox/Routine_PSDCOR.html">PSDCOR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

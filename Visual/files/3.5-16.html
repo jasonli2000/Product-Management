@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My41LTE2").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MESSAGE P-MESSAGE-HFS-VXD (16) &nbsp;&nbsp;  DEVICE (3.5)</h1>
+<div id="demo"><table id="My41LTE2" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MESSAGE P-MESSAGE-HFS-VXD</td>
+</tr>
+<tr>
+<td>LOCATION OF TERMINAL</td>
+<td>HFS (VXD) FILE =>  MESSAGE</td>
+</tr>
+<tr>
+<td>$I</td>
+<td>XMHFS.DAT</td>
+</tr>
+<tr>
+<td>SIGN-ON/SYSTEM DEVICE</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>HOST FILE SERVER</td>
+</tr>
+<tr>
+<td>SUBTYPE</td>
+<td><a href="3.2-156.html">P-MESSAGE-HFS-VXD</a></td>
+</tr>
+<tr>
+<td>ASK DEVICE</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>ASK PARAMETERS</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>ASK HFS I/O OPERATION</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>OPEN PARAMETERS</td>
+<td>NEWVERSION:DELETE</td>
+</tr>
+<tr>
+<td>PRE-OPEN EXECUTE</td>
+<td>S IO=$P(IO,".")_$J_"."_$P(IO,".",2)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

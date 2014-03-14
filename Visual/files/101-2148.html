@@ -1,0 +1,153 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTIxNDg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBCNB LIST SCREEN MENU (2148) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTIxNDg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBCNB LIST SCREEN MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>List Menu</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2152.html">IBCNB LIST PROCESS SCREEN</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2151.html">IBCNB LIST REJECT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;12</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2150.html">IBCNB LIST ENTRY SCREEN</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;EE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;13</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2166.html">IBCNB LIST ADD</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;21</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2149.html">IBCNB LIST SORT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;ST</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;22</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2162.html">IBCNB FAST EXIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;EX</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;43</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3504.html">IBCNB LIST CHECK NAMES</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CC</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;23</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4377.html">IBCNB LIST POSITIVE VIEW</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PB</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;31</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4378.html">IBCNB LIST NEGATIVE VIEW</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;NB</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;32</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4379.html">IBCNB LIST MEDICARE VIEW</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;MB</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;33</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4380.html">IBCNB LIST APPOINTMENTS VIEW</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;FA</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;41</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4507.html">IBCNB LIST EPHARMACY VIEW</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RX</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;42</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>I $D(IBFASTXT) S VALMBCK="Q"</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>K IBFASTXT</td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I 1 X:$D(^ORD(101,+$P(^ORD(101,DA(1),10,DA,0),"^"),24)) ^(24)</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a></td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>20</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>3</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2011-11-02 12:02:45</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,86 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDgwMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRV TPR B/P ROUTINE (4803) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDgwMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRV TPR B/P ROUTINE</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>TPR B/P Pain</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>TPR B/P PAIN</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>GMRV*5*19 - shutdown Vitals CHUI</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows data entry of temperature, pulse, respiration and blood
+pressure.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D EXITACT^<a href="http://code.osehra.org/dox/Routine_GMRVED4.html">GMRVED4</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D ENTACT^<a href="http://code.osehra.org/dox/Routine_GMRVED4.html">GMRVED4</a> I $D(GMRVDBA) S GMRENTY=2 D EN2^<a href="http://code.osehra.org/dox/Routine_GMRVED0.html">GMRVED0</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1992-07-26 15:10:55</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

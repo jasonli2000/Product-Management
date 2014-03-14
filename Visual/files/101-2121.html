@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTIxMjE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SC PC PATIENT ASSIGN/UNASSIGN (2121) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTIxMjE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SC PC PATIENT ASSIGN/UNASSIGN</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>PCMM Assign or Unassign</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>SC PCMM ROLL</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Used to assign/unassign patient to primary care team and/or primary
+care practitioner position.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-48.html">SCHEDULING</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>S VALMBCK="R" D HOME^<a href="http://code.osehra.org/dox/Routine_%25ZIS.html">%ZIS</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D FULL^<a href="http://code.osehra.org/dox/Routine_VALM1.html">VALM1</a> D:$G(DFN) PAT^SCMCQK D:'$G(DFN) EN^SCMCQK</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2006-12-27 14:25:58</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDU2Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRSA OT CAN (4566) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDU2Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRSA OT CAN</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Cancel OT and CT/CH Requests</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CANCEL OT AND CT/CH REQUESTS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the user to cancel overtime and
+compensatory/credit hours requests. After selecting the employee,
+the user specifies a date to begin searching for all such requests.
+That employee's requests are listed and the user selects the one to
+cancel.  Note that compensatory time and credit hours are both coded
+under CT. 
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-101.html">PAID</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>CAN^<a href="http://code.osehra.org/dox/Routine_PRSAOTR.html">PRSAOTR</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-01-08 16:00:08</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

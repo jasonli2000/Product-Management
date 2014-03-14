@@ -1,0 +1,65 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTQyLjEtMjQ4").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MHA Administration List (248) &nbsp;&nbsp;  HEALTH SUMMARY COMPONENT (142.1)</h1>
+<div id="demo"><table id="MTQyLjEtMjQ4" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MHA Administration List</td>
+</tr>
+<tr>
+<td>PRINT ROUTINE</td>
+<td>EN;GMTSYTQL</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>MHAL</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This component displays all administrations of instruments in
+the mental health package for the specified patient. All administrations from 
+MH Administrations (file #601.84) are shown.
+
+Date ranges and maximum occurrences apply.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DEFAULT HEADER NAME</td>
+<td>MHA Admin List</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>YS</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

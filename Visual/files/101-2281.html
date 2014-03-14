@@ -1,0 +1,124 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTIyODE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORQPT PATIENT SELECTION (2281) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTIyODE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORQPT PATIENT SELECTION</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Patient Selection</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2280.html">ORQPT SAVE PREFERENCE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SV</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;22</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2279.html">ORQPT CHANGE LIST</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CV</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;21</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-450.html">VALM QUIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;Q</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;32</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Close</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-46.html">ORB BLANK LINE1</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;13</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-47.html">ORB BLANK LINE2</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;23</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-442.html">VALM NEXT SCREEN</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;+</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-443.html">VALM PREVIOUS SCREEN</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;-</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;12</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2283.html">ORQPT FIND PATIENT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;FD</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;31</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S XQORM(0)=$TR(XQORM(0),"\")</td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I 1 X:$D(^ORD(101,+$P(^ORD(101,DA(1),10,DA,0),U),24)) ^(24)</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>S XQORM("#")=$G(^TMP("OR",$J,"PATIENTS","#")),XQORM("ALT")="D ALT^<a href="http://code.osehra.org/dox/Routine_ORQPT.html">ORQPT</a>",VALMSG=$$MSG^ORQPT D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a> S XQORM("B")=$$DEFAULT^ORQPT</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Patient:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-02-12 10:39:03</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

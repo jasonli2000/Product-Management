@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTQ2NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRG-COMBINED ENTRY (464) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTQ2NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRG-COMBINED ENTRY</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Combined Selections</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+The following are examples of some combined options that can be executed
+at the selection prompt:
+ 
+  E.g.   1;text,4-5  will add selections 4, 5 and append 'text' to
+                     selection 1 (if selection 1 was not previously
+                     chosen this will also add selection 1).
+         2-3@,4/     will delete selections 2, 3 and allow you to
+                     edit the bracketed text of selection 4 (if selection
+                     4 was not previously chosen this will also add
+                     selection 4).
+         2/text,3;/  will insert 'text' between the brackets for
+                     selection 2, allow appending of text and editing
+                     of bracketed text for selection 3.  Also these
+                     entries will be added if not previously chosen.
+         1-3,A       will add selections 1, 2, 3 and additional text
+                     for this term.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1990-10-31 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

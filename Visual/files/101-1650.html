@@ -1,0 +1,121 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE2NTA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBCE FORM FIELDS LIST MENU (1650) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE2NTA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBCE FORM FIELDS LIST MENU</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1643.html">IBCE EXIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;EX</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;99</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1651.html">IBCE ADD FORM FIELD</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AF</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;10</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1652.html">IBCE DELETE FORM FIELD</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;20</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1653.html">IBCE EDIT FORM FIELD</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;ED</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;30</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1654.html">IBCE DEFINE FIELD CONTENT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CO</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;40</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1655.html">IBCE ADD/EDIT LOCAL ELEMENT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;EL</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;50</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1656.html">IBCE VIEW ELEMENT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;VE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;60</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1658.html">IBCE VIEW FORM FIELD</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;VF</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;70</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>I $G(IBFASTXT) S VALMBCK="Q"</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a></td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>40</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2008-07-22 07:52:41</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

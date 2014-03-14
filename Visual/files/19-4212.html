@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDIxMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DVBA PENDING REQUESTS RPT (4212) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDIxMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DVBA PENDING REQUESTS RPT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Pending Form 7131 Requests Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PENDING FORM 7131 REQUESTS REP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This program prints out all file 7131 records that are not finalized.
+It shows only what is not completed for each patient request.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-93.html">AUTOMATED MED INFO EXCHANGE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_DVBAPEND.html">DVBAPEND</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-06-17 11:05:09</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

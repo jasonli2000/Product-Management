@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNjI4OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ONCO #SITE-FIX EXP PAT F/U (6288) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNjI4OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ONCO #SITE-FIX EXP PAT F/U</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Correct Next Follow-Up for Expired Patients</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CORRECT NEXT FOLLOW-UP FOR EXP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option searches all FOLLOW-UP Multiples (#400) on the 
+ONCOLOGY PATIENT File (#160) looking for expired patients.  
+It then makes sure that the NEXT FOLLOW-UP METHOD Sub-field 
+(#6) is set to "9" (not followed).
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-128.html">ONCOLOGY</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>W !!,"Working..."</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>FIXFOR^ONCOU0A(1)</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-08-11 08:52:30</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

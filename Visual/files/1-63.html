@@ -1,0 +1,62 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LAB DATA (63) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LAB DATA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Patient's laboratory data
+ 
+CROSS REFERENCE DESCRIPTION:
+ ^LR("AEMA",'YEAR SPECIMEN TAKEN','ACCESSION #',LRDFN,'DATE/TIME SPECIMEN TAKEN')=""
+ ^LR("AEM",'DATE/TIME SPECIMEN RECEIVED',LRDFN,'DATE/TIME SPECIMEN TAKEN')=""
+ Similar x-refs exists for SURGICAL PATHOLOGY: "ASPA" and "ASP"
+                           CYTOLOGY:           "ACYA" and "ACY"
+                           AUTOPSY:            "AAUA" and "AAU"
+ 
+ ^LR("AAU",'AUTOPSY DATE/TIME',LRDFN)=""
+ 
+ ^LR("AD",DT,'ORGANISM','ACCESSION'_" ")=LRDFN
+ Set when an organism to be reported to the health department is entered.
+ 
+ ^LR(LRDFN,"CH",LRIDT,1,"AC",DUZ,$H)=DATE REPORT COMPLETED^VERIFY PERSON^
+ COMMENT (DELETED)
+ Set when a comment is deleted from a verified test, used by the routine
+ LRDCOM.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,109 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODk5NC0xNjQ3").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DSIC FM FIND (1647) &nbsp;&nbsp;  REMOTE PROCEDURE (8994)</h1>
+<div id="demo"><table id="ODk5NC0xNjQ3" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DSIC FM FIND</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>FIND</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DSICFM05</td>
+</tr>
+<tr>
+<td>RETURN VALUE TYPE</td>
+<td>GLOBAL ARRAY</td>
+</tr>
+<tr>
+<td>AVAILABILITY</td>
+<td>AGREEMENT</td>
+</tr>
+<tr>
+<td>WORD WRAP ON</td>
+<td>TRUE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This provides a wrapper around the FIND^DIC API.  It exposes more of the 
+functionality of the API to the RPC than the old DSIC DDR FINDER RPC.
+ 
+For a lookup value, this RPC will return all matches.  It allows for 
+input a multiple screening logic which would be ANDed together.
+</pre>
+</td>
+</tr>
+<tr>
+<td>INPUT PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>INPUT PARAMETER:  &nbsp;&nbsp;INPUT</dt>
+<dt>PARAMETER TYPE:  &nbsp;&nbsp;LIST</dt>
+<dt>MAXIMUM DATA LENGTH:  &nbsp;&nbsp;250</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>SEQUENCE NUMBER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+he INPUT(n) = tag^value   where 
+  tag = LIST^DIC input parameter name such as
+        FILE  IENS  FIELDS  FLAGS  NUMBER  INDEX  VAL  SCREEN
+  value = value for that input parameter
+ 
+For those input parameters that allow an array, you can pass that array 
+in the tag such as SCREEN()^lookup value
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>RETURN PARAMETER DESCRIPTION</td>
+<td><pre>
+if problems return one or more rows:
+   List[0] = - 1^message
+   List[n] = message  or  -1^message   for n=1,2,3,4,...
+ 
+Return entries found that match the input value:
+   List[n] = results    where n=0,1,2,3,4,...
+   1st ^-piece of results is the ien for the record from that file
+   2nd ^-piece equals the value of the field in the 1st ;-piece of FIELDS
+   3rd ^-piece equals the value of the field int he 2nd ;-piece of FIELDS
+   etc., etc., ....
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

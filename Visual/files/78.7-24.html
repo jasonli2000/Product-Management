@@ -1,0 +1,58 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NzguNy0yNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DATE REPORT ENTERED (24) &nbsp;&nbsp;  LABEL PRINT FIELDS (78.7)</h1>
+<div id="demo"><table id="NzguNy0yNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PRINT FIELD</td>
+<td>DATE REPORT ENTERED</td>
+</tr>
+<tr>
+<td>TYPE OF DATA</td>
+<td>EXAM SPECIFIC</td>
+</tr>
+<tr>
+<td>DEFAULT TITLE</td>
+<td>Date Transcribed:</td>
+</tr>
+<tr>
+<td>TEST VALUE</td>
+<td>Jan 11,1985  09:33</td>
+</tr>
+<tr>
+<td>INTERNAL VARIABLE</td>
+<td>RATRAN</td>
+</tr>
+<tr>
+<td>MUMPS CODE TO SET VARIABLE</td>
+<td>S RARPT=+$P(RAY3,"^",17),RATRAN="" I $D(^RARPT(RARPT,0)),$P(^(0),"^",6) S Y=$P(^(0),"^",6) D D^RAUTL S RATRAN=Y</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

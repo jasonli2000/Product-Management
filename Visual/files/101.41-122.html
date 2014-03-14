@@ -1,0 +1,101 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLjQxLTEyMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OR GXMOVE TRANSFER (122) &nbsp;&nbsp;  ORDER DIALOG (101.41)</h1>
+<div id="demo"><table id="MTAxLjQxLTEyMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OR GXMOVE TRANSFER</td>
+</tr>
+<tr>
+<td>DISPLAY TEXT</td>
+<td>Transfer Patient</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>dialog</td>
+</tr>
+<tr>
+<td>DISPLAY GROUP</td>
+<td><a href="100.98-17.html">M.A.S.</a></td>
+</tr>
+<tr>
+<td>SIGNATURE REQUIRED</td>
+<td>ORES</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-35.html">ORDER ENTRY/RESULTS REPORTING</a></td>
+</tr>
+<tr>
+<td>ITEMS</td>
+<td>
+<ol>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-203.html">OR GTX EVENT</a></dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>INDEX:  &nbsp;&nbsp;C</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the movement you wish to order for this patient.</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;N X S X=$S($G(OREVT):0,1:1) I X ;uneditable if defined</dt>
+<dt>SCREEN:  &nbsp;&nbsp;I $S($P(^(0),U,2)="T":1,'$P(^(0),U,12):0,$P($G(^ORD(100.5,+$P(^(0),U,12),0)),U,2)="T":1,1:0)</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S:$G(OREVT) Y=+OREVT</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>FORMAT:  &nbsp;&nbsp;8~8</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-19.html">OR GTX FREE TEXT 1</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Instructions:</dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;C</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter any special instructions for this order, up to 240 characters.</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This allows a patient to be transferred as a generic order (does not
+interact with MAS).
+</pre>
+</td>
+</tr>
+<tr>
+<td>LISTBOX TEXT</td>
+<td>Transfer</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-06-14 09:02:59</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

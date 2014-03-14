@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExNjU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XM-I-N-DOMAIN FILE-CONNECT (1165) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExNjU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XM-I-N-DOMAIN FILE-CONNECT</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>DOMAIN FILE FIELDS USED TO CONNECT TO A SITE</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+
+The following fields in the DOMAIN file 4.2 are used when establishing a
+connection to a remote site.  They all reside under the TRANSMISSION SCRIPT
+multiple (field #4). Taken together, they provide the instructions on how to
+connect.  A domain may have one or more transmission scripts. 
+
+  TRANSMISSION SCRIPT (field #.01) is the name of the script.
+
+  PRIORITY (field #1) is the relative priority (lower number = higher priority)
+  of the script.  MailMan chooses the highest priority script to try first.
+
+  NUMBER OF ATTEMPTS (field #1.1) notes how many times this script should be
+  tried before moving on to the next script and notifying the Postmaster (in
+  a bulletin) that MailMan was unable to connect using the script.
+
+  TYPE (field #1.2) is the script type (TCPCHAN, SMTP, FTP, TELNET, or OTHER).
+
+  PHYSICAL LINK / DEVICE (field #1.3) points to the DEVICE file to indicate
+  the port to be used for the connection.  It may be the NULL DEVICE.
+
+[MORE]...
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;MORE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-1166.html">XM-I-N-DOMAIN FILE-CONNECT-2</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>2002-05-08 07:04:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

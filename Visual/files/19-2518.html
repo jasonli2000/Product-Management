@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjUxOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCP2 AUTOGENERATE SECONDARY (2518) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjUxOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCP2 AUTOGENERATE SECONDARY</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Auto-generate Orders</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>AUTO-GENERATE ORDERS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will auto-generate a secondary inventory point distribution
+order.  The auto-generation will use the selected primary distribution
+points (stored in the mandatory or suggested source field in the
+secondary) for selecting the items.  When an item's available quantity
+(quantity on hand plus quantity due-in minus quantity due-out) falls
+below or equal to the standard reorder point, the item will be ordered.
+When an item's available quantity falls below or equal to the optional
+reorder point, the item will be ordered if there are other items for
+the same vendor which are being ordered due to the available quantity
+falling below the standard reorder point (if items only fall below the
+optional order point for a vendor, the order will not be generated).
+ 
+The quantity to order is the difference between the available quantity
+and the normal stock level.  Conversion factors (primary to secondary),
+primary minimal issue quantity, and primary issue multiple also factor
+into the total quantity of an item to order.
+ 
+At completion of auto-generation, a series of reports can be generated.
+Each item in the inventory point will appear on one of the reports.
+This will aid in determining why an item was or was not ordered.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PRCPAGS0.html">PRCPAGS0</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1992-12-11 07:37:16</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

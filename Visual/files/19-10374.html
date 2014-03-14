@@ -1,0 +1,98 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTAzNzQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LA7 POC SETUP (10374) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTAzNzQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LA7 POC SETUP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Lab Point of Care Setup</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LAB POINT OF CARE SETUP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to configure and setup the Lab HL7 Point of Care
+interface. It provides the means for configuring the various files
+related to receiving and processing POC test results in the VistA
+Laboratory package.
+ 
+The user can configure the three main files relating to this interface 
+and print a report of the interface configuration which should be used
+in configuring the POC system.
+ 
+1  LA7 MESSAGE PARAMETER (#62.48)
+   - configure entries (LA7POC*) in file #62.48 relating to interface
+     status, alerts and mail groups to notify when alerts are triggered.
+ 
+2  LOAD/WORK LIST (#68.2)
+   - configure related loadlist entry in file #68.2 to determine
+     orderable tests, specimen and collection samples and related
+     accession areas involved in test ordering process.
+ 
+3  AUTO INSTRUMENT (#62.4)
+   - configure corresponding entries (LA7POC*) in file #62.4 which
+     determine how test results are processed.
+   
+4  Print POC Test Code Mapping
+   - prints a report which displays the orderable and result tests
+     configured for an interface, what order and result codes are
+     specified, the specimens and collection types and accession areas
+     that are used by the interface. It also warns if supporting
+     information is missing for these or other laboratory related files
+     which the interface is dependent on to successfully process a
+     POC test result.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-11.html">AUTOMATED LAB INSTRUMENTS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_LA7PCFG.html">LA7PCFG</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

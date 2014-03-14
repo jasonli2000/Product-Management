@@ -1,0 +1,111 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTE5Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>EN NON-SPACE FILE LOC (197) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTE5Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>EN NON-SPACE FILE LOC</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>Non-Space File Location |2|</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This bulletin is automatically generated when a value is entered in the 
+NON-SPACE FILE LOCATION field of the EQUIPMENT INV. (#6914) file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+A new value has been entered in the NON-SPACE FILE LOCATION field of the 
+EQUIPMENT INV. (#6914) file because an appropriate selection was not 
+available in the ENG SPACE (#6928) file.
+ 
+Please use the Enter New Room Space Data to create an appropriate location
+in the ENG SPACE file.  Once an appropriate location is available, the
+LOCATION field of the equipment should be updated.  The NON-SPACE FILE
+LOCATION field will be automatically deleted when the equipment location
+is changed.
+ 
+Some sites may choose to respond to this message when the location is 
+available so the requester can update the equipment record.
+ 
+NON-SPACE FILE LOCATION: |2|
+was entered for Equipment Entry #: |1|
+by |3| on |4|
+</pre>
+</td>
+</tr>
+<tr>
+<td>PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ENTRY NUMER field value from the EQUIPMENT INV. file.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+NON-SPACE FILE LOCATION value field from the EQUIPMENT INV. file.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+NON-SPACE FILE PERSON field from the EQUIPMENT INV. file.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;4</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+NON-SPACE FILE DATE/TIME field from the EQUIPMENT INV. file.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PRIORITY?</td>
+<td>NO</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

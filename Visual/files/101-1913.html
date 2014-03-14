@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE5MTM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU ACTION CHANGE VIEW MIS (1913) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE5MTM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU ACTION CHANGE VIEW MIS</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Change View</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Allows MIS users to modify the list of documents by STATUS, DOCUMENT TYPE,
+and ENTRY DATE range without exiting the review screen.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>K VALMY D FIXLSTNW^<a href="http://code.osehra.org/dox/Routine_TIULM.html">TIULM</a>,FULL^VALM1,MAKELIST^TIURM($S(+$G(^TMP("TIUR",$J,"CLASS")):+$G(^TMP("TIUR",$J,"CLASS")),1:38)) S VALMBCK="R",VALMBG=1</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2001-04-30 10:27:15</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

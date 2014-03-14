@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTQ1OTM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LRJ SYS MAP HL SCHED AUDIT RPT DISP (4593) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTQ1OTM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LRJ SYS MAP HL SCHED AUDIT RPT DISP</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Show LRJ SYS MAP HL TASKMAN RPT sch</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This action allows the user to view the Hospital Location Change 
+Management System Audit Task Option Schedule report and includes the 
+following details:
+ 
+  o  Name of the option scheduled to be run
+  o  Task ID
+  o  Start Time for job
+  o  Rescheduling Frequency
+  o  Date this TaskMan job was originally scheduled
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D INIT^<a href="http://code.osehra.org/dox/Routine_LRJSML5.html">LRJSML5</a></td>
+</tr>
+<tr>
+<td>IDENTIFIER</td>
+<td>ST</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-09-30 10:19:09</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

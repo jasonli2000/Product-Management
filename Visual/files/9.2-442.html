@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTQ0Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRV-PULSE RATE HELP (442) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTQ0Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRV-PULSE RATE HELP</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Pulse</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+Answer must be numeric between 0 and 300 with no decimal places.
+ 
+If no letter is appended to the end of the pulse, the reading will be
+considered as a RADIAL pulse.  If a letter is appended to the end of
+the reading then the following is a list of valid letters, and the types
+of pulse they represent:
+ 
+                     R = RADIAL     P=PERIPHERAL
+                     A = APICAL     B=BILATERAL PERIPHERALS
+                     C = CAROTID    O=OTHER      or
+                     site defined qualifiers.
+  
+Default: Site configurable
+  
+E.g., 76 or 76R    for 76 RADIAL
+      76A or 76a   for 76 APICAL
+  
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1990-07-10 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

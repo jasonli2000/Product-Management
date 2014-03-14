@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTEw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUUSERACC2 (110) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTEw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUUSERACC2</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Abbreviated Menu Diagrams</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ABBREVIATED MENU DIAGRAMS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Provides an abbreviated (Option Names, Menu Text, and Synonyms) display
+of all the options available to a given user, including all of his
+menus and options, according to the user's security and primary menu.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>DISPLAY OPTION?</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ABBREV^<a href="http://code.osehra.org/dox/Routine_XQ4.html">XQ4</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

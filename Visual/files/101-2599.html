@@ -1,0 +1,122 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI1OTk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMRC TRK MAIN PROTOCOL (2599) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI1OTk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMRC TRK MAIN PROTOCOL</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Main protocol for List Manager Consults/Request tracking</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Consult Tracking List Manager Protocol.  Top level protocol to
+list protocols for review by patient and service.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2601.html">GMRCACT TRK DATE CHANGE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DA</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2600.html">GMRCACT TRK SELECT SERVICE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SS</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2610.html">GMRCACT TRK SELECT PATIENT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SP</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2616.html">GMRCACT VIEW BY STATUS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;ST</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-545.html">GMRCACT SELECT SERVICE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2596.html">GMRCACT DETAILED DISPLAY</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DD</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;6</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-554.html">GMRCACT PRINT CONSULT FORM</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PT</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;7</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>K GMRCOER D ^<a href="http://code.osehra.org/dox/Routine_GMRCMENU.html">GMRCMENU</a></td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a> S XQORM("#")=$O(^ORD(101,"B","GMRC SELECT ITEM",0))_"^1:"_VALMCNT,XQORM("A")="Select Consult: "</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Item:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>3</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2000-05-25 14:46:18</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

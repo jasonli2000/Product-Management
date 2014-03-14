@@ -1,0 +1,93 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzI0").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XMPOLL (324) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzI0" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XMPOLL</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>POLL REMOTE NODES</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>POLL REMOTE NODES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The poller schedules tasks to transmit to domains whose flags contain a 'P'. 
+The tasks will play scripts to those domains whether or not there are messages
+in the queues for those domains.  The TURN command (assuming it isn't disabled
+(field 1.7 of file 4.2) will "pull" any messages queued at that domain waiting
+to be transmitted to this one.
+
+One of the FLAGS (file 4.2, field 1) that can be set for a particular domain
+is 'P' for poller.  If FLAGS includes a 'P', the domain will be polled.
+
+XMPOLL can be scheduled through 'Schedule Tasks' on the Taskman menu.  Set a
+time for transmission such as an off-peak evening hour.  The device for output
+may be null, the default being the device on which the Taskman was started.
+Rescheduling frequency may also be null.  XMPOLL will then open the link for
+transmission at the designated time.
+
+Playing a script will also open the link.  So, domains with 'P' and without
+'S' flags can be transmitted by playing the script to them.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-4.html">MAILMAN</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>POLL^<a href="http://code.osehra.org/dox/Routine_XMCP.html">XMCP</a></td>
+</tr>
+<tr>
+<td>INDEPENDENTLY INVOCABLE</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

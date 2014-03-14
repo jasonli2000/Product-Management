@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTM4Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OR LASTI_LAST4 (383) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTM4Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OR LASTI_LAST4</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>'Last Initial_Last Four'</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+ 
+Consistent with the existing DHCP convention you may enter the Patient's
+Last Initial followed by the last four digits of his/her SSN to unambig-
+uously select a given patient.  For example, if you wish to select William
+C. Doe, whose DOB is SEP 12, 1944 and whose SSN is 234236572, you enter:
+ 
+                                  1A ward list
+ 
+1     DOE,WILLIAM C. (6572)             7     NIVEK,BETA (3242)
+2     FUNOF,IT (9876)                   8     NIVEK,GAMMA (4324)
+3     MARLEY,JACOB (5678)               9     NIVEK,SIGMA (2379)
+4     MUFFET,LITTELLA M (7689)          10    SPRAT,JACK (2342)
+5     NEW,PATIENT (1234)                11    TURNER,TOMMY (2342)
+6     NIVEK,ALPHA (8796)
+ 
+Select Patient(s): D6572
+ 
+The program will respond with:
+ 
+Select Patient(s): D6572  DOE,WILLIAM C.      09-12-44   234236572
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1991-09-11 15:37:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

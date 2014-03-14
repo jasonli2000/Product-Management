@@ -1,0 +1,90 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTEzMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQSRV-SETUP (132) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTEzMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQSRV-SETUP</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Setting up the Option File for a Server</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+   
+   There are several fields in the Option File that the server
+software uses in common with other option types to the control
+the way servers behave when a server request arrives from the
+mail system.  There are also other, important fields used
+exclusively for servers which are covered in other, related
+help frames.
+   The name of an option (.01 field) must be exactly referenced
+in the mail message in order to activate a server.  If there is
+something in the Out of Order Message field (#2) the server request
+will be ignored, as with any option.  The Prohibited Times field
+(#3.9) may, if the server specific time control fields are left
+blank, effect the time a server option is queued.  The Type
+field (#4) in the Option File must be set to "S" for Server for
+a server to be activated.  Priority (#3.8) will determine the priority
+at which a server option (and its routine) will run.
+   Every server request that runs will first execute the Action
+field (#20), as with any option.  If after executing this field the
+variable XQUIT exists the server software will issue a bulletin
+and go no further.  If there is a routine name in the Routine
+field (#25) the software will run this routine.  The software 
+will, finally, execute the MUMPS code (if any) in the Exit
+Action field (#15).  [Errors] are trapped and handled by Menuman.
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;ERRORS</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-137.html">XQSRV-ERROR</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-07-11 14:35:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

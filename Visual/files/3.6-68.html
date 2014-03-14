@@ -1,0 +1,114 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTY4").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRS UPDATE CCORG (68) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTY4" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRS UPDATE CCORG</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>Needed update PAID code: Cost Center/Organization</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This bulletin is sent when either of the two options, Employee Leave Used and
+Employee Leave Requested are run from the menu path, T&amp;A Supervisor Menu,
+Employee Reports, Employee Leave Reports.  The condition that the code for an
+employees Cost Center/Organization code (field #458 in file 450) does not
+resolve with a human readable description in file 454.1 will cause this 
+bulletin to be sent.
+
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+An incomplete record was found while PAID user, |2| was running the
+|3| report for employee, |4|.  
+The missing data is a description in the PAID code file for 
+the cost center/organization code |1|.  This needs to be updated.  
+Correct the problem through the Update PAID Codes option. First enter 
+the code |1| at the COST CENTER/ORGANIZATION CODE prompt.  Then 
+update the description field.  An example follows.
+
+     Select OPTION NAME: PRSD UPDATE PAID CODES
+     Select FILE: COST CENTER/ORGANIZATION
+     Select COST CENTER/ORGANIZATION CODE: |1|
+     CODE:  |1|
+     DESCRIPTION: &lt;enter description here&gt;
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the employees cost center organization code.  It's located in file
+450 (PAID EMPLOYEE FILE) field #458.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the person who is using the option to print employee leave reports.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the report that was being run, either Employee Leave Used 
+or Employee Leave Pattern.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;4</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the employee who is being reported on.  They have a Cost 
+Center/Organization code that doesn't have a description in file 454.1.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

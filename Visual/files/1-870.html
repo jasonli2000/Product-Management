@@ -1,0 +1,65 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS04NzA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>HL LOGICAL LINK (870) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS04NzA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>HL LOGICAL LINK</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file serves two purposes. It is a fileman-compatible transmission
+log. The Low Layer Protocols write and read directly from this file.
+(See routines HLCSDR1 and HLCSDR2)
+ 
+This file stores parameters that govern the behaviour of the Low Layer
+Protocols. Fields like: READ TIMEOUT, ACK TIMEOUT, LLP START BLOCK, and
+LLP END BLOCK, are fields that govern how long the finite state machine
+waits for data to come down the line (READ TIMEOUT), how long it waits
+for a lower level acknowledgement (ACK TIMEOUT), and which control
+characters define the beginning and end of a message (LLP START BLOCK
+and LLP END BLOCK).
+ 
+This file also stores information that drives the SYSTEMS LINK MONITOR
+display option. Fields like, IN QUEUE FRONT POINTER, IN QUEUE BACK 
+POINTER are used to manage the data flow in the queues but they are
+also displayed on the SYSTEMS LINK MONITOR under the alias's MESSAGES
+PROCESSED and MESSAGES RECEIVED. Fields like STATE and DEVICE TYPE
+are also used to drive the SYSTEMS LINK MONITOR. These fields are
+updated by the lower layer protocols in order to give real-time feedback
+as to what is ocurring on a link. For example, when a message is 
+received (see HLCSDR1) the state transitions from "IDLE" to "READING".
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

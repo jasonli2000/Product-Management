@@ -1,0 +1,110 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03MS4y").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PROCEDURE MODIFIERS (71.2) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03MS4y" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PROCEDURE MODIFIERS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains the modifiers that can be associated with an imaging
+exam.  These modifiers are used to further describe the procedure
+associated with the exam. For example, if an exam of the 'hand' was
+performed then the modifier 'left' can be chosen to indicate which hand.
+ 
+If an exam has a modifier associated with it, then it will automatically
+appear on the report.
+ 
+When the system is installed, the following modifiers are loaded as part
+of the module:
+ 
+         o PORTABLE
+         o OPERATING ROOM
+         o BILATERAL
+         o LEFT
+         o RIGHT
+ 
+Portable, Operating Room and Bilateral are very important for the
+compilation of the AMIS report.  For this reason, the name of the
+modifier is uneditable.  Any modifier who meaning is portable, operating
+room, or bilateral should be further defined by entering one of these
+choices in the AMIS Credit Indicator field. Series type procedures cannot
+be assigned modifiers that affect AMIS credit.
+ 
+Entries in this file should not be deleted. Adding new entries is always
+allowed.
+ 
+Each modifier must be assigned one or more Imaging Type(s) in order to
+appear as a selection during modifier edits of procedures and exams. To
+deactivate a modifier, use the option for editing procedure modifiers to
+delete all the imaging types that appear under the modifier.
+ 
+To add site specific modifiers and to obtain more information regarding
+this file, see the ADPAC Guide.
+ 
+ Data Storage
+ ------------
+ The data for the 'PROCEDURE MODIFIERS' file is stored in the ^RAMIS(71.2,
+global. At the present time this file is very static after
+initialization is complete.  However, it still should be journaled.
+It should also be translated if the operating system supports this function.
+ 
+ Input Templates
+ ---------------
+ The package does not use any input templates associated with this
+file.
+ 
+ Print Templates
+ ---------------
+ The package does not use any print templates associated with this
+file.
+ 
+ Sort Templates
+ --------------
+ The package does not use any sort templates associated with this
+file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;RA</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

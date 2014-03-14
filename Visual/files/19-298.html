@@ -1,0 +1,67 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjk4").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XMDXSMTP (298) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjk4" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XMDXSMTP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Simple Mail Transfer Protocol</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SIMPLE MAIL TRANSFER PROTOCOL</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the user to enter information directly into the
+SMTP protocol receiver from the keyboard.  See the ARPA manual for
+further description of the protocol, or type HELP during the protocol.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>SMTP^<a href="http://code.osehra.org/dox/Routine_XMCD.html">XMCD</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

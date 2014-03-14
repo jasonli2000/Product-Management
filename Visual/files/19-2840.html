@@ -1,0 +1,118 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjg0MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCFD ACCTG PAYMENT MENU (2840) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjg0MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCFD ACCTG PAYMENT MENU</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Invoice Processing (ACCTG) Menu</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>INVOICE PROCESSING (ACCTG) MEN</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu contains the options used by accounting technicians for processing
+payments in accounting or returning invoices to voucher audit.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2828.html">PRCFD PROCESS PAYMENT IN ACCTG</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2841.html">PRCFD RETURN INV TO AUDIT</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2842.html">PRCFD VIEW CERTIFIED INVOICE</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2922.html">PRCFD FMS ERROR PROCESSING</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2966.html">PRCFD FMS PV INQUIRY</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;PV</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3398.html">PRCO VRQ REVIEW</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;6</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-52.html">IFCAP</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D EX^<a href="http://code.osehra.org/dox/Routine_PRCFQ1.html">PRCFQ1</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D INIT^<a href="http://code.osehra.org/dox/Routine_PRCFQ1.html">PRCFQ1</a>,VRQS^PRCFQ1</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2000-10-27 09:31:25</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

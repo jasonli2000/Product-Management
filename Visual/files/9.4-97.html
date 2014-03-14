@@ -1,0 +1,1291 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTk3").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PHARMACY BENEFITS MANAGEMENT (97) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTk3" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PHARMACY BENEFITS MANAGEMENT</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>PSU</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>PHARMACY BENEFITS MANAGEMENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ ;;Pharmacy Benefits Management (PBM) software extracts statistics from
+ ;;the following files on a monthly basis:
+ ;;
+ ;;File Name                                     File Number
+ ;;---------------------------------------------------------
+ ;;Pharmacy Patient IV Subfile......................55.01
+ ;;Pharmacy Patient UD Subfile......................55.06
+ ;;AR/WS STOCK Stats................................58.5
+ ;;Prescription.....................................52
+ ;;Procurement......................................442, 58.811, 58.81
+ ;;Controlled Substances............................58.81
+ ;;Laboratory.......................................60, 63
+ ;;
+ ;;This data is electronically exported via MailMan to the National
+ ;;PBM Section. These messages are then passed through a translation
+ ;;process to convert all local drug names to a common drug name and all
+ ;;local dispensing units to a common dispensing unit. After translation
+ ;;the information will be added to a national database. The PBM
+ ;;Section will be able to provide information on facility, regional, and
+ ;;national product use on a monthly, quarterly, and annual intervals.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DEVELOPER (PERSON/SITE)</td>
+<td>HOLLOWAY/WESLEY/BIRMINGHAM</td>
+</tr>
+<tr>
+<td>DEVELOPMENT ISC</td>
+<td>BIRM</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>4.0</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;2.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;1995-08-11 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;1996-08-19 00:00:00</dt>
+<dt>DESCRIPTION OF ENHANCEMENTS:  &nbsp;&nbsp;<pre>
+For the Outpatient &amp; IV statistics, the number of Social Security numbers
+for each drug is extracted.
+ 
+Consolidated Mail Out Pharmacy (CMOP) data is extracted from Host CMOP
+facilities.
+ 
+Procurement and Controlled Substances data is now extracted.
+ 
+After the monthly D&amp;PPM report is sent to the D&amp;PPM Section, 
+a confirmation MailMan message will be generated at the facility
+providing information about the number of drugs extracted for
+each package.
+</pre>
+</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;3</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-10-18 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+   The National D&amp;PPM Section has gotten their own domain name to reduce
+the amount of traffic coming into the Hines VAMC. Therefore the address
+name needs to be changed.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;2</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-02-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch addresses NOISs CHA-0296-31865 and NYN-1295-11103. It was
+reported that when the D&amp;PPM software is collecting the Outpatient
+Pharmacy data, an endless loop can occur when collecting data from
+partials. The problem was an incorrect $Select statement which repeatedly
+looped on the first node.
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;3.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2005-11-19 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;1998-10-26 00:00:00</dt>
+<dt>INSTALLED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION OF ENHANCEMENTS:  &nbsp;&nbsp;<pre>
+Pharmacy Benefits Managment Package
+</pre>
+</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;4 SEQ #1</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-06-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The following changes were made to address Y2K compliance issues.
+ 
+Routine: PSUCP
+Line Tag: AUTO+10
+Exception: The calculations performed incorrectly when Y2K dates were provided.
+Resolution: Changed I...to
+   I $E(PSUMON,4,5)="00" S PSUMON=($E(PSUMON,1,3)-1)_"12" ; set to
+...Dec. of previous year if this month is Jan.
+                 
+Routine: PSUCP
+Line Tag: AUTO+11
+Exception: The calculations performed incorrectly when Y2K dates were provided.
+Resolution: Changed S...to
+   S PSUSDT=PSUMON_"01"
+   S PSULY=$$LEAPYR(PSUMON)
+   S X=U_$E(PSUMON,4,5)_U
+ 
+Routine: PSUCP
+Line Tag: TIMINGQ+1
+Exception: The calculations performed incorrectly when Y2K dates were provided.
+Resolution: Added...
+   ;
+LEAPYR(FMYR); Check to see if year is a leap year: 1=leap year, 0=not leap year
+   N YYYY
+   S YYYY=1700+$E(FMYR,1,3)
+   Q (((YYYY#4=0)&amp;(YYYY#100'=0))!((YYYY#100=0)&amp;(YYYY#400=0)))
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;5 SEQ #2</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-07-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Problems resolved with this patch:
+ 
+1. The domain for the transmissions to Hines has changed.
+ 
+Resolution:
+ 
+The domain has been changed to be CMOP-HINES.DOMAIN.EXT
+ 
+ 
+2. "Pharamacy" is used and is misspelled in PSUCP.
+ 
+Resolution:
+ 
+"Pharamacy" has been changed to "Pharmacy"
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;1 SEQ #3</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-07-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Problems resolved with this patch:
+ 
+1. The XM mailer hung in the background looking for user input. Modules
+needing to send more than one detailed message to Hines for a division
+were getting hung in the background. The XMY array needed to be recreated
+for each subsequent message.
+ 
+NOIS:
+RIC-1198-20912
+HIN-1198-41911
+NTH-0199-72479
+TAM-0299-30835
+ 
+Resolution:
+The XMY array is now properly reset providing the address for the
+subsequent messages.
+ 
+2. Unit Dose generates an allocation error. The PSUTA array used in the
+unit dose extract grows too large for the local partition.
+ 
+NOIS:
+ALX-1298-71646
+DEN-0199-51099
+BED-0299-11199
+ 
+Resolution:
+The PSUTA array has been moved to the ^TMP global.
+ 
+3. Procurement generates an allocation error. The PSUMIT array grows too
+large for the local partition.
+ 
+NOIS:
+IOW-1198-40646
+ 
+Resolution:
+The PSUMIT array has been moved to the ^TMP global.
+ 
+4. The procurement module has cost calculation and dividing by zero
+errors.
+The procurement costing equation was wrong and there were cases when one
+of the cost-per-unit factors used in the calculations were not available
+and zero was being used for division.
+ 
+NOIS:
+NYN-1298-10759
+ 
+Resolution:
+The formulas for costing factors have been amended. In cases
+where the cost factors are not available the reports have been amended
+to reflect null or NA in the reports.
+ 
+5. The outpatient extracts shows the wrong division in the message
+headers. The software was pulling division names from File #40.8 instead
+of File #59.
+ 
+NOIS:
+IOW-0199-41095
+ 
+Resolution:
+Routines PSUOP4, PSUOP6 have been modified to pull division names from
+File #59.
+ 
+6. Division names for AR/WS, Procurement, and CS in the headers are not
+matching the facility numbers. The coded lookup from File #40.8 is pulling
+up entries associated with IENs instead of facility numbers.
+ 
+NOIS:
+CTX-1198-71660
+MON-1298-52507
+POR-0199-52307
+ 
+Resolution:
+The existence of a .001 field allows the pulling up of names by IEN
+numbers. The lookups for names by facility number is now coded to limit
+the search to the 'C' cross-reference only.
+ 
+7. The AR/WS extract is generating subscript errors at DIV+6^PSUAR1. There
+are inpatient locations that may not be linked to the PHARMACY AOU STOCK
+file (#58.1).
+ 
+NOIS:
+MON-1198-50086
+CLA-1298-20491
+CHA-0199-30249
+ 
+Resolution:
+The coding in PSUAR1 has been modified to accommodate cases where
+inpatient locations are not linked within the PHARMACY AOU Stock File
+(#58.1).
+ 
+8. The PSUARNM array is growing too large for the local partition in the
+AR/WS extract and generates allocation errors.
+ 
+NOIS:
+OKL-1198-70175
+ 
+Resolution:
+The PSUARNM array has been moved to ^TMP for storage and processing in
+routine PSUAR4.
+ 
+9. Some Mail message headers showing a 'null' user identity. The variable
+XMDUZ was not being reset for subsequent messages.
+ 
+Resolution:
+The variable XMDUZ is set for each message generated.
+ 
+10. IV statistics are wrong. A mix of calculation variables being used
+were wrong.
+ 
+Resolution:
+The proper variables were identified and calculations re-coded.
+ 
+11. The Controlled Substance Statistical Data report columns need to be
+better aligned and the footnotes "* Non-Formulary" and "# Not on National
+Formulary"" are missing.
+ 
+Resolution:
+The Controlled Substance Statistical Data report has been modified.
+ 
+12. The Controlled Substance extract errors out when a type 2 transaction
+has a quantity = 0.
+ 
+NOIS:
+MUR-0199-31080
+ 
+Resolution:
+The logic has been modified to quit the transmission of a record when the
+quantity = 0.
+ 
+13. The procurement extract was building lines in the MailMan messages
+that were exceeding MailMan acceptable parameters.
+ 
+NOIS:
+LON-1198-60747
+LEB-0299-20160
+ 
+Resolution:
+The length of the description of items contained in the extract have been
+limited to 50 characters.
+ 
+14. Undefined variable error in the procurement extract was generated due
+to data arrays not being initialized properly.
+ 
+NOIS:
+EKH-0199-42100
+NAS-0299-30308
+WPB-0299-31308
+ 
+Resolution:
+The data arrays are properly initialized.
+ 
+15. Controlled Substance reports are improperly flagging formulary drugs
+as non-formulary.
+ 
+NOIS:
+MAR-0299-21304
+ 
+Resolution:
+The logic for flagging the formulary status has been corrected.
+ 
+16. The AR extracts would send out multiple detailed messages whose
+contents were duplicates. This was caused by the array holding the data
+not being initialized properly.
+ 
+NOIS:
+HIN-0199-41269
+ 
+Resolution:
+The code has been modified to properly initialize the data array.
+ 
+17. The costing formula in the procurement extract includes a $J function
+which failed when the parameters of the formula were modified. The formula
+was proper but the calculation was then too complex for the $J function.
+ 
+NOIS:
+CAH-1298-30287
+ 
+Resolution:
+The code was changed to perform the calculation first outside of the $J
+function and then hand the result to the $J function.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;3 SEQ #4</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-10-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Problems resolved with this patch:
+ 
+1. The local array PSUMIT needed to be moved to ^TMP.
+  
+Resolution:
+The array was moved into ^TMP( storage.
+ 
+NOIS:
+LIT-0499-70942
+ 
+2. The AR/WS extract was setting the division number to zero when it
+didn't find data to transmit.
+   
+Resolution:
+The division indicator is set to the default facility ID when no data is
+found for transmission.
+ 
+NOIS:
+ISH-0399-40149
+ 
+3. The IV extract was using a logic test incorrectly and the formulary
+flag indicator was not being set properly for extraction.
+ 
+Resolution:
+The logic statement being used has been corrected.
+ 
+NOIS:
+MAR-0399-20146
+ 
+4. Some quantity fields have alpha suffixes which needed to be removed
+prior to being entered into the data export.
+  
+Resolution:
+The quantity fields now have all alpha suffixes removed prior to message
+construction.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;7 SEQ #5</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-10-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch contains DBIA notation additions to routines that were
+released within PSU*3*1. No functional changes have been made to these
+routines.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;6 SEQ #6</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Problems resolved with this patch:
+ 
+1. The CS reports were reporting statistics incorrectly.
+ 
+Resolution:
+ 
+The code in the CS statistics has been corrected.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;8 SEQ #7</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Problem: 
+ 
+The GETM^PSUTL API pulls all data fields within a specified multiple. This
+may lead to generation of allocation errors and makes DBIA tracking
+difficult.
+ 
+Resolution:
+ 
+The GETM^PSUTL was modified to require the itemizing of fields to be
+pulled and returns only the fields specified from the multiple identified.
+ 
+2. Problem:
+ 
+The automatic completion checker is falsely reporting incomplete runs. It
+is scheduled to run 24 hours after the extract has started. Large sites
+are seeing extracts that are taking more than 24 hours. 
+ 
+Resolution:
+ 
+The automatic completion checker is now scheduled to run 72 hours after
+the start of the extract.
+ 
+3. Problem:
+ 
+The procurement extract for File #58.8 DRUG ACCOUNTABILITY STATS is
+looking for IV rooms in the wrong file.
+ 
+Resolution:
+ 
+The code has been changed to look for IV rooms in the file # 58.8.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;9 SEQ #8</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-04-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Problem: 
+ 
+The Controlled Substances extract is sending records that it should not.
+It has tested them and found them to fail the sending criteria. The
+software still sends the record.
+ 
+Resolution:
+ 
+Proper rejection flags were put in place between the testing and sending
+portions of the program.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;10 SEQ #9</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-05-25 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Problem: 
+ 
+The AR/WS Statistical Summary reports "NO DATA" when in fact data is
+present in other reports and is being extracted and sent.
+ 
+Resolution:
+ 
+Code has been corrected and the report reflects statistical data properly.
+ 
+2. Problem:
+ 
+The auto error checker is sending a false error message even though the
+extract ran to completion and reports were sent.
+ 
+Resolution:
+ 
+The error checker tracking of the start time has been adjusted to reflect
+the three day interval between starting the extract and the queuing of the
+checker's task.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;11 SEQ #10</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-06-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Problem: 
+ 
+The AR/WS data report is printing spurious items in the message when the
+report is reporting "No data to report"
+ 
+Resolution:
+ 
+The array being passed to Mailman had left over data in non-numbered nodes
+from previous calculations. The array is now properly initialized.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;12 SEQ #11</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-10-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Problem: The Pharmacy Benefits Controlled Substance extract is dropping
+the breakdown unit and package size information from some of the category
+2 drug prescriptions in the PBM CS Statistical Data report.
+ 
+Resolution:
+ 
+The coding has been corrected and the appropriate breakdown unit and
+package size information is being presented.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;14 SEQ #12</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-01-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Pharmacy Benefits Management (PBM) has requested additional data elements
+to be included in the pharmacy extracts.  This patch adds those additional elements.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;15 SEQ #13</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-02-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The IV solution data record has an extra ^^^^ element and several NO DATA
+entries that should not be there. 
+ 
+Resolution:
+ 
+The code within the IV solution data record building has been modified so
+that the data elements are proper.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;17 SEQ #14</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-05-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. Problem:
+ 
+Some PBM reports do not process correctly  and other reports are
+incorrect.
+ 
+ 
+Resolution:
+ 
+Routine PSUPR2 modified to accommodate new location naming conventions.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;16 SEQ #15</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-11-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+1. The outpatient extracts utilize the fill date of prescriptions for
+processing. It is desired to use the release date instead of the fill date
+for processing.
+ 
+Resolution:
+ 
+The outpatient extracts have been reprogrammed to process prescriptions by
+their release date.
+ 
+2. The current extracts are shipping data for test patients which is
+undesirable.
+ 
+Resolution:
+ 
+The extracts have been coded to exclude test patients.
+ 
+3. The procurement extracts generates an error when an alpha-numeric prime
+vendor number is encountered.
+ 
+Resolution:
+ 
+The procurement extract has been corrected to allow alpha-numeric prime
+vendor numbers.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;18 SEQ #16</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-11-21 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Problem:
+ 
+When the Automatic Pharmacy Statistics [PSU PBM AUTO] option extract is 
+run,
+the following error is generated:
+ 
+&lt;UNDEFINED&gt;COMVAR+2
+ S PSUSIG=$P( ^TMP("PSOR",$J,PSURXIEN,"SIG",1,0),U,1)
+ 
+In some instances, the right node does not exist, causing the
+error to be generated.
+ 
+ 
+Resolution:
+ 
+The solution is to check for the existence of the right node.  If it does
+not exist, the program bypasses the line of code without error.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;19 SEQ #17</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-06-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch includes the creation of new Pharmacy Benefits Management
+extracts and summary reports as well as modifications to existing 
+extracts.
+ 
+New extracts are (1) Patient Demographics, (2) Outpatient Visits, (3)
+Inpatient PTF Records, (4) Provider data.
+ 
+New summary reports are (1) Patient Demographic summaries for the IV, 
+Unit Dose, and Prescription extracts, (2) Provider data summary.
+ 
+Modified extracts are (1) IV, (2) Unit Dose, (3) Prescription, (4) 
+Controlled Substance.
+ 
+Users are also provided with the ability to generate a detailed MailMan
+message without having to transmit to the PBM database at Hines.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;21 SEQ #18</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-01-09 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch contains modifications to the Pharmacy Benefits Management 
+package.
+ 
+1. The Patient Demographics extract will transmit new Ethnicity and 
+multiple Race fields.  The new fields comply with the new Race and 
+Ethnicity Standards as set forth by the Office of Management and Budget.
+ 
+Old race information will continue to be extracted when it is present.  
+New ethnicity and race information will be extracted as it is available.
+ 
+ 
+2. This patch also corrects the following problem:  Sites that are not 
+using the Surgery package receive a "missing routine" error
+because the PBM extract incorrectly makes a call to a supported Surgery 
+API.
+ 
+Solution:  The code is altered to omit reference to the Surgery API, and 
+replaces it with a call appropriate to PBM.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;20 SEQ #19</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-01-23 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Problem 1:
+ 
+For the Manual Pharmacy Statistics [PSU PBM MANUAL] option, the date range
+for the February extract does not distinguish leap years from non-leap
+years.  The end date for the February extract on all reports other than 
+the Timing and Confirmation messages is always recorded as February 
+29, regardless of whether it is a leap year or not.
+ 
+In addition, on the PBM Timing and Confirmation messages, February
+29 is not recognized as a legitimate end date for the February extract in
+non-leap years.  Therefore the end date defaults to the start date and the
+date range displays as February 1 to February 1.
+ 
+Resolution 1:
+ 
+The code for the Manual Pharmacy Statistics [PSU PBM MANUAL] 
+option is altered to take leap years into account so that the correct 
+February date range is displayed on all PBM messages.
+ 
+ 
+Problem 2:
+ 
+At some facilities the Mailman message subject header on the PBM 
+Messages displays only the facility/division number, and does not 
+display the name of the facility/division.
+ 
+Resolution 2:
+ 
+There are two possible solutions to this problem.  (1) Some sites have
+assigned more than one division name to a division number in file 
+#40.8.  In these instances, a user at the site should correct the file
+definitions so that only one division name is assigned to one division 
+number.  (2) The code is altered to correct missing division names on 
+the message headers when the problem is not user error.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;23 SEQ #20</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-03-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch contains modifications to the Pharmacy Benefits Management 
+(PBM) package.
+ 
+Problem:  When the monthly Prescription extract runs, an error occurs in
+the prescription patient demographics report if social security numbers 
+are missing on patients included in the extract.
+ 
+Solution:  Code has been altered to omit patients from the prescription 
+patient demographics report if social security numbers are missing.  This 
+prevents an error from occurring.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;22 SEQ #21</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-04-30 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch makes a correction in the Pharmacy Benefits Management Provider
+extract summary report.  It removes providers from the summary report who
+have erroneous missing data.
+ 
+1.  Problem:  At teaching hospitals, interns and residents are reported as
+having missing subspecialties on the Provider extract summary report.  
+This
+is incorrect, since by definition interns and residents never have
+subspecialties.  Therefore these should be removed from the report.
+ 
+Solution:  If any of the following provider classifications are listed as
+missing a subspecialty only, they are omitted from the Provider summary
+report.
+        Resident - Allopathic
+        Resident - Osteopathic
+        Intern   - Allopathic
+        Intern   - Osteopathic
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;28 SEQ #22</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-09-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+PHASE II of the TRANSITIONAL PHARMACY BENEFIT project requires a new 
+category to be added to each of the set of codes for the Prescription 
+Patient Status and the Provider Type elements of the outpatient 
+prescription transmission of the Pharmacy Benefits Management (PBM) 
+extracts.
+ 
+The new element added to each set of codes is "NVA", which stands for 
+NoN-VA.
+ 
+If a prescription in the PRESCRIPTION file #52 has a TPB RX status of 
+"YES", both the Prescription Patient Status and the Provider Type 
+elements in the transmission will be set to "NVA".
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;30 SEQ #23</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-10-23 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Problem: The PBM extract element PATIENT STATUS would be set to 'NVA' if 
+the SC/A&amp;A/OTHER/INPATIENT/NVA field (#6) were NULL in the RX PATIENT 
+STATUS file (#53).
+ 
+Resolution: The code has been changed that for the above condition the 
+PBM PATIENT STATUS element will be set to "" (null).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;26 SEQ #24</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-10-23 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+REMOVE FORM FEEDS
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;32 SEQ #25</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-01-31 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Lab Data Summary. Send in email message but do not print hard copy as the 
+report is not in a usable format.
+Outpatient Statistics will be modified to print all divisions.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;24 SEQ #26</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-09-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ 
+This patch decrease processing time, truncation of the ICN and prevents 
+duplicate jobs.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;34</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-10-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+ Phase I of the Inpatient Medications Requirements for the Special Focus
+ Group IRA project consists of four patches. The patches are combined in
+ host file PSJ_PSS_OR_PSU_110.KID in order to simplify installation at VHA
+ facilities. Installation of this host file should be coordinated among
+ the four packages affected since only one installation is necessary. The
+ patches, in order of install, are:
+ 
+      PSS*1*79   PHARMACY DATA MANAGEMENT V. 1.0
+      PSJ*5*110  INPATIENT MEDICATIONS V. 5.0
+      OR*3*213   ORDER ENTRY/RESULTS REPORTING V. 1.0
+      PSU*3*34   PHARMACY BENEFITS MANAGEMENT V. 3.0
+ 
+ Patches PSS*1*79, OR*3*213, and PSU*3*34 contain changes to support the
+ following enhancements in PSJ*5*110:
+ 
+ 1. The Extend Stop Date on Renewal enhancements will allow an order to be
+ renewed without creating a new order. Editing of the start date will no
+ longer be allowed during the renewal process. In addition, limits have
+ been set on the length of time after an order expires that it may be
+ renewed. This is outlined in the BCMA 2001 Special Focus Report,
+ Requirement #11.
+ 
+ 2. The Complex Order enhancements will change the way complex orders are
+ handled by linking complex components (child orders) together. If the
+ actions Finish, Verify, Discontinue, or Renew are taken on one child
+ order, the user will be alerted that the action must be taken on all of
+ the complex component orders in the set. The user will then be prompted
+ to take the appropriate action on each child order in the complex order
+ set. This is outlined in BCMA 2001 Special Focus Report, Requirement #8.
+  
+ 3. The STAT and NOW Order Notification enhancements will alert users
+ subscribing to new mail group PSJ STAT NOW PENDING ORDER when a pending
+ STAT or NOW order has been received from Computerized Patient Record
+ System (CPRS) V. 1.0. Users subscribing to the new mail group PSJ STAT
+ NOW ACTIVE ORDER will receive an alert when a STAT or NOW order is made
+ active. This is outlined in BCMA 2001 Special Focus Report, Requirement
+ #12.
+ 
+ Changes to PHARMACY BENEFITS MANAGEMENT (PBM) V. 3.0 have been included
+ in this patch to address the following issues:
+ 
+ 1. Problem:  The changes to renewed orders introduced by the Inpatient
+ Medications Requirements for the Special Focus Group IRA, Phase I project
+ will allow renewed orders to have an active status for periods of time
+ that exceed the current PHARMACY BENEFITS MANAGEMENT (PBM) V. 3.0 time
+ period parameters.
+ 
+ Solution:  The code searching for IV and Unit Dose activity within the
+ transmitting period has been modified to accommodate the extended periods
+ of time orders may contain an active status as a result of the changes
+ introduced by the Inpatient Medications Requirements for the Special 
+ Focus Group IRA, Phase I project.
+ 
+ 2. Problem: In several extracts only the first portion of the patient
+ Integration Control Number is being extracted. The entire Integration
+ Control Number needs to be exported.
+ 
+ Solution: Patch PSU*3*34 will correct and extract the entire Integration
+ Control Number in the IV multiple (#100) in the Pharmacy Patient file
+ (#55) and the UNIT DOSE multiple (#62) in the Pharmacy Patient file
+ (#55).
+ 
+ Patch PSU*3*24 will correct the problem in all other applicable files.
+ This is being done so that patch 24 and 34 can move forward without
+ conflict.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;31 SEQ #28</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-12-28 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+MISSING DIVISION NAMES ON OUTPATIENT DATA WHEN THERE ARE MULTIPLE ENTRIES 
+IN FILE 59 (OUTPATIENT SITE) WITH THE SAME SITE NUMBER.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;35 SEQ #29</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-01-18 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+UNDEFINED ERROR IN PSUIV1 WHEN CREATING MONTHLY EXTRACT.
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;4.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2005-03-15 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;2005-04-01 00:00:00</dt>
+<dt>INSTALLED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION OF ENHANCEMENTS:  &nbsp;&nbsp;<pre>
+The PBM V. 4.0 application contains enhancements to support the VA 
+National Formulary (VANF), disease management issues and patient safety 
+initiatives. 
+ 
+Two new extracts have been created to gather patient vital/immunization 
+and allergy/adverse reaction data.  Modifications have also been 
+made to existing Prescription, Unit Dose, Intravenous (IV),
+Controlled Substance (CS), Automatic Replenishment/Ward Stock (AR/WS),
+Procurement, Patient Demographic, Outpatient Visits, Laboratory 
+extracts, and existing PBM options.  New summary reports have been 
+created for Automated Management Information System (AMIS) reporting.  New
+options have also been created to support the added functionality.
+</pre>
+</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;4 SEQ #1</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-10-20 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch corrects the IV AMIS Summary report for the Pharmacy 
+Benefits Management (PBM) Version 4.0 extract in cases where there is 
+very little or no IV data available for the date range of an IV extract.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;3 SEQ #2</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-03-08 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The Pharmacy Benefits Management (PBM) Extract Enhancement III project 
+provides enhancements to send all chemistry lab test results to the 
+Consolidated Mail Outpatient Pharmacy (CMOP) National Server.  These 
+results are sent via Health Level 7 (HL7) messages using the Health Level 
+Seven Optimized (HLO) messaging service.  
+ 
+This patch includes an environmental check routine. The preinstallation 
+steps require the logical link, PSU SEND, to be defined correctly. It 
+checks to see if it is unfurling within a test area or a live area and if
+the link is configured incorrectly, the installation lists what is wrong 
+with the link and then aborts.  The IRM can troubleshoot the link and run 
+the installation of PSU*4*3 once he has the link defined as specified.
+ 
+This patch also includes the listening software employed at the CMOP-NAT
+server. It is routines PSULRHL2 &amp; PSULRHL3. NEITHER OF THESE ROUTINES 
+SHOULD BE USED AT SITES.  These should only be deployed on the CMOP-NAT
+server for PBM.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;7 SEQ #3</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-04-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+When printing a mapping report in Map Pharmacy Locations [PSU MAP PHARMACY
+LOCATIONS] option, an undefined error occurs.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;6 SEQ #4</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-05-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch corrects the AR/WS AMIS Summary report for the Pharmacy
+Benefits Management (PBM) Version 4.0 extract in cases where there is no
+AR/WS data available for the date range of an AR/WS extract.
+ 
+This patch also corrects the Prescription Extract MailMan messages
+containing mismatched data elements for partial fill prescriptions.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;8 SEQ #5</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-08-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Issue #1: The Provider Summary report is reporting missing data.  When a
+Provider has a Service/Section, the Provider will incorrectly show up on
+the report as missing specific data.
+ 
+Issue #2:  When running Manual Pharmacy Statistics [PSU PBM MANUAL] 
+option, the clinic that appears in a mailman message is not
+the same clinic that appears in the PRESCRIPTION file (#52).
+ 
+Issue #3: This patch will clean up routines no longer being used in the 
+Pharmacy Benefits Management package.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;10 SEQ #6</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-12-27 14:39:18</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will address the ALLERGIC/ADVERS REACTIONS report.
+ 
+Issue #1 (REMEDY HD167841):
+The PBM Allergic/Advers Reactions report has missing and incorrect data 
+being reported.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;9 SEQ #7</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-04 22:39:21</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+PBM FIXES: MAPPED LOCATIONS/PHARM IEN/AMIS REPORT HEADER
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;11 SEQ #8</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-02-03 21:41:44</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will address the subscript error that occurs on mircbiology
+records for verified chemistry lab results on the PBM/HL7 interface.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;12 SEQ #9</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-02-03 22:35:51</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+PBM Pharmacy Statistics Report
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;13 SEQ #10</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-05-26 19:10:52</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will correct the following,
+HD198412  -  PBM UNmapped locations showing again
+HD227109  -  PBM EXTRACT COPAY FIELD NOT FUNCTIONING
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;14 SEQ #11</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-23 12:36:53</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Associated Remedy Tickets:
+==========================
+HD261253 - a loop in PSUAA1
+ d HD280061 - 2 Monthly report will not run to completion - PSUAA1 loop.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;15 SEQ #12</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-07-08 14:56:11</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Associated Remedy Tickets:
+==========================
+HD288563 - 6 PBM EXTRACT DOES NOT COLLECT ALL ICD9 CODES
+HD286672 - 8 &lt;SUBSCRIPT&gt;VITALS+55^PSUVIT1
+HD290578 - 5 &lt;UNDEFINED&gt;RPT+9^PSUCP1
+HD293287 - 6 CONSISTENCY IN PBM EXTRACT MAIL MSG SUBJECT
+HD251472 - 2 Undefined error DAT2+11~PSUDEM2
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;5</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-07-14 15:21:30</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch addresses a request which support the Pharmacy Benefits
+Management (PBM) Extracts Enhancement #3 project. In order to allow the
+retransmission of only those patients who have had demographic updates,
+Outpatient Pharmacy V. 7.0, Inpatient Medications V. 5.0, Registration
+v. 5.3 and Pharmacy Data Management V. 1.0 were modified to build an entry
+for re-transmission in PBM PATIENT DEMOGRAPHICS File #59.9.
+ 
+The following issues are addressed in this patch:
+1. The logic in routine PSUHL was corrected so that when an edit is made
+to the RACE INFORMATION field #2 or ETHNICITY INFORMATION field #6 in
+the PATIENT File #2, an entry is queued in the PBM PATIENT DEMOGRAPHICS
+File #59.9. Currently, because of flawed logic when edits are made to
+either of these two fields, an entry is not queued.
+ 
+The integration agreement #4803 was added to record the usage of routine
+PSUHL by other packages.
+ 
+ 
+2. The Automatic Pharmacy Statistics [PSU PBM AUTO] report generated a
+&lt;SUSBCRIPT&gt; error condition. This error was created when the report was
+run before any monthly data was filed. Routine PSUHL was modified to quit
+the FOR loop at line tag CLEANUP when the DAY variable is NULL.
+ 
+
+3. Sites reported getting &lt;STORE&gt;SETDPT+9^DPTLK1 errors which was traced
+to the protocol PSU PATIENT DEMOGRAPHIC CHANGE called by the DG FIELD
+MONITOR protocol. Line tag LOGDFN was changed to use the DBS call
+UPDATE^DIE instead of the Fileman call FILE^DICN.
+ 
+4. During internal testing, a problem was discovered with the handling
+of local data elements in routine PSUHL. The killing of those variables
+presents the potential for problems later in other areas. This patch
+corrects the way in which these variables are handled.
+
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;16 SEQ #14</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-05-18 15:23:18</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Currently, the Pharmacy Benefits Management (PBM) extract blocks the
+transmission of chemistry lab results for "Employee Veteran" and
+"Employee Non-Veteran." This patch addresses the New Service Request (NSR)
+#20080810 to transmit the chemistry lab results for "Employee Veteran"
+via Health Level 7 (HL7) messaging to the PBM extract database while
+continuing to block the chemistry lab results for "Employee Non-Veteran."
+ 
+This patch also addresses the following.
+ 
+Problem:
+========
+Several facilities were reporting that selected laboratory tests were not
+present in the Structured Query Language (SQL) database used by PBM to
+perform medication use safety surveillance, while the source data was
+clearly available in local VistA and Computerized Patient Record
+System (CPRS). Upon further investigation, it was discovered that the
+laboratory results did transmit as expected, but the lab test name did
+not, resulting in database search failures.
+ 
+Resolution:
+===========
+The source of the error was traced to laboratory tests with a National
+Lab Test (NLT) Name containing a tilde (~) character. This character
+is also used as the delimiter in HL7 message processing, and the extra
+tilde caused the routines that parse the transmitted data to be offset by
+one data element. The correction is to translate any tilde characters in
+the NLT name into an underscore (_) character, so that any remaining
+tilde characters are solely present as the expected HL7 delimiters.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;17 SEQ #15</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-08-02 15:10:42</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will correct an issue at CMOP-NAT sites in which a patient who 
+have an alias name, but no alias SSN would have their SSN overwritten 
+with the empty ("") alias SSN.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;18 SEQ #16</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-07-19 09:59:58</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+When a user runs PSU PBM MANUAL reports for a large timeframe. This would 
+cause the XTMP global to fill up in some cases and prevent users from 
+logging into CPRS.
+ 
+Controlled substances are showing up as being linked incorrectly to an 
+outpatient clinic.
+ 
+Integrated facilities are not correctly distinguished between in 
+national reports.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;20 SEQ #17</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-08-29 12:19:11</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will correct the following issues:
+ 
+1. The technical manual is missing a note to refer users to 
+   FORUM as a source of information for APIs and callable routines.
+ 
+   
+2. Allergy extract transmissions contain an extra delimiter if
+   they are longer than 254 characters.
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>SYNONYM</td>
+<td>
+<ol>
+<li>
+<dt>SYNONYM:  &nbsp;&nbsp;PBM</dt>
+</li>
+<li>
+<dt>SYNONYM:  &nbsp;&nbsp;D&PPM</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

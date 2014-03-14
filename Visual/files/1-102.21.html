@@ -1,0 +1,62 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0xMDIuMjE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>CPRS QUERY DEFINITION (102.21) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0xMDIuMjE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>CPRS QUERY DEFINITION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The CPRS query tool provides a mechanism by which clinical users may 
+search for items typically managed by CPRS.  These are very limited types
+of queries.  A wizard helps the user construct the criteria used in the
+query.
+ 
+This file contains definitions of queries used to build reports of CPRS
+items (orders, consults, documents).  Each query definition contains a
+list of constraints.  These constraints are used by the query routines to
+return a subset of CPRS items.
+ 
+This file also contains definitions of report criteria.  These criteria 
+are selected and modified by the user when building custom reports.  A
+report criterion contains a list of constraints that apply to the
+particular criterion. A critieron behaves much like a "mini-report".
+ 
+The other part of a query definition stored in this file is the list of
+fields to be displayed after the query is run.  The query produces a 
+columnar report with the selected display field in each column.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

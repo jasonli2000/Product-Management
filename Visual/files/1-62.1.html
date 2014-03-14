@@ -1,0 +1,56 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02Mi4x").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DELTA CHECKS (62.1) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02Mi4x" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DELTA CHECKS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The DELTA CHECKS file contains entries whose use is optional.  They are
+entered in the LABORATORY TEST file (#60) under the site/specimen for the
+field 'Type of delta check'.  The field 'Delta value' may be used or need 
+to have an entry depending on the type of delta check.  If test results
+are being entered or reviewed for verification on a test that has an entry
+in the 'Type of delta check' field for that site/specimen then the code in
+the DELTA CHECK file is executed.  Usually the delta check is used to prompt
+back to the technologist a warning that there is some inconsistency in the
+data, so that the data can be rechecked before it is verified.  Delta checks
+can be used for other reasons such as skipping over entries that do not
+need to be prompted or for doing calulations on data and storing the
+calculated results.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

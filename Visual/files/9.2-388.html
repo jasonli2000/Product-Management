@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTM4OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OR SEARCH PRECEDENCE (388) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTM4OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OR SEARCH PRECEDENCE</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Search Precedence for Patient Look-up</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+ 
+The precedence in which the Patient Look-up will search to determine what
+the user's input means may influence the way in which input is interpreted,
+particularly if patient's, provider's, or person's names coincide, or if
+team lists are named identically with Hospital Locations.
+ 
+When input is received, the look-up will proceed to try to find a match
+in the following sequence:
+ 
+     LOCATION (WARD or CLINIC) --&gt; PATIENT --&gt; TREATING SPECIALITY --&gt;
+     PERSON (PROVIDER or NOT) --&gt; PATIENT LIST --&gt; CURRENT LIST.
+ 
+Therefore, if the user wishes to produce Dr. James Doe's PROVIDER list,
+and enters DOE,J and the search encounters a patient named DOE,JOHN, it
+will ALWAYS return the patient first.  Likewise, if the PATIENT LIST
+names are prefixed with characters which exactly match Hospital locations,
+then the WARD or CLINIC list will always be identified before the
+corresponding PATIENT or TEAM list.  We therefore recommend that you name
+personal PATIENT LISTs by their owner's initials, followed by a number,
+and TEAM LISTs by the word "TEAM" followed by a location or speciality,
+etc.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1991-09-17 13:45:02</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

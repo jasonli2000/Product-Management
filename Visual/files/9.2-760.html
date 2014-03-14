@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTc2MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQ HEADERS (760) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTc2MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQ HEADERS</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>The Execution of Headers</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+   
+     Headers can be associated with each option in the Option File by
+entering valid MUMPS code in to the HEADER Field: ^DIC(19,Option IEN,26).
+From the front page of OPED go to "Executables" and answer "YES" to edit
+it.  The code in the header field is executed each time an option is
+referenced on the user stack.
+  
+     If you think of a menu tree with a Primary Menu as it's trunk, the
+HEADER will be executed as you move up the tree into the branches, and
+again as you move down toward the trunk.  The trunk could also be the
+parent of a secondary menu or XUCOMMAND for the Common Options.  So as you
+move up the tree the ENTRY ACTION and then the HEADER are eexecuted.  The
+option does it's thing, exits, and the EXIT ACTION is run.  Next comes the
+HEADER of the menu just under the one we are returning from.  Notice that
+the ENTRY ACTION did not get executed on this menu because we are moving
+down the tree.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1998-04-21 12:11:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

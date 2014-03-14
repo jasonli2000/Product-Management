@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAwLjAxLTk5").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>NO STATUS (99) &nbsp;&nbsp;  ORDER STATUS (100.01)</h1>
+<div id="demo"><table id="MTAwLjAxLTk5" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>NO STATUS</td>
+</tr>
+<tr>
+<td>SHORT NAME</td>
+<td>none</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>'</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Orders that have no status; these orders will not be displayed 
+on the order review screen.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MASTER ENTRY FOR VUID</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>VUID</td>
+<td>4501102</td>
+</tr>
+<tr>
+<td>EFFECTIVE DATE/TIME</td>
+<td>
+<ol>
+<li>
+<dt>EFFECTIVE DATE/TIME:  &nbsp;&nbsp;2007-01-10 10:01:32</dt>
+<dt>STATUS:  &nbsp;&nbsp;ACTIVE</dt>
+</li>
+<li>
+<dt>EFFECTIVE DATE/TIME:  &nbsp;&nbsp;2007-01-09 10:06:24</dt>
+<dt>STATUS:  &nbsp;&nbsp;ACTIVE</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

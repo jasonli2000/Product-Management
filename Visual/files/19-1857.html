@@ -1,0 +1,100 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTg1Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMTS TASK STARTUP (1857) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTg1Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMTS TASK STARTUP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Startup Task for nightly batch printing</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>STARTUP TASK FOR NIGHTLY BATCH</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option should be queued to run nightly by the site manager.  Each
+time it runs, it uses parameters set under GMTS HS BY LOC PARAMETERS
+option and queues a task to run now for each set of parameters meeting a
+certain criterion.
+ 
+When this task runs, it generates Health Summaries of the specified Health
+Summary Type for each patient at the specified location and prints them on
+the specified device.  For ease in separating printout queued to the same
+device, a location banner page appears in front of each set of Health
+Summaries. 
+ 
+A set of parameters consists of Hospital Location, Health Summary Type,
+Device for Nightly Print, and if Location is a clinic, Print Days Ahead.
+ 
+Criterion for queueing task: if location is a clinic, option will queue a
+task for that set of parameters ONLY if clinic meets on Desired
+Appointment Day.  Summaries are printed during the night and should be
+ready to distribute by early morning. Thus, Desired Appointment Day= (Day
+Summaries are ready to distribute)+(Print Days Ahead).  If clinic meets on
+Desired Appointment Day, task is queued and Summaries are printed for each
+patient with an appointment on that day.
+ 
+To see a list of sets of parameters which may spawn tasks, site manager
+should run option GMTS TASK LOCATIONS LIST.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-42.html">HEALTH SUMMARY</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>MAIN^<a href="http://code.osehra.org/dox/Routine_GMTSPNJ.html">GMTSPNJ</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-06-23 13:38:39</td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

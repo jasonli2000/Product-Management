@@ -1,0 +1,107 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNjM5Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ESP ACTIVITY ADD/EDIT (6392) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNjM5Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ESP ACTIVITY ADD/EDIT</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Create/Add Daily Activity Entry</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CREATE/ADD DAILY ACTIVITY ENTR</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>PATCH ES*1*46</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is a submenu edit option which allows sites to enter the
+Daily Activity Report information for each officer assigned to work
+a shift during that 24 hour period.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>edit</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-133.html">POLICE & SECURITY</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D ^<a href="http://code.osehra.org/dox/Routine_ESPCLEAN.html">ESPCLEAN</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S DLAYGO=910.1</td>
+</tr>
+<tr>
+<td>DIC {DIC}</td>
+<td>ESP(910.1,</td>
+</tr>
+<tr>
+<td>DIC(0)</td>
+<td>AEMQL</td>
+</tr>
+<tr>
+<td>DIE</td>
+<td>ESP(910.1,</td>
+</tr>
+<tr>
+<td>DR {DIE}</td>
+<td>[ESP ACTIVITY ADD/EDIT]</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-08-23 19:41:29</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTE5").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQRESTRICT-PRIORITY (19) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTE5" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQRESTRICT-PRIORITY</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>RESPONDING TO THE 'PRIORITY' PROMPT</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+    
+    This restriction modifies the priority at which an option will be
+run.  The priority should be a number between 1 and 10, with 1 being
+the lowest priority and 10 being the highest. 
+  
+    An option with a priority of 10 will compete with other high-
+priority options for machine resources, while an option with a
+priority of 1 will run only after all of the other options with
+higher priorities have been satisfied by the CPU.  Low priority
+options help conserve machine resources for options with high
+prioity, but they tend to run very slowly on heavily loaded machines.
+  
+    Entering an '@' at this prompt will delete whatever priority
+is currently entered in this field and cause the options chosen to
+revert to the system default priority.
+  
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-01-20 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTcwNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSB BCBU LINK ASSOCIATIONS (9704) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTcwNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSB BCBU LINK ASSOCIATIONS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Associate Backup Workstations with a Division</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ASSOCIATE BACKUP WORKSTATIONS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+For sites running the REALTIME BCMA BACKUP interface, use this option to 
+assign your backup workstations to specific divisions. If you are not a 
+multidivisional site, associate all backup workstations with a single 
+division.
+ 
+When HL7 events occur, the division associated with the patient will be 
+used to determine which workstations will get the message.
+(Vista Menu)
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-177.html">BAR CODE MED ADMIN</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_ALPBPARM.html">ALPBPARM</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

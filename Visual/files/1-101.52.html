@@ -1,0 +1,69 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0xMDEuNTI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORDER DEA ARCHIVE INFO (101.52) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0xMDEuNTI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORDER DEA ARCHIVE INFO</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The purpose of this file is to satisfy the Drug Enforcement Agency (DEA) requirement
+for an electronic prescribing system to maintain an archive of all controlled 
+substance prescriptions that were electronically entered.
+ 
+The file will store all the information that is considered a part of the 
+prescription.
+ 
+The file should always be audited. In addition, the file should NEVER be
+edited using FileMan. These are both DEA requirements.
+ 
+In order to satisfy the requirement that both the prescribing (CPRS) and 
+filling systems (Outpatient Pharmacy) create an archive, but to reduce the 
+need for additional storage space, both CPRS and Pharmacy will use the same 
+file. CPRS will create the entries when an order is signed or when a backdoor 
+order message is received from Pharmacy. Once Pharmacy verifies the data in 
+the Pharmacy system is an exact match for what CPRS stored, they will 
+subscribe to the entry in the archive file and will update the PRESCRIPTION 
+NUMBER (#1) field.
+ 
+The file was defined in a different global name in order to handle the 
+volume set from the rest of the CPRS system (i.e., the ORDER file).
+It is important to note that to fully meet the DEA requirements, the fields 
+required by the DEA cannot be pointers. We must store the data completely. 
+The fields that are pointers are for our internal use, rather than for 
+the DEA purposes.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

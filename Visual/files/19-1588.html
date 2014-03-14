@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTU4OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENPLM16 (1588) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTU4OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENPLM16</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Approval of Project Application</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>APPROVAL OF PROJECT APPLICATIO</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option controls the Chief Engineer's and VAMC Director's sign
+off on the project application.  The Security Key ENPLK001 controls
+the Chief Engineer's approval.  The Security Key ENPLK002 controls the
+VAMC Director's approval.  The Chief Engineer must sign off before the
+VAMC Director.  Both must approve before the project application can
+be transmitted electronically to higher approval authorities.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-18.html">ENGINEERING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_ENPL9.html">ENPL9</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

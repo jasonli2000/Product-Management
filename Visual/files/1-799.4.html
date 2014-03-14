@@ -1,0 +1,61 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OTkuNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ROR HIV RECORD (799.4) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OTkuNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ROR HIV RECORD</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The ROR HIV RECORD file stores the patients' data
+specific to the Human Immunodeficiency Virus
+Registry (CCR:HIV).
+ 
+Records of this file have the same internal entry
+numbers as the corresponding records of the ROR 
+REGISTRY RECORD file (#798).
+ 
+When an CCR:HIV record is deleted from the ROR 
+REGISTRY RECORD file, the corresponding record of 
+this file is deleted automatically.
+ 
+A permanent screen (the ^DD(799.4,0,"SCR") node) 
+restricts access to this file. Only the users who
+have the CCR:HIV security key(s) and those with
+the ROR VA IRM key can access the records of the
+file.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

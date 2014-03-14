@@ -1,0 +1,83 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDkxNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>NURSLO-PRINT (4916) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDkxNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>NURSLO-PRINT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Print Existing Location File Entries</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PRINT EXISTING LOCATION FILE E</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ This option generates one of three reports:
+ 
+ 1. A 80 column Status/Bed section report which also indicates if active
+    staff are assigned to a nursing unit.
+ 
+ 2. A 80 column Budgeted FTEE report.
+ 
+ 3. A 132 column report which combines Status/Bed section information with
+    Budgeted FTEE and staff assignment information.  This report and the 80
+    column Status/Bed section report reflect any discrepancies in the old/
+    new bedsection assignments.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-106.html">NURSING SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN2^<a href="http://code.osehra.org/dox/Routine_NURSAL0.html">NURSAL0</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1992-11-12 13:49:27</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

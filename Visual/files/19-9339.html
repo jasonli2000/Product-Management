@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTMzOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>EASEC LTC COPAY TEST PRINT (9339) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTMzOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>EASEC LTC COPAY TEST PRINT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Print Application for Extended Care (10-10EC)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PRINT APPLICATION FOR EXTENDED</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu option will allow the selection and printing of the Application 
+for Extended Care Services (VA Form 10-10EC) for a veteran that has 
+completed a Long Term Care Copayment Test.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-181.html">ENROLLMENT APPLICATION SYSTEM</a></td>
+</tr>
+<tr>
+<td>DELEGABLE</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>OEN^<a href="http://code.osehra.org/dox/Routine_EASEC10E.html">EASEC10E</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

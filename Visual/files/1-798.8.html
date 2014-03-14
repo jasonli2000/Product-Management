@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OTguOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ROR TASK (798.8) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OTguOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ROR TASK</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The ROR TASK file enhances the functionality of 
+Taskman and supports the package APIs used by the
+GUI to schedule and control tasks, and view
+and print reports.
+ 
+Records in the file have the same internal entry 
+numbers as the corresponding tasks in Taskman. The
+records are uniquely identified by the internal 
+value of the TASK NUMBER field.
+ 
+Usually, you should not edit records of this file 
+directly. The file is maintained by the APIs 
+located in the RORTSK* routines.
+ 
+A permanent screen (the ^DD(798.8,0,"SCR") node) 
+restricts access to the records of this file. Only
+users with the security key(s) for any defined
+registry (or those with the ROR VA IRM security
+key) can access records of the file.
+     
+If you want the changes in the security keys 
+allocation to have an effect immediately, you
+should rebuild the "ACL" cross-reference of the
+.01 field of the SECURITY KEY multiple of the ROR
+REGISTRY PARAMETERS file (#798.1). See the
+description of the cross-reference for more
+details.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

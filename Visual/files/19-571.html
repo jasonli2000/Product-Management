@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTcx").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FHPRO2 (571) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTcx" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FHPRO2</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Enter/Edit Nutrition Locations</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ENTER/EDIT NUTRITION LOCATIONS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows for creating/editing of locations in the Nutrition
+Location (#119.6) file. Locations are selected from those in either the
+MAS WARD (#42) or HOSPITAL LOCATION (#44) files. As of Version 5.5, this
+option allows creation/editing of outpatient locations.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN2^<a href="http://code.osehra.org/dox/Routine_FHPRO.html">FHPRO</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

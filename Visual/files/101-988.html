@@ -1,0 +1,165 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTk4OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBTRE  IR MENU (988) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTk4OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBTRE  IR MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Claims tracking IR Menu</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-885.html">IBTRE CHANGE PATIENT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CP</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;32</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-886.html">IBTRE ADD TRACKING</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AT</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-887.html">IBTRE DELETE TRACKING</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DT</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;12</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-889.html">IBTRE QUICK EDIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;QE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;13</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-891.html">IBTRE VIEW/EDIT TRACKING</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;VE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;20</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-890.html">IBTRE COMMUNICATIONS EDIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;IR</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;22</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-892.html">IBTRE DENIALS/APPEALS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;31</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-893.html">IBTRE CHANGE DATE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CD</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;34</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-957.html">IBTRE ASSIGN CASE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;AC</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;14</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-960.html">IBTRE SHOW SC CONDITIONS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SC</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;25</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-964.html">IBTRE DIAGNOSIS UPDATE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DU</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;35</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-858.html">IBCNS EXIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;EX</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;41</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-968.html">IBTRE PROCEDURE UPDATE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PU</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;36</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-974.html">IBTRE PROVIDER UPDATE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PV</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;37</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-991.html">IBTRE BILLING INFO</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;BI</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;18</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1155.html">IBTRE VIEW PAT INS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;VP</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;38</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>I $G(IBFASTXT)=1 S VALMBCK="Q"</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a></td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2010-10-20 12:32:13</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

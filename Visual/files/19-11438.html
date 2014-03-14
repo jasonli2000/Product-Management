@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTE0Mzg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FBAA REPROCESS BATCH (11438) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTE0Mzg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FBAA REPROCESS BATCH</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Reprocess Overdue Batch</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>REPROCESS OVERDUE BATCH</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>FBAASUPERVISOR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to reprocess a transmitted payment batch that was not
+received by Central Fee.
+ 
+If VistA Fee Basis does not receive a Payment Batch Result message by the 
+third weekday after transmission of the Payment Batch message, the 
+software will consider the result message as overdue.  A list of overdue 
+batches can be obtained by entering a ? at the select batch prompt of this
+option.
+ 
+The site should contact the National Service Desk Austin to determine if
+Central Fee contains the overdue batch. If so, the site should request
+that the Payment Batch Results message be resent to VistA.  If Central Fee
+does not have the batch, the site can use this option to either change the
+batch status so the batch will be resent or to reject the entire batch so
+the line items can be re-initiated into a new batch, edited, and then
+resent with the new batch.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-114.html">FEE BASIS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_FBAADD1.html">FBAADD1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

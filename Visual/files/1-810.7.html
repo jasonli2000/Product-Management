@@ -1,0 +1,114 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS04MTAuNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>REMINDER EXTRACT COUNTING RULE (810.7) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS04MTAuNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>REMINDER EXTRACT COUNTING RULE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file is used during extract processing when an extract definition's TYPE
+OF TOTALS field is defined with COMPLIANCE AND FINDING TOTALS. When the
+extract type is for COMPLIANCE TOTALS only, there will not be an extract
+counting rule defined in the REMINDER EXTRACT DEFINITION file (#810.2). When
+the extract type includes FINDING TOTALS, then the extract definition needs to
+reference a counting rule for each reminder processed by the extract. 
+
+In the Extract definition, there is a basic hierarchy as follows
+Extract general information
+   Patient List to build and list rules to build them
+      Reminders to be run with the Patient List
+         Extract Counting Rules that define how to count findings 
+
+An entry in the REMINDER EXTRACT COUNTING RULE file identifies how groups of
+findings should be accumulated based on the reminder status.
+Each group of findings is defined as a counting group in the REMINDER EXTRACT
+COUNTING GROUP file (#810.8).
+
+One counting group can be referenced multiple times in a particular counting
+rule to collect counts in multiple ways. The unique combination of a counting
+group and a Reminder Status field is what makes the counts different. The
+Reminder Status field is the status associated with the patient when the
+reminder was evaluated. Each patient is always in the TOTAL PATIENTS count,
+but the patient is included in the APPLICABLE PATIENTS, DUE PATIENTS, or NOT
+DUE PATIENTS counts depending on the reminder status for each patient. 
+
+For example: A counting group defined with possible LDL value ranges, can be
+defined to get multiple counts, depending on the patient's REMINDER STATUS.
+When TOTAL PATIENTS Reminder Status is defined with the counting group: Every
+patient in the patient list is used to find a match on the findings in the
+group. If a finding match is found, a count is accumulated into columns based
+on the reminder status of APPLICABLE, NOT APPLICABLE, DUE or NOT DUE. 
+
+When APPLICABLE PATIENTS Reminder Status is defined with the counting group:
+Patients from the patient list, where the reminder was applicable, are used to
+find a match on the findings in the group. If a finding match is found, a count
+is accumulated into columns for each finding in the group based on the reminder
+status of APPLICABLE, NOT APPLICABLE, DUE or NOT DUE. Applicable patients
+should have 0 counts in the NOT APPLICABLE count for each finding.
+ 
+When DUE PATIENTS Reminder Status is defined with the counting group: Patients
+from the patient list, where the reminder was due are used to find a match on
+the findings in the group. If a finding match is found, a count is accumulated
+into columns for each finding in the group based on the reminder status of
+APPLICABLE, NOT APPLICABLE, DUE or NOT DUE. Due patients should have 0 counts
+in the NOT APPLICABLE and NOT DUE count for each finding.
+
+When NOT DUE PATIENTS Reminder Status is defined with the counting group:
+Patients from the patient list, where the reminder was not due are used to find
+a match on the findings in the group. If a finding match is found, a count is
+accumulated into columns for each finding in the group based on the reminder
+status of APPLICABLE, NOT APPLICABLE, DUE or NOT DUE. Due patients should have
+0 counts in the NOT APPLICABLE and DUE count for each finding.
+
+The accumulated counts for each finding are stored in the REMINDER EXTRACT
+SUMMARY file (#810.3). The sequence number in the file determines the order
+the counts will be accumulated for, saved to, and displayed from the REMINDER
+EXTRACT SUMMARY file (#810.3). 
+The counts can be used to make comparisons between TOTAL PATIENTS, APPLICABLE
+PATIENTS, DUE PATIENTS, and NOT DUE PATIENTS counts.  
+       
+If no counting groups are defined in the extract counting rule, then no finding
+totals will be accumulated. 
+Nationally distributed extract counting rules are prefixed 'VA-' and cannot be
+modified by sites. 
+
+Sites should name locally created extract counting rules according to their 
+local naming convention. 
+
+
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,58 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTk0LjUtMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SSN (3) &nbsp;&nbsp;  LABEL PRINT FIELD (194.5)</h1>
+<div id="demo"><table id="MTk0LjUtMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PRINT FIELD</td>
+<td>SSN</td>
+</tr>
+<tr>
+<td>TYPE OF LABEL</td>
+<td>RECORD or REQUEST</td>
+</tr>
+<tr>
+<td>DEFAULT TITLE</td>
+<td>SSN:</td>
+</tr>
+<tr>
+<td>TEST VALUE</td>
+<td>999-99-9999</td>
+</tr>
+<tr>
+<td>INTERNAL VARIABLE</td>
+<td>RTV(3)</td>
+</tr>
+<tr>
+<td>MUMPS CODE TO SET VARIABLE</td>
+<td>S RTDPT=$P($P(RT0,"^"),";",2)="DPT(" D:'RTDPT ^RTL3 Q:'RTDPT  S X=$S($D(^DPT(+RT0,0)):$P(^(0),"^",9),1:""),RTV(RTJ)=$E(X,1,3)_"-"_$E(X,4,5)_"-"_$E(X,6,10) K RTDPT</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

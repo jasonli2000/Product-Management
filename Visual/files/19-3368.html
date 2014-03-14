@@ -1,0 +1,168 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzM2OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSO MAINTENANCE (3368) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzM2OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSO MAINTENANCE</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Maintenance (Outpatient Pharmacy)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>MAINTENANCE (OUTPATIENT PHARMA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu will contain options that are used for implementation as well as
+maintenance of the outpatient package.  Some of the items on this menu 
+are Add Providers, Edit Providers, Site Parameters Enter/Edit, etc.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3340.html">PSOL EDIT</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;6</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3333.html">PSO INTERVENTION EDIT</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;15</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3329.html">PSO INTERVENTION DELETE</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;16</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3367.html">PSO PROVIDER ADD</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3279.html">PSO PROVIDER EDIT</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3258.html">PSO RXDL</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3314.html">PSO AMIS RECOMPILE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3301.html">PSO SITE PARAMETERS</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3347.html">PSO BINGO MANAGER</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3391.html">PSO AUTOQUEUE JOBS</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;3.1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-8646.html">PSO PURGE DRUG COST</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-8647.html">PSO SETUP CLINIC GROUPS</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;6</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3356.html">PSO AUTOCANCEL1</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3292.html">PSO COSTINIT</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;7</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-3254.html">PSO PNDEL</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-8653.html">PSO EXPIRE INITIALIZE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-8659.html">PSO INTERFACE PURGE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-8675.html">PSO RXCOST UPDATE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-9021.html">PSO MANUAL AUTO EXPIRE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-10773.html">PSO AUTO REFILL INITIALIZE</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-11305.html">PSO AUTO DISPENSING DEVICE</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-60.html">OUTPATIENT PHARMACY</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>I $D(PSOMAIN) D FINAL^<a href="http://code.osehra.org/dox/Routine_PSOLSET.html">PSOLSET</a> K PSOMAIN</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>I '$D(PSOPAR) D ^<a href="http://code.osehra.org/dox/Routine_PSOLSET.html">PSOLSET</a> S PSOMAIN=1</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2012-03-07 10:50:22</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

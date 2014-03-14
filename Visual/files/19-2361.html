@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjM2MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IB PURGE/FIND BILLING DATA (2361) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjM2MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IB PURGE/FIND BILLING DATA</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Find Billing Data to Archive</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>FIND BILLING DATA TO ARCHIVE</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>XUMGR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option may be used to identify records to be archived and purged
+from the following files:
+ 
+  #350  INTEGRATED BILLING ACTION
+  #351  CATEGORY C BILLING CLOCK
+  #399  BILL/CLAIMS
+ 
+Entries which are selected to be archived and then purged are placed
+into a Search (Sort) template.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>FIND^<a href="http://code.osehra.org/dox/Routine_IBP.html">IBP</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

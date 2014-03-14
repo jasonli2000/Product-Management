@@ -1,0 +1,278 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLjQxLTE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA OERR EXAM (1) &nbsp;&nbsp;  ORDER DIALOG (101.41)</h1>
+<div id="demo"><table id="MTAxLjQxLTE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA OERR EXAM</td>
+</tr>
+<tr>
+<td>DISPLAY TEXT</td>
+<td>Imaging</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>dialog</td>
+</tr>
+<tr>
+<td>DISPLAY GROUP</td>
+<td><a href="100.98-29.html">IMAGING</a></td>
+</tr>
+<tr>
+<td>SIGNATURE REQUIRED</td>
+<td>ORES</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-115.html">RADIOLOGY/NUCLEAR MEDICINE</a></td>
+</tr>
+<tr>
+<td>VERIFY ORDER</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ASK FOR ANOTHER ORDER</td>
+<td>YES-DON'T ASK</td>
+</tr>
+<tr>
+<td>ITEMS</td>
+<td>
+<ol>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-4.html">OR GTX ORDERABLE ITEM</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Procedure:</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>INDEX:  &nbsp;&nbsp;S.XRAY;C.XRAY</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the imaging procedure to be ordered for this patient.</dt>
+<dt>SPECIAL LOOKUP ROUTINE:  &nbsp;&nbsp;LKP;ORCDRA</dt>
+<dt>SCREEN:  &nbsp;&nbsp;I $$ACTIVE^<a href="http://code.osehra.org/dox/Routine_ORDD43.html">ORDD43</a>(Y),'(ORBROAD&($P($G(^("RA")),U,2)="B"))</dt>
+<dt>POST-SELECTION ACTION:  &nbsp;&nbsp;D BROAD^<a href="http://code.osehra.org/dox/Routine_ORCDRA.html">ORCDRA</a>(+Y)</dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;N SCR,IDX S SCR=ORDIALOG(PROMPT,"S"),IDX="S."_$P(ORDG,U,4) D XHELP^<a href="http://code.osehra.org/dox/Routine_ORDD43.html">ORDD43</a>(IDX,SCR),LIST^ORCDRA:$G(ORDIALOG(PROMPT,"LIST"))</dt>
+<dt>ENTRY ACTION:  &nbsp;&nbsp;D NEXTPROC^<a href="http://code.osehra.org/dox/Routine_ORCDRA.html">ORCDRA</a> Q:$G(ORQUIT)  I '$G(ORDIALOG(PROMPT,INST)) D COMMON^<a href="http://code.osehra.org/dox/Routine_ORCDRA.html">ORCDRA</a>,LIST^ORCDRA:$G(ORDIALOG(PROMPT,"LIST"))</dt>
+<dt>EXIT ACTION:  &nbsp;&nbsp;N OI S OI=+$G(ORDIALOG(PROMPT,INST)) D:OI ORDMSG^ORCD(OI)</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;cboProcedure</dt>
+<dt>API NAME:  &nbsp;&nbsp;131</dt>
+<dt>API PARAMETER #1:  &nbsp;&nbsp;S.RAD</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-5.html">OR GTX MODIFIERS</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Procedure Modifier:</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>MULTIPLE VALUED:  &nbsp;&nbsp;YES</dt>
+<dt>TITLE:  &nbsp;&nbsp;Procedure Modifiers:</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Select the procedure modifiers necessary to further define the procedure ordered.</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;I $D(^RAMIS(71.2,"AB",ORIMTYPE))</dt>
+<dt>POST-SELECTION ACTION:  &nbsp;&nbsp;D CKPTYPE^<a href="http://code.osehra.org/dox/Routine_ORCDRA1.html">ORCDRA1</a> Q:'$G(DONE)  I $$DUP^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a>(PROMPT,ORI) K DONE W $C(7),!,"This procedure modifier has already been selected!",!</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;lstSelectMod</dt>
+<dt>API PARAMETER #1:  &nbsp;&nbsp;MOD</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;7</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-6.html">OR GTX START DATE/TIME</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Date Desired:</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;W</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the date desired for this procedure to be performed.</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;calRequestDate</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;10</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-7.html">OR GTX URGENCY</a></dt>
+<dt>ASK ON EDIT ONLY:  &nbsp;&nbsp;YES</dt>
+<dt>INDEX:  &nbsp;&nbsp;S.RA</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the urgency for this request.</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y=9</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;3</dt>
+<dt>OMIT TEXT:  &nbsp;&nbsp;ROUTINE</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;cboUrgency</dt>
+<dt>API PARAMETER #1:  &nbsp;&nbsp;URG</dt>
+<dt>WINDOWS DEFAULT:  &nbsp;&nbsp;S Y="Routine"</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-8.html">OR GTX IMAGING LOCATION</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Submit request to:</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the imaging location this request should be sent to.</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;I $$GET^<a href="http://code.osehra.org/dox/Routine_XPAR.html">XPAR</a>("ALL^DIV.`"_$G(ORDIV),"RA SUBMIT PROMPT",1,"Q"),+$G(ORDIALOG(PROMPT,"LIST"))>1</dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;D LIST^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a></dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S:+$G(ORDIALOG(PROMPT,"LIST"))=1 Y=+$G(ORDIALOG(PROMPT,"LIST",1))</dt>
+<dt>ENTRY ACTION:  &nbsp;&nbsp;I $G(ORIMLOC) M ORDIALOG(PROMPT,"LIST")=ORIMLOC</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;cboSubmit</dt>
+<dt>API PARAMETER #1:  &nbsp;&nbsp;SUB</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;8</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-9.html">OR GTX MODE OF TRANSPORT</a></dt>
+<dt>ASK ON EDIT ONLY:  &nbsp;&nbsp;YES</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the transportation mode of the patient for this exam.</dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;D SETLIST^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a></dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y=$$MODE^ORCDRA1 K:'$L(Y) Y</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;cboTransport</dt>
+<dt>API PARAMETER #1:  &nbsp;&nbsp;TRANS</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-10.html">OR GTX CATEGORY</a></dt>
+<dt>ASK ON EDIT ONLY:  &nbsp;&nbsp;YES</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the category of the patient for this exam.</dt>
+<dt>POST-SELECTION ACTION:  &nbsp;&nbsp;I $D(ORESET),ORESET'=ORDIALOG(PROMPT,ORI) D CHNGCAT^<a href="http://code.osehra.org/dox/Routine_ORCDRA1.html">ORCDRA1</a></dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;D SETLIST^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a></dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S:$G(ORTYPE)'="Z" Y=$S($$INPT^ORCD:"I",1:"O")</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;cboCategory</dt>
+<dt>API PARAMETER #1:  &nbsp;&nbsp;CAT</dt>
+<dt>WINDOWS DEFAULT:  &nbsp;&nbsp;S Y=$S($G(ORWARD):"Inpatient",1:"Outpatient")</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;4.2</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-11.html">OR GTX CONTRACT/SHARING SOURCE</a></dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the contract or sharing agreement responsible for this exam.</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;N X S X=$$VAL^ORCD("CATEGORY") I $L(X),"CS"[X</dt>
+<dt>API PARAMETER #1:  &nbsp;&nbsp;SHARE</dt>
+<dt>WINDOWS CONDITION:  &nbsp;&nbsp;I "CS"[$$VAL^ORGGDRA("CATEGORY")</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;4.3</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-12.html">OR GTX RESEARCH SOURCE</a></dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the name of the research project responsible for this exam.</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;I $$VAL^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a>("CATEGORY")="R"</dt>
+<dt>API PARAMETER #1:  &nbsp;&nbsp;SOURCE</dt>
+<dt>WINDOWS CONDITION:  &nbsp;&nbsp;I $$VAL^ORGGDRA("CATEGORY")="R"</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-13.html">OR GTX PRE-OP SCHEDULED DATE/TIME</a></dt>
+<dt>ASK ON EDIT ONLY:  &nbsp;&nbsp;YES</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the date/time this patient is scheduled for pre-op.</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;I $$SCHEDULD^<a href="http://code.osehra.org/dox/Routine_ORCDRA1.html">ORCDRA1</a></dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;6</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-14.html">OR GTX PREGNANT</a></dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Answer if this patient is pregnant at this time, as precisely as known.</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;I $G(ORSEX)="F",'FIRST!((ORAGE'<12)&(ORAGE'>55))</dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;D SETLIST^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a></dt>
+<dt>DEFAULT:  &nbsp;&nbsp;I $G(ORSEX)="F",((ORAGE<12)!(ORAGE>55)) S Y="N"</dt>
+<dt>ENTRY ACTION:  &nbsp;&nbsp;I $G(ORSEX)="F",$G(ORTYPE)'="Z" S REQD=1</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;chkPregnant</dt>
+<dt>API PARAMETER #1:  &nbsp;&nbsp;YN</dt>
+<dt>WINDOWS CONDITION:  &nbsp;&nbsp;I $G(ORSEX)="F"</dt>
+<dt>WINDOWS DEFAULT:  &nbsp;&nbsp;S Y="No"</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-15.html">OR GTX WORD PROCESSING 1</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Clinical History:</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the clinical history of this patient, as it relates to this order.</dt>
+<dt>POST-SELECTION ACTION:  &nbsp;&nbsp;;N ROOT S ROOT=$TR(ORDIALOG(PROMPT,INST),")",",") I '$$VALIDWP^<a href="http://code.osehra.org/dox/Routine_ORCDRA1.html">ORCDRA1</a>(ROOT) K DONE W $C(7),!!,"A valid clinical history is required!" S:$$DONE^<a href="http://code.osehra.org/dox/Routine_ORCDLG2.html">ORCDLG2</a> ORQUIT=1</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;I $D(^TMP("ORECALL",$J,ORDIALOG)) M ^TMP("ORWORD",$J,PROMPT,INST)=^TMP("ORECALL",$J,ORDIALOG,PROMPT,INST) S Y="^TMP(""ORWORD"",$J,"_PROMPT_","_INST_")"</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;memHistory</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;9</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-177.html">OR GTX YES/NO</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Is patient on isolation procedures?</dt>
+<dt>TITLE:  &nbsp;&nbsp;Isolation Procedures:</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter YES if this patient is currently on some type of isolation procedures.</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S:$G(ORTYPE)'="Z" Y=$S($$IP^ORMBLD:1,1:0)</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;4.1</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-183.html">OR GTX LOCATION</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Ordering Location:</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the ordering location for this exam.</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;N X S X=$$VAL^ORCD("CATEGORY") I "IO"[X,'$$MATCH^<a href="http://code.osehra.org/dox/Routine_ORCDRA1.html">ORCDRA1</a>(X)</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;12</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-17.html">OR GTX PROVIDER</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Approving Rad/Nuc Med Phys:</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;W</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the name of the approving imaging service physician; personnel must be classified as Interpreting Staff Physician.</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;N OI S OI=+$G(ORDIALOG($$PTR^ORCD("OR GTX ORDERABLE ITEM"),1)) I OI,$P($G(^ORD(101.43,OI,0)),U,7)=2</dt>
+<dt>SCREEN:  &nbsp;&nbsp;I $D(^VA(200,"ARC","S",+Y)),'$P($G(^VA(200,+Y,"RA")),U,3)!($P($G(^("RA")),U,3)>DT)</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;13</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-15676.html">OR GTX VISITSTR</a></dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>PROMPT:  &nbsp;&nbsp;VISITSTR</dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;*</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;I 0 ;populated from patient data</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;2.5</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-15794.html">OR GTX STUDY REASON</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Reason for Study:</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the reason this study is being requested, up to 64 characters.</dt>
+<dt>POST-SELECTION ACTION:  &nbsp;&nbsp;I $L($G(ORDIALOG(PROMPT,INST)))=0 K DONE W $C(7),11,"A valid reason for study is required!" S:$$DONE^<a href="http://code.osehra.org/dox/Routine_ORCDLG2.html">ORCDLG2</a> ORQUIT=1</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;I $D(^TMP("ORECALL",$J,ORDIALOG)),$$SITEVAL^ORWDXM1 S Y=^TMP("ORECALL",$J,ORDIALOG,PROMPT,INST)</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;txtReason</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D EN^<a href="http://code.osehra.org/dox/Routine_ORCDRA.html">ORCDRA</a></td>
+</tr>
+<tr>
+<td>QUICK SETUP</td>
+<td>D ENA^<a href="http://code.osehra.org/dox/Routine_ORCDRA.html">ORCDRA</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D EX^<a href="http://code.osehra.org/dox/Routine_ORCDRA.html">ORCDRA</a></td>
+</tr>
+<tr>
+<td>LISTBOX TEXT</td>
+<td>Imaging</td>
+</tr>
+<tr>
+<td>WINDOW FORM ID</td>
+<td>160</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-06-14 09:03:00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

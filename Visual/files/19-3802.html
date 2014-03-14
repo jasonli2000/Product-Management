@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzgwMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSGW RE-INDEX AMIS (3802) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzgwMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSGW RE-INDEX AMIS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Re-index AMIS Cross-Reference</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RE-INDEX AMIS CROSS-REFERENCE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will queue a background job that will re-index the "AMIS"
+cross-reference for inventories, on-demands, and returns.  This cross-
+reference is important because this is where the nightly job to update
+the AR/WS Stats File (#58.5) gets the data for the update.  If this cross-
+reference is somehow destroyed, it is very important to rebuild it.
+Though it is possible to accomplish this through VA FileMan, this option
+is a much quicker and easier alternative.  This option is not tied to
+any menu, but may be hooked into a menu at the site's discretion.
+*** NOTE *** This option is CPU intensive and should be queued only in
+the "off" hours.  Also, it should ONLY be run if there is strong evidence
+the "AMIS" cross-reference has been destroyed or corrupted.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PSGWXREF.html">PSGWXREF</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

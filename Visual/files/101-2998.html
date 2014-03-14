@@ -1,0 +1,89 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI5OTg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RMPR POST INIT ACTION (2998) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI5OTg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RMPR POST INIT ACTION</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Post Initial Action</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Function description
+ 
+An initial action note can be posted on a suspense record.  This signifies
+that some form of action has taken place. The status changes from OPEN to
+PENDING and will remain in this status until all action is completed.
+ 
+ 
+ 
+Steps
+ 
+To post an initial action note on a consult, follow these steps: 
+ 
+Step    Action
+1       At the following prompt:  Select Item(s): Next Screen//, type PI
+        to access the Post Initial Action option, and press &lt;Enter.&gt;
+2       The next prompt displays:  Enter a list or a range of numbers
+        (shown in parenthesis) to select a suspense record.
+3       Type the number for the record you want to post an initial action
+        note, and press &lt;Enter.&gt;
+4       At the next prompt, Edit?  No//, type a Y for Yes to create a new
+        note.
+5       The text editor displays for you to type a free-text note.  Press
+        the "Num Lock" key and the "E" key to save the data and exit out
+        of the text editor.  You will then return to continue processing
+        suspense records.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D IACT^<a href="http://code.osehra.org/dox/Routine_RMPREO23.html">RMPREO23</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2003-11-26 14:21:34</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

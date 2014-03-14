@@ -1,0 +1,206 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuNC0xNDE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>BIOH KEYPAD (141) &nbsp;&nbsp;  AUTO INSTRUMENT (62.4)</h1>
+<div id="demo"><table id="NjIuNC0xNDE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>BIOH KEYPAD</td>
+</tr>
+<tr>
+<td>PROGRAM</td>
+<td>LABIOH</td>
+</tr>
+<tr>
+<td>ENTRY for LAGEN ROUTINE</td>
+<td>Accession cross-reference</td>
+</tr>
+<tr>
+<td>CROSS LINKED BY</td>
+<td>IDE</td>
+</tr>
+<tr>
+<td>NEW DATA</td>
+<td>D NEW^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>RESTART</td>
+<td>D RESTART^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>CHEM TESTS</td>
+<td>
+<ol>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-11.html">SEGS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),4,5) D NUM S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(394,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-12.html">BANDS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),15,16) D NUM S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(395,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-13.html">LYMPHS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),26,27) D NUM S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(396,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-14.html">MONOS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(2),4,5) D NUM S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(397,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-15.html">EOSINO</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(2),15,16) D NUM S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(398,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-16.html">BASO</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(2),26,27) D NUM S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(399,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-17.html">META</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(3),4,5) D NUM S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(400,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-18.html">MYELO</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(3),15,16) D NUM S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(401,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-351.html">ATYPICAL LYMPHOCYTES</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(3),26,27) D NUM S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(471,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-19.html">PROS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(4),4,5) D NUM S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(402,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-433.html">BLASTS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(4),15,16) D NUM S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(403,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-397.html">NUCLEATED RBC/100WBC</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(4),26,27) D NUM S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(404,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-25.html">ANISOCYTOSIS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$S($D(TY(170)):TY(170),1:"") D CODE:V'=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(408,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-354.html">BASOPHILIC STIPPLING</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$S($D(TY(190)):TY(190),1:"") D CODE:V'=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(474,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-22.html">PLT (ESTM)</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$S($D(TY(530)):TY(530),1:"") D CODE:V'=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(405,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-1150.html">OTHER</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;I $D(TY(1)) S RMK=RMK_"RBC NORM, PLAT NORM; " K V</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(780,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-1150.html">OTHER</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;I $D(TY(160)) S V=TY(160) D CODE S RMK=RMK_"ACANTHOCYTE, "_V_"; " K V</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(780,1)</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERFACE NOTES</td>
+<td><pre>
+The program LABIOH is used with the Biovation keypads with or without
+the keypad being interfaced to a hematology instrument.
+Use Model 1300 format #6 if not interfaced to a cell counter.
+Use Model 1320 format #3 if interfaced to a cell counter.
+Param 1 is used to extract the results for the test.
+Param 3 is optional and may be used to define the vocabulary for reporting.
+ 
+Example:
+for the test MONOS
+Param 1:  S V=$E(Y(2),4,5) D NUM S:'V V=""
+This value is assigned the 4th thru 5th characters of the
+2nd line of the transmitted results.
+ 
+Morphology results may be assigned to tests or may be put in as comments.
+Example: for the test HYPOCHROMIA.
+Param 1:  S V="" I $D(TY(140)) S V=TY(140) D CODE
+where 14 is the first 2 digits of the code for the test HYPOCHROMIA.
+The 3rd digit of the entered code will determine the degree of the result.
+If there is no entry in Param 3 the default will use
+'Noted$1+$2+$3+$4+$Rare$Occ$Few$Mod$Many'
+(degree 0 gives a result of 'Noted', 1 gives a result of 1+, ...)
+ 
+Example: if the code entered is '143' and Param 3 is
+Noted$Slight$Mod$Marked the result would be 'Marked'.  If Param 3 did not
+have an entry the result would be '3+'.
+ 
+Coded Comments:  Comments may be entered by using the test, 'OTHER'.
+(to enter more than one test, 'OTHER', enter it in quotes)
+ 
+Comment without degrees:
+Example (Param 1):  S V="" I $D(TY(5)) S RMK=RMK_"CLOTTED; " K V
+where 5 is the code for the comment 'CLOTTED; '.  The code # must be &lt;99
+and may be dependent on what the instrument is able to transmit.  The
+comment will string together any other comments, hence the reason for
+ending the comment with a "; ".  Since a value is not being assigned to
+the test 'OTHER', the variable 'V' is killed.
+ 
+Comment with a degree:
+Example:
+Param 1:
+I $D(TY(250)) S V=TY(250) D CODE S RMK=RMK_"Dohle Bodies, "_V_"; " K V
+Param 3:
+Rare$Occ$Sl$Mk
+where 25 is the first 2 digits of the code for the comment 'Dohle Bodies'
+and V is the degree of the comment.  If 252 was entered, the comment
+would be 'Dohle Bodies, Sl; '.  If Param 3 was not entered, the comment
+would be 'Dohle Bodies, 2+; '.
+ 
+The field 'LOAD CHEM TESTS' should be set to 'U' if you have many comment
+entries.  This will avoid possible store errors.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

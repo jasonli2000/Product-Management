@@ -1,0 +1,58 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03MS40").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RAD/NUC MED PROCEDURE MESSAGE (71.4) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03MS40" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RAD/NUC MED PROCEDURE MESSAGE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains messages concerning special requirements when ordering
+a procedure.  One or more of these messages can be tied to a procedure
+in the Rad/Nuc Med Procedures file (#71) so that they are displayed to a
+requestor at the time an order is placed.
+ 
+ Data Storage
+ ------------
+ The data for the 'RAD/NUC MED PROCEDURE MESSAGE' file is stored in the
+^RAMIS(71.4, global.
+ 
+ Templates
+ ---------
+ The package does not use any input, print or sort templates
+associated with this file.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

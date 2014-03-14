@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTQyLjEtMjM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SURGERY REPORTS (23) &nbsp;&nbsp;  HEALTH SUMMARY COMPONENT (142.1)</h1>
+<div id="demo"><table id="MTQyLjEtMjM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SURGERY REPORTS</td>
+</tr>
+<tr>
+<td>PRINT ROUTINE</td>
+<td>ENSR;GMTSRO</td>
+</tr>
+<tr>
+<td>TIME LIMITS APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>SR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This component contains information from the Surgery package.  Time and
+maximum occurrence limits apply.  It includes NON-OR procedures as well as 
+Surgical procedures.  The data returned will differ for surgical and 
+NON-OR procedures.
+ 
+For Surgical procedures the data presented will be: surgery date,
+surgeon, surgery report status, pre-operative diagnosis, post-operative
+diagnosis, surgeon's dictation, current procedural terminology operation
+code and text, and principal anesthesiologist.
+ 
+For NON-OR procedures the data presented will be: provider specialty,
+provider, procedure status, attending, principal diagnosis, procedures
+performed, principal anesthesiologist, and indications for procedure.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MAXIMUM OCCURRENCES APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>Surgery Package not yet installed</td>
+</tr>
+<tr>
+<td>DEFAULT HEADER NAME</td>
+<td>Surgery Rpt (OR/NON)</td>
+</tr>
+<tr>
+<td>CPT MODIFIER APPLICABLE</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,116 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE1MDE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMPL EDIT MENU (1501) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE1MDE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMPL EDIT MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Edit Problem Values</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol is for use with the List Manager utility, to display
+the current editable values of the selected problem entry in a list
+format for editing.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1520.html">GMPL EDIT REMOVE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RM</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1519.html">GMPL EDIT SAVE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SC</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;13</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1531.html">GMPL EDIT NEW NOTE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CM</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Additional Comments</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-1515.html">GMPLX BLANK2</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-450.html">VALM QUIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;Q</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Quit w/o Saving Changes</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-135.html">PROBLEM LIST</a></td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D INIT^<a href="http://code.osehra.org/dox/Routine_GMPLEDIT.html">GMPLEDIT</a>:$G(GMPREBLD),KEYS^GMPLEDT3,SHOW^VALM S:XQORM("B")="Quit"&$$EDITED^GMPLEDT2 XQORM("B")="Save Changes and Exit"</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Item(s):</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>40</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-02-12 10:39:03</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

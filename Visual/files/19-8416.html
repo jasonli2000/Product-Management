@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODQxNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSU PBM JOB CHECK (8416) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODQxNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSU PBM JOB CHECK</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Pharmacy Background Job Check</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PHARMACY BACKGROUND JOB CHECK</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will check to see if the monthly PBM statistics ran to
+completion.  A MailMan message will be sent to the local PSU PBM mail
+group and to the National PBM group at Hines if the report has not
+completed in 6 days.  This option is scheduled automatically by the
+PSU PBM AUTO option and normally does not need user intervention.  In case
+of computer outage, it could be run manually.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-97.html">PHARMACY BENEFITS MANAGEMENT</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PSUCP2.html">PSUCP2</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,58 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTk0LjUtMjM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>CURRENT DATE/TIME (23) &nbsp;&nbsp;  LABEL PRINT FIELD (194.5)</h1>
+<div id="demo"><table id="MTk0LjUtMjM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PRINT FIELD</td>
+<td>CURRENT DATE/TIME</td>
+</tr>
+<tr>
+<td>TYPE OF LABEL</td>
+<td>ALL</td>
+</tr>
+<tr>
+<td>DEFAULT TITLE</td>
+<td>Printed at:</td>
+</tr>
+<tr>
+<td>TEST VALUE</td>
+<td>Aug 6, 1986</td>
+</tr>
+<tr>
+<td>INTERNAL VARIABLE</td>
+<td>RTV(23)</td>
+</tr>
+<tr>
+<td>MUMPS CODE TO SET VARIABLE</td>
+<td>S X="NOW",%DT="TX" D ^%DT K %DT S X=Y X ^DD("DD") S RTV(RTJ)=Y</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

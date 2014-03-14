@@ -1,0 +1,97 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTQwMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMTS RXOP (402) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTQwMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMTS RXOP</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Health Summary Outpatient Pharmacy</td>
+</tr>
+<tr>
+<td>SYNONYM</td>
+<td>
+<ol>
+<li>
+<dt>SYNONYM:  &nbsp;&nbsp;HS PHARMACY OUTPATIENT</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This component contains information from the Outpatient Pharmacy package.  
+Only time limits apply.  Data presented include:  drug, prescription number, 
+status expiration/cancellation date (when appropriate), quantity, issue date,
+last fill date, refills remaining, provider, and cost/fill (when available).  
+  
+Note: This component is formatted similar to the Short Medication Profile.  
+If no time limit is defined, all orders are reported.  When a time limit is
+defined, all outpatient pharmacy orders which have an expiration or cancel
+date within the time limit range are reported.  
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-42.html">HEALTH SUMMARY</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S:'$D(DFN)&$D(ORVP) DFN=+ORVP S GMTSPRM="RXOP",GMTSTITL="OUTPATIENT PHARMACY" D ENCWA^<a href="http://code.osehra.org/dox/Routine_GMTS.html">GMTS</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1996-06-13 13:43:30</td>
+</tr>
+<tr>
+<td>ACCESS</td>
+<td>
+<ol>
+<li>
+<dt>ACCESS:  &nbsp;&nbsp;<a href="19.1-57.html">ORWARD</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

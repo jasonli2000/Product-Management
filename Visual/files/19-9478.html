@@ -1,0 +1,118 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTQ3OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ROR TASK (9478) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTQ3OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ROR TASK</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Registry Update & Data Extraction</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>REGISTRY UPDATE & DATA EXTRACT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ 
+This option starts the registry update and data extraction task that
+processes ALL active initialized registries.
+ 
+The following task parameters are optional. They can be defined on the
+second page of the option scheduling form (as the pairs of the variable 
+names and values).
+ 
+RORFLCLR, RORFLSET (Default: "")
+ 
+These two parameters override the values of the flags that control the 
+processing. Add the flags to the RORFLCLR variable to clear them and to
+the RORFLSET variable to set them. Below are the possible values of the 
+parameters (can be combined):
+ 
+  "E" - Use the event references (file #798.3)
+ 
+RORMNTSK (Default: "2-3-AUTO")
+ 
+Maximum number of the registry update subtasks. If this parameter is less
+than 2, all patients will be processed by the single main task. Otherwise,
+all patients can be distributed among several subtasks.
+ 
+If "N-M-AUTO" is passed as the value of this parameter and difference
+between the end and start dates of the registry update is more than M days
+then N subtasks will be started. Otherwise, the single task will run.
+ 
+RORSUSP (Default: "")
+ 
+Suspension parameters of the registry update subtasks. The subtasks are
+not suspended by default. Parameter should contain start and end times of
+the suspension (in external format) separated by the "-". For example, the
+"7:00-18:00" value will suspend the subtasks from 7am until 6pm each day
+except weekends and holidays.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-186.html">CLINICAL CASE REGISTRIES</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>TASK^<a href="http://code.osehra.org/dox/Routine_ROR.html">ROR</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>2007-12-21 08:31:27</td>
+</tr>
+<tr>
+<td>INDEPENDENTLY INVOCABLE</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>KEEP FROM DELETING</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,94 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjQtNzA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-RANDOM NUMBER (70) &nbsp;&nbsp;  REMINDER COMPUTED FINDINGS (811.4)</h1>
+<div id="demo"><table id="ODExLjQtNzA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-RANDOM NUMBER</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PXRMMATH.html">PXRMMATH</a></td>
+</tr>
+<tr>
+<td>ENTRY POINT</td>
+<td>RANDOM</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>VA-Random number</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This computed finding uses the MUMPS $RANDOM function to return
+pseudo random numbers as the value. The Occurrence Count is the
+number of random numbers that will be returned and the Computed
+Finding Parameter is used to specify the range and optionally the
+number of decimal digits; the default is to generate integers, i.e.,
+no decimal digits. The Occurrence Count entry on the finding will be
+an absolute value. Entering an Occurrence Count of 5 or -5 will
+result in 5 returns. 
+The format of the Computed Finding Parameter is: LB^UB^NDD
+
+Where LB is the inclusive lower bound, UB is the inclusive upper
+bound, and NDD is the optional number of decimal digits. LB and UB
+must be integers and UB must be greater than LB. If these conditions
+are not met then the computed finding will be false.
+
+Some examples:
+  0^500 - integers in the range 0 to 500
+  0^1^1 - numbers in the range 0 to 1 with one decimal place
+-1^1^2 - numbers in the range -1 to 1 with two decimal places
+
+***Please note, this CF was developed for use with research program
+consideration/use. No, clinical uses have been identified at
+present. Every evaluation of this finding on a given patient will
+yield different results, thus the name RANDOM. Please use caution
+when using this Computed Finding in a clinical setting.***
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>MULTIPLE</td>
+</tr>
+<tr>
+<td>CF PARAMETER REQUIRED</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

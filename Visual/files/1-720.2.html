@@ -1,0 +1,57 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03MjAuMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>*EVENT CODE SCREENING (720.2) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03MjAuMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>*EVENT CODE SCREENING</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains information that is used to screen medical
+procedures based  on a unique location, DSS unit, category,
+and procedure. 
+ 
+This file should NOT be modified directly using VA FileMan.
+ 
+**NOTE**
+This file is being exported with Event Capture Version 2.0 for
+use in converting existing data, at the pilot sites, to current
+data formats. This file will be removed in a future release of
+the Event Capture software.
+ 
+** Per patch EC*2*5, this file has been starred for deletion. **
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

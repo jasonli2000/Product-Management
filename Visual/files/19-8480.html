@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODQ4MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RMPR INV TRAN (8480) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODQ4MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RMPR INV TRAN</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Transfer Stock Between Locations</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>TRANSFER STOCK BETWEEN LOCATIO</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>Use option Edit Inventory LOCATION, HCPCS or ITEMS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is an option to transfer an Item to a different Location.  In order
+to transfer an Item, it must be set-up to both Location.  User can
+transfer all Quantities or certain Quantities.  This option does not
+remove an item from a location if all quantities have been transferred.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>TR^<a href="http://code.osehra.org/dox/Routine_RMPRPIYT.html">RMPRPIYT</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1998-03-17 09:09:53</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

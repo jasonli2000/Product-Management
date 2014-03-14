@@ -1,0 +1,117 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjQtMjE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-WH PAP SMEAR IN LAB PKG (21) &nbsp;&nbsp;  REMINDER COMPUTED FINDINGS (811.4)</h1>
+<div id="demo"><table id="ODExLjQtMjE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-WH PAP SMEAR IN LAB PKG</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PXRMCWH.html">PXRMCWH</a></td>
+</tr>
+<tr>
+<td>ENTRY POINT</td>
+<td>PAPSCR</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>VA-Lab Pap Smear SNOMED</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This computed finding pulls a list of Topography and Morphology codes that 
+are mapped to the Pap smear entry in the Women Health package. The Pap Smear 
+entry is defined in file #790.2 the WV Procedure Type file.
+
+This computed finding requires that both the topography and morphology codes 
+are mapped to the Pap smear procedure. The morphology codes must also have a 
+result assigned to them.
+
+This computed search will return up to n number of entries found in the Lab 
+package for a specific data range of procedures that match the topography 
+and morphology codes.
+
+The output of the computed finding will be returned in the Data array. The 
+format of the data array is:
+
+DATA(n,"TOPH")=
+DATA(n,"VALUE")=
+DATA(n,"MORP")=
+DATA(n,"RESULT STATUS")=
+
+The data found in the TOPH subscript is the Topography code in the following 
+format: 
+T-SNOMED CODE
+
+The data found in the VALUE subscript is the Topography code in the 
+following format: 
+T-SNOMED CODE SNOMED CODE DESCRIPTION
+
+The data found in the MOPH subscript is the Morphology code in the following 
+format: 
+M-SNOMED CODE
+
+The data found in the RESULT STATUS subscript is the result that has been 
+mapped to the Morphology code in the Women's Health package. The result will 
+either be NEM, Abnormal, Unsatisfactory, or Unknown. 
+
+The text display in the Clinical Maintenance will be found in the Text 
+array.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>MULTIPLE</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>EDIT HISTORY</td>
+<td>
+<ol>
+<li>
+<dt>EDIT DATE:  &nbsp;&nbsp;2005-05-25 15:48:51</dt>
+<dt>EDIT BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>EDIT COMMENTS:  &nbsp;&nbsp;<pre>
+Exchange Install
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

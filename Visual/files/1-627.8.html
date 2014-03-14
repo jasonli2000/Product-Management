@@ -1,0 +1,59 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02MjcuOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DIAGNOSTIC RESULTS - MENTAL HEALTH (627.8) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02MjcuOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DIAGNOSTIC RESULTS - MENTAL HEALTH</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+File contains the results of the Diagnosis Option in the
+Mental Health System.  
+    
+"AC" Xref  -  DFN, Inverse Date, Dx, Status, IFN.
+              Used to list dx as Active, Inactive, etc.
+    
+"AE" Xref  -  Type (DSM or ICD9), DFN, System Dte, Dx, DFN.
+              Used for reference.
+   
+"AF" Xref  -  DFN, Inverse Date, DX, IFN.
+              Used for historical listing.
+   
+"AG" Xref  -  Type (DSM or ICD9), DFN, Dx, IFN.
+              Used for listing duplicate diagnoses.
+   
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

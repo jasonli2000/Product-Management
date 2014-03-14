@@ -1,0 +1,66 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0xMDAuMDI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>NATURE OF ORDER (100.02) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0xMDAuMDI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>NATURE OF ORDER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file should not be added to or deleted from.  It determines the
+actions that are to be taken based on the nature of an order or change to
+an order.
+ 
+Per VHA Directive 2005-044, this file has been "locked down" by Data 
+Standardization (DS).  The file definition (i.e. data dictionary) shall 
+not be modified.  All additions, changes and deletions to entries in the 
+file shall be done by Enterprise Reference Terminology (ERT) using the 
+Master File Server (MFS), provided by Common Services (CS).   Creating 
+and/or editing locally defined fields in the file are not permitted.  Use 
+of locally defined fields that were created prior to VHA Directive 
+2005-044 shall not be supported.
+ 
+The Orders Domain has approved editing of the following fields in this
+file:
+ - PRINT CHART COPY (#.12)
+ - PRINT DAILY SUMMARY (#.13)
+ - PRINT WORK COPY (#.15)
+ - INCLUDE IN ACTIVE ORDERS (#.16)
+This may be accomplished via the option "Print Parameters for Nature of 
+Order" [ORCL NATURE], on the "Print/Report Parameters" [OR PARAM PRINTS] 
+menu.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

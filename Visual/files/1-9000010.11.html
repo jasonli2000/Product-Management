@@ -1,0 +1,57 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS05MDAwMDEwLjEx").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>V IMMUNIZATION (9000010.11) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS05MDAwMDEwLjEx" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>V IMMUNIZATION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file has been designed for joint use by the Indian Health Service and
+the Department of Veteran Affairs.
+ 
+This file contains immunizations specific to a particular visit for a 
+particular patient.  This file contains one record for each immunization.
+ 
+In the VA, if a CPT code is entered into PCE that represents an
+immunization, than an immunization will automatically be entered in the V
+Immunization file.  And vice versa, if an immunization is entered into PCE
+that has a related CPT code, then a V CPT entry will automatically be
+created with the CPT code for the immunization.  The PCE Code Mapping file
+contains the definitions of what immunization is related to what CPT code,
+and vice versa.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

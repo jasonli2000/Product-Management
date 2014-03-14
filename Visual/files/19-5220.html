@@ -1,0 +1,134 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTIyMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FB PCR (5220) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTIyMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FB PCR</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Potential Cost Recovery Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>POTENTIAL COST RECOVERY REPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is intended to identify costs for fee services which may be
+able to be recovered.
+  
+The user selects the primary service facility(s) and date range.  All
+active fee programs are reviewed for the selected search criteria. 
+The data is sorted by division, patient, fee program, and vendor and date.
+The data displayed/printed is similar to the payment outputs, only for
+patients that are means test category C/agree to pay deductible or
+not exempt from LTC copay or for non-service connected treatment.
+Insurance information is also displayed/printed.
+The user is able to filter data to include Copays or Insurance only
+related information using prompt:
+   
+   Include (P)atient Co-pays / (I)nsurance / (B)oth
+   
+If the user selects (P) or (B),the following propmpt will allow 
+the user to include Mean Test or LTC copays only or Both:
+   
+   Include (M)eans Test Co-pays /(L)TC Co-pays /(B)oth
+  
+Since July 5,2002 all LTC related payments are flagged in the report with an
+appropriate message. If the veteran doesn't have LTC test on file then
+the LTC related payment is flagged with "1010EC missing" message.
+  
+ Outpatient program (FBPCR2) - uses date finalized for date range sort.
+   o  For each service on a treatment date, the value of the 
+      SERVICE CONNECTED Y/N field is checked.  If set to no, then
+      software uses IB call to determine if patient is insured on 
+      treatment date
+   o  Check is also made if patient was Cat C and agreed to pay deductible
+      or was not exempt from LTC copay on INITIAL TREATMENT DATE.  If true,
+      flag to collect from patient is set.
+   o  If service is for C&amp;P, or both of the above two flags are negative,
+      the record is bypassed.
+  
+ Pharmacy program (FBPCR3) - uses date certified for payment for date range
+                              sort.
+   o  For each invoice number, RX number for a patient within the specified
+      date range, the value of the DATE PRESCRIPTION FILLED field is obtained
+      and checked against the authorization in the FEE BASIS PATIENT file.
+      A check is made to see if the value of the POTENTIAL COST RECOVERY
+      field is yes for an authorization which encompasses the RX FILL DATE.
+      If yes, then software uses IB call to determine if patient
+      is insured on date certified for payment.
+   o  Check is also made if patient was Cat C and agreed to pay deductible
+      on DATE PRESCRIPTION FILLED and agreed to pay deductible.
+      If true, flag to collect from patient is set.
+   o  If both of the above two flags are negative, record is bypassed.
+  
+ CH/CNH program (FBPCR67*) - uses date finalized for date range sort
+   o  For each record, for a patient within the specified date range,
+      the value of the TREATMENT FROM date is obtained and checked
+      against the authorization in the FEE BASIS PATIENT file.
+      A check is made to see if the value of the POTENTIAL COST RECOVERY
+      field is set to yes for an authorization which encompasses the
+      TREATMENT FROM DATE.  If yes, then software uses IB call to determine
+      if patient is insured on FROM/TO dates.
+   o  Check is also made if patient was Cat C and agreed to pay deductible
+      or was not exempt from LTC copay on TREATMENT FROM DATE or
+      TREATMENT TO DATE. If true on at least one of those dates,
+      flag to collect from patient is set.
+   o  If both of the above two flags are negative, record is bypassed.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_FBPCR.html">FBPCR</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-04-05 14:08:38</td>
+</tr>
+<tr>
+<td>INDEPENDENTLY INVOCABLE</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

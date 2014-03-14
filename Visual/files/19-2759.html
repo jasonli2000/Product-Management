@@ -1,0 +1,90 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjc1OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCB ENTER CEILING TRANS (2759) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjc1OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCB ENTER CEILING TRANS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Place Released Ceiling Transaction in CP File</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PLACE RELEASED CEILING TRANSAC</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ 
+Use this option when you automate Control Points at your 
+facility.  In most cases, you will be planning the 
+implementation of IFCAP at the Control Point level in
+stages.  Use this option after you have Released all
+Funding (Ceiling) Transactions for your facility and
+a Control Point is just now being automated, in other
+words, the funds have already been released 
+automatically.  You cannot re-release the ceiling, but
+you can use this option to enter the ceiling amount 
+into the Control Point Official's balance.  This option 
+will not place an entry onto the budget balance for the 
+Control Point; because this entry was made when the 
+original transaction was posted.  Fiscal service uses 
+this option to enter a ceiling transaction into a Control
+Point file.  Only use this option when a Control Point 
+is being automated after funds have already been 
+released through the funds distribution option.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>HELP FRAME</td>
+<td><a href="9.2-403.html">PRCB ENTER CEILING TRANS</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PRCBR2.html">PRCBR2</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-01-13 15:14:08</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

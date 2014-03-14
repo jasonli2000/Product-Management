@@ -1,0 +1,119 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTQzNjc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LA7 LAB RESULTS TO HDR (SUB) (4367) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTQzNjc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LA7 LAB RESULTS TO HDR (SUB)</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Send Lab Results to HDR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol should be attached to the HL7 event protocol LA7 LAB
+RESULTS AVAILABLE (EVN). See this protocol for further information.
+ 
+This subscriber protocol is used by the Laboratory package to indicate 
+to the HL package to send laboratory results to the VA Health Data
+Repository (HDR).
+ 
+It utilizes the "Router" Subscriber Protocol supported by the VistA HL
+package. The routing logic uses the value of the parameter passed into
+the router to determine which Laboratory package subscript should be
+sent to the HDR. 
+ 
+The following subscripts are supported by the event:
+   "CH", "MI", "SP", "CY", "EM".
+ 
+Examples:
+ 
+ROUTING LOGIC: D RTR^LA7HDR("CH;") will only send to HDR results
+ associated with Laboratory "CH" subscript.
+ 
+ROUTING LOGIC: D RTR^LA7HDR("MI;") will only send to HDR results
+ associated with Laboratory "MI" subscript.
+ 
+ROUTING LOGIC: D RTR^LA7HDR("CH;MI;") will only send to HDR
+ results associated with Laboratory "CH", and "MI" subscripts.
+ 
+ROUTING LOGIC: D RTR^LA7HDR("CH;MI;SP;") will only send to HDR
+ results associated with Laboratory "CH", "MI", and "SP" subscripts.
+ 
+ROUTING LOGIC: D RTR^LA7HDR("CH;MI;SP;CY;EM;") will send to HDR
+ results associated with all Laboratory subscripts currently supported.
+ 
+Note: The order of the subscripts listed in the input parameter is not
+significant. Separating the subscripts using the ";" character is
+significant. 
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>subscriber</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2010-07-16 09:22:59</td>
+</tr>
+<tr>
+<td>RESPONSE MESSAGE TYPE</td>
+<td><a href="771.2-1.html">ACK</a></td>
+</tr>
+<tr>
+<td>RECEIVING APPLICATION</td>
+<td><a href="771-202.html">LA7HDR</a></td>
+</tr>
+<tr>
+<td>EVENT TYPE</td>
+<td><a href="779.001-46.html">R01</a></td>
+</tr>
+<tr>
+<td>SENDING FACILITY REQUIRED?</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>RECEIVING FACILITY REQUIRED?</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ROUTING LOGIC</td>
+<td>;D RTR^<a href="http://code.osehra.org/dox/Routine_LA7HDR.html">LA7HDR</a>("CH;")</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

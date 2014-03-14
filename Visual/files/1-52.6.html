@@ -1,0 +1,61 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS01Mi42").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IV ADDITIVES (52.6) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS01Mi42" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IV ADDITIVES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+  The IV ADDITIVES file contains drugs which will be used as additives
+in the IV room. Any drug entered in this file must already exist in
+the DRUG file (50). All drug information relating to its use in the
+IV package is stored in the IV ADDITIVES file. If a drug is no longer
+to be used as an IV additive, DO NOT delete it from the IV ADDITIVE
+file, but simply inactivate it by entering the date it is to be dis-
+continued in the INACTIVATION field.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;PSJI</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

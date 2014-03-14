@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzM1Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSO AUTOCANCEL1 (3356) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzM1Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSO AUTOCANCEL1</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Autocancel Rx's on Admission</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>AUTOCANCEL RX'S ON ADMISSION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option should be set to run at a time between 5:30pm and 11:30 (as
+convenient for the site). It will check all admissions for T-3, and if 
+the patient is still in the hospital, will cancel all his active Rx's,
+delete all those in a non-verified status, and delete those in the 
+RX SUSPENSE file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-60.html">OUTPATIENT PHARMACY</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>AUTO^<a href="http://code.osehra.org/dox/Routine_PSOAUTOC.html">PSOAUTOC</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-03-12 09:05:49</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

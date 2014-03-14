@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjE0MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DG ELIG RESET ALL (2141) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjE0MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DG ELIG RESET ALL</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Reset ALL ID's for ALL Patients</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RESET ALL ID'S FOR ALL PATIENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This utility resets all ID's corresponding to each patient's
+eligibilities.  This is done for ALL patients.
+ 
+This option should be executed during non-peak hours.  When the job has
+completed, a Mailman message will be sent to the user.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>7^<a href="http://code.osehra.org/dox/Routine_VADPT60.html">VADPT60</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

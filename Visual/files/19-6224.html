@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNjIyNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ONCO FOLLOWUP-POST/EDIT (6224) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNjIyNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ONCO FOLLOWUP-POST/EDIT</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Post/Edit Follow-up</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>POST/EDIT FOLLOW-UP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows for the Posting/Editing of one or more "follow-ups" for
+ one or more patients.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K ONCOD0</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>PAT^<a href="http://code.osehra.org/dox/Routine_ONCOAIF.html">ONCOAIF</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-07-21 10:53:47</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

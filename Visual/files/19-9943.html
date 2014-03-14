@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTk0Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUMF LOAD INSTITUTION (9943) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTk0Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUMF LOAD INSTITUTION</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Update/refresh Institution file with IMF data</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>UPDATE/REFRESH INSTITUTION FIL</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>XUMF INSTITUTION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option queries the Institution Master File (IMF) to get the
+gold file of Institutions and automatically updates the local
+INSTITUTION (#4) file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-3.html">KERNEL</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_XUMF04Q.html">XUMF04Q</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

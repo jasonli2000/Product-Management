@@ -1,0 +1,69 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA4NzQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RCDMC EDIT RD # OF DAYS PARAME (10874) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA4NzQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RCDMC EDIT RD # OF DAYS PARAME</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Enter/Edit RD Number of Days Report Parameter</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ENTER/EDIT RD NUMBER OF DAYS R</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows users to enter/edit the "# OF DAYS FOR RD ELIG CHG RPT"
+site parameter in the AR Site Parameter (#342) file. This will allow the
+user to select how many days in the past Rated Disability Changes will be
+checked for the Rated Disability Eligibility Change Report if it is
+scheduled by IRM to be run on a recurring basis.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EDITRDDT^<a href="http://code.osehra.org/dox/Routine_RCMSITE.html">RCMSITE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

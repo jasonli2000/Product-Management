@@ -1,0 +1,160 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTMxODA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBCEM COB MANAGEMENT (3180) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTMxODA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBCEM COB MANAGEMENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is the main menu that contains the actions that can be performed
+to follow up on bills for secondary and tertiary billing.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3183.html">IBCEM COB CANCEL</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CB</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;40</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3187.html">IBCEM COB EXIT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;Q</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;100</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3181.html">IBCEM COPY SECOND/THIRD</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PC</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;10</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3193.html">IBCE EOB VIEW</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;VE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;20</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-453.html">VALM EXPAND</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SU</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;30</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Summary MRA Info</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3687.html">IBCEM COB MRA PRINT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PM</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;70</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3185.html">IBCEM COB EDIT BILL</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;VB</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;60</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;View Bill</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3160.html">IBCEM CLONE BILL</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CC</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;50</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3186.html">IBCEM COB TPJI</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;TP</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;80</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4242.html">IBCEM ENTER COMMENTS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;EC</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;33</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4243.html">IBCEM VIEW COMMENTS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;VC</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;37</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4245.html">IBCEM MRA STATUS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RS</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;35</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4449.html">IBCEM CORRECT REJECTED/DENIED BILL</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CR</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;45</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>I $G(IBFASTXT) S VALMBCK="Q"</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>K IBFASTXT</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a></td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2011-05-26 11:17:06</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

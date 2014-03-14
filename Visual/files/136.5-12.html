@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTM2LjUtMTI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>STROKE/CVA (12) &nbsp;&nbsp;  PERIOPERATIVE OCCURRENCE CATEGORY (136.5)</h1>
+<div id="demo"><table id="MTM2LjUtMTI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OCCURRENCE CATEGORY</td>
+<td>STROKE/CVA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+VASQIP Definitions (2011):
+Indicate if the patient developed a new neurologic deficit with onset 
+immediately post-operatively or occurring within the 30 days after 
+surgery.  Neurologic deficits are defined as an embolic, thrombotic, 
+or hemorrhagic vascular accident or stroke with motor, sensory, or
+cognitive dysfunction (e.g., hemiplegia, hemiparesis, aphasia, sensory
+deficit, impaired memory).  Indicate the duration as follows:
+ 1) no symptoms
+ 2) symptomatic duration less than 24 hours
+ 3) symptomatic duration of 24-72 hours
+ 4) symptomatic duration &gt;72 hours
+</pre>
+</td>
+</tr>
+<tr>
+<td>SYNONYM</td>
+<td>
+<ol>
+<li>
+<dt>SYNONYM:  &nbsp;&nbsp;CEREBRAL VASCULAR ACCIDENT</dt>
+</li>
+<li>
+<dt>SYNONYM:  &nbsp;&nbsp;CVA</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,93 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDA5Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VAQ (EDIT) SEGMENT GRP - PUBL (4092) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDA5Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VAQ (EDIT) SEGMENT GRP - PUBL</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Add/Edit Segment Group - Public</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ADD/EDIT SEGMENT GROUP - PUBLI</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>VAQ EDIT FILE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will allow the user to add/edit/delete public segment groups
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-85.html">PATIENT DATA EXCHANGE</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>W @IOF K VAQOFLG</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>W @IOF S VAQOFLG=7</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ADDEDT^<a href="http://code.osehra.org/dox/Routine_VAQUTL93.html">VAQUTL93</a></td>
+</tr>
+<tr>
+<td>DIC(S)</td>
+<td>I $P(^(0),U,2)=1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

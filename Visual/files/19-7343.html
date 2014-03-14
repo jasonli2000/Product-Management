@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzM0Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DENTPURGE (7343) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzM0Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DENTPURGE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Purge Dental AMIS</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PURGE DENTAL AMIS</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>DAS turned off</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the purging of dental data on Dental Treatment
+file #221, Dental Fee Basis file #222, Dental Class I-VI file #223,
+Dental Personnel file #224, and Dental Non Clinical Time file #226.
+Five years of dental data will remain after purge.  The data is not
+archived but is permanently purged from the system.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-96.html">DENTAL</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_DENTPUR.html">DENTPUR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI1NzA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSJ LM INTERVENTION NEW ENTRY (2570) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI1NzA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSJ LM INTERVENTION NEW ENTRY</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Enter Pharmacy Intervention</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to enter an entry into the APSP INTERVENTION file
+(#32.4).
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-77.html">INPATIENT MEDICATIONS</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>S VALMBCK="R"</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D FULL^<a href="http://code.osehra.org/dox/Routine_VALM1.html">VALM1</a> F I=0:0 S DIC(0)="QEAML",DLAYGO=9009032.4,DIC="^APSPQA(32.4,",DIADD="" D ^<a href="http://code.osehra.org/dox/Routine_DIC.html">DIC</a> K DA,DR,DIADD K:Y=-1 X,DIC,DIADD,DA,DIE Q:Y=-1  S DA=+Y,DIE=DIC,DR="[PSO INTERVENTION NEW]" K DIC D ^<a href="http://code.osehra.org/dox/Routine_DIE.html">DIE</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-02-12 10:39:04</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

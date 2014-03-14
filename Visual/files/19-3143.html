@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzE0Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCAC TR SUSPENDED (3143) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzE0Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCAC TR SUSPENDED</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Suspend an AR bill</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SUSPEND AN AR BILL</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will allow the user to place a selected AR bill that has a
+principal balance into the Suspended status.  A bill in this status will
+not print on the patient's statement but it does accrue administrative charges.
+ 
+The status of the selected bill will change to SUSPENDED and create a
+SUSPENSE transaction for the current outstanding amount.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-53.html">ACCOUNTS RECEIVABLE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>47^<a href="http://code.osehra.org/dox/Routine_RCWROFF.html">RCWROFF</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>2001-01-25 23:01:53</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

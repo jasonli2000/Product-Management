@@ -1,0 +1,154 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTM5NDI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>HLO SYSTEM MONITOR MENU (3942) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTM5NDI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>HLO SYSTEM MONITOR MENU</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is the menu for the HL7 (Optimized) System Monitor.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3943.html">HLO DISPLAY PROCESSES</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;LP</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;LIST PROCESSES</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3944.html">HLO DOWN LINKS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;DL</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;DOWN LINKS</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3945.html">HLO DISPLAY OUT-GOING QUEUES</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;OQ</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;OUTGOING QUEUES</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3947.html">HLO BRIEF SYSTEM STATUS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;BS</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;BRIEF STATUS</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3948.html">HLO VIEW A LINK</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;ML</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;6</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;MONITOR LINK</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3949.html">HLO STOP SYSTEM</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;7</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;STOP HLO</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3950.html">HLO START MENU</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;8</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;START HLO</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3951.html">HLO TEST LINK</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;TL</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;9</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;TEST TCP LINK</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3957.html">HLO MONITOR MODE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;RT</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;10</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;RealTime MODE</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3959.html">HLO START/STOP ONE QUEUE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SQ</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;12</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;START/STOP QUEUE</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-3946.html">HLO INCOMING QUEUES</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;IQ</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;INCOMING QUEUES</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4235.html">HLO SEQUENCE QUEUES</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SEQ</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;SEQUENCE QUEUES</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-33.html">HEALTH LEVEL SEVEN</a></td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a></td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2009-04-22 12:05:50</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

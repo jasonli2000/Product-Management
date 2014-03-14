@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjAyOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DG DISPOSITION TIME STATS (2029) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjAyOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DG DISPOSITION TIME STATS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Disposition Time Processing Statistics</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DISPOSITION TIME PROCESSING ST</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option generates a reports of average processing time for patients
+registered during a specified timeframe.  Any patients not dispositioned
+during that timeframe are not included in the report.  The user can
+elect to generate a listing of those "undispositioned" registrations
+at the end of the report.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_DGDIST.html">DGDIST</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

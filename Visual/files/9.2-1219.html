@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTEyMTk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FSC U807 QUERIES (1219) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTEyMTk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FSC U807 QUERIES</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+ 
+                               Queries
+ 
+Queries provide a way for finding calls that meet a certain criteria.
+The calls found can be added to the list or removed from list.
+Select means that those calls on the list meeting the criteria will remain
+on the list and those not are removed.
+Entering a criteria involves selecting the field (attribute), condition,
+and value.  This is similar to FileMans search.
+The selections for the condition and value depend on the field.  For
+example, pointer type fields do not allow a contains or greater than
+condition.  Word-processing fields do not allow an equal condition.  The
+exists and not exits conditions (null, not null) do not prompt for values.
+ The between condition uses two values and only applies to number or date
+fields.  Entering question marks for help will show the available
+selections.
+The criteria can be continued using an and or or.  Multiple operations of
+adding, removing, selecting, along with ands and ors, can find most calls
+of interest.
+Queries are used to define active update lists.  The query is stored with
+the list definition.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1994-01-09 19:07:44</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

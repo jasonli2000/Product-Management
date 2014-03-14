@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA5ODk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBCN INS BILL PROV FLAG RPT (10989) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA5ODk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBCN INS BILL PROV FLAG RPT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Insurance Company Billing Provider Flag Rpt/Msg</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>INSURANCE COMPANY BILLING PROV</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is designed to be run automatically at least once per month to
+scan all insurance companies on file looking for those in IB patch 400
+switchback mode.  This means those insurance companies in which one of the
+"Use VAMC as Billing Provider" flags are set. There is no user input.  
+This option is designed to be scheduled via TaskManager as needed and 
+scheduled to be run automatically once per month. The output is an email
+message sent to a pre-defined email address for the Chief Business Office.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_IBCNSGM.html">IBCNSGM</a></td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTU0Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>EAS DELETE MT/COPAY DEPENDENT (9543) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTU0Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>EAS DELETE MT/COPAY DEPENDENT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Delete Means Test/Copay Dependents</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DELETE MEANS TEST/COPAY DEPEND</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>DG MEANSTEST</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu option requires the user to be a holder of the DG MEANSTEST
+security key.  The option will allow authorized users to delete a Means 
+Test and/or Copay Test Dependent without having to manually process all
+Means Tests on file for the patient.  Data deleted during the process is
+stored in an ^XTMP global for 10 days.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-181.html">ENROLLMENT APPLICATION SYSTEM</a></td>
+</tr>
+<tr>
+<td>DELEGABLE</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DELETE^<a href="http://code.osehra.org/dox/Routine_EASXDR.html">EASXDR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

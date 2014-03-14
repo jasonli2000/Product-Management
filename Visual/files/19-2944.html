@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjk0NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRC RPT DOC REQUIRED DATA (2944) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjk0NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRC RPT DOC REQUIRED DATA</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Required Fields List</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>REQUIRED FIELDS LIST</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the user to list the Required Field file settings, which
+allow IFCAP to determine the items which must be prompted during
+various processes that collect data for FMS documents.  The file
+tells IFCAP, for a given FMS document type and fund, what FMS fields
+must be included on that FMS document.  If IFCAP did not, before V.5.0, 
+prompt for these fields, and if it cannot derive them from data stored
+in the FCP file, IFCAP will prompt the user for these fields.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-52.html">IFCAP</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN1^<a href="http://code.osehra.org/dox/Routine_PRCD1D.html">PRCD1D</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

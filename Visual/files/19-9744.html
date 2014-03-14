@@ -1,0 +1,80 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTc0NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQAL PATIENT ALERT LIST (9744) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTc0NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQAL PATIENT ALERT LIST</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Patient Alert List for specified date</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PATIENT ALERT LIST FOR SPECIFI</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to obtain a list of alerts for a specified patient 
+from the ALERT TRACKING file (#8992.1) for a selected date.
+ 
+A prompt is provided to obtain a quick scan listing of dates with at least
+some alerts for the patient on it based on OR and DVB alerts (other
+patient related alerts need to be identified by looking at each alert's
+message text and are included in the full list, but not the quick scan).
+ 
+The listing includes the internal entry number for the alert in the ALERT
+TRACKING file, the date and time the alert was generated, the message
+text of the alert, and information about any option or routine to be
+executed for processing the alert.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-3.html">KERNEL</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DTPT^<a href="http://code.osehra.org/dox/Routine_XQARPRT2.html">XQARPRT2</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

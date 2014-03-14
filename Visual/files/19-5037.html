@@ -1,0 +1,102 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTAzNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PXCE ENCOUNTER ENTRY SUPER (5037) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTAzNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PXCE ENCOUNTER ENTRY SUPER</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>PCE Encounter Data Entry - Supervisor</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PCE ENCOUNTER DATA ENTRY - SUP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows for the add/edit/deleting of information on certain
+encounters that most users should not be changing and the other PCE
+options will not allow to be changed. This option also does not
+conditionally not ask some fields, i.e. it always ask all of the fields.
+In addition this option allows users to document a clinical encounter in
+the V-files (visit related files), and can also delete any V-File
+encounter entries, even though they are not the creator of the entries.
+The data entered via this option includes visit information (where and
+when), and the following clinical data related to the visit: providers of
+care, problems treated, procedures and treatments done, and immunizations,
+skin tests, and patient education given.
+ 
+This option is intended for the Coordinator for PCE and/or supervisor of
+the encounter data entry staff.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>Short Menu Text</td>
+<td>SUP</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-111.html">PCE PATIENT CARE ENCOUNTER</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K SDSCEDIT</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S SDSCEDIT=1 D EN^<a href="http://code.osehra.org/dox/Routine_PXCE.html">PXCE</a>("S")</td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>1994-10-24 10:05:16</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

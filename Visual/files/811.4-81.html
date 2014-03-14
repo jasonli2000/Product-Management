@@ -1,0 +1,93 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjQtODE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-OEF/OIF SERVICE (LIST) (81) &nbsp;&nbsp;  REMINDER COMPUTED FINDINGS (811.4)</h1>
+<div id="demo"><table id="ODExLjQtODE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-OEF/OIF SERVICE (LIST)</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PXRMMSER.html">PXRMMSER</a></td>
+</tr>
+<tr>
+<td>ENTRY POINT</td>
+<td>OEIF</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>VA-OEF/OIF Service List Patient List</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This list type computed finding builds a list of patients who have
+been deployed in Operation Enduring Freedom (OEF) or Operation Iraqi
+Freedom (OIF). If the location was either OEF or OIF, but cannot be
+disclosed/determined, then it is listed as unknown (UNK).
+  
+Date range searching is done by looking for an overlap in the
+period defined by Beginning Date/Time (BDT) and Ending Date/Time
+(EDT), with the period defined by OEF/OIF From and To Dates. In order
+for a patient to be included on the list, there must be an overlap of
+these two time periods. In other words, if patients had service
+at any time in the date range specified by BDT and EDT, they will be
+included.
+ 
+The Computed Finding Parameter can be used to include only patients
+who had service at a specific location. The locations can be OEF,
+OIF, or ANY. The value ANY, which is the default, will include all
+locations. Each location is separated by the "^" character. For
+example, to include patients who had OEF, service the Computed
+Finding Parameter is:
+ OEF
+To include patients who had either OEF or OIF service, the Computed
+Finding Parameter is:
+ OEF^OIF
+To include patients who had UNK, service the Computed Finding Parameter is:
+ UNK
+
+
+
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>LIST</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

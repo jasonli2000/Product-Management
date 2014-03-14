@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODcxNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBJD DM DISABLE/ENABLE (8714) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODcxNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBJD DM DISABLE/ENABLE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Disable-Enable DM Background Job/Reports</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DISABLE-ENABLE DM BACKGROUND J</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows a user to disable or re-enable the Diagnostic
+Measures Extraction background job or certain DM reports that go
+through the monthly DM Extraction background job. Once a report is
+disabled, it won't be queued to run via the DM extract process.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DER^<a href="http://code.osehra.org/dox/Routine_IBJDE1.html">IBJDE1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,94 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExNTQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XM-I-S-SITE PARAMETERS-LOCAL (1154) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExNTQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XM-I-S-SITE PARAMETERS-LOCAL</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>SITE PARAMETERS AFFECTING LOCAL MESSAGES</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+
+Here are some Site Parameters in file 4.3 which can affect local messages:
+
+  Use the COPY LIMIT fields (#5.11, 5.12, 5.13) to limit which messages may
+  be copied, including setting a limit on number of lines and responses.
+ 
+  Use the [P-MESSAGE LINE LIMIT] field (#16.1) to set the maximum
+  number of lines that can be written to the P-MESSAGE [DEVICE].
+
+  Use [BIG GROUP SIZE] field (#7.2) to indicate when a mail group is
+  considered 'large.'
+
+  Use the [MAX DIGITS FOR MESSAGE NUMBER] field (#17.1) to set the maximum
+  number of digits that can comprise a MailMan internal message
+  identification number before they recycle back and start again from 100,000.
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;BIG GROUP SIZE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-982.html">XM-I-S-BIG GROUP SIZE</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;MAX DIGITS FOR MESSAGE NUMBER</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-984.html">XM-I-S-MAX DIGITS FOR MSG NUM</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;DEVICE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-890.html">XM-U-M-PRINT DEVICE P-MESSAGE</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;P-MESSAGE LINE LIMIT</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-983.html">XM-I-S-MESSAGE LINE LIMIT</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>2002-05-06 15:31:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

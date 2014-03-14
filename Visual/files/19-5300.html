@@ -1,0 +1,97 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTMwMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA EDITPT (5300) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTMwMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA EDITPT</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Edit Exam by Patient</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>EDIT EXAM BY PATIENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This function can be used to edit exams for patients by patient name.  The
+fields edited are the same as in the 'Case No. Exam Edit' function,
+however, this function allows selection of a patient, displays open cases
+for the patient, then asks you to select one of the patient's registered
+exams to edit.  This function should be used to re-edit fields that have
+already been entered, but need correction.  Only fields with previously
+entered data will appear for re-edit. The Status Tracking functions should
+be used to enter case data and insure that exams progress to a 'Complete'
+status.
+ 
+The user can use this function to edit an exam that has been
+completed, however, the user must have the 'manager' key to edit
+a 'completed' exam.
+ 
+Once an exam is edited and in the 'COMPLETE' status, the associated
+request will display a message as follows: "** Note: Request has been
+changed by Radiology/Nuclear Medicine**".
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K RAOPT("EDITPT")</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S RAOPT("EDITPT")=""</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_RAEDPT.html">RAEDPT</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,54 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zNjUuMTI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PAYER (365.12) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zNjUuMTI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PAYER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is a standard file exported by the IB package.  It contains
+all payers which can be communicated with electronically for
+insurance identification and verification.  Do not add, edit or
+delete these entries except through the provided edit options.
+  
+At this time, WebMD is the only vendor VISTA is communicating
+with electronically and so this file will contain those payers
+with whom WebMD currently electronically communicates.
+ 
+Per VHA Directive 10-93-142, this file definition should not be modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

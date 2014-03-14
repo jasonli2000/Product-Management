@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTM5").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQSMD COPY USER (139) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTM5" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQSMD COPY USER</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Copy One Users Menus and Keys to others</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>COPY ONE USERS MENUS AND KEYS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to copy the primary menu and secondary menu options
+from one user to one or more others.  The only options transferred will
+be those which have been delegated to the current user.  Likewise, keys
+which are held by the selected user may be copied to the receipient
+users if the current user has been delegated this capacity as well.
+ 
+This option provides an application coordinator the ability to produce
+users which have the capabilities of a current user, e.g., a ward
+clerk, scheduling clerk, etc.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_XQSMDCPY.html">XQSMDCPY</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTg2MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FB FPPS AUDIT REPORT (9861) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTg2MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FB FPPS AUDIT REPORT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Audit Report for FPPS Data</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>AUDIT REPORT FOR FPPS DATA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option generates a report from the FEE BASIS FPPS AUDIT file.  This 
+file contains an audit log of changes made to an invoice using special
+edit options.  The options allow editing of selected data after the
+invoice has been transmitted to FPPS to resolve exceptions.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-114.html">FEE BASIS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_FBFPAR.html">FBFPAR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

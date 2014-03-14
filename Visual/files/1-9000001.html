@@ -1,0 +1,54 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS05MDAwMDAx").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PATIENT/IHS (9000001) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS05MDAwMDAx" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PATIENT/IHS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file is IHS's primary patient data file.  The NAME (.01) field of this 
+file is a pointer to the VA's patient file (#2).  Fields in 
+common between the two dictionaries actually exist only in the VA patient 
+file and are referenced by the IHS patient file as computed fields.  All 
+other files containing patient data have backward pointers linking them to 
+this file.  The linkage is by patient name and the internal FileMan gener-
+ated number of the ancillary file is the same number used in this file.
+   
+All applications developed for the RPMS which require patient data will
+point to this file.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

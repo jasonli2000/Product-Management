@@ -1,0 +1,95 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OTAwMjMxMy45MS0yNDI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>463 (242) &nbsp;&nbsp;  BPS NCPDP FIELD DEFS (9002313.91)</h1>
+<div id="demo"><table id="OTAwMjMxMy45MS0yNDI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NCPDP FIELD NUMBER</td>
+<td>463</td>
+</tr>
+<tr>
+<td>NAME</td>
+<td>INTERMEDIARY AUTH TYPE ID</td>
+</tr>
+<tr>
+<td>FORMAT</td>
+<td>NUMERIC</td>
+</tr>
+<tr>
+<td>ID</td>
+<td>EW</td>
+</tr>
+<tr>
+<td>LENGTH</td>
+<td>2</td>
+</tr>
+<tr>
+<td>D0 LENGTH</td>
+<td>2</td>
+</tr>
+<tr>
+<td>D0 FORMAT</td>
+<td>NUMERIC</td>
+</tr>
+<tr>
+<td>STANDARD NCPDP FIELD NAME</td>
+<td>INTERMEDIARY AUTHORIZATION TYPE ID</td>
+</tr>
+<tr>
+<td>GET CODE</td>
+<td><pre>
+S BPS("X")=$G(BPS("Claim",BPS(9002313.0201),"Intermediary Auth Type ID"))
+S:BPS("X")="" BPS("X")=0
+</pre>
+</td>
+</tr>
+<tr>
+<td>D0 FORMAT CODE</td>
+<td><pre>
+S BPS("X")=$$NFF^BPSECFM($G(BPS("X")),2)
+</pre>
+</td>
+</tr>
+<tr>
+<td>SET CODE</td>
+<td><pre>
+S $P(^BPSC(BPS(9002313.02),400,BPS(9002313.0201),460),U,3)=BPS("X")
+</pre>
+</td>
+</tr>
+<tr>
+<td>FORMAT CODE</td>
+<td><pre>
+S BPS("X")=$$NFF^BPSECFM($G(BPS("X")),2)
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

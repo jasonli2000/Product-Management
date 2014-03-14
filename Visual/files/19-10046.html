@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTAwNDY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORWOR EXPIRED ORDERS (10046) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTAwNDY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORWOR EXPIRED ORDERS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>GUI Expired Orders Search Hours</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>GUI EXPIRED ORDERS SEARCH HOUR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows you to set the number of hours to search for a
+patient's expired orders.  For example, a value of "24" hours will search
+for all of the patient's orders that have expired within the past 24 
+hours. The number of hours determines what expired orders are displayed in
+the Recently Expired Orders view.  This can be selected on the Orders tab
+under the View menu.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>Short Menu Text</td>
+<td>Expired Orders Hours</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-35.html">ORDER ENTRY/RESULTS REPORTING</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D EDITPAR^<a href="http://code.osehra.org/dox/Routine_XPAREDIT.html">XPAREDIT</a>("ORWOR EXPIRED ORDERS")</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

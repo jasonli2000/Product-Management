@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjYyOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCS REC.DATE ALL (2628) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjYyOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCS REC.DATE ALL</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>All Transactions with Final Partials</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ALL TRANSACTIONS WITH FINAL PA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Program loops through all transactions for a selected control point.
+For each transaction read, program checks whether P.O. has been entered,
+and the date received has not yet been entered.  It then checks the
+partials.  If the final partial has been received, or the P.O. is
+either a Certified Invoice, Direct Delivery or Payment in Advance,
+the user is allowed to enter the Date Received by the Service.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN1^<a href="http://code.osehra.org/dox/Routine_PRCSRCD.html">PRCSRCD</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

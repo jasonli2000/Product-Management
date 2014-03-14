@@ -1,0 +1,69 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MzEtMzMx").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>CHOLERA (331) &nbsp;&nbsp;  DISABILITY CONDITION (31)</h1>
+<div id="demo"><table id="MzEtMzMx" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>CHOLERA</td>
+</tr>
+<tr>
+<td>DX CODE</td>
+<td>6300</td>
+</tr>
+<tr>
+<td>LONG DESCRIPTION</td>
+<td>CHOLERA, ASIATIC</td>
+</tr>
+<tr>
+<td>RELATED ICD9 CODES</td>
+<td>
+<ol>
+<li>
+<dt>RELATED ICD9 CODES:  &nbsp;&nbsp;<a href="80-7622.html">001.0</a></dt>
+<dt>ICD9 MATCH:  &nbsp;&nbsp;MATCH</dt>
+</li>
+<li>
+<dt>RELATED ICD9 CODES:  &nbsp;&nbsp;<a href="80-7623.html">001.1</a></dt>
+<dt>ICD9 MATCH:  &nbsp;&nbsp;MATCH</dt>
+</li>
+<li>
+<dt>RELATED ICD9 CODES:  &nbsp;&nbsp;<a href="80-7624.html">001.9</a></dt>
+<dt>ICD9 MATCH:  &nbsp;&nbsp;MATCH</dt>
+</li>
+<li>
+<dt>RELATED ICD9 CODES:  &nbsp;&nbsp;<a href="80-11272.html">V06.0</a></dt>
+<dt>ICD9 MATCH:  &nbsp;&nbsp;MATCH</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

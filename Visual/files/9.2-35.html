@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTM1").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQ-USER-JUMP (35) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTM1" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQ-USER-JUMP</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>JUMPING TO AN OPTION</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+If you know the name or synonymn of an option, you can 'jump' to
+it directly by using the '^'.  This means that you do not need to
+step thru several levels of menus to get to an option.
+ 
+In response to the 'Select ... Option' prompt,
+enter ^OPTION NAME, where OPTION NAME is the name or synonym of the
+option you wish to jump to.  Enter ^^OPTION NAME to jump out to the option
+and back again (as a rubber band jump).  Or just enter ^^ to return to
+the menu that is presented when you first sign on (your primary menu).
+ 
+You need only enter enough characters to uniquely identify the option.
+If what you've entered matches with other options, you will be prompted for
+a choice.  
+ 
+You may occasionally see a message about 'rebuilding-menus'.  In such a
+case, a menu has been changed and the system must take a few moments to
+rebuild some internal structures.  In such cases, you may access the option
+through the menu tree.
+ 
+Entering '^?' will display all options in your tree.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1992-04-15 14:52:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

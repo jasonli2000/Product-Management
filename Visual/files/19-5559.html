@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTU1OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ECTP LOCAL SERVICES (5559) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTU1OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ECTP LOCAL SERVICES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Identify Local Services from National File</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>IDENTIFY LOCAL SERVICES FROM N</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Use this option to indicate which of the services from the National
+Service file are 'local' services.  The option allows four choices:
+(1) Enter and/or edit the station's services; (2) List all services
+from the National Service file; (3) List the services from the National
+Service file which have been identified as 'local' station services;
+and (4) Edit a single service.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-119.html">INTERIM MANAGEMENT SUPPORT</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_ECTPSRV.html">ECTPSRV</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

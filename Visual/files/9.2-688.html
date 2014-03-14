@@ -1,0 +1,183 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTY4OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ONCO ACOS DOCUMENTATION (688) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTY4OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ONCO ACOS DOCUMENTATION</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>************ ACOS CALL FOR DATA - DOCUMENTATION ***********</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+                             ONCOANC0
+ 
+ ONCOANC0 is a Mumps program that will search oncology primary file,
+ ^ONCO(165.5, and oncology patient file, ^ONCO(160, for CALL FOR DATA
+ information.  Information is validated as it is retrieved.  Program
+ is invoked by D ^ONCOANC0.  Six-digit DAM registry ID and Accession
+ year (85 OR 90) is required.  Program must be rerun if more than one
+ year is to be searched.
+ 
+                Documentation for running ONCOANC0.EXE.
+ 
+ ONCOANC0.EXE is a compiled QuickBasic MSDOS program that is the
+ companion to mumps program ONCOANC0.  The DOS portion is required to
+ turn the captured output of Mumps program ONCOANC0 into the 850 byte
+ record format that Data Acquisition Manual requires.
+ 
+ You will need an IBM compatible hooked up to DHCP (either by modem or
+ direct connect) and a terminal emulator .  The terminal emulator must
+ be able to capture data from the screen into a disk log file.  We
+ used Procomm v2.01 for our tests.
+ 
+ 
+                     Operating instructions.
+ 
+ After compiling, place ONCOANC0.EXE into your terminal emulator's
+ directory.
+ 
+ Log onto DHCP and get into programmer.
+ 
+ Run ONCOANC0 (MUMPS)
+ 
+ After inputting the date and hitting enter you must open a log file.
+ You will have approximately 1 minute to do so.  The log file MUST be
+ named ONCOANC0.DTA - It is VERY important to name it exactly as
+ shown.
+ 
+ Close the log file when ONCOANC0 returns you to the programmer prompt.
+ 
+ Log/out of DHCP.
+ 
+ Quit your terminal emulator.
+ 
+ Run ONCOANC0 (MSDOS) - The resulting file (ONCOANC0.DAT) will be the
+ one sent to DAM.
+ 
+ ******************************************************************
+ 
+ Below is part of an actual DHCP session.
+ 
+ &gt;D ^ONCOANC0
+ 
+ ENTER DAM 6 DIGIT HOSPITAL REGISTRY ID: 123456
+ 
+ ENTER ACCESSION YEAR (85/90): 90
+ 
+  ********************************************************************
+  *  Here is where you will open your log file with a filename of    *
+  *  ONCOANC0.DTA   It is VERY important to name it exactly as shown.*
+  *  In ProComm you will do an ALT F1 to start your logging.         *
+  *  Data begins below.  Only 1 record is shown. You will have more. *
+  *  Mailman will probably cause the word wrapping of the data to be *
+  *  off.                                                            *
+  ********************************************************************
+IB7632000361234560SIOUX FALLS         IA999571050000       401301083121719
+06^
+05399                           010110199019990812033991 90        123456^
+900002   0116199001221990110000001 9992200900                      2^
+3 0  1                   101181990                                        ^
+011819901000000000                    042019901000000^
+                                                                 12071990^
+028                                0420199019  92449^
+                                            2 2^
+&gt;
+  ********************************************************************
+  *  At this point, close your log file (ALT F1 again), quit Procomm *
+  *  and exit to DOS.  You should still be in your Procomm directory *
+  *  Type ONCOANC0 to run the conversion to 850 byte records that DAM*
+  *  requires.  The resulting file will be called ONCOANC0.DAT.      *
+  ********************************************************************
+ 
+ 
+ QuickBasic "source" for ONCOANC0.EXE follows.
+ 
+ CLS
+ 
+ PRINT "WORKING";
+ OPEN "ONCOANC0.DTA" FOR INPUT AS #1
+ OPEN "ONCOANC0.DAT" FOR OUTPUT AS #2
+ 
+ START:
+ 
+ FOR A = 1 TO 8
+  LINE INPUT #1, A$(A)
+  IF EOF(1) THEN GOTO OVER
+  IF A$(A) = "" THEN GOTO START
+  IF ASC(A$(A)) &lt; 16 THEN GOTO START
+  B = LEN(A$(A)) - 1
+  A$(A) = MID$(A$(A), 1, B)
+ NEXT A
+ 
+ COUNT = COUNT + 1
+ 
+ FOR A = 1 TO 8
+  D$ = D$ + A$(A)
+ NEXT A
+ 
+  E$ = SPACE$(326)
+  D$ = D$ + E$
+ 
+ PRINT #2, D$
+ PRINT ".";
+ 
+  D$ = ""
+  E$ = ""
+ 
+ FOR A = 1 TO 8
+  A$(A) = ""
+ NEXT A
+ 
+ GOTO START
+ 
+ OVER:
+ CLOSE #1
+ CLOSE #2
+ 
+ CLS
+ PRINT "DONE!  Processed "; COUNT; " Records."
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1992-08-16 10:56:20</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

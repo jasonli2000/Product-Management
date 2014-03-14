@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MzUwLjEtMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSO NSC RX COPAY CANCEL (3) &nbsp;&nbsp;  IB ACTION TYPE (350.1)</h1>
+<div id="demo"><table id="MzUwLjEtMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSO NSC RX COPAY CANCEL</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>CAN NSC</td>
+</tr>
+<tr>
+<td>CHARGE CATEGORY</td>
+<td><a href="430.2-23.html">RX CO-PAYMENT/NSC VET</a></td>
+</tr>
+<tr>
+<td>SEQUENCE NUMBER</td>
+<td>CANCEL</td>
+</tr>
+<tr>
+<td>CANCELLATION ACTION TYPE</td>
+<td><a href="350.1-3.html">PSO NSC RX COPAY CANCEL</a></td>
+</tr>
+<tr>
+<td>UPDATE ACTION TYPE</td>
+<td><a href="350.1-4.html">PSO NSC RX COPAY UPDATE</a></td>
+</tr>
+<tr>
+<td>NEW ACTION TYPE</td>
+<td><a href="350.1-1.html">PSO NSC RX COPAY NEW</a></td>
+</tr>
+<tr>
+<td>PARENT TRACE LOGIC</td>
+<td>D PTL^<a href="http://code.osehra.org/dox/Routine_IBAUTL.html">IBAUTL</a></td>
+</tr>
+<tr>
+<td>SET LOGIC</td>
+<td>S:'$D(^(10)) X="" I $D(^(10)) X ^(10) S X=$S($D(Y(0)):$P(Y(0),U),1:"UNK") I $D(Y(0)) S X=X_"-"_$S($$DRUG^IBRXUTL1(+$P(Y(0),U,6))'="":$$DRUG^<a href="http://code.osehra.org/dox/Routine_IBRXUTL1.html">IBRXUTL1</a>(+$P(Y(0),U,6)),1:"UNK DRUG"),X=$E(X,1,18)_"-"_$S($D(IBUNIT):IBUNIT,$D(IBX):$P(IBX,U,2),1:"")</td>
+</tr>
+<tr>
+<td>FULL PROFILE LOGIC</td>
+<td>I $D(X) D EN^<a href="http://code.osehra.org/dox/Routine_PSOCPVW.html">PSOCPVW</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

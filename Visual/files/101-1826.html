@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE4MjY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIUFHA ACTION DELETE (1826) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE4MjY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIUFHA ACTION DELETE</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Delete</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Deletes the entry as an entry in TIU Document Definition file 8925.1.
+Entry will first be deleted as an item wherever it is used as an item.
+Entries In Use by documents cannot be deleted.  An entry must have Status
+Inactive before it can be deleted to ensure that it is not used during the
+delete process.  Only the owner can delete an entry.  National entries
+and Shared Components cannot be deleted.
+ 
+If the entry is pointed to by by an entry in another file (for example if
+an entry has a Business Rule which references it), it is the user's
+responsibility to delete the entry which points to it (for example, the
+Business Rule) before deleting the entry.
+ 
+OBJECT DELETE
+Objects can be deleted only from the Detailed Display of the object.
+Action deletes the object from the file.  Objects can be deleted only by
+the owner and only after being inactivated.  Objects cannot be deleted if
+they are embedded in boilerplate text of any entries.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D DELETE^<a href="http://code.osehra.org/dox/Routine_TIUFHA1.html">TIUFHA1</a>:$G(TIUFSTMP)="",DELOBJ^TIUFD4:$G(TIUFSTMP)="D"</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1998-03-30 14:21:21</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

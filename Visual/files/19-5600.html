@@ -1,0 +1,150 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTYwMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LBRY MANAGER (5600) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTYwMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LBRY MANAGER</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Library Management</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LIBRARY MANAGEMENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Assign to the Library Chief--access to all available Library options.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-5595.html">LBRY SER TECH MENU</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;SER</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-5601.html">LBRY SER MGT</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;LSM</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-5602.html">LBRY SITE PRMTERS</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;LSP</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-5639.html">LBRY OVERVIEW</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;GLP</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-5609.html">LBRY SITE CORE FILES</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;MCF</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;5</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-8097.html">LBRY TRAN REPORT</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;TSK</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;6</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-8098.html">LBRY TRAN MAN</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;MAN</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;7</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-8099.html">LBRY RESUB LOCAL</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;RES</dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;8</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-9209.html">LBRY INT INTEGRATE DATA</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-9210.html">LBRY INT PREPARE DATA</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-9669.html">LBRY LOCAL VENDOR ADD</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-9670.html">LBRY COREFLS CONVERSION</a></dt>
+<dt>DISPLAY ORDER:  &nbsp;&nbsp;12</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-121.html">LIBRARY</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K LBRYCSL,LBRYPTR</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>W @IOF I '$D(LBRYPTR) D ^<a href="http://code.osehra.org/dox/Routine_LBRYASK.html">LBRYASK</a> W @IOF</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2004-10-29 12:19:47</td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>2002-12-11 17:20:59</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

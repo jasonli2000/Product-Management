@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODg0Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SCMC PCMM HL7 TRANSMIT (8846) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODg0Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SCMC PCMM HL7 TRANSMIT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>PCMM HL7 Transmission</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PCMM HL7 TRANSMISSION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu option should be queued to run nightly. It will go thru
+the "AACXMIT" xref on the PCMM HL7 EVENT file and send an HL7
+message to the NPCD in Austin for each entry.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-48.html">SCHEDULING</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D MAIN^<a href="http://code.osehra.org/dox/Routine_SCMCHL.html">SCMCHL</a>(1)</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>MAIN^SCMCHL(1)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

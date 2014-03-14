@@ -1,0 +1,150 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODAuMy0xMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENDOCRINE,NUTRIT,METABOLIC (10) &nbsp;&nbsp;  MAJOR DIAGNOSTIC CATEGORY (80.3)</h1>
+<div id="demo"><table id="ODAuMy0xMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENDOCRINE,NUTRIT,METABOLIC</td>
+</tr>
+<tr>
+<td>DISORDER/PROCEDURE</td>
+<td>
+<ol>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;AMPUTATION</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;285</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;ADRENAL OR PITUITARY SURGERY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;286</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;SKIN GRAFT,WOUND DEBRIDEMENT</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;287</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;OR PROCEDURE FOR OBESITY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;288</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;PARATHYROID SURGERY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;289</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;THYROID SURGERY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;290</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;THYROGLOSSAL SURGERY</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;291</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;OTHER OR PROCEDURE:ENDOCR,NUTR</dt>
+<dt>SURGERY:  &nbsp;&nbsp;YES</dt>
+<dt>DRGa:  &nbsp;&nbsp;292</dt>
+<dt>DRGb:  &nbsp;&nbsp;293</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE>69:292,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:292,1:293)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE>69:292,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:292,1:293)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;DIABETES; NO SURGERY</dt>
+<dt>DRGa:  &nbsp;&nbsp;294</dt>
+<dt>DRGb:  &nbsp;&nbsp;295</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE>35:294,1:295),FIN=1</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE>35:294,1:295),FIN=1</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;NUTR,MISC METABOLIC DISORDER</dt>
+<dt>DRGa:  &nbsp;&nbsp;296</dt>
+<dt>DRGb:  &nbsp;&nbsp;297</dt>
+<dt>DRGc:  &nbsp;&nbsp;298</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE<18:298,AGE>69:296,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:296,1:297)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE<18:298,AGE>69:296,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:296,1:297)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;INBORN ERROR OF METABOLISM</dt>
+<dt>DRGa:  &nbsp;&nbsp;299</dt>
+</li>
+<li>
+<dt>DISORDER/PROCEDURE:  &nbsp;&nbsp;ENDOCRINE DISORDER</dt>
+<dt>DRGa:  &nbsp;&nbsp;300</dt>
+<dt>DRGb:  &nbsp;&nbsp;301</dt>
+<dl><dt>MUMPS CODE:</dt>
+<dd>
+<ol>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE>69:300,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:300,1:301)</dt>
+</li>
+<li>
+<dt>MUMPS CODE:  &nbsp;&nbsp;D AGE Q:$D(BAD)  S DRG=$S(AGE>69:300,1:""),FIN=1 I 'DRG D COM S DRG=$S(X?1"Y".E:300,1:301)</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

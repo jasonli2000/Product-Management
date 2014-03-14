@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTUwOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQBUILDTREE (9508) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTUwOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQBUILDTREE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Build Primary Menu Trees</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>BUILD PRIMARY MENU TREES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option can be used to force the rebuilding of the tree structures
+used for the ^JUMP.  Whenever an item in a menu is modified, the tree
+must get rebuilt.  This will happen automatically the first time it is
+referenced, but forcing the rebuild can often save time.
+The rebuilding of all trees can be queued.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>HELP FRAME</td>
+<td><a href="9.2-52.html">XQBUILDTREE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>BUILD^<a href="http://code.osehra.org/dox/Routine_XQ81.html">XQ81</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUFILE ACCESS USE4.13 (114) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUFILE ACCESS USE4.13</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>UNDERSTANDING DUZ - THE USER NUMBER</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+ 
+When listing the file accesses by user or by file, you will see the user's
+name followed by a number in parentheses.  The heading indicates that this
+is the DUZ#.  What could it be?
+ 
+DUZ is a local variable which identifies the user who has signed-on.  Once
+the user enters an access and verify code, the Kernel sign-on program (XUS)
+uses this variable to select an entry in the User File.  It must be
+unique, so the user's name won't do.  Instead, the internal entry number is
+used.  That's what becomes the value of DUZ.
+ 
+You'll notice that some users have low numbers while others have high ones.
+This simply indicates the order of their names in the User File.  Users
+with low numbers are often people who began using your system some years
+ago, while users with high numbers are recent members of your computing
+community.  Other than this curiosity, though, DUZ has no special meaning 
+for an individual user.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-02-13 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

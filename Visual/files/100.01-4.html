@@ -1,0 +1,76 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAwLjAxLTQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FLAGGED (4) &nbsp;&nbsp;  ORDER STATUS (100.01)</h1>
+<div id="demo"><table id="MTAwLjAxLTQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FLAGGED</td>
+</tr>
+<tr>
+<td>SHORT NAME</td>
+<td>flag</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>"?"</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Orders that need clarification or further instructions.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MASTER ENTRY FOR VUID</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>VUID</td>
+<td>4501095</td>
+</tr>
+<tr>
+<td>EFFECTIVE DATE/TIME</td>
+<td>
+<ol>
+<li>
+<dt>EFFECTIVE DATE/TIME:  &nbsp;&nbsp;2007-01-10 10:01:32</dt>
+<dt>STATUS:  &nbsp;&nbsp;ACTIVE</dt>
+</li>
+<li>
+<dt>EFFECTIVE DATE/TIME:  &nbsp;&nbsp;2007-01-09 10:06:24</dt>
+<dt>STATUS:  &nbsp;&nbsp;ACTIVE</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

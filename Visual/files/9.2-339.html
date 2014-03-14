@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTMzOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XDR MERGE PROCESS (339) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTMzOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XDR MERGE PROCESS</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>MERGE PROCESS</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+The merge process really begins when two records are Verified as
+Duplicates.  When two records are verified as duplicates the operator
+is asked which record they wish to merge to the other record (the From
+and To records).  After the From record is established the following
+steps occur:
+ 
+The packages that have a file entry for the 'Affects Record Merge'
+are first checked to see if they have data for the From record which
+is being merged.  If they do have data they are then checked to see
+if they have their own special merge routine or if an interactive
+special merge process has to occur for them.  This is done for all
+packages.
+ 
+If none of the packages have an interactive merge (which means the
+main merge has to wait until that packages merge has taken place)
+the merge process will continue.  If there is an interactive merge
+process that has to occur for a particular package a bulletin will
+be sent to all members of the Verified Duplicate Mail Group notifying
+them about the records that have been identified as Verified duplicates.
+ 
+Once all the package interactive merge processes have been completed
+the two records will be merged and a Merged Bulletin sent to all them
+members of the Merged Mail Group.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1991-06-24 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

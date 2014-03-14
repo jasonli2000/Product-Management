@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTEwOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUFILE ACCESS USE3.1 (108) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTEwOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUFILE ACCESS USE3.1</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>AUDIT ACCESS TO FILES</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+Audit privileges might be granted to advanced VA FileMan users who are
+interested in developing new audit capabilities.  With audit access, which
+must be accompanied by DD access, VA FileMan's 'Modify' option may be used
+to set an audit flag for a particular field within a file.  (This access
+does not include setting audit conditions with MUMPS code which is
+reserved for the programmer-user, DUZ(0)=@.)
+ 
+The data values for attribute fields may be recorded in the Audit File by
+setting an audit flag in the data dictionary for that field.  The SSN field
+in the Patient File, for example, could be audited.  There are two choices
+for the audit.  An entry may be made in the Audit File when a value is
+entered or changed, or an entry may be made only when the value is changed,
+that is, edited or deleted.   The second may be all that's needed.  In
+the SSN example, you would monitor just the circumstances of the change, not
+of the initial SSN assignment.
+ 
+To display the results of the audit, read access to the Audit File must be
+granted.  The Audit File, #1.1, may then be queried in the usual way.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-02-13 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

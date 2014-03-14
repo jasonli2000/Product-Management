@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTA2Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBCR ENTER TP NEG RATES (9062) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTA2Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBCR ENTER TP NEG RATES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Transfer Pricing Neg. Rates Enter/Edit</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>TRANSFER PRICING NEG. RATES EN</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>IB SUPERVISOR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to enter/edit Transfer Pricing Negotiated rates.
+Rates can be negotiated between another VA Facility or an entire network
+(VISN).  This option can only be used to edit rates in charge sets that
+were previously set up using this option.  The rates entered here are
+stored in Charge Master for use.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ENTER^<a href="http://code.osehra.org/dox/Routine_IBCRETP.html">IBCRETP</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

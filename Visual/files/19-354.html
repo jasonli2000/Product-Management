@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzU0").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XMMGR-STOP-BACKGROUND-FILER (354) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzU0" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XMMGR-STOP-BACKGROUND-FILER</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>STOP background filer</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>STOP BACKGROUND FILER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Use this option to STOP the background filer gently at the end of a delivery
+before it starts to deliver any further messages.  This only stops local 
+delivery operations.  ALL LOCAL MAIL DELIVERY WILL STOP until the
+XMMGR-START-BACKGROUND-FILER option is run.
+ 
+STOPS DELIVERY OF LOCAL MAIL GRACEFULLY !!
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-4.html">MAILMAN</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>STOP^<a href="http://code.osehra.org/dox/Routine_XMKPL.html">XMKPL</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1991-08-12 15:06:49</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

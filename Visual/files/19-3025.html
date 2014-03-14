@@ -1,0 +1,80 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMzAyNQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCAE PR LETTERS (3025) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMzAyNQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCAE PR LETTERS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Print Letters by Date</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PRINT LETTERS BY DATE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will print Patient Statements and Follow-up Letters that
+should have printed on the selected date but didn't.  All statements and 
+letters will print if no patient is selected.
+ 
+NOTE: Enter a patient name to print a Patient Statement for one patient.
+If no statement prints and an Account Balance Discrepancy bulletin is
+not generated, it may be because the account has no new activity other
+than interest charges.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D PRDT^<a href="http://code.osehra.org/dox/Routine_PRCAG.html">PRCAG</a> K DTOUT</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1993-05-07 12:11:01</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,87 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI1MzE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSJ LM DETAILED ALLERGY MENU (2531) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI1MzE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSJ LM DETAILED ALLERGY MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>ALLERGY/ADR LIST MENU</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2530.html">PSJ LM EDIT ALLERGY/ADR DATA</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;EA</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2529.html">PSJ SELECT ALLERGY</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SA</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;21</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-77.html">INPATIENT MEDICATIONS</a></td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D A^<a href="http://code.osehra.org/dox/Routine_PSJ200.html">PSJ200</a>(21,20),SHOW^VALM S XQORM("#")=+$O(^ORD(101,"B","PSJ LM NEW SELECT ALLERGY",0))_"^1:"_+PSJALL</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>28</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1999-07-19 16:44:56</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

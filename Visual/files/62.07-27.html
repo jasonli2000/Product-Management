@@ -1,0 +1,56 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuMDctMjc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MYCOLOGY SMEAR/PREP (labeled) (27) &nbsp;&nbsp;  EXECUTE CODE (62.07)</h1>
+<div id="demo"><table id="NjIuMDctMjc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MYCOLOGY SMEAR/PREP (labeled)</td>
+</tr>
+<tr>
+<td>EXECUTE CODE</td>
+<td>S DR="19.5////"_DUZ_";19//P;19.6;19.6///***"_$P(^LAB(60,LRTS,0),U,1)_";21;21///***"_$P(^LAB(60,LRTS,0),U,1)_";18" D ^DIE Q  ;FIFO</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>EDIT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Prompt MYCOLOGY RPT STATUS with default of P; stuff MYC PERSON with current
+user; stuff MYCOLOGY SMEAR/PREP with ***TEST NAME; MYCOLOGY SMEAR/PREP;
+stuff MYCOLOGY RPT REMARK with ***TEST NAME; MYCOLOGY RPT REMARK;
+MYCOLOGY RPT DATE APPROVED.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

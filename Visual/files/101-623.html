@@ -1,0 +1,125 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTYyMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SDAM LIST MENU (623) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTYyMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SDAM LIST MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Appointment Lists</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-624.html">SDAM LIST CHECKED IN</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CI</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-625.html">SDAM LIST NO SHOWS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;NS</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-626.html">SDAM LIST ALL</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;TA</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-628.html">SDAM LIST NO ACTION</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;NA</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-647.html">SDAM LIST CANCELLED</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CA</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-653.html">SDAM LIST FUTURE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;FU</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-654.html">SDAM LIST INPATIENT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;IP</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-678.html">SDAM LIST NON-COUNT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;NC</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-627.html">SDAM LIST CHECKED OUT</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CO</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-48.html">SCHEDULING</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>S:'$D(VALMBCK) VALMBCK="" D EXIT^<a href="http://code.osehra.org/dox/Routine_SDAM.html">SDAM</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S XQORM(0)="1A"</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>W ""</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select List:</td>
+</tr>
+<tr>
+<td>MENU DEFAULT</td>
+<td>No Action Taken</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>40</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1996-06-13 18:50:49</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTU4Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGJ EDIT SUMMARY/REPORT (583) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTU4Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGJ EDIT SUMMARY/REPORT</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>IRT Group 1 Edit</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol is the action to edit a specific IRT record. This is an action
+attached to the protocol menu that is called when a record deficiency is
+an op report, interim summary or discharge summary and the deficiency is 
+being edited.  This is the action that allows the IRT record to be updated
+as well as the deficiency.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-604.html">DGJ DELETE DEFICIENCY</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;24</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-185.html">INCOMPLETE RECORDS TRACKING</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S (X,DGJTNUM)=1 D EDIT^<a href="http://code.osehra.org/dox/Routine_DGJTVW1.html">DGJTVW1</a></td>
+</tr>
+<tr>
+<td>IDENTIFIER</td>
+<td>RC</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2002-05-06 15:47:41</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

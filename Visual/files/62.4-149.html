@@ -1,0 +1,243 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuNC0xNDk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>BIOU KEYPAD (149) &nbsp;&nbsp;  AUTO INSTRUMENT (62.4)</h1>
+<div id="demo"><table id="NjIuNC0xNDk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>BIOU KEYPAD</td>
+</tr>
+<tr>
+<td>PROGRAM</td>
+<td>LABIOU</td>
+</tr>
+<tr>
+<td>ENTRY for LAGEN ROUTINE</td>
+<td>Accession cross-reference</td>
+</tr>
+<tr>
+<td>CROSS LINKED BY</td>
+<td>IDE</td>
+</tr>
+<tr>
+<td>METHOD</td>
+<td>URINE</td>
+</tr>
+<tr>
+<td>OVERLAY DATA</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>NEW DATA</td>
+<td>D NEW^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>RESTART</td>
+<td>D RESTART^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>CHEM TESTS</td>
+<td>
+<ol>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-52.html">PH</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),4,6)</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(450,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-149.html">URINE PROTEIN</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),7) D:V'=":" CODE S:V=":" V="TRACE"</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;NEG$1+$2+$3+$4+</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(691,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-148.html">URINE GLUCOSE</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),8) D:V'=":" CODE S:V=":" V="TRACE"</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;NEG$1+$2+$3+$4+</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(690,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-147.html">URINE KETONES</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),9) D:V'=":" CODE S:V=":" V="TRACE"</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;NEG$1+$2+$3+$4+</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(689,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-1158.html">URINE BLOOD</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),11) D:V'=":" CODE S:V=":" V="TRACE"</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;NEG$1+$2+$3+$4+</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(687,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-1194.html">NITRITE, URINE</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),12) D CODE</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;NEG$POS</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(795,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-383.html">COLOR</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),15) D CODE</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;NO COLOR$PALE YEL$YELLOW$LT. AMB$AMBER$ORANGE$RED$BLUE$GREEN$BROWN</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(483,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-489.html">APPEARANCE</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),16) D CODE</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;CLEAR$SL. CLDY$CLOUDY$TURBID</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(162,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-143.html">SPECIFIC GRAVITY</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),18,22)</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(685,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-1195.html">LEUCOCYTE ESTERASE, URINE</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),34) D:V'=":" CODE S:V=":" V="TRACE"</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;NEG$1+$2+$3+$4+</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(796,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-151.html">URINE WBC/HPF</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),24) D CODE</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;NONE$1-2$3-4$5-9$10-14$15-19$20-29$30-49$50+$TNTC</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(693,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-272.html">URINE RBC/HPF</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),25) D CODE</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;NONE$1-2$3-4$5-9$10-14$15-19$20-29$30-49$50+$TNTC</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(694,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-1134.html">SQUAMOUS EPITHELIAL</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),26) D:V'=":" CODE S:V=":" V="TRACE"</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(777,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-157.html">HYALINE CASTS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),28) D CODE</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;NONE$1-2$3-4$5-9$10-14$15-19$20-29$30-49$50+$TNTC</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(702,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-158.html">GRANULAR CASTS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),29) D CODE</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;NONE$1-2$3-4$5-9$10-14$15-19$20-29$30-49$50+$TNTC</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(703,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-153.html">URINE BACTERIA</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),31) D:V'=":" CODE S:V=":" V="TRACE"</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;NEG$1+$2+$3+$4+</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(696,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-154.html">URINE MUCUS</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),32) D:V'=":" CODE S:V=":" V="TRACE"</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;NEG$1+$2+$3+$4+</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(697,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-161.html">URINE YEAST</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),33) D:V'=":" CODE S:V=":" V="TRACE"</dt>
+<dt>PARAM 3:  &nbsp;&nbsp;NEG$1+$2+$3+$4+</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(706,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-1150.html">OTHER</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;I $D(TY(200)) S V=TY(200) D:V'=":" CODE S:V=":" V="TRACE" S RMK=RMK_"CRYSTALS, "_V_"; " K V</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(780,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-1150.html">OTHER</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;I $D(TY(7)) S RMK=RMK_"MICROSCOPIC NOT INDICATED; " K V</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(780,1)</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERFACE NOTES</td>
+<td><pre>
+The program LABIOU is used with the Biovation keypads with or without
+the keypad being interfaced to a urinalysis instrument (exp. Clinitek 200).
+The 1 line format should be used - model 3500b format #1.
+Param 1 is used to extract the results for the test.  Param 3 is optional
+and may be used to define the vocabulary for reporting.
+ 
+Example: for the test URINE PROTEIN
+Param 1:  S V=$E(Y(1),7) D:V'=":" CODE S:V=":" V="TRACE"
+The value is assigned the 7th character of the transmitted results.
+If the value is ":" it is reported as "TRACE", otherwise it uses calls
+the subroutine 'CODE' to determine how it is to be reported.
+The value is used to select the result from a character string either
+on the line CODE or in Param 3.  If Param 3 has an entry it will be used,
+otherwise it uses 'None$Few$Mod$Many$Profuse$Noted' (value 0 gives a
+result of 'None', 1 gives a result of 'Few', ...).
+ 
+Example: if the value transmited is '3'
+and Param 3 is Neg$30$100$300$&gt;200
+the result would be '300'.
+If Param 3 did not have an entry, the result would be 'Many'.
+ 
+Note: The '$' is used as a delimiter instead of the usual '^' to avoid
+conflicting with file definitions.
+ 
+Coded Comments:
+Comments may be entered by using the test 'OTHER'.
+(to enter more than one test, 'OTHER', enter it in quotes)
+ 
+Comment without degrees:
+Example (Param 1):  I $D(TY(1)) S RMK=RMK_"QUANTITY NOT SUFFICIENT; " K V
+where 1 is the code for the comment 'QUANTITY NOT SUFFICIENT; '.
+The code # must be &lt;99 and may be dependent on what the instrument is
+able to transmit.  The comment will string together any other comments,
+hence the reason for ending the comment with a "; ".  Since a value is not
+being assigned to the test 'OTHER', the variable 'V' is killed.
+ 
+Comment with a degree:
+Example:
+Param 1:
+I $D(TY(160)) S V=TY(160) D CODE S RMK=RMK_"Trip Phos Cr, "_V_"; " K V
+Param 3:
+$1+$2+$3+$4+
+where 16 is the first 2 digits of the code for the comment 'Trip Phos Cr'
+and V is the degree of the comment.
+If 164 was entered, the comment would be 'Trip Phos Cr, 4+; '.
+If Param 3 was not entered, the comment would be 'Trip Phos Cr, Profuse; '.
+ 
+The field 'LOAD CHEM TESTS' should be set to 'U' if you have many comment
+entries.  This will avoid possible store errors.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

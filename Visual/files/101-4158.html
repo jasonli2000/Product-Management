@@ -1,0 +1,81 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTQxNTg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU ACTION EDIT COSIGNER (4158) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTQxNTg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU ACTION EDIT COSIGNER</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Edit Cosigner</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This List Manager action allows authorized users to modify the Expected
+Cosigner (Attending Physician for Discharge Summaries) of documents
+without having access to the text of the document. It is intended for
+Clinical Coordinators when they need to change the Expected Cosigner of a
+document whose text cannot be edited because it is already signed. It
+permits edit of unsigned or uncosigned documents of type Progress
+Notes, Consults, or Discharge Summaries.
+ 
+See USR ACTION EDIT COSIGNER.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-163.html">TEXT INTEGRATION UTILITIES</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>Q:$G(TIUGLINK)  D EDITCOS^<a href="http://code.osehra.org/dox/Routine_TIURA3.html">TIURA3</a></td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I '$G(TIUGLINK)</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2006-12-27 14:45:55</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

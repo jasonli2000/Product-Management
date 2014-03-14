@@ -1,0 +1,56 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0yMTAxLjY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GENERIC CODE SHEET LOCK (2101.6) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0yMTAxLjY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GENERIC CODE SHEET LOCK</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file is used to store the user, process and date@time a Generic
+Code Sheet process was locked.  A process can be defined as batching 
+or transmitting code sheets.
+ 
+The data stored in this file is for informational purposes only.
+It is not used to control the locking of processes in Generic Code
+Sheets.
+ 
+Generic Code Sheets uses incremental locks to prevent users from
+batching and transmitting duplicate code sheets.  When one user
+is batching or transmitting and a second user tries to run the
+same process, a message is displayed from this file to the second user.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

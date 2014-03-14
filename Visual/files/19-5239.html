@@ -1,0 +1,69 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTIzOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FBUC APPEAL EDIT (5239) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTIzOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FBUC APPEAL EDIT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Appeal Edit for Unauthorized Claim</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>APPEAL EDIT FOR UNAUTHORIZED C</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Edit a claim which has been appealed to the Board of Veterans Appeals (BVA).
+  
+Selection of claims is limited to only those claims which have a status
+of APPEAL/NOTICE OF DISAGREE RECV, APPEAL/ISSUED STATMENT OF CASE,
+APPEAL COMPLETE/PENDING REVIEW or APPEAL DISPOSITIONED.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>AED^<a href="http://code.osehra.org/dox/Routine_FBUCED.html">FBUCED</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

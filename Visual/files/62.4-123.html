@@ -1,0 +1,106 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuNC0xMjM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>NOVA (123) &nbsp;&nbsp;  AUTO INSTRUMENT (62.4)</h1>
+<div id="demo"><table id="NjIuNC0xMjM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>NOVA</td>
+</tr>
+<tr>
+<td>PROGRAM</td>
+<td>LANOVA</td>
+</tr>
+<tr>
+<td>ENTRY for LAGEN ROUTINE</td>
+<td>Tray-cup or sequence x-ref</td>
+</tr>
+<tr>
+<td>CROSS LINKED BY</td>
+<td>CUP</td>
+</tr>
+<tr>
+<td>METHOD</td>
+<td>NOVA</td>
+</tr>
+<tr>
+<td>OVERLAY DATA</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>NEW DATA</td>
+<td>D NEW^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>RESTART</td>
+<td>D RESTART^<a href="http://code.osehra.org/dox/Routine_LASET.html">LASET</a></td>
+</tr>
+<tr>
+<td>CHEM TESTS</td>
+<td>
+<ol>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-176.html">SODIUM</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),35,39) D NUM S V=$J(V,0,0) S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(5,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-177.html">POTASSIUM</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),43,47) D NUM S V=$J(V,0,1) S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(6,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-178.html">CHLORIDE</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),51,56) D NUM S V=$J(V,0,0) S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(7,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-179.html">CO2</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),60,63) D NUM S V=$J(V,0,0) S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(8,1)</dt>
+</li>
+<li>
+<dt>TEST:  &nbsp;&nbsp;<a href="60-1160.html">ANION GAP</a></dt>
+<dt>PARAM 1:  &nbsp;&nbsp;S V=$E(Y(1),68,69) D NUM S:'V V=""</dt>
+<dt>ROUTINE STORAGE:  &nbsp;&nbsp;TV(790,1)</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERFACE NOTES</td>
+<td><pre>
+Transmits at 7 data bits, 2 stop bits, even or odd parity and selectable
+baud rate.  Must use a loadlist to link patient data.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

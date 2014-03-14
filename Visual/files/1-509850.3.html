@@ -1,0 +1,58 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS01MDk4NTAuMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>A&SP STAFF (509850.3) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS01MDk4NTAuMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>A&SP STAFF</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The A&amp;SP STAFF file (#509850.3) contains the names of all A&amp;SP clinicians 
+and students.  Information in this file includes the staff person's name, 
+activation and inactivation dates, status (i.e., clinician, fee basis, 
+other provider, or student), and an ID number for sites that may wish to 
+enter provider by code number.
+  
+Entries in this file are pointed to by fields in the A&amp;SP CLINIC VISIT 
+file (#509850.6) in order to identify staff members who took part in a 
+given visit. Therefore, staff names should NEVER be deleted.
+  
+Data in this file SHOULD NOT be altered through the use of VA FileMan; 
+input should take place ONLY through the QUASAR menu options.
+  
+Per VHA Directive 10-93-142, this file definition SHOULD NOT be modified.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

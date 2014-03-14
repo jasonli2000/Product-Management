@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODE0Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>HBHC AUTO-QUEUED FILE UPDATE (8143) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODE0Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>HBHC AUTO-QUEUED FILE UPDATE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Auto-queue HBHC File Update</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>AUTO-QUEUE HBHC FILE UPDATE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option runs a daily auto-queued batch job to create ^HBHC(632) (visit)
+nodes from outpatient encounter information =&gt; patient, appointment date/time,
+hospital location (clinic), provider, diagnosis code(s), &amp; CPT code(s).
+
+This job also cancels ^HBHC(632 records if outpatient encounter referenced no
+longer exists &amp; deletes corresponding record from ^HBHC(634 (transmit) file if
+transmit status is 'filed'. 
+
+Members in mail group HBH receive a mail message if the batch job locates any
+errors. 
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-152.html">HOSPITAL BASED HOME CARE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_HBHCAPPT.html">HBHCAPPT</a></td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

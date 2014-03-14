@@ -1,0 +1,67 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjcwMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCHPM CS BATCH & PRINT (2700) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjcwMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCHPM CS BATCH & PRINT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Batch and Print Code Sheet (LOG/GSA/DLA)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>BATCH AND PRINT CODE SHEET (LO</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows PPM to print the actual LOG, GSA &amp; DLA code sheets
+which have been created and signed, but not yet released to Austin.
+This is the final step that must be done before the actual transmission.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>BATCH^<a href="http://code.osehra.org/dox/Routine_PRCFALOG.html">PRCFALOG</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

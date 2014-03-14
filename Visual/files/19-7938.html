@@ -1,0 +1,118 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzkzOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ECXSCLOAD (7938) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzkzOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ECXSCLOAD</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Create DSS Clinic Stop Code File</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CREATE DSS CLINIC STOP CODE FI</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>ECXMGR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ This option allows the DSS extract manager to create the CLINICS AND
+ STOP CODES file (#728.44) which will contain clinics, the stop codes
+ assigned to those clinics by MAS, and the stop codes used for those
+ clinics by DSS.  The process by which new clinic entries are added and 
+ existing clinic entries are edited is as follows:
+  
+ NEW CLINIC ENTRIES
+  1. The HOSPITAL LOCATION file (#44) is searched for all clinics.  
+     Clinics that are currently inactive are ignored.  
+  2. New clinic entries to the CLINICS AND STOP CODES file (#728.44) are 
+     added with the following field defaults:
+     a. STOP CODE field (1) = STOP CODE NUMBER field (8) in HOSPITAL 
+        LOCATION file (#44)
+     b. CREDIT STOP CODE field (2) = CREDIT STOP CODE field (2503) in 
+        HOSPITAL LOCATION file (#44)
+     c. DSS STOP CODE field (3)= STOP CODE NUMBER field (8) in HOSPITAL 
+        LOCATION file (#44)
+     d. DSS CREDIT STOP CODE field (4) = CREDIT STOP CODE field (2503) 
+        in HOSPITAL LOCATION file (#44)
+     e. ACTION TO SEND field (5) = 
+        "1" (SEND STOP CODE) if CREDIT STOP CODE field (2) does not
+            exist
+        "5" (SEND BOTH AS ONE RECORD WITHOUT NATIONAL CODE) if CREDIT 
+            STOP CODE field (2) exists
+        "6" (DO NOT SEND) if Clinic is flagged as a "non-count" clinic 
+            in HOSPITAL LOCATION file (#44)
+ 
+ EXISTING CLINIC ENTRIES
+  1. All pre-existing clinics are checked against their counterpart in 
+     the HOSPITAL LOCATION file (#44) to be sure that the STOP CODE 
+     field (1) in the CLINICS AND STOP CODES file (#728.44) matches the 
+     STOP CODE NUMBER field (8) in the HOSPITAL LOCATION file (#44).  
+     The same check is made on the CREDIT STOP CODE field (2) to be sure 
+     that it matches the CREDIT STOP CODE field (2503) in the HOSPITAL 
+     LOCATION file (#44).
+  2. Any pre-existing clinic that has had a change to its active status
+     or non-count status in the HOSPITAL LOCATION file (#44) will be
+     reported in an 'UNREVIEWED CLINCS' report with a symbol that 
+     identifies the change.  This is the same report that is printed
+     via the 'UNREVIEWED CLINICS' option of the 'Clinics and DSS Stop
+     Codes Print' menu option.
+  3. Any stop code changes to pre-existing clinics will delete the DATE 
+     LAST REVIEWED field (6) in the CLINICS AND STOP CODES file (#728.44).
+     This will ensure that the edited clinics will print out as 
+     "unreviewed" the next time the clinic worksheet (from the "Clinics 
+     and DSS Stop Codes Print") is produced.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-165.html">DSS EXTRACTS</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_ECXSCLD.html">ECXSCLD</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

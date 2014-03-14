@@ -1,0 +1,65 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NS05OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>QUEBEC (99) &nbsp;&nbsp;  STATE (5)</h1>
+<div id="demo"><table id="NS05OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>QUEBEC</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>QC</td>
+</tr>
+<tr>
+<td>VA STATE CODE</td>
+<td>80</td>
+</tr>
+<tr>
+<td>AAC RECOGNIZED</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>US STATE OR POSSESSION</td>
+<td>No</td>
+</tr>
+<tr>
+<td>COUNTY</td>
+<td>
+<ol>
+<li>
+<dt>COUNTY:  &nbsp;&nbsp;QUEBEC</dt>
+<dt>VA COUNTY CODE:  &nbsp;&nbsp;260</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

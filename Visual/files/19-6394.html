@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNjM5NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ESP REVIEW COMPLETED OR (6394) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNjM5NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ESP REVIEW COMPLETED OR</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Review Completed Offense Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>REVIEW COMPLETED OFFENSE REPOR</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>ESP SUPERVISOR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This submenu option allows the designated supervisor to review an
+officer's completed offense report.  If the report is completed fully,
+the supervisor may close the report.  If the report needs additional
+information, then a mail message will be sent to the investigating
+officer informing them that the offense report needs additional work.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-133.html">POLICE & SECURITY</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D ^<a href="http://code.osehra.org/dox/Routine_ESPCLEAN.html">ESPCLEAN</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_ESPORR.html">ESPORR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

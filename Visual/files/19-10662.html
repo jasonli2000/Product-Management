@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA2NjI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRSP ESR SAP (10662) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA2NjI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRSP ESR SAP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Approve Signed ESRs</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>APPROVE SIGNED ESRS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+A T&amp;A Supervisor of a part-time physician is required to review and take
+one of the following actions on each signed day of the part-time
+physician's ESR: (A)pprove, (B)ypass or mark the ESR for (R)esubmission.
+When the T&amp;A Supervisor approves a signed daily ESR, this option
+attempts to update the part-time physician's timecard for that day. 
+Updates to the timecard will be screened based on the status of the
+timecard and the effect of any potential update. 
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>Short Menu Text</td>
+<td>Approve ESRs</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-101.html">PAID</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>MAIN^<a href="http://code.osehra.org/dox/Routine_PRSPSAP.html">PRSPSAP</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

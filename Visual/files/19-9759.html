@@ -1,0 +1,86 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTc1OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBCNE IIV BATCH PROCESS (9759) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTc1OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBCNE IIV BATCH PROCESS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>eIV NIGHTLY PROCESS</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>EIV NIGHTLY PROCESS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is not to be placed on any menu nor run by any user.  This 
+option is specifically designed to be scheduled in TaskMan to be executed 
+once a day during off-peak hours.  Running this more than once a day may 
+cause unexpected results.  This option is the eIV nightly task that 
+extracts the patient/insurance data from VISTA and transmits it to AAC 
+while following the eIV Site Parameters within file #350.9.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>DISPLAY OPTION?</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-49.html">INTEGRATED BILLING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_IBCNEDE.html">IBCNEDE</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2003-05-09 15:48:14</td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

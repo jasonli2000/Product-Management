@@ -1,0 +1,100 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTE4OQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCV_AUDIT_FILE_ERROR (189) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTE4OQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCV_AUDIT_FILE_ERROR</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>ERROR WHILE PROCESSING DYNAMED-RELATED DATA ITEM</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This bulletin will be used by processes within the IFCAP-DynaMed 
+interface software to notify Control Point Officials and Control Point 
+Clerks when an error condition occurs.  The error would occur while
+processing a DynaMed-originating item in a RIL, a 2237, or a Purchase
+Order.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+While |1|
+involving an item with DynaMed Doc ID #: |2|,
+the following error occurred: |3|.
+ 
+The DynaMed DOC ID gets saved into the Audit file when a request is 
+received from DynaMed and a RIL is built. This value is the key used
+to update Due-ins in Dynamed. Therefore 
+ 
+PLEASE INCLUDE APPROPRIATE DYNAMED USERS WHEN RESOLVING THIS ERROR
+ 
+The following data pertains to this transaction:
+</pre>
+</td>
+</tr>
+<tr>
+<td>PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+action/event/identifier ex. "canceling a line item during edit of 2237 
+#516-05-2-076-0445"
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+DM Doc ID value
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+error reason, for example "an error updating the Audit file" or "the 
+Audit file item was missing its DynaMed Doc ID value"
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

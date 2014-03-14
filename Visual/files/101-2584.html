@@ -1,0 +1,116 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTI1ODQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSJ LM IV OE MENU (2584) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTI1ODQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSJ LM IV OE MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>IV ORDER ENTRY MENU</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu allows the user to take action on the IV order entry process.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2501.html">PSJ LM PATIENT INFO</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PI</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2502.html">PSJ LM PATIENT DATA</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PU</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;12</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2583.html">PSJ LM IV SELECT ORDER</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SO</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;31</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2559.html">PSJ LM NEW ORDER FROM PROFILE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;NO</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;32</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-77.html">INPATIENT MEDICATIONS</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>K PSGEFN</td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I $$ACT^<a href="http://code.osehra.org/dox/Routine_PSJLIUTL.html">PSJLIUTL</a></td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D A^<a href="http://code.osehra.org/dox/Routine_PSJ200.html">PSJ200</a>(21,19),SHOW^VALM S XQORM("#")=+$O(^ORD(101,"B","PSJ LM IV NEW SELECT ORDER",0))_"^1:"_+$G(^TMP("PSJPRO",$J,0))</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select Action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>40</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-02-12 10:39:03</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

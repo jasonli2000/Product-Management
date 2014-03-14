@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE2OTQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGEN ENROLL PATIENT (1694) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE2OTQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGEN ENROLL PATIENT</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Enroll Patient</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This protocol action permits the user to enroll a patient who
+is a veteran that is eligible for care, who is not already
+enrolled.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D EP^<a href="http://code.osehra.org/dox/Routine_DGEN1.html">DGEN1</a></td>
+</tr>
+<tr>
+<td>SCREEN</td>
+<td>I $$CHK^<a href="http://code.osehra.org/dox/Routine_DGEN.html">DGEN</a>(DFN)</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2000-04-05 17:32:03</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDA1NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSJV EDIT PROVIDER (4054) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDA1NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSJV EDIT PROVIDER</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Edit Provider Fields in New Person File</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>EDIT PROVIDER FIELDS IN NEW PE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ Allows editing of the AUTHORIZED TO WRITE MED ORDERS and INACTIVE DATE 
+(Pharmacy) fields of the NEW PERSON file (200). Only providers who are 
+marked as AUTHORIZED TO WRITE MED ORDERS in the NEW PERSON file are 
+selectable through Inpatient Medications version 4.0.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-85.html">PATIENT DATA EXCHANGE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ENE^PSJPRE49</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

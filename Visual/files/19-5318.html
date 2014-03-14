@@ -1,0 +1,118 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTMxOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA PROCEDURE (5318) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTMxOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA PROCEDURE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Procedure Enter/Edit</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PROCEDURE ENTER/EDIT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This function allows the package coordinator to enter new
+procedures into the system and to edit existing procedures.
+ 
+Entries in this 'procedure' file are the allowable choices the
+user will be able to choose from at the 'Procedure' prompt.
+This prompt appears as part of the 'Request an Exam', 'Register' exam,
+'Case No. Edit', and the 'Exam Status Tracking' functions.
+ 
+If the procedure has an inactivation date of less than the current
+date then the procedure is not a valid choice and will not appear
+on the list of valid/active procedures when displayed to the user.
+ 
+There are four types of procedures.  They are the following:
+ 
+      1) Detailed - Procedure is associated with one or more AMIS codes
+                    and must have a CPT (Current Procedural Terminology)
+                    code assigned to it.
+ 
+      2) Series   - Procedure is associated with more than one AMIS
+                    code and must have a CPT code assigned to it.
+ 
+      3) Broad    - Procedure is mainly used by the receptionist when
+                    scheduling a patient for an exam.  It is used
+                    when he/she is not exactly sure which 'detailed' or
+                    'series' procedure will be performed. However,
+                    before the exam can be considered 'complete', the
+                    procedure must be changed to 'detailed' or 'series'.
+ 
+                    If the 'division' parameter requiring a 'detailed'
+                    or 'series' procedure upon initial exam registration
+                    is set to 'yes', then the receptionist will not be
+                    allowed to select a 'broad' procedure.
+ 
+       4) Parent  - Procedure is a "placeholder" used for ordering.  It
+                    does not have a CPT and cannot be registered.  Parent
+                    procedures must have one or more descendant procedures
+                    associated with them.  The descendants should be
+                    detailed procedures with valid CPT codes.  During
+                    Registration, the system automatically cycles through
+                    each descendant and asks if you want to register it.
+                    After each descendant is either registered or
+                    bypassed, the opportunity to add additional procedures
+                    is given.  All are registered under the same exam
+                    date/time.  Parent procedures can be set up to require
+                    a single report for all CPT's, or individual reports
+                    for each CPT.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>DISPLAY OPTION?</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>2^<a href="http://code.osehra.org/dox/Routine_RAMAIN2.html">RAMAIN2</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>1997-02-04 14:16:40</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,58 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0zNjYuMTU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IB NCPDP PRESCRIPTION (366.15) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0zNjYuMTU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IB NCPDP PRESCRIPTION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+DO NOT delete entries in this file.  DO NOT edit data in this file with VA
+File Manager.
+ 
+This file is used to support NCPDP billing for multiple Rate Types.  
+Entries are created in this file based on the prescription and 
+fill/refill number.  The Rate Type determined at time of Billing 
+Determination is stored in this file so it can be utilized when bill 
+creation occurs.  This file is also used to store the associated 
+copayment reference number if a non-veteran copayment charge is created 
+to allow easy lookup if the copayment charge needs to be cancelled.
+ 
+ 
+Per VHA Directive 2004-038, this file definition should not be
+modified.  
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

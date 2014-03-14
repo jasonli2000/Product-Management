@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExNjc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XM-I-N-DOMAIN FILE-VALIDATE (1167) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExNjc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XM-I-N-DOMAIN FILE-VALIDATE</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>DOMAIN FILE - VALIDATION NUMBER FIELD</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+
+The VALIDATION NUMBER (field #1.6) is used as an extra security precaution
+to confirm that the site really is who it says it is.
+
+After the connection has been established, the validation numbers are compared.
+
+If the validation numbers are null, then the security precaution is not active,
+and the session continues.
+
+If the validation numbers are not null, and they match, then the sites agree on
+a new validation number to be used the next time, and the session continues.
+
+If the validation numbers are not null, and they don't match, then the session
+is brought to an abrupt end, and a bulletin is sent to the Postmaster to notify
+site managers of the 'bad validation number'.  To correct this, someone at your
+site must contact (by phone, usually) someone at the other site, and one of you
+must change your validation number to match the other's.  Once the fields have
+been edited to match, then you can re-schedule a task to transmit the messages.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>2002-05-08 10:35:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

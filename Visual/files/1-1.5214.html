@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0xLjUyMTQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SQLI_OUTPUT_FORMAT (1.5214) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0xLjUyMTQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>SQLI_OUTPUT_FORMAT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Strategies for converting base values to external values.
+In FileMan they are used to convert references to pointers to
+their text values. They are also used for the SET OF CODES type.
+ 
+SQLI projects pointer and set of codes as calls to $$GET1^DIQ, 
+variable pointer into calls to $$EXTERNAL^DILFD.
+ 
+Vendors and other users of SQLI may choose to implement their own 
+conversions to improve performance.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

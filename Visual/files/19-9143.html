@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTE0Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RMPO HO PAT TEMPLATE UPDATE (9143) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTE0Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RMPO HO PAT TEMPLATE UPDATE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Home Oxygen Patient Template Update</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>HOME OXYGEN PATIENT TEMPLATE U</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>RMPRSUPERVISOR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is a utility for updating VENDOR, HCPCS, FCP, ITEM, and UNIT COST of
+all Home Oxygen patients in a particular station at once.  Only the
+patient template is changed not the monthly billing.  If the monthly
+billing is already been created for a certain month, changes on the
+template will not affect the billing cycle.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>START^<a href="http://code.osehra.org/dox/Routine_RMPOVDC.html">RMPOVDC</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

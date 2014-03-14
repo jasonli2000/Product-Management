@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODkzOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSO CMOP CS RX DISPENSE REPORT (8939) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODkzOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSO CMOP CS RX DISPENSE REPORT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>CMOP Controlled Substance Rx Dispense Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CMOP CONTROLLED SUBSTANCE RX D</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option prints the status of CMOP Controlled Substance
+prescriptions that are of Schedule III-V drugs.
+ 
+The user is prompted for:
+ 
+       1) Date range of release
+       2) Sort by 'All' or a 'Single' Division
+       3) Sort by 'Release Date' or 'Drug'
+ 
+Fields printed are Division, Release Date, Patient, SSN, Drug, Quantity,
+Status, and CMOP Facility.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-60.html">OUTPATIENT PHARMACY</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>S^<a href="http://code.osehra.org/dox/Routine_PSOCMOPR.html">PSOCMOPR</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

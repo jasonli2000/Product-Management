@@ -1,0 +1,97 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTc1Mw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQUIT PROCESSING (753) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTc1Mw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQUIT PROCESSING</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Changes in XQUIT Processing</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+ 
+     During the execution of an [Entry Action] of an option the
+application programmer has always had the option of setting the XQUIT
+variable.  When the menu system found this variable it would stop.  There
+were 3 major problems inherent in this approach:
+  
+   1.  The user was [left] at the option where the XQUIT was detected,
+       which could well be in the middle of a jump, which caused
+       major confusion.
+ 
+   2.  The Menu System just stopped and the programmer had no [control]
+       over what happened next, while the Menu System itself had no
+       idea what the problem was.
+  
+   3.  The users recieved a [message] about an XQUIT being encountered 
+       that made little or no sense to them.
+ 
+We have corrected these 3 problems.  Notice we do not say "3 features."
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;CONTROL</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-756.html">XQUIT CONTROL</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;ENTRY ACTION</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-758.html">XQ ENTRY ACTIONS</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;LEFT</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-757.html">XQUIT LEFT</a></dt>
+</li>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;MESSAGE</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-755.html">XQUIT MESSAGE</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1998-04-15 13:04:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

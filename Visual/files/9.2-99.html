@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTk5").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUDOC SPOOL USE4 (99) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTk5" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUDOC SPOOL USE4</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>PRINTING SPOOLED DOCUMENTS</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+How do you print out what you've spooled?  Where did the job go when you
+sent it to the spooler?  How can you get it back?
+ 
+     Spooling --------- sends to --------------&gt; the spooler (spool space).
+                                                 =================
+                                                 |"your document"|
+                                                 =================
+                                                  /
+                Printing ---- gets your document /
+                              from the spooler and
+                                               /
+                                              /
+                                         sends it to
+                                            /
+                                           /
+                                a printer (or several printers).
+ 
+Try printing.  Use a margin of 132 characters and page length of 66 lines
+to match the spool format even though your document may not be this big.
+Then specify the number of copies, and the printing device.  If you need to
+use several printers, the device prompt will reappear and you may respond.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-01-20 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

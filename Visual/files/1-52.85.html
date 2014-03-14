@@ -1,0 +1,65 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS01Mi44NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>EPHARMACY MEDICATION PROFILE PREFERENCES (52.85) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS01Mi44NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>EPHARMACY MEDICATION PROFILE PREFERENCES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains Pharmacy Division specific preferences for the ePharmacy
+Medication Profile. For divisions without specific preferences in this file,
+the Outpatient Pharmacy application uses the 'Factory Default', which has the
+following default values: 
+ 
+         EXP/CANCEL CUTOFF: 120 DAYS 
+                   SORT BY: DRUG NAME 
+                SORT ORDER: ASCENDING 
+               DISPLAY SIG: OFF 
+           GROUP BY STATUS: OFF 
+       DISPLAY ORDER COUNT: ON 
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;PSO</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTM2LjUtMTc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MYOCARDIAL INFARCTION (17) &nbsp;&nbsp;  PERIOPERATIVE OCCURRENCE CATEGORY (136.5)</h1>
+<div id="demo"><table id="MTM2LjUtMTc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OCCURRENCE CATEGORY</td>
+<td>MYOCARDIAL INFARCTION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+VASQIP Definition (2011): 
+Indicate the presence of a peri-operative MI that occurs either 
+intraoperatively or postoperatively within 30 days: 
+ 
+Non-Cardiac Surgery: A new transmural acute myocardial infarction as 
+manifested by new Q-waves on ECG. (Non-Q-wave infarctions should be 
+entered under "Other Occurrence").  
+ 
+Cardiac Surgery: A new transmural acute myocardial infarction as 
+manifested by at least one of the following criteria: 
+ 1. Development of new Q-waves in two or more contiguous ECG leads;
+ 2. Evolutionary ST-segment elevations;
+ 3. New or presumably new LBBB pattern on the ECG.
+</pre>
+</td>
+</tr>
+<tr>
+<td>SYNONYM</td>
+<td>
+<ol>
+<li>
+<dt>SYNONYM:  &nbsp;&nbsp;PERIOPERATIVE MI</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTRAOPERATIVE ALLOWED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

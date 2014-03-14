@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTUwNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENWOEDIT-WARD (1507) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTUwNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENWOEDIT-WARD</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Edit Electronic Work Order</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>EDIT ELECTRONIC WORK ORDER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Permits non-Engineering users to edit work requests which were input via
+the 'Electronic Work Order Request' option. Once work orders have been
+transferred by Engineering Service to a working shop they may no longer
+be edited via this option, but users may check their status.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>WRDEDT^<a href="http://code.osehra.org/dox/Routine_ENWARD.html">ENWARD</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

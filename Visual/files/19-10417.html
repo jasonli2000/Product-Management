@@ -1,0 +1,87 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA0MTc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XTPM COMPLETE A NON-KIDS PATCH (10417) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA0MTc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XTPM COMPLETE A NON-KIDS PATCH</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Mark a Non-Kids Patch as Complete</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>MARK A NON-KIDS PATCH AS COMPL</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the completion of a non-kids patch, which is defined 
+as not having any KIDs installs but rather a .zip or .exe or other type 
+patch.  An example of an 'other' patch is a DBA patch.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>edit</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-5.html">TOOLKIT</a></td>
+</tr>
+<tr>
+<td>DIC {DIC}</td>
+<td>XPD(9.9,</td>
+</tr>
+<tr>
+<td>DIC(0)</td>
+<td>AEMQ</td>
+</tr>
+<tr>
+<td>DIC(S)</td>
+<td>I $P(^(0),U,10)=1</td>
+</tr>
+<tr>
+<td>DIE</td>
+<td>XPD(9.9,</td>
+</tr>
+<tr>
+<td>DR {DIE}</td>
+<td>[XTPM COMPLETE NON-KIDS PATCH]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

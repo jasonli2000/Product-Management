@@ -1,0 +1,102 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjEwOQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGPT CENSUS RECORD REPORT (2109) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjEwOQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGPT CENSUS RECORD REPORT</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Comprehensive Census Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>COMPREHENSIVE CENSUS REPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will allow the user to print all CENSUS records for 
+an admission date range.
+ 
+When a PTF record is 'closed for census' a snap shot of the PTF
+record is taken.  This snap shot is the census record that is
+transmitted to Austin and is used by this option.
+ 
+If the PTF record has not yet been 'closed for census' then the
+PTF record is displayed/printed since the census record will not
+exist.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>print</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K DG1,DGCI,DGCN,DGCST,DGPTFMT</td>
+</tr>
+<tr>
+<td>DIC {DIP}</td>
+<td>DGPT(</td>
+</tr>
+<tr>
+<td>L.</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FLDS</td>
+<td>[DGPT CENSUS INQUIRY]</td>
+</tr>
+<tr>
+<td>BY</td>
+<td>[DGPTF]</td>
+</tr>
+<tr>
+<td>DIS(0)</td>
+<td>D OPT^<a href="http://code.osehra.org/dox/Routine_DGPTFMO1.html">DGPTFMO1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

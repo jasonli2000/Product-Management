@@ -1,0 +1,131 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjQ5MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCP2 REPORTS MENU (2491) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjQ5MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCP2 REPORTS MENU</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Reports Menu</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>REPORTS MENU</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu contains various reports that allow the user to manage
+his/her inventory, and to track distribution of expendable supplies.
+This menu contains reports which can be used by the secondary
+inventory point to manage and track item data.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2479.html">PRCP EMERGENCY STOCK REPORT</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2472.html">PRCP COMPREHENSIVE ITEM REPORT</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2489.html">PRCP TRANSACTION REG REPORT</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2557.html">PRCP ABBREVIATED ITEM REPORT</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2553.html">PRCP ADJUSTMENT VOUCHER RECAP</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2551.html">PRCP AVAILABILITY LISTING</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2558.html">PRCP CONVERSION FACTOR REPORT</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2495.html">PRCP INACTIVE ITEMS REPORT</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2561.html">PRCP DAYS STOCK ON HAND REPORT</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2560.html">PRCP STOCK STATUS REPORT</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2571.html">PRCP PATIENT DISTR COST REPORT</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-9146.html">PRCP SS QTY DISCREPANCIES</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2559.html">PRCP QUANTITY DISTRIBUTION</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2552.html">PRCP INVENTORY SALES REPORT</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-2496.html">PRCP USAGE DEMAND ITEM REPORT</a></dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-10686.html">PRCP ON-DEMAND CONFLICT REPORT</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>K:$G(PRCP("DPTYPE"))'="S" PRCP S PRCP("DPTYPE")="S" D DISPLAY^<a href="http://code.osehra.org/dox/Routine_PRCPUSEL.html">PRCPUSEL</a> I '$G(PRCP("I")) S XQUIT=1 D NOMENU^<a href="http://code.osehra.org/dox/Routine_PRCPUSEL.html">PRCPUSEL</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2007-09-04 22:43:38</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

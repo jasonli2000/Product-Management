@@ -1,0 +1,83 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTU4NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IVM UPLOAD INS (5584) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTU4NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IVM UPLOAD INS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Insurance Upload</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>INSURANCE UPLOAD</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>IVM UPLOAD</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to upload patient insurance information which has
+been transmitted to the facility from the IVM Center.  This information
+was provided to IVM from an employer while contacting the employer to
+verify income.
+ 
+The user has the option to accept or reject this information.  Once
+action has been taken on the data, a confirmation message, in HL7
+format, is sent back to the IVM Center which contains the decision
+that was made at the site level.  If the information was rejected,
+a reason for not uploading the data (from file #301.91) is included
+in the confirmation message.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-120.html">INCOME VERIFICATION MATCH</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_IVMLINS.html">IVMLINS</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

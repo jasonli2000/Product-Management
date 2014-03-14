@@ -1,0 +1,97 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03OS4y").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IMAGING TYPE (79.2) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03OS4y" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IMAGING TYPE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains, for each imaging type entry, parameters that the module
+uses during various stages of exam and report processing and inquiring. The
+parameter switches allow the 'customizing' of the module for each type
+of imaging.
+ 
+WARNING:  ENTRIES SHOULD NOT BE DELETED FROM THIS FILE.
+ 
+ Data Storage
+ ------------
+The data for the 'IMAGING TYPE' file is stored in the ^RA(79.2,
+global. At the present time this file is very static after day-one
+initialization is complete.  However, it still should be journaled.
+It should also be translated if the operating system supports this function.
+ 
+ Input Templates
+ ---------------
+The following is a list of input templates used by the package and
+the entry in the OPTIONS file (#19) that uses the template:
+ 
+                     Compiled
+ Name                Routine  Description; Option(s)
+ ----                -------  ----------------------
+ RA IMAGE PARAMETERS          Used to specify timeout seconds and whether
+                              the hardware system the module is running on
+                              is under fail-soft mode;
+                              RA FAILSOFT
+ 
+ RA ON-LINE CRITERIA          Used to indicate how long certain data should
+                              remain on file before it can be purged;
+                              RA PURGE
+ 
+If any modifications to these input templates are needed for local
+purposes, then great care should be taken not to degrade any branching logic
+in the template.
+ 
+ Print Templates
+ ---------------
+ The following is a list of print templates used by the package:
+ 
+ Name                  Description; Option(s)
+ ----                  ----------------------
+ RA ACTIVITY LOG       Prints a list of the activity log entries for the
+                       imaging type;
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;RA</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,177 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTEwNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GEN. MED. REC. - GENERATOR (107) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTEwNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GEN. MED. REC. - GENERATOR</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>GMRG</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>TEXT GENERATOR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Text Generator allows for the codifying/boilerplating of clinical
+forms.  Patient data for these forms are then collected via a menu driven
+data entry system.  Output is generated from this collection in an
+outline or paragraph format.  There are two major components to the Text
+Generator:  1) Content Building, and  2) Patient Data Enter/Edit.  The
+data reporting mechanism is currently a part of the Patient Data
+Enter/Edit, but will become its own component in the future.  The Text
+Generator is currently used by the Nursing Package to generate Nursing
+Care Plans.  Future plans include the use by Mental Health for the
+development of treatment plans, and as a front end to generate progress
+notes for patients.
+</pre>
+</td>
+</tr>
+<tr>
+<td>FILE</td>
+<td>
+<ol>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-124.2.html">AGGREGATE TERM</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-124.25.html">TERM CLASSIFICATION</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-124.1.html">GMRG PARAMETERS</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;YES</dt>
+<dt>MERGE OR OVERWRITE SITE'S DATA:  &nbsp;&nbsp;OVERWRITE</dt>
+<dt>MAY USER OVERRIDE DATA UPDATE:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>FILE:  &nbsp;&nbsp;<a href="1-124.3.html">GMR TEXT</a></dt>
+<dt>UPDATE THE DATA DICTIONARY:  &nbsp;&nbsp;YES</dt>
+<dt>ASSIGN A VERSION NUMBER:  &nbsp;&nbsp;YES</dt>
+<dt>MAY USER OVERRIDE DD UPDATE:  &nbsp;&nbsp;NO</dt>
+<dt>DATA COMES WITH FILE:  &nbsp;&nbsp;NO</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DEVELOPER (PERSON/SITE)</td>
+<td>RM/HISC</td>
+</tr>
+<tr>
+<td>*LOWEST FILE NUMBER</td>
+<td>124</td>
+</tr>
+<tr>
+<td>*HIGHEST FILE NUMBER</td>
+<td>124.99</td>
+</tr>
+<tr>
+<td>DEVELOPMENT ISC</td>
+<td>HINES</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>National</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;3.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2005-11-19 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;1996-08-22 00:00:00</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;1</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-08-22 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This build contains the routines and data dictionary changes for patch
+GMRG*3.0*1.
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>ENVIRONMENT CHECK ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_GMRGXPRE.html">GMRGXPRE</a></td>
+</tr>
+<tr>
+<td>ENVIRONMENT CHECK DONE DATE</td>
+<td>1996-08-22 12:09:46</td>
+</tr>
+<tr>
+<td>POST-INITIALIZATION ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_GMRGXPST.html">GMRGXPST</a></td>
+</tr>
+<tr>
+<td>POST-INIT COMPLETION DATE</td>
+<td>1996-08-22 12:09:54</td>
+</tr>
+<tr>
+<td>EXCLUDED NAME SPACE</td>
+<td>
+<ol>
+<li>
+<dt>EXCLUDED NAME SPACE:  &nbsp;&nbsp;GMRGZ</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

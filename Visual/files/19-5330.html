@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTMzMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA SYSLOC (5330) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTMzMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA SYSLOC</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Location Parameter Set-up</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>LOCATION PARAMETER SET-UP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The 'Location Parameter Set-Up' function allows the
+coordinator to define location parameters.
+ 
+Within a specific division, there may be a number of physical
+locations where a procedure can be performed.  For
+example, a division may have its own main department on
+the second floor and  a satellite location on the
+first floor at an outpatient clinic area.
+ 
+The module is designed to handle multiple locations within a
+division.  Each location will have its own set of parameters
+defining such location-specific criteria as printer devices for
+flash cards and jacket labels.
+ 
+A location may only be associated with one division.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>3^<a href="http://code.osehra.org/dox/Routine_RASYS.html">RASYS</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

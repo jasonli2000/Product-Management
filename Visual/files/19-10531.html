@@ -1,0 +1,72 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA1MzE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>IBCN RESYNCH INS COMP (10531) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA1MzE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>IBCN RESYNCH INS COMP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Re-synch Associated Insurance Companies</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RE-SYNCH ASSOCIATED INSURANCE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+On the rare occasion that the associated insurance company provider 
+IDs get out of synch, this option is to be used by EVS or the IRM to get
+the parent and child insurance companies to be the same.  This option
+should not be linked to any menu.
+ 
+This runs for all insurance companies and locks the insurance company 
+file before starting so no one can be editing an insurance company while
+it is running.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>RESYNCH^IBCEPCID()</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

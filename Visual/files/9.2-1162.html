@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTExNjI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XM-I-N-DOMAIN FILE-ADDRESSING (1162) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTExNjI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XM-I-N-DOMAIN FILE-ADDRESSING</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>DOMAIN FILE FIELDS INVOLVED IN ADDRESSING</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+
+The following fields in the DOMAIN file 4.2 are used when a message is
+addressed to a remote site:
+
+  NAME (field #.01) is the name of the domain.  (Names of production domains
+  should only be changed by a MailMan patch.  If a site needs to change its
+  name, it must coordinate with the VA's national DNS team, as well as the
+  MailMan developers.  If a site changes its name unilaterally, communication
+  between that site and other sites will be adversely affected.)
+
+  SYNONYM (multiple under field #5) lists other names by which this domain is
+  known.  (If a site has its name changed via a MailMan patch, the old name
+  becomes a synonym.)
+
+  RELAY DOMAIN (field #2) points to a domain through which messages addressed
+  to the domain are routed.
+
+  [FLAGS] (field #1) controls the method used to contact the domain.
+
+  SECURITY KEY (field #1.5), if present, allows only those users who hold the
+  specified security key to address messages to the domain.
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME KEYWORD:  &nbsp;&nbsp;FLAGS</dt>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-1163.html">XM-I-N-DOMAIN FILE-FLAGS</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>2002-05-08 10:05:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

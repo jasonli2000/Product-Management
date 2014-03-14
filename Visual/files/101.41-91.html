@@ -1,0 +1,149 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLjQxLTkx").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OR GXPARM CALL HO ON (91) &nbsp;&nbsp;  ORDER DIALOG (101.41)</h1>
+<div id="demo"><table id="MTAxLjQxLTkx" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OR GXPARM CALL HO ON</td>
+</tr>
+<tr>
+<td>DISPLAY TEXT</td>
+<td>Call HO on</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>dialog</td>
+</tr>
+<tr>
+<td>DISPLAY GROUP</td>
+<td><a href="100.98-13.html">NURSING</a></td>
+</tr>
+<tr>
+<td>SIGNATURE REQUIRED</td>
+<td>ORES</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-35.html">ORDER ENTRY/RESULTS REPORTING</a></td>
+</tr>
+<tr>
+<td>ITEMS</td>
+<td>
+<ol>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-4.html">OR GTX ORDERABLE ITEM</a></dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>INDEX:  &nbsp;&nbsp;S.NURS</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;I 0 ; uneditable</dt>
+<dt>SCREEN:  &nbsp;&nbsp;I $$ACTIVE^<a href="http://code.osehra.org/dox/Routine_ORDD43.html">ORDD43</a>(Y)</dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;N IDX,SCR S IDX=$G(ORDIALOG(PROMPT,"D")),SCR=$G(ORDIALOG(PROMPT,"S")) D XHELP^<a href="http://code.osehra.org/dox/Routine_ORDD43.html">ORDD43</a>(IDX,SCR)</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y=$O(^ORD(101.43,"S.NURS","CALL HO ON",0))</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;6</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-19.html">OR GTX FREE TEXT 1</a></dt>
+<dt>DISPLAY TEXT:  &nbsp;&nbsp;Add'l Info:</dt>
+<dt>ASK ON EDIT ONLY:  &nbsp;&nbsp;YES</dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;C</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter any special instructions for this order, up to 240 characters.</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;6</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-143.html">OR GTPARM BPSYS</a></dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;C</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter critical values for the systolic blood pressure.</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y="< 100"</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>LEADING TEXT:  &nbsp;&nbsp;BPsys</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-142.html">OR GTPARM BPDIAS</a></dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;C</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter critical values for the diastolic blood pressure.</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y="> 120"</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;3</dt>
+<dt>LEADING TEXT:  &nbsp;&nbsp;BPdia</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-144.html">OR GTPARM PULSE</a></dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;C</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter critical values for the heart rate.</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y="< 60, > 120"</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;4</dt>
+<dt>LEADING TEXT:  &nbsp;&nbsp;Pulse</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-145.html">OR GTPARM TEMPERATURE</a></dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;C</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter critical values for temperature (fahrenheit)</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y="> 101"</dt>
+<dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;5</dt>
+<dt>LEADING TEXT:  &nbsp;&nbsp;Temp</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;7</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-6.html">OR GTX START DATE/TIME</a></dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>ASK ON EDIT ONLY:  &nbsp;&nbsp;YES</dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;RCW</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the date/time to begin this order.</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;S Y="NOW"</dt>
+</li>
+<li>
+<dt>SEQUENCE:  &nbsp;&nbsp;8</dt>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101.41-24.html">OR GTX STOP DATE/TIME</a></dt>
+<dt>ASK ON EDIT ONLY:  &nbsp;&nbsp;YES</dt>
+<dt>ASK ON ACTION:  &nbsp;&nbsp;RCW</dt>
+<dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the date/time to end this order.</dt>
+<dt>POST-SELECTION ACTION:  &nbsp;&nbsp;I $$FTDCOMP^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a>("START DATE/TIME","STOP DATE/TIME",">") K DONE,ORDIALOG(PROMPT,ORI) W $C(7),!,"Cannot end before start date/time!",!</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This orders conditions to call HO.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2013-06-14 09:02:59</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

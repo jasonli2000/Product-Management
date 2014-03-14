@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTEy").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XQHELP-LINK (12) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTEy" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XQHELP-LINK</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>INVOKING HELP TEXT</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+There are several ways in which help frames can be linked to the
+system, and correspondingly, several ways of invoking them.
+ 
+ - A help frame can be linked to a menu option.  This is done by
+   filling in the HELP FRAME field in the OPTION file for the
+   option you wish to have help text.  Then, when the menu system
+   prompts for a selection including this option, a response of
+   the option name preceeded with a '?' will invoke the help text.
+   The '???' response will show which options have associated
+   help text.
+ 
+ - Another way to invoke help text is through a routine.   Set XQH to
+   the INTERNAL NAME or INTERNAL NUMBER of the frame and D EN^XQH.
+   This can be used in place of including lengthy help text in a
+   routine.
+ 
+ - Similarly, the EXECUTABLE HELP field in the data dictionary
+   can be filled in so that help text is invoked.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-01-20 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

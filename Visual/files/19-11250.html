@@ -1,0 +1,100 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTEyNTA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MAGQ BPMONITOR (11250) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTEyNTA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MAGQ BPMONITOR</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Monitor Background Processor Activity</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>MONITOR BACKGROUND PROCESSOR A</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This menu option is used to monitor the queue processing activities on
+the Background Processor. Inactivity by this application will be reported
+to the mail groups: G.MAG SERVER and G.MAG_nn_VI_BP_Queue_Processo.
+Inactivity is determined by the timestamp on the last queue processed and
+if there are queues still to be processed.  If the time is greater than
+the time specified in the calling routine than a mail message will be
+sent.   Time specified is passed in a parameter when calling the routine.
+     CBP^MAGQCBP(15)
+In the above example, the time lapsed to be determined since the last
+queue was processed is 15 minutes.   This parameter can be modified by
+editing this menu option and changing the '(15)' in the ROUTINE field.
+ 
+Recommend scheduling this task using the Kernel's Schedule\Unschedule Options.
+The following are optional parameters that can be defined when scheduling this task:
+ 
+     MAGMIN - determines the lapse time between processing tasks.  If the variable is undefined, then the default value is 15 minutes.  If an active queue has not processed with specified minutes then a mail message is sent. 
+ 
+     MAGFQ - determines if failed queues have reached this limit.  If the variable is undefined, then the default value is 1,000.  If failed queues are above this limit, then a mail message is sent. 
+ 
+   MAGEVAL - determines if EVAL queues have reached this limit. If the variable is undefined, then the default value is 10,000.  If EVAL queues are above this limit, then a mail message is sent.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-175.html">IMAGING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>CBP^MAGQCBP(15)</td>
+</tr>
+<tr>
+<td>SUPRESS DEVICE PROMPT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>KEEP FROM DELETING</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

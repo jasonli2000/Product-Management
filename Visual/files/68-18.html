@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjgtMTg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>SEND OUT (18) &nbsp;&nbsp;  ACCESSION (68)</h1>
+<div id="demo"><table id="NjgtMTg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AREA</td>
+<td>SEND OUT</td>
+</tr>
+<tr>
+<td>LR SUBSCRIPT</td>
+<td>CHEM, HEM, TOX, RIA, SER, etc.</td>
+</tr>
+<tr>
+<td>CLEAN UP</td>
+<td>QUARTERLY</td>
+</tr>
+<tr>
+<td>ACCESSION TRANSFORM</td>
+<td><a href="62.07-4.html">QUARTERLY</a></td>
+</tr>
+<tr>
+<td>ACC CODE</td>
+<td>S %DT="",X="T" D ^%DT S LRAD=$E(Y,1,3)_"0000"+(($E(Y,4,5)-1)\3*300+100) S LRAN=1+$S($D(^LRO(68,LRWLC,1,LRAD,1,0)):$P(^(0),"^",4),1:0) Q</td>
+</tr>
+<tr>
+<td>PRINT ORDER</td>
+<td>52</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>SEND</td>
+</tr>
+<tr>
+<td>ASSOCIATED DIVISION</td>
+<td>
+<ol>
+<li>
+<dt>ASSOCIATED DIVISION:  &nbsp;&nbsp;<a href="4-1.html">SOFTWARE SERVICE</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>*LAB SECTION</td>
+<td><a href="62.2-4.html">CHEMISTRY</a></td>
+</tr>
+<tr>
+<td>RESPONSIBLE OFFICIAL</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>LAB DIVISION</td>
+<td>CLINICAL PATHOLOGY</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

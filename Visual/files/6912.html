@@ -1,0 +1,34 @@
+<html>
+
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MANUFACTURER_LIST_FILE").dataTable({
+        "bProcessing": true,
+        "bStateSave": true,
+        "iDisplayLength": 10,
+        "sPaginationType": "full_numbers",
+        "bDeferRender": true,
+        "sAjaxSource": "6912_array.txt"
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>File MANUFACTURER_LIST_FILE(6912) Data List</h1><div id="demo"><table id="MANUFACTURER_LIST_FILE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>IEN</th>
+</tr>
+</thead>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

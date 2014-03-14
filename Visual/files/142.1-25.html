@@ -1,0 +1,65 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTQyLjEtMjU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ADVANCE DIRECTIVE (25) &nbsp;&nbsp;  HEALTH SUMMARY COMPONENT (142.1)</h1>
+<div id="demo"><table id="MTQyLjEtMjU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ADVANCE DIRECTIVE</td>
+</tr>
+<tr>
+<td>PRINT ROUTINE</td>
+<td>CD;GMTSCW</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>CD</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This component contains advance directive notes entered using the Text
+Integration Utilities (TIU).  Advance Directives are a type a progress 
+note which includes clinical information that clinicians need to be 
+alerted to.  Time and maximum occurrent limits apply to this
+component.
+    
+If this component is printed to either a CRT or another device type,
+information will include title, text of note, electronic signature block,
+and date/time posted.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DEFAULT HEADER NAME</td>
+<td>Advance Directive</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

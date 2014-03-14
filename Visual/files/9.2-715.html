@@ -1,0 +1,100 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTcxNQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ECBATCH (715) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTcxNQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ECBATCH</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>Batch Enter Event Capture Data</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+** You must define locations, DSS Units, categories, procedures, and 
+Event Code Screens before using this option. ** 
+ 
+** If only one category is defined for the specified DSS Unit, you will  
+not be prompted for category. **
+ 
+** Use the Enter/Edit Patient Procedure option to correct erroneous 
+patient data. **
+ 
+** You will be prompted for exposure and service-connected indicators 
+for OUTPATIENT PROCEDURES ONLY. 
+ 
+Use this option to enter multiple procedures for multiple patients as 
+a batch entry.  After you enter the ICD-9 (Diagnosis) and inpatient or
+outpatient information for the first patient, the "Select Next Patient:"
+prompt appears.  This prompt will repeat, allowing you to select multiple
+patients, until you press the RETURN or ENTER key to indicate that patient
+selection is complete.
+ 
+You will be prompted to select a category if the specified DSS Unit is
+defined to group procedures by category.  After each procedure entry, the
+software asks you to verify that the the data you entered is correct,
+and the "Enter Procedure:" prompt repeats, allowing you to enter multiple
+procedures, until you press the RETURN or ENTER key to indicate that
+procedure entry is complete. 
+ 
+The software tells you the total number of procedures you entered, and
+asks if you want to enter them in the file.  If you respond YES, they are
+processed in the background and added to the EVENT CAPTURE PATIENT file
+(#721).
+</pre>
+</td>
+</tr>
+<tr>
+<td>RELATED FRAME</td>
+<td>
+<ol>
+<li>
+<dt>RELATED FRAME:  &nbsp;&nbsp;<a href="9.2-715.html">ECBATCH</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1997-03-26 09:28:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>EXIT EXECUTE STATEMENT</td>
+<td>W @IOF</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

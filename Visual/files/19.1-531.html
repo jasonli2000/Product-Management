@@ -1,0 +1,55 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTkuMS01MzE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TIU MISSING TEXT CLEAN (531) &nbsp;&nbsp;  SECURITY KEY (19.1)</h1>
+<div id="demo"><table id="MTkuMS01MzE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TIU MISSING TEXT CLEAN</td>
+</tr>
+<tr>
+<td>DESCRIPTIVE NAME</td>
+<td>TIU MISSING TEXT CLEAN</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This key allows the holder to run the option MISSING TEXT CLEANUP.  It 
+should only be assigned to someone that holds Chief, MIS or Chief, HIMS 
+class in the AUTHORIZATION/SUBSCRIPTION package (USR).
+</pre>
+</td>
+</tr>
+<tr>
+<td>GRANTING CONDITION</td>
+<td>I $$RUN^<a href="http://code.osehra.org/dox/Routine_TIUPS177.html">TIUPS177</a>(+($G(Y)))</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

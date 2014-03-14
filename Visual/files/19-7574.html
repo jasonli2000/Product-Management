@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzU3NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENEQLT_PREX (7574) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzU3NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENEQLT_PREX</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Equip with Lockout/Tagout CLEAR but Category SET</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>EQUIP WITH LOCKOUT/TAGOUT CLEA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Prints list of Equipment Records (file #6914) that have the LOCKOUT
+REQUIRED? clear (not set to 'YES') but belonging to an Equipment Category
+(file #6911) for which the LOCKOUT REQUIRED? field is 'YES'.
+ 
+Such records, if any exist, would represent exceptional situations.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-18.html">ENGINEERING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>PRTEX^<a href="http://code.osehra.org/dox/Routine_ENEQLT2.html">ENEQLT2</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

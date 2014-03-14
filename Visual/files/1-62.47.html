@@ -1,0 +1,61 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS02Mi40Nw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LAB CODE MAPPING (62.47) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS02Mi40Nw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LAB CODE MAPPING</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Used to map standard code system concepts to the related area of the Laboratory
+package database. It supports mapping codes used in the role identifying the
+result or expressing the answer.
+ 
+Examples of result codes are LOINC and VA NLT Test Result codes such as
+LOINC code 11475-1 MICROORGANISM IDENTIFIED: PRID:PT:XXX:NOM:CULTURE which
+represents the concept of organism identified.
+ 
+Examples of answer codes are SNOMED CT code 23506009 which is the term
+'normal flora' or SNOMED CT code 30334005 AEROMONAS SALMONICIDA (ORGANISM)
+which represents the name of the organism identified.
+ 
+This file should not export its data via the standard KIDS data export 
+mechanism.  Because local codes can have the same identifier as national 
+codes, the KIDS install may inadvertently overwrite local codes.  Data 
+exports should use a different mechanism, such as using KIDS Transport 
+global to load the data onto the target system.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

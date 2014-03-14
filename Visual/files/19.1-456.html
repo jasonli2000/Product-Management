@@ -1,0 +1,56 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTkuMS00NTY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRSP EMP (456) &nbsp;&nbsp;  SECURITY KEY (19.1)</h1>
+<div id="demo"><table id="MTkuMS00NTY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRSP EMP</td>
+</tr>
+<tr>
+<td>DESCRIPTIVE NAME</td>
+<td>Part-Time Physician with Memo</td>
+</tr>
+<tr>
+<td>KEEP AT TERMINATE</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This key grants access to the Part Time Physician With Memorandum Menu [PRSP PTP 
+MENU]. The key will automatically be assigned to an employee when a new
+memorandum is entered for them using the Enter Memoranda [PRSP HR EM] 
+option.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

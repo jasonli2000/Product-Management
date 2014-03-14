@@ -1,0 +1,82 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTAwNTI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PX V File Repair (10052) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTAwNTI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PX V File Repair</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>PCE V File Cross Reference Repair</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PCE V FILE CROSS REFERENCE REP</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option provides a number of options that allow the user to
+ both report and fix broken V File Cross References. The V Files include V
+ PROVIDER (9000010.06), V CPT(9000010.18), diagnosis V POV (9000010.07), 
+ VISIT(9000010), V IMMUNIZATION(9000010.11), V SKIN TEST(9000010.12), V
+ EXAM(9000010.13), V TREATMENT(9000010.15), V PATIENT ED(9000010.16), and V
+ HEALTH FACTOR(9000010.23).
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>Short Menu Text</td>
+<td>V File Repair</td>
+</tr>
+<tr>
+<td>DISPLAY OPTION?</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-111.html">PCE PATIENT CARE ENCOUNTER</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>T^<a href="http://code.osehra.org/dox/Routine_PXQUTL3.html">PXQUTL3</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

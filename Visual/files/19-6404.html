@@ -1,0 +1,105 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNjQwNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ESP SUPERVISOR (6404) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNjQwNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ESP SUPERVISOR</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Supervisor Functions</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>SUPERVISOR FUNCTIONS</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>PATCH ES*1*46</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is a submenu which provides access to options assigned only to
+supervisors or specifically designated staff.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>MENU</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-6361.html">ESP MASTER NAME ADD/EDIT</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;MNA</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-6374.html">ESP OFFENSE CODE EDIT</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;OCA</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="19-6375.html">ESP POLICE OFFICER EDIT</a></dt>
+<dt>SYNONYM:  &nbsp;&nbsp;POA</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-133.html">POLICE & SECURITY</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D ^<a href="http://code.osehra.org/dox/Routine_ESPCLEAN.html">ESPCLEAN</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2009-10-28 12:42:30</td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>2008-07-18 04:00:56</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

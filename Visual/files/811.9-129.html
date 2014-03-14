@@ -1,0 +1,254 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjktMTI5").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-WH MAMMOGRAM REVIEW RESULTS (129) &nbsp;&nbsp;  REMINDER DEFINITION (811.9)</h1>
+<div id="demo"><table id="ODExLjktMTI5" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-WH MAMMOGRAM REVIEW RESULTS</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>Mammogram Review Results</td>
+</tr>
+<tr>
+<td>IGNORE ON N/A</td>
+<td>S</td>
+</tr>
+<tr>
+<td>SEX SPECIFIC</td>
+<td>FEMALE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The VHA recommends that mammogram results be reviewed and that the
+clinical review be documented in the patient record.
+ 
+This reminder will be due when mammogram results are present in the
+Women's Health package and are pending clinician review.
+ 
+This reminder will be satisfied when the clinical review of mammogram
+results is recorded in the Women's Health package.  
+ 
+This reminder is based on VHA guidelines for Women Veterans Health and 
+the Integration of Women Veterans Health with CPRS GUI project workgroup.
+The workgroup reviewed materials from several sources:
+ 
+   * Guidelines from the VA National Center for Health Promotion and
+     Disease Prevention (NCHPDP) and the US Preventive Services Task 
+     Force (USPSTF)
+   * External Peer Review Process (EPRP)
+   * Guidelines from the American Cancer Society 
+</pre>
+</td>
+</tr>
+<tr>
+<td>TECHNICAL DESCRIPTION</td>
+<td><pre>
+This reminder has been developed to interface with the Women's Health (WH)
+package. The associated reminder dialog will update the WH package at the
+same time clinical care is recorded in CPRS GUI, thus eliminating dual
+data entry and encouraging synchronization of data.  
+ 
+This reminder is recommended for use by clinicians at Primary Care Clinics
+(Primary Care/Medicine, GIMC, Geriatric, Women's) and any other specialty
+clinics where primary care is given to female patients.  
+ 
+The reminder was developed to interface with the Women's Health package.
+   * When the reminder is evaluated, mammogram results pending review in 
+     the Women's Health package will be used to determine if the reminder 
+     is due.
+   * The VA-WH MAMMOGRAM REVIEW RESULTS reminder dialog will display the 
+     mammogram results and will record clinical review information in 
+     the current progress note and in the Women's Health package.
+   * The VA-WH PAP SMEAR REVIEW RESULTS reminder dialog offers selections 
+     the clinician can use to document patient notification information 
+     of mammogram results in the Women's Health package.
+ 
+    During the clinical review process, clinicians will be directed to use
+    the term "NEM", which stands for No Evidence of Malignancy, in place 
+    of the term "Normal".
+ 
+Setup issues before using this reminder: 
+ 
+1.  Use the Reminder Term options to map local representations of 
+    findings:
+ 
+    VA-WH VA-WH MAMMOGRAM PENDING REVIEW
+                  No mapping necessary.  New VA-WH MAMMOGRAM PENDING 
+                  REVIEW  computed finding will be installed with
+                  this reminder. This computed findings will make the
+                  reminder due when the condition is: I V="Pending".
+                  It will then return mammogram results pending
+                  clinician review from the WH package.
+ 
+2.  Use the Reminder Dialog edit option to define the national reminder
+    dialog finding items which should be updated during CPRS GUI reminder
+    processing.
+ 
+    Review dialog elements in the national reminder dialog and change
+    any national health factors to local health factors, if necessary.
+    It is not unusual for local findings to be used in your national
+    dialogs. Any local findings used in the national dialogs should be
+    mapped to the appropriate national reminder term.  
+ 
+3.  Alternately, use the Reminder Dialog options to copy the national 
+    dialog, dialog elements, and dialog groups to make local changes.
+            
+    Add local dialog elements with local Order Dialogs for additional 
+    ordering options for the clinicians. Some sites have clinicians 
+    order a consult to a service that provides PAP smears.  If your
+    site does this, copy the reminder dialog to a local reminder
+    dialog and then add the local dialog element for the consult order
+    to the reminder dialog so this practice can continue.
+ 
+    Some sites have local entries in the Women's Health WV Notification
+    Purpose file.  If your site does this, copy the reminder dialog to
+    a local reminder dialog, then add or modify the notifications so
+    this practice can continue.  Under reminder findings, use the new 
+    "WH" finding type to point to your entries.
+ 
+4.  Use the AEP Add/Edit a Notification Purpose &amp; Letter manager
+    option in the Women's Health package to set up entries in the WV 
+    Notification Purpose file.  The breast or cervical treatment need and 
+    due date should be set and the default letter text should explain the
+    reason for the letter.
+</pre>
+</td>
+</tr>
+<tr>
+<td>BASELINE AGE FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;0D</dt>
+<dt>NO. OF AGE MATCH LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF AGE NO MATCH LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-31.html">VA-WH MAMMOGRAM PENDING REVIEW</a></dt>
+<dt>FOUND TEXT:  &nbsp;&nbsp;<pre>
+Mammogram results needing clinical review were found in the Women's Health
+package.
+</pre>
+</dt>
+<dt>NOT FOUND TEXT:  &nbsp;&nbsp;<pre>
+No mammogram results needing clinical review were found in the Women's
+Health package.
+</pre>
+</dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;AND</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;2</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;2</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERNAL PATIENT COHORT LOGIC</td>
+<td>(SEX)&(AGE)&FI(3)</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS COUNT</td>
+<td>3</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS LIST</td>
+<td>SEX;AGE;3</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AGE FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>LINKED REMINDER DIALOG</td>
+<td><a href="801.41-607.html">VA-WH MAMMOGRAM REVIEW RESULTS</a></td>
+</tr>
+<tr>
+<td># OF GEN. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>SPONSOR</td>
+<td><a href="811.6-12.html">Women Veterans Health Program</a></td>
+</tr>
+<tr>
+<td>USAGE</td>
+<td>CR</td>
+</tr>
+<tr>
+<td>EDIT HISTORY</td>
+<td>
+<ol>
+<li>
+<dt>EDIT DATE:  &nbsp;&nbsp;2005-03-11 12:49:23</dt>
+<dt>EDIT BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>EDIT COMMENTS:  &nbsp;&nbsp;<pre>
+Exchange Install
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

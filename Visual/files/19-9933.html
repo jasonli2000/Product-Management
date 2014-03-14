@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTkzMw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DG CLEANUP INCOME TEST MONITOR (9933) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTkzMw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DG CLEANUP INCOME TEST MONITOR</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Purge Income Test Monitor</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PURGE INCOME TEST MONITOR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will monitor the cleanup process previously selected.  If 
+the process has been stopped, then it may be resumed where it left off.  
+If the process has run to Completion, then re-running the Purge option, 
+will kill the XTMP work file, and start over.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>MONITOR^<a href="http://code.osehra.org/dox/Routine_DG53558M.html">DG53558M</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

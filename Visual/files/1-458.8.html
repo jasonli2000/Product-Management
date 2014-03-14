@@ -1,0 +1,52 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS00NTguOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RECESS TRACKING (458.8) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS00NTguOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RECESS TRACKING</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Recess Tracking file contains records of recess periods for each 
+fiscal year for nurses on the 9-month AWS schedule.  Nurses on the 9-month
+AWS shall be required to schedule 75 percent of the fiscal year as work
+and 25% of the fiscal year as recess, prior to beginning the AWS.  The
+periods of work and recess are prorated from the first pay period in which
+the AWS begins and the last pay period of the fiscal year.  An ETA fiscal 
+year runs from the first full pay period after September 30 through the 
+following year and the entire pay period that contains September 30.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

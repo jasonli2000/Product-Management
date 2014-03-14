@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzg0NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSSJI ELECTROLYTE FILE (7845) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzg0NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSSJI ELECTROLYTE FILE</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Electrolyte File (IV)</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>ELECTROLYTE FILE (IV)</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+  This option will allow you to alter the contents of the DRUG ELECTROLYTES 
+file (50.4). This is the file that is pointed to by the ELECTROLYTES 
+subfile in the IV ADDITIVES (52.6) and IV SOLUTIONS (52.7) files.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K I1</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ELECTRO^<a href="http://code.osehra.org/dox/Routine_PSSVIDRG.html">PSSVIDRG</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2008-05-15 10:41:38</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

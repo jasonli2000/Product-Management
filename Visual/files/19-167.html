@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTY3").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUFILEDELETE (167) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTY3" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUFILEDELETE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Take away All access to a File</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>TAKE AWAY ALL ACCESS TO A FILE</td>
+</tr>
+<tr>
+<td>OUT OF ORDER MESSAGE</td>
+<td>ACCESS DISABLED</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option deletes the access all users hold to a particular file.
+This does not include those users with programmer access, i.e., DUZ(0)="@".
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>DELF^<a href="http://code.osehra.org/dox/Routine_XUFILE1.html">XUFILE1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

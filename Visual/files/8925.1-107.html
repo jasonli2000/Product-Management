@@ -1,0 +1,138 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODkyNS4xLTEwNw").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>C & P EXAM (107) &nbsp;&nbsp;  TIU DOCUMENT DEFINITION (8925.1)</h1>
+<div id="demo"><table id="ODkyNS4xLTEwNw" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>C & P EXAM</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>C & P EXAM</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>TITLE</td>
+</tr>
+<tr>
+<td>CLASS OWNER</td>
+<td><a href="8930-55.html">CLINICAL COORDINATOR</a></td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td><a href="8925.6-13.html">INACTIVE</a></td>
+</tr>
+<tr>
+<td>UPLOAD TARGET FILE</td>
+<td><a href="1-396.4.html">2507 EXAM</a></td>
+</tr>
+<tr>
+<td>LAYGO ALLOWED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>TARGET TEXT FIELD SUBSCRIPT</td>
+<td>70;RES</td>
+</tr>
+<tr>
+<td>UPLOAD CAPTIONED ASCII HEADER</td>
+<td>
+<ol>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;EXAM NUMBER</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;EXAM REFERENCE #</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;.001</dt>
+<dt>LOOKUP LOCAL VARIABLE NAME:  &nbsp;&nbsp;TIUCPFN</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;53901</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;EXAMINING PHYSICIAN</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;EXAMINING PHYSICIAN</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;.07</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;WELBY,MARCUS MD</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;PATIENT NAME</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;PATIENT NAME</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;VETERAN,JOHN Q.</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;PATIENT SSN</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;PATIENT SSN</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;.02</dt>
+<dt>LOOKUP LOCAL VARIABLE NAME:  &nbsp;&nbsp;TIUSSN</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;555-12-2346</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+<dt>TRANSFORM CODE:  &nbsp;&nbsp;S X=$TR(X,"/-","")</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;DATE OF EXAM</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;EXAM DATE</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;.06</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;03/25/99</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;EXAM TYPE</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;EXAM TYPE</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;POST-TRAUMATIC STRESS DISORDER (PTSD)</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;NO</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>UPLOAD LOOK-UP METHOD</td>
+<td>D LOOKUP^<a href="http://code.osehra.org/dox/Routine_TIUPUTA.html">TIUPUTA</a></td>
+</tr>
+<tr>
+<td>UPLOAD POST-FILING CODE</td>
+<td>D FOLLOWUP^<a href="http://code.osehra.org/dox/Routine_TIUPUTA.html">TIUPUTA</a>(TIUREC("#"))</td>
+</tr>
+<tr>
+<td>UPLOAD FILING ERROR CODE</td>
+<td>D FIX^<a href="http://code.osehra.org/dox/Routine_TIUPUTA.html">TIUPUTA</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1999-10-19 16:27:45</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,52 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS05OTk5OTk5LjE3").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>TREATMENT (9999999.17) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS05OTk5OTk5LjE3" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>TREATMENT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file is a table with site defined Treatment names.  These are names
+of treatments that are not covered in the ICD-9-CM Procedures or the CPT
+Procedures.  Examples may include treatments such as Ear Irrigation, or 
+Instructions or Counseling given to a patient for a Medical Problem.
+ 
+When the treatment names are associated with a patients visit, they are
+for clinical use and do not contribute to billing and workload because of
+the lack of a coded CPT or ICD-9-CM.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

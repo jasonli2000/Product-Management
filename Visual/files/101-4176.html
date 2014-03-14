@@ -1,0 +1,106 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTQxNzY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSO PMP MENU (4176) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTQxNzY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSO PMP MENU</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Patient Medication Profile</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2429.html">PSO PATIENT RECORD UPDATE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PU</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4185.html">PSO PMP CHANGE VIEW</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;CV</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4182.html">PSO PMP STATUS GROUP</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;GS</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4184.html">PSO PMP PATIENT INFORMATION</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;PI</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-4183.html">PSO PMP SIG DISPLAY</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;SIG</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>D SHOW^<a href="http://code.osehra.org/dox/Routine_VALM.html">VALM</a>,HDR^PSOPMP0 S XQORM("#")=$O(^ORD(101,"B","PSO PMP SELECT",""))_"^1:"_VALMCNT,XQORM("??")="D HELP^<a href="http://code.osehra.org/dox/Routine_VALM2.html">VALM2</a>,HDR^PSOPMP0"</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>26</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>4</td>
+</tr>
+<tr>
+<td>IDENTIFIER</td>
+<td>MP</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2011-04-28 16:06:58</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

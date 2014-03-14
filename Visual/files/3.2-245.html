@@ -1,0 +1,66 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My4yLTI0NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>P-LASER-10/6/UPRIGHT (245) &nbsp;&nbsp;  TERMINAL TYPE (3.2)</h1>
+<div id="demo"><table id="My4yLTI0NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>P-LASER-10/6/UPRIGHT</td>
+</tr>
+<tr>
+<td>RIGHT MARGIN</td>
+<td>68</td>
+</tr>
+<tr>
+<td>FORM FEED</td>
+<td>#</td>
+</tr>
+<tr>
+<td>PAGE LENGTH</td>
+<td>60</td>
+</tr>
+<tr>
+<td>BACK SPACE</td>
+<td>$C(8)</td>
+</tr>
+<tr>
+<td>OPEN EXECUTE</td>
+<td>W *27,"(s10H",*27,"&16D",*27,"&a12L",*27,"&a68M",*27,"&s0C",*27,"[4i",*27,"[?5i"</td>
+</tr>
+<tr>
+<td>CLOSE EXECUTE</td>
+<td>W #,*27,"[?4i"</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td>Laser Jet with 10 pitch and 6 lines per inch (Upright)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

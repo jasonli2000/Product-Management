@@ -1,0 +1,109 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODAxMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DMSQ PROJECT (8012) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODAxMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DMSQ PROJECT</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Regenerate SQLI Projection</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>REGENERATE SQLI PROJECTION</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>XUPROGMODE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Regenerates the SQLI projection of VA FileMan data dictionaries. The
+regeneration process:
+ 
+  1. Purges existing information in SQLI data files.
+  2. Projects the data dictionaries for all VA FileMan files.
+ 
+Before running this option, the SQLI_KEY_WORD file should be populated
+with all SQL, ODBC, and vendor-specific keywords that should not be used
+in SQLI entity naming.
+ 
+This option requires programmer mode as well as the progmode key.
+ 
+This option may also be used as a skeleton for one that you may want
+to create locally.  Your local option could include the vendor's
+keyword call in the Entry Action and the vendor's mapping call in the
+Exit Action.  A status variable could be used to confirm that the
+SQLI projection completes before the vendor mapping is initiated.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-13.html">VA FILEMAN</a></td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>;vendor's mapper call could go here</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>;vendor's keyword call could go here</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>SETUP^<a href="http://code.osehra.org/dox/Routine_DMSQ.html">DMSQ</a></td>
+</tr>
+<tr>
+<td>SCHEDULING RECOMMENDED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

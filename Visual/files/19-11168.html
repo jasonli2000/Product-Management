@@ -1,0 +1,79 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTExNjg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>YTQ XML OUTPUT (11168) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTExNjg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>YTQ XML OUTPUT</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>XML Output</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>XML OUTPUT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Outputs an XML document of MHA3 Administration data filtered by:
+ 
+          D         Date Only
+          I         Instrument
+          L         Location
+          P         Patient
+          O         Ordered By
+ 
+All reports have a date range. You may include results and individual 
+question data.
+ 
+This report is in XML format to aid use by other reporting tools. Output 
+contains Patient Identified Data and its use is restricted to those who 
+meet all requirements for data security and research and clinical 
+authorization/
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>MAIN^<a href="http://code.osehra.org/dox/Routine_YTQAPI15.html">YTQAPI15</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

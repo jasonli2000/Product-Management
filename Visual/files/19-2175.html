@@ -1,0 +1,74 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjE3NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DG CO-PAY TEST VIEW EDITING (2175) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjE3NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DG CO-PAY TEST VIEW EDITING</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>View Copay Exemption Test Editing Activity</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>VIEW COPAY EXEMPTION TEST EDIT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the user to view all changes made to a particular co-pay 
+test for a patient.  Some of the displayed information includes date of 
+change, user who made change and the type of change.  If a change involves 
+a change in the co-pay test status, the previous and current values are 
+displayed.  If a co-pay test is deleted, any associated changes are also 
+deleted.  
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D ON^<a href="http://code.osehra.org/dox/Routine_DGMTCOU.html">DGMTCOU</a> I Y S DGMTYPT=2 D DIS^<a href="http://code.osehra.org/dox/Routine_DGMTAUD.html">DGMTAUD</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,60 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTM2LjUtMTY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>CARDIAC ARREST REQUIRING CPR (16) &nbsp;&nbsp;  PERIOPERATIVE OCCURRENCE CATEGORY (136.5)</h1>
+<div id="demo"><table id="MTM2LjUtMTY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OCCURRENCE CATEGORY</td>
+<td>CARDIAC ARREST REQUIRING CPR</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Definition Revised (2011): Indicate if there was any cardiac arrest 
+requiring external or open cardiopulmonary resuscitation (CPR) 
+occurring in the operating room, ICU, ward, or out-of-hospital after 
+the chest had been completely closed and within 30 days of surgery.
+Patients with AICDs that fire but the patient does not lose 
+consciousness should be excluded.
+ 
+If patient had cardiac arrest requiring CPR, indicate whether the 
+arrest occurred intraoperatively or postoperatively. Indicate the 
+one appropriate response:
+- intraoperatively: occurring while patient was in the operating room
+- postoperatively:  occurring after patient left the operating room
+</pre>
+</td>
+</tr>
+<tr>
+<td>INTRAOPERATIVE ALLOWED</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

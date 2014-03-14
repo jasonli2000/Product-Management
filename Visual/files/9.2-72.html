@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS4yLTcy").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUS UCI UPDATE (72) &nbsp;&nbsp;  HELP FRAME (9.2)</h1>
+<div id="demo"><table id="OS4yLTcy" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUS UCI UPDATE</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>UCI UPDATE FOR VERSIONS PRIOR TO 4.3</td>
+</tr>
+<tr>
+<td>TEXT</td>
+<td><pre>
+The sign-on portion of the Kernel (the "XUS" routines) now allows users
+who have PRIMARY MENU OPTIONS to route themselves to different UCIs.
+Thus, a user who customarily gets a restricted Menu Option in the
+"production" UCI might now also be allowed to jump to a "test" UCI
+in which he has different privileges.
+ 
+A typical sign-on dialogue might now look like:
+  ACCESS CODE:
+  HIT 'RETURN' TO GET YOUR USUAL OPTION IN 'VAH,AAA', OR SELECT:
+     1  TST
+     2  MGR:STA
+ 
+In this example, if the user just hits return, he enters his normal PRIMARY MENU
+OPTION.  If he types 'TST' or '1', he jumps to the "XUS" sign-on in the 'TST'
+UCI (where he must enter another ACCESS CODE).  If he types
+'MGR:STA' or '2', he jumps to the 'STA" routine in 'MGR'.
+ 
+As before, UCI fields are editable within the "XUSEREDIT" Option of the
+"XUSER" Menu Option in the Kernel (multiple field #20 in File 3).
+ 
+The XUS and XUS3 routines have been modified, and a new XUINEND1
+routine exists to wipe out old "UCI" fields that might now be
+inappropriate.  XUINIT invokes XUINEND1 It shows any users who currently
+have "UCI" fields, and who ALSO have "ZJOB" or "PRIMARY MENU OPTION" fields. 
+Such users formerly did not see the "UCI:" question, but they WILL see that
+question starting with the installation of KERNEL 4.3 or greater.  Hence, the
+"UCI"s for such users should probably be deleted.  XUINEND1 will do that
+deleting automatically, if you answer "Y" to its  "...OK? YES//" question.
+</pre>
+</td>
+</tr>
+<tr>
+<td>Want to LOAD KEYWORDS (Y/N)?</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>DATE ENTERED</td>
+<td>1989-01-20 00:00:00</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

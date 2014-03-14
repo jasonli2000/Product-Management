@@ -1,0 +1,158 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#My42LTIwNg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>GMPL PROBLEM NTRT BULLETIN (206) &nbsp;&nbsp;  BULLETIN (3.6)</h1>
+<div id="demo"><table id="My42LTIwNg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>GMPL PROBLEM NTRT BULLETIN</td>
+</tr>
+<tr>
+<td>SUBJECT</td>
+<td>UNMAPPED PROBLEM/DIAGNOSIS NTRT REQUEST</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This bulletin will be delivered to the G.PROBLEM LIST NTRT Mail Group on
+FORUM.  It informs the group that a user at a given facility failed to
+find a suitable term in either the Problem List or Clinical Findings
+hierarchy of SNOMED CT. The NTRT Terminology Stewards for the Problem List
+Domain will consider the request, and inform the facility of their
+decision as to whether the new term should be added to the Enterprise
+Terminology.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MESSAGE</td>
+<td><pre>
+             *** Unmapped Problem/Diagnosis NTRT Request ***
+ 
+Selected SNOMED CT term: |1|
+  Selected SNOMED CT ID: |2|
+      Name of requester: |3|
+   Date/Time of request: |4|
+                Service: |5|
+               Location: |6|
+         Search History: |7|
+ 
+A New Term Rapid Turnaround (NTRT) mail message has been sent to the 
+Standards &amp; Terminology Services (STS) team, and the site coordinator has 
+been copied on the message thread. This is informational only and no work 
+is required by the site coordinator for processing of this request.
+ 
+This request is generated when a user from the listed facility selects a 
+valid SNOMED CT problem/diagnosis from the extended search option when 
+the initial search does not find a suitable term. The selected 
+problem/diagnosis already has a SNOMED CT ID, but it will be assigned a 
+temporary ICD-9-CM code of 799.9 until a correct ICD-9-CM code is 
+assigned 
+ 
+After the SNOMED CT problem/diagnosis term is mapped to a valid ICD-9-CM 
+code or set of codes, it will be deployed through the NTRT process and 
+become available for selection by all users who use the search function 
+within the Problem List application. The ICD-9-CM code 799.9 will be 
+automatically updated to the correct ICD-9-CM code after the NTRT 
+deployment and will display in the detail view of the patient's problem 
+on the Problem List tab. 
+ 
+The status and progress of this request may be monitored by accessing the 
+NTRT Web site at http://vista.domain.ext/ntrt/. Follow the link to 
+Access the NTRT Request Web Site. This mail message is provided to site
+coordinators as information only, since the Problem List domain steward
+will be responsible for resolving the unmapped problem/diagnoses requests.
+ 
+If you have questions, need more information, or are having accessibility 
+problems with this Web site, please contact STS by Exchange email: [VHA 
+OI HDI STS NTRT].
+ 
+Thank you.
+</pre>
+</td>
+</tr>
+<tr>
+<td>PARAMETER</td>
+<td>
+<ol>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;1</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Text of the selected SNOMED CT Term.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;2</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Selected SNOMED CT ID.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;3</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Name of the Requester.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;4</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Date/Time of the request.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;5</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the Hospital Service with which the requester is associated.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;6</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the Location (i.e., facility) where the request originated.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PARAMETER:  &nbsp;&nbsp;7</dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This is the text that the user actually entered.
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,85 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTM4NQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA LWKLBEDSEC (5385) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTM4NQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA LWKLBEDSEC</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>PTF Bedsection Report</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>PTF BEDSECTION REPORT</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the supervisor to generate a listing of PTF Bedsection
+workloads. The supervisor is prompted to generate a 'detailed' or
+'summary' report. If the supervisor has access to more than one division
+or imaging type, s/he is prompted to select the divisions and imaging
+types to include in the report. The supervisor is prompted to select the
+bedsections to include in the report. The supervisor may select one, many
+or all bedsections. The supervisor is prompted to enter a date range for
+the exams to be included in the report. The exam status values that will
+be included in the report will be displayed by imaging type.
+ 
+The reports are listed by division, imaging type within the division, and
+then by bedsection within the imaging type. The report contains the
+following information: procedure, number of examinations, weighted work
+units, and percent of total weighted work units. A 'summary' report groups
+all examinations together by bedsection for each imaging type and
+division. A 'detailed' report gives information for each individual
+procedure performed within the bedsection.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>DISPLAY OPTION?</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>BEDSEC^<a href="http://code.osehra.org/dox/Routine_RALWKL.html">RALWKL</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

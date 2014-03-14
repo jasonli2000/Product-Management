@@ -1,0 +1,111 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0yMDA1LjAy").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OBJECT TYPE (2005.02) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0yMDA1LjAy" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OBJECT TYPE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ 
+ +---------------------------------------------------------------+
+ |                                                               |
+ | Property of the US Government.                                |
+ | No permission to copy or redistribute this software is given. |
+ | Use of unreleased versions of this software requires the user |
+ | to execute a written test agreement with the VistA Imaging    |
+ | Development Office of the Department of Veterans Affairs,     |
+ | telephone (301) 734-0100.                                     |
+ |                                                               |
+ | The Food and Drug Administration classifies this software as  |
+ | a Class II medical device.  As such, it may not be changed    |
+ | in any way.  Modifications to this software may result in an  |
+ | adulterated medical device under 21CFR820, the use of which   |
+ | is considered to be a violation of US Federal Statutes.       |
+ |                                                               |
+ +---------------------------------------------------------------+
+ 
+This file contains an entry for every type of object handled by the VistA
+Imaging System. It is exported with data. All sites must have entries
+for the data types distributed in order to display objects sent via
+multimedia mail.
+ The Object Type file handles objects of various types.  These include: 
+  * still images 
+  * image groups
+  * graphics or waveforms
+  * scanned documents
+  * audio files  
+ 
+ Other types are expected in the future (i.e., image overlays,
+motion video chips, and office automation files).  An object,
+such as an image series, may actually consist of multiple
+objects.  In this case, the object type is Group.  The Object
+Group multiple field is used to point to a set of objects in the
+Image file.  Each object type has associated methods (software
+routines) for performing certain actions.  For example, there are
+methods for displaying images and image abstracts.  The group
+type is used to combine multiple objects of the same or different
+types to create complex objects.
+ 
+ There are different image types, for example: 
+  * black and white high-resolution x-rays
+  * black and white ultrasound images (lower resolution)
+  * pseudo-color nuclear medicine scans
+  * medium resolution true color bronchoscopy images
+  * pathology images
+ 
+ Each type of object has a number of specific characteristics,
+including the methods  required to display them.  For example,
+each object type has a type name and an associated display method
+or window.
+ 
+ All accesses to objects use the file finder routine ^MAGFILE or
+^MAGFILEA to find the network location needed.  Different entry
+points of this routine will find locations of full files,
+abstract files, and jukebox copies of files.  In addition, the
+network write location will be returned for image captures.
+</pre>
+</td>
+</tr>
+<tr>
+<td>APPLICATION GROUP</td>
+<td>
+<ol>
+<li>
+<dt>APPLICATION GROUP:  &nbsp;&nbsp;MAG</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

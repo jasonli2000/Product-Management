@@ -1,0 +1,80 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTQyLjEtMjQz").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>NON VA MEDICATIONS (243) &nbsp;&nbsp;  HEALTH SUMMARY COMPONENT (142.1)</h1>
+<div id="demo"><table id="MTQyLjEtMjQz" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>NON VA MEDICATIONS</td>
+</tr>
+<tr>
+<td>PRINT ROUTINE</td>
+<td>MAIN;GMTSPSHO</td>
+</tr>
+<tr>
+<td>EXTERNAL/EXTRACT ROUTINE</td>
+<td>
+<ol>
+<li>
+<dt>EXTERNAL/EXTRACT ROUTINE:  &nbsp;&nbsp;<a href="http://code.osehra.org/dox/Routine_PSOHCSUM.html">PSOHCSUM</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>TIME LIMITS APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>RXNV</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This component displays the non-VA medications taken or
+reported as used by a patient.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MAXIMUM OCCURRENCES APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>DEFAULT HEADER NAME</td>
+<td>Non VA Meds</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>PS</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

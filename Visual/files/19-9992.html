@@ -1,0 +1,93 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTk5Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>HLEM EVENT LOG SERVER (9992) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTk5Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>HLEM EVENT LOG SERVER</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>HLEM EVENT LOG SERVER</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>HLEM EVENT LOG SERVER</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This is a Mailman Server for receiving HL7 Monitor Events from remote locations.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>server</td>
+</tr>
+<tr>
+<td>DISPLAY OPTION?</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-33.html">HEALTH LEVEL SEVEN</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>RECEIVE^<a href="http://code.osehra.org/dox/Routine_HLEMRCV.html">HLEMRCV</a></td>
+</tr>
+<tr>
+<td>SERVER ACTION</td>
+<td>RUN IMMEDIATELY</td>
+</tr>
+<tr>
+<td>SERVER AUDIT</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>SUPRESS BULLETIN</td>
+<td>YES, SUPRESS IT</td>
+</tr>
+<tr>
+<td>SERVER REPLY</td>
+<td>NO REPLY (DEFAULT)</td>
+</tr>
+<tr>
+<td>SAVE REQUEST</td>
+<td>Save request in Postmaster basket</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

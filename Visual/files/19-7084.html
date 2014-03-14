@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNzA4NA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ACKQAS CP ADEQ (7084) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNzA4NA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ACKQAS CP ADEQ</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>C&P Exam Adequation</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>C&P EXAM ADEQUATION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows you to adequate a C&amp;P exam. Only exams that are 
+complete (i.e., having a status of AWAITING ADEQUATION) and signed 
+off on can be adequated.
+  
+When an audiologist provides his or her electronic signature to a C&amp;P 
+exam, the chief adequator sees a list of exams waiting to be 
+adequated. He or she can review, print, or edit the report using the 
+Edit an Existing Visit option. Finally, he or she can provide an 
+electronic signature using the C&amp;P Exam Adequation option to release 
+the report to the AMIE package.  Entering the electronic signature to 
+adequate an exam causes all exam results to be transferred to the 
+AMIE C&amp;P package and the exam is marked CLOSED.  The results are made 
+available to the regional office. Non-supervisory clinicians can 
+adequate their own C&amp;P exams.  A clinician designated as a supervisor 
+in the A&amp;SP STAFF file (#509850.3) can adequate other clinicians' C&amp;P 
+exams.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-150.html">QUASAR</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>ADEQ^<a href="http://code.osehra.org/dox/Routine_ACKQCP.html">ACKQCP</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

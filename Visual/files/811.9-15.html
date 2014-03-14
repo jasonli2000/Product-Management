@@ -1,0 +1,267 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjktMTU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ZZVA-*COLORECTAL CANCER SCREEN (SIG.) (15) &nbsp;&nbsp;  REMINDER DEFINITION (811.9)</h1>
+<div id="demo"><table id="ODExLjktMTU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ZZVA-*COLORECTAL CANCER SCREEN (SIG.)</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>ZZ Flexisigmoidoscopy</td>
+</tr>
+<tr>
+<td>DO IN ADVANCE TIME FRAME</td>
+<td>1M</td>
+</tr>
+<tr>
+<td>RELATED REMINDER GUIDELINE</td>
+<td><a href="811.9-15.html">ZZVA-*COLORECTAL CANCER SCREEN (SIG.)</a></td>
+</tr>
+<tr>
+<td>INACTIVE FLAG</td>
+<td>INACTIVE</td>
+</tr>
+<tr>
+<td>INACTIVE CHANGE DATE</td>
+<td>2005-03-11 12:42:50</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+At least one sigmoidoscopy examination in their lifetime for patients age
+50 and older, or a fecal occult blood test yearly.  This reminder uses 5
+years, rather than 99Y for "ONCE" as originally published in the VA
+Guidelines.  The 5 years is a conservative period recommended by a blue
+ribbon panel publishing their findings in the February 1997 issue of
+"Gastroenterology" magazine.
+ 
+This reminder is based on the "Colorectal Cancer Detection" guidelines
+specified in the VHA HANDBOOK, APPENDIX A.
+ 
+    Target Condition: Early detection of colon cancer or its predecessors.
+ 
+    Target Group: All persons ages 50 and older.
+ 
+    Recommendation: All persons age 50 and older should receive an annual
+    fecal occult blood test or undergo a sigmoidoscopy examination
+    (periodicity unspecified).
+ 
+    Goals for FY 2000: For persons age 50 and older, 50 percent of those
+    enrolled in primary care clinics have received fecal occult blood
+    testing within the preceding year and 40 percent have received at
+    least one proctosigmoidosopy examination in their lifetime.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TECHNICAL DESCRIPTION</td>
+<td><pre>
+The next time a SIG is due is 1 year from the last FOBT, or 5 years from
+the last SIG.
+ 
+The reminder type is EXAM, and the Baseline AGE RANGE and FREQUENCY is 50
+and older and 1Y - so that the SIG will be due a year from the last FOBT
+done in the clinic.  The AGE RANGE and FREQUENCY are modified to 50 and
+older and 5Y if a prior SIG has been received by the patient.  The Rank
+of 2, on the VA-FLEXISIGMOIDOSCOPY taxonomy match fields, will cause a
+match of a SIG to take precedence over the FOBT findings to establish when
+the SIG is due again.  If the most recent health factor finding, between
+INACTIVATE and ACTIVATE is INACTIVATE with its rank of 1, the reminder
+will be "N/A" (not applicable to the patient), and the frequency is 0Y.
+ 
+Check the Taxonomy Findings entries representing flexisigimoidoscopy and
+FOBT procedures. This represents coded standard entries in the CPT file
+and ICD Operation/Procedure file.  If the taxonomies need modification,
+copy the taxonomy to a new taxonomy for your site, and make the
+appropriate modifications.  Then, copy this reminder to a new reminder for
+your local sites modifications, and change the Taxonomy Findings to use
+the new taxonomies.
+</pre>
+</td>
+</tr>
+<tr>
+<td>BASELINE AGE FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;1Y</dt>
+<dt>MINIMUM AGE:  &nbsp;&nbsp;50</dt>
+<dt>AGE MATCH TEXT:  &nbsp;&nbsp;<pre>
+SIG due every 5 years for patients 50 and older, or FOBT annually.
+</pre>
+</dt>
+<dt>AGE NO MATCH TEXT:  &nbsp;&nbsp;<pre>
+Flexisigmoidoscopy not indicted for patients under 50.
+</pre>
+</dt>
+<dt>NO. OF AGE MATCH LINES:  &nbsp;&nbsp;1</dt>
+<dt>NO. OF AGE NO MATCH LINES:  &nbsp;&nbsp;1</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="9999999.15-660001.html">FOBT(CLINIC)</a></dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.2-15.html">VA-FLEXISIGMOIDOSCOPY</a></dt>
+<dt>MINIMUM AGE:  &nbsp;&nbsp;50</dt>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;5Y</dt>
+<dt>RANK FREQUENCY:  &nbsp;&nbsp;2</dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.2-27.html">VA-FOBT</a></dt>
+<dt>MINIMUM AGE:  &nbsp;&nbsp;50</dt>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;1Y</dt>
+<dt>RANK FREQUENCY:  &nbsp;&nbsp;3</dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.2-31.html">VA-COLORECTAL CANCER SCREEN</a></dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="9999999.64-51.html">INACTIVATE SIGMOIDOSCOPY</a></dt>
+<dt>MINIMUM AGE:  &nbsp;&nbsp;50</dt>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;0Y</dt>
+<dt>RANK FREQUENCY:  &nbsp;&nbsp;1</dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;AND NOT</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="9999999.64-52.html">ACTIVATE SIGMOIDOSCOPY</a></dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERNAL PATIENT COHORT LOGIC</td>
+<td>(SEX)&(AGE)&'FI(5)</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS COUNT</td>
+<td>3</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS LIST</td>
+<td>SEX;AGE;5</td>
+</tr>
+<tr>
+<td>INTERNAL RESOLUTION LOGIC</td>
+<td>(0)!FI(1)!FI(2)!FI(3)</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS COUNT</td>
+<td>3</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS LIST</td>
+<td>1;2;3</td>
+</tr>
+<tr>
+<td>AGE FINDINGS COUNT</td>
+<td>3</td>
+</tr>
+<tr>
+<td>AGE FINDINGS LIST</td>
+<td>2;3;5</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS COUNT</td>
+<td>2</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS LIST</td>
+<td>4;6</td>
+</tr>
+<tr>
+<td># OF GEN. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>RESCISSION DATE</td>
+<td>2005-02-04 00:00:00</td>
+</tr>
+<tr>
+<td># SUM. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>USAGE</td>
+<td>C</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

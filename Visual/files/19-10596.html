@@ -1,0 +1,84 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA1OTY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGPF MANUAL QUERY (10596) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA1OTY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGPF MANUAL QUERY</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Record Flag Manual Query</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RECORD FLAG MANUAL QUERY</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>DGPF TRANSMISSIONS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows a user to query a selected treating facility for
+existing Category I Patient Record Flag (PRF) assignments for a selected
+patient.  Any Category I PRF assignment returned by the query that does
+not exist at the local facility will automatically be added at the local
+facility.  A List Manager user interface will display a list of all
+Category I PRF assignments found at the queried treating facility.  The
+following action is provided within the List Manager interface:
+  - Display the query details for a selected assignment.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_DGPFHLUQ.html">DGPFHLUQ</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP OF PRIMARY MENU</td>
+<td>2006-01-10 13:46:22</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

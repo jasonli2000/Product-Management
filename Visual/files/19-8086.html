@@ -1,0 +1,75 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktODA4Ng").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LRLEDI (8086) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktODA4Ng" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LRLEDI</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Referral Patient Multi-purpose Accession</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>REFERRAL PATIENT MULTI-PURPOSE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option is used to accession referral patients from another medical
+center. The patient must already exist in the Patient file (#2) in order
+to be selectable. The option will accession the patient into the REFERRAL
+PATIENT file (#67) if it doesn't already exist.
+ 
+The user will be prompted or the Unique Identifier. The user will then be
+able to order tests for that patient.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>LEDI^<a href="http://code.osehra.org/dox/Routine_LRORD.html">LRORD</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

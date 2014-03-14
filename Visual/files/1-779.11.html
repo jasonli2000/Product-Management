@@ -1,0 +1,59 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03NzkuMTE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>HLO ERROR SCREENS (779.11) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03NzkuMTE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>HLO ERROR SCREENS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+The Health Leven Seven (Optimized) software (HLO) was released as patch 
+HL*1.6*126 to the HL7 v1.6 software package.  Although it is structurally and 
+functionally an independent system, it is officially part of HL7 1.6.  This is 
+a messaging system similar to the old HL7 1.6 package, but it was designed from 
+the ground up and is more robust, more capable, and supports a much higher 
+message throughput.  
+
+This file is used create screens for reporting HLO messaging errors. A screen
+is a list of criteria used to either include or exclude specific error types
+in an error report.  
+
+A screen is identified by its name.  The name should be namespaced and be
+descriptive as to its intended use.
+
+
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

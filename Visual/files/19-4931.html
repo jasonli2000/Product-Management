@@ -1,0 +1,73 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNDkzMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>NURSE-PR-MIDEF (4931) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNDkzMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>NURSE-PR-MIDEF</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Mandatory Deficiency Report by Unit/Svc. Category</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>MANDATORY DEFICIENCY REPORT BY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option generates a fiscal or calendar year mandatory training class
+deficiency report, by nursing location, or service category, in an 80 or
+132 column reporting format. This report also contains the anniversary
+date which is the date by which the employee is scheduled to reattend
+the class.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-106.html">NURSING SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN1^<a href="http://code.osehra.org/dox/Routine_NURSEPD2.html">NURSEPD2</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,242 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjktODE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-MST SCREENING (81) &nbsp;&nbsp;  REMINDER DEFINITION (811.9)</h1>
+<div id="demo"><table id="ODExLjktODE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-MST SCREENING</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>MST Screening</td>
+</tr>
+<tr>
+<td>IGNORE ON N/A</td>
+<td>*</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+All veterans should be screened at least once in their lifetime for
+Military Sexual Trauma.
+ 
+Sample Screening Questions.
+   1. When you were in the military, did you ever receive uninvited
+      and unwanted sexual attention (i.e. touching, cornering, pressure
+      for sexual favors, verbal remarks)?
+ 
+   2. When you were in the military, did anyone ever use force or the
+      threat of force to have sex with you against your will?
+ 
+Documenting YES, NO, or Declined to Answer responses to Screening
+Questions:
+ 
+  A YES response should be documented in progress notes, the MST History
+  file, and local findings that represent the MST status (e.g.,health 
+  factors). A follow-up consult order for counseling should be considered 
+  for the veteran.
+ 
+  A NO or DECLINES TO ANSWER response should be documented in progress
+  notes, the MST History file, and local findings that represent the MST 
+  status (e.g., health factors).
+ 
+This national clinical reminder will ensure the VIA has the ability to
+meet congressional military sexual trauma treatment and reporting
+mandates by providing accurate data collection through the sharing of
+MST data between facilities and data collection agencies.
+ 
+This national clinical reminder will ensure the appropriate and timely
+counseling and treatment of individuals with an incidence of military
+sexual trauma.
+ 
+ 
+</pre>
+</td>
+</tr>
+<tr>
+<td>BASELINE AGE FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>REMINDER FREQUENCY:  &nbsp;&nbsp;99Y</dt>
+<dt>NO. OF AGE MATCH LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. OF AGE NO MATCH LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>FINDINGS</td>
+<td>
+<ol>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-28.html">VA-MST POSITIVE REPORT</a></dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-29.html">VA-MST NEGATIVE REPORT</a></dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.5-30.html">VA-MST DECLINES REPORT</a></dt>
+<dt>USE IN RESOLUTION LOGIC:  &nbsp;&nbsp;OR</dt>
+<dt>BEGINNING DATE/TIME:  &nbsp;&nbsp;T-1Y</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+<li>
+<dt>FINDING ITEM:  &nbsp;&nbsp;<a href="811.4-9.html">VA-VETERAN</a></dt>
+<dt>USE IN PATIENT COHORT LOGIC:  &nbsp;&nbsp;AND</dt>
+<dt>NO. OF FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+<dt>NO. NOT FOUND TEXT LINES:  &nbsp;&nbsp;0</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>INTERNAL PATIENT COHORT LOGIC</td>
+<td>(SEX)&(AGE)&FI(4)</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS COUNT</td>
+<td>3</td>
+</tr>
+<tr>
+<td>PATIENT COHORT FINDINGS LIST</td>
+<td>SEX;AGE;4</td>
+</tr>
+<tr>
+<td>INTERNAL RESOLUTION LOGIC</td>
+<td>(0)!FI(1)!FI(2)!FI(3)</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS COUNT</td>
+<td>3</td>
+</tr>
+<tr>
+<td>RESOLUTION FINDINGS LIST</td>
+<td>1;2;3</td>
+</tr>
+<tr>
+<td>AGE FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>INFORMATION FINDINGS COUNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>LINKED REMINDER DIALOG</td>
+<td><a href="801.41-367.html">VA-MST SCREENING</a></td>
+</tr>
+<tr>
+<td># OF GEN. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>GENERAL RES. NOT FOUND TEXT</td>
+<td><pre>
+All veterans should be screened at least once in their lifetime for
+Military Sexual Trauma.
+
+Sample Screening Questions:\\
+ 1. When you were in the military, did you ever receive uninvited\\
+    and unwanted sexual attention (i.e. touching, cornering, pressure\\
+    for sexual favors, verbal remarks)?\\
+ 
+ 2. When you were in the military, did anyone ever use force or the\\
+    threat of force to have sex with you against your will?\\
+ 
+Document YES, NO, or DECLINED TO ANSWER responses to Screening.
+</pre>
+</td>
+</tr>
+<tr>
+<td># GEN. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># GEN. RES. NOT FOUND LINES</td>
+<td>12</td>
+</tr>
+<tr>
+<td># SUM. COHORT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. COHORT NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td># SUM. RES. NOT FOUND LINES</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+<tr>
+<td>SPONSOR</td>
+<td><a href="811.6-13.html">Office of Mental Health Services and Women Veterans Health Program</a></td>
+</tr>
+<tr>
+<td>USAGE</td>
+<td>*</td>
+</tr>
+<tr>
+<td>EDIT HISTORY</td>
+<td>
+<ol>
+<li>
+<dt>EDIT DATE:  &nbsp;&nbsp;2006-11-22 22:44:52</dt>
+<dt>EDIT BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>EDIT COMMENTS:  &nbsp;&nbsp;<pre>
+Exchange Install
+</pre>
+</dt>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

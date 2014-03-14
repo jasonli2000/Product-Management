@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjE3").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>XUTM ERROR LOG CLEAN RANGE (217) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjE3" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>XUTM ERROR LOG CLEAN RANGE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Clean Error Log Over Range Of Dates</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CLEAN ERROR LOG OVER RANGE OF</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the site manager to remove from Task Manager's error
+log all entries that occur on or between two dates.  The site manager
+enters the two dates, FIRST THE EARLIER DATE AND THEN THE LATER DATE,
+and then the option removes the appropriate entries.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>RANGE^<a href="http://code.osehra.org/dox/Routine_XUTMKE.html">XUTMKE</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,95 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTQyLjEtNDk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VITAL SIGNS SELECTED (49) &nbsp;&nbsp;  HEALTH SUMMARY COMPONENT (142.1)</h1>
+<div id="demo"><table id="MTQyLjEtNDk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VITAL SIGNS SELECTED</td>
+</tr>
+<tr>
+<td>PRINT ROUTINE</td>
+<td>ENVS;GMTSVSS</td>
+</tr>
+<tr>
+<td>EXTERNAL/EXTRACT ROUTINE</td>
+<td>
+<ol>
+<li>
+<dt>EXTERNAL/EXTRACT ROUTINE:  &nbsp;&nbsp;EN1;GMVHS</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>TIME LIMITS APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>SVS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This component contains selected vital measurements extracted from the Vital
+Signs module of the Nursing package.  Time and maximum occurrence limits
+apply, and the user is allowed to select any of the vital measurement types
+defined in the Vital Type file (e.g., pulse, blood pressure, temperature,
+height, weight, and respiration rate).  Data presented include:
+measurement date/time, measurement type and measurement value.
+Note: Formatted display is horizontal.
+</pre>
+</td>
+</tr>
+<tr>
+<td>MAXIMUM OCCURRENCES APPLICABLE</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>SELECTION FILE</td>
+<td>
+<ol>
+<li>
+<dt>SELECTION FILE:  &nbsp;&nbsp;<a href="1-120.51.html">GMRV VITAL TYPE</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DEFAULT HEADER NAME</td>
+<td>Vital Signs Selected</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>GMRV</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

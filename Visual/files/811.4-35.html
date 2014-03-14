@@ -1,0 +1,115 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjQtMzU").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-REMINDER DEFINITION (35) &nbsp;&nbsp;  REMINDER COMPUTED FINDINGS (811.4)</h1>
+<div id="demo"><table id="ODExLjQtMzU" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-REMINDER DEFINITION</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PXRMCDEF.html">PXRMCDEF</a></td>
+</tr>
+<tr>
+<td>ENTRY POINT</td>
+<td>RDEF</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>VA-Reminder Definition Computed Finding</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This computed finding will evaluate the reminder definition that is 
+specified by name in the COMPUTED FINDING PARAMETER field. The name
+that is used is the NAME field (.01) of the reminder definition, not
+the PRINT NAME, additionally the definition must be active. The
+computed finding will be false if the reminder evaluation status is
+CNBD or ERROR, in all other cases it will be true.
+
+The default date of the finding is the evaluation date; this can be
+overridden by appending "^DATE=DUE DATE" or "^DATE=LAST DONE" to the
+reminder name. If a last done date cannot be determined then the date
+of the finding will be the evaluation date.
+ 
+Examples:
+  VA-IHD LIPID PROFILE
+  VA-IHD LIPID PROFILE^DATE=LAST DONE
+  VA-IHD LIPID PROFILE^DATE=DUE DATE
+ 
+The VALUE array, which can be used in a Condition, will contain the
+evaluation status, due date, and last done date. The date values
+are in VA FileMan format. The variable V is the reminder evaluation
+status. Possible values for the reminder evaluation status are:
+ DONE
+ DUE NOW
+ DUE SOON
+ RESOLVED
+ NEVER
+ N/A
+ 
+Example of the Value array:
+  VALUE("STATUS")="DUE NOW" 
+  VALUE("DUEDATE")=3051010.1220 
+  VALUE("LASTDONE")=3051010.1220 
+ 
+Condition examples:
+  I V="DUE NOW" 
+  I V("STATUS")="DUE NOW" 
+  I V("DUEDATE")&gt;3051010.1220 
+  I V("LASTDONE")=3051010.1220 
+  
+***WARNING*** This computed finding can be used to evaluate a reminder 
+inside of a reminder evaluation - do not have this computed finding 
+evaluate the same reminder as the one being evaluated.  
+
+
+
+
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>SINGLE</td>
+</tr>
+<tr>
+<td>CF PARAMETER REQUIRED</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

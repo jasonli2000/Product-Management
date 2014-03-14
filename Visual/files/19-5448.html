@@ -1,0 +1,92 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTQ0OA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA ORDERDISPLAY (5448) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTQ0OA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA ORDERDISPLAY</td>
+</tr>
+<tr>
+<td>X ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Detailed Request Display</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>DETAILED REQUEST DISPLAY</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the user to see a 'detailed' report on a requested 
+examination for a particular patient. The following information is
+displayed: the request status, urgency, procedure, date exam was
+ordered, requestor, and patient location. If the request was 'cancelled'
+or placed on 'hold', the reason will be displayed. If the requested exam
+is in an examination status, that status will also be displayed. If 
+information has been recorded in the status tracking log for the request,
+the user will also have the option to view the log.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>DISPLAY OPTION?</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>K RASCREEN</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S RASCREEN=""</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_RAORD2.html">RAORD2</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

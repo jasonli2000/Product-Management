@@ -1,0 +1,355 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODkyNS4xLTM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PROGRESS NOTES (3) &nbsp;&nbsp;  TIU DOCUMENT DEFINITION (8925.1)</h1>
+<div id="demo"><table id="ODkyNS4xLTM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PROGRESS NOTES</td>
+</tr>
+<tr>
+<td>ABBREVIATION</td>
+<td>PN</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>Progress Notes</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>CLASS</td>
+</tr>
+<tr>
+<td>CLASS OWNER</td>
+<td><a href="8930-55.html">CLINICAL COORDINATOR</a></td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td><a href="8925.6-11.html">ACTIVE</a></td>
+</tr>
+<tr>
+<td>NATIONAL STANDARD</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>UPLOAD TARGET FILE</td>
+<td><a href="1-8925.html">TIU DOCUMENT</a></td>
+</tr>
+<tr>
+<td>LAYGO ALLOWED</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>TARGET TEXT FIELD SUBSCRIPT</td>
+<td>2;TEXT</td>
+</tr>
+<tr>
+<td>UPLOAD CAPTIONED ASCII HEADER</td>
+<td>
+<ol>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;TITLE</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;TITLE OF NOTE</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;.01</dt>
+<dt>LOOKUP LOCAL VARIABLE NAME:  &nbsp;&nbsp;TIUTITLE</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;ADTC (AMB DIAG TREAT CENTER) DISCHARGE SUMMARY NOTE</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;SSN</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;PATIENT SSN</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;.02</dt>
+<dt>LOOKUP LOCAL VARIABLE NAME:  &nbsp;&nbsp;TIUSSN</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;555-12-1234</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+<dt>TRANSFORM CODE:  &nbsp;&nbsp;S X=$TR(X,"-/","")</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;VISIT/EVENT DATE</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;VISIT/EVENT DATE</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;.07</dt>
+<dt>LOOKUP LOCAL VARIABLE NAME:  &nbsp;&nbsp;TIUVDT</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;3/2/96@14:00</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;AUTHOR</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;DICTATING PROVIDER</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;1202</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;HOWSER,DOOGEY</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;TRANSCRIBER</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;TRANSCRIBER</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;1302</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;K5420</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;NO</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;DATE/TIME OF DICT</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;DICTATION DATE/TIME</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;1301</dt>
+<dt>LOOKUP LOCAL VARIABLE NAME:  &nbsp;&nbsp;TIUDDT</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;4/4/96</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;NO</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;LOCATION</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;PATIENT LOCATION</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;1205</dt>
+<dt>LOOKUP LOCAL VARIABLE NAME:  &nbsp;&nbsp;TIULOC</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;MEDICAL-CONSULT 6200</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;EXPECTED COSIGNER</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;EXPECTED COSIGNER</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;1208</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;WELBY,MARCUS</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;date of admis</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;DATE OF ADMISSION</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;ADMISSION DATE</dt>
+<dt>FIELD NUMBER:  &nbsp;&nbsp;.07</dt>
+<dt>EXAMPLE ENTRY:  &nbsp;&nbsp;3/30/97</dt>
+<dt>CLINICIAN MUST DICTATE:  &nbsp;&nbsp;YES</dt>
+<dt>REQUIRED FIELD?:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>CAPTION:  &nbsp;&nbsp;URGENCY</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>OK TO DISTRIBUTE</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>UPLOAD LOOK-UP METHOD</td>
+<td>D LOOKUP^<a href="http://code.osehra.org/dox/Routine_TIUPUTPN.html">TIUPUTPN</a></td>
+</tr>
+<tr>
+<td>UPLOAD POST-FILING CODE</td>
+<td>D FOLLOWUP^<a href="http://code.osehra.org/dox/Routine_TIUPUTPN.html">TIUPUTPN</a>(TIUREC("#"))</td>
+</tr>
+<tr>
+<td>UPLOAD FILING ERROR CODE</td>
+<td>D GETPN^<a href="http://code.osehra.org/dox/Routine_TIUCHLP.html">TIUCHLP</a></td>
+</tr>
+<tr>
+<td>EDIT TEMPLATE</td>
+<td>[TIU ENTER/EDIT PROGRESS NOTE]</td>
+</tr>
+<tr>
+<td>PRINT METHOD</td>
+<td>D ENTRY^<a href="http://code.osehra.org/dox/Routine_TIUPRPN.html">TIUPRPN</a></td>
+</tr>
+<tr>
+<td>PRINT FORM HEADER</td>
+<td>Progress Notes</td>
+</tr>
+<tr>
+<td>PRINT FORM NUMBER</td>
+<td>Vice SF 509</td>
+</tr>
+<tr>
+<td>PRINT GROUP</td>
+<td>2</td>
+</tr>
+<tr>
+<td>ALLOW CUSTOM FORM HEADERS</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>VISIT LINKAGE METHOD</td>
+<td>D ENPN^<a href="http://code.osehra.org/dox/Routine_TIUVSIT.html">TIUVSIT</a>(.TIU,.DFN,1)</td>
+</tr>
+<tr>
+<td>VALIDATION METHOD</td>
+<td>S TIUASK=$$CHEKPN^TIULD(.TIU,.TIUBY)</td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="8925.1-27.html">ADVANCE DIRECTIVE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;1</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>MENU TEXT:  &nbsp;&nbsp;Advance Directive</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="8925.1-23.html">HISTORICAL TITLES</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;2</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>MENU TEXT:  &nbsp;&nbsp;Historical Titles</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="8925.1-30.html">CRISIS NOTE</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;3</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+<dt>MENU TEXT:  &nbsp;&nbsp;Crisis Note</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="8925.1-31.html">CLINICAL WARNING</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;4</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+<dt>MENU TEXT:  &nbsp;&nbsp;Clinical Warning</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="8925.1-25.html">ADVERSE REACTION/ALLERGY</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;5</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+<dt>MENU TEXT:  &nbsp;&nbsp;Adv React/Allergy</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="8925.1-39.html">ADDICTION SEVERITY INDEX</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;6</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;6</dt>
+<dt>MENU TEXT:  &nbsp;&nbsp;Addiction Severity</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="8925.1-1267.html">PATIENT RECORD FLAG CAT I</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;7</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;7</dt>
+<dt>MENU TEXT:  &nbsp;&nbsp;Pat Record Flag Cat I</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="8925.1-1268.html">PATIENT RECORD FLAG CAT II</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;8</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;8</dt>
+<dt>MENU TEXT:  &nbsp;&nbsp;Pat Record Flag Cat II</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="8925.1-1287.html">SCI OUTCOMES</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;9</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;9</dt>
+<dt>MENU TEXT:  &nbsp;&nbsp;SCI-OUTCOMES</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="8925.1-1324.html">CONSULTS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;10</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;10</dt>
+<dt>MENU TEXT:  &nbsp;&nbsp;Consults</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="8925.1-1325.html">FORM LETTERS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;11</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+<dt>MENU TEXT:  &nbsp;&nbsp;Form Letters</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="8925.1-1643.html">SECURE MESSAGING DOCUMENTS</a></dt>
+<dt>MNEMONIC:  &nbsp;&nbsp;12</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;12</dt>
+<dt>MENU TEXT:  &nbsp;&nbsp;Secure Messaging</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="8925.1-1645.html">TBI/POLYTRAUMA DOCUMENTS</a></dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>DIALOG</td>
+<td>
+<ol>
+<li>
+<dt>PROMPT:  &nbsp;&nbsp;PATIENT NAME</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;Patient</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;1</dt>
+<dt>FIELD:  &nbsp;&nbsp;.02</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+</li>
+<li>
+<dt>PROMPT:  &nbsp;&nbsp;PATIENT LOCATION</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;HOSPITAL LOCATION</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;2</dt>
+<dt>FIELD:  &nbsp;&nbsp;1205</dt>
+<dt>VISIBLE:  &nbsp;&nbsp;YES</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;SimpleList</dt>
+<dt>API NAME:  &nbsp;&nbsp;95</dt>
+</li>
+<li>
+<dt>PROMPT:  &nbsp;&nbsp;DATE/TIME OF NOTE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;3</dt>
+<dt>FIELD:  &nbsp;&nbsp;1301</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>VISIBLE:  &nbsp;&nbsp;YES</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;Edit</dt>
+<dt>API NAME:  &nbsp;&nbsp;13</dt>
+<dt>WINDOWS DEFAULT:  &nbsp;&nbsp;S Y="Now"</dt>
+</li>
+<li>
+<dt>PROMPT:  &nbsp;&nbsp;AUTHOR OF NOTE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;4</dt>
+<dt>FIELD:  &nbsp;&nbsp;1202</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
+<dt>VISIBLE:  &nbsp;&nbsp;NO</dt>
+<dt>SET METHOD:  &nbsp;&nbsp;S X=+$G(DUZ)</dt>
+</li>
+<li>
+<dt>PROMPT:  &nbsp;&nbsp;SUBJECT</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;Subject of Note</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;5</dt>
+<dt>FIELD:  &nbsp;&nbsp;1701</dt>
+<dt>REQUIRED:  &nbsp;&nbsp;NO</dt>
+</li>
+<li>
+<dt>PROMPT:  &nbsp;&nbsp;NOTE TEXT</dt>
+<dt>ITEM NAME:  &nbsp;&nbsp;TEXT OF NOTE</dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;6</dt>
+<dt>FIELD:  &nbsp;&nbsp;2</dt>
+<dt>WINDOWS CONTROL:  &nbsp;&nbsp;Memo</dt>
+<dt>API NAME:  &nbsp;&nbsp;66</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2009-04-23 12:23:57</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

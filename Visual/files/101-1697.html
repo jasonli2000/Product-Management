@@ -1,0 +1,71 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTE2OTc").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>DGEN MT AUTOMATIC ENROLLMENT UPDATE (1697) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTE2OTc" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>DGEN MT AUTOMATIC ENROLLMENT UPDATE</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>MT AUTOMATIC ENROLLMENT UPDATE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This event is called each time a means test is added, edited, or
+deleted.  If there has been change in the Means Test the patient's
+current enrollment will be updated.
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>extended action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-47.html">REGISTRATION</a></td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D MTUPD^<a href="http://code.osehra.org/dox/Routine_DGENA2.html">DGENA2</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>1997-09-22 18:30:46</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

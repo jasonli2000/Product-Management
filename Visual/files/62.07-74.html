@@ -1,0 +1,46 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NjIuMDctNzQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ANION GAP (74) &nbsp;&nbsp;  EXECUTE CODE (62.07)</h1>
+<div id="demo"><table id="NjIuMDctNzQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ANION GAP</td>
+</tr>
+<tr>
+<td>EXECUTE CODE</td>
+<td>I $D(LRSB(5)),$D(LRSB(7)),$D(LRSB(8)),LRSB(5)>0,LRSB(7)>0,LRSB(8)>0 S %X=LRSB(5)-LRSB(7)-LRSB(8) W "  ANION GAP=",%X K %X</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>DATA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

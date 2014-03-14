@@ -1,0 +1,80 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTY4MA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ENFA RECALC BALANCES (1680) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTY4MA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ENFA RECALC BALANCES</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Recalculate FAP Balances</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>RECALCULATE FAP BALANCES</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>ENFACS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Dollar balances (by Station, Fund, SGL, and month) are maintained in the
+FAP BALANCES file and printed on the Voucher Summary report. This option
+can be used to recalculate the balances if they appear incorrect.
+ 
+The net $ activity for a specified month will be computed from the
+individual FAP code sheets. The results are then compared to the values
+maintined in the FAP BALANCES file. If there are any descrepancies, the
+recalculated values can be used to update the FAP BALANCES file.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-.5.html">POSTMASTER</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-18.html">ENGINEERING</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>RECALC^<a href="http://code.osehra.org/dox/Routine_ENFABAL.html">ENFABAL</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

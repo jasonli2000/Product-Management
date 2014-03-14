@@ -1,0 +1,67 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0xNjEuOTk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>FEE BASIS PAYMENT REJECT CODE (161.99) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0xNjEuOTk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>FEE BASIS PAYMENT REJECT CODE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file holds reject codes that are applicable to payment line items.  
+This file will be exported with data.  The data must not be locally
+modified.
+ 
+VistA Fee Basis has four logical files/sub-files that contain payment line
+items:
+ 1. SERVICE PROVIDED (#162.03) multiple within the FEE BASIS PAYMENT
+    (#162) file.
+ 2. TRAVEL PAYMENT DATE (#162.04) multiple within the FEE BASIS PAYMENT
+    (#162) file.
+ 3. PRESCRIPTION NUMBER (#162.11) multiple within the FEE BASIS PHARMACY
+    INVOICE (#162.1) file.
+ 4. FEE BASIS INVOICE (#162.5) file.
+ 
+Each of these four logical files has a free-text REJECT CODE field within
+a REJECT CODE multiple. The value stored in the REJECT CODE field is 
+normally expected to have a matching record in the FEE BASIS PAYMENT
+REJECT CODE file so a description of the reject code can be displayed on
+appropriate outputs.  In the event the FEE BASIS PAYMENT REJECT CODE file
+data is out-of-date and does not contain a code that is stored with a
+payment, a description similar to "Reject reason code not currently
+defined in list" will be used as the code description until the code 
+is added to file #161.99 by a patch.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

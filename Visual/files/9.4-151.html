@@ -1,0 +1,1367 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#OS40LTE1MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>EVENT CAPTURE (151) &nbsp;&nbsp;  PACKAGE (9.4)</h1>
+<div id="demo"><table id="OS40LTE1MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>EVENT CAPTURE</td>
+</tr>
+<tr>
+<td>PREFIX</td>
+<td>EC</td>
+</tr>
+<tr>
+<td>SHORT DESCRIPTION</td>
+<td>Event Capture Workload Capture System</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+Event Capture is that portion of the Decision Support System (DSS) which
+has been designed to capture the workload for those areas which do not
+currently have a software system which may be extracted.  Such areas as
+Chaplain, Canteen, and non-associated clinics can use Event Capture to
+track their workload.
+</pre>
+</td>
+</tr>
+<tr>
+<td>DEVELOPER (PERSON/SITE)</td>
+<td>WASHINGTON/BIRMINGHAM</td>
+</tr>
+<tr>
+<td>DEVELOPMENT ISC</td>
+<td>BIRMINGHAM</td>
+</tr>
+<tr>
+<td>CURRENT VERSION</td>
+<td>2.0</td>
+</tr>
+<tr>
+<td>VERSION</td>
+<td>
+<ol>
+<li>
+<dt>VERSION:  &nbsp;&nbsp;2.0</dt>
+<dt>DATE DISTRIBUTED:  &nbsp;&nbsp;2005-11-19 00:00:00</dt>
+<dt>DATE INSTALLED AT THIS SITE:  &nbsp;&nbsp;1996-09-26 00:00:00</dt>
+<dt>INSTALLED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION OF ENHANCEMENTS:  &nbsp;&nbsp;<pre>
+The Event Capture module provides a mechanism to track and account for
+patient workload performed that is not recorded in any existing DHCP
+package.  These procedures and services are associated with the patient
+to whom they were delivered, the provider rendering the service or
+procedure, and the workload unit responsible for delivering the service.
+</pre>
+</dt>
+<dl><dt>PATCH APPLICATION HISTORY:</dt>
+<dd>
+<ol>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;1</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-09-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+  This patch corrects several miscellaneous data entry problems that
+  have been identified.
+ 
+  Problem 1.
+  NOIS #OKL-0596-72092 reported an &lt;UNDEF&gt; error at SELC+1^ECBEN2A.
+  The variable EC1 was undefined.  All data entry options have been
+  reviewed to ensure that the variable EC1 is defined.
+ 
+  Problem 2.
+  NOIS #LON-0596-61759 reported a duplicate screen display when using
+  the "Batch Data Entry by Patient" or "Data Entry (Batch) by Procedure"
+  options.  After selecting a procedure, from the listing of available
+  procedures, the procedure name is echoed back plus printing the name
+  two additional times.  The additional printing of the procedure names
+  has been eliminated.
+ 
+  Problem 3.
+  NOIS #LON-0596-61762 reported that when using the "Batch Data Entry
+  by Patient", if an "^" is entered at the prompt "Is this information
+  correct?" the user is not exited from the option.  The user is then
+  prompted to "Select Next Patient".  If a patient is selected the list of
+  selected patients is numbered incorrectly.  Now when an "^" is entered
+  at "Is this information correct?" a screen displayed alerting the user
+  that "**NOTE**  No action taken. You must  re-enter the correct patient
+  and procedure data that has NOT been filed during this session. ".  The
+  user is then prompted to "Select Patient".
+ 
+  Problem 4.
+  After confirming a category using the "Local Category (Enter/Edit)"
+  option the screen will display "??".  The option correctly updated the
+  category name but was not updating the date created information when 
+  the category was initially entered.
+ 
+  Problem 5.
+  NOIS STC-0696-40797 reported when creating an Event Code Screen the
+  user is prompted with "Is the following information correct? YES// "
+  when the data is listed previously on the screen.  The display
+  message has been changed to read "Is this information correct? YES// ".
+ 
+  Problem 6.
+  The routines ECED and ECDSSYN killed the variable ^TMP("ECPRO")
+  incorrectly.  The correct method killing ^TMP("ECPRO",$J) has
+  been inserted.  This will prevent procedure lists from being
+  deleted by mistake.
+ 
+  Problem 7.
+  When using the data entry options and selecting a procedure from
+  the listing displayed, an &lt;UNDEF&gt; error could occur if "01" was
+  entered instead of "1".  This error has been corrected.
+  
+ROUTINE SUMMARY: 
+==================
+ 
+  The following routine is included in this patch.  The second line of the
+  routines will look like:
+ 
+  &lt;tab&gt;;;2.0; EVENT CAPTURE ;**[patch list]**;8 May 96
+ 
+        CHECK^XTSUMBLD results:
+ 
+Routine Name         Before Patch       After Patch              Patch List
+ 
+   ECBEN2A             16143247           17248422                     1
+   ECBEP1B              6124470           15735188                     1
+   ECDSS2               3173984            3165330                     1
+   ECDSSYN             11622115           11631282                     1
+   ECED                 9546738            9549509                     1
+   ECED2                9397816            9471887                     1
+   ECED3               14007833           14074752                     1 
+   ECSCR                5323033            5255260                     1
+ 
+INSTALLATION INSTRUCTIONS: 
+==========================
+ 
+  This patch may be loaded during regular hours.  It mainly affects users of
+  the Event Capture software.  Installation will take less than 5 minutes.  
+  1.  Use the INSTALL/CHECK MESSAGE option on the PackMan menu
+      and answer NO to the question 'Shall I preserve what is on disk in a 
+      separate back-up message ?'.  Answer YES to the prompt 'Want to 
+      Continue with Load? YES//' 
+  2.  Review your mapped set.  If any of the routines listed in the 
+      ROUTINE INFORMATION section are mapped, they should be 
+      removed from the mapped set at this time.  None of the patched 
+      routines are on the recommended mapping list.  
+  3.  From the Kernel Installation and Distribution System Menu, select 
+      the Installation menu.  
+  4.  From this menu, you may elect to use the following options 
+      (when prompted for INSTALL NAME, enter EC*2.0*1): 
+      a.  Backup a Transport Global - this option will create a backup 
+          message of any routines exported with the patch.
+      b.  Compare Transport Global to Current System  - this option will 
+          allow you to view all changes that will be made when the patch 
+          is installed.
+      c.  Verify Checksums in Transport Global - this option will 
+          allow you to ensure the integrity of the routines that are in 
+          the transport global.  
+  5.  Use the Install Package(s) option and select the package EC*2.0*1.  
+  6.  When prompted 'Want to DISABLE Scheduled Options and Options? 
+      YES//', respond YES.  When prompted to select the options you would 
+      like to place out of order, enter the following: 
+          ECPAT Enter/Edit Patient Procedures
+          ECBATCH Batch Enter Data by Patient
+          ECBATCH PROC Data Entry (Batch) by Procedure
+  7.  MSM sites:  Please ensure you answer YES when asked if you want 
+      to move the routines to other systems and indicate the appropriate 
+      CPUs.  Alternately, you can wait until the installation is complete 
+      and move the routines listed in the ROUTINE INFORMATION section 
+      to all systems.  
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;2</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1996-09-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch updates entries in the EC NATIONAL PROCEDURE file (#725).
+ 
+The procedure "PC-THEODICY-PT SPIRITUAL", national number "CH058",
+will be changed to "PC-THEODICY-UNFAIRNESS OF GOD/LIFE 14091".
+The internal entry number is 58.  This patch will not install if entry
+number 58 is not "PC-THEODICY-PT SPIRITUAL".
+ 
+New entries follow:
+IEN     NATIONAL #        NAME
+==       ==========        ======
+ 
+169       CH062                 COMMUNION
+170       CH063                 COMPUTERIZED SPIRITUAL ASSESSMENT
+171       CH064                 FIFTH STEP
+172       CH065                 FUNERAL
+173       CH066                 PATIENT EDUCATION-ADVANCED DIRECTIVES
+174       CH067                 GROUP ON SPIRITUALITY EDUCATION
+175       CH068                 PC-SEXUALITY
+176       CH069                 PC-SPIRITUAL ASSESSMENT
+177       CH070                 ADVANCE DIRECTIVE CONSULTATION
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;4</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-04-22 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+*** Patient Care Encounter (PCE) Version 1.0 should be installed 
+    before installing this patch.  
+ 
+Three patches are required before installing this patch.  Event
+Capture patches EC*2*1, EC*2*2, and KERNEL patch XU*8*44.  
+ 
+This patch will impact the DSS Extracts ECS Feeder Key report
+and the ECS extract.  A DSS Extracts patch, ECX*2*23, is currently
+under development that addresses the ECS feeder keys for FY97 and
+the ECS extract fix.  Targeted release date for patch ECX*2*23
+is May 10, 1997.
+ 
+NOTE:  Your site should NOT run the ECS extract, after installing
+EC*2*4, until the DSS Extracts patch ECX*2*23 is released and
+installed on your system.  Any ECS extract your site generated
+prior to installing EC*2*4 is not affected. The ECS extract will only
+be impacted AFTER EC*2*4 is installed.
+ 
+ 
+This patch implements new functionality in the Event
+Capture (EC) package to allow the non-interactive filing of
+the EC system workload data to the Patient Care Encounter
+(PCE) software.  By utilizing this EC to PCE filing process,
+the need for duplicate data entry into both packages diminishes
+while supporting the transmission of workload data to
+nationally supported databases.  Outpatient data entered into
+EC, passed through PCE, updates the National Patient Care
+Database (NPCBD) at the Austin Automation Center (AAC).  All
+data entered into EC is passed to the Decision Support System
+(DSS) at the AAC using the VISTA DSS Extracts software.
+ 
+This is a mandatory patch and MUST be installed.  If your site does
+not anticipate sending Event Capture data to PCE, this patch still
+MUST be installed.  The only difference your users will see is both
+DATE and TIME are now required to enter workload data into Event
+Capture.  They will never see the additional prompts required for
+the filing of data to PCE.
+ 
+ 
+Three NOIS messages are addressed in this patch.  The AMIS Reports
+are modified to correct the problems reported in the following NOIS: 
+ 
+ ATG-1196-30490 AMIS Report Producing Incorrect Totals 
+ LON-0896-60887 AMIS Summary - Dropping Procedure 
+ BRX-0297-11162 Original Default Volume 
+ 
+ 
+The data dictionary changes made by this patch are listed below,
+followed by a summary of the PCE filing process and patch
+installation instructions.  
+EC NATIONAL PROCEDURE file (#725): A new field called CPT
+(field #4) is added which should be edited for each local
+procedure entry that sends workload data to PCE.  A Current
+Procedural Terminology (CPT) code is required to pass EC
+procedural data to PCE.  Only the local EC procedures
+representing workload that your sites wants sent to PCE
+require an associated CPT code.  The option Local Procedure
+(Enter/Edit) [ECDSS PROCEDURE] is modified for users to edit
+this field for local procedures and is exported as part of the
+Event Capture Management Menu [ECMGR].
+ 
+Many new nationally defined procedures added in this patch
+include Speech Pathology  and Blood Bank.  Products for Social
+Work and Chaplain service have been completely redefined.  A
+generic CPT code is associated with each existing active
+national procedure entry.  Use the National/Local Procedure
+Reports [ECDSS1] option on the Management Reports [ECDSRPT] menu
+to review the new and updated entries in this file.   
+ 
+ Field 4 - CPT 
+  The Current Procedural Terminology (CPT) code equivalent for this 
+  national or local procedure.  Each EC recognized procedure must 
+  have an associated CPT code for filing with PCE.  
+ 
+DSS UNIT file (#724): The DATA ENTRY DATE/TIME DEFAULT field
+(#11) is modified to accept N for NOW or X for NONE as a date/time
+default.  T for TODAY is no longer a valid date/time default.
+All existing DSS Units using T for TODAY will be updated to use
+N for NOW during the installation process.
+ 
+One new field, SEND TO PCE (field #13), is added which must
+be edited in order to activate the filing process. The option
+DSS Units for Event Capture (Enter/Edit) [ECSECT] is modified
+to edit these fields and is exported with the Event Capture
+Management Menu [ECMGR].
+ 
+ Field 13 -  SEND TO PCE 
+  This field controls the method of sending data, by DSS Unit, to the 
+  PCE software.  If this field contains an O, only outpatient data, for 
+  this DSS Unit, will be filed with PCE.  If the field contains an A, 
+  all records, for this DSS Unit, can be filed with PCE.  If the field 
+  contains an N or is null, no filing will occur.  This field is exported 
+  null.  
+ 
+EC EVENT CODE SCREENS FILE (#720.3): This file contains a single new field
+that allows the site to associate a clinic with an event code screen.
+This field is described below.
+ 
+ Field 55 - ASSOCIATED CLINIC
+  This field will indicate the default clinic associated with workload 
+  performed by this event code screen.  This clinic will be used as the
+  hospital location for the EC system workload records for PCE filing
+  purposes.  This clinic will also be the source for the stop code
+  (DSS ID) needed by PCE.  This field should be edited for each event
+  code screen that will send to PCE.  The clinic associated with the
+  event code screen will be displayed to users during the data entry
+  processes.
+ 
+EVENT CAPTURE PATIENT file (#721): The DATE/TIME OF PROCEDURE field
+(#2) is modified to require time for every record entered.  New
+fields which have been added to this file are described below.
+The data entry options Enter/Edit Patient Procedures [ECPAT],
+Batch Enter Data by Patient [ECBATCH], and Data Entry (Batch) by
+Procedure [ECBATCH PROC] are modified to ask users these questions
+or update the fields automatically when appropriate.  
+ 
+ Field 19 - PCE CPT CODE 
+  The Current Procedural Terminology (CPT) code for the patient 
+  procedure performed.  
+ 
+ Field 20 - ICD-9 CODE 
+  The ICD-9 (diagnosis) for the procedure performed.  This data 
+  element is required for all workload records.  
+ 
+ Field 21 - AGENT ORANGE 
+  This field will be used to indicate if this procedure is treating 
+  a VA patient for a problem that is related to Agent Orange Exposure.
+  Data is Y if this patient was exposed to agent orange, N if not, 
+  or U if unknown.  
+ 
+ Field 22 - RADIATION EXPOSURE 
+  This field will be used to indicate if this procedure is treating 
+  a VA patient for a problem that is related to Ionizing Radiation 
+  Exposure.  Data is Y if this patient claims exposure to ionizing 
+  radiation, N if not, or U if unknown.  
+ 
+ Field 23 - ENVIRONMENTAL CONTAMINANTS 
+  This field will be used to indicate if this procedure is treating 
+  a VA patient for a problem that is related to Environmental 
+  Contaminant Exposure.  Data is Y if this patient claims exposure 
+  to environmental contaminants, N if not, or U if unknown.  
+ 
+ Field 24 - SERVICE CONNECTED 
+  This field will be used to indicate if this procedure is treating 
+  a VA patient for a service connected problem.  Data is Y if this 
+  patient is service connected or N if not service connected for this  
+  treatment.
+ 
+ Field 25 - SENT TO PCE 
+  This field flags data that has been sent from Event Capture to PCE.
+ 
+ Field 26 - ASSOCIATED CLINIC 
+  This is the clinic associated with this record.  
+ 
+ Field 27 - DSS ID 
+  The DSS ID, formerly stop code, associated with this patient record.
+ 
+ Field 28 - VISIT 
+  This is the visit associated with this patient procedure.  This
+  field is a pointer to the VISIT file (#9000010).
+ 
+ Field 29 -IN/OUTPATIENT 
+  The status of the patient when this event occurred. The code "I" 
+  represents an inpatient event or an "O" represents an outpatient 
+  event occurred.  
+ 
+ Field 30 - PCE DATA FEED 
+  The field contains the EC data formatted to feed the Patient Care 
+  Encounter (PCE) software.  
+ 
+ Field 31 - SEND TO PCE 
+  This flag controls the EC system data that is ready to send to PCE.  
+  If this record should be sent to PCE, this flag will be set with a 
+  date. 
+ 
+ Field 32 - CHECKOUT D/T 
+  This field contains the checkout date and time of this procedure.  
+  The checkout date and time is generated when the nightly background 
+  job is run.  
+ 
+ Field 33 - REASON
+  This field contains the reasons why this patient record was
+  not sent to the Patient Care Encounter (PCE) software.  This
+  field is automatically populated during the PCE filing
+  process.
+ 
+NEW CROSS REFERENCES:   This patch includes a new MUMPS cross reference
+in the EVENT CAPTURE PATIENT file (#721).  The AD cross reference on the
+SEND TO PCE field (#31) controls the filing of the data that is ready
+for PCE.  
+ 
+NEW OPTIONS:  This patch adds two new options to collect, maintain, and
+report the data filing to PCE.  
+ 
+ Nightly Data Feed to PCE [EC NIGHT] 
+  This option controls the routine that sends Event Capture data 
+  to Patient Care Encounter (PCE) software nightly.  The EC system 
+  data is stored in the EVENT CAPTURE PATIENT file (#721).  EC data 
+  that has been flagged to send to PCE will be picked and sent when 
+  this routine is run. This routine should run nightly, therefore 
+  the rescheduling frequency is 1D.  The time to queue this option 
+  to run should not conflict with system backup.  
+ 
+ PCE Data Summary [ECPCER] 
+  This option is exported on the Event Capture Reports [ECREPS] menu.  
+  This Event Capture data summary lists, by patient, key information 
+  that has been sent to the Patient Care Encounter (PCE) software.  
+  The date and time of the procedure, procedure name listed in PCE, 
+  volume of procedures sent, CPT and ICD-9 codes, associated clinic 
+  and DSS ID (formerly stop code), and the provider of care are listed 
+  on this report.  
+ 
+HELP FRAMES:  The following help frame is created.  
+ 
+ECPCER 
+  This Event Capture data summary lists, by patient, key information 
+  that has been sent to the Patient Care Encounter (PCE) software.  
+  The date and time of the procedure, procedure name listed in PCE, 
+  volume of procedures sent, CPT and ICD-9 codes, associated clinic 
+  and DSS ID (formerly stop code), and the provider of care are listed 
+  on this report.  
+ 
+SUMMARY OF THE PCE FILING PROCESS: 
+ 
+Each DSS Unit should be edited to update the SEND TO PCE information.
+If a DSS Unit is marked to send data to PCE, then when creating new
+event code screens within this DSS Unit or editing existing event
+code screens defined within this DSS Unit, a new prompt for an
+ASSOCIATED CLINIC is displayed.
+ 
+An associated clinic should be defined for each event code screen
+defined for DSS Units marked to send data to PCE.  For entering new
+event code screens, use the Event Code Screens (Create) [ECSCREEN]
+option. For existing event code screens, use the Procedure
+Synonym/Default Volume (Enter/Edit) [ECDSSYN] option.  These
+associated clinics will be displayed to users during data entry
+processes.  
+ 
+The data entry options Enter/Edit Patient Procedures [ECPAT],
+Batch Enter Data by Patient [ECBATCH], and Data Entry (Batch)
+by Procedure [ECBATCH PROC] are updated to ask users the PCE
+required prompts.  The DATE/TIME OF PROCEDURE field (#2) now
+requires time as part of every procedure date.  Each patient
+record entered must include a diagnosis code (ICD-9), an
+inpatient/outpatient indicator, and an active clinic.  Users
+manually entering this data must answer diagnosis, determine an
+inpatient or outpatient status, and accept the default clinic
+or select an active clinic.  If it is an outpatient encounter,
+users are also prompted to answer agent orange exposure,
+ionizing radiation exposure, environmental contaminants exposure,
+and related service connection.  
+ 
+After the PCE prompts are answered, all appropriate patient
+records are formatted to file the data with PCE.  This formatted
+data string is stored in the PCE DATA FEED field (#30).  The
+flag to file this record is then set in the SEND TO PCE field
+(#31).  These fields exist in the EVENT CAPTURE PATIENT file
+(#721).  The nightly scheduled Nightly Data Feed to PCE [EC NIGHT]
+option will file the data with PCE and store a pointer to the
+corresponding visit created in the VISIT file (#9000010).
+Patient data records that have been filed with PCE and are
+later edited or deleted in the EC system will automatically
+send an update to PCE. For those records that should be filed
+to PCE but are not sent due to missing or incorrect data will
+store a reason in the REASON file (#33).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;6 SEQ #4</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-09-22 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+See the patch description for EC*2*6 on the patch as generated from the
+patch module.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;5</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1997-10-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+See patch description in EC*2*5 as generated from the patch module.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;9 SEQ #6</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-03-18 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+EC*2.0*9
+Add new entries to file #725.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;8 SEQ #7</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-05-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+See the patch description in the National Patch Module for complete
+information on this patch.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;12 SEQ #8</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-06-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Update to EC National Procedures File #725.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;7 SEQ #9</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-06-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+See the patch description in the National Patch Module for complete
+information on this patch.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;10</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-07-25 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Refer to the patch description for patch EC*2*10 in the NPM for a
+complete description of this patch.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;11</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-10-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+See the NPM for complete information on patch EC*2*11.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;14 SEQ #12</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-11-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;15 SEQ #13</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-11-19 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;16 SEQ #14</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1998-12-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+National Procedure Update (File #725).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;13 SEQ #15</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-04-17 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;19 SEQ #16</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-09-14 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;20 SEQ #17</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-10-03 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+National Procedure Update (File #725).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;21 SEQ #18</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;1999-10-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+EC*2*21 patch description in FORUM.  Issued as a 'patch for patch' for EC*2*20.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;22 SEQ #19</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-02-04 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+National Procedure Update (File #725).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;17 SEQ #20</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-04-05 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Update Event Capture System, file #721, to keep track of a new classification
+Military Sexual Trauma (MST).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;18 SEQ #21</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-04-05 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Event Capture CPT Modifier Project.  See patch on FORUM for more details.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;24 SEQ #22</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-06-12 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+See patch description for details.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;23 SEQ #23</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-08-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+UPDATE ECS TO STORE MULTIPLE ICD-9 CODES
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;26 SEQ #24</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2000-11-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+National Procedure Update (File #725).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;27 SEQ #25</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-03-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+National Procedure Update (File #725).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;28 SEQ #26</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-05-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+National Procedure Update (File #725).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;25 SEQ #27</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-07-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+EC GUI - see description on FORUM.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;29 SEQ #28</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-08-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;30 SEQ #30</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-10-16 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;35 SEQ #32</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-11-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+National Procedure Update (File #725).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;36 SEQ #33</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-11-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;32 SEQ #34</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-12-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;37 SEQ #35</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2001-12-31 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+National Procedure Update (File #725).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;40 SEQ #36</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-03-27 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+National Procedure Update (File #725).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;33 SEQ #37</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-04-23 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;41 SEQ #38</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-05-28 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;43 SEQ #39</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-09-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+National Procedure Update (File #725).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;39 SEQ #40</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-12-09 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;42 SEQ #41</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-12-09 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Update Event Capture System, file #721, to keep track of a new classification
+Military Sexual Trauma (MST).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;45 SEQ #42</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2002-12-20 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+National Procedure Update (File #725).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;48 SEQ #43</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-03-29 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+National Procedure Update (File #725).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;46 SEQ #44</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-04-30 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+National Procedure Update (File #725).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;47</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-09-24 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Please see the National Patch Module for details of the enhancements included 
+in this patch.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;52 SEQ #47</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-10-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+National Procedure Update (File #725).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;49 SEQ #49</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-11-07 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;55 SEQ #50</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2003-11-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;56 SEQ #52</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-01-31 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch addresses NOISes related to the Event Capture
+Provider Summary Report.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;50 SEQ #53</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-01-31 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch addresses NOISes related to the Event
+Capture GUI and roll-n-scroll.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;60 SEQ #55</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-03-30 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+National Procedure Update (File #725).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;62 SEQ #56</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-07-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch corrects the output for the Event Capture Provider (1-3) Summary
+Report.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;54</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-08-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;63</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-10-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Please see the National Patch Module for details of the enhancements included 
+in this patch.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;67 SEQ #59</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2004-10-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+National Procedure Update (File #725).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;70 SEQ #60</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-01-18 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+A request was made to update the VistA Event Capture EC NATIONAL
+PROCEDURE (#725) file.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;61 SEQ #61</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-01-18 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;69 SEQ #62</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-03-11 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch provides a fix to the Event Capture Provider Summary
+Report.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;59 SEQ #63</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-04-01 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch addresses NOISes related to the Event Capture GUI and
+roll-n-scroll.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;65</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-04-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;71 SEQ #65</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-05-06 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch provides an update to Event Capture file #725.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;74 SEQ #66</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-06-25 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+The patch updates EC National Procedure File 725.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;73 SEQ #67</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-07-09 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Appointment Type changes to Regular.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;77 SEQ #69</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-09-05 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch updates EC 725 file.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;75 SEQ #70</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-11-15 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This provide the fix to couple of Remedy Tickets.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;79 SEQ #71</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2005-12-02 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch updates EC 725 file.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;78 SEQ #72</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-04-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch provides a fix to the ECS Records Failing Transmission to PCE
+Report.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;80 SEQ #73</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-04-10 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch updates EC 725 file.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;81 SEQ #75</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-05-26 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch updates file EC NATIONAL PROCEDURE (#725).
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;72 SEQ #76</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-06-14 00:00:00</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;82 SEQ #77</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-11-22 19:02:54</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch proveds a fix to the DSS Unit Workload Report.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;85 SEQ #78</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2006-11-22 20:11:35</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch updates file 725.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;88 SEQ #79</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-06-27 21:38:39</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch provides a fix to the Provider 1-7 Summary Report.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;89 SEQ #80</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-06-27 22:11:50</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch updates National Procedure File 725.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;90 SEQ #81</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-06-29 19:22:14</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch provides a fix to two EC GUI Reports.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;91 SEQ #83</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-04 23:44:12</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch provides a fix to the EC Procedure Reason Report.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;92 SEQ #84</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-04 23:53:41</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+CORRECT ERROR ON EVENT CODE SCREENS WITH CPT CODES REPORT
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;86 SEQ #85</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-05 00:45:14</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;93 SEQ #86</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-09-05 01:39:41</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch updates the file #725 EC NATIONAL PROCEDURE.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;87 SEQ #87</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2007-12-12 20:29:28</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch fixes several remedy tickets.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;94 SEQ #88</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-05-26 19:18:19</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch provides a fix to several remedy tickets.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;96 SEQ #89</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2008-05-26 19:35:07</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-1.html">USER,ONE</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch provides an update to National Procedure file 725#.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;95</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-21 16:25:53</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Refer to the patch description for patch EC*2.0*95 in the National Patch
+Module (NPM) on FORUM.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;97 SEQ #91</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-04-21 16:32:49</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch provides an update to National Procedure file 725#.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;99 SEQ #93</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-06-23 12:34:58</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch provides an update to National Procedure file 725#.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;76 SEQ #94</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-08-18 11:52:31</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;102 SEQ #95</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-08-18 14:38:20</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch provides an update to the National Product File 725.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;101 SEQ #96</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-09-09 12:22:12</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch made changes to routine ECRRPC for VistA Application
+Development OED.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;105 SEQ #97</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2009-10-27 16:32:05</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch provides a fix to the active associated clinics (file #44) s
+search routine ASCLN^ECUMRPC1.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;100 SEQ #98</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-01-14 11:57:06</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+Event Capture 2009 Enhancements
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;106 SEQ #99</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-08-05 14:37:09</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch updates the EC NATIONAL PROCEDURE (#725) file: it adds 14 new 
+procedure records, inactivates 3 existing procedure records, and updates 
+names and codes for 7 others.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;107 SEQ #100</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-09-09 11:37:16</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch contains modifications for the Recent Visit functionality.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;104 SEQ #101</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2010-11-15 10:44:35</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;108 SEQ #102</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-04-12 12:29:54</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will resolve issues with CPRS's Event Capture Patient Data
+Summary Report and with the Event Capture GUI form not updating the 
+patient's status correctly.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;109 SEQ #103</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-06-06 11:53:39</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will resolve issues with an Event Capture Timeout when started
+from CPRS (Computerized Patient Record System), the Event Capture GUI exit
+screen, and Event Capture not auto-populating the location of the user's
+last used information.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;111 SEQ #104</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-08-23 12:11:23</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will update the EC NATIONAL PROCEDURE (#725) file.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;110 SEQ #105</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2011-09-01 10:14:41</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will resolve issues with an Associated Clinic selection bug,
+multiple syntax errors occurring in routine ECOB, and a bug not allowing
+the answering of classification questions for inpatient procedures.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;112 SEQ #106</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-08-29 11:34:42</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;113 SEQ #107</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-09-18 12:53:04</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch addresses 1 issue:
+ 
+1. Updates the EC NATIONAL PROCEDURE (#725) file by
+   inactivating 112 existing procedure records
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;115 SEQ #108</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2012-11-29 16:29:34</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will update the EC NATIONAL PROCEDURES (#725)
+file by inactivating 46 existing procedures, adding 4
+new procedures, changing 4 CPT codes, and changing 27
+procedure names in the file.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;117 SEQ #110</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-01-22 17:12:24</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch addresses 2 issues:
+ 
+  1. This patch will update the MEDICAL SPECIALTY (#723) file by
+     adding 1 new medical specialty.
+ 
+  2. This patch will update the EC NATIONAL PROCEDURES (#725)
+     file by adding 1 new procedure.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;120 SEQ #111</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-04-18 16:42:12</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch addresses 1 issue:
+ 
+  1. This patch will update the EC NATIONAL PROCEDURE (#725)
+     file by adding 5 new procedures.
+</pre>
+</dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;119 SEQ #112</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-06-17 12:32:26</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+</li>
+<li>
+<dt>PATCH APPLICATION HISTORY:  &nbsp;&nbsp;118 SEQ #113</dt>
+<dt>DATE APPLIED:  &nbsp;&nbsp;2013-09-11 11:49:58</dt>
+<dt>APPLIED BY:  &nbsp;&nbsp;<a href="200-17.html">USER,SEVENTEEN</a></dt>
+<dt>DESCRIPTION:  &nbsp;&nbsp;<pre>
+This patch will update the EC NATIONAL PROCEDURE (#725) file by adding 67 
+new procedures.
+</pre>
+</dt>
+</li>
+</ol>
+</dd></dl>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

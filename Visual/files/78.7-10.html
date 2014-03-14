@@ -1,0 +1,62 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#NzguNy0xMA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PROCEDURE (10) &nbsp;&nbsp;  LABEL PRINT FIELDS (78.7)</h1>
+<div id="demo"><table id="NzguNy0xMA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PRINT FIELD</td>
+<td>PROCEDURE</td>
+</tr>
+<tr>
+<td>TYPE OF DATA</td>
+<td>EXAM SPECIFIC</td>
+</tr>
+<tr>
+<td>DEFAULT TITLE</td>
+<td>Procedure:</td>
+</tr>
+<tr>
+<td>TEST VALUE</td>
+<td>1A - SKULL</td>
+</tr>
+<tr>
+<td>INTERNAL VARIABLE</td>
+<td>RAPR</td>
+</tr>
+<tr>
+<td>UNIQUE</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>MUMPS CODE TO SET VARIABLE</td>
+<td>S RAPR=$E($S($D(^RAMIS(71,+$P(RAY3,"^",2),0)):$P(^(0),"^"),1:"Unknown"),1,28)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

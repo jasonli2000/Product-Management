@@ -1,0 +1,102 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTIzODE").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>ORC NEW ACTIONS (2381) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTIzODE" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>ORC NEW ACTIONS</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>New Order action menu</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>menu</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>ITEM</td>
+<td>
+<ol>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2228.html">ORC CHANGE ORDERS</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;11</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2237.html">ORC DISCONTINUE ORDERS</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;21</dt>
+<dt>DISPLAY NAME:  &nbsp;&nbsp;Cancel</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2232.html">ORC DETAILED DISPLAY</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;41</dt>
+</li>
+<li>
+<dt>ITEM:  &nbsp;&nbsp;<a href="101-2229.html">ORC SIGN ORDERS</a></dt>
+<dt>SEQUENCE:  &nbsp;&nbsp;31</dt>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D DESELECT^<a href="http://code.osehra.org/dox/Routine_ORCHART.html">ORCHART</a>(ORNMBR):'$G(OREBUILD)&(VALMBCK'="Q") K ORNMBR</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S VALMBCK="",XQORM(0)="1AD",(XQORM("?"),XQORM("??"))="D ITEMHELP^<a href="http://code.osehra.org/dox/Routine_ORCHART.html">ORCHART</a>",ORNMBR=$P(XQORNOD(0),"=",2) D SELECT^<a href="http://code.osehra.org/dox/Routine_ORCHART.html">ORCHART</a>(ORNMBR)</td>
+</tr>
+<tr>
+<td>HEADER</td>
+<td>W ""</td>
+</tr>
+<tr>
+<td>MENU PROMPT</td>
+<td>Select action:</td>
+</tr>
+<tr>
+<td>COLUMN WIDTH</td>
+<td>20</td>
+</tr>
+<tr>
+<td>MNEMONIC WIDTH</td>
+<td>2</td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2000-06-12 08:15:13</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

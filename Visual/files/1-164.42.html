@@ -1,0 +1,53 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS0xNjQuNDI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRIMARY CANCER STATUS CODE (164.42) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS0xNjQuNDI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRIMARY CANCER STATUS CODE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains a superset of the DAM Cancer Status Codes for use
+in identifying tumor status at follow-up on the ONCOLOGY PRIMARY File 
+(#165.5).  The extended codes (4-7) help the registrar to record more 
+completely the overall cancer status of an expired patient.
+ 
+This file comes with data, which overwrite the site's data.  It is not
+recommended that sites modify this file.
+ 
+This file is referenced directly by routine ONCOCOFA.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

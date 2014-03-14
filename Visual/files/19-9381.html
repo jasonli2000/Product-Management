@@ -1,0 +1,157 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTM4MQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>LR LOINC HISTORICAL MODIFY (9381) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTM4MQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>LR LOINC HISTORICAL MODIFY</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Modify LOINC Historical Mapping</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>MODIFY LOINC HISTORICAL MAPPIN</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>XUPROGMODE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+ 
+ 
+This is a very powerful utility option to be used to reconcile
+previous LOINC historical mapping. A knowledgeable LOINC mapper is 
+required to properly implement this functionality.
+  
+After initial historical mapping has been completed, adjustments maybe 
+required to modify the LOINC code lookup parameters to properly map past 
+results. Careful review of current LOINC mapping should be done to 
+establish IF there is a systematic error in LOINC code assignments. File
+definition corrections should be done to prevent future LOINC mapping
+errors. Re-running LAB DATA LOINC Mapping [LR LOINC HISTORICAL MAPPER 63]
+option will correct the problem.
+  
+In those situations when editing LOINC mapping parameters is not 
+desirable, this option provides a method for the user to intervene in the
+mapping logic for specific tests.
+  
+The user is able to select test(s) [Atomic or Panel], then assign a 
+specific suffix code to be used during LOINC mapping logic. In addition
+the user is able to force the Result NLT CODE (#64.1) of LABORATORY TEST
+(#60) for the test and the designated suffix code pair to override
+previous LOINC mapping.
+  
+This is a very powerful feature, great care and study should be used 
+before attempting correct past LOINC mapping systematic errors.
+After the user has completed the modify LOINC mapping procedures, the 
+LAB DATA LOINC Mapping option is called. All considerations of this option
+still applies. Most notably, only performing this mapping exercise during
+week ends or in a 24 period of lowest system activity. Even with the
+increased logic iterations, the process should complete within the 24 hr
+window of time.
+  
+ Option example: 
+  
+      This option will allow you to manage how specific DataNames
+          will be mapped to LOINC Codes for historical data.
+  
+ You are able to override file definitions to correct past LOINC 
+mappings. Select the CH subscripted tests, indicate the suffix to be
+used. The user can indicate if this suffix should override
+previous LOINC Mapping.
+  
+This option will REMAP your entire database.
+  
+  
+ This option should only be run on weekends after hours.
+  
+  Do you wish to continue ? YES 
+  
+           Selection can be a 'CH' Atomic or Panel test.
+  
+ Select test you want to modify mapping: CBC Select Suffix Code: .4322    
+ COULTER ELECTRONICS Override previous LOINC mapping? YES 
+  
+  
+           Selection can be a 'CH' Atomic or Panel test.
+  
+ Select test you want to modify mapping: CALCIUM  
+  Select Suffix Code: AA DIRECT     .3901     NOT SPECIFIED
+ Override previous LOINC mapping?
+  
+           Selection can be a 'CH' Atomic or Panel test.&lt;ret&gt;
+  
+ Select test you want to modify mapping: &lt;ret&gt;
+  
+              Here is a list of what you have selected.
+               [O] indicates override current mapping
+.  DEVICE: HOME//     Right Margin:80//
+ 
+ 1 [O] WBC           COULTER A      /.4322
+ 2 [O] MCV           COULTER A      /.4322
+ 3 [O] MCH           COULTER A      /.4322
+ 4 [O] MCHC          COULTER A      /.4322
+ 5 [O] RDW           COULTER A      /.4322
+ 6     CALCIUM       AA DIRECT      /. 3901 
+  
+  
+ You wish to add more? &lt;ret&gt;
+  
+  Do you want to delete an entry? &lt;ret&gt;
+  
+ [NOTE: Those tests in the panel that do not have a RESULT NLT CODE 
+assigned will be omitted. If this is the case abort and attend to the
+missing panel tests.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-14.html">LAB SERVICE</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>EN^<a href="http://code.osehra.org/dox/Routine_LRLNC63B.html">LRLNC63B</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

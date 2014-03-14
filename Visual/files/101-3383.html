@@ -1,0 +1,62 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTAxLTMzODM").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>OREV ADD CHILD (3383) &nbsp;&nbsp;  PROTOCOL (101)</h1>
+<div id="demo"><table id="MTAxLTMzODM" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>OREV ADD CHILD</td>
+</tr>
+<tr>
+<td>ITEM TEXT</td>
+<td>Create Child Event</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>EXIT ACTION</td>
+<td>D DESELECT^<a href="http://code.osehra.org/dox/Routine_OREV.html">OREV</a> K ^TMP("OREDO",$J)</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>D ACE^<a href="http://code.osehra.org/dox/Routine_OREV3.html">OREV3</a></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>2002-12-09 17:26:38</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

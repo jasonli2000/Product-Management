@@ -1,0 +1,78 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMTA0OTk").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PSO REJECTS VIEW/PROCESS (10499) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMTA0OTk" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PSO REJECTS VIEW/PROCESS</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Third Party Payer Rejects - View/Process</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>THIRD PARTY PAYER REJECTS - VI</td>
+</tr>
+<tr>
+<td>LOCK</td>
+<td>PSORPH</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option provides information about Third Party Payer Rejects
+that have clinical significance, such as DUR (Drug Utilization
+Review) and Fill Too Soon. Past rejects that have already been
+CLOSED/RESOLVED can be viewed through this option. Besides, this
+option also gives the user the ability to process OPEN/
+RESOLVED in order to have them marked CLOSED/RESOLVED.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-17.html">USER,SEVENTEEN</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>PACKAGE</td>
+<td><a href="9.4-60.html">OUTPATIENT PHARMACY</a></td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PSOREJP2.html">PSOREJP2</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

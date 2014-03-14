@@ -1,0 +1,70 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTQyOA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA RPTDISTSINGLEWARD (5428) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTQyOA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA RPTDISTSINGLEWARD</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Individual Ward</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>INDIVIDUAL WARD</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the user to print the reports for
+a select ward. The user is prompted for ward, division, sort
+sequence (Terminal Digits, SSN, Patient) and unprinted or
+reprint reports. The reports are then printed preceded and
+followed by the Ward Reports queue banner. The header of each
+report includes "***** Ward Distribution *****".
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>2^<a href="http://code.osehra.org/dox/Routine_RARTST1.html">RARTST1</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

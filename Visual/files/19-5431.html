@@ -1,0 +1,69 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktNTQzMQ").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>RA DISTP (5431) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktNTQzMQ" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>RA DISTP</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Report Distribution Lists</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>REPORT DISTRIBUTION LISTS</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option allows the user to generate a report which
+contains information corresponding to each distribution
+queue. The report contains the distribution queue name,
+the top of page message, the category of reports included
+in the queue and the inactivation date.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>16^<a href="http://code.osehra.org/dox/Routine_RAMAINP.html">RAMAINP</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

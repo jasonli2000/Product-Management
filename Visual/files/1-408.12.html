@@ -1,0 +1,60 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS00MDguMTI").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PATIENT RELATION (408.12) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS00MDguMTI" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PATIENT RELATION</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains all relations of a veteran, including the veteran
+himself/herself.  Demographic data (name, SSN, date of birth, and sex)
+can be found in either the PATIENT file (if the relation is a veteran)
+or in the INCOME PERSON file (if the relation is not a veteran).  A
+single individual may be entered in this file more than once of that
+individual is related to more than one veteran.  An example would be
+a spouse that was a veteran.  One entry would exist for the veteran
+himself and one as the husband of his veteran wife.  This would also
+hold true for children of two veteran parents.
+ 
+This file relates all relations for a veteran to the veteran.  These
+relations are date sensitive and can be activated and inactivated.
+ 
+Data in this file is utilized by the income screening and means test
+portions of MAS.  It should be edited through those applications and
+not through direct access through VA FileMan.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

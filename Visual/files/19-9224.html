@@ -1,0 +1,77 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktOTIyNA").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>MAGD FIX DICOM FILE (9224) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktOTIyNA" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>MAGD FIX DICOM FILE</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Correct RAD-DICOM File Entries</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>CORRECT RAD-DICOM FILE ENTRIES</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This entry should be given to the Radiology technologist.  It will allow
+corrections to be made on DICOM image files which failed during
+the downloading processes.  The routine, MAGDIR1, used to download DICOM
+files directly from Radiology modalities (CT, MRI, etc.) sometime will 
+fail to match exactly on the patients name, ssn or Radiology case number.
+A reference to the files which failed the matching will be written
+to the MAGD(2006.575 global --- (please note that only a reference to  
+the file is being made; the actual DICOM file will remain in the
+IMAGE_IN DOS directory on the DICOM Image server.)  
+The MAGDLB9 routine will use the "F" cross  reference to loop
+through the entries needing corrections.  This  cross reference is
+on the Unique Study Identification number assigned  by the Radiology
+modalitiy.
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>run routine</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td>START^<a href="http://code.osehra.org/dox/Routine_MAGDLB9.html">MAGDLB9</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

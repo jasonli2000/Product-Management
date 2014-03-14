@@ -1,0 +1,109 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#ODExLjQtNjY").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>VA-ASU USER CLASS (66) &nbsp;&nbsp;  REMINDER COMPUTED FINDINGS (811.4)</h1>
+<div id="demo"><table id="ODExLjQtNjY" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>VA-ASU USER CLASS</td>
+</tr>
+<tr>
+<td>ROUTINE</td>
+<td><a href="http://code.osehra.org/dox/Routine_PXRMASU.html">PXRMASU</a></td>
+</tr>
+<tr>
+<td>ENTRY POINT</td>
+<td>CLASS</td>
+</tr>
+<tr>
+<td>PRINT NAME</td>
+<td>VA-ASU User Class</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This multi-occurrence computed finding returns a list of the ASU
+User Classes that the user belongs to. The user is the person who is
+running the reminder evaluation or processing a reminder dialog.
+  
+When a user is assigned to an ASU User Class, there can be an
+Activation Date and an Expiration Date. For the purpose of this
+computed finding, the date of the finding will be the Activation
+Date. In those cases when there is no Activation Date, 00/00/0000
+will be displayed as the date of the finding. If a Beginning
+Date/Time and Ending Date/Time are used with the finding, then the 
+period defined by the Activation Date and Expiration Date must
+overlap the period defined by the Beginning Date/Time and the Ending
+Date/Time in order for the finding to be true. When the Activation
+Date is missing, a 0 will be used in its place for determining the
+overlap. When the Expiration Date is missing, the evaluation date
+will be used in its place for determining the overlap.
+  
+The Computed Finding Parameter can be used to specify either the
+internal entry number or the exact name of an ASU User Class. If
+this option is used, then each User Class the user is a member of is
+checked to see if it is either the specified User Class or a child
+of the specified User Class. Only the User Classes that pass this
+test will remain on the list of the user's User Classes. For
+example, if the user is a member of the user class ATTENDING 
+PHYSICIAN, which is a child of the user class PHYSICIAN, and the
+Computed Finding Parameter is set to "PHYSICIAN," then ATTENDING
+PHYSICIAN will remain on the list. If the Computed Finding Parameter
+was set to CARDIOLOGIST, then ATTENDING PHYSICIAN would be removed
+since it is not a child of CARDIOLOGIST.
+
+If you want to specify the user class as PHYSICIAN, in the computed
+finding parameter field, type the following:
+ COMPUTED FINDING PARAMETER:PHYSICIAN 
+
+This computed finding uses date ranges like drug findings do, so if
+the user was an active member of the class anytime during the date
+range, the computed finding will be true. If you want to know if the
+user is active as of today, then use T for the beginning and ending
+date/time.  
+
+
+</pre>
+</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>MULTIPLE</td>
+</tr>
+<tr>
+<td>CF PARAMETER REQUIRED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>CLASS</td>
+<td>NATIONAL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

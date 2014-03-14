@@ -1,0 +1,96 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MTktMjg1Mg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>PRCT STATUS OF DATA (2852) &nbsp;&nbsp;  OPTION (19)</h1>
+<div id="demo"><table id="MTktMjg1Mg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>PRCT STATUS OF DATA</td>
+</tr>
+<tr>
+<td>MENU TEXT</td>
+<td>Status Of Data</td>
+</tr>
+<tr>
+<td>UPPERCASE MENU TEXT</td>
+<td>STATUS OF DATA</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This option will print the status of data that is being uploaded
+or has been uploaded from barcode readers.  The following are status
+codes that are used as progress reports.
+ 
+o ATTEMPTING DATA UPLOAD          - User is currently uploading data
+o DATA UPLOAD FAILURE             - Data upload has failed
+o DATA UPLOAD SUCCESSFUL          - Data has successfully uploaded
+o TASKED FOR JUL 07,1989@14:50    - Data will be processed at specified time
+o DEVICE NOT SELECTED             - User has not selected a device for processing
+o RUN FAIL, RTN FLD IS MISSING    - Routine is not defined (446.4,.04)
+o RUN FAIL, RTN IS MISSING        - Routine (446.4,.04) is not on system
+o STARTED AT JUL 07,1989@14:52    - Data has started processing at specified time
+o FINISHED ON JUL 07,1989@15:31   - Data finished processing at specified time
+ 
+The above status give the ability to view the progress of data from the
+point of when it was uploaded from the barcode reader to the time it has
+been processed.  Certain status are errors, such as RUN FAIL, DEVICE NOT
+SELECTED and these mean the data will never be processed because of an
+unexpected error in the process.
+ 
+The normal progression of status that data will take is:
+ 
+  1) ATTEMPTING DATA UPLOAD
+  2) DATA UPLOAD SUCCESSFUL
+  3) TASKED FOR [date/time]
+  4) STARTED AT [date/time]
+  5) FINISHED ON [date/time]
+ 
+</pre>
+</td>
+</tr>
+<tr>
+<td>CREATOR</td>
+<td><a href="200-1.html">USER,ONE</a></td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>action</td>
+</tr>
+<tr>
+<td>E ACTION PRESENT</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>ENTRY ACTION</td>
+<td>S DIC="^PRCT(446.4,",BY="[PRCT DATA UPLOAD STATUS]",FLDS=BY,L=0 D EN1^<a href="http://code.osehra.org/dox/Routine_DIP.html">DIP</a> K %DT,DP</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,54 @@
+<html>
+<link rel="stylesheet" href="../datatable/css/demo_page.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../datatable/css/demo_table.css" type="text/css" id=""/>
+<link rel="stylesheet" href="../style.css" type="text/css" id=""/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+
+
+<script type="text/javascript" id="js">
+  $(document).ready(function() {
+  // call the tablesorter plugin
+      $("#MS03NDUuMg").dataTable({
+        "bPaginate": false,
+        "bLengthChange": false,
+        "bInfo": false,
+        "bStateSave": true,
+        "bSort": false
+      });
+}); </script>
+
+<body id="dt_example"><div id="container" style="width:80%"><h1>CONTACT ISSUE CODE (745.2) &nbsp;&nbsp;  FILE (1)</h1>
+<div id="demo"><table id="MS03NDUuMg" class="display">
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NAME</td>
+<td>CONTACT ISSUE CODE</td>
+</tr>
+<tr>
+<td>DESCRIPTION</td>
+<td><pre>
+This file contains a list of reasons/issues for contacts.  
+Some reasons are called headings and may not be edited or added to by the
+user.  Headings from version 1.0 were inactivated with the installation of
+version 2.0.  The new headings are as follows: Staff Courtesy, 
+Access/Timeliness, One Provider, Decisions/Preference, Emotional Needs
+Coordination of Care, Patient Education, Family Involvement, 
+Physical Comfort, Transitions, Risk Management Complaints, 
+Medical Records Issues, Eligibility Issues, Environmental 
+Issues, Regulation Issues, Requests for Information and Compliments.  
+Only Nationally exported Issues Codes can be used.
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body></html>

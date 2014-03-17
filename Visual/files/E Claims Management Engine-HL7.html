@@ -22,60 +22,74 @@
 <body id="dt_example"><div id="container" style="width:80%"><h1>Package: <a href="http://code.osehra.org/dox/Package_E_Claims_Management_Engine.html">E Claims Management Engine</a> HL7 List</h1><div id="demo"><table id="SEw3LUUgQ2xhaW1zIE1hbmFnZW1lbnQgRW5naW5l" class="display">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Event Type</th>
-<th>Transaction Message Type</th>
-<th>Sender</th>
-<th>Receiver</th>
+
+      <th rowspan="2">Name</th>
+      <th rowspan="2">Type</th>
+      <th colspan="2">Message Type</th>
+      <th rowspan="2">Event Type</th>
+      <th rowspan="2">Sender</th>
+      <th rowspan="2">Receiver</th>
+     
+</tr>
+<tr>
+
+      <th>Transaction</th>
+      <th>Response</th>
+     
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="101-3645.html">BPSJ MFN REGISTER1</a></td>
 <td>subscriber</td>
-<td><a href="779.001-65.html">M01</a></td>
 <td></td>
+<td><a href="771.2-1.html">ACK</a></td>
+<td><a href="779.001-65.html">M01</a></td>
 <td></td>
 <td><a href="771-112.html">E-PHARM VITRIA</a></td>
 </tr>
 <tr>
 <td><a href="101-3646.html">BPSJ REGISTER</a></td>
 <td>event driver</td>
-<td><a href="779.001-65.html">M01</a></td>
 <td><a href="771.2-33.html">MFN</a></td>
+<td></td>
+<td><a href="779.001-65.html">M01</a></td>
 <td><a href="771-113.html">E-PHARM VISTA</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3647.html">BPSJ PAYER INPUT</a></td>
 <td>event driver</td>
-<td><a href="779.001-65.html">M01</a></td>
 <td><a href="771.2-33.html">MFN</a></td>
+<td></td>
+<td><a href="779.001-65.html">M01</a></td>
 <td><a href="771-112.html">E-PHARM VITRIA</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3648.html">BPSJ PAYER RESPONSE</a></td>
 <td>subscriber</td>
-<td><a href="779.001-65.html">M01</a></td>
 <td></td>
+<td><a href="771.2-40.html">MFK</a></td>
+<td><a href="779.001-65.html">M01</a></td>
 <td></td>
 <td><a href="771-113.html">E-PHARM VISTA</a></td>
 </tr>
 <tr>
 <td><a href="101-3995.html">BPS ECMESV1 NTE</a></td>
 <td>event driver</td>
-<td><a href="779.001-46.html">R01</a></td>
 <td><a href="771.2-3.html">ORU</a></td>
+<td><a href="771.2-1.html">ACK</a></td>
+<td><a href="779.001-46.html">R01</a></td>
 <td><a href="771-164.html">ECME VISTA</a></td>
 <td><a href="771-165.html">VITRIA NC</a></td>
 </tr>
 <tr>
 <td><a href="101-3996.html">BPS ECMECL1 NTE</a></td>
 <td>subscriber</td>
-<td><a href="779.001-47.html">R02</a></td>
 <td><a href="771.2-55.html">RPI</a></td>
+<td><a href="771.2-2.html">ORF</a></td>
+<td><a href="779.001-47.html">R02</a></td>
 <td><a href="771-165.html">VITRIA NC</a></td>
 <td><a href="771-165.html">VITRIA NC</a></td>
 </tr>

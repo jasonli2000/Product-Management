@@ -22,52 +22,65 @@
 <body id="dt_example"><div id="container" style="width:80%"><h1>Package: <a href="http://code.osehra.org/dox/Package_Outpatient_Pharmacy.html">Outpatient Pharmacy</a> HL7 List</h1><div id="demo"><table id="SEw3LU91dHBhdGllbnQgUGhhcm1hY3k" class="display">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Event Type</th>
-<th>Transaction Message Type</th>
-<th>Sender</th>
-<th>Receiver</th>
+
+      <th rowspan="2">Name</th>
+      <th rowspan="2">Type</th>
+      <th colspan="2">Message Type</th>
+      <th rowspan="2">Event Type</th>
+      <th rowspan="2">Sender</th>
+      <th rowspan="2">Receiver</th>
+     
+</tr>
+<tr>
+
+      <th>Transaction</th>
+      <th>Response</th>
+     
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="101-2479.html">PSO HLSERV</a></td>
 <td>event driver</td>
-<td><a href="779.001-38.html">O01</a></td>
 <td><a href="771.2-20.html">RDE</a></td>
+<td></td>
+<td><a href="779.001-38.html">O01</a></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-2486.html">PSO HLSERVER1</a></td>
 <td>event driver</td>
-<td><a href="779.001-38.html">O01</a></td>
 <td><a href="771.2-20.html">RDE</a></td>
+<td></td>
+<td><a href="779.001-38.html">O01</a></td>
 <td><a href="771-25.html">PSO HLSERVER1</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-2487.html">PSO HLCLIENT1</a></td>
 <td>subscriber</td>
-<td><a href="779.001-39.html">O02</a></td>
 <td><a href="771.2-29.html">RRE</a></td>
+<td><a href="771.2-29.html">RRE</a></td>
+<td><a href="779.001-39.html">O02</a></td>
 <td><a href="771-25.html">PSO HLSERVER1</a></td>
 <td><a href="771-26.html">PSO HLCLIENT1</a></td>
 </tr>
 <tr>
 <td><a href="101-3366.html">PSO RECEIVE ORDER</a></td>
 <td>subscriber</td>
-<td><a href="779.001-38.html">O01</a></td>
 <td></td>
+<td><a href="771.2-13.html">ORR</a></td>
+<td><a href="779.001-38.html">O01</a></td>
 <td></td>
 <td><a href="771-73.html">PSO RECEIVE</a></td>
 </tr>
 <tr>
 <td><a href="101-3486.html">PSO TPB EV</a></td>
 <td>event driver</td>
-<td><a href="779.001-59.html">S12</a></td>
 <td><a href="771.2-61.html">SIU</a></td>
+<td></td>
+<td><a href="779.001-59.html">S12</a></td>
 <td><a href="771-93.html">PSO TPB-PHARM</a></td>
 <td></td>
 </tr>
@@ -77,37 +90,42 @@
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 <td><a href="771-92.html">PSO TPB-AAC</a></td>
 </tr>
 <tr>
 <td><a href="101-3639.html">PSO EXT SERVER</a></td>
 <td>event driver</td>
-<td><a href="779.001-250.html">O13</a></td>
 <td><a href="771.2-22.html">RDS</a></td>
+<td></td>
+<td><a href="779.001-250.html">O13</a></td>
 <td><a href="771-108.html">PSO VISTA</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3640.html">PSO EXT CLIENT</a></td>
 <td>subscriber</td>
-<td><a href="779.001-250.html">O13</a></td>
 <td></td>
+<td><a href="771.2-1.html">ACK</a></td>
+<td><a href="779.001-250.html">O13</a></td>
 <td></td>
 <td><a href="771-109.html">PSO DISPENSE</a></td>
 </tr>
 <tr>
 <td><a href="101-3641.html">PSO DISP SERVER</a></td>
 <td>event driver</td>
-<td><a href="779.001-251.html">O14</a></td>
 <td><a href="771.2-28.html">RRD</a></td>
+<td></td>
+<td><a href="779.001-251.html">O14</a></td>
 <td><a href="771-109.html">PSO DISPENSE</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3642.html">PSO DISP CLIENT</a></td>
 <td>subscriber</td>
-<td><a href="779.001-251.html">O14</a></td>
 <td></td>
+<td><a href="771.2-1.html">ACK</a></td>
+<td><a href="779.001-251.html">O14</a></td>
 <td></td>
 <td><a href="771-108.html">PSO VISTA</a></td>
 </tr>
@@ -115,6 +133,7 @@
 <td><a href="101-3688.html">PSO VDEF RDE O11 OP PHARM PRES HR</a></td>
 <td>subscriber</td>
 <td></td>
+<td><a href="771.2-1.html">ACK</a></td>
 <td></td>
 <td></td>
 <td><a href="771-119.html">PSO VDEF IE SIDE</a></td>
@@ -122,8 +141,9 @@
 <tr>
 <td><a href="101-3689.html">PSO VDEF RDE O11 OP PHARM PRES VS</a></td>
 <td>event driver</td>
-<td><a href="779.001-248.html">O11</a></td>
 <td><a href="771.2-20.html">RDE</a></td>
+<td></td>
+<td><a href="779.001-248.html">O11</a></td>
 <td><a href="771-120.html">HDRPRES</a></td>
 <td></td>
 </tr>
@@ -131,6 +151,7 @@
 <td><a href="101-3690.html">PSO VDEF RDS O13 OP PHARM PPAR HR</a></td>
 <td>subscriber</td>
 <td></td>
+<td><a href="771.2-1.html">ACK</a></td>
 <td></td>
 <td></td>
 <td><a href="771-119.html">PSO VDEF IE SIDE</a></td>
@@ -138,16 +159,18 @@
 <tr>
 <td><a href="101-3691.html">PSO VDEF RDS O13 OP PHARM PPAR VS</a></td>
 <td>event driver</td>
-<td><a href="779.001-250.html">O13</a></td>
 <td><a href="771.2-22.html">RDS</a></td>
+<td></td>
+<td><a href="779.001-250.html">O13</a></td>
 <td><a href="771-121.html">HDRPPAR</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3692.html">PSO VDEF RDS O13 OP PHARM PREF VS</a></td>
 <td>event driver</td>
-<td><a href="779.001-250.html">O13</a></td>
 <td><a href="771.2-22.html">RDS</a></td>
+<td></td>
+<td><a href="779.001-250.html">O13</a></td>
 <td><a href="771-122.html">HDRPREF</a></td>
 <td></td>
 </tr>
@@ -155,6 +178,7 @@
 <td><a href="101-3693.html">PSO VDEF RDS O13 OP PHARM PREF HR</a></td>
 <td>subscriber</td>
 <td></td>
+<td><a href="771.2-1.html">ACK</a></td>
 <td></td>
 <td></td>
 <td><a href="771-119.html">PSO VDEF IE SIDE</a></td>

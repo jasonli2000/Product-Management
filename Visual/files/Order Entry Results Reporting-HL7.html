@@ -22,44 +22,56 @@
 <body id="dt_example"><div id="container" style="width:80%"><h1>Package: <a href="http://code.osehra.org/dox/Package_Order_Entry_Results_Reporting.html">Order Entry Results Reporting</a> HL7 List</h1><div id="demo"><table id="SEw3LU9yZGVyIEVudHJ5IFJlc3VsdHMgUmVwb3J0aW5n" class="display">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Event Type</th>
-<th>Transaction Message Type</th>
-<th>Sender</th>
-<th>Receiver</th>
+
+      <th rowspan="2">Name</th>
+      <th rowspan="2">Type</th>
+      <th colspan="2">Message Type</th>
+      <th rowspan="2">Event Type</th>
+      <th rowspan="2">Sender</th>
+      <th rowspan="2">Receiver</th>
+     
+</tr>
+<tr>
+
+      <th>Transaction</th>
+      <th>Response</th>
+     
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="101-4162.html">ORRDI SUBSCRIBER</a></td>
 <td>subscriber</td>
-<td><a href="779.001-210.html">R08</a></td>
 <td></td>
+<td><a href="771.2-67.html">TBR</a></td>
+<td><a href="779.001-210.html">R08</a></td>
 <td></td>
 <td><a href="771-176.html">OR RDI RECEIVER</a></td>
 </tr>
 <tr>
 <td><a href="101-4163.html">ORRDI EVENT</a></td>
 <td>event driver</td>
-<td><a href="779.001-207.html">Q08</a></td>
 <td><a href="771.2-62.html">SPQ</a></td>
+<td></td>
+<td><a href="779.001-207.html">Q08</a></td>
 <td><a href="771-177.html">OR RDI SENDER</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-4323.html">OR OMG SERVER</a></td>
 <td>event driver</td>
-<td><a href="779.001-256.html">O19</a></td>
 <td><a href="771.2-110.html">OMG</a></td>
+<td></td>
+<td><a href="779.001-256.html">O19</a></td>
 <td><a href="771-201.html">OERR</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-4324.html">OR OMG CLIENT</a></td>
 <td>subscriber</td>
-<td><a href="779.001-257.html">O20</a></td>
 <td></td>
+<td><a href="771.2-113.html">ORG</a></td>
+<td><a href="779.001-257.html">O20</a></td>
 <td></td>
 <td><a href="771-198.html">VBECS</a></td>
 </tr>

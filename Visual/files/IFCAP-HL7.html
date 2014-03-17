@@ -22,36 +22,47 @@
 <body id="dt_example"><div id="container" style="width:80%"><h1>Package: <a href="http://code.osehra.org/dox/Package_IFCAP.html">IFCAP</a> HL7 List</h1><div id="demo"><table id="SEw3LUlGQ0FQ" class="display">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Event Type</th>
-<th>Transaction Message Type</th>
-<th>Sender</th>
-<th>Receiver</th>
+
+      <th rowspan="2">Name</th>
+      <th rowspan="2">Type</th>
+      <th colspan="2">Message Type</th>
+      <th rowspan="2">Event Type</th>
+      <th rowspan="2">Sender</th>
+      <th rowspan="2">Receiver</th>
+     
+</tr>
+<tr>
+
+      <th>Transaction</th>
+      <th>Response</th>
+     
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="101-3022.html">PRCP EV QOH REQ</a></td>
 <td>event driver</td>
-<td><a href="779.001-172.html">Q06</a></td>
 <td><a href="771.2-14.html">OSQ</a></td>
+<td></td>
+<td><a href="779.001-172.html">Q06</a></td>
 <td><a href="771-53.html">PRCP_SS_VISTA</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3023.html">PRCP SU QOH REQ</a></td>
 <td>subscriber</td>
-<td><a href="779.001-172.html">Q06</a></td>
 <td></td>
+<td><a href="771.2-44.html">OSR</a></td>
+<td><a href="779.001-172.html">Q06</a></td>
 <td></td>
 <td><a href="771-54.html">PRCP_SSTATION</a></td>
 </tr>
 <tr>
 <td><a href="101-3024.html">PRCP EV ITEM UPDATE</a></td>
 <td>event driver</td>
-<td><a href="779.001-49.html">Z01</a></td>
 <td><a href="771.2-33.html">MFN</a></td>
+<td></td>
+<td><a href="779.001-49.html">Z01</a></td>
 <td><a href="771-53.html">PRCP_SS_VISTA</a></td>
 <td></td>
 </tr>
@@ -61,13 +72,15 @@
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 <td><a href="771-54.html">PRCP_SSTATION</a></td>
 </tr>
 <tr>
 <td><a href="101-3026.html">PRCP EV REL ORDER</a></td>
 <td>event driver</td>
-<td><a href="779.001-38.html">O01</a></td>
 <td><a href="771.2-5.html">ORM</a></td>
+<td></td>
+<td><a href="779.001-38.html">O01</a></td>
 <td><a href="771-53.html">PRCP_SS_VISTA</a></td>
 <td></td>
 </tr>
@@ -77,13 +90,15 @@
 <td></td>
 <td></td>
 <td></td>
+<td></td>
 <td><a href="771-54.html">PRCP_SSTATION</a></td>
 </tr>
 <tr>
 <td><a href="101-3028.html">PRCP EV INV UPDATE</a></td>
 <td>event driver</td>
-<td><a href="779.001-38.html">O01</a></td>
 <td><a href="771.2-19.html">RAS</a></td>
+<td></td>
+<td><a href="779.001-38.html">O01</a></td>
 <td><a href="771-54.html">PRCP_SSTATION</a></td>
 <td></td>
 </tr>
@@ -91,6 +106,7 @@
 <td><a href="101-3029.html">PRCP SU INV UPDATE</a></td>
 <td>subscriber</td>
 <td></td>
+<td><a href="771.2-1.html">ACK</a></td>
 <td></td>
 <td></td>
 <td><a href="771-53.html">PRCP_SS_VISTA</a></td>
@@ -98,8 +114,9 @@
 <tr>
 <td><a href="101-3030.html">PRCP EV REFILL/POST</a></td>
 <td>event driver</td>
-<td><a href="779.001-38.html">O01</a></td>
 <td><a href="771.2-5.html">ORM</a></td>
+<td></td>
+<td><a href="779.001-38.html">O01</a></td>
 <td><a href="771-54.html">PRCP_SSTATION</a></td>
 <td></td>
 </tr>
@@ -107,6 +124,7 @@
 <td><a href="101-3031.html">PRCP SU REFILL/POST</a></td>
 <td>subscriber</td>
 <td></td>
+<td><a href="771.2-1.html">ACK</a></td>
 <td></td>
 <td></td>
 <td><a href="771-53.html">PRCP_SS_VISTA</a></td>
@@ -114,176 +132,198 @@
 <tr>
 <td><a href="101-3906.html">PRCV_IFCAP_02_EV_OBL/AMEND</a></td>
 <td>event driver</td>
-<td><a href="779.001-38.html">O01</a></td>
 <td><a href="771.2-5.html">ORM</a></td>
+<td></td>
+<td><a href="779.001-38.html">O01</a></td>
 <td><a href="771-148.html">PRCV_IFCAP_PO</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3907.html">PRCV_IFCAP_02_SU_OBL/AMEND</a></td>
 <td>subscriber</td>
-<td><a href="779.001-39.html">O02</a></td>
 <td></td>
+<td><a href="771.2-13.html">ORR</a></td>
+<td><a href="779.001-39.html">O02</a></td>
 <td></td>
 <td><a href="771-146.html">PRCV_DYNAMED</a></td>
 </tr>
 <tr>
 <td><a href="101-3909.html">PRCV_IFCAP_03_EV_REC/ADJ</a></td>
 <td>event driver</td>
-<td><a href="779.001-38.html">O01</a></td>
 <td><a href="771.2-5.html">ORM</a></td>
+<td></td>
+<td><a href="779.001-38.html">O01</a></td>
 <td><a href="771-149.html">PRCV_IFCAP_RECV</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3910.html">PRCV_IFCAP_03_SU_REC/ADJ</a></td>
 <td>subscriber</td>
-<td><a href="779.001-39.html">O02</a></td>
 <td></td>
+<td><a href="771.2-13.html">ORR</a></td>
+<td><a href="779.001-39.html">O02</a></td>
 <td></td>
 <td><a href="771-146.html">PRCV_DYNAMED</a></td>
 </tr>
 <tr>
 <td><a href="101-3911.html">PRCV_IFCAP_01_EV_DYNAMED_UPDATE</a></td>
 <td>event driver</td>
-<td><a href="779.001-244.html">O07</a></td>
 <td><a href="771.2-88.html">OMN</a></td>
+<td></td>
+<td><a href="779.001-244.html">O07</a></td>
 <td><a href="771-150.html">PRCV_IFCAP_2237</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3912.html">PRCV_IFCAP_01_SU_DYNAMED_UPDATE</a></td>
 <td>subscriber</td>
-<td><a href="779.001-245.html">O08</a></td>
 <td></td>
+<td><a href="771.2-91.html">ORN</a></td>
+<td><a href="779.001-245.html">O08</a></td>
 <td></td>
 <td><a href="771-146.html">PRCV_DYNAMED</a></td>
 </tr>
 <tr>
 <td><a href="101-3913.html">PRCV_DYNAMED_01_SU_REQUISITION_SEND</a></td>
 <td>subscriber</td>
-<td><a href="779.001-245.html">O08</a></td>
 <td></td>
+<td><a href="771.2-91.html">ORN</a></td>
+<td><a href="779.001-245.html">O08</a></td>
 <td></td>
 <td><a href="771-147.html">PRCV_IFCAP_REQ</a></td>
 </tr>
 <tr>
 <td><a href="101-3914.html">PRCV_DYNAMED_01_EV_REQUISITION_SEND</a></td>
 <td>event driver</td>
-<td><a href="779.001-244.html">O07</a></td>
 <td><a href="771.2-88.html">OMN</a></td>
+<td></td>
+<td><a href="779.001-244.html">O07</a></td>
 <td><a href="771-146.html">PRCV_DYNAMED</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3916.html">PRCV_IFCAP_05_EV_ITEM_UPD</a></td>
 <td>event driver</td>
-<td><a href="779.001-65.html">M01</a></td>
 <td><a href="771.2-33.html">MFN</a></td>
+<td></td>
+<td><a href="779.001-65.html">M01</a></td>
 <td><a href="771-156.html">PRCV_IFCAP_IT</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3917.html">PRCV_IFCAP_05_SU_ITEM_UPD</a></td>
 <td>subscriber</td>
-<td><a href="779.001-65.html">M01</a></td>
 <td></td>
+<td><a href="771.2-40.html">MFK</a></td>
+<td><a href="779.001-65.html">M01</a></td>
 <td></td>
 <td><a href="771-146.html">PRCV_DYNAMED</a></td>
 </tr>
 <tr>
 <td><a href="101-3918.html">PRCV_IFCAP_04_EV_VEND_UPD</a></td>
 <td>event driver</td>
-<td><a href="779.001-65.html">M01</a></td>
 <td><a href="771.2-33.html">MFN</a></td>
+<td></td>
+<td><a href="779.001-65.html">M01</a></td>
 <td><a href="771-155.html">PRCV_IFCAP_VEN</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3919.html">PRCV_IFCAP_04_SU_VEND_UPD</a></td>
 <td>subscriber</td>
-<td><a href="779.001-65.html">M01</a></td>
 <td></td>
+<td><a href="771.2-40.html">MFK</a></td>
+<td><a href="779.001-65.html">M01</a></td>
 <td></td>
 <td><a href="771-146.html">PRCV_DYNAMED</a></td>
 </tr>
 <tr>
 <td><a href="101-3920.html">PRCV_DYNAMED_20_EV_FUND_BAL_SUBSCRIBE</a></td>
 <td>event driver</td>
-<td><a href="779.001-261.html">Q16</a></td>
 <td><a href="771.2-119.html">QSB</a></td>
+<td></td>
+<td><a href="779.001-261.html">Q16</a></td>
 <td><a href="771-146.html">PRCV_DYNAMED</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3921.html">PRCV_DYNAMED_20_SU_FUND_BAL_SUBSCRIBE</a></td>
 <td>subscriber</td>
-<td><a href="779.001-261.html">Q16</a></td>
 <td></td>
+<td><a href="771.2-1.html">ACK</a></td>
+<td><a href="779.001-261.html">Q16</a></td>
 <td></td>
 <td><a href="771-151.html">PRCV_IFCAP_FSUB</a></td>
 </tr>
 <tr>
 <td><a href="101-3922.html">PRCV_DYNAMED_21_EV_FUND_BAL_CANCEL_SUB</a></td>
 <td>event driver</td>
-<td><a href="779.001-230.html">J02</a></td>
 <td><a href="771.2-118.html">QCN</a></td>
+<td></td>
+<td><a href="779.001-230.html">J02</a></td>
 <td><a href="771-146.html">PRCV_DYNAMED</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3923.html">PRCV_DYNAMED_21_SU_FUND_BAL_CANCEL_SUB</a></td>
 <td>subscriber</td>
-<td><a href="779.001-230.html">J02</a></td>
 <td></td>
+<td><a href="771.2-1.html">ACK</a></td>
+<td><a href="779.001-230.html">J02</a></td>
 <td></td>
 <td><a href="771-152.html">PRCV_IFCAP_FCAN</a></td>
 </tr>
 <tr>
 <td><a href="101-3924.html">PRCV_DYNAMED_22_EV_FUND_BAL_DATA</a></td>
 <td>event driver</td>
-<td><a href="779.001-65.html">M01</a></td>
 <td><a href="771.2-33.html">MFN</a></td>
+<td></td>
+<td><a href="779.001-65.html">M01</a></td>
 <td><a href="771-153.html">PRCV_IFCAP_FBAL</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3925.html">PRCV_DYNAMED_22_SU_FUND_BAL_DATA</a></td>
 <td>subscriber</td>
-<td><a href="779.001-65.html">M01</a></td>
 <td></td>
+<td><a href="771.2-40.html">MFK</a></td>
+<td><a href="779.001-65.html">M01</a></td>
 <td></td>
 <td><a href="771-146.html">PRCV_DYNAMED</a></td>
 </tr>
 <tr>
 <td><a href="101-3926.html">PRCV_IFCAP_06_EV_IB_PROC</a></td>
 <td>event driver</td>
-<td><a href="779.001-42.html">P03</a></td>
 <td><a href="771.2-9.html">DFT</a></td>
+<td></td>
+<td><a href="779.001-42.html">P03</a></td>
 <td><a href="771-146.html">PRCV_DYNAMED</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3927.html">PRCV_IFCAP_06_SU_IB_PROC</a></td>
 <td>subscriber</td>
-<td><a href="779.001-42.html">P03</a></td>
 <td></td>
+<td><a href="771.2-1.html">ACK</a></td>
+<td><a href="779.001-42.html">P03</a></td>
 <td></td>
 <td><a href="771-154.html">PRCV_IFCAP_IVSV</a></td>
 </tr>
 <tr>
 <td><a href="101-3985.html">PRC_IFCAP_01_EV_AAC</a></td>
 <td>event driver</td>
-<td><a href="779.001-65.html">M01</a></td>
 <td><a href="771.2-33.html">MFN</a></td>
+<td></td>
+<td><a href="779.001-65.html">M01</a></td>
 <td><a href="771-162.html">VISTA_IFCAP</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3986.html">PRC_IFCAP_01_SU_AAC</a></td>
 <td>subscriber</td>
-<td><a href="779.001-65.html">M01</a></td>
 <td></td>
+<td><a href="771.2-40.html">MFK</a></td>
+<td><a href="779.001-65.html">M01</a></td>
 <td></td>
 <td><a href="771-163.html">AAC_FPDS</a></td>
 </tr>

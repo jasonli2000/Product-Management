@@ -22,140 +22,164 @@
 <body id="dt_example"><div id="container" style="width:80%"><h1>Package: <a href="http://code.osehra.org/dox/Package_Integrated_Billing.html">Integrated Billing</a> HL7 List</h1><div id="demo"><table id="SEw3LUludGVncmF0ZWQgQmlsbGluZw" class="display">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Event Type</th>
-<th>Transaction Message Type</th>
-<th>Sender</th>
-<th>Receiver</th>
+
+      <th rowspan="2">Name</th>
+      <th rowspan="2">Type</th>
+      <th colspan="2">Message Type</th>
+      <th rowspan="2">Event Type</th>
+      <th rowspan="2">Sender</th>
+      <th rowspan="2">Receiver</th>
+     
+</tr>
+<tr>
+
+      <th>Transaction</th>
+      <th>Response</th>
+     
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="101-3488.html">IBCNE IIV VER REQUEST</a></td>
 <td>subscriber</td>
-<td><a href="779.001-82.html">I01</a></td>
 <td></td>
+<td><a href="771.2-1.html">ACK</a></td>
+<td><a href="779.001-82.html">I01</a></td>
 <td></td>
 <td><a href="771-95.html">IIV EC</a></td>
 </tr>
 <tr>
 <td><a href="101-3489.html">IBCNE IIV REGISTER</a></td>
 <td>event driver</td>
-<td><a href="779.001-65.html">M01</a></td>
 <td><a href="771.2-33.html">MFN</a></td>
+<td></td>
+<td><a href="779.001-65.html">M01</a></td>
 <td><a href="771-94.html">IIV VISTA</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3490.html">IBCNE IIV MFN OUT</a></td>
 <td>subscriber</td>
-<td><a href="779.001-65.html">M01</a></td>
 <td></td>
+<td><a href="771.2-1.html">ACK</a></td>
+<td><a href="779.001-65.html">M01</a></td>
 <td></td>
 <td><a href="771-95.html">IIV EC</a></td>
 </tr>
 <tr>
 <td><a href="101-3501.html">IBCNE IIV RQV OUT</a></td>
 <td>event driver</td>
-<td><a href="779.001-82.html">I01</a></td>
 <td><a href="771.2-59.html">RQI</a></td>
+<td></td>
+<td><a href="779.001-82.html">I01</a></td>
 <td><a href="771-94.html">IIV VISTA</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3502.html">IBCNE IIV RQI OUT</a></td>
 <td>event driver</td>
-<td><a href="779.001-84.html">I03</a></td>
 <td><a href="771.2-59.html">RQI</a></td>
+<td></td>
+<td><a href="779.001-84.html">I03</a></td>
 <td><a href="771-94.html">IIV VISTA</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3503.html">IBCNE IIV ID REQUEST</a></td>
 <td>subscriber</td>
-<td><a href="779.001-82.html">I01</a></td>
 <td><a href="771.2-59.html">RQI</a></td>
+<td><a href="771.2-1.html">ACK</a></td>
+<td><a href="779.001-82.html">I01</a></td>
 <td></td>
 <td><a href="771-95.html">IIV EC</a></td>
 </tr>
 <tr>
 <td><a href="101-3509.html">IBCNE IIV TABLE</a></td>
 <td>subscriber</td>
-<td><a href="779.001-65.html">M01</a></td>
 <td></td>
+<td><a href="771.2-40.html">MFK</a></td>
+<td><a href="779.001-65.html">M01</a></td>
 <td></td>
 <td><a href="771-94.html">IIV VISTA</a></td>
 </tr>
 <tr>
 <td><a href="101-3510.html">IBCNE IIV MFN IN</a></td>
 <td>event driver</td>
-<td><a href="779.001-65.html">M01</a></td>
 <td><a href="771.2-33.html">MFN</a></td>
+<td></td>
+<td><a href="779.001-65.html">M01</a></td>
 <td><a href="771-95.html">IIV EC</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3511.html">IBCNE IIV IN</a></td>
 <td>event driver</td>
-<td><a href="779.001-82.html">I01</a></td>
 <td><a href="771.2-55.html">RPI</a></td>
+<td></td>
+<td><a href="779.001-82.html">I01</a></td>
 <td><a href="771-95.html">IIV EC</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3512.html">IBCNE IIV RESPONSE</a></td>
 <td>subscriber</td>
-<td><a href="779.001-82.html">I01</a></td>
 <td></td>
+<td><a href="771.2-1.html">ACK</a></td>
+<td><a href="779.001-82.html">I01</a></td>
 <td></td>
 <td><a href="771-94.html">IIV VISTA</a></td>
 </tr>
 <tr>
 <td><a href="101-3981.html">IBB PFSS ADT-A05 SERVER</a></td>
 <td>event driver</td>
-<td><a href="779.001-5.html">A05</a></td>
 <td><a href="771.2-6.html">ADT</a></td>
+<td></td>
+<td><a href="779.001-5.html">A05</a></td>
 <td><a href="771-160.html">IBB PFSS SENDING</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3982.html">IBB PFSS ADT-A05 CLIENT</a></td>
 <td>subscriber</td>
-<td><a href="779.001-5.html">A05</a></td>
 <td></td>
+<td><a href="771.2-6.html">ADT</a></td>
+<td><a href="779.001-5.html">A05</a></td>
 <td></td>
 <td><a href="771-161.html">IBB PFSS RECV</a></td>
 </tr>
 <tr>
 <td><a href="101-3983.html">IBB PFSS ADT-A04 SERVER</a></td>
 <td>event driver</td>
-<td><a href="779.001-4.html">A04</a></td>
 <td><a href="771.2-6.html">ADT</a></td>
+<td></td>
+<td><a href="779.001-4.html">A04</a></td>
 <td><a href="771-160.html">IBB PFSS SENDING</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-3984.html">IBB PFSS ADT-A04 CLIENT</a></td>
 <td>subscriber</td>
-<td><a href="779.001-4.html">A04</a></td>
 <td></td>
+<td><a href="771.2-6.html">ADT</a></td>
+<td><a href="779.001-4.html">A04</a></td>
 <td></td>
 <td><a href="771-161.html">IBB PFSS RECV</a></td>
 </tr>
 <tr>
 <td><a href="101-4069.html">IB PFSS DFT-P03 SERVER</a></td>
 <td>event driver</td>
-<td><a href="779.001-42.html">P03</a></td>
 <td><a href="771.2-9.html">DFT</a></td>
+<td></td>
+<td><a href="779.001-42.html">P03</a></td>
 <td><a href="771-166.html">IB PFSS SENDING</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="101-4070.html">IB PFSS DFT-P03 CLIENT</a></td>
 <td>subscriber</td>
-<td><a href="779.001-42.html">P03</a></td>
 <td></td>
+<td><a href="771.2-9.html">DFT</a></td>
+<td><a href="779.001-42.html">P03</a></td>
 <td></td>
 <td><a href="771-167.html">IB PFSS RECV</a></td>
 </tr>

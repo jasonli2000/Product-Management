@@ -2,5 +2,6 @@
 *.pyc
 *.py~
 .*.*swp
-Visual/test/*
-Visual/CPRSDemo/*
+Visual/files/
+Visual/test/
+Visual/rpc/

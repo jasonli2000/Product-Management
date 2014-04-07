@@ -241,7 +241,7 @@
 <dt>REQUIRED:  &nbsp;&nbsp;YES</dt>
 <dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the reason this study is being requested, up to 64 characters.</dt>
 <dt>POST-SELECTION ACTION:  &nbsp;&nbsp;I $L($G(ORDIALOG(PROMPT,INST)))=0 K DONE W $C(7),11,"A valid reason for study is required!" S:$$DONE^<a href="http://code.osehra.org/dox/Routine_ORCDLG2.html">ORCDLG2</a> ORQUIT=1</dt>
-<dt>DEFAULT:  &nbsp;&nbsp;I $D(^TMP("ORECALL",$J,ORDIALOG)),$$SITEVAL^ORWDXM1 S Y=^TMP("ORECALL",$J,ORDIALOG,PROMPT,INST)</dt>
+<dt>DEFAULT:  &nbsp;&nbsp;I $D(^TMP("ORECALL",$J,ORDIALOG)),$$SITEVAL^<a href="http://code.osehra.org/dox/Routine_ORWDXM1.html">ORWDXM1</a> S Y=^TMP("ORECALL",$J,ORDIALOG,PROMPT,INST)</dt>
 <dt>WINDOWS CONTROL:  &nbsp;&nbsp;txtReason</dt>
 </li>
 </ol>

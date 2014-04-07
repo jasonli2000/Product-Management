@@ -128,7 +128,7 @@
 <dt>TITLE:  &nbsp;&nbsp;Cancel Tubefeeding order:</dt>
 <dt>ASK ON ACTION:  &nbsp;&nbsp;W</dt>
 <dt>HELP MESSAGE:  &nbsp;&nbsp;Enter NO to continue the current tubefeeding order along with this diet order, or YES to cancel it.</dt>
-<dt>ASK ON CONDITION:  &nbsp;&nbsp;I 0 ;'$G(ORNPO),$$CURRENT^ORCDFH("TF"),'$$FUTURE^<a href="http://code.osehra.org/dox/Routine_ORCDFH.html">ORCDFH</a>("EFFECTIVE DATE/TIME")</dt>
+<dt>ASK ON CONDITION:  &nbsp;&nbsp;I 0 ;'$G(ORNPO),$$CURRENT^<a href="http://code.osehra.org/dox/Routine_ORCDFH.html">ORCDFH</a>("TF"),'$$FUTURE^<a href="http://code.osehra.org/dox/Routine_ORCDFH.html">ORCDFH</a>("EFFECTIVE DATE/TIME")</dt>
 <dt>EXIT ACTION:  &nbsp;&nbsp;K:$G(ORNPO) ORDIALOG(PROMPT,INST)</dt>
 </li>
 </ol>

@@ -4,6 +4,16 @@
 <link rel="stylesheet" href="../style.css" type="text/css" id=""/>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+<!-- Google Analytics -->
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ ga('create', 'UA-43872538-6', 'osehra.org');
+ ga('send', 'pageview');
+</script>
 
 
 <script type="text/javascript" id="js">
@@ -63,7 +73,7 @@ The user is asked to enter a beginning and ending P.O. date range.
 </tr>
 <tr>
 <td>ENTRY ACTION</td>
-<td>S DIC="^PRC(442,",DHD="25K or Less Without FPDS Data",L=0,FLDS="[PRCH W/O FPDS]",BY="[PRCH W/O FPDS]",FR="?,"_PRC("SITE")_"-,9,0,1",TO="?,"_PRC("SITE")_"z,,25000,1" D EN1^<a href="http://code.osehra.org/dox/Routine_DIP.html">DIP</a>,K^PRCHFPD</td>
+<td>S DIC="^PRC(442,",DHD="25K or Less Without FPDS Data",L=0,FLDS="[PRCH W/O FPDS]",BY="[PRCH W/O FPDS]",FR="?,"_PRC("SITE")_"-,9,0,1",TO="?,"_PRC("SITE")_"z,,25000,1" D EN1^<a href="http://code.osehra.org/dox/Routine_DIP.html">DIP</a>,K^<a href="http://code.osehra.org/dox/Routine_PRCHFPD.html">PRCHFPD</a></td>
 </tr>
 </tbody>
 </table>

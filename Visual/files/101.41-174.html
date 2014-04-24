@@ -4,6 +4,16 @@
 <link rel="stylesheet" href="../style.css" type="text/css" id=""/>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+<!-- Google Analytics -->
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ ga('create', 'UA-43872538-6', 'osehra.org');
+ ga('send', 'pageview');
+</script>
 
 
 <script type="text/javascript" id="js">
@@ -74,7 +84,7 @@
 <dt>POST-SELECTION ACTION:  &nbsp;&nbsp;D DEA^<a href="http://code.osehra.org/dox/Routine_ORCDPS1.html">ORCDPS1</a> Q:'$G(DONE)  I $G(ORESET)'=+Y D CHANGED^<a href="http://code.osehra.org/dox/Routine_ORCDPS1.html">ORCDPS1</a>("OI")</dt>
 <dt>XECUTABLE HELP:  &nbsp;&nbsp;N IDX,SCR S IDX=$G(ORDIALOG(PROMPT,"D")),SCR=$G(ORDIALOG(PROMPT,"S")) D XHELP^<a href="http://code.osehra.org/dox/Routine_ORDD43.html">ORDD43</a>(IDX,SCR)</dt>
 <dt>ENTRY ACTION:  &nbsp;&nbsp;D ENOI^<a href="http://code.osehra.org/dox/Routine_ORCDPS1.html">ORCDPS1</a></dt>
-<dt>EXIT ACTION:  &nbsp;&nbsp;S OROI=+$G(ORDIALOG(PROMPT,INST)) D ORDITM^<a href="http://code.osehra.org/dox/Routine_ORCDPS1.html">ORCDPS1</a>(OROI),NFI^ORCDPS1(OROI) S ORPKG=+$O(^DIC(9.4,"C",$S(ORCAT="I":"PSJ",1:"PSO"),0))</dt>
+<dt>EXIT ACTION:  &nbsp;&nbsp;S OROI=+$G(ORDIALOG(PROMPT,INST)) D ORDITM^<a href="http://code.osehra.org/dox/Routine_ORCDPS1.html">ORCDPS1</a>(OROI),NFI^<a href="http://code.osehra.org/dox/Routine_ORCDPS1.html">ORCDPS1</a>(OROI) S ORPKG=+$O(^DIC(9.4,"C",$S(ORCAT="I":"PSJ",1:"PSO"),0))</dt>
 <dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;1</dt>
 <dt>FORMAT:  &nbsp;&nbsp;@1350</dt>
 </li>
@@ -88,7 +98,7 @@
 <dt>ASK ON ACTION:  &nbsp;&nbsp;C</dt>
 <dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the dosage instructions for this order, as an amount and units.</dt>
 <dt>POST-SELECTION ACTION:  &nbsp;&nbsp;D CHDOSE^<a href="http://code.osehra.org/dox/Routine_ORCDPS2.html">ORCDPS2</a> Q:'$G(DONE)  D DEFCONJ^<a href="http://code.osehra.org/dox/Routine_ORCDPS1.html">ORCDPS1</a></dt>
-<dt>XECUTABLE HELP:  &nbsp;&nbsp;D LIST^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a>:$G(ORDIALOG(PROMPT,"LIST")),F^ORCDLGH:'$G(ORDIALOG(PROMPT,"LIST"))</dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;D LIST^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a>:$G(ORDIALOG(PROMPT,"LIST")),F^<a href="http://code.osehra.org/dox/Routine_ORCDLGH.html">ORCDLGH</a>:'$G(ORDIALOG(PROMPT,"LIST"))</dt>
 <dt>ENTRY ACTION:  &nbsp;&nbsp;D DOSES^<a href="http://code.osehra.org/dox/Routine_ORCDPS2.html">ORCDPS2</a> I $G(ORDIALOG(PROMPT,"LIST")),'$O(ORDIALOG(PROMPT,0)),'$G(ORENEW) D LIST^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a></dt>
 <dt>EXIT ACTION:  &nbsp;&nbsp;D EXDOSE^<a href="http://code.osehra.org/dox/Routine_ORCDPS2.html">ORCDPS2</a></dt>
 </li>
@@ -100,7 +110,7 @@
 <dt>ASK ON ACTION:  &nbsp;&nbsp;C</dt>
 <dt>HELP MESSAGE:  &nbsp;&nbsp;Enter the route of administration for this drug.</dt>
 <dt>SCREEN:  &nbsp;&nbsp;I $P(^(0),U,4)</dt>
-<dt>XECUTABLE HELP:  &nbsp;&nbsp;D LIST^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a>:$G(ORDIALOG(PROMPT,"LIST"))&(X="?"),P^ORCDLGH:'$G(ORDIALOG(PROMPT,"LIST"))!(X'="?")</dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;D LIST^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a>:$G(ORDIALOG(PROMPT,"LIST"))&(X="?"),P^<a href="http://code.osehra.org/dox/Routine_ORCDLGH.html">ORCDLGH</a>:'$G(ORDIALOG(PROMPT,"LIST"))!(X'="?")</dt>
 <dt>DEFAULT:  &nbsp;&nbsp;D DEFRTE^<a href="http://code.osehra.org/dox/Routine_ORCDPS1.html">ORCDPS1</a></dt>
 <dt>ENTRY ACTION:  &nbsp;&nbsp;D ROUTES^<a href="http://code.osehra.org/dox/Routine_ORCDPS1.html">ORCDPS1</a></dt>
 <dt>EXIT ACTION:  &nbsp;&nbsp;S OROUTE=+$G(ORDIALOG(PROMPT,INST))</dt>

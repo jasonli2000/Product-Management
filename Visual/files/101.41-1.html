@@ -4,6 +4,16 @@
 <link rel="stylesheet" href="../style.css" type="text/css" id=""/>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="../datatable/js/jquery.dataTables.js"></script>
+<!-- Google Analytics -->
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ ga('create', 'UA-43872538-6', 'osehra.org');
+ ga('send', 'pageview');
+</script>
 
 
 <script type="text/javascript" id="js">
@@ -73,9 +83,9 @@
 <dt>SPECIAL LOOKUP ROUTINE:  &nbsp;&nbsp;LKP;ORCDRA</dt>
 <dt>SCREEN:  &nbsp;&nbsp;I $$ACTIVE^<a href="http://code.osehra.org/dox/Routine_ORDD43.html">ORDD43</a>(Y),'(ORBROAD&($P($G(^("RA")),U,2)="B"))</dt>
 <dt>POST-SELECTION ACTION:  &nbsp;&nbsp;D BROAD^<a href="http://code.osehra.org/dox/Routine_ORCDRA.html">ORCDRA</a>(+Y)</dt>
-<dt>XECUTABLE HELP:  &nbsp;&nbsp;N SCR,IDX S SCR=ORDIALOG(PROMPT,"S"),IDX="S."_$P(ORDG,U,4) D XHELP^<a href="http://code.osehra.org/dox/Routine_ORDD43.html">ORDD43</a>(IDX,SCR),LIST^ORCDRA:$G(ORDIALOG(PROMPT,"LIST"))</dt>
-<dt>ENTRY ACTION:  &nbsp;&nbsp;D NEXTPROC^<a href="http://code.osehra.org/dox/Routine_ORCDRA.html">ORCDRA</a> Q:$G(ORQUIT)  I '$G(ORDIALOG(PROMPT,INST)) D COMMON^<a href="http://code.osehra.org/dox/Routine_ORCDRA.html">ORCDRA</a>,LIST^ORCDRA:$G(ORDIALOG(PROMPT,"LIST"))</dt>
-<dt>EXIT ACTION:  &nbsp;&nbsp;N OI S OI=+$G(ORDIALOG(PROMPT,INST)) D:OI ORDMSG^ORCD(OI)</dt>
+<dt>XECUTABLE HELP:  &nbsp;&nbsp;N SCR,IDX S SCR=ORDIALOG(PROMPT,"S"),IDX="S."_$P(ORDG,U,4) D XHELP^<a href="http://code.osehra.org/dox/Routine_ORDD43.html">ORDD43</a>(IDX,SCR),LIST^<a href="http://code.osehra.org/dox/Routine_ORCDRA.html">ORCDRA</a>:$G(ORDIALOG(PROMPT,"LIST"))</dt>
+<dt>ENTRY ACTION:  &nbsp;&nbsp;D NEXTPROC^<a href="http://code.osehra.org/dox/Routine_ORCDRA.html">ORCDRA</a> Q:$G(ORQUIT)  I '$G(ORDIALOG(PROMPT,INST)) D COMMON^<a href="http://code.osehra.org/dox/Routine_ORCDRA.html">ORCDRA</a>,LIST^<a href="http://code.osehra.org/dox/Routine_ORCDRA.html">ORCDRA</a>:$G(ORDIALOG(PROMPT,"LIST"))</dt>
+<dt>EXIT ACTION:  &nbsp;&nbsp;N OI S OI=+$G(ORDIALOG(PROMPT,INST)) D:OI ORDMSG^<a href="http://code.osehra.org/dox/Routine_ORCD.html">ORCD</a>(OI)</dt>
 <dt>ORDER TEXT SEQUENCE:  &nbsp;&nbsp;1</dt>
 <dt>WINDOWS CONTROL:  &nbsp;&nbsp;cboProcedure</dt>
 <dt>API NAME:  &nbsp;&nbsp;131</dt>

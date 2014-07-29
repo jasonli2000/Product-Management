@@ -14,10 +14,10 @@
 
 .link {
   stroke: steelblue;
-  stroke-opacity: .2;
+  stroke-opacity: .4;
   fill: none;
   pointer-events: none;
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 .node:hover,

@@ -35,11 +35,17 @@ d3.chart.dependencyedgebundling = function(options) {
       if (!node) {
         node = map[name] = data || {name: name, children: []};
         if (name.length) {
-          node.parent = map[""];
+          if (node.group !== undefined && node.group.length > 0) {
+            node.parent = setparent(node.group.substring(0, node.group.lastIndexOf('.')), null);
+          }
+          else {
+            node.parent = map[""];
+          }
           node.parent.children.push(node);
           node.key = name;
         }
       }
+      return node;
     }
 
     setparent("", null);
@@ -83,7 +89,7 @@ d3.chart.dependencyedgebundling = function(options) {
           }
       }
       var minTextWidth = 7.4;
-      var radialTextHeight = 12;
+      var radialTextHeight = 13;
       var minTextRadius = Math.ceil(maxLength * minTextWidth);
       var minInnerRadius = Math.ceil((radialTextHeight * data.length)/2/Math.PI);
       if (minInnerRadius < 140)
@@ -105,7 +111,7 @@ d3.chart.dependencyedgebundling = function(options) {
 
       var line = d3.svg.line.radial()
           .interpolate("bundle")
-          .tension(.9)
+          .tension(.85)
           .radius(function(d) { return d.y; })
           .angle(function(d) { return d.x / 180 * Math.PI; });
 

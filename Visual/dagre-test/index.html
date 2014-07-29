@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<script src="dagre.min.js"></script>
+<body>
+<script>
+  var g = new dagre.Digraph();
+  g.addNode("kspacey",    { label: "Kevin Spacey",  width: 10, height: 10 });
+  g.addNode("swilliams",  { label: "Saul Williams", width: 10, height: 10 });
+  g.addNode("bpitt",      { label: "Brad Pitt",     width: 10, height: 10 });
+  g.addNode("hford",      { label: "Harrison Ford", width: 10, height: 10 });
+  g.addNode("lwilson",    { label: "Luke Wilson",   width: 10, height: 10 });
+  g.addNode("kbacon",     { label: "Kevin Bacon",   width: 10, height: 10 })
+  g.addEdge(null, "kspacey",   "swilliams");
+  g.addEdge(null, "swilliams", "kbacon");
+  g.addEdge(null, "bpitt",     "kbacon");
+  g.addEdge(null, "hford",     "lwilson");
+  g.addEdge(null, "lwilson",   "kbacon");
+  var layout = dagre.layout().run(g);
+  var layer = {};
+  layout.eachNode(function(u, value) {
+      console.log("Node " + u + ": " + value.y);
+      if (layer[value.y] === undefined) {
+        layer[value.y] = {};
+      }
+      layer[value.y][u] = u;
+  });
+  console.log(JSON.stringify(layer));
+</script>
+</body>
+</html>

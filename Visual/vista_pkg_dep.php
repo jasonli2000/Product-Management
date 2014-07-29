@@ -32,6 +32,7 @@ This circle plot captures the interrelationships among VistA packages. Mouse ove
   </p>
   </div>
   <div id="chart_placeholder"/>
+<script src = "dagre-test/dagre.min.js"></script>
 <script type="text/javascript">
 
   var package_link_url = "http://code.osehra.org/dox/Package_";
@@ -43,13 +44,43 @@ This circle plot captures the interrelationships among VistA packages. Mouse ove
 
   var chart = d3.chart.dependencyedgebundling()
            .nodeTextHyperLink(getPackageDoxLink);
-  var localpath = "pkgdep.json";
+  var localpath = "heb.json";
   d3.json(localpath, function(error, classes) {
   if (error){
     errormsg = "json error " + error + " data: " + classes;
     document.write(errormsg);
     return;
   }
+  // try to group them together by layer
+  var g = new dagre.Digraph();
+  var indexMap = {};
+  classes.forEach(function(v, index) {
+    g.addNode(v.name, { label: "0",  width: 10, height: 10 });
+    indexMap[v.name] = index;
+  });
+
+  classes.forEach(function(v) {
+    if (v.depends) {
+      v.depends.forEach(function(i) {
+        g.addEdge(null, v.name, i);
+      });
+    }
+  });
+  var layout = dagre.layout().run(g);
+  var layer = [];
+  layout.eachNode(function(u, value) {
+    if (layer.indexOf(value.y) === -1) {
+      layer.push(value.y);
+    }
+  });
+  layer.sort(function(a,b) { return a - b;} );
+  console.log(layer);
+  layout.eachNode(function(u, value) {
+    var idx = layer.indexOf(value.y);
+    var groupId = layer.slice(0,idx+1).join(".");
+    classes[indexMap[u]].group = groupId;
+  });
+  console.log(JSON.stringify(classes));
   d3.select('#chart_placeholder')
     .datum(classes)
     .call(chart);
